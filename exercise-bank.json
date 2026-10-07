@@ -1,0 +1,990 @@
+[
+  {
+    "day": 1,
+    "dialogue": [
+      "A: Hola. Me llamo Ana. ¿Cómo te llamas?",
+      "B: Hola. Me llamo Sam."
+    ],
+    "quiz": [
+      {
+        "question": "Как спросить имя собеседника?",
+        "options": [
+          "¿Cómo te llamas?",
+          "Me llamo Ana.",
+          "Hola."
+        ],
+        "answer": 0,
+        "feedback": "¿Cómo te llamas? спрашивает имя; me llamo сообщает своё."
+      },
+      {
+        "question": "Как начать фразу «Меня зовут…»?",
+        "options": [
+          "Me llamas…",
+          "Me llamo…",
+          "Te llamo…"
+        ],
+        "answer": 1,
+        "feedback": "Сообщая своё имя, используем me llamo."
+      }
+    ],
+    "own": "Поздоровайся, назови своё имя и спроси имя собеседника. Вторую попытку начни первым.",
+    "model": "Hola. Me llamo [имя]. ¿Cómo te llamas?"
+  },
+  {
+    "day": 2,
+    "dialogue": [
+      "A: Hola. ¿Qué tal?",
+      "B: Bien, gracias. ¿Y tú?",
+      "A: Bien. Me llamo Ana.",
+      "B: Me llamo Sam."
+    ],
+    "quiz": [
+      {
+        "question": "Что делает «¿Y tú?» после ответа о самочувствии?",
+        "options": [
+          "Завершает беседу.",
+          "Возвращает вопрос собеседнику.",
+          "Сообщает имя."
+        ],
+        "answer": 1,
+        "feedback": "Это встречный вопрос: а у тебя как дела?"
+      },
+      {
+        "question": "Выбери ответ на «¿Qué tal?» с встречным вопросом.",
+        "options": [
+          "Me llamo Ana.",
+          "¿Cómo te llamas?",
+          "Bien, gracias. ¿Y tú?"
+        ],
+        "answer": 2,
+        "feedback": "Ответ сообщает состояние и приглашает партнёра ответить."
+      }
+    ],
+    "own": "Поздоровайся и ответь на вопрос о самочувствии, затем узнай о собеседнике.",
+    "model": "Hola. Bien, gracias. ¿Y tú?"
+  },
+  {
+    "day": 3,
+    "dialogue": [
+      "A: Hola. Me llamo Luis.",
+      "B: No entiendo. ¿Puedes repetir?",
+      "A: Me llamo Luis.",
+      "B: Me llamo Sam."
+    ],
+    "quiz": [
+      {
+        "question": "Имя прозвучало непонятно. Как попросить повторить?",
+        "options": [
+          "¿Puedes repetir?",
+          "Me llamo Ana.",
+          "Bien, gracias."
+        ],
+        "answer": 0,
+        "feedback": "Просьба о повторе помогает получить информацию, после неё нужно послушать ответ."
+      },
+      {
+        "question": "Что означает «Más despacio, por favor»?",
+        "options": [
+          "Я немного говорю.",
+          "Помедленнее, пожалуйста.",
+          "Как тебя зовут?"
+        ],
+        "answer": 1,
+        "feedback": "Despacio — медленно; más despacio — помедленнее."
+      }
+    ],
+    "own": "В знакомстве попроси повторить неясную реплику, потом ответь на неё по смыслу.",
+    "model": "¿Puedes repetir? → после повтора: Me llamo [имя]."
+  },
+  {
+    "day": 4,
+    "dialogue": [
+      "A: ¿De dónde eres?",
+      "B: Soy de México. Vivo en Madrid. ¿Y tú?",
+      "A: Soy de España. Vivo en Madrid."
+    ],
+    "quiz": [
+      {
+        "question": "Человек говорит «Soy de México. Vivo en Madrid». Где он сейчас живёт?",
+        "options": [
+          "В Мексике.",
+          "В Мадриде.",
+          "Это не сказано."
+        ],
+        "answer": 1,
+        "feedback": "Vivo en называет место проживания. Soy de сообщает происхождение."
+      },
+      {
+        "question": "Как сказать «Я живу в…»?",
+        "options": [
+          "Vivo de…",
+          "Soy en…",
+          "Vivo en…"
+        ],
+        "answer": 2,
+        "feedback": "Для места проживания используем vivo en."
+      }
+    ],
+    "own": "Сообщи свою страну происхождения и город проживания; спроси, откуда собеседник.",
+    "model": "Soy de [страна]. Vivo en [город]. ¿De dónde eres?"
+  },
+  {
+    "day": 5,
+    "dialogue": [
+      "A: ¿A qué te dedicas?",
+      "B: Estudio español. ¿Y tú?",
+      "A: Trabajo en Madrid."
+    ],
+    "quiz": [
+      {
+        "question": "Какой ответ сообщает об учёбе?",
+        "options": [
+          "Estudio español.",
+          "Vivo en Madrid.",
+          "Me llamo Ana."
+        ],
+        "answer": 0,
+        "feedback": "Estudio — я изучаю или учусь. Испанский здесь — предмет изучения."
+      },
+      {
+        "question": "Какой вопрос нужен, чтобы узнать занятие человека?",
+        "options": [
+          "¿Qué tal?",
+          "¿A qué te dedicas?",
+          "¿De dónde eres?"
+        ],
+        "answer": 1,
+        "feedback": "¿A qué te dedicas? спрашивает о работе или занятиях."
+      }
+    ],
+    "own": "Одной правдивой фразой расскажи о своём занятии. Затем задай встречный вопрос.",
+    "model": "Estudio [предмет] / Trabajo en [место]. ¿Y tú?"
+  },
+  {
+    "day": 6,
+    "dialogue": [
+      "A: Hola. ¿Qué tal?",
+      "B: Bien, gracias. Estoy aprendiendo español.",
+      "A: ¿Hablas español?",
+      "B: Hablo un poco de español. Más despacio, por favor."
+    ],
+    "quiz": [
+      {
+        "question": "Что сообщает «Estoy aprendiendo español»?",
+        "options": [
+          "Я преподаю испанский.",
+          "Я живу в Испании.",
+          "Я учу испанский."
+        ],
+        "answer": 2,
+        "feedback": "Целая модель обозначает процесс изучения испанского."
+      },
+      {
+        "question": "Как обозначить небольшой уровень владения испанским?",
+        "options": [
+          "Hablo un poco de español.",
+          "Soy de España.",
+          "Vivo en Madrid."
+        ],
+        "answer": 0,
+        "feedback": "Un poco de — немного. Эта фраза помогает собеседнику подстроить речь."
+      }
+    ],
+    "own": "Объясни, что учишь испанский, и попроси говорить помедленнее.",
+    "model": "Estoy aprendiendo español. Más despacio, por favor."
+  },
+  {
+    "day": 7,
+    "dialogue": [
+      "A: Hola. ¿De dónde eres?",
+      "B: Soy de [страна]. ¿Cómo te llamas?",
+      "A: Me llamo Luis. ¿A qué te dedicas?",
+      "B: Estudio español. ¿Y tú?"
+    ],
+    "quiz": [
+      {
+        "question": "Собеседник спросил «¿De dónde eres?». Какой ответ подходит по смыслу?",
+        "options": [
+          "Me llamo Sam.",
+          "Soy de México.",
+          "Bien, gracias."
+        ],
+        "answer": 1,
+        "feedback": "Вопрос о происхождении; ответ начинается soy de."
+      },
+      {
+        "question": "Ты не понял ответ. Как сохранить общение?",
+        "options": [
+          "Сразу сказать bien, даже если смысл потерян.",
+          "Прочитать рассказ о себе.",
+          "Попросить повторить и ответить после повтора."
+        ],
+        "answer": 2,
+        "feedback": "На проверке переспрос разрешён: важно восстановить смысл."
+      }
+    ],
+    "own": "Без образца познакомься с новым человеком: имя, страна, занятие; задай два вопроса. При затруднении переспроси.",
+    "model": "Пример скрыть до первой попытки. Разрешённые модели: Me llamo…, Soy de…, Estudio…, ¿Y tú?, ¿Puedes repetir?"
+  },
+  {
+    "day": 8,
+    "dialogue": [
+      "A: ¿Te gusta la música?",
+      "B: Me gusta la música. ¿Y tú?",
+      "A: Me gusta la música. No me gusta el cine."
+    ],
+    "quiz": [
+      {
+        "question": "Человек говорит «No me gusta el cine». Что он сообщил?",
+        "options": [
+          "Любит кино.",
+          "Не любит кино.",
+          "Не понял вопрос."
+        ],
+        "answer": 1,
+        "feedback": "No перед me gusta меняет смысл на отрицание."
+      },
+      {
+        "question": "Как сказать, что музыка тебе нравится?",
+        "options": [
+          "Yo gusto la música.",
+          "Me gusta la música.",
+          "Te gusta la música."
+        ],
+        "answer": 1,
+        "feedback": "Для собственного предпочтения используем me gusta."
+      }
+    ],
+    "own": "Назови одно настоящее предпочтение и спроси о таком же интересе собеседника.",
+    "model": "Me gusta [интерес]. ¿Te gusta [интерес]?"
+  },
+  {
+    "day": 9,
+    "dialogue": [
+      "A: ¿Cuál es tu película favorita?",
+      "B: Mi película favorita es [название]. ¿Y tú?",
+      "A: Mi película favorita es [другое название].",
+      "B: Me gusta el cine."
+    ],
+    "quiz": [
+      {
+        "question": "«Mi película favorita es…» сообщает…",
+        "options": [
+          "Любимый фильм.",
+          "Время встречи.",
+          "Имя собеседника."
+        ],
+        "answer": 0,
+        "feedback": "Mi — мой; película favorita — любимый фильм."
+      },
+      {
+        "question": "Кого спрашивает фраза «¿Cuál es tu película favorita?»?",
+        "options": [
+          "Говорящего о его собственном фильме.",
+          "Собеседника о его любимом фильме.",
+          "Обоих об их стране."
+        ],
+        "answer": 1,
+        "feedback": "Tu указывает на собеседника, mi — на говорящего."
+      }
+    ],
+    "own": "Назови любимый фильм или музыкальный пример и задай встречный вопрос.",
+    "model": "Mi película favorita es [название]. ¿Y tú?"
+  },
+  {
+    "day": 10,
+    "dialogue": [
+      "A: ¿Te gusta el cine?",
+      "B: Prefiero la música porque es interesante. ¿Y tú?",
+      "A: Me gusta el cine."
+    ],
+    "quiz": [
+      {
+        "question": "Что означает «Prefiero la música»?",
+        "options": [
+          "Я предпочитаю музыку.",
+          "Я не понимаю музыку.",
+          "Я работаю в музыке."
+        ],
+        "answer": 0,
+        "feedback": "Prefiero выражает предпочтение между возможными вариантами."
+      },
+      {
+        "question": "Как связать предпочтение с причиной?",
+        "options": [
+          "Prefiero la música. Me llamo…",
+          "Prefiero la música porque es interesante.",
+          "Prefiero la música. ¿De dónde eres?"
+        ],
+        "answer": 1,
+        "feedback": "Porque вводит причину. Остальные реплики могут быть правильными фразами, но другой задачи."
+      }
+    ],
+    "own": "Выбери один из двух знакомых интересов и добавь короткую причину.",
+    "model": "Prefiero [вариант] porque es interesante."
+  },
+  {
+    "day": 11,
+    "dialogue": [
+      "A: ¿A qué te dedicas?",
+      "B: Por la mañana trabajo. Por la tarde estudio español. ¿Y tú?",
+      "A: Normalmente estudio por la tarde."
+    ],
+    "quiz": [
+      {
+        "question": "«Por la mañana trabajo» — когда человек работает?",
+        "options": [
+          "Утром.",
+          "Завтра.",
+          "Вчера."
+        ],
+        "answer": 0,
+        "feedback": "Por la mañana — утром. Mañana без этой связки позднее будет обозначать завтра."
+      },
+      {
+        "question": "Какая фраза сообщает привычное занятие?",
+        "options": [
+          "¿Cómo te llamas?",
+          "Normalmente estudio español.",
+          "Me llamo Ana."
+        ],
+        "answer": 1,
+        "feedback": "Normalmente — обычно, это маркер привычки."
+      }
+    ],
+    "own": "Расскажи о двух знакомых занятиях в разное время суток; не добавляй новый длинный распорядок.",
+    "model": "Por la mañana [trabajo/estudio]. Por la tarde [знакомое действие]."
+  },
+  {
+    "day": 12,
+    "dialogue": [
+      "A: ¿A qué hora?",
+      "B: A las dos.",
+      "A: ¿A las seis?",
+      "B: A las dos."
+    ],
+    "quiz": [
+      {
+        "question": "Вопрос «¿A qué hora?» просит назвать…",
+        "options": [
+          "День рождения.",
+          "Время действия.",
+          "Профессию."
+        ],
+        "answer": 1,
+        "feedback": "Это «во сколько?», поэтому в ответе используем a las."
+      },
+      {
+        "question": "Занятие в шесть. Как ответить на «¿A qué hora?»?",
+        "options": [
+          "Soy de seis.",
+          "A las dos.",
+          "A las seis."
+        ],
+        "answer": 2,
+        "feedback": "A las seis — в шесть. Son las seis отвечает на другой вопрос: который час."
+      }
+    ],
+    "own": "Назови время занятия, выбрав одно из двух знакомых времён для учебного примера, и уточни время партнёра.",
+    "model": "¿A qué hora? — A las dos / A las seis."
+  },
+  {
+    "day": 13,
+    "dialogue": [
+      "A: ¿Qué haces el fin de semana?",
+      "B: A veces estudio español. ¿Y tú?",
+      "A: El fin de semana estudio español."
+    ],
+    "quiz": [
+      {
+        "question": "Что добавляет «A veces» к рассказу?",
+        "options": [
+          "Занятие происходит иногда.",
+          "Занятие происходит завтра.",
+          "Человек не понимает."
+        ],
+        "answer": 0,
+        "feedback": "A veces — иногда; это выражение частоты."
+      },
+      {
+        "question": "Как узнать о привычном досуге на выходных?",
+        "options": [
+          "¿Cómo te llamas?",
+          "¿Qué haces el fin de semana?",
+          "¿A qué hora?"
+        ],
+        "answer": 1,
+        "feedback": "Вопрос связывает известное действие с выходными."
+      }
+    ],
+    "own": "Расскажи об одном обычном занятии в выходные и спроси о чужом.",
+    "model": "El fin de semana [знакомое действие]. ¿Y tú?"
+  },
+  {
+    "day": 14,
+    "dialogue": [
+      "A: Hola. ¿Cuál es tu película favorita?",
+      "B: Mi película favorita es [название]. ¿Y tú?",
+      "A: Me gusta el cine. ¿Qué haces el fin de semana?",
+      "B: A veces estudio español."
+    ],
+    "quiz": [
+      {
+        "question": "Партнёр спрашивает о любимом фильме. Какой ответ выполняет задачу?",
+        "options": [
+          "A las seis.",
+          "Mi película favorita es [название].",
+          "Soy de México."
+        ],
+        "answer": 1,
+        "feedback": "Ответ должен относиться к вопросу, даже когда другие фразы грамматически правильны."
+      },
+      {
+        "question": "Что лучше показывает самостоятельный диалог?",
+        "options": [
+          "Прочитать весь заранее подготовленный монолог.",
+          "Быстро выбрать все кнопки.",
+          "Ответить на новый порядок вопросов и задать свои."
+        ],
+        "answer": 2,
+        "feedback": "Контрольные действия требуют самостоятельности и обмена, а не только чтения."
+      }
+    ],
+    "own": "Без полного текста поговори об одном интересе и одном занятии; задай два встречных вопроса.",
+    "model": "Образец показывается после первой попытки. Допустимы уже изученные модели, переспрос и короткие ответы."
+  },
+  {
+    "day": 15,
+    "dialogue": [
+      "A: ¿Cómo estás hoy?",
+      "B: Hoy estoy cansado. ¿Y tú?",
+      "A: Hoy estoy bien.",
+      "B: Por la mañana trabajo."
+    ],
+    "quiz": [
+      {
+        "question": "Что означает «Estoy cansado» в этом разговоре?",
+        "options": [
+          "Человек сейчас устал.",
+          "Человека зовут Кансадо.",
+          "Человек живёт далеко."
+        ],
+        "answer": 0,
+        "feedback": "Это текущее состояние; для себя выбираем cansado или cansada по нужной форме."
+      },
+      {
+        "question": "Как выразить «Я сейчас устала»?",
+        "options": [
+          "Soy cansada.",
+          "Estoy cansada.",
+          "Vivo cansada."
+        ],
+        "answer": 1,
+        "feedback": "Для этой ситуации используем estoy cansada. Не переносим механически правило «постоянное/временное» на все случаи ser/estar."
+      }
+    ],
+    "own": "Ответь о текущем самочувствии и спроси о партнёре. Используй только понятные тебе состояния.",
+    "model": "Hoy estoy bien / cansado / cansada. ¿Y tú?"
+  },
+  {
+    "day": 16,
+    "dialogue": [
+      "A: Me gusta la música.",
+      "B: ¡Qué interesante! ¿Por qué?",
+      "A: Porque es interesante.",
+      "B: ¡Qué bien!"
+    ],
+    "quiz": [
+      {
+        "question": "Как спросить причину?",
+        "options": [
+          "Porque…",
+          "¿Por qué?",
+          "Bien, gracias."
+        ],
+        "answer": 1,
+        "feedback": "Por qué — вопрос «почему?»; porque — союз в ответе «потому что»."
+      },
+      {
+        "question": "Партнёр поделился приятной новостью. Какая реакция уместна?",
+        "options": [
+          "¡Qué bien!",
+          "No entiendo. → без попытки понять",
+          "Me llamo… → сменить тему"
+        ],
+        "answer": 0,
+        "feedback": "Qué bien выражает положительную реакцию. Сначала нужно действительно понять смысл сообщения."
+      }
+    ],
+    "own": "Отреагируй на знакомое сообщение собеседника и задай вопрос о причине.",
+    "model": "¡Qué interesante! ¿Por qué?"
+  },
+  {
+    "day": 17,
+    "dialogue": [
+      "A: Me gusta el cine.",
+      "B: A mí también.",
+      "A: Me gusta la música.",
+      "B: A mí no. Prefiero el cine."
+    ],
+    "quiz": [
+      {
+        "question": "На положительное «Me gusta el cine» ответили «A mí también». Что это значит?",
+        "options": [
+          "Интерес совпал.",
+          "Интерес не совпал.",
+          "Человек не услышал вопрос."
+        ],
+        "answer": 0,
+        "feedback": "A mí también — мне тоже. Сегодня сравниваем ответы на положительное предпочтение."
+      },
+      {
+        "question": "Ты не разделяешь положительное предпочтение партнёра. Как ответить?",
+        "options": [
+          "A mí también.",
+          "A mí no.",
+          "Me llamo Ana."
+        ],
+        "answer": 1,
+        "feedback": "A mí no — а мне нет. Можно продолжить своим предпочтением."
+      }
+    ],
+    "own": "На положительное предпочтение собеседника ответь правдиво: согласись или назови свой вариант.",
+    "model": "A mí también / A mí no. Prefiero [вариант]."
+  },
+  {
+    "day": 18,
+    "dialogue": [
+      "A: ¿Quieres tomar un café?",
+      "B: Sí, me gustaría. ¿A qué hora?",
+      "A: A las seis.",
+      "B: No puedo hoy."
+    ],
+    "quiz": [
+      {
+        "question": "«No puedo hoy» после приглашения означает…",
+        "options": [
+          "Согласие на сегодня.",
+          "Человек сегодня не может.",
+          "Человек спросил имя."
+        ],
+        "answer": 1,
+        "feedback": "Отказ на сегодня не обязательно означает отказ от любого общения."
+      },
+      {
+        "question": "Как согласиться на приглашение в изученной вежливой форме?",
+        "options": [
+          "Sí, me gustaría.",
+          "No puedo hoy.",
+          "¿De dónde eres?"
+        ],
+        "answer": 0,
+        "feedback": "Me gustaría здесь учим как целую вежливую формулу."
+      }
+    ],
+    "own": "Пригласи на кофе. Партнёр выбирает согласие или отказ; покажи, что понял ответ.",
+    "model": "¿Quieres tomar un café? — Sí, me gustaría / No puedo hoy."
+  },
+  {
+    "day": 19,
+    "dialogue": [
+      "A: ¿Quieres tomar un café?",
+      "B: No puedo hoy. ¿Mañana?",
+      "A: ¿A las seis?",
+      "B: Perfecto."
+    ],
+    "quiz": [
+      {
+        "question": "«¿Mañana?» после «No puedo hoy» предлагает…",
+        "options": [
+          "Вчера.",
+          "Утром в любой день.",
+          "Завтра."
+        ],
+        "answer": 2,
+        "feedback": "Mañana отдельно — завтра. Por la mañana — утром."
+      },
+      {
+        "question": "Вы договорились завтра в шесть. Как подтвердить время?",
+        "options": [
+          "¿A las seis?",
+          "¿Cómo te llamas?",
+          "Soy de España."
+        ],
+        "answer": 0,
+        "feedback": "Короткий вопрос повторяет важное условие и помогает избежать недоразумения."
+      }
+    ],
+    "own": "Договорись о завтрашней встрече и повтори согласованное время.",
+    "model": "¿Mañana a las seis? — Perfecto."
+  },
+  {
+    "day": 20,
+    "dialogue": [
+      "A: ¿Qué vas a hacer mañana?",
+      "B: Voy a estudiar español. ¿Y tú?",
+      "A: Voy a trabajar.",
+      "B: ¡Qué bien!"
+    ],
+    "quiz": [
+      {
+        "question": "Какая фраза сообщает ближайший план?",
+        "options": [
+          "Mañana voy a estudiar.",
+          "Me llamo Ana.",
+          "Normalmente estudio."
+        ],
+        "answer": 0,
+        "feedback": "Mañana и voy a связывают действие с будущим намерением."
+      },
+      {
+        "question": "Выбери нужную форму для модели «Voy a…».",
+        "options": [
+          "Voy a trabajo.",
+          "Voy a trabajar.",
+          "Voy a trabajé."
+        ],
+        "answer": 1,
+        "feedback": "После voy a используем начальную форму trabajar."
+      }
+    ],
+    "own": "Расскажи об одном ближайшем плане с уже известным действием и спроси о партнёре.",
+    "model": "Mañana voy a [estudiar/trabajar]. ¿Y tú?"
+  },
+  {
+    "day": 21,
+    "dialogue": [
+      "A: ¿Quieres tomar un café?",
+      "B: Sí, me gustaría. ¿Mañana?",
+      "A: A las dos.",
+      "B: ¿A las seis?",
+      "A: A las dos.",
+      "B: Perfecto."
+    ],
+    "quiz": [
+      {
+        "question": "В диалоге время исправили на «A las dos». На какое время согласована встреча?",
+        "options": [
+          "В шесть.",
+          "В два.",
+          "Время не обсуждалось."
+        ],
+        "answer": 1,
+        "feedback": "Важно заметить последнюю поправку; повторение условия — часть общения."
+      },
+      {
+        "question": "Ты не понял время. Что поможет договориться?",
+        "options": [
+          "Сказать perfecto, не уточняя.",
+          "Молча закончить.",
+          "Попросить повторить, затем подтвердить услышанное."
+        ],
+        "answer": 2,
+        "feedback": "Проверка оценивает достигнутую договорённость; переспрос допустим."
+      }
+    ],
+    "own": "Без готового текста пригласи, договорись о дне и времени. Партнёр меняет одно условие.",
+    "model": "Образец только после попытки: ¿Quieres tomar un café? ¿Mañana a las seis? Perfecto."
+  },
+  {
+    "day": 22,
+    "dialogue": [
+      "A: ¿Qué tal?",
+      "B: Bien, gracias. Ayer estudié español.",
+      "A: ¡Qué interesante!",
+      "B: ¿Y tú?"
+    ],
+    "quiz": [
+      {
+        "question": "«Ayer estudié español» относится к…",
+        "options": [
+          "Вчерашнему дню.",
+          "Завтрашнему плану.",
+          "Имени человека."
+        ],
+        "answer": 0,
+        "feedback": "Ayer — вчера, estudié — изученная прошедшая форма."
+      },
+      {
+        "question": "Какая форма говорит «я работал/работала» о вчера?",
+        "options": [
+          "Trabajo.",
+          "Trabajé.",
+          "Trabajar."
+        ],
+        "answer": 1,
+        "feedback": "Для этого примера: ayer trabajé. Это одна форма, а не вся система прошедшего времени."
+      }
+    ],
+    "own": "Если день 21 дался самостоятельно, скажи один факт о вчера. Иначе повтори договорённость о встрече с новыми условиями.",
+    "model": "Ayer estudié / trabajé. В восстановительной ветке: ¿Mañana a las seis?"
+  },
+  {
+    "day": 23,
+    "dialogue": [
+      "A: ¿Qué tal?",
+      "B: Ayer trabajé. Hoy estoy bien.",
+      "A: ¿Qué vas a hacer mañana?",
+      "B: Mañana voy a estudiar español."
+    ],
+    "quiz": [
+      {
+        "question": "Расположи смысл: «Ayer trabajé. Mañana voy a estudiar». Что было раньше?",
+        "options": [
+          "Учёба завтра.",
+          "Работа вчера.",
+          "Из этих фраз не понять."
+        ],
+        "answer": 1,
+        "feedback": "Ayer указывает на прошлое, mañana — на будущее."
+      },
+      {
+        "question": "Какой маркер означает «сегодня»?",
+        "options": [
+          "Hoy.",
+          "Ayer.",
+          "Mañana."
+        ],
+        "answer": 0,
+        "feedback": "Hoy — сегодня. Если прошлое пока не вводилось, работаем с hoy и mañana."
+      }
+    ],
+    "own": "Расскажи о сегодня и завтра; если изучал прошлые формы, добавь один факт о вчера.",
+    "model": "Hoy estoy [состояние]. Mañana voy a [действие]. Дополнительно: Ayer estudié."
+  },
+  {
+    "day": 24,
+    "dialogue": [
+      "A: ¿De dónde eres?",
+      "B: Soy de [страна]. Vivo en [город].",
+      "A: ¿Te gusta el cine?",
+      "B: Me gusta [интерес]."
+    ],
+    "quiz": [
+      {
+        "question": "Как исправить «Vivo de Madrid», если речь о месте проживания?",
+        "options": [
+          "Vivo en Madrid.",
+          "Soy en Madrid.",
+          "Me llamo Madrid."
+        ],
+        "answer": 0,
+        "feedback": "Это пример ремонта конкретной модели vivo en; фактическая тема дня выбирается из твоих ошибок."
+      },
+      {
+        "question": "Какой повтор сильнее проверяет доступность фразы?",
+        "options": [
+          "Прочитать её несколько раз подряд.",
+          "Самостоятельно сказать после паузы в другой ситуации.",
+          "Посмотреть только русский перевод."
+        ],
+        "answer": 1,
+        "feedback": "Для дня ремонта важна новая самостоятельная попытка. Карточки и объяснение помогают подготовиться к ней."
+      }
+    ],
+    "own": "Выбери две собственные трудные модели из журнала. Произнеси до образца, повтори после помощи, затем используй в другой ситуации.",
+    "model": "Образец зависит от реальной ошибки. По умолчанию: Vivo en… / Me gusta…"
+  },
+  {
+    "day": 25,
+    "dialogue": [
+      "A: Un café, por favor.",
+      "B: Para mí un café.",
+      "A: ¿Te gusta la música?",
+      "B: Me gusta la música. ¿Y tú?"
+    ],
+    "quiz": [
+      {
+        "question": "«Un café, por favor» — это…",
+        "options": [
+          "Простой вежливый заказ.",
+          "Вопрос о возрасте.",
+          "Отказ от встречи."
+        ],
+        "answer": 0,
+        "feedback": "Существительное с por favor может выполнять простую задачу заказа."
+      },
+      {
+        "question": "В продолжении «Para mí un café» что означает para mí?",
+        "options": [
+          "Завтра.",
+          "Мне / для меня.",
+          "Я не понимаю."
+        ],
+        "answer": 1,
+        "feedback": "Para mí указывает, кому предназначен заказ."
+      }
+    ],
+    "own": "Попроси один напиток, затем поговори с другом о знакомом интересе. Словарь меню не обязателен.",
+    "model": "Un café, por favor. ¿Te gusta [интерес]?"
+  },
+  {
+    "day": 26,
+    "dialogue": [
+      "A: Hola. Me llamo Ana. Soy de México. Estudio español.",
+      "B: ¿Cómo te llamas?",
+      "A: Me llamo Ana.",
+      "B: ¿De dónde eres?"
+    ],
+    "quiz": [
+      {
+        "question": "В подготовленном рассказе «Me llamo Ana. Soy de México» какие два факта известны?",
+        "options": [
+          "Имя и происхождение.",
+          "Время и дата встречи.",
+          "Любимый фильм и музыка."
+        ],
+        "answer": 0,
+        "feedback": "Это текстовая репетиция задания на понимание. Настоящее слушание требует доступного звука."
+      },
+      {
+        "question": "Какой вопрос уточняет происхождение после рассказа?",
+        "options": [
+          "¿A qué hora?",
+          "¿De dónde eres?",
+          "¿Qué tal?"
+        ],
+        "answer": 1,
+        "feedback": "Встречный вопрос должен относиться к услышанному содержанию."
+      }
+    ],
+    "own": "После нового короткого голоса назови два понятых факта и задай уместный вопрос. Сейчас можно отрепетировать по тексту.",
+    "model": "Soy de… / Me llamo… — вопросы: ¿De dónde eres? / ¿Cómo te llamas?"
+  },
+  {
+    "day": 27,
+    "dialogue": [
+      "B: ¿Te gusta el cine?",
+      "A: Me gusta el cine.",
+      "B: ¿Cuál es tu película favorita?",
+      "A: Mi película favorita es [название].",
+      "B: ¡Qué interesante! ¿Por qué?",
+      "A: Porque es interesante."
+    ],
+    "quiz": [
+      {
+        "question": "Партнёр ответил, что любит кино. Как развить эту тему?",
+        "options": [
+          "¿Cuál es tu película favorita?",
+          "A las seis.",
+          "Me llamo… → внезапно начать заново"
+        ],
+        "answer": 0,
+        "feedback": "Уточнение делает ответ конкретнее и сохраняет тему."
+      },
+      {
+        "question": "Что показывает инициативу в беседе?",
+        "options": [
+          "Только отвечать «да». ",
+          "Задавать уместные вопросы и реагировать по смыслу.",
+          "Произнести много несвязанных фраз."
+        ],
+        "answer": 1,
+        "feedback": "Инициатива — содержательное действие, а не количество произнесённых слов."
+      }
+    ],
+    "own": "Ты ведёшь разговор: выбери тему, задай два уместных вопроса и отреагируй. Партнёр отвечает коротко.",
+    "model": "¿Te gusta…? → ¿Cuál es tu… favorita? → ¿Por qué? Используй только подготовленные модели."
+  },
+  {
+    "day": 28,
+    "dialogue": [
+      "A: Me llamo [новое имя].",
+      "B: ¿Puedes repetir?",
+      "A: Me llamo [имя, яснее].",
+      "B: Me llamo [своё имя]. ¿De dónde eres?"
+    ],
+    "quiz": [
+      {
+        "question": "Непонятное имя повторили яснее. Как действовать дальше?",
+        "options": [
+          "Продолжать просьбу о повторе автоматически.",
+          "Ответить на понятую реплику и продолжить разговор.",
+          "Завершить беседу без ответа."
+        ],
+        "answer": 1,
+        "feedback": "Переспрос нужен для восстановления смысла, затем возвращаемся к разговору."
+      },
+      {
+        "question": "Партнёр говорит слишком быстро. Выбери изученную просьбу.",
+        "options": [
+          "Más despacio, por favor.",
+          "Me gusta el cine.",
+          "A las seis."
+        ],
+        "answer": 0,
+        "feedback": "Просьба уменьшить темп позволяет снова понять сообщение."
+      }
+    ],
+    "own": "Попроси помощь после непонятной реплики. После повтора сообщи понятый факт и продолжи тему.",
+    "model": "¿Puedes repetir? / Más despacio, por favor. Затем ответить по смыслу."
+  },
+  {
+    "day": 29,
+    "dialogue": [
+      "A: Hola. Me llamo Ana.",
+      "B: Me llamo [имя].",
+      "A: ¿Te gusta la música?",
+      "B: Me gusta la música. Hasta luego."
+    ],
+    "quiz": [
+      {
+        "question": "Какой изученный вариант завершает беседу?",
+        "options": [
+          "Hola.",
+          "Hasta luego.",
+          "¿Cómo te llamas?"
+        ],
+        "answer": 1,
+        "feedback": "Hasta luego — до встречи. Hola начинает обмен."
+      },
+      {
+        "question": "Что лучше сделать перед итоговой проверкой?",
+        "options": [
+          "Добавить большой список новой грамматики.",
+          "Спокойно повторить трудные модели в новых коротких ситуациях.",
+          "Читать только перевод."
+        ],
+        "answer": 1,
+        "feedback": "Перед проверкой укрепляем известное; большое новое не вытесняет самостоятельную речь."
+      }
+    ],
+    "own": "Повтори две трудные ситуации и закончи беседу прощанием. Mucho gusto — необязательная дополнительная формула.",
+    "model": "Hola. Me llamo… → известная тема → Hasta luego."
+  },
+  {
+    "day": 30,
+    "dialogue": [
+      "A: Hola. ¿Qué haces el fin de semana?",
+      "B: [собственный ответ]. ¿Y tú?",
+      "A: Estudio español. ¿Quieres tomar un café?",
+      "B: [согласие или отказ].",
+      "A: ¿Mañana a las seis?",
+      "B: [подтверждение или переспрос]."
+    ],
+    "quiz": [
+      {
+        "question": "Короткие текстовые задания пройдены. Что ещё нужно для проверки разговорного умения?",
+        "options": [
+          "Самостоятельный разговор с изменёнными вопросами.",
+          "Посмотреть число пройденных дней.",
+          "Прочитать знакомый диалог."
+        ],
+        "answer": 0,
+        "feedback": "Текстовая практика не заменяет финальную устную задачу."
+      },
+      {
+        "question": "Во время финального разговора понадобился переспрос. Как это оценивать?",
+        "options": [
+          "Автоматический провал.",
+          "Как допустимое действие; важно понять повтор и продолжить.",
+          "Как доказательство свободного уровня."
+        ],
+        "answer": 1,
+        "feedback": "Отдельно учитываем восстановление общения, самостоятельность, понимание и звучание. Ни один элемент сам по себе не присваивает уровень."
+      }
+    ],
+    "own": "Новая беседа около трёх минут: познакомься, обсуди интерес, задай вопросы и назови план. Затем другая сцена — договорённость о встрече.",
+    "model": "Готовый сценарий перед попыткой скрыт. Разрешён переспрос; результат — профиль выполненных действий, не сертификат уровня."
+  }
+]

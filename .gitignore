@@ -1,0 +1,8 @@
+.cache/
+.impeccable/
+__pycache__/
+*.tmp
+*.log
+node_modules/
+*.progress.json
+vamos-progress-*.json
