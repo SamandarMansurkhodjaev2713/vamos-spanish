@@ -1,5 +1,6 @@
 .topbar{position:sticky;top:0;z-index:40;background:var(--bg);border-bottom:1px solid var(--line);isolation:isolate}
 .mobile-nav{grid-template-columns:repeat(5,minmax(0,1fr))}
+.lesson-mode .mobile-nav{grid-template-columns:repeat(5,minmax(0,1fr))}
 .mobile-nav button{min-width:0;font-size:12px;gap:5px}
 .journey-links{display:flex;gap:10px;flex-wrap:wrap;margin:24px 0 32px;padding:20px 0;border-block:1px solid var(--line)}
 .journey-links .btn{flex:1 1 170px;justify-content:flex-start}
