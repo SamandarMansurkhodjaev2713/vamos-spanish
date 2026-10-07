@@ -688,9 +688,9 @@
             },
             {
               "partner": {
-                "audio": "439034",
-                "es": "Más despacio.",
-                "ru": "Помедленнее."
+                "audio": "788477",
+                "es": "Me llamo Andrea.",
+                "ru": "Меня зовут Андреа."
               },
               "prompt": "После повторения поблагодари.",
               "rule": {
@@ -840,9 +840,9 @@
             },
             {
               "partner": {
-                "audio": "453474",
-                "es": "¿Podrías repetir eso?",
-                "ru": "Ты мог бы это повторить?"
+                "audio": "788477",
+                "es": "Me llamo Andrea.",
+                "ru": "Меня зовут Андреа."
               },
               "prompt": "Поблагодари за повтор.",
               "rule": {
@@ -5646,7 +5646,6 @@
                     "rule": {
                       "kind": "alternative",
                       "forms": [
-                        "¿Quieres agua?",
                         "¿Quieres un café mañana?",
                         "¿Nos vemos mañana?"
                       ],
@@ -5655,7 +5654,6 @@
                     },
                     "explanation": "После no puedo не повторяй то же приглашение. Измени напиток или день: ¿Quieres agua? / ¿Nos vemos mañana?",
                     "examples": [
-                      "¿Quieres agua?",
                       "¿Quieres un café mañana?",
                       "¿Nos vemos mañana?"
                     ]
@@ -5784,7 +5782,6 @@
                     "rule": {
                       "kind": "alternative",
                       "forms": [
-                        "¿Quieres agua?",
                         "¿Quieres un café mañana?",
                         "¿Nos vemos mañana?"
                       ],
@@ -5793,7 +5790,6 @@
                     },
                     "explanation": "После no puedo не повторяй то же приглашение. Измени напиток или день: ¿Quieres agua? / ¿Nos vemos mañana?",
                     "examples": [
-                      "¿Quieres agua?",
                       "¿Quieres un café mañana?",
                       "¿Nos vemos mañana?"
                     ]
@@ -6126,7 +6122,6 @@
                     "rule": {
                       "kind": "alternative",
                       "forms": [
-                        "¿Quieres agua?",
                         "¿Quieres un café mañana?",
                         "¿Nos vemos mañana?"
                       ],
@@ -6135,7 +6130,6 @@
                     },
                     "explanation": "После no puedo не повторяй то же приглашение. Измени напиток или день: ¿Quieres agua? / ¿Nos vemos mañana?",
                     "examples": [
-                      "¿Quieres agua?",
                       "¿Quieres un café mañana?",
                       "¿Nos vemos mañana?"
                     ]
@@ -6264,7 +6258,6 @@
                     "rule": {
                       "kind": "alternative",
                       "forms": [
-                        "¿Quieres agua?",
                         "¿Quieres un café mañana?",
                         "¿Nos vemos mañana?"
                       ],
@@ -6273,7 +6266,6 @@
                     },
                     "explanation": "После no puedo не повторяй то же приглашение. Измени напиток или день: ¿Quieres agua? / ¿Nos vemos mañana?",
                     "examples": [
-                      "¿Quieres agua?",
                       "¿Quieres un café mañana?",
                       "¿Nos vemos mañana?"
                     ]
@@ -6922,7 +6914,6 @@
                     "rule": {
                       "kind": "alternative",
                       "forms": [
-                        "¿Quieres agua?",
                         "¿Quieres un café mañana?",
                         "¿Nos vemos mañana?"
                       ],
@@ -6931,7 +6922,6 @@
                     },
                     "explanation": "После no puedo не повторяй то же приглашение. Измени напиток или день: ¿Quieres agua? / ¿Nos vemos mañana?",
                     "examples": [
-                      "¿Quieres agua?",
                       "¿Quieres un café mañana?",
                       "¿Nos vemos mañana?"
                     ]
@@ -7060,7 +7050,6 @@
                     "rule": {
                       "kind": "alternative",
                       "forms": [
-                        "¿Quieres agua?",
                         "¿Quieres un café mañana?",
                         "¿Nos vemos mañana?"
                       ],
@@ -7069,7 +7058,6 @@
                     },
                     "explanation": "После no puedo не повторяй то же приглашение. Измени напиток или день: ¿Quieres agua? / ¿Nos vemos mañana?",
                     "examples": [
-                      "¿Quieres agua?",
                       "¿Quieres un café mañana?",
                       "¿Nos vemos mañana?"
                     ]
@@ -7148,16 +7136,14 @@
               "rule": {
                 "kind": "forms",
                 "forms": [
-                  "Anoche estudié.",
-                  "Ayer estudié."
+                  "Anoche estudié."
                 ],
                 "patterns": [],
                 "required": []
               },
               "explanation": "Выбирай смысл, затем восстанови короткую модель. Можно ответить своими словами: подготовленная проверка знает только перечисленные формы и модели.",
               "examples": [
-                "Anoche estudié.",
-                "Ayer estudié."
+                "Anoche estudié."
               ]
             },
             {
@@ -7223,16 +7209,14 @@
               "rule": {
                 "kind": "forms",
                 "forms": [
-                  "Anoche estudié.",
-                  "Ayer estudié."
+                  "Anoche estudié."
                 ],
                 "patterns": [],
                 "required": []
               },
               "explanation": "Выбирай смысл, затем восстанови короткую модель. Можно ответить своими словами: подготовленная проверка знает только перечисленные формы и модели.",
               "examples": [
-                "Anoche estudié.",
-                "Ayer estudié."
+                "Anoche estudié."
               ]
             },
             {
@@ -7267,16 +7251,14 @@
               "rule": {
                 "kind": "forms",
                 "forms": [
-                  "Anoche trabajé.",
-                  "Ayer trabajé."
+                  "Anoche trabajé."
                 ],
                 "patterns": [],
                 "required": []
               },
               "explanation": "Выбирай смысл, затем восстанови короткую модель. Можно ответить своими словами: подготовленная проверка знает только перечисленные формы и модели.",
               "examples": [
-                "Anoche trabajé.",
-                "Ayer trabajé."
+                "Anoche trabajé."
               ]
             }
           ],
@@ -7298,16 +7280,14 @@
               "rule": {
                 "kind": "forms",
                 "forms": [
-                  "Anoche trabajé.",
-                  "Ayer trabajé."
+                  "Anoche trabajé."
                 ],
                 "patterns": [],
                 "required": []
               },
               "explanation": "Выбирай смысл, затем восстанови короткую модель. Можно ответить своими словами: подготовленная проверка знает только перечисленные формы и модели.",
               "examples": [
-                "Anoche trabajé.",
-                "Ayer trabajé."
+                "Anoche trabajé."
               ]
             },
             {
@@ -7373,16 +7353,14 @@
               "rule": {
                 "kind": "forms",
                 "forms": [
-                  "Anoche trabajé.",
-                  "Ayer trabajé."
+                  "Anoche trabajé."
                 ],
                 "patterns": [],
                 "required": []
               },
               "explanation": "Выбирай смысл, затем восстанови короткую модель. Можно ответить своими словами: подготовленная проверка знает только перечисленные формы и модели.",
               "examples": [
-                "Anoche trabajé.",
-                "Ayer trabajé."
+                "Anoche trabajé."
               ]
             },
             {
@@ -7417,16 +7395,14 @@
               "rule": {
                 "kind": "forms",
                 "forms": [
-                  "Anoche trabajé.",
-                  "Ayer trabajé."
+                  "Anoche trabajé."
                 ],
                 "patterns": [],
                 "required": []
               },
               "explanation": "Выбирай смысл, затем восстанови короткую модель. Можно ответить своими словами: подготовленная проверка знает только перечисленные формы и модели.",
               "examples": [
-                "Anoche trabajé.",
-                "Ayer trabajé."
+                "Anoche trabajé."
               ]
             }
           ],
@@ -7607,16 +7583,14 @@
               "rule": {
                 "kind": "forms",
                 "forms": [
-                  "Anoche trabajé.",
-                  "Ayer trabajé."
+                  "Anoche trabajé."
                 ],
                 "patterns": [],
                 "required": []
               },
               "explanation": "Выбирай смысл, затем восстанови короткую модель. Можно ответить своими словами: подготовленная проверка знает только перечисленные формы и модели.",
               "examples": [
-                "Anoche trabajé.",
-                "Ayer trabajé."
+                "Anoche trabajé."
               ]
             },
             {
@@ -7685,16 +7659,14 @@
               "rule": {
                 "kind": "forms",
                 "forms": [
-                  "Anoche trabajé.",
-                  "Ayer trabajé."
+                  "Anoche trabajé."
                 ],
                 "patterns": [],
                 "required": []
               },
               "explanation": "Выбирай смысл, затем восстанови короткую модель. Можно ответить своими словами: подготовленная проверка знает только перечисленные формы и модели.",
               "examples": [
-                "Anoche trabajé.",
-                "Ayer trabajé."
+                "Anoche trabajé."
               ]
             },
             {
@@ -8995,7 +8967,6 @@
                     "rule": {
                       "kind": "alternative",
                       "forms": [
-                        "¿Quieres agua?",
                         "¿Quieres un café mañana?",
                         "¿Nos vemos mañana?"
                       ],
@@ -9004,7 +8975,6 @@
                     },
                     "explanation": "После no puedo не повторяй то же приглашение. Измени напиток или день: ¿Quieres agua? / ¿Nos vemos mañana?",
                     "examples": [
-                      "¿Quieres agua?",
                       "¿Quieres un café mañana?",
                       "¿Nos vemos mañana?"
                     ]
@@ -9155,7 +9125,6 @@
                     "rule": {
                       "kind": "alternative",
                       "forms": [
-                        "¿Quieres agua?",
                         "¿Quieres un café mañana?",
                         "¿Nos vemos mañana?"
                       ],
@@ -9164,7 +9133,6 @@
                     },
                     "explanation": "После no puedo не повторяй то же приглашение. Измени напиток или день: ¿Quieres agua? / ¿Nos vemos mañana?",
                     "examples": [
-                      "¿Quieres agua?",
                       "¿Quieres un café mañana?",
                       "¿Nos vemos mañana?"
                     ]
@@ -10200,7 +10168,6 @@
                     "rule": {
                       "kind": "alternative",
                       "forms": [
-                        "¿Quieres agua?",
                         "¿Quieres un café mañana?",
                         "¿Nos vemos mañana?"
                       ],
@@ -10209,7 +10176,6 @@
                     },
                     "explanation": "После no puedo не повторяй то же приглашение. Измени напиток или день: ¿Quieres agua? / ¿Nos vemos mañana?",
                     "examples": [
-                      "¿Quieres agua?",
                       "¿Quieres un café mañana?",
                       "¿Nos vemos mañana?"
                     ]
@@ -10363,7 +10329,6 @@
                     "rule": {
                       "kind": "alternative",
                       "forms": [
-                        "¿Quieres agua?",
                         "¿Quieres un café mañana?",
                         "¿Nos vemos mañana?"
                       ],
@@ -10372,7 +10337,6 @@
                     },
                     "explanation": "После no puedo не повторяй то же приглашение. Измени напиток или день: ¿Quieres agua? / ¿Nos vemos mañana?",
                     "examples": [
-                      "¿Quieres agua?",
                       "¿Quieres un café mañana?",
                       "¿Nos vemos mañana?"
                     ]

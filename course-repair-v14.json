@@ -1,0 +1,1773 @@
+{
+  "version": 14,
+  "title": "Вернуть трудное в разговор",
+  "scope": "Короткая смешанная практика по фразам базовых 30 дней: смысл, восстановление модели и выбор ответа в новой ситуации. Это проверка подготовленных задач, не оценка свободного владения.",
+  "sessionSize": 6,
+  "sessionCap": 18,
+  "defaultDay": 7,
+  "lessons": [
+    {
+      "day": 1,
+      "title": "Поздороваться, назвать себя и спросить имя собеседника.",
+      "model": "Me llamo Andrea.",
+      "meaning": "Меня зовут Андреа.",
+      "native": [
+        {
+          "es": "Me llamo Andrea.",
+          "audio": "788477",
+          "ru": "Меня зовут Андреа."
+        }
+      ],
+      "tasks": [
+        {
+          "id": "r1-meaning",
+          "day": 1,
+          "skill": "meaning",
+          "kind": "choice",
+          "prompt": "Что сообщает человек?",
+          "context": "Me llamo Andrea.",
+          "options": [
+            "Своё имя",
+            "Имя собеседника",
+            "Место проживания"
+          ],
+          "answer": 0,
+          "help": "Меня зовут Андреа.",
+          "explanation": "Своё имя"
+        },
+        {
+          "id": "r1-recall",
+          "day": 1,
+          "skill": "recall",
+          "kind": "text",
+          "prompt": "Восстанови точно подготовленную модель по смыслу: Меня зовут Андреа.",
+          "accepted": [
+            "Me llamo Andrea."
+          ],
+          "help": "Me llamo Andrea.",
+          "explanation": "Проверяем эту модель с теми же фактами. Другие грамматически верные ответы возможны, но этим ключом не оцениваются."
+        },
+        {
+          "id": "r1-transfer",
+          "day": 1,
+          "skill": "context",
+          "kind": "choice",
+          "prompt": "Ты играешь Андреа. Новый знакомый спросил твоё имя. Ответь, не задавая вопрос вместо ответа.",
+          "options": [
+            "¿Cómo te llamas?",
+            "Me llamo Andrea.",
+            "Vivo en Moscú."
+          ],
+          "answer": 1,
+          "help": "Me llamo Andrea.",
+          "explanation": "Для заданной роли и цели подходит «Me llamo Andrea.». Другие варианты выражают иной факт или намерение."
+        }
+      ]
+    },
+    {
+      "day": 2,
+      "title": "Ответить о самочувствии и вернуть вопрос.",
+      "model": "Estoy bien.",
+      "meaning": "У меня всё хорошо.",
+      "native": [
+        {
+          "es": "Estoy bien.",
+          "audio": "35146",
+          "ru": "У меня всё хорошо."
+        }
+      ],
+      "tasks": [
+        {
+          "id": "r2-meaning",
+          "day": 2,
+          "skill": "meaning",
+          "kind": "choice",
+          "prompt": "О чём эта реплика?",
+          "context": "Estoy bien.",
+          "options": [
+            "О своём имени",
+            "О нынешнем самочувствии",
+            "О языке, которым владеет человек"
+          ],
+          "answer": 1,
+          "help": "У меня всё хорошо.",
+          "explanation": "О нынешнем самочувствии"
+        },
+        {
+          "id": "r2-recall",
+          "day": 2,
+          "skill": "recall",
+          "kind": "text",
+          "prompt": "Восстанови точно подготовленную модель по смыслу: У меня всё хорошо.",
+          "accepted": [
+            "Estoy bien."
+          ],
+          "help": "Estoy bien.",
+          "explanation": "Проверяем эту модель с теми же фактами. Другие грамматически верные ответы возможны, но этим ключом не оцениваются."
+        },
+        {
+          "id": "r2-transfer",
+          "day": 2,
+          "skill": "context",
+          "kind": "choice",
+          "prompt": "После приветствия тебя спрашивают, как дела. По условию у тебя всё хорошо.",
+          "options": [
+            "Me llamo Andrea.",
+            "Hablo español.",
+            "Estoy bien."
+          ],
+          "answer": 2,
+          "help": "Estoy bien.",
+          "explanation": "Для заданной роли и цели подходит «Estoy bien.». Другие варианты выражают иной факт или намерение."
+        }
+      ]
+    },
+    {
+      "day": 3,
+      "title": "Попросить повторить и замедлиться вместо молчания.",
+      "model": "¿Podrías repetir eso?",
+      "meaning": "Ты мог бы это повторить?",
+      "native": [
+        {
+          "es": "¿Podrías repetir eso?",
+          "audio": "453474",
+          "ru": "Ты мог бы это повторить?"
+        }
+      ],
+      "tasks": [
+        {
+          "id": "r3-meaning",
+          "day": 3,
+          "skill": "meaning",
+          "kind": "choice",
+          "prompt": "Что просят сделать?",
+          "context": "¿Podrías repetir eso?",
+          "options": [
+            "Сообщить время",
+            "Закончить беседу",
+            "Повторить сказанное"
+          ],
+          "answer": 2,
+          "help": "Ты мог бы это повторить?",
+          "explanation": "Повторить сказанное"
+        },
+        {
+          "id": "r3-recall",
+          "day": 3,
+          "skill": "recall",
+          "kind": "text",
+          "prompt": "Восстанови точно подготовленную модель по смыслу: Ты мог бы это повторить?",
+          "accepted": [
+            "¿Podrías repetir eso?"
+          ],
+          "help": "¿Podrías repetir eso?",
+          "explanation": "Проверяем эту модель с теми же фактами. Другие грамматически верные ответы возможны, но этим ключом не оцениваются."
+        },
+        {
+          "id": "r3-transfer",
+          "day": 3,
+          "skill": "context",
+          "kind": "choice",
+          "prompt": "Собеседник произнёс незнакомую реплику. Ты хочешь услышать её снова, а не отвечать о себе.",
+          "options": [
+            "¿Podrías repetir eso?",
+            "¿A qué hora?",
+            "Hasta luego."
+          ],
+          "answer": 0,
+          "help": "¿Podrías repetir eso?",
+          "explanation": "Для заданной роли и цели подходит «¿Podrías repetir eso?». Другие варианты выражают иной факт или намерение."
+        }
+      ]
+    },
+    {
+      "day": 4,
+      "title": "Различить происхождение и место проживания.",
+      "model": "Soy de Brasil.",
+      "meaning": "Я из Бразилии.",
+      "native": [
+        {
+          "es": "Soy de Brasil.",
+          "audio": "442411",
+          "ru": "Я из Бразилии."
+        }
+      ],
+      "tasks": [
+        {
+          "id": "r4-meaning",
+          "day": 4,
+          "skill": "meaning",
+          "kind": "choice",
+          "prompt": "Какой факт дан?",
+          "context": "Soy de Brasil.",
+          "options": [
+            "Человек родом из Бразилии",
+            "Человек сейчас живёт в Бразилии",
+            "Человек завтра едет в Бразилию"
+          ],
+          "answer": 0,
+          "help": "Я из Бразилии.",
+          "explanation": "Человек родом из Бразилии"
+        },
+        {
+          "id": "r4-recall",
+          "day": 4,
+          "skill": "recall",
+          "kind": "text",
+          "prompt": "Восстанови точно подготовленную модель по смыслу: Я из Бразилии.",
+          "accepted": [
+            "Soy de Brasil."
+          ],
+          "help": "Soy de Brasil.",
+          "explanation": "Проверяем эту модель с теми же фактами. Другие грамматически верные ответы возможны, но этим ключом не оцениваются."
+        },
+        {
+          "id": "r4-transfer",
+          "day": 4,
+          "skill": "context",
+          "kind": "choice",
+          "prompt": "По роли ты родом из Бразилии, а живёшь в Москве. Собеседник спрашивает именно о происхождении.",
+          "options": [
+            "Vivo en Moscú.",
+            "Soy de Brasil.",
+            "Me gusta viajar."
+          ],
+          "answer": 1,
+          "help": "Soy de Brasil.",
+          "explanation": "Для заданной роли и цели подходит «Soy de Brasil.». Другие варианты выражают иной факт или намерение."
+        }
+      ]
+    },
+    {
+      "day": 5,
+      "title": "Рассказать о своём занятии и спросить о чужом.",
+      "model": "Trabajo aquí.",
+      "meaning": "Я работаю здесь.",
+      "native": [
+        {
+          "es": "Trabajo aquí.",
+          "audio": "438291",
+          "ru": "Я работаю здесь."
+        }
+      ],
+      "tasks": [
+        {
+          "id": "r5-meaning",
+          "day": 5,
+          "skill": "meaning",
+          "kind": "choice",
+          "prompt": "Что сообщает говорящий?",
+          "context": "Trabajo aquí.",
+          "options": [
+            "Он учится здесь",
+            "Его работа находится здесь",
+            "Он живёт здесь"
+          ],
+          "answer": 1,
+          "help": "Я работаю здесь.",
+          "explanation": "Его работа находится здесь"
+        },
+        {
+          "id": "r5-recall",
+          "day": 5,
+          "skill": "recall",
+          "kind": "text",
+          "prompt": "Восстанови точно подготовленную модель по смыслу: Я работаю здесь.",
+          "accepted": [
+            "Trabajo aquí."
+          ],
+          "help": "Trabajo aquí.",
+          "explanation": "Проверяем эту модель с теми же фактами. Другие грамматически верные ответы возможны, но этим ключом не оцениваются."
+        },
+        {
+          "id": "r5-transfer",
+          "day": 5,
+          "skill": "context",
+          "kind": "choice",
+          "prompt": "Тебя встречают в офисе и спрашивают, что ты здесь делаешь. По условию ты здесь работаешь.",
+          "options": [
+            "Estudio inglés.",
+            "Vivo en Roma.",
+            "Trabajo aquí."
+          ],
+          "answer": 2,
+          "help": "Trabajo aquí.",
+          "explanation": "Для заданной роли и цели подходит «Trabajo aquí.». Другие варианты выражают иной факт или намерение."
+        }
+      ]
+    },
+    {
+      "day": 6,
+      "title": "Сообщить, какие языки знаешь, и обозначить свой начальный уровень.",
+      "model": "Hablo un poco de español.",
+      "meaning": "Я немного говорю по-испански.",
+      "native": [
+        {
+          "es": "Hablo un poco de español.",
+          "audio": "639147",
+          "ru": "Я немного говорю по-испански."
+        }
+      ],
+      "tasks": [
+        {
+          "id": "r6-meaning",
+          "day": 6,
+          "skill": "meaning",
+          "kind": "choice",
+          "prompt": "Как человек описывает знание языка?",
+          "context": "Hablo un poco de español.",
+          "options": [
+            "Совсем не говорит по-испански",
+            "Сообщает, что изучает английский",
+            "Знает немного испанского"
+          ],
+          "answer": 2,
+          "help": "Я немного говорю по-испански.",
+          "explanation": "Знает немного испанского"
+        },
+        {
+          "id": "r6-recall",
+          "day": 6,
+          "skill": "recall",
+          "kind": "text",
+          "prompt": "Восстанови точно подготовленную модель по смыслу: Я немного говорю по-испански.",
+          "accepted": [
+            "Hablo un poco de español."
+          ],
+          "help": "Hablo un poco de español.",
+          "explanation": "Проверяем эту модель с теми же фактами. Другие грамматически верные ответы возможны, но этим ключом не оцениваются."
+        },
+        {
+          "id": "r6-transfer",
+          "day": 6,
+          "skill": "context",
+          "kind": "choice",
+          "prompt": "Тебя спросили, говоришь ли ты по-испански. По роли ты знаешь немного языка, без заявления о свободном владении.",
+          "options": [
+            "Hablo un poco de español.",
+            "No hablo español.",
+            "Estudio inglés."
+          ],
+          "answer": 0,
+          "help": "Hablo un poco de español.",
+          "explanation": "Для заданной роли и цели подходит «Hablo un poco de español.». Другие варианты выражают иной факт или намерение."
+        }
+      ]
+    },
+    {
+      "day": 7,
+      "title": "Соединить знакомство, личные данные и просьбы о помощи.",
+      "model": "Me llamo Andrea. Vivo en Moscú. Hablo un poco de español.",
+      "meaning": "Меня зовут Андреа. Я живу в Москве. Я немного говорю по-испански.",
+      "native": [
+        {
+          "es": "Me llamo Andrea.",
+          "audio": "788477",
+          "ru": "Меня зовут Андреа."
+        },
+        {
+          "es": "Vivo en Moscú.",
+          "audio": "702971",
+          "ru": "Я живу в Москве."
+        },
+        {
+          "es": "Hablo un poco de español.",
+          "audio": "639147",
+          "ru": "Я немного говорю по-испански."
+        }
+      ],
+      "tasks": [
+        {
+          "id": "r7-meaning",
+          "day": 7,
+          "skill": "meaning",
+          "kind": "choice",
+          "prompt": "Что мы узнали об Андреа?",
+          "context": "Me llamo Andrea. Vivo en Moscú. Hablo un poco de español.",
+          "options": [
+            "Имя, город проживания и знание языка",
+            "Имя, страну происхождения и профессию",
+            "Имя, профессию и планы на завтра"
+          ],
+          "answer": 0,
+          "help": "Меня зовут Андреа. Я живу в Москве. Я немного говорю по-испански.",
+          "explanation": "Имя, город проживания и знание языка"
+        },
+        {
+          "id": "r7-recall",
+          "day": 7,
+          "skill": "recall",
+          "kind": "text",
+          "prompt": "Восстанови точно подготовленную модель по смыслу: Меня зовут Андреа. Я живу в Москве. Я немного говорю по-испански.",
+          "accepted": [
+            "Me llamo Andrea. Vivo en Moscú. Hablo un poco de español."
+          ],
+          "help": "Me llamo Andrea. Vivo en Moscú. Hablo un poco de español.",
+          "explanation": "Проверяем эту модель с теми же фактами. Другие грамматически верные ответы возможны, но этим ключом не оцениваются."
+        },
+        {
+          "id": "r7-transfer",
+          "day": 7,
+          "skill": "context",
+          "kind": "choice",
+          "prompt": "Ты уже представился, но имя собеседника ещё не знаешь. Как дать ему следующий ход в знакомстве?",
+          "options": [
+            "¿Te gusta la música?",
+            "¿Cómo te llamas?",
+            "¿Podrías repetir eso?"
+          ],
+          "answer": 1,
+          "help": "¿Cómo te llamas?",
+          "explanation": "Для заданной роли и цели подходит «¿Cómo te llamas?». Другие варианты выражают иной факт или намерение."
+        }
+      ]
+    },
+    {
+      "day": 8,
+      "title": "Назвать интерес и спросить о предпочтении собеседника.",
+      "model": "Me gusta viajar.",
+      "meaning": "Мне нравится путешествовать.",
+      "native": [
+        {
+          "es": "Me gusta viajar.",
+          "audio": "442545",
+          "ru": "Мне нравится путешествовать."
+        }
+      ],
+      "tasks": [
+        {
+          "id": "r8-meaning",
+          "day": 8,
+          "skill": "meaning",
+          "kind": "choice",
+          "prompt": "Это реплика о чём?",
+          "context": "Me gusta viajar.",
+          "options": [
+            "О плане работать",
+            "Об интересе к путешествиям",
+            "О просьбе о кофе"
+          ],
+          "answer": 1,
+          "help": "Мне нравится путешествовать.",
+          "explanation": "Об интересе к путешествиям"
+        },
+        {
+          "id": "r8-recall",
+          "day": 8,
+          "skill": "recall",
+          "kind": "text",
+          "prompt": "Восстанови точно подготовленную модель по смыслу: Мне нравится путешествовать.",
+          "accepted": [
+            "Me gusta viajar."
+          ],
+          "help": "Me gusta viajar.",
+          "explanation": "Проверяем эту модель с теми же фактами. Другие грамматически верные ответы возможны, но этим ключом не оцениваются."
+        },
+        {
+          "id": "r8-transfer",
+          "day": 8,
+          "skill": "context",
+          "kind": "choice",
+          "prompt": "Обсуждаете любимые занятия. По роли ты любишь путешествовать; поездка пока не запланирована.",
+          "options": [
+            "Voy a trabajar.",
+            "Quiero un café.",
+            "Me gusta viajar."
+          ],
+          "answer": 2,
+          "help": "Me gusta viajar.",
+          "explanation": "Для заданной роли и цели подходит «Me gusta viajar.». Другие варианты выражают иной факт или намерение."
+        }
+      ]
+    },
+    {
+      "day": 9,
+      "title": "Дать чуть более конкретный ответ о любимом.",
+      "model": "Es su película favorita.",
+      "meaning": "Это его / её любимый фильм.",
+      "native": [
+        {
+          "es": "Es su película favorita.",
+          "audio": "857926",
+          "ru": "Это его / её любимый фильм."
+        }
+      ],
+      "tasks": [
+        {
+          "id": "r9-meaning",
+          "day": 9,
+          "skill": "meaning",
+          "kind": "choice",
+          "prompt": "Чья любимая вещь здесь описана?",
+          "context": "Es su película favorita.",
+          "options": [
+            "Любимый фильм самого говорящего",
+            "Любимая музыка собеседника",
+            "Фильм другого человека"
+          ],
+          "answer": 2,
+          "help": "Это его / её любимый фильм.",
+          "explanation": "Фильм другого человека"
+        },
+        {
+          "id": "r9-recall",
+          "day": 9,
+          "skill": "recall",
+          "kind": "text",
+          "prompt": "Восстанови точно подготовленную модель по смыслу: Это его / её любимый фильм.",
+          "accepted": [
+            "Es su película favorita."
+          ],
+          "help": "Es su película favorita.",
+          "explanation": "Проверяем эту модель с теми же фактами. Другие грамматически верные ответы возможны, но этим ключом не оцениваются."
+        },
+        {
+          "id": "r9-transfer",
+          "day": 9,
+          "skill": "context",
+          "kind": "choice",
+          "prompt": "Ты показываешь фильм, который любит твой друг. Нужно сообщить именно о его любимом фильме.",
+          "options": [
+            "Es su película favorita.",
+            "Me gusta la música clásica.",
+            "Prefiero leer."
+          ],
+          "answer": 0,
+          "help": "Es su película favorita.",
+          "explanation": "Для заданной роли и цели подходит «Es su película favorita.». Другие варианты выражают иной факт или намерение."
+        }
+      ]
+    },
+    {
+      "day": 10,
+      "title": "Выбрать между двумя знакомыми вариантами и назвать простую причину.",
+      "model": "Prefiero leer.",
+      "meaning": "Я предпочитаю читать.",
+      "native": [
+        {
+          "es": "Prefiero leer.",
+          "audio": "441748",
+          "ru": "Я предпочитаю читать."
+        }
+      ],
+      "tasks": [
+        {
+          "id": "r10-meaning",
+          "day": 10,
+          "skill": "meaning",
+          "kind": "choice",
+          "prompt": "Что выразил человек?",
+          "context": "Prefiero leer.",
+          "options": [
+            "Выбор чтения как предпочтения",
+            "План учить французский",
+            "Недавнее занятие учёбой"
+          ],
+          "answer": 0,
+          "help": "Я предпочитаю читать.",
+          "explanation": "Выбор чтения как предпочтения"
+        },
+        {
+          "id": "r10-recall",
+          "day": 10,
+          "skill": "recall",
+          "kind": "text",
+          "prompt": "Восстанови точно подготовленную модель по смыслу: Я предпочитаю читать.",
+          "accepted": [
+            "Prefiero leer."
+          ],
+          "help": "Prefiero leer.",
+          "explanation": "Проверяем эту модель с теми же фактами. Другие грамматически верные ответы возможны, но этим ключом не оцениваются."
+        },
+        {
+          "id": "r10-transfer",
+          "day": 10,
+          "skill": "context",
+          "kind": "choice",
+          "prompt": "Предлагают посмотреть телевизор или почитать. По роли тебе больше подходит чтение; сообщи предпочтение.",
+          "options": [
+            "Voy a estudiar francés.",
+            "Prefiero leer.",
+            "Estudié."
+          ],
+          "answer": 1,
+          "help": "Prefiero leer.",
+          "explanation": "Для заданной роли и цели подходит «Prefiero leer.». Другие варианты выражают иной факт или намерение."
+        }
+      ]
+    },
+    {
+      "day": 11,
+      "title": "Назвать два привычных занятия в течение дня.",
+      "model": "Normalmente voy a pie.",
+      "meaning": "Обычно я хожу пешком.",
+      "native": [
+        {
+          "es": "Normalmente voy a pie.",
+          "audio": "525027",
+          "ru": "Обычно я хожу пешком."
+        }
+      ],
+      "tasks": [
+        {
+          "id": "r11-meaning",
+          "day": 11,
+          "skill": "meaning",
+          "kind": "choice",
+          "prompt": "Что сообщает normalmente?",
+          "context": "Normalmente voy a pie.",
+          "options": [
+            "Одну поездку вчера",
+            "Обычный способ передвижения",
+            "Приглашение прийти в два"
+          ],
+          "answer": 1,
+          "help": "Обычно я хожу пешком.",
+          "explanation": "Обычный способ передвижения"
+        },
+        {
+          "id": "r11-recall",
+          "day": 11,
+          "skill": "recall",
+          "kind": "text",
+          "prompt": "Восстанови точно подготовленную модель по смыслу: Обычно я хожу пешком.",
+          "accepted": [
+            "Normalmente voy a pie."
+          ],
+          "help": "Normalmente voy a pie.",
+          "explanation": "Проверяем эту модель с теми же фактами. Другие грамматически верные ответы возможны, но этим ключом не оцениваются."
+        },
+        {
+          "id": "r11-transfer",
+          "day": 11,
+          "skill": "context",
+          "kind": "choice",
+          "prompt": "Разговор о дороге на учёбу. По роли ты обычно ходишь пешком, а не назначаешь встречу.",
+          "options": [
+            "Ven a las dos.",
+            "Anoche estudié.",
+            "Normalmente voy a pie."
+          ],
+          "answer": 2,
+          "help": "Normalmente voy a pie.",
+          "explanation": "Для заданной роли и цели подходит «Normalmente voy a pie.». Другие варианты выражают иной факт или намерение."
+        }
+      ]
+    },
+    {
+      "day": 12,
+      "title": "Узнать и сообщить одно из двух знакомых времён.",
+      "model": "Son las dos.",
+      "meaning": "Сейчас два часа.",
+      "native": [
+        {
+          "es": "Son las dos.",
+          "audio": "1062376",
+          "ru": "Сейчас два часа."
+        }
+      ],
+      "tasks": [
+        {
+          "id": "r12-meaning",
+          "day": 12,
+          "skill": "meaning",
+          "kind": "choice",
+          "prompt": "Что выражает эта реплика?",
+          "context": "Son las dos.",
+          "options": [
+            "Во сколько нужно прийти",
+            "Просьбу назвать час",
+            "Который сейчас час"
+          ],
+          "answer": 2,
+          "help": "Сейчас два часа.",
+          "explanation": "Который сейчас час"
+        },
+        {
+          "id": "r12-recall",
+          "day": 12,
+          "skill": "recall",
+          "kind": "text",
+          "prompt": "Восстанови точно подготовленную модель по смыслу: Сейчас два часа.",
+          "accepted": [
+            "Son las dos."
+          ],
+          "help": "Son las dos.",
+          "explanation": "Проверяем эту модель с теми же фактами. Другие грамматически верные ответы возможны, но этим ключом не оцениваются."
+        },
+        {
+          "id": "r12-transfer",
+          "day": 12,
+          "skill": "context",
+          "kind": "choice",
+          "prompt": "Тебя спросили, который сейчас час. По условию на часах два. Ответь о времени, без приглашения.",
+          "options": [
+            "Son las dos.",
+            "Ven a las dos.",
+            "¿A qué hora?"
+          ],
+          "answer": 0,
+          "help": "Son las dos.",
+          "explanation": "Для заданной роли и цели подходит «Son las dos.». Другие варианты выражают иной факт или намерение."
+        }
+      ]
+    },
+    {
+      "day": 13,
+      "title": "Рассказать о привычном досуге и спросить о чужом.",
+      "model": "Sí, a veces.",
+      "meaning": "Да, иногда.",
+      "native": [
+        {
+          "es": "Sí, a veces.",
+          "audio": "707610",
+          "ru": "Да, иногда."
+        }
+      ],
+      "tasks": [
+        {
+          "id": "r13-meaning",
+          "day": 13,
+          "skill": "meaning",
+          "kind": "choice",
+          "prompt": "Какова частота занятия?",
+          "context": "Sí, a veces.",
+          "options": [
+            "Иногда",
+            "Всегда",
+            "Никогда"
+          ],
+          "answer": 0,
+          "help": "Да, иногда.",
+          "explanation": "Иногда"
+        },
+        {
+          "id": "r13-recall",
+          "day": 13,
+          "skill": "recall",
+          "kind": "text",
+          "prompt": "Восстанови точно подготовленную модель по смыслу: Да, иногда.",
+          "accepted": [
+            "Sí, a veces."
+          ],
+          "help": "Sí, a veces.",
+          "explanation": "Проверяем эту модель с теми же фактами. Другие грамматически верные ответы возможны, но этим ключом не оцениваются."
+        },
+        {
+          "id": "r13-transfer",
+          "day": 13,
+          "skill": "context",
+          "kind": "choice",
+          "prompt": "Собеседник спрашивает, слушаешь ли ты музыку. По роли это бывает иногда: дай короткий ответ о частоте.",
+          "options": [
+            "No puedo.",
+            "Sí, a veces.",
+            "Voy a trabajar."
+          ],
+          "answer": 1,
+          "help": "Sí, a veces.",
+          "explanation": "Для заданной роли и цели подходит «Sí, a veces.». Другие варианты выражают иной факт или намерение."
+        }
+      ]
+    },
+    {
+      "day": 14,
+      "title": "Соединить знакомство, интересы и обычный день.",
+      "model": "¿Te gusta la música?",
+      "meaning": "Тебе нравится музыка?",
+      "native": [
+        {
+          "es": "¿Te gusta la música?",
+          "audio": "444089",
+          "ru": "Тебе нравится музыка?"
+        }
+      ],
+      "tasks": [
+        {
+          "id": "r14-meaning",
+          "day": 14,
+          "skill": "meaning",
+          "kind": "choice",
+          "prompt": "Что хочет узнать говорящий?",
+          "context": "¿Te gusta la música?",
+          "options": [
+            "Чем занимается собеседник",
+            "Любит ли собеседник музыку",
+            "Как зовут собеседника"
+          ],
+          "answer": 1,
+          "help": "Тебе нравится музыка?",
+          "explanation": "Любит ли собеседник музыку"
+        },
+        {
+          "id": "r14-recall",
+          "day": 14,
+          "skill": "recall",
+          "kind": "text",
+          "prompt": "Восстанови точно подготовленную модель по смыслу: Тебе нравится музыка?",
+          "accepted": [
+            "¿Te gusta la música?"
+          ],
+          "help": "¿Te gusta la música?",
+          "explanation": "Проверяем эту модель с теми же фактами. Другие грамматически верные ответы возможны, но этим ключом не оцениваются."
+        },
+        {
+          "id": "r14-transfer",
+          "day": 14,
+          "skill": "context",
+          "kind": "choice",
+          "prompt": "Ты сообщил об интересах. Теперь узнай именно о любви другого человека к музыке.",
+          "options": [
+            "¿A qué te dedicas?",
+            "¿Cómo te llamas?",
+            "¿Te gusta la música?"
+          ],
+          "answer": 2,
+          "help": "¿Te gusta la música?",
+          "explanation": "Для заданной роли и цели подходит «¿Te gusta la música?». Другие варианты выражают иной факт или намерение."
+        }
+      ]
+    },
+    {
+      "day": 15,
+      "title": "Ответить о текущем состоянии и уточнить чужое.",
+      "model": "Yo estoy cansado.",
+      "meaning": "Я устал.",
+      "native": [
+        {
+          "es": "Yo estoy cansado.",
+          "audio": "439060",
+          "ru": "Я устал."
+        }
+      ],
+      "tasks": [
+        {
+          "id": "r15-meaning",
+          "day": 15,
+          "skill": "meaning",
+          "kind": "choice",
+          "prompt": "Что описывает эта фраза?",
+          "context": "Yo estoy cansado.",
+          "options": [
+            "Характер мужчины вообще",
+            "Его вчерашнюю работу",
+            "Текущее состояние мужчины"
+          ],
+          "answer": 2,
+          "help": "Я устал.",
+          "explanation": "Текущее состояние мужчины"
+        },
+        {
+          "id": "r15-recall",
+          "day": 15,
+          "skill": "recall",
+          "kind": "text",
+          "prompt": "Восстанови точно подготовленную модель по смыслу: Я устал.",
+          "accepted": [
+            "Yo estoy cansado.",
+            "Yo estoy cansada."
+          ],
+          "help": "Yo estoy cansado.",
+          "explanation": "Проверяем эту модель с теми же фактами. Другие грамматически верные ответы возможны, но этим ключом не оцениваются."
+        },
+        {
+          "id": "r15-transfer",
+          "day": 15,
+          "skill": "context",
+          "kind": "choice",
+          "prompt": "Роль мужчины: после трудного дня ты устал. Опиши состояние сейчас; не рассказывай пока о прошлой работе.",
+          "options": [
+            "Yo estoy cansado.",
+            "Trabajé mucho.",
+            "Estoy contento."
+          ],
+          "answer": 0,
+          "help": "Yo estoy cansado.",
+          "explanation": "Для заданной роли и цели подходит «Yo estoy cansado.». Другие варианты выражают иной факт или намерение."
+        }
+      ]
+    },
+    {
+      "day": 16,
+      "title": "Показать, что услышал собеседника, и продолжить тему.",
+      "model": "Es una buena idea.",
+      "meaning": "Это хорошая идея.",
+      "native": [
+        {
+          "es": "Es una buena idea.",
+          "audio": "442647",
+          "ru": "Это хорошая идея."
+        }
+      ],
+      "tasks": [
+        {
+          "id": "r16-meaning",
+          "day": 16,
+          "skill": "meaning",
+          "kind": "choice",
+          "prompt": "Как говорящий оценивает предложение?",
+          "context": "Es una buena idea.",
+          "options": [
+            "Положительно",
+            "Отказывает в участии",
+            "Извиняется за ошибку"
+          ],
+          "answer": 0,
+          "help": "Это хорошая идея.",
+          "explanation": "Положительно"
+        },
+        {
+          "id": "r16-recall",
+          "day": 16,
+          "skill": "recall",
+          "kind": "text",
+          "prompt": "Восстанови точно подготовленную модель по смыслу: Это хорошая идея.",
+          "accepted": [
+            "Es una buena idea."
+          ],
+          "help": "Es una buena idea.",
+          "explanation": "Проверяем эту модель с теми же фактами. Другие грамматически верные ответы возможны, но этим ключом не оцениваются."
+        },
+        {
+          "id": "r16-transfer",
+          "day": 16,
+          "skill": "context",
+          "kind": "choice",
+          "prompt": "Предлагают вместе устроить маленькую встречу. По роли тебе нравится сама идея: оцени её, не обещая присутствие.",
+          "options": [
+            "No puedo.",
+            "Es una buena idea.",
+            "Lo siento."
+          ],
+          "answer": 1,
+          "help": "Es una buena idea.",
+          "explanation": "Для заданной роли и цели подходит «Es una buena idea.». Другие варианты выражают иной факт или намерение."
+        }
+      ]
+    },
+    {
+      "day": 17,
+      "title": "Выразить совпадение или отличие предпочтений.",
+      "model": "Yo también voy.",
+      "meaning": "Я тоже иду.",
+      "native": [
+        {
+          "es": "Yo también voy.",
+          "audio": "505501",
+          "ru": "Я тоже иду."
+        }
+      ],
+      "tasks": [
+        {
+          "id": "r17-meaning",
+          "day": 17,
+          "skill": "meaning",
+          "kind": "choice",
+          "prompt": "Что добавляет говорящий?",
+          "context": "Yo también voy.",
+          "options": [
+            "Он не может пойти",
+            "Он тоже собирается идти",
+            "Он предлагает кофе"
+          ],
+          "answer": 1,
+          "help": "Я тоже иду.",
+          "explanation": "Он тоже собирается идти"
+        },
+        {
+          "id": "r17-recall",
+          "day": 17,
+          "skill": "recall",
+          "kind": "text",
+          "prompt": "Восстанови точно подготовленную модель по смыслу: Я тоже иду.",
+          "accepted": [
+            "Yo también voy."
+          ],
+          "help": "Yo también voy.",
+          "explanation": "Проверяем эту модель с теми же фактами. Другие грамматически верные ответы возможны, но этим ключом не оцениваются."
+        },
+        {
+          "id": "r17-transfer",
+          "day": 17,
+          "skill": "context",
+          "kind": "choice",
+          "prompt": "Собеседник сказал, что идёт на встречу. По роли ты тоже идёшь. Выбери совпадение действия, а не отказ.",
+          "options": [
+            "No puedo.",
+            "¿Quieres un café?",
+            "Yo también voy."
+          ],
+          "answer": 2,
+          "help": "Yo también voy.",
+          "explanation": "Для заданной роли и цели подходит «Yo también voy.». Другие варианты выражают иной факт или намерение."
+        }
+      ]
+    },
+    {
+      "day": 18,
+      "title": "Предложить простое совместное занятие и понять ответ.",
+      "model": "¿Quieres un café?",
+      "meaning": "Хочешь кофе?",
+      "native": [
+        {
+          "es": "¿Quieres un café?",
+          "audio": "513201",
+          "ru": "Хочешь кофе?"
+        }
+      ],
+      "tasks": [
+        {
+          "id": "r18-meaning",
+          "day": 18,
+          "skill": "meaning",
+          "kind": "choice",
+          "prompt": "Кто здесь выбирает напиток?",
+          "context": "¿Quieres un café?",
+          "options": [
+            "Говорящий, который заказывает себе кофе",
+            "Человек, которого спрашивают о времени",
+            "Собеседник, которому предлагают кофе"
+          ],
+          "answer": 2,
+          "help": "Хочешь кофе?",
+          "explanation": "Собеседник, которому предлагают кофе"
+        },
+        {
+          "id": "r18-recall",
+          "day": 18,
+          "skill": "recall",
+          "kind": "text",
+          "prompt": "Восстанови точно подготовленную модель по смыслу: Хочешь кофе?",
+          "accepted": [
+            "¿Quieres un café?"
+          ],
+          "help": "¿Quieres un café?",
+          "explanation": "Проверяем эту модель с теми же фактами. Другие грамматически верные ответы возможны, но этим ключом не оцениваются."
+        },
+        {
+          "id": "r18-transfer",
+          "day": 18,
+          "skill": "context",
+          "kind": "choice",
+          "prompt": "Ты принимаешь гостя. Предложи ему кофе: вопрос о его желании, а не сообщение о своём.",
+          "options": [
+            "¿Quieres un café?",
+            "Quiero un café.",
+            "¿A qué hora?"
+          ],
+          "answer": 0,
+          "help": "¿Quieres un café?",
+          "explanation": "Для заданной роли и цели подходит «¿Quieres un café?». Другие варианты выражают иной факт или намерение."
+        }
+      ]
+    },
+    {
+      "day": 19,
+      "title": "Уточнить день и время после приглашения.",
+      "model": "De acuerdo.",
+      "meaning": "Договорились.",
+      "native": [
+        {
+          "es": "De acuerdo.",
+          "audio": "437723",
+          "ru": "Договорились."
+        }
+      ],
+      "tasks": [
+        {
+          "id": "r19-meaning",
+          "day": 19,
+          "skill": "meaning",
+          "kind": "choice",
+          "prompt": "Что означает ответ?",
+          "context": "De acuerdo.",
+          "options": [
+            "Согласие с договорённостью",
+            "Вопрос о времени",
+            "Сообщение, что времени нет"
+          ],
+          "answer": 0,
+          "help": "Договорились.",
+          "explanation": "Согласие с договорённостью"
+        },
+        {
+          "id": "r19-recall",
+          "day": 19,
+          "skill": "recall",
+          "kind": "text",
+          "prompt": "Восстанови точно подготовленную модель по смыслу: Договорились.",
+          "accepted": [
+            "De acuerdo."
+          ],
+          "help": "De acuerdo.",
+          "explanation": "Проверяем эту модель с теми же фактами. Другие грамматически верные ответы возможны, но этим ключом не оцениваются."
+        },
+        {
+          "id": "r19-transfer",
+          "day": 19,
+          "skill": "context",
+          "kind": "choice",
+          "prompt": "Собеседник подтвердил удобное время встречи. По роли ты согласен с окончательным планом.",
+          "options": [
+            "¿A qué hora?",
+            "De acuerdo.",
+            "No puedo."
+          ],
+          "answer": 1,
+          "help": "De acuerdo.",
+          "explanation": "Для заданной роли и цели подходит «De acuerdo.». Другие варианты выражают иной факт или намерение."
+        }
+      ]
+    },
+    {
+      "day": 20,
+      "title": "Рассказать о ближайшем намерении с известным действием.",
+      "model": "Voy a estudiar francés.",
+      "meaning": "Я собираюсь изучать французский.",
+      "native": [
+        {
+          "es": "Voy a estudiar francés.",
+          "audio": "515968",
+          "ru": "Я собираюсь изучать французский."
+        }
+      ],
+      "tasks": [
+        {
+          "id": "r20-meaning",
+          "day": 20,
+          "skill": "meaning",
+          "kind": "choice",
+          "prompt": "Какой это факт?",
+          "context": "Voy a estudiar francés.",
+          "options": [
+            "Уже прошедшая учёба",
+            "Намерение изучать французский",
+            "Умение говорить по-испански"
+          ],
+          "answer": 1,
+          "help": "Я собираюсь изучать французский.",
+          "explanation": "Намерение изучать французский"
+        },
+        {
+          "id": "r20-recall",
+          "day": 20,
+          "skill": "recall",
+          "kind": "text",
+          "prompt": "Восстанови точно подготовленную модель по смыслу: Я собираюсь изучать французский.",
+          "accepted": [
+            "Voy a estudiar francés."
+          ],
+          "help": "Voy a estudiar francés.",
+          "explanation": "Проверяем эту модель с теми же фактами. Другие грамматически верные ответы возможны, но этим ключом не оцениваются."
+        },
+        {
+          "id": "r20-transfer",
+          "day": 20,
+          "skill": "context",
+          "kind": "choice",
+          "prompt": "Собеседник спрашивает о ближайшем намерении. По роли ты собираешься учить французский, а не рассказываешь о вчера.",
+          "options": [
+            "Anoche estudié.",
+            "Hablo español.",
+            "Voy a estudiar francés."
+          ],
+          "answer": 2,
+          "help": "Voy a estudiar francés.",
+          "explanation": "Для заданной роли и цели подходит «Voy a estudiar francés.». Другие варианты выражают иной факт или намерение."
+        }
+      ]
+    },
+    {
+      "day": 21,
+      "title": "Соединить приглашение, планы и уточнение времени.",
+      "model": "Ven a las dos.",
+      "meaning": "Приходи в два.",
+      "native": [
+        {
+          "es": "Ven a las dos.",
+          "audio": "609857",
+          "ru": "Приходи в два."
+        }
+      ],
+      "tasks": [
+        {
+          "id": "r21-meaning",
+          "day": 21,
+          "skill": "meaning",
+          "kind": "choice",
+          "prompt": "Что предлагает говорящий?",
+          "context": "Ven a las dos.",
+          "options": [
+            "Сообщает, что сейчас два",
+            "Спрашивает, во сколько встретиться",
+            "Прийти в два часа"
+          ],
+          "answer": 2,
+          "help": "Приходи в два.",
+          "explanation": "Прийти в два часа"
+        },
+        {
+          "id": "r21-recall",
+          "day": 21,
+          "skill": "recall",
+          "kind": "text",
+          "prompt": "Восстанови точно подготовленную модель по смыслу: Приходи в два.",
+          "accepted": [
+            "Ven a las dos."
+          ],
+          "help": "Ven a las dos.",
+          "explanation": "Проверяем эту модель с теми же фактами. Другие грамматически верные ответы возможны, но этим ключом не оцениваются."
+        },
+        {
+          "id": "r21-transfer",
+          "day": 21,
+          "skill": "context",
+          "kind": "choice",
+          "prompt": "Место встречи уже известно. Нужно пригласить знакомого прийти в два часа, а не назвать текущее время.",
+          "options": [
+            "Ven a las dos.",
+            "Son las dos.",
+            "¿A qué hora?"
+          ],
+          "answer": 0,
+          "help": "Ven a las dos.",
+          "explanation": "Для заданной роли и цели подходит «Ven a las dos.». Другие варианты выражают иной факт или намерение."
+        }
+      ]
+    },
+    {
+      "day": 22,
+      "title": "Сказать один факт о вчерашнем дне, если база недели 3 устойчива.",
+      "model": "Anoche estudié.",
+      "meaning": "Вчера вечером я учился / училась.",
+      "native": [
+        {
+          "es": "Anoche estudié.",
+          "audio": "502948",
+          "ru": "Вчера вечером я учился / училась."
+        }
+      ],
+      "tasks": [
+        {
+          "id": "r22-meaning",
+          "day": 22,
+          "skill": "meaning",
+          "kind": "choice",
+          "prompt": "Когда человек занимался?",
+          "context": "Anoche estudié.",
+          "options": [
+            "Вчера вечером",
+            "Обычно по утрам",
+            "Завтра"
+          ],
+          "answer": 0,
+          "help": "Вчера вечером я учился / училась.",
+          "explanation": "Вчера вечером"
+        },
+        {
+          "id": "r22-recall",
+          "day": 22,
+          "skill": "recall",
+          "kind": "text",
+          "prompt": "Восстанови точно подготовленную модель по смыслу: Вчера вечером я учился / училась.",
+          "accepted": [
+            "Anoche estudié."
+          ],
+          "help": "Anoche estudié.",
+          "explanation": "Проверяем эту модель с теми же фактами. Другие грамматически верные ответы возможны, но этим ключом не оцениваются."
+        },
+        {
+          "id": "r22-transfer",
+          "day": 22,
+          "skill": "context",
+          "kind": "choice",
+          "prompt": "По роли вчера вечером ты занимался. Собеседник спрашивает, как прошёл вечер. Сообщи завершённый факт.",
+          "options": [
+            "Voy a estudiar francés.",
+            "Anoche estudié.",
+            "Normalmente desayuno aquí."
+          ],
+          "answer": 1,
+          "help": "Anoche estudié.",
+          "explanation": "Для заданной роли и цели подходит «Anoche estudié.». Другие варианты выражают иной факт или намерение."
+        }
+      ]
+    },
+    {
+      "day": 23,
+      "title": "Связать три временные точки без нового большого словаря.",
+      "model": "Hoy no trabajo.",
+      "meaning": "Сегодня я не работаю.",
+      "native": [
+        {
+          "es": "Hoy no trabajo.",
+          "audio": "455085",
+          "ru": "Сегодня я не работаю."
+        }
+      ],
+      "tasks": [
+        {
+          "id": "r23-meaning",
+          "day": 23,
+          "skill": "meaning",
+          "kind": "choice",
+          "prompt": "К какому времени относится сообщение?",
+          "context": "Hoy no trabajo.",
+          "options": [
+            "К вчерашнему вечеру",
+            "К сегодняшнему дню",
+            "К будущему рабочему плану"
+          ],
+          "answer": 1,
+          "help": "Сегодня я не работаю.",
+          "explanation": "К сегодняшнему дню"
+        },
+        {
+          "id": "r23-recall",
+          "day": 23,
+          "skill": "recall",
+          "kind": "text",
+          "prompt": "Восстанови точно подготовленную модель по смыслу: Сегодня я не работаю.",
+          "accepted": [
+            "Hoy no trabajo."
+          ],
+          "help": "Hoy no trabajo.",
+          "explanation": "Проверяем эту модель с теми же фактами. Другие грамматически верные ответы возможны, но этим ключом не оцениваются."
+        },
+        {
+          "id": "r23-transfer",
+          "day": 23,
+          "skill": "context",
+          "kind": "choice",
+          "prompt": "Ты говорил о работе вчера. Теперь уточни, что именно сегодня не работаешь.",
+          "options": [
+            "Trabajé mucho.",
+            "Voy a trabajar.",
+            "Hoy no trabajo."
+          ],
+          "answer": 2,
+          "help": "Hoy no trabajo.",
+          "explanation": "Для заданной роли и цели подходит «Hoy no trabajo.». Другие варианты выражают иной факт или намерение."
+        }
+      ]
+    },
+    {
+      "day": 24,
+      "title": "Восстановить одну трудную модель и одно отличие в произношении в выбранной теме.",
+      "model": "No entiendo eso.",
+      "meaning": "Я этого не понимаю.",
+      "native": [
+        {
+          "es": "No entiendo eso.",
+          "audio": "460273",
+          "ru": "Я этого не понимаю."
+        }
+      ],
+      "tasks": [
+        {
+          "id": "r24-meaning",
+          "day": 24,
+          "skill": "meaning",
+          "kind": "choice",
+          "prompt": "Что означает реплика?",
+          "context": "No entiendo eso.",
+          "options": [
+            "Ответ на вопрос неизвестен",
+            "Собеседник говорит слишком медленно",
+            "Сказанное непонятно"
+          ],
+          "answer": 2,
+          "help": "Я этого не понимаю.",
+          "explanation": "Сказанное непонятно"
+        },
+        {
+          "id": "r24-recall",
+          "day": 24,
+          "skill": "recall",
+          "kind": "text",
+          "prompt": "Восстанови точно подготовленную модель по смыслу: Я этого не понимаю.",
+          "accepted": [
+            "No entiendo eso."
+          ],
+          "help": "No entiendo eso.",
+          "explanation": "Проверяем эту модель с теми же фактами. Другие грамматически верные ответы возможны, но этим ключом не оцениваются."
+        },
+        {
+          "id": "r24-transfer",
+          "day": 24,
+          "skill": "context",
+          "kind": "choice",
+          "prompt": "Собеседник произнёс непонятное предложение. Сначала сообщи, что не понял его, не утверждая, что не знаешь факта.",
+          "options": [
+            "No entiendo eso.",
+            "No lo sé.",
+            "Estoy bien."
+          ],
+          "answer": 0,
+          "help": "No entiendo eso.",
+          "explanation": "Для заданной роли и цели подходит «No entiendo eso.». Другие варианты выражают иной факт или намерение."
+        }
+      ]
+    },
+    {
+      "day": 25,
+      "title": "Использовать вежливые фразы в простой бытовой ситуации.",
+      "model": "Un café, por favor.",
+      "meaning": "Кофе, пожалуйста.",
+      "native": [
+        {
+          "es": "Un café, por favor.",
+          "audio": "527312",
+          "ru": "Кофе, пожалуйста."
+        }
+      ],
+      "tasks": [
+        {
+          "id": "r25-meaning",
+          "day": 25,
+          "skill": "meaning",
+          "kind": "choice",
+          "prompt": "Где естественна эта просьба?",
+          "context": "Un café, por favor.",
+          "options": [
+            "При заказе одного кофе",
+            "При предложении кофе гостю",
+            "При рассказе о нелюбви к кофе"
+          ],
+          "answer": 0,
+          "help": "Кофе, пожалуйста.",
+          "explanation": "При заказе одного кофе"
+        },
+        {
+          "id": "r25-recall",
+          "day": 25,
+          "skill": "recall",
+          "kind": "text",
+          "prompt": "Восстанови точно подготовленную модель по смыслу: Кофе, пожалуйста.",
+          "accepted": [
+            "Un café, por favor."
+          ],
+          "help": "Un café, por favor.",
+          "explanation": "Проверяем эту модель с теми же фактами. Другие грамматически верные ответы возможны, но этим ключом не оцениваются."
+        },
+        {
+          "id": "r25-transfer",
+          "day": 25,
+          "skill": "context",
+          "kind": "choice",
+          "prompt": "Ты клиент кафе. Нужно вежливо заказать один кофе, а не спросить, хочет ли кофе официант.",
+          "options": [
+            "¿Quieres un café?",
+            "Un café, por favor.",
+            "No me gusta el café."
+          ],
+          "answer": 1,
+          "help": "Un café, por favor.",
+          "explanation": "Для заданной роли и цели подходит «Un café, por favor.». Другие варианты выражают иной факт или намерение."
+        }
+      ]
+    },
+    {
+      "day": 26,
+      "title": "Понять имя, город, занятие и интерес по знакомым фразам без текста.",
+      "model": "Soy estudiante.",
+      "meaning": "Я студент / студентка.",
+      "native": [
+        {
+          "es": "Soy estudiante.",
+          "audio": "435976",
+          "ru": "Я студент / студентка."
+        }
+      ],
+      "tasks": [
+        {
+          "id": "r26-meaning",
+          "day": 26,
+          "skill": "meaning",
+          "kind": "choice",
+          "prompt": "Что мы узнали?",
+          "context": "Soy estudiante.",
+          "options": [
+            "Его страну происхождения",
+            "Занятие человека",
+            "Город проживания"
+          ],
+          "answer": 1,
+          "help": "Я студент / студентка.",
+          "explanation": "Занятие человека"
+        },
+        {
+          "id": "r26-recall",
+          "day": 26,
+          "skill": "recall",
+          "kind": "text",
+          "prompt": "Восстанови точно подготовленную модель по смыслу: Я студент / студентка.",
+          "accepted": [
+            "Soy estudiante."
+          ],
+          "help": "Soy estudiante.",
+          "explanation": "Проверяем эту модель с теми же фактами. Другие грамматически верные ответы возможны, но этим ключом не оцениваются."
+        },
+        {
+          "id": "r26-transfer",
+          "day": 26,
+          "skill": "context",
+          "kind": "choice",
+          "prompt": "По роли ты студент, родом из Бразилии, живёшь в Москве. Тебя спросили именно о занятии.",
+          "options": [
+            "Soy de Brasil.",
+            "Vivo en Moscú.",
+            "Soy estudiante."
+          ],
+          "answer": 2,
+          "help": "Soy estudiante.",
+          "explanation": "Для заданной роли и цели подходит «Soy estudiante.». Другие варианты выражают иной факт или намерение."
+        }
+      ]
+    },
+    {
+      "day": 27,
+      "title": "Начать тему, уточнить ответ и перейти к следующей.",
+      "model": "Quiero hablar contigo.",
+      "meaning": "Я хочу поговорить с тобой.",
+      "native": [
+        {
+          "es": "Quiero hablar contigo.",
+          "audio": "454079",
+          "ru": "Я хочу поговорить с тобой."
+        }
+      ],
+      "tasks": [
+        {
+          "id": "r27-meaning",
+          "day": 27,
+          "skill": "meaning",
+          "kind": "choice",
+          "prompt": "Каково намерение?",
+          "context": "Quiero hablar contigo.",
+          "options": [
+            "Завершить разговор",
+            "Попросить повторить фразу",
+            "Начать разговор с собеседником"
+          ],
+          "answer": 2,
+          "help": "Я хочу поговорить с тобой.",
+          "explanation": "Начать разговор с собеседником"
+        },
+        {
+          "id": "r27-recall",
+          "day": 27,
+          "skill": "recall",
+          "kind": "text",
+          "prompt": "Восстанови точно подготовленную модель по смыслу: Я хочу поговорить с тобой.",
+          "accepted": [
+            "Quiero hablar contigo."
+          ],
+          "help": "Quiero hablar contigo.",
+          "explanation": "Проверяем эту модель с теми же фактами. Другие грамматически верные ответы возможны, но этим ключом не оцениваются."
+        },
+        {
+          "id": "r27-transfer",
+          "day": 27,
+          "skill": "context",
+          "kind": "choice",
+          "prompt": "После приветствия ты хочешь начать важный разговор. Обозначь это намерение, не прощаясь.",
+          "options": [
+            "Quiero hablar contigo.",
+            "Hasta luego.",
+            "¿Podrías repetir eso?"
+          ],
+          "answer": 0,
+          "help": "Quiero hablar contigo.",
+          "explanation": "Для заданной роли и цели подходит «Quiero hablar contigo.». Другие варианты выражают иной факт или намерение."
+        }
+      ]
+    },
+    {
+      "day": 28,
+      "title": "Восстановить разговор при непонятном факте или уточнении.",
+      "model": "No lo sé.",
+      "meaning": "Я этого не знаю.",
+      "native": [
+        {
+          "es": "No lo sé.",
+          "audio": "438061",
+          "ru": "Я этого не знаю."
+        }
+      ],
+      "tasks": [
+        {
+          "id": "r28-meaning",
+          "day": 28,
+          "skill": "meaning",
+          "kind": "choice",
+          "prompt": "Что сообщает говорящий?",
+          "context": "No lo sé.",
+          "options": [
+            "Ответ на вопрос неизвестен",
+            "Слова собеседника непонятны",
+            "Говорящий устал"
+          ],
+          "answer": 0,
+          "help": "Я этого не знаю.",
+          "explanation": "Ответ на вопрос неизвестен"
+        },
+        {
+          "id": "r28-recall",
+          "day": 28,
+          "skill": "recall",
+          "kind": "text",
+          "prompt": "Восстанови точно подготовленную модель по смыслу: Я этого не знаю.",
+          "accepted": [
+            "No lo sé."
+          ],
+          "help": "No lo sé.",
+          "explanation": "Проверяем эту модель с теми же фактами. Другие грамматически верные ответы возможны, но этим ключом не оцениваются."
+        },
+        {
+          "id": "r28-transfer",
+          "day": 28,
+          "skill": "context",
+          "kind": "choice",
+          "prompt": "Ты понял вопрос о неизвестном тебе факте, но ответа не знаешь. Сообщи именно отсутствие знания.",
+          "options": [
+            "No entiendo eso.",
+            "No lo sé.",
+            "Yo estoy cansado."
+          ],
+          "answer": 1,
+          "help": "No lo sé.",
+          "explanation": "Для заданной роли и цели подходит «No lo sé.». Другие варианты выражают иной факт или намерение."
+        }
+      ]
+    },
+    {
+      "day": 29,
+      "title": "Проверить слабые места перед итогом и закончить беседу.",
+      "model": "Hasta luego.",
+      "meaning": "До встречи.",
+      "native": [
+        {
+          "es": "Hasta luego.",
+          "audio": "873609",
+          "ru": "До встречи."
+        }
+      ],
+      "tasks": [
+        {
+          "id": "r29-meaning",
+          "day": 29,
+          "skill": "meaning",
+          "kind": "choice",
+          "prompt": "Какой этап разговора отмечает фраза?",
+          "context": "Hasta luego.",
+          "options": [
+            "Начало знакомства",
+            "Прощание",
+            "Просьбу о напитке"
+          ],
+          "answer": 1,
+          "help": "До встречи.",
+          "explanation": "Прощание"
+        },
+        {
+          "id": "r29-recall",
+          "day": 29,
+          "skill": "recall",
+          "kind": "text",
+          "prompt": "Восстанови точно подготовленную модель по смыслу: До встречи.",
+          "accepted": [
+            "Hasta luego."
+          ],
+          "help": "Hasta luego.",
+          "explanation": "Проверяем эту модель с теми же фактами. Другие грамматически верные ответы возможны, но этим ключом не оцениваются."
+        },
+        {
+          "id": "r29-transfer",
+          "day": 29,
+          "skill": "context",
+          "kind": "choice",
+          "prompt": "Короткая беседа закончилась. По роли вы собираетесь увидеться снова, но новое знакомство уже состоялось.",
+          "options": [
+            "Mucho gusto.",
+            "Un café, por favor.",
+            "Hasta luego."
+          ],
+          "answer": 2,
+          "help": "Hasta luego.",
+          "explanation": "Для заданной роли и цели подходит «Hasta luego.». Другие варианты выражают иной факт или намерение."
+        }
+      ]
+    },
+    {
+      "day": 30,
+      "title": "Показать самостоятельные действия в новых версиях знакомых ситуаций.",
+      "model": "¿Qué vas a hacer mañana?",
+      "meaning": "Что собираешься делать завтра?",
+      "native": [
+        {
+          "es": "¿Qué vas a hacer mañana?",
+          "audio": "557687",
+          "ru": "Что собираешься делать завтра?"
+        }
+      ],
+      "tasks": [
+        {
+          "id": "r30-meaning",
+          "day": 30,
+          "skill": "meaning",
+          "kind": "choice",
+          "prompt": "О чём спрашивают?",
+          "context": "¿Qué vas a hacer mañana?",
+          "options": [
+            "О его занятии вчера вечером",
+            "О его нынешнем самочувствии",
+            "О планах собеседника на завтра"
+          ],
+          "answer": 2,
+          "help": "Что собираешься делать завтра?",
+          "explanation": "О планах собеседника на завтра"
+        },
+        {
+          "id": "r30-recall",
+          "day": 30,
+          "skill": "recall",
+          "kind": "text",
+          "prompt": "Восстанови точно подготовленную модель по смыслу: Что собираешься делать завтра?",
+          "accepted": [
+            "¿Qué vas a hacer mañana?"
+          ],
+          "help": "¿Qué vas a hacer mañana?",
+          "explanation": "Проверяем эту модель с теми же фактами. Другие грамматически верные ответы возможны, но этим ключом не оцениваются."
+        },
+        {
+          "id": "r30-transfer",
+          "day": 30,
+          "skill": "context",
+          "kind": "choice",
+          "prompt": "Ты уже рассказал о своём плане. Дай другому следующий ход: спроси о его завтрашних планах.",
+          "options": [
+            "¿Qué vas a hacer mañana?",
+            "¿A qué te dedicas?",
+            "¿Cómo te llamas?"
+          ],
+          "answer": 0,
+          "help": "¿Qué vas a hacer mañana?",
+          "explanation": "Для заданной роли и цели подходит «¿Qué vas a hacer mañana?». Другие варианты выражают иной факт или намерение."
+        }
+      ]
+    }
+  ],
+  "limits": [
+    "Самостоятельная речь и произношение автоматически не оцениваются.",
+    "Записи носителей звучат только для точных фраз, указанных возле кнопки.",
+    "Другие естественные формулировки могут быть верны: закрытый ключ принимает только подготовленную модель.",
+    "Трудные задания возвращаются после как минимум двух других заданий; после 18 попыток можно продолжить в новой короткой сессии.",
+    "На устройстве хранится история последних 20 сессий и первый ответ на каждое из 90 заданий; исправления сохраняются отдельно."
+  ],
+  "sources": [
+    "course-library.json: точные ES/RU фразы",
+    "course-expanded.json: 72 исходные записи носителя",
+    "course-goals.json: цели базовых дней"
+  ]
+}

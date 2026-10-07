@@ -81,12 +81,19 @@
         {
           "id": "reply",
           "kind": "text",
-          "prompt": "Собеседник: ¿Dónde vives? Ответь именно фактами сегодняшней модели.",
+          "prompt": "Собеседник: ¿Dónde vives? Новое условие: Живёшь далеко от станции. Ответь полной фразой, изменив факты модели.",
           "accepted": [
-            "Vivo cerca de la estación."
+            "Vivo lejos de la estación."
           ],
-          "help": "Vivo cerca de la estación.",
-          "explanation": "Подготовленный ответ для этой сцены. Другие естественные ответы здесь не оцениваются автоматически."
+          "help": "Vivo lejos de la estación.",
+          "explanation": "Я живу далеко от станции. Здесь важен новый факт из условия; исходная фраза описывает другую ситуацию. Это конечная проверка указанных моделей, а не любого возможного ответа.",
+          "context": "Опора: lejos de — далеко от",
+          "transfer": {
+            "version": 14,
+            "conditionRu": "Живёшь далеко от станции.",
+            "translationRu": "Я живу далеко от станции.",
+            "scaffold": "lejos de — далеко от"
+          }
         }
       ],
       "readingId": "a1-home",
@@ -178,12 +185,19 @@
         {
           "id": "reply",
           "kind": "text",
-          "prompt": "Собеседник: ¿Cómo es tu habitación? Ответь именно фактами сегодняшней модели.",
+          "prompt": "Собеседник: ¿Cómo es tu habitación? Новое условие: В комнате маленькое окно. Ответь полной фразой, изменив факты модели.",
           "accepted": [
-            "Mi habitación tiene una ventana grande."
+            "Mi habitación tiene una ventana pequeña."
           ],
-          "help": "Mi habitación tiene una ventana grande.",
-          "explanation": "Подготовленный ответ для этой сцены. Другие естественные ответы здесь не оцениваются автоматически."
+          "help": "Mi habitación tiene una ventana pequeña.",
+          "explanation": "В моей комнате маленькое окно. Здесь важен новый факт из условия; исходная фраза описывает другую ситуацию. Это конечная проверка указанных моделей, а не любого возможного ответа.",
+          "context": "Опора: pequeña — маленькая, согласуется с ventana",
+          "transfer": {
+            "version": 14,
+            "conditionRu": "В комнате маленькое окно.",
+            "translationRu": "В моей комнате маленькое окно.",
+            "scaffold": "pequeña — маленькая, согласуется с ventana"
+          }
         }
       ],
       "readingId": "a1-home",
@@ -275,12 +289,19 @@
         {
           "id": "reply",
           "kind": "text",
-          "prompt": "Собеседник: ¿Dónde están las llaves? Ответь именно фактами сегодняшней модели.",
+          "prompt": "Собеседник: ¿Dónde están las llaves? Новое условие: Ключи под столом. Ответь полной фразой, изменив факты модели.",
           "accepted": [
-            "Las llaves están encima de la mesa."
+            "Las llaves están debajo de la mesa."
           ],
-          "help": "Las llaves están encima de la mesa.",
-          "explanation": "Подготовленный ответ для этой сцены. Другие естественные ответы здесь не оцениваются автоматически."
+          "help": "Las llaves están debajo de la mesa.",
+          "explanation": "Ключи лежат под столом. Здесь важен новый факт из условия; исходная фраза описывает другую ситуацию. Это конечная проверка указанных моделей, а не любого возможного ответа.",
+          "context": "Опора: debajo de — под",
+          "transfer": {
+            "version": 14,
+            "conditionRu": "Ключи под столом.",
+            "translationRu": "Ключи лежат под столом.",
+            "scaffold": "debajo de — под"
+          }
         }
       ],
       "readingId": "a1-home",
@@ -372,12 +393,19 @@
         {
           "id": "reply",
           "kind": "text",
-          "prompt": "Собеседник: ¿Qué buscas? Ответь именно фактами сегодняшней модели.",
+          "prompt": "Собеседник: ¿Qué buscas? Новое условие: Не можешь найти свои ключи, а не телефон. Ответь полной фразой, изменив факты модели.",
           "accepted": [
-            "No encuentro mi teléfono."
+            "No encuentro mis llaves."
           ],
-          "help": "No encuentro mi teléfono.",
-          "explanation": "Подготовленный ответ для этой сцены. Другие естественные ответы здесь не оцениваются автоматически."
+          "help": "No encuentro mis llaves.",
+          "explanation": "Я не нахожу свои ключи. Здесь важен новый факт из условия; исходная фраза описывает другую ситуацию. Это конечная проверка указанных моделей, а не любого возможного ответа.",
+          "context": "Опора: mis llaves — мои ключи",
+          "transfer": {
+            "version": 14,
+            "conditionRu": "Не можешь найти свои ключи, а не телефон.",
+            "translationRu": "Я не нахожу свои ключи.",
+            "scaffold": "mis llaves — мои ключи"
+          }
         }
       ],
       "readingId": "a1-home",
@@ -469,12 +497,19 @@
         {
           "id": "reply",
           "kind": "text",
-          "prompt": "Собеседник: ¿Cómo son tus vecinos? Ответь именно фактами сегодняшней модели.",
+          "prompt": "Собеседник: ¿Cómo son tus vecinos? Новое условие: Соседи очень спокойные. Ответь полной фразой, изменив факты модели.",
           "accepted": [
-            "Mis vecinos son muy amables."
+            "Mis vecinos son muy tranquilos."
           ],
-          "help": "Mis vecinos son muy amables.",
-          "explanation": "Подготовленный ответ для этой сцены. Другие естественные ответы здесь не оцениваются автоматически."
+          "help": "Mis vecinos son muy tranquilos.",
+          "explanation": "Мои соседи очень спокойные. Здесь важен новый факт из условия; исходная фраза описывает другую ситуацию. Это конечная проверка указанных моделей, а не любого возможного ответа.",
+          "context": "Опора: tranquilos — спокойные, множественное число для vecinos",
+          "transfer": {
+            "version": 14,
+            "conditionRu": "Соседи очень спокойные.",
+            "translationRu": "Мои соседи очень спокойные.",
+            "scaffold": "tranquilos — спокойные, множественное число для vecinos"
+          }
         }
       ],
       "readingId": "a1-home",
@@ -566,12 +601,19 @@
         {
           "id": "reply",
           "kind": "text",
-          "prompt": "Собеседник: ¿A qué hora sale el autobús? Ответь именно фактами сегодняшней модели.",
+          "prompt": "Собеседник: ¿A qué hora sale el autobús? Новое условие: Автобус отправляется в девять. Ответь полной фразой, изменив факты модели.",
           "accepted": [
-            "El autobús sale a las ocho."
+            "El autobús sale a las nueve."
           ],
-          "help": "El autobús sale a las ocho.",
-          "explanation": "Подготовленный ответ для этой сцены. Другие естественные ответы здесь не оцениваются автоматически."
+          "help": "El autobús sale a las nueve.",
+          "explanation": "Автобус отправляется в девять. Здесь важен новый факт из условия; исходная фраза описывает другую ситуацию. Это конечная проверка указанных моделей, а не любого возможного ответа.",
+          "context": "Опора: a las nueve — в девять",
+          "transfer": {
+            "version": 14,
+            "conditionRu": "Автобус отправляется в девять.",
+            "translationRu": "Автобус отправляется в девять.",
+            "scaffold": "a las nueve — в девять"
+          }
         }
       ],
       "readingId": "a1-home",
@@ -672,12 +714,19 @@
         {
           "id": "reply",
           "kind": "text",
-          "prompt": "Собеседник: ¿Cómo vas al trabajo? Ответь именно фактами сегодняшней модели.",
+          "prompt": "Собеседник: ¿Cómo vas al mercado? Новое условие: Идёшь пешком на рынок, а не на работу. Ответь полной фразой, изменив факты модели.",
           "accepted": [
-            "Voy al trabajo a pie."
+            "Voy al mercado a pie."
           ],
-          "help": "Voy al trabajo a pie.",
-          "explanation": "Подготовленный ответ для этой сцены. Другие естественные ответы здесь не оцениваются автоматически."
+          "help": "Voy al mercado a pie.",
+          "explanation": "Я иду на рынок пешком. Здесь важен новый факт из условия; исходная фраза описывает другую ситуацию. Это конечная проверка указанных моделей, а не любого возможного ответа.",
+          "context": "Опора: el mercado — рынок; a + el = al",
+          "transfer": {
+            "version": 14,
+            "conditionRu": "Идёшь пешком на рынок, а не на работу.",
+            "translationRu": "Я иду на рынок пешком.",
+            "scaffold": "el mercado — рынок; a + el = al"
+          }
         }
       ],
       "readingId": "a1-trip",
@@ -769,12 +818,19 @@
         {
           "id": "reply",
           "kind": "text",
-          "prompt": "Собеседник: ¿Dónde está la farmacia? Ответь именно фактами сегодняшней модели.",
+          "prompt": "Собеседник: ¿Dónde está la farmacia? Новое условие: Аптека слева. Ответь полной фразой, изменив факты модели.",
           "accepted": [
-            "La farmacia está a la derecha."
+            "La farmacia está a la izquierda."
           ],
-          "help": "La farmacia está a la derecha.",
-          "explanation": "Подготовленный ответ для этой сцены. Другие естественные ответы здесь не оцениваются автоматически."
+          "help": "La farmacia está a la izquierda.",
+          "explanation": "Аптека слева. Здесь важен новый факт из условия; исходная фраза описывает другую ситуацию. Это конечная проверка указанных моделей, а не любого возможного ответа.",
+          "context": "Опора: a la izquierda — слева",
+          "transfer": {
+            "version": 14,
+            "conditionRu": "Аптека слева.",
+            "translationRu": "Аптека слева.",
+            "scaffold": "a la izquierda — слева"
+          }
         }
       ],
       "readingId": "a1-trip",
@@ -866,12 +922,19 @@
         {
           "id": "reply",
           "kind": "text",
-          "prompt": "Собеседник: ¿Cómo llego allí? Ответь именно фактами сегодняшней модели.",
+          "prompt": "Собеседник: ¿Cómo llego allí? Новое условие: Сначала переходишь улицу, затем поворачиваешь направо. Ответь полной фразой, изменив факты модели.",
           "accepted": [
-            "Primero cruzas la calle y luego giras a la izquierda."
+            "Primero cruzas la calle y luego giras a la derecha."
           ],
-          "help": "Primero cruzas la calle y luego giras a la izquierda.",
-          "explanation": "Подготовленный ответ для этой сцены. Другие естественные ответы здесь не оцениваются автоматически."
+          "help": "Primero cruzas la calle y luego giras a la derecha.",
+          "explanation": "Сначала переходишь улицу, затем поворачиваешь направо. Здесь важен новый факт из условия; исходная фраза описывает другую ситуацию. Это конечная проверка указанных моделей, а не любого возможного ответа.",
+          "context": "Опора: a la derecha — направо",
+          "transfer": {
+            "version": 14,
+            "conditionRu": "Сначала переходишь улицу, затем поворачиваешь направо.",
+            "translationRu": "Сначала переходишь улицу, затем поворачиваешь направо.",
+            "scaffold": "a la derecha — направо"
+          }
         }
       ],
       "readingId": "a1-trip",
@@ -963,12 +1026,19 @@
         {
           "id": "reply",
           "kind": "text",
-          "prompt": "Собеседник: ¿Cuánto cuesta un billete? Ответь именно фактами сегодняшней модели.",
+          "prompt": "Собеседник: ¿Cuánto cuesta un billete? Новое условие: Один билет стоит три евро. Ответь полной фразой, изменив факты модели.",
           "accepted": [
-            "Un billete cuesta dos euros."
+            "Un billete cuesta tres euros."
           ],
-          "help": "Un billete cuesta dos euros.",
-          "explanation": "Подготовленный ответ для этой сцены. Другие естественные ответы здесь не оцениваются автоматически."
+          "help": "Un billete cuesta tres euros.",
+          "explanation": "Один билет стоит три евро. Здесь важен новый факт из условия; исходная фраза описывает другую ситуацию. Это конечная проверка указанных моделей, а не любого возможного ответа.",
+          "context": "Опора: tres — три",
+          "transfer": {
+            "version": 14,
+            "conditionRu": "Один билет стоит три евро.",
+            "translationRu": "Один билет стоит три евро.",
+            "scaffold": "tres — три"
+          }
         }
       ],
       "readingId": "a1-trip",
@@ -1060,12 +1130,19 @@
         {
           "id": "reply",
           "kind": "text",
-          "prompt": "Собеседник: ¿Qué necesitas comprar? Ответь именно фактами сегодняшней модели.",
+          "prompt": "Собеседник: ¿Qué necesitas comprar? Новое условие: Нужно купить хлеб и сыр вместо молока. Ответь полной фразой, изменив факты модели.",
           "accepted": [
-            "Necesito comprar pan y leche."
+            "Necesito comprar pan y queso."
           ],
-          "help": "Necesito comprar pan y leche.",
-          "explanation": "Подготовленный ответ для этой сцены. Другие естественные ответы здесь не оцениваются автоматически."
+          "help": "Necesito comprar pan y queso.",
+          "explanation": "Мне нужно купить хлеб и сыр. Здесь важен новый факт из условия; исходная фраза описывает другую ситуацию. Это конечная проверка указанных моделей, а не любого возможного ответа.",
+          "context": "Опора: queso — сыр",
+          "transfer": {
+            "version": 14,
+            "conditionRu": "Нужно купить хлеб и сыр вместо молока.",
+            "translationRu": "Мне нужно купить хлеб и сыр.",
+            "scaffold": "queso — сыр"
+          }
         }
       ],
       "readingId": "a1-trip",
@@ -1157,12 +1234,19 @@
         {
           "id": "reply",
           "kind": "text",
-          "prompt": "Собеседник: ¿Cuántos tomates quieres? Ответь именно фактами сегодняшней модели.",
+          "prompt": "Собеседник: ¿Cuántos tomates quieres? Новое условие: Нужен один килограмм помидоров вместо половины. Ответь полной фразой, изменив факты модели.",
           "accepted": [
-            "Quiero medio kilo de tomates."
+            "Quiero un kilo de tomates."
           ],
-          "help": "Quiero medio kilo de tomates.",
-          "explanation": "Подготовленный ответ для этой сцены. Другие естественные ответы здесь не оцениваются автоматически."
+          "help": "Quiero un kilo de tomates.",
+          "explanation": "Я хочу один килограмм помидоров. Здесь важен новый факт из условия; исходная фраза описывает другую ситуацию. Это конечная проверка указанных моделей, а не любого возможного ответа.",
+          "context": "Опора: un kilo — один килограмм",
+          "transfer": {
+            "version": 14,
+            "conditionRu": "Нужен один килограмм помидоров вместо половины.",
+            "translationRu": "Я хочу один килограмм помидоров.",
+            "scaffold": "un kilo — один килограмм"
+          }
         }
       ],
       "readingId": "a1-trip",
@@ -1254,12 +1338,19 @@
         {
           "id": "reply",
           "kind": "text",
-          "prompt": "Собеседник: ¿Te queda bien esta camisa? Ответь именно фактами сегодняшней модели.",
+          "prompt": "Собеседник: ¿Te queda bien esta camisa? Новое условие: Рубашка тебе велика. Ответь полной фразой, изменив факты модели.",
           "accepted": [
-            "Esta camisa me queda pequeña."
+            "Esta camisa me queda grande."
           ],
-          "help": "Esta camisa me queda pequeña.",
-          "explanation": "Подготовленный ответ для этой сцены. Другие естественные ответы здесь не оцениваются автоматически."
+          "help": "Esta camisa me queda grande.",
+          "explanation": "Эта рубашка мне велика. Здесь важен новый факт из условия; исходная фраза описывает другую ситуацию. Это конечная проверка указанных моделей, а не любого возможного ответа.",
+          "context": "Опора: grande — большая; me queda grande — мне велика",
+          "transfer": {
+            "version": 14,
+            "conditionRu": "Рубашка тебе велика.",
+            "translationRu": "Эта рубашка мне велика.",
+            "scaffold": "grande — большая; me queda grande — мне велика"
+          }
         }
       ],
       "readingId": "a1-shop",
@@ -1351,12 +1442,19 @@
         {
           "id": "reply",
           "kind": "text",
-          "prompt": "Собеседник: ¿Qué quieres preguntar en la tienda? Ответь именно фактами сегодняшней модели.",
+          "prompt": "Собеседник: ¿Qué quieres preguntar en la tienda? Новое условие: Хочешь спросить, можно ли заплатить наличными. Ответь полной фразой, изменив факты модели.",
           "accepted": [
-            "¿Puedo pagar con tarjeta?"
+            "¿Puedo pagar en efectivo?"
           ],
-          "help": "¿Puedo pagar con tarjeta?",
-          "explanation": "Подготовленный ответ для этой сцены. Другие естественные ответы здесь не оцениваются автоматически."
+          "help": "¿Puedo pagar en efectivo?",
+          "explanation": "Можно заплатить наличными? Здесь важен новый факт из условия; исходная фраза описывает другую ситуацию. Это конечная проверка указанных моделей, а не любого возможного ответа.",
+          "context": "Опора: en efectivo — наличными",
+          "transfer": {
+            "version": 14,
+            "conditionRu": "Хочешь спросить, можно ли заплатить наличными.",
+            "translationRu": "Можно заплатить наличными?",
+            "scaffold": "en efectivo — наличными"
+          }
         }
       ],
       "readingId": "a1-shop",
@@ -1448,12 +1546,19 @@
         {
           "id": "reply",
           "kind": "text",
-          "prompt": "Собеседник: ¿En qué puedo ayudarte? Ответь именно фактами сегодняшней модели.",
+          "prompt": "Собеседник: ¿En qué puedo ayudarte? Новое условие: Хочешь обменять эту рубашку, а не куртку. Ответь полной фразой, изменив факты модели.",
           "accepted": [
-            "Quisiera cambiar esta chaqueta."
+            "Quisiera cambiar esta camisa."
           ],
-          "help": "Quisiera cambiar esta chaqueta.",
-          "explanation": "Подготовленный ответ для этой сцены. Другие естественные ответы здесь не оцениваются автоматически."
+          "help": "Quisiera cambiar esta camisa.",
+          "explanation": "Я хотел бы обменять эту рубашку. Здесь важен новый факт из условия; исходная фраза описывает другую ситуацию. Это конечная проверка указанных моделей, а не любого возможного ответа.",
+          "context": "Опора: esta camisa — эта рубашка",
+          "transfer": {
+            "version": 14,
+            "conditionRu": "Хочешь обменять эту рубашку, а не куртку.",
+            "translationRu": "Я хотел бы обменять эту рубашку.",
+            "scaffold": "esta camisa — эта рубашка"
+          }
         }
       ],
       "readingId": "a1-shop",
@@ -1545,12 +1650,19 @@
         {
           "id": "reply",
           "kind": "text",
-          "prompt": "Собеседник: ¿Cuándo desayunas? Ответь именно фактами сегодняшней модели.",
+          "prompt": "Собеседник: ¿Cuándo desayunas? Новое условие: Обычно завтракаешь после выхода, а не до него. Ответь полной фразой, изменив факты модели.",
           "accepted": [
-            "Normalmente desayuno antes de salir."
+            "Normalmente desayuno después de salir."
           ],
-          "help": "Normalmente desayuno antes de salir.",
-          "explanation": "Подготовленный ответ для этой сцены. Другие естественные ответы здесь не оцениваются автоматически."
+          "help": "Normalmente desayuno después de salir.",
+          "explanation": "Обычно я завтракаю после выхода. Здесь важен новый факт из условия; исходная фраза описывает другую ситуацию. Это конечная проверка указанных моделей, а не любого возможного ответа.",
+          "context": "Опора: después de — после",
+          "transfer": {
+            "version": 14,
+            "conditionRu": "Обычно завтракаешь после выхода, а не до него.",
+            "translationRu": "Обычно я завтракаю после выхода.",
+            "scaffold": "después de — после"
+          }
         }
       ],
       "readingId": "a1-shop",
@@ -1651,12 +1763,19 @@
         {
           "id": "reply",
           "kind": "text",
-          "prompt": "Собеседник: ¿Te levantas siempre a la misma hora? Ответь именно фактами сегодняшней модели.",
+          "prompt": "Собеседник: ¿Te levantas siempre a la misma hora? Новое условие: Обычно встаёшь в семь, но сегодня раньше. Ответь полной фразой, изменив факты модели.",
           "accepted": [
-            "Me levanto a las siete, pero hoy me levanto más tarde."
+            "Me levanto a las siete, pero hoy me levanto más temprano."
           ],
-          "help": "Me levanto a las siete, pero hoy me levanto más tarde.",
-          "explanation": "Подготовленный ответ для этой сцены. Другие естественные ответы здесь не оцениваются автоматически."
+          "help": "Me levanto a las siete, pero hoy me levanto más temprano.",
+          "explanation": "Я встаю в семь, но сегодня встаю раньше. Здесь важен новый факт из условия; исходная фраза описывает другую ситуацию. Это конечная проверка указанных моделей, а не любого возможного ответа.",
+          "context": "Опора: más temprano — раньше",
+          "transfer": {
+            "version": 14,
+            "conditionRu": "Обычно встаёшь в семь, но сегодня раньше.",
+            "translationRu": "Я встаю в семь, но сегодня встаю раньше.",
+            "scaffold": "más temprano — раньше"
+          }
         }
       ],
       "readingId": "a1-shop",
@@ -1748,12 +1867,19 @@
         {
           "id": "reply",
           "kind": "text",
-          "prompt": "Собеседник: ¿Qué haces después de comer? Ответь именно фактами сегодняшней модели.",
+          "prompt": "Собеседник: ¿Qué haces después de comer? Новое условие: Моешь посуду перед едой. Ответь полной фразой, изменив факты модели.",
           "accepted": [
-            "Después de comer, lavo los platos."
+            "Antes de comer, lavo los platos."
           ],
-          "help": "Después de comer, lavo los platos.",
-          "explanation": "Подготовленный ответ для этой сцены. Другие естественные ответы здесь не оцениваются автоматически."
+          "help": "Antes de comer, lavo los platos.",
+          "explanation": "Перед едой я мою посуду. Здесь важен новый факт из условия; исходная фраза описывает другую ситуацию. Это конечная проверка указанных моделей, а не любого возможного ответа.",
+          "context": "Опора: antes de — перед, до",
+          "transfer": {
+            "version": 14,
+            "conditionRu": "Моешь посуду перед едой.",
+            "translationRu": "Перед едой я мою посуду.",
+            "scaffold": "antes de — перед, до"
+          }
         }
       ],
       "readingId": "a1-shop",
@@ -1845,12 +1971,19 @@
         {
           "id": "reply",
           "kind": "text",
-          "prompt": "Собеседник: ¿Ves mucho la televisión? Ответь именно фактами сегодняшней модели.",
+          "prompt": "Собеседник: ¿Ves mucho la televisión? Новое условие: Телевизор смотришь иногда. Ответь полной фразой, изменив факты модели.",
           "accepted": [
-            "Casi nunca veo la televisión."
+            "A veces veo la televisión."
           ],
-          "help": "Casi nunca veo la televisión.",
-          "explanation": "Подготовленный ответ для этой сцены. Другие естественные ответы здесь не оцениваются автоматически."
+          "help": "A veces veo la televisión.",
+          "explanation": "Я иногда смотрю телевизор. Здесь важен новый факт из условия; исходная фраза описывает другую ситуацию. Это конечная проверка указанных моделей, а не любого возможного ответа.",
+          "context": "Опора: a veces — иногда",
+          "transfer": {
+            "version": 14,
+            "conditionRu": "Телевизор смотришь иногда.",
+            "translationRu": "Я иногда смотрю телевизор.",
+            "scaffold": "a veces — иногда"
+          }
         }
       ],
       "readingId": "a2-routine",
@@ -1942,12 +2075,19 @@
         {
           "id": "reply",
           "kind": "text",
-          "prompt": "Собеседник: ¿Qué estás haciendo? Ответь именно фактами сегодняшней модели.",
+          "prompt": "Собеседник: ¿Qué estás haciendo? Новое условие: Сейчас готовишь завтрак вместо ужина. Ответь полной фразой, изменив факты модели.",
           "accepted": [
-            "Ahora estoy preparando la cena."
+            "Ahora estoy preparando el desayuno."
           ],
-          "help": "Ahora estoy preparando la cena.",
-          "explanation": "Подготовленный ответ для этой сцены. Другие естественные ответы здесь не оцениваются автоматически."
+          "help": "Ahora estoy preparando el desayuno.",
+          "explanation": "Сейчас я готовлю завтрак. Здесь важен новый факт из условия; исходная фраза описывает другую ситуацию. Это конечная проверка указанных моделей, а не любого возможного ответа.",
+          "context": "Опора: el desayuno — завтрак",
+          "transfer": {
+            "version": 14,
+            "conditionRu": "Сейчас готовишь завтрак вместо ужина.",
+            "translationRu": "Сейчас я готовлю завтрак.",
+            "scaffold": "el desayuno — завтрак"
+          }
         }
       ],
       "readingId": "a2-routine",
@@ -2039,12 +2179,19 @@
         {
           "id": "reply",
           "kind": "text",
-          "prompt": "Собеседник: ¿Qué vais a hacer el sábado? Ответь именно фактами сегодняшней модели.",
+          "prompt": "Собеседник: ¿Qué vais a hacer el domingo? Новое условие: Вы собираетесь навестить друзей в воскресенье. Ответь полной фразой, изменив факты модели.",
           "accepted": [
-            "El sábado vamos a visitar a unos amigos."
+            "El domingo vamos a visitar a unos amigos."
           ],
-          "help": "El sábado vamos a visitar a unos amigos.",
-          "explanation": "Подготовленный ответ для этой сцены. Другие естественные ответы здесь не оцениваются автоматически."
+          "help": "El domingo vamos a visitar a unos amigos.",
+          "explanation": "В воскресенье мы собираемся навестить друзей. Здесь важен новый факт из условия; исходная фраза описывает другую ситуацию. Это конечная проверка указанных моделей, а не любого возможного ответа.",
+          "context": "Опора: el domingo — в воскресенье",
+          "transfer": {
+            "version": 14,
+            "conditionRu": "Вы собираетесь навестить друзей в воскресенье.",
+            "translationRu": "В воскресенье мы собираемся навестить друзей.",
+            "scaffold": "el domingo — в воскресенье"
+          }
         }
       ],
       "readingId": "a2-routine",
@@ -2145,12 +2292,19 @@
         {
           "id": "reply",
           "kind": "text",
-          "prompt": "Собеседник: ¿Cómo invitas a alguien a pasear? Ответь именно фактами сегодняшней модели.",
+          "prompt": "Собеседник: ¿Cómo invitas a alguien a pasear? Новое условие: Предлагаешь прогуляться завтра. Ответь полной фразой, изменив факты модели.",
           "accepted": [
-            "¿Te apetece dar un paseo esta tarde?"
+            "¿Te apetece dar un paseo mañana?"
           ],
-          "help": "¿Te apetece dar un paseo esta tarde?",
-          "explanation": "Подготовленный ответ для этой сцены. Другие естественные ответы здесь не оцениваются автоматически."
+          "help": "¿Te apetece dar un paseo mañana?",
+          "explanation": "Хочешь прогуляться завтра? Здесь важен новый факт из условия; исходная фраза описывает другую ситуацию. Это конечная проверка указанных моделей, а не любого возможного ответа.",
+          "context": "Опора: mañana — завтра",
+          "transfer": {
+            "version": 14,
+            "conditionRu": "Предлагаешь прогуляться завтра.",
+            "translationRu": "Хочешь прогуляться завтра?",
+            "scaffold": "mañana — завтра"
+          }
         }
       ],
       "readingId": "a2-routine",
@@ -2242,12 +2396,19 @@
         {
           "id": "reply",
           "kind": "text",
-          "prompt": "Собеседник: ¿Puedes quedar hoy? Ответь именно фактами сегодняшней модели.",
+          "prompt": "Собеседник: ¿Puedes quedar hoy? Новое условие: Сегодня свободен, но завтра не можешь встретиться. Ответь полной фразой, изменив факты модели.",
           "accepted": [
-            "Hoy no puedo, pero mañana estoy libre."
+            "Hoy estoy libre, pero mañana no puedo."
           ],
-          "help": "Hoy no puedo, pero mañana estoy libre.",
-          "explanation": "Подготовленный ответ для этой сцены. Другие естественные ответы здесь не оцениваются автоматически."
+          "help": "Hoy estoy libre, pero mañana no puedo.",
+          "explanation": "Сегодня я свободен, но завтра не могу. Здесь важен новый факт из условия; исходная фраза описывает другую ситуацию. Это конечная проверка указанных моделей, а не любого возможного ответа.",
+          "context": "Опора: hoy — сегодня; mañana — завтра",
+          "transfer": {
+            "version": 14,
+            "conditionRu": "Сегодня свободен, но завтра не можешь встретиться.",
+            "translationRu": "Сегодня я свободен, но завтра не могу.",
+            "scaffold": "hoy — сегодня; mañana — завтра"
+          }
         }
       ],
       "readingId": "a2-routine",
@@ -2339,12 +2500,19 @@
         {
           "id": "reply",
           "kind": "text",
-          "prompt": "Собеседник: ¿Dónde prefieres pasear? Ответь именно фактами сегодняшней модели.",
+          "prompt": "Собеседник: ¿Dónde prefieres pasear? Новое условие: Парк менее спокойный, чем центр. Ответь полной фразой, изменив факты модели.",
           "accepted": [
-            "Este parque es más tranquilo que el centro."
+            "Este parque es menos tranquilo que el centro."
           ],
-          "help": "Este parque es más tranquilo que el centro.",
-          "explanation": "Подготовленный ответ для этой сцены. Другие естественные ответы здесь не оцениваются автоматически."
+          "help": "Este parque es menos tranquilo que el centro.",
+          "explanation": "Этот парк менее спокойный, чем центр. Здесь важен новый факт из условия; исходная фраза описывает другую ситуацию. Это конечная проверка указанных моделей, а не любого возможного ответа.",
+          "context": "Опора: menos — менее",
+          "transfer": {
+            "version": 14,
+            "conditionRu": "Парк менее спокойный, чем центр.",
+            "translationRu": "Этот парк менее спокойный, чем центр.",
+            "scaffold": "menos — менее"
+          }
         }
       ],
       "readingId": "a2-routine",
@@ -2445,12 +2613,19 @@
         {
           "id": "reply",
           "kind": "text",
-          "prompt": "Собеседник: ¿Por qué prefieres el tren? Ответь именно фактами сегодняшней модели.",
+          "prompt": "Собеседник: ¿Por qué prefieres el autobús? Новое условие: Предпочитаешь автобус, потому что он удобнее. Ответь полной фразой, изменив факты модели.",
           "accepted": [
-            "Prefiero ir en tren porque es más cómodo."
+            "Prefiero ir en autobús porque es más cómodo."
           ],
-          "help": "Prefiero ir en tren porque es más cómodo.",
-          "explanation": "Подготовленный ответ для этой сцены. Другие естественные ответы здесь не оцениваются автоматически."
+          "help": "Prefiero ir en autobús porque es más cómodo.",
+          "explanation": "Я предпочитаю ехать автобусом, потому что это удобнее. Здесь важен новый факт из условия; исходная фраза описывает другую ситуацию. Это конечная проверка указанных моделей, а не любого возможного ответа.",
+          "context": "Опора: en autobús — на автобусе",
+          "transfer": {
+            "version": 14,
+            "conditionRu": "Предпочитаешь автобус, потому что он удобнее.",
+            "translationRu": "Я предпочитаю ехать автобусом, потому что это удобнее.",
+            "scaffold": "en autobús — на автобусе"
+          }
         }
       ],
       "readingId": "a2-weekend",
@@ -2542,12 +2717,19 @@
         {
           "id": "reply",
           "kind": "text",
-          "prompt": "Собеседник: ¿Qué has leído esta semana? Ответь именно фактами сегодняшней модели.",
+          "prompt": "Собеседник: ¿Qué has leído esta semana? Новое условие: На этой неделе прочитал две короткие книги. Ответь полной фразой, изменив факты модели.",
           "accepted": [
-            "Esta semana he leído un libro corto."
+            "Esta semana he leído dos libros cortos."
           ],
-          "help": "Esta semana he leído un libro corto.",
-          "explanation": "Подготовленный ответ для этой сцены. Другие естественные ответы здесь не оцениваются автоматически."
+          "help": "Esta semana he leído dos libros cortos.",
+          "explanation": "На этой неделе я прочитал две короткие книги. Здесь важен новый факт из условия; исходная фраза описывает другую ситуацию. Это конечная проверка указанных моделей, а не любого возможного ответа.",
+          "context": "Опора: dos libros cortos — две короткие книги",
+          "transfer": {
+            "version": 14,
+            "conditionRu": "На этой неделе прочитал две короткие книги.",
+            "translationRu": "На этой неделе я прочитал две короткие книги.",
+            "scaffold": "dos libros cortos — две короткие книги"
+          }
         }
       ],
       "readingId": "a2-weekend",
@@ -2648,12 +2830,19 @@
         {
           "id": "reply",
           "kind": "text",
-          "prompt": "Собеседник: ¿Qué compraste ayer? Ответь именно фактами сегодняшней модели.",
+          "prompt": "Собеседник: ¿Qué compraste ayer? Новое условие: Вчера купил новую рубашку. Ответь полной фразой, изменив факты модели.",
           "accepted": [
-            "Ayer compré una mochila nueva."
+            "Ayer compré una camisa nueva."
           ],
-          "help": "Ayer compré una mochila nueva.",
-          "explanation": "Подготовленный ответ для этой сцены. Другие естественные ответы здесь не оцениваются автоматически."
+          "help": "Ayer compré una camisa nueva.",
+          "explanation": "Вчера я купил новую рубашку. Здесь важен новый факт из условия; исходная фраза описывает другую ситуацию. Это конечная проверка указанных моделей, а не любого возможного ответа.",
+          "context": "Опора: una camisa nueva — новая рубашка",
+          "transfer": {
+            "version": 14,
+            "conditionRu": "Вчера купил новую рубашку.",
+            "translationRu": "Вчера я купил новую рубашку.",
+            "scaffold": "una camisa nueva — новая рубашка"
+          }
         }
       ],
       "readingId": "a2-weekend",
@@ -2745,12 +2934,19 @@
         {
           "id": "reply",
           "kind": "text",
-          "prompt": "Собеседник: ¿Con quién fuiste al mercado? Ответь именно фактами сегодняшней модели.",
+          "prompt": "Собеседник: ¿Con quién fuiste al mercado? Новое условие: В воскресенье ходил на рынок с братом. Ответь полной фразой, изменив факты модели.",
           "accepted": [
-            "El domingo fui al mercado con mi hermana."
+            "El domingo fui al mercado con mi hermano."
           ],
-          "help": "El domingo fui al mercado con mi hermana.",
-          "explanation": "Подготовленный ответ для этой сцены. Другие естественные ответы здесь не оцениваются автоматически."
+          "help": "El domingo fui al mercado con mi hermano.",
+          "explanation": "В воскресенье я ходил на рынок с братом. Здесь важен новый факт из условия; исходная фраза описывает другую ситуацию. Это конечная проверка указанных моделей, а не любого возможного ответа.",
+          "context": "Опора: mi hermano — мой брат",
+          "transfer": {
+            "version": 14,
+            "conditionRu": "В воскресенье ходил на рынок с братом.",
+            "translationRu": "В воскресенье я ходил на рынок с братом.",
+            "scaffold": "mi hermano — мой брат"
+          }
         }
       ],
       "readingId": "a2-weekend",
@@ -2842,12 +3038,19 @@
         {
           "id": "reply",
           "kind": "text",
-          "prompt": "Собеседник: ¿Hablaste con Marta? Ответь именно фактами сегодняшней модели.",
+          "prompt": "Собеседник: ¿Hablaste con Marta? Новое условие: Увидел Марту, и вы много поговорили. Соедини части через y. Ответь полной фразой, изменив факты модели.",
           "accepted": [
-            "Vi a Marta, pero no hablamos mucho."
+            "Vi a Marta y hablamos mucho."
           ],
-          "help": "Vi a Marta, pero no hablamos mucho.",
-          "explanation": "Подготовленный ответ для этой сцены. Другие естественные ответы здесь не оцениваются автоматически."
+          "help": "Vi a Marta y hablamos mucho.",
+          "explanation": "Я увидел Марту, и мы много поговорили. Здесь важен новый факт из условия; исходная фраза описывает другую ситуацию. Это конечная проверка указанных моделей, а не любого возможного ответа.",
+          "context": "Опора: y — и",
+          "transfer": {
+            "version": 14,
+            "conditionRu": "Увидел Марту, и вы много поговорили. Соедини части через y.",
+            "translationRu": "Я увидел Марту, и мы много поговорили.",
+            "scaffold": "y — и"
+          }
         }
       ],
       "readingId": "a2-weekend",
@@ -2939,12 +3142,19 @@
         {
           "id": "reply",
           "kind": "text",
-          "prompt": "Собеседник: ¿Por qué llegaste tarde? Ответь именно фактами сегодняшней модели.",
+          "prompt": "Собеседник: ¿Por qué llegaste tarde? Новое условие: Опоздал, потому что пропустил поезд. Ответь полной фразой, изменив факты модели.",
           "accepted": [
-            "Llegué tarde porque perdí el autobús."
+            "Llegué tarde porque perdí el tren."
           ],
-          "help": "Llegué tarde porque perdí el autobús.",
-          "explanation": "Подготовленный ответ для этой сцены. Другие естественные ответы здесь не оцениваются автоматически."
+          "help": "Llegué tarde porque perdí el tren.",
+          "explanation": "Я пришёл поздно, потому что пропустил поезд. Здесь важен новый факт из условия; исходная фраза описывает другую ситуацию. Это конечная проверка указанных моделей, а не любого возможного ответа.",
+          "context": "Опора: el tren — поезд",
+          "transfer": {
+            "version": 14,
+            "conditionRu": "Опоздал, потому что пропустил поезд.",
+            "translationRu": "Я пришёл поздно, потому что пропустил поезд.",
+            "scaffold": "el tren — поезд"
+          }
         }
       ],
       "readingId": "a2-weekend",
@@ -3037,13 +3247,20 @@
         {
           "id": "reply",
           "kind": "text",
-          "prompt": "Собеседник: ¿Dónde vivías de niño? Ответь именно фактами сегодняшней модели.",
+          "prompt": "Собеседник: ¿Dónde vivías de niño? Новое условие: В детстве жил в городе, а не в деревне. Можно выбрать niño или niña. Ответь полной фразой, изменив факты модели.",
           "accepted": [
-            "Cuando era niño, vivía en un pueblo.",
-            "Cuando era niña, vivía en un pueblo."
+            "Cuando era niño, vivía en una ciudad.",
+            "Cuando era niña, vivía en una ciudad."
           ],
-          "help": "Cuando era niño, vivía en un pueblo.",
-          "explanation": "Подготовленный ответ для этой сцены. Другие естественные ответы здесь не оцениваются автоматически."
+          "help": "Cuando era niño, vivía en una ciudad.",
+          "explanation": "Когда я был ребёнком, я жил в городе. Здесь важен новый факт из условия; исходная фраза описывает другую ситуацию. Это конечная проверка указанных моделей, а не любого возможного ответа.",
+          "context": "Опора: una ciudad — город; niño/niña — ребёнок, мальчик/девочка",
+          "transfer": {
+            "version": 14,
+            "conditionRu": "В детстве жил в городе, а не в деревне. Можно выбрать niño или niña.",
+            "translationRu": "Когда я был ребёнком, я жил в городе.",
+            "scaffold": "una ciudad — город; niño/niña — ребёнок, мальчик/девочка"
+          }
         }
       ],
       "readingId": "a2-return",
@@ -3144,12 +3361,19 @@
         {
           "id": "reply",
           "kind": "text",
-          "prompt": "Собеседник: ¿Cómo ibas al colegio? Ответь именно фактами сегодняшней модели.",
+          "prompt": "Собеседник: ¿Cómo ibas al colegio? Новое условие: Раньше ходил в школу пешком. Ответь полной фразой, изменив факты модели.",
           "accepted": [
-            "Antes iba al colegio en bicicleta."
+            "Antes iba al colegio a pie."
           ],
-          "help": "Antes iba al colegio en bicicleta.",
-          "explanation": "Подготовленный ответ для этой сцены. Другие естественные ответы здесь не оцениваются автоматически."
+          "help": "Antes iba al colegio a pie.",
+          "explanation": "Раньше я ходил в школу пешком. Здесь важен новый факт из условия; исходная фраза описывает другую ситуацию. Это конечная проверка указанных моделей, а не любого возможного ответа.",
+          "context": "Опора: a pie — пешком",
+          "transfer": {
+            "version": 14,
+            "conditionRu": "Раньше ходил в школу пешком.",
+            "translationRu": "Раньше я ходил в школу пешком.",
+            "scaffold": "a pie — пешком"
+          }
         }
       ],
       "readingId": "a2-return",
@@ -3241,12 +3465,19 @@
         {
           "id": "reply",
           "kind": "text",
-          "prompt": "Собеседник: ¿Qué hacías cuando sonó el teléfono? Ответь именно фактами сегодняшней модели.",
+          "prompt": "Собеседник: ¿Qué hacías cuando sonó el teléfono? Новое условие: Когда зазвонил телефон, ты читал, а не готовил. Ответь полной фразой, изменив факты модели.",
           "accepted": [
-            "Estaba cocinando cuando sonó el teléfono."
+            "Estaba leyendo cuando sonó el teléfono."
           ],
-          "help": "Estaba cocinando cuando sonó el teléfono.",
-          "explanation": "Подготовленный ответ для этой сцены. Другие естественные ответы здесь не оцениваются автоматически."
+          "help": "Estaba leyendo cuando sonó el teléfono.",
+          "explanation": "Я читал, когда зазвонил телефон. Здесь важен новый факт из условия; исходная фраза описывает другую ситуацию. Это конечная проверка указанных моделей, а не любого возможного ответа.",
+          "context": "Опора: leyendo — читая; estaba leyendo — читал в тот момент",
+          "transfer": {
+            "version": 14,
+            "conditionRu": "Когда зазвонил телефон, ты читал, а не готовил.",
+            "translationRu": "Я читал, когда зазвонил телефон.",
+            "scaffold": "leyendo — читая; estaba leyendo — читал в тот момент"
+          }
         }
       ],
       "readingId": "a2-return",
@@ -3338,12 +3569,19 @@
         {
           "id": "reply",
           "kind": "text",
-          "prompt": "Собеседник: ¿Ha cambiado tu horario? Ответь именно фактами сегодняшней модели.",
+          "prompt": "Собеседник: ¿Ha cambiado tu horario? Новое условие: Раньше работал днём, теперь работаешь ночью. Ответь полной фразой, изменив факты модели.",
           "accepted": [
-            "Antes trabajaba de noche; ahora trabajo de día."
+            "Antes trabajaba de día; ahora trabajo de noche."
           ],
-          "help": "Antes trabajaba de noche; ahora trabajo de día.",
-          "explanation": "Подготовленный ответ для этой сцены. Другие естественные ответы здесь не оцениваются автоматически."
+          "help": "Antes trabajaba de día; ahora trabajo de noche.",
+          "explanation": "Раньше я работал днём; теперь работаю ночью. Здесь важен новый факт из условия; исходная фраза описывает другую ситуацию. Это конечная проверка указанных моделей, а не любого возможного ответа.",
+          "context": "Опора: de día — днём; de noche — ночью",
+          "transfer": {
+            "version": 14,
+            "conditionRu": "Раньше работал днём, теперь работаешь ночью.",
+            "translationRu": "Раньше я работал днём; теперь работаю ночью.",
+            "scaffold": "de día — днём; de noche — ночью"
+          }
         }
       ],
       "readingId": "a2-return",
@@ -3444,12 +3682,19 @@
         {
           "id": "reply",
           "kind": "text",
-          "prompt": "Собеседник: ¿Por qué os quedasteis en casa? Ответь именно фактами сегодняшней модели.",
+          "prompt": "Собеседник: ¿Por qué os quedasteis en casa? Новое условие: Остались дома из-за жары. Ответь полной фразой, изменив факты модели.",
           "accepted": [
-            "Hacía frío, así que nos quedamos en casa."
+            "Hacía calor, así que nos quedamos en casa."
           ],
-          "help": "Hacía frío, así que nos quedamos en casa.",
-          "explanation": "Подготовленный ответ для этой сцены. Другие естественные ответы здесь не оцениваются автоматически."
+          "help": "Hacía calor, así que nos quedamos en casa.",
+          "explanation": "Было жарко, поэтому мы остались дома. Здесь важен новый факт из условия; исходная фраза описывает другую ситуацию. Это конечная проверка указанных моделей, а не любого возможного ответа.",
+          "context": "Опора: hacía calor — было жарко",
+          "transfer": {
+            "version": 14,
+            "conditionRu": "Остались дома из-за жары.",
+            "translationRu": "Было жарко, поэтому мы остались дома.",
+            "scaffold": "hacía calor — было жарко"
+          }
         }
       ],
       "readingId": "a2-return",
@@ -3541,12 +3786,19 @@
         {
           "id": "reply",
           "kind": "text",
-          "prompt": "Собеседник: ¿Qué te pasa? Ответь именно фактами сегодняшней модели.",
+          "prompt": "Собеседник: ¿Qué te pasa? Новое условие: Голова болит со вчерашнего дня. Ответь полной фразой, изменив факты модели.",
           "accepted": [
-            "Me duele la cabeza desde esta mañana."
+            "Me duele la cabeza desde ayer."
           ],
-          "help": "Me duele la cabeza desde esta mañana.",
-          "explanation": "Подготовленный ответ для этой сцены. Другие естественные ответы здесь не оцениваются автоматически."
+          "help": "Me duele la cabeza desde ayer.",
+          "explanation": "У меня болит голова со вчерашнего дня. Здесь важен новый факт из условия; исходная фраза описывает другую ситуацию. Это конечная проверка указанных моделей, а не любого возможного ответа.",
+          "context": "Опора: desde ayer — со вчерашнего дня",
+          "transfer": {
+            "version": 14,
+            "conditionRu": "Голова болит со вчерашнего дня.",
+            "translationRu": "У меня болит голова со вчерашнего дня.",
+            "scaffold": "desde ayer — со вчерашнего дня"
+          }
         }
       ],
       "readingId": "a2-return",
@@ -3638,12 +3890,19 @@
         {
           "id": "reply",
           "kind": "text",
-          "prompt": "Собеседник: ¿Desde cuándo duermes mal? Ответь именно фактами сегодняшней модели.",
+          "prompt": "Собеседник: ¿Desde cuándo duermes mal? Новое условие: Плохо спишь уже три дня. Ответь полной фразой, изменив факты модели.",
           "accepted": [
-            "Llevo dos días sin dormir bien."
+            "Llevo tres días sin dormir bien."
           ],
-          "help": "Llevo dos días sin dormir bien.",
-          "explanation": "Подготовленный ответ для этой сцены. Другие естественные ответы здесь не оцениваются автоматически."
+          "help": "Llevo tres días sin dormir bien.",
+          "explanation": "Я уже три дня плохо сплю. Здесь важен новый факт из условия; исходная фраза описывает другую ситуацию. Это конечная проверка указанных моделей, а не любого возможного ответа.",
+          "context": "Опора: tres días — три дня",
+          "transfer": {
+            "version": 14,
+            "conditionRu": "Плохо спишь уже три дня.",
+            "translationRu": "Я уже три дня плохо сплю.",
+            "scaffold": "tres días — три дня"
+          }
         }
       ],
       "readingId": "b1-move",
@@ -3735,12 +3994,19 @@
         {
           "id": "reply",
           "kind": "text",
-          "prompt": "Собеседник: ¿Qué dices si no entiendes una frase? Ответь именно фактами сегодняшней модели.",
+          "prompt": "Собеседник: ¿Qué dices si no entiendes una frase? Новое условие: Просишь повторить первую фразу медленнее. Ответь полной фразой, изменив факты модели.",
           "accepted": [
-            "¿Podrías repetir la última frase más despacio?"
+            "¿Podrías repetir la primera frase más despacio?"
           ],
-          "help": "¿Podrías repetir la última frase más despacio?",
-          "explanation": "Подготовленный ответ для этой сцены. Другие естественные ответы здесь не оцениваются автоматически."
+          "help": "¿Podrías repetir la primera frase más despacio?",
+          "explanation": "Не мог бы ты повторить первую фразу медленнее? Здесь важен новый факт из условия; исходная фраза описывает другую ситуацию. Это конечная проверка указанных моделей, а не любого возможного ответа.",
+          "context": "Опора: la primera frase — первая фраза",
+          "transfer": {
+            "version": 14,
+            "conditionRu": "Просишь повторить первую фразу медленнее.",
+            "translationRu": "Не мог бы ты повторить первую фразу медленнее?",
+            "scaffold": "la primera frase — первая фраза"
+          }
         }
       ],
       "readingId": "b1-move",
@@ -3832,12 +4098,19 @@
         {
           "id": "reply",
           "kind": "text",
-          "prompt": "Собеседник: ¿Cómo compruebas que entendiste la hora? Ответь именно фактами сегодняшней модели.",
+          "prompt": "Собеседник: ¿Cómo compruebas que entendiste la hora? Новое условие: Уточняешь, начинается ли встреча в девять. Ответь полной фразой, изменив факты модели.",
           "accepted": [
-            "¿Quieres decir que la reunión empieza a las diez?"
+            "¿Quieres decir que la reunión empieza a las nueve?"
           ],
-          "help": "¿Quieres decir que la reunión empieza a las diez?",
-          "explanation": "Подготовленный ответ для этой сцены. Другие естественные ответы здесь не оцениваются автоматически."
+          "help": "¿Quieres decir que la reunión empieza a las nueve?",
+          "explanation": "Ты хочешь сказать, что встреча начинается в девять? Здесь важен новый факт из условия; исходная фраза описывает другую ситуацию. Это конечная проверка указанных моделей, а не любого возможного ответа.",
+          "context": "Опора: a las nueve — в девять",
+          "transfer": {
+            "version": 14,
+            "conditionRu": "Уточняешь, начинается ли встреча в девять.",
+            "translationRu": "Ты хочешь сказать, что встреча начинается в девять?",
+            "scaffold": "a las nueve — в девять"
+          }
         }
       ],
       "readingId": "b1-move",
@@ -3929,12 +4202,19 @@
         {
           "id": "reply",
           "kind": "text",
-          "prompt": "Собеседник: ¿Qué escribes si vas a llegar tarde? Ответь именно фактами сегодняшней модели.",
+          "prompt": "Собеседник: ¿Qué escribes si vas a llegar mañana? Новое условие: Пишешь предупредить, что придёшь завтра. Об опоздании не сообщаешь. Ответь полной фразой, изменив факты модели.",
           "accepted": [
-            "Te escribo para avisarte de que llegaré tarde."
+            "Te escribo para avisarte de que llegaré mañana."
           ],
-          "help": "Te escribo para avisarte de que llegaré tarde.",
-          "explanation": "Подготовленный ответ для этой сцены. Другие естественные ответы здесь не оцениваются автоматически."
+          "help": "Te escribo para avisarte de que llegaré mañana.",
+          "explanation": "Пишу тебе, чтобы предупредить, что приду завтра. Здесь важен новый факт из условия; исходная фраза описывает другую ситуацию. Это конечная проверка указанных моделей, а не любого возможного ответа.",
+          "context": "Опора: mañana — завтра",
+          "transfer": {
+            "version": 14,
+            "conditionRu": "Пишешь предупредить, что придёшь завтра. Об опоздании не сообщаешь.",
+            "translationRu": "Пишу тебе, чтобы предупредить, что приду завтра.",
+            "scaffold": "mañana — завтра"
+          }
         }
       ],
       "readingId": "b1-move",
@@ -4026,12 +4306,19 @@
         {
           "id": "reply",
           "kind": "text",
-          "prompt": "Собеседник: ¿Qué forma de estudiar prefieres? Ответь именно фактами сегодняшней модели.",
+          "prompt": "Собеседник: ¿Qué forma de estudiar prefieres? Новое условие: В этой сцене считаешь, что для тебя лучше заниматься понемногу каждое утро. Ответь полной фразой, изменив факты модели.",
           "accepted": [
-            "Creo que estudiar un poco cada día funciona mejor."
+            "Creo que estudiar un poco cada mañana funciona mejor."
           ],
-          "help": "Creo que estudiar un poco cada día funciona mejor.",
-          "explanation": "Подготовленный ответ для этой сцены. Другие естественные ответы здесь не оцениваются автоматически."
+          "help": "Creo que estudiar un poco cada mañana funciona mejor.",
+          "explanation": "Думаю, что учиться понемногу каждое утро эффективнее. Здесь важен новый факт из условия; исходная фраза описывает другую ситуацию. Это конечная проверка указанных моделей, а не любого возможного ответа.",
+          "context": "Опора: cada mañana — каждое утро",
+          "transfer": {
+            "version": 14,
+            "conditionRu": "В этой сцене считаешь, что для тебя лучше заниматься понемногу каждое утро.",
+            "translationRu": "Думаю, что учиться понемногу каждое утро эффективнее.",
+            "scaffold": "cada mañana — каждое утро"
+          }
         }
       ],
       "readingId": "b1-move",
@@ -4132,12 +4419,19 @@
         {
           "id": "reply",
           "kind": "text",
-          "prompt": "Собеседник: ¿Estás de acuerdo con el plan? Ответь именно фактами сегодняшней модели.",
+          "prompt": "Собеседник: ¿Estás de acuerdo con el plan? Новое условие: Согласен с планом, хотя вам нужно больше денег, а не времени. Ответь полной фразой, изменив факты модели.",
           "accepted": [
-            "Estoy de acuerdo, aunque necesitamos más tiempo."
+            "Estoy de acuerdo, aunque necesitamos más dinero."
           ],
-          "help": "Estoy de acuerdo, aunque necesitamos más tiempo.",
-          "explanation": "Подготовленный ответ для этой сцены. Другие естественные ответы здесь не оцениваются автоматически."
+          "help": "Estoy de acuerdo, aunque necesitamos más dinero.",
+          "explanation": "Я согласен, хотя нам нужно больше денег. Здесь важен новый факт из условия; исходная фраза описывает другую ситуацию. Это конечная проверка указанных моделей, а не любого возможного ответа.",
+          "context": "Опора: dinero — деньги; más dinero — больше денег",
+          "transfer": {
+            "version": 14,
+            "conditionRu": "Согласен с планом, хотя вам нужно больше денег, а не времени.",
+            "translationRu": "Я согласен, хотя нам нужно больше денег.",
+            "scaffold": "dinero — деньги; más dinero — больше денег"
+          }
         }
       ],
       "readingId": "b1-move",
@@ -4229,12 +4523,19 @@
         {
           "id": "reply",
           "kind": "text",
-          "prompt": "Собеседник: ¿Has probado este plato? Ответь именно фактами сегодняшней модели.",
+          "prompt": "Собеседник: ¿Has probado este plato? Новое условие: Блюдо никогда не пробовал и не хотел бы пробовать. Соедини части через y. Ответь полной фразой, изменив факты модели.",
           "accepted": [
-            "Nunca he probado este plato, pero me gustaría."
+            "Nunca he probado este plato y no me gustaría."
           ],
-          "help": "Nunca he probado este plato, pero me gustaría.",
-          "explanation": "Подготовленный ответ для этой сцены. Другие естественные ответы здесь не оцениваются автоматически."
+          "help": "Nunca he probado este plato y no me gustaría.",
+          "explanation": "Я никогда не пробовал это блюдо и не хотел бы. Здесь важен новый факт из условия; исходная фраза описывает другую ситуацию. Это конечная проверка указанных моделей, а не любого возможного ответа.",
+          "context": "Опора: y — и; no me gustaría — мне бы не хотелось",
+          "transfer": {
+            "version": 14,
+            "conditionRu": "Блюдо никогда не пробовал и не хотел бы пробовать. Соедини части через y.",
+            "translationRu": "Я никогда не пробовал это блюдо и не хотел бы.",
+            "scaffold": "y — и; no me gustaría — мне бы не хотелось"
+          }
         }
       ],
       "readingId": "b1-study",
@@ -4326,12 +4627,19 @@
         {
           "id": "reply",
           "kind": "text",
-          "prompt": "Собеседник: ¿Cuál de las dos opciones elegirías? Ответь именно фактами сегодняшней модели.",
+          "prompt": "Собеседник: ¿Cuál de las dos opciones elegirías? Новое условие: Из двух вариантов выбрал бы самый удобный, а не самый простой. Ответь полной фразой, изменив факты модели.",
           "accepted": [
-            "Entre estas dos opciones, elegiría la más sencilla."
+            "Entre estas dos opciones, elegiría la más cómoda."
           ],
-          "help": "Entre estas dos opciones, elegiría la más sencilla.",
-          "explanation": "Подготовленный ответ для этой сцены. Другие естественные ответы здесь не оцениваются автоматически."
+          "help": "Entre estas dos opciones, elegiría la más cómoda.",
+          "explanation": "Из этих двух вариантов я бы выбрал самый удобный. Здесь важен новый факт из условия; исходная фраза описывает другую ситуацию. Это конечная проверка указанных моделей, а не любого возможного ответа.",
+          "context": "Опора: la más cómoda — самый удобный вариант; cómoda согласуется с opción",
+          "transfer": {
+            "version": 14,
+            "conditionRu": "Из двух вариантов выбрал бы самый удобный, а не самый простой.",
+            "translationRu": "Из этих двух вариантов я бы выбрал самый удобный.",
+            "scaffold": "la más cómoda — самый удобный вариант; cómoda согласуется с opción"
+          }
         }
       ],
       "readingId": "b1-study",
@@ -4423,12 +4731,19 @@
         {
           "id": "reply",
           "kind": "text",
-          "prompt": "Собеседник: ¿Me llamarás esta tarde? Ответь именно фактами сегодняшней модели.",
+          "prompt": "Собеседник: ¿Me llamarás mañana? Новое условие: Позвонишь завтра, если будет время. Ответь полной фразой, изменив факты модели.",
           "accepted": [
-            "Si tengo tiempo esta tarde, te llamaré."
+            "Si tengo tiempo mañana, te llamaré."
           ],
-          "help": "Si tengo tiempo esta tarde, te llamaré.",
-          "explanation": "Подготовленный ответ для этой сцены. Другие естественные ответы здесь не оцениваются автоматически."
+          "help": "Si tengo tiempo mañana, te llamaré.",
+          "explanation": "Если завтра у меня будет время, я тебе позвоню. Здесь важен новый факт из условия; исходная фраза описывает другую ситуацию. Это конечная проверка указанных моделей, а не любого возможного ответа.",
+          "context": "Опора: mañana — завтра",
+          "transfer": {
+            "version": 14,
+            "conditionRu": "Позвонишь завтра, если будет время.",
+            "translationRu": "Если завтра у меня будет время, я тебе позвоню.",
+            "scaffold": "mañana — завтра"
+          }
         }
       ],
       "readingId": "b1-study",
@@ -4520,12 +4835,19 @@
         {
           "id": "reply",
           "kind": "text",
-          "prompt": "Собеседник: ¿Qué me aconsejas antes de editar? Ответь именно фактами сегодняшней модели.",
+          "prompt": "Собеседник: ¿Qué deberíamos hacer antes de editar? Новое условие: Советуешь всей вашей группе, включая себя, сохранить копию до изменения документа. Ответь полной фразой, изменив факты модели.",
           "accepted": [
-            "Deberías guardar una copia antes de cambiar el documento."
+            "Deberíamos guardar una copia antes de cambiar el documento."
           ],
-          "help": "Deberías guardar una copia antes de cambiar el documento.",
-          "explanation": "Подготовленный ответ для этой сцены. Другие естественные ответы здесь не оцениваются автоматически."
+          "help": "Deberíamos guardar una copia antes de cambiar el documento.",
+          "explanation": "Нам стоит сохранить копию перед изменением документа. Здесь важен новый факт из условия; исходная фраза описывает другую ситуацию. Это конечная проверка указанных моделей, а не любого возможного ответа.",
+          "context": "Опора: deberíamos — нам стоит, совет для nosotros",
+          "transfer": {
+            "version": 14,
+            "conditionRu": "Советуешь всей вашей группе, включая себя, сохранить копию до изменения документа.",
+            "translationRu": "Нам стоит сохранить копию перед изменением документа.",
+            "scaffold": "deberíamos — нам стоит, совет для nosotros"
+          }
         }
       ],
       "readingId": "b1-study",
@@ -4617,12 +4939,19 @@
         {
           "id": "reply",
           "kind": "text",
-          "prompt": "Собеседник: ¿Cuándo tenemos que terminar? Ответь именно фактами сегодняшней модели.",
+          "prompt": "Собеседник: ¿Cuándo tenemos que terminar? Новое условие: Нужно закончить до понедельника. Ответь полной фразой, изменив факты модели.",
           "accepted": [
-            "Tenemos que terminar esto antes del viernes."
+            "Tenemos que terminar esto antes del lunes."
           ],
-          "help": "Tenemos que terminar esto antes del viernes.",
-          "explanation": "Подготовленный ответ для этой сцены. Другие естественные ответы здесь не оцениваются автоматически."
+          "help": "Tenemos que terminar esto antes del lunes.",
+          "explanation": "Нам нужно закончить это до понедельника. Здесь важен новый факт из условия; исходная фраза описывает другую ситуацию. Это конечная проверка указанных моделей, а не любого возможного ответа.",
+          "context": "Опора: el lunes — понедельник; antes del lunes — до понедельника",
+          "transfer": {
+            "version": 14,
+            "conditionRu": "Нужно закончить до понедельника.",
+            "translationRu": "Нам нужно закончить это до понедельника.",
+            "scaffold": "el lunes — понедельник; antes del lunes — до понедельника"
+          }
         }
       ],
       "readingId": "b1-study",
@@ -4714,12 +5043,19 @@
         {
           "id": "reply",
           "kind": "text",
-          "prompt": "Собеседник: ¿Por qué no puedes entrar? Ответь именно фактами сегодняшней модели.",
+          "prompt": "Собеседник: ¿Por qué no puedes llamar? Новое условие: Потерял телефон и не можешь позвонить. О входе в дом не сообщаешь. Ответь полной фразой, изменив факты модели.",
           "accepted": [
-            "He perdido las llaves y no puedo entrar."
+            "He perdido el teléfono y no puedo llamar."
           ],
-          "help": "He perdido las llaves y no puedo entrar.",
-          "explanation": "Подготовленный ответ для этой сцены. Другие естественные ответы здесь не оцениваются автоматически."
+          "help": "He perdido el teléfono y no puedo llamar.",
+          "explanation": "Я потерял телефон и не могу позвонить. Здесь важен новый факт из условия; исходная фраза описывает другую ситуацию. Это конечная проверка указанных моделей, а не любого возможного ответа.",
+          "context": "Опора: el teléfono — телефон; llamar — звонить",
+          "transfer": {
+            "version": 14,
+            "conditionRu": "Потерял телефон и не можешь позвонить. О входе в дом не сообщаешь.",
+            "translationRu": "Я потерял телефон и не могу позвонить.",
+            "scaffold": "el teléfono — телефон; llamar — звонить"
+          }
         }
       ],
       "readingId": "b1-study",
@@ -4811,12 +5147,19 @@
         {
           "id": "reply",
           "kind": "text",
-          "prompt": "Собеседник: ¿Qué libro buscas? Ответь именно фактами сегодняшней модели.",
+          "prompt": "Собеседник: ¿Qué libro buscas? Новое условие: Ищешь знакомую существующую книгу об истории этой страны, а не города. Ответь полной фразой, изменив факты модели.",
           "accepted": [
-            "Busco un libro que explica la historia de esta ciudad."
+            "Busco un libro que explica la historia de este país."
           ],
-          "help": "Busco un libro que explica la historia de esta ciudad.",
-          "explanation": "Подготовленный ответ для этой сцены. Другие естественные ответы здесь не оцениваются автоматически."
+          "help": "Busco un libro que explica la historia de este país.",
+          "explanation": "Я ищу книгу, которая рассказывает историю этой страны. Здесь важен новый факт из условия; исходная фраза описывает другую ситуацию. Это конечная проверка указанных моделей, а не любого возможного ответа.",
+          "context": "Опора: este país — эта страна; известная существующая книга: explica",
+          "transfer": {
+            "version": 14,
+            "conditionRu": "Ищешь знакомую существующую книгу об истории этой страны, а не города.",
+            "translationRu": "Я ищу книгу, которая рассказывает историю этой страны.",
+            "scaffold": "este país — эта страна; известная существующая книга: explica"
+          }
         }
       ],
       "readingId": "b1-study",
@@ -4908,12 +5251,19 @@
         {
           "id": "reply",
           "kind": "text",
-          "prompt": "Собеседник: ¿Vas a comprarlo ya? Ответь именно фактами сегодняшней модели.",
+          "prompt": "Собеседник: ¿Vas a comprarlo ya? Новое условие: Перед решением хочешь сравнить варианты, а не цены. Ответь полной фразой, изменив факты модели.",
           "accepted": [
-            "Antes de decidir, quiero comparar los precios."
+            "Antes de decidir, quiero comparar las opciones."
           ],
-          "help": "Antes de decidir, quiero comparar los precios.",
-          "explanation": "Подготовленный ответ для этой сцены. Другие естественные ответы здесь не оцениваются автоматически."
+          "help": "Antes de decidir, quiero comparar las opciones.",
+          "explanation": "Прежде чем решить, я хочу сравнить варианты. Здесь важен новый факт из условия; исходная фраза описывает другую ситуацию. Это конечная проверка указанных моделей, а не любого возможного ответа.",
+          "context": "Опора: las opciones — варианты",
+          "transfer": {
+            "version": 14,
+            "conditionRu": "Перед решением хочешь сравнить варианты, а не цены.",
+            "translationRu": "Прежде чем решить, я хочу сравнить варианты.",
+            "scaffold": "las opciones — варианты"
+          }
         }
       ],
       "readingId": "b1-study",
@@ -5005,12 +5355,19 @@
         {
           "id": "reply",
           "kind": "text",
-          "prompt": "Собеседник: ¿Cuándo me envías los detalles? Ответь именно фактами сегодняшней модели.",
+          "prompt": "Собеседник: ¿Cuándo me envías los detalles? Новое условие: Благодаришь за сообщение и отправляешь подробности сегодня. Ответь полной фразой, изменив факты модели.",
           "accepted": [
-            "Gracias por tu mensaje. Te envío los detalles mañana."
+            "Gracias por tu mensaje. Te envío los detalles hoy."
           ],
-          "help": "Gracias por tu mensaje. Te envío los detalles mañana.",
-          "explanation": "Подготовленный ответ для этой сцены. Другие естественные ответы здесь не оцениваются автоматически."
+          "help": "Gracias por tu mensaje. Te envío los detalles hoy.",
+          "explanation": "Спасибо за сообщение. Сегодня отправлю тебе подробности. Здесь важен новый факт из условия; исходная фраза описывает другую ситуацию. Это конечная проверка указанных моделей, а не любого возможного ответа.",
+          "context": "Опора: hoy — сегодня",
+          "transfer": {
+            "version": 14,
+            "conditionRu": "Благодаришь за сообщение и отправляешь подробности сегодня.",
+            "translationRu": "Спасибо за сообщение. Сегодня отправлю тебе подробности.",
+            "scaffold": "hoy — сегодня"
+          }
         }
       ],
       "readingId": "b1-study",
@@ -5102,12 +5459,19 @@
         {
           "id": "reply",
           "kind": "text",
-          "prompt": "Собеседник: ¿Cuál es el problema con el pedido? Ответь именно фактами сегодняшней модели.",
+          "prompt": "Собеседник: ¿Cuál es el problema con el pedido? Новое условие: Лампа не работает. Хочешь попросить другую лампу вместо возврата денег. Ответь полной фразой, изменив факты модели.",
           "accepted": [
-            "El producto no funciona y quisiera pedir un reembolso."
+            "El producto no funciona y quisiera pedir otra lámpara."
           ],
-          "help": "El producto no funciona y quisiera pedir un reembolso.",
-          "explanation": "Подготовленный ответ для этой сцены. Другие естественные ответы здесь не оцениваются автоматически."
+          "help": "El producto no funciona y quisiera pedir otra lámpara.",
+          "explanation": "Товар не работает, и я хотел бы попросить другую лампу. Здесь важен новый факт из условия; исходная фраза описывает другую ситуацию. Это конечная проверка указанных моделей, а не любого возможного ответа.",
+          "context": "Опора: otra lámpara — другая лампа",
+          "transfer": {
+            "version": 14,
+            "conditionRu": "Лампа не работает. Хочешь попросить другую лампу вместо возврата денег.",
+            "translationRu": "Товар не работает, и я хотел бы попросить другую лампу.",
+            "scaffold": "otra lámpara — другая лампа"
+          }
         }
       ],
       "readingId": "b1-study",
@@ -5199,12 +5563,19 @@
         {
           "id": "reply",
           "kind": "text",
-          "prompt": "Собеседник: ¿Por qué te mudaste? Ответь именно фактами сегодняшней модели.",
+          "prompt": "Собеседник: ¿Por qué te mudaste? Новое условие: Переехал, чтобы жить ближе к сестре, а не к работе. Ответь полной фразой, изменив факты модели.",
           "accepted": [
-            "Me mudé porque necesitaba vivir más cerca del trabajo."
+            "Me mudé porque necesitaba vivir más cerca de mi hermana."
           ],
-          "help": "Me mudé porque necesitaba vivir más cerca del trabajo.",
-          "explanation": "Подготовленный ответ для этой сцены. Другие естественные ответы здесь не оцениваются автоматически."
+          "help": "Me mudé porque necesitaba vivir más cerca de mi hermana.",
+          "explanation": "Я переехал, потому что мне нужно было жить ближе к сестре. Здесь важен новый факт из условия; исходная фраза описывает другую ситуацию. Это конечная проверка указанных моделей, а не любого возможного ответа.",
+          "context": "Опора: mi hermana — моя сестра; cerca de mi hermana — рядом с моей сестрой",
+          "transfer": {
+            "version": 14,
+            "conditionRu": "Переехал, чтобы жить ближе к сестре, а не к работе.",
+            "translationRu": "Я переехал, потому что мне нужно было жить ближе к сестре.",
+            "scaffold": "mi hermana — моя сестра; cerca de mi hermana — рядом с моей сестрой"
+          }
         }
       ],
       "readingId": "b1-study",
@@ -5296,12 +5667,19 @@
         {
           "id": "reply",
           "kind": "text",
-          "prompt": "Собеседник: ¿Pudisteis comprar algo? Ответь именно фактами сегодняшней модели.",
+          "prompt": "Собеседник: ¿Cómo estaba la tienda cuando llegasteis? Новое условие: Когда вы пришли, магазин ещё был открыт. Ответь полной фразой, изменив факты модели.",
           "accepted": [
-            "Cuando llegamos, la tienda ya estaba cerrada."
+            "Cuando llegamos, la tienda todavía estaba abierta."
           ],
-          "help": "Cuando llegamos, la tienda ya estaba cerrada.",
-          "explanation": "Подготовленный ответ для этой сцены. Другие естественные ответы здесь не оцениваются автоматически."
+          "help": "Cuando llegamos, la tienda todavía estaba abierta.",
+          "explanation": "Когда мы пришли, магазин ещё был открыт. Здесь важен новый факт из условия; исходная фраза описывает другую ситуацию. Это конечная проверка указанных моделей, а не любого возможного ответа.",
+          "context": "Опора: todavía — ещё; abierta — открыта, согласуется с tienda",
+          "transfer": {
+            "version": 14,
+            "conditionRu": "Когда вы пришли, магазин ещё был открыт.",
+            "translationRu": "Когда мы пришли, магазин ещё был открыт.",
+            "scaffold": "todavía — ещё; abierta — открыта, согласуется с tienda"
+          }
         }
       ],
       "readingId": "b1-study",
@@ -5393,12 +5771,19 @@
         {
           "id": "reply",
           "kind": "text",
-          "prompt": "Собеседник: ¿Fue tan difícil como esperabas? Ответь именно фактами сегодняшней модели.",
+          "prompt": "Собеседник: ¿Fue tan fácil como esperabas? Новое условие: Ожидал, что будет легко, но оказалось довольно трудно. Ответь полной фразой, изменив факты модели.",
           "accepted": [
-            "Pensaba que sería difícil, pero resultó bastante fácil."
+            "Pensaba que sería fácil, pero resultó bastante difícil."
           ],
-          "help": "Pensaba que sería difícil, pero resultó bastante fácil.",
-          "explanation": "Подготовленный ответ для этой сцены. Другие естественные ответы здесь не оцениваются автоматически."
+          "help": "Pensaba que sería fácil, pero resultó bastante difícil.",
+          "explanation": "Я думал, что будет легко, но оказалось довольно трудно. Здесь важен новый факт из условия; исходная фраза описывает другую ситуацию. Это конечная проверка указанных моделей, а не любого возможного ответа.",
+          "context": "Опора: fácil — легко; difícil — трудно",
+          "transfer": {
+            "version": 14,
+            "conditionRu": "Ожидал, что будет легко, но оказалось довольно трудно.",
+            "translationRu": "Я думал, что будет легко, но оказалось довольно трудно.",
+            "scaffold": "fácil — легко; difícil — трудно"
+          }
         }
       ],
       "readingId": "b1-study",
@@ -5499,12 +5884,19 @@
         {
           "id": "reply",
           "kind": "text",
-          "prompt": "Собеседник: ¿Por qué eliges la opción más cara? Ответь именно фактами сегодняшней модели.",
+          "prompt": "Собеседник: ¿Por qué eliges la opción más cara? Новое условие: Вариант дороже, но выбираешь его из-за удобства, а не качества. Ответь полной фразой, изменив факты модели.",
           "accepted": [
-            "Aunque cuesta un poco más, prefiero esta opción por su calidad."
+            "Aunque cuesta un poco más, prefiero esta opción por su comodidad."
           ],
-          "help": "Aunque cuesta un poco más, prefiero esta opción por su calidad.",
-          "explanation": "Подготовленный ответ для этой сцены. Другие естественные ответы здесь не оцениваются автоматически."
+          "help": "Aunque cuesta un poco más, prefiero esta opción por su comodidad.",
+          "explanation": "Хотя это стоит немного дороже, я предпочитаю этот вариант из-за удобства. Здесь важен новый факт из условия; исходная фраза описывает другую ситуацию. Это конечная проверка указанных моделей, а не любого возможного ответа.",
+          "context": "Опора: comodidad — удобство",
+          "transfer": {
+            "version": 14,
+            "conditionRu": "Вариант дороже, но выбираешь его из-за удобства, а не качества.",
+            "translationRu": "Хотя это стоит немного дороже, я предпочитаю этот вариант из-за удобства.",
+            "scaffold": "comodidad — удобство"
+          }
         }
       ],
       "readingId": "b1-study",
@@ -5596,12 +5988,19 @@
         {
           "id": "reply",
           "kind": "text",
-          "prompt": "Собеседник: ¿Qué propones si el grupo está cansado? Ответь именно фактами сегодняшней модели.",
+          "prompt": "Собеседник: ¿Qué propones para ahora y después? Новое условие: Предлагаешь группе сейчас продолжить, а перерыв сделать потом. Ответь полной фразой, изменив факты модели.",
           "accepted": [
-            "¿Qué os parece si hacemos una pausa y seguimos después?"
+            "¿Qué os parece si seguimos ahora y hacemos una pausa después?"
           ],
-          "help": "¿Qué os parece si hacemos una pausa y seguimos después?",
-          "explanation": "Подготовленный ответ для этой сцены. Другие естественные ответы здесь не оцениваются автоматически."
+          "help": "¿Qué os parece si seguimos ahora y hacemos una pausa después?",
+          "explanation": "Как вы смотрите на то, чтобы сейчас продолжить, а перерыв сделать позже? Здесь важен новый факт из условия; исходная фраза описывает другую ситуацию. Это конечная проверка указанных моделей, а не любого возможного ответа.",
+          "context": "Опора: ahora — сейчас; después — потом",
+          "transfer": {
+            "version": 14,
+            "conditionRu": "Предлагаешь группе сейчас продолжить, а перерыв сделать потом.",
+            "translationRu": "Как вы смотрите на то, чтобы сейчас продолжить, а перерыв сделать позже?",
+            "scaffold": "ahora — сейчас; después — потом"
+          }
         }
       ],
       "readingId": "b1-study",
@@ -5694,13 +6093,20 @@
         {
           "id": "reply",
           "kind": "text",
-          "prompt": "Собеседник: ¿Has entendido todo? Ответь именно фактами сегодняшней модели.",
+          "prompt": "Собеседник: ¿Has entendido todo? Новое условие: Не уверен, что понял последнюю фразу. Можно выбрать seguro или segura. Ответь полной фразой, изменив факты модели.",
           "accepted": [
-            "No estoy seguro de haber entendido todos los detalles.",
-            "No estoy segura de haber entendido todos los detalles."
+            "No estoy seguro de haber entendido la última frase.",
+            "No estoy segura de haber entendido la última frase."
           ],
-          "help": "No estoy seguro de haber entendido todos los detalles.",
-          "explanation": "Подготовленный ответ для этой сцены. Другие естественные ответы здесь не оцениваются автоматически."
+          "help": "No estoy seguro de haber entendido la última frase.",
+          "explanation": "Я не уверен, что понял последнюю фразу. Здесь важен новый факт из условия; исходная фраза описывает другую ситуацию. Это конечная проверка указанных моделей, а не любого возможного ответа.",
+          "context": "Опора: la última frase — последняя фраза; seguro/segura — уверен/уверена",
+          "transfer": {
+            "version": 14,
+            "conditionRu": "Не уверен, что понял последнюю фразу. Можно выбрать seguro или segura.",
+            "translationRu": "Я не уверен, что понял последнюю фразу.",
+            "scaffold": "la última frase — последняя фраза; seguro/segura — уверен/уверена"
+          }
         }
       ],
       "readingId": "b1-study",
@@ -5792,12 +6198,19 @@
         {
           "id": "reply",
           "kind": "text",
-          "prompt": "Собеседник: ¿Puedes resumir los pasos? Ответь именно фактами сегодняшней модели.",
+          "prompt": "Собеседник: ¿Puedes resumir los pasos? Новое условие: В этой системе сначала платят, затем оформляют бронь. Проверь понимание через Si te he entendido bien. Ответь полной фразой, изменив факты модели.",
           "accepted": [
-            "Si te he entendido bien, primero debemos reservar y después pagar."
+            "Si te he entendido bien, primero debemos pagar y después reservar."
           ],
-          "help": "Si te he entendido bien, primero debemos reservar y después pagar.",
-          "explanation": "Подготовленный ответ для этой сцены. Другие естественные ответы здесь не оцениваются автоматически."
+          "help": "Si te he entendido bien, primero debemos pagar y después reservar.",
+          "explanation": "Если я тебя правильно понял, сначала нужно заплатить, потом забронировать. Здесь важен новый факт из условия; исходная фраза описывает другую ситуацию. Это конечная проверка указанных моделей, а не любого возможного ответа.",
+          "context": "Опора: pagar — платить; reservar — бронировать",
+          "transfer": {
+            "version": 14,
+            "conditionRu": "В этой системе сначала платят, затем оформляют бронь. Проверь понимание через Si te he entendido bien.",
+            "translationRu": "Если я тебя правильно понял, сначала нужно заплатить, потом забронировать.",
+            "scaffold": "pagar — платить; reservar — бронировать"
+          }
         }
       ],
       "readingId": "b1-study",
@@ -5889,12 +6302,19 @@
         {
           "id": "reply",
           "kind": "text",
-          "prompt": "Собеседник: ¿Cómo describes tu progreso? Ответь именно фактами сегодняшней модели.",
+          "prompt": "Собеседник: ¿Cómo describes tu progreso? Новое условие: В этой сцене уже можешь объяснить свои идеи, но нужно продолжать практиковаться. Ответь полной фразой, изменив факты модели.",
           "accepted": [
-            "Ya puedo explicar mis planes, pero necesito seguir practicando."
+            "Ya puedo explicar mis ideas, pero necesito seguir practicando."
           ],
-          "help": "Ya puedo explicar mis planes, pero necesito seguir practicando.",
-          "explanation": "Подготовленный ответ для этой сцены. Другие естественные ответы здесь не оцениваются автоматически."
+          "help": "Ya puedo explicar mis ideas, pero necesito seguir practicando.",
+          "explanation": "Я уже могу объяснить свои идеи, но мне нужно продолжать практиковаться. Здесь важен новый факт из условия; исходная фраза описывает другую ситуацию. Это конечная проверка указанных моделей, а не любого возможного ответа.",
+          "context": "Опора: mis ideas — мои идеи",
+          "transfer": {
+            "version": 14,
+            "conditionRu": "В этой сцене уже можешь объяснить свои идеи, но нужно продолжать практиковаться.",
+            "translationRu": "Я уже могу объяснить свои идеи, но мне нужно продолжать практиковаться.",
+            "scaffold": "mis ideas — мои идеи"
+          }
         }
       ],
       "readingId": "b1-study",
