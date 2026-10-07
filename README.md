@@ -47,7 +47,7 @@ Python 3: `python -m http.server 8768 --bind 127.0.0.1 --directory web`.
 
 Испанские тексты Tatoeba: CC BY 2.0 FR. Русские переводы и пояснения подготовлены для курса. Новые переменные реплики не озвучиваются синтезом. Сцены воспроизводят отдельные оригинальные строки последовательно; единой студийной записи нет.
 
-Onest и Alegreya: SIL Open Font License, `docs/assets/Onest-OFL.txt` и `docs/assets/Alegreya-OFL.txt`. Lucide: ISC, `docs/assets/lucide-LICENSE.txt`. Лумо — оригинальный растровый персонаж, созданный с помощью генерации изображений; иллюстрация не заимствована у Duolingo. Площадь — собственная векторная иллюстрация. Сайт имеет собственные оформление, компоненты и учебную механику.
+Onest и Alegreya: SIL Open Font License, `docs/assets/Onest-OFL.txt` и `docs/assets/Alegreya-OFL.txt`. Lucide: ISC, `docs/assets/lucide-LICENSE.txt`. Лумо — оригинальный персонаж курса; иллюстрация не заимствована у Duolingo. Площадь — собственная векторная иллюстрация. Сайт имеет собственные оформление, компоненты и учебную механику.
 
 
 ## Разговорная студия v5.3
