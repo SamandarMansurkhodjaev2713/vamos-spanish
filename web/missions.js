@@ -107,5 +107,5 @@ window.VamosMissions={create(api){
  function input(el){if(el?.hasAttribute?.('data-mission-answer')){draft=String(el.value||'').slice(0,500);if(active&&!active.completedAt){responseSlot().draft=draft;commit();}return true;}return false;}
  function change(el){if(!active)return false;if(el?.hasAttribute?.('data-mission-oral')){const val=el.dataset.missionOral;if(oralValues.includes(val)){oral=val;responseSlot().oral=oral;commit();}return true;}if(el?.hasAttribute?.('data-mission-intent')){const val=el.dataset.missionIntent;if(['accept','refuse'].includes(val)){responseSlot().branchIntent=val;commit();}return true;}return false;}
  function close(){active=null;draft='';oral='';feedback=null;reveals.clear();}
- return {html,start,click,input,change,sanitize,merge,get current(){return current();},close};
+ return {markHelp:()=>aid('explanation'),html,start,click,input,change,sanitize,merge,get current(){return current();},close};
 }};

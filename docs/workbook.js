@@ -108,5 +108,5 @@ window.VamosWorkbook={create(api){
  function change(el){if(el.id==='workbook-day'){const d=Number(el.value);if(byDay.has(d))api.open(d);return true;}if(el.hasAttribute('data-wb-said')&&api.active()){own().said=el.checked;save();return true;}return false;}
  function input(el){if(el.id==='workbook-own'&&api.active()){own().text=el.value.slice(0,2000);save();return true;}return false;}
  function toggle(el){if(api.active()&&el.open&&el.hasAttribute('data-wb-model-help')&&task()){draft(task()).aided=true;save();}}
- return {enter,html,preview,entry,click,change,input,toggle,sanitize,merge,due};
+ return {markHelp:()=>{if(api.active()&&task()){draft(task()).aided=true;save()}},enter,html,preview,entry,click,change,input,toggle,sanitize,merge,due};
 }};

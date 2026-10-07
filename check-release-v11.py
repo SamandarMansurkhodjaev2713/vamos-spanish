@@ -15,5 +15,5 @@ for key,name in [('goals','course-goals.json'),('missions','mission-data.json'),
 assert len(data['stories']['days'])==30 and len(data['workshops']['days'])==30
 clips=json.loads((r/'web/assets/audio/ATTRIBUTION.json').read_text(encoding='utf8'))
 for clip in clips.values():assert hashlib.sha256((r/'docs'/clip['file']).read_bytes()).hexdigest()==clip['sha256']
-assert 'shell-v11-1' in cache
+assert 'shell-v11-2' in cache
 print('PASS release v11: 34 exact runtime files; current stories/workshops/goals/missions; scoped offline wiring; 72 original SHA.')

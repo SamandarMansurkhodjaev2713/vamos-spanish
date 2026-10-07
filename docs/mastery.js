@@ -26,5 +26,5 @@ window.VamosMastery={create(api){
  function change(el){if(el.id==='mastery-day'){enter(Number(el.value));render();document.getElementById(el.id)?.focus();return true}return false}
  function input(el){if(el.id==='mastery-answer'){answer=el.value;const button=document.querySelector('[data-mastery-check]');if(button)button.disabled=!answer.trim();return true}return false}
  function merge(raw){const incoming=sanitize(raw);for(const [day,v]of Object.entries(incoming)){const existing=state.mastery[day];if(!existing||existing.history.at(-1).at<v.history.at(-1).at)state.mastery[day]=v}}
- return {html,card,enter,click,change,input,sanitize,merge};
+ return {markHelp:()=>{if(active&&!result)hint=true},html,card,enter,click,change,input,sanitize,merge};
 }};
