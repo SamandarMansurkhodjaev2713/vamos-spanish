@@ -1,0 +1,23 @@
+/* Continuation shares the adult study desk palette and restrained typography. */
+.pathway-page{max-width:920px;margin-inline:auto;overflow-wrap:anywhere}
+.pathway-page .workbook-toolbar{display:block;padding:24px 0;margin:20px 0 32px;border-block:1px solid var(--line);background:transparent}
+.pathway-page label{display:block;margin:18px 0;color:var(--ink);line-height:1.5}
+.pathway-page .select,.pathway-page .field{display:block;width:100%;max-width:100%;margin-top:8px;min-height:44px;background:var(--paper);color:var(--ink);font:inherit}
+.pathway-page textarea.field{min-height:100px}
+.pathway-page h2{margin:28px 0 12px;font-size:28px;line-height:1.2}
+.pathway-page p{line-height:1.65}
+.pathway-page ol{padding-left:24px;line-height:1.7;margin:20px 0}
+.pathway-page dl{display:grid;grid-template-columns:minmax(100px,.8fr) minmax(0,1.2fr);gap:10px 24px;padding:20px 0;margin:18px 0;border-block:1px solid var(--line)}
+.pathway-page dt{font-family:Alegreya,Georgia,serif;font-size:22px}.pathway-page dd{margin:0;align-self:center;color:var(--muted)}
+.pathway-page .story-sheet,.pathway-page .workbook-task,.pathway-page .workbook-own,.pathway-page .workbook-audio{margin:28px 0;padding:24px;border:1px solid var(--line);border-radius:8px;background:var(--paper);box-shadow:none}
+.pathway-page .pathway-text{font-family:Alegreya,Georgia,serif;font-size:26px;line-height:1.75;max-width:60ch;margin:22px 0}
+.pathway-page button.pathway-word{display:inline;padding:0;min-height:0;border:0;border-radius:0;background:transparent;color:var(--ink);font:inherit;line-height:inherit;white-space:normal;text-decoration:underline;text-decoration-style:dotted;text-decoration-color:var(--accent);text-underline-offset:.2em;box-shadow:none;vertical-align:baseline}
+.pathway-page button.pathway-word:hover,.pathway-page button.pathway-word:active{background:var(--soft);transform:none;box-shadow:none}
+.pathway-page .workbook-actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:24px}
+.pathway-page .note{padding:16px;margin:18px 0;background:var(--sea-soft);border-radius:6px}
+.pathway-page .note a{color:var(--accent);text-underline-offset:.2em}
+.pathway-page>details{margin-top:32px;padding-block:18px;border-block:1px solid var(--line)}
+.pathway-page .pathway-guide{display:flex;align-items:center;gap:18px;padding:18px 0;color:var(--muted)}
+.pathway-page .pathway-guide .mascot{width:68px;height:68px;flex:none}.pathway-page .pathway-guide p{margin:0;max-width:65ch}
+.pathway-page input[type=checkbox]{width:20px;height:20px;vertical-align:middle;margin-right:8px;accent-color:var(--sea)}
+@media(max-width:600px){.pathway-page .story-sheet,.pathway-page .workbook-task,.pathway-page .workbook-own,.pathway-page .workbook-audio{padding:18px 16px}.pathway-page .pathway-text{font-size:24px}.pathway-page h2{font-size:25px}.pathway-page dl{gap:10px 14px}.pathway-page .workbook-actions .btn{flex:1 1 140px}.pathway-page .section-head{align-items:flex-start;flex-wrap:wrap;gap:16px}.pathway-page .pathway-guide{align-items:flex-start}}

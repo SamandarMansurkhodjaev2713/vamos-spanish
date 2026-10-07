@@ -1,0 +1,48 @@
+{
+  "id": "./",
+  "name": "¡Vamos! · Мой испанский",
+  "short_name": "¡Vamos!",
+  "lang": "ru",
+  "description": "Разговорный испанский: уроки, повторение и оригинальные записи носителя.",
+  "start_url": "./?view=home",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f6f4ef",
+  "theme_color": "#465c4c",
+  "icons": [
+    {
+      "src": "assets/app-icon-lumo-think-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "assets/app-icon-lumo-think-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Моё занятие",
+      "short_name": "Занятие",
+      "url": "./?view=practice&mode=daily"
+    },
+    {
+      "name": "Сказать и сравнить",
+      "short_name": "Моя речь",
+      "url": "./?view=practice&mode=pronunciation"
+    },
+    {
+      "name": "Читать истории",
+      "short_name": "Истории",
+      "url": "./?view=practice&mode=reading"
+    },
+    {
+      "name": "Мой профиль",
+      "short_name": "Профиль",
+      "url": "./?view=profile"
+    }
+  ]
+}

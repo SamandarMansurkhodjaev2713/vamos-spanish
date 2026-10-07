@@ -2,8 +2,8 @@
 window.VamosNavigation={create(api){
  'use strict';
  const {esc,icon}=api;
- const sections=[['home','Учиться','Следующий урок и все 30 дней','route'],['practice','Практика','Вспомнить, услышать и сказать','messages-square'],['words','Словарь','Слова, фразы и маленькие истории','book-open'],['materials','Помощь','Объяснения, истории, видео и записи','notebook-tabs'],['settings','Настройки','Звук, оформление, офлайн и прогресс','sliders-horizontal']];
- const labels={workbook:'Истории и мастерская',daily:'Занятие на сегодня',mission:'Разговорная миссия',personal:'Мой испанский',recordings:'Мои записи',mastery:'Контроль памяти',drill:'Тренировка фраз',pronunciation:'Сказать и сравнить',review:'Повторение',scene:'Разговор на двоих',sound:'Слух и речь',dialogue:'Своя реплика',extra:'Квизы',checkpoint:'Разговорная проверка'};
+ const sections=[['home','Учиться','Следующий шаг и маршрут курса','route'],['practice','Практика','Вспомнить, услышать и сказать','messages-square'],['words','Словарь','Слова, фразы и маленькие истории','book-open'],['materials','Помощь','Объяснения, истории, видео и записи','notebook-tabs'],['profile','Профиль','Достижения, настройки и сохранение прогресса','user-round']];
+ const labels={pathway:'Продолжение · дни 31–90',reading:'Чтение по уровням',workbook:'Истории и мастерская',daily:'Занятие на сегодня',mission:'Разговорная миссия',personal:'Мой испанский',recordings:'Мои записи',mastery:'Контроль памяти',drill:'Тренировка фраз',pronunciation:'Сказать и сравнить',review:'Повторение',scene:'Разговор на двоих',sound:'Слух и речь',dialogue:'Своя реплика',extra:'Квизы',checkpoint:'Разговорная проверка'};
  const selected=()=>api.view()==='lesson'?'home':api.view();
  let dialog=null,continuation=null;
 
