@@ -12,7 +12,9 @@ bank=json.loads((base/'exercise-bank.json').read_text(encoding='utf8'))
 for lesson,practice in zip(data['lessons'],bank):lesson['practice']=practice
 data['expanded']=json.loads((base/'course-expanded.json').read_text(encoding='utf8'))
 if (base/'course-library.json').exists():data['library']=json.loads((base/'course-library.json').read_text(encoding='utf8'))
-data['version']='5.2-quiet-practice'
+data['goals']=json.loads((base/'course-goals.json').read_text(encoding='utf8'))
+data['missions']=json.loads((base/'mission-data.json').read_text(encoding='utf8'))
+data['version']='5.3-conversation-studio'
 data['status']='Личный курс с оригинальными записями, тренировкой фраз и локальной записью голоса. Учебный эффект и отсутствие акцента не гарантированы.'
 (web/'course-data.js').write_text('window.VAMOS_DATA='+json.dumps(data,ensure_ascii=False).replace('</',r'<\/')+';\n',encoding='utf8')
 lucide=web/'assets/lucide.min.js'
