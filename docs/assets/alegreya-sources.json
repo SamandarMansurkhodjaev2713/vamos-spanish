@@ -1,0 +1,12 @@
+[
+  {
+    "file": "alegreya-cyrillic.woff2",
+    "source": "https://fonts.gstatic.com/s/alegreya/v41/4UaBrEBBsBhlBjvfkSLlx6jx4w.woff2",
+    "subset": "cyrillic"
+  },
+  {
+    "file": "alegreya-latin.woff2",
+    "source": "https://fonts.gstatic.com/s/alegreya/v41/4UaBrEBBsBhlBjvfkSLhx6g.woff2",
+    "subset": "latin"
+  }
+]

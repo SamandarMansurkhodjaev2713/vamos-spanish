@@ -16,7 +16,7 @@ data['goals']=json.loads((base/'course-goals.json').read_text(encoding='utf8'))
 data['missions']=json.loads((base/'mission-data.json').read_text(encoding='utf8'))
 data['stories']=json.loads((base/'course-stories.json').read_text(encoding='utf8'))
 data['workshops']=json.loads((base/'course-workshops.json').read_text(encoding='utf8'))
-data['version']='5.5-clear-path'
+data['version']='5.6-conversation-plaza'
 data['status']='Личный курс с оригинальными записями, тренировкой фраз и локальной записью голоса. Учебный эффект и отсутствие акцента не гарантированы.'
 (web/'course-data.js').write_text('window.VAMOS_DATA='+json.dumps(data,ensure_ascii=False).replace('</',r'<\/')+';\n',encoding='utf8')
 lucide=web/'assets/lucide.min.js'

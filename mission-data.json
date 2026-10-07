@@ -3120,7 +3120,8 @@
                   "Me gusta leer porque es interesante."
                 ],
                 "patterns": [
-                  "(?:prefiero|me gusta) (?:leer|viajar|la música|el café|agua) porque (?:es interesante|es divertido|me gusta|tengo tiempo)"
+                  "(?:prefiero|me gusta) (?:leer|viajar|el café) porque (?:es interesante|es divertido)",
+                  "(?:prefiero|me gusta) la música porque (?:es interesante|es divertida)"
                 ],
                 "required": [
                   "porque"
@@ -3199,7 +3200,8 @@
                   "Me gusta leer porque es interesante."
                 ],
                 "patterns": [
-                  "(?:prefiero|me gusta) (?:leer|viajar|la música|el café|agua) porque (?:es interesante|es divertido|me gusta|tengo tiempo)"
+                  "(?:prefiero|me gusta) (?:leer|viajar|el café) porque (?:es interesante|es divertido)",
+                  "(?:prefiero|me gusta) la música porque (?:es interesante|es divertida)"
                 ],
                 "required": [
                   "porque"
@@ -4209,7 +4211,7 @@
                   "Me gusta leer porque es interesante."
                 ],
                 "patterns": [
-                  "(?:prefiero|me gusta) (?:leer|viajar|la música|el café|agua) porque (?:es interesante|es divertido|me gusta|tengo tiempo)"
+                  "(?:prefiero|me gusta) (?:leer|viajar) porque (?:es interesante|es divertido)"
                 ],
                 "required": [
                   "porque"
@@ -4291,7 +4293,7 @@
                   "Me gusta leer porque es interesante."
                 ],
                 "patterns": [
-                  "(?:prefiero|me gusta) (?:leer|viajar|la música|el café|agua) porque (?:es interesante|es divertido|me gusta|tengo tiempo)"
+                  "(?:prefiero|me gusta) (?:leer|viajar) porque (?:es interesante|es divertido)"
                 ],
                 "required": [
                   "porque"
@@ -4370,7 +4372,7 @@
                   "Me gusta leer porque es interesante."
                 ],
                 "patterns": [
-                  "(?:prefiero|me gusta) (?:leer|viajar|la música|el café|agua) porque (?:es interesante|es divertido|me gusta|tengo tiempo)"
+                  "(?:prefiero|me gusta) (?:leer|viajar) porque (?:es interesante|es divertido)"
                 ],
                 "required": [
                   "porque"
@@ -4449,7 +4451,7 @@
                   "Me gusta leer porque es interesante."
                 ],
                 "patterns": [
-                  "(?:prefiero|me gusta) (?:leer|viajar|la música|el café|agua) porque (?:es interesante|es divertido|me gusta|tengo tiempo)"
+                  "(?:prefiero|me gusta) (?:leer|viajar) porque (?:es interesante|es divertido)"
                 ],
                 "required": [
                   "porque"
@@ -9893,7 +9895,8 @@
                   "Me gusta viajar porque es divertido."
                 ],
                 "patterns": [
-                  "(?:prefiero|me gusta) (?:leer|viajar|la música) porque (?:es interesante|es divertido)"
+                  "(?:prefiero|me gusta) (?:leer|viajar) porque (?:es interesante|es divertido)",
+                  "(?:prefiero|me gusta) la música porque (?:es interesante|es divertida)"
                 ],
                 "required": [
                   "porque"
@@ -10020,7 +10023,8 @@
                   "Me gusta viajar porque es divertido."
                 ],
                 "patterns": [
-                  "(?:prefiero|me gusta) (?:leer|viajar|la música) porque (?:es interesante|es divertido)"
+                  "(?:prefiero|me gusta) (?:leer|viajar) porque (?:es interesante|es divertido)",
+                  "(?:prefiero|me gusta) la música porque (?:es interesante|es divertida)"
                 ],
                 "required": [
                   "porque"

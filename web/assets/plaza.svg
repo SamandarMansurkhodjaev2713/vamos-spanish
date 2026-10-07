@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 390" fill="none">
+<!-- Original Vamos conversation plaza. The open foreground belongs to Lumo. -->
+<path d="M31 269V126C31 67 88 23 146 36L223 56 341 16C426-13 525 39 530 126L547 288 31 269Z" fill="#F3DEAF"/>
+<circle cx="417" cy="79" r="38" fill="#F7C94B"/>
+<path d="M62 258V108H204V258" fill="#F9EDCE" stroke="#253E42" stroke-width="3"/>
+<path d="M52 107H210M62 131H204" stroke="#B83B24" stroke-width="7"/>
+<path d="M82 182C82 151 99 139 118 139S154 151 154 182V262H82V182Z" fill="#166A68"/>
+<path d="M99 182C99 164 108 156 118 156S137 164 137 182V257H99V182Z" fill="#253E42"/>
+<path d="M165 152H188V201H165V152Z" fill="#B83B24"/>
+<path d="M176 152V201M168 162H186M168 173H186M168 184H186M168 195H186" stroke="#F9EDCE" stroke-width="2"/>
+<path d="M208 272V79H356V272" fill="#E5F0E7" stroke="#253E42" stroke-width="3"/>
+<path d="M197 79H367" stroke="#166A68" stroke-width="9"/>
+<path d="M231 104H259V149H231V104ZM303 104H331V149H303V104Z" fill="#166A68"/>
+<path d="M237 109H253M237 119H253M237 129H253M237 139H253M309 109H325M309 119H325M309 129H325M309 139H325" stroke="#E5F0E7" stroke-width="2"/>
+<path d="M224 199C224 169 245 150 273 150S322 169 322 199V273H224V199Z" fill="#FFF8EB" stroke="#166A68" stroke-width="3"/>
+<path d="M239 205C239 183 253 168 273 168S307 183 307 205V273H239V205Z" fill="#253E42"/>
+<path d="M363 277V166H488V277" fill="#E4AE84" stroke="#253E42" stroke-width="3"/>
+<path d="M350 166L370 133H482L500 166H350Z" fill="#FFF8EB" stroke="#253E42" stroke-width="3"/>
+<path d="M369 134H389L380 165H359L369 134ZM412 134H432L432 165H406L412 134ZM456 134H477L492 165H467L456 134Z" fill="#B83B24"/>
+<path d="M379 195H474V248H379V195Z" fill="#253E42"/>
+<path d="M385 202H468V209H385V202Z" fill="#F7C94B"/>
+<path d="M425 210V248" stroke="#E4AE84" stroke-width="4"/>
+<path d="M17 273C136 260 359 260 550 282L541 344C436 381 153 385 23 336L17 273Z" fill="#F1D3B0"/>
+<path d="M23 305C168 287 387 297 541 313M107 269L80 350M235 270L230 368M366 274L392 365M492 284L530 340" stroke="#C79572" stroke-width="2"/>
+<path d="M31 281H84L77 319H39L31 281Z" fill="#B83B24" stroke="#253E42" stroke-width="3"/>
+<path d="M58 281V222M58 252C24 249 28 223 29 217 49 217 59 231 58 252ZM58 238C60 212 77 205 88 209 89 226 78 239 58 238Z" fill="#166A68" stroke="#253E42" stroke-width="3" stroke-linejoin="round"/>
+<path d="M481 308H522L518 339H486L481 308Z" fill="#166A68" stroke="#253E42" stroke-width="3"/>
+<path d="M501 308V253M501 280C473 276 471 254 475 247 492 250 500 260 501 280ZM501 270C502 247 517 232 528 235 534 253 520 272 501 270Z" fill="#166A68" stroke="#253E42" stroke-width="3" stroke-linejoin="round"/>
+<path d="M99 98C128 89 158 90 187 98" stroke="#B83B24" stroke-width="2" stroke-linecap="round"/>
+<path d="M21 334C152 384 437 386 542 344" stroke="#253E42" stroke-width="3" stroke-linecap="round"/>
+</svg>
