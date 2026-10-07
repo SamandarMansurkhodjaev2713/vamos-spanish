@@ -1,0 +1,319 @@
+/* A single invitation, a readable path, and a focused conversation.
+   This layer extends the original Vamos paper/cherry world. */
+.path-home,.practice-hub{max-width:1040px;margin-inline:auto;min-width:0}
+.path-home :is(h1,h2,h3),.practice-hub :is(h1,h2,h3){text-wrap:balance;letter-spacing:-.025em}
+.path-home :is(p,small,button,summary),.practice-hub :is(p,small,button,summary){overflow-wrap:anywhere}
+.path-welcome{margin-bottom:28px}
+.path-welcome h1,.practice-hub>h1{font-size:clamp(30px,3.2vw,42px);line-height:1.16;max-width:26ch}
+.path-welcome p,.practice-hub>.page-intro{font-size:16px;line-height:1.65;color:var(--muted);max-width:65ch;margin-top:12px}
+.today-panel{background:var(--paper);border:1px solid var(--line);border-radius:28px;padding:32px;position:relative;isolation:isolate}
+.today-layout{display:grid;grid-template-columns:minmax(0,1fr) 240px;gap:36px;align-items:center}
+.today-layout>*{min-width:0}
+.today-summary h2{font-size:clamp(28px,3.1vw,38px);line-height:1.18;max-width:23ch;margin-bottom:16px}
+.today-meta{display:flex;gap:10px 20px;align-items:center;flex-wrap:wrap;font-size:14px;line-height:1.5;color:var(--muted);font-variant-numeric:tabular-nums;margin-block:14px 18px}
+.today-meta span{display:inline-flex;gap:7px;align-items:center}
+.today-meta svg{width:18px;height:18px;flex-shrink:0}
+.today-goal{font-size:18px;line-height:1.6;max-width:48ch;margin-block:12px 0}
+.today-status{font-size:14px;line-height:1.6;color:var(--accent);margin-top:16px}
+.today-actions{display:flex;gap:12px;align-items:center;flex-wrap:wrap;margin-top:24px}
+.today-actions .btn{white-space:normal;line-height:1.5;max-width:100%;min-height:52px}
+.today-actions .btn.primary{min-width:min(100%,220px);padding:14px 22px}
+.today-actions .btn.quiet{font-size:14px;min-height:48px;color:var(--accent);padding-inline:8px}
+.today-save{display:block;font-size:14px;line-height:1.5;color:var(--muted);margin-top:16px;max-width:52ch}
+.today-buddy{display:grid;justify-items:center;align-content:center;gap:10px;position:relative}
+.lumo-note{background:var(--rose);color:var(--rose-ink);border-radius:22px 22px 6px 22px;padding:18px 20px;max-width:28ch;position:relative}
+.lumo-note p{font-size:16px;line-height:1.5;margin:0}
+.today-buddy>.mascot-btn{border-radius:28px;min-height:48px;width:152px;height:152px;display:grid;place-items:center}
+.today-buddy .mascot{width:152px;height:152px;animation:path-lumo-greet 700ms cubic-bezier(.16,1,.3,1) both;animation-delay:100ms}
+.buddy-caption{font-size:14px;line-height:1.5;color:var(--muted);text-align:center;max-width:28ch}
+.today-outline{margin-top:28px;padding-top:16px;border-top:1px solid var(--line);border-bottom:0}
+.today-outline>summary{min-height:48px;font-size:14px;color:var(--accent);font-weight:600}
+.today-outline>div{max-width:none}
+.today-outline .session-track{margin:16px 0 0;border-bottom:0}
+.today-outline .session-track>li{padding:18px 12px}
+.today-outline .session-track>li strong{font-size:14px}
+.path-course{margin-top:52px}
+.path-course-head{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;margin-bottom:22px}
+.path-course-head h2{font-size:28px;line-height:1.25}
+.path-count{font-size:14px;line-height:1.5;color:var(--muted);font-variant-numeric:tabular-nums}
+.course-chapters{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;margin-bottom:32px}
+.path-chapter{display:grid;grid-template-columns:28px minmax(0,1fr);gap:8px 10px;align-content:start;min-width:0;text-align:start;background:transparent;border:1px solid var(--line);border-radius:18px;padding:16px;min-height:96px;transition:background 140ms,border-color 140ms}
+.path-chapter>span{display:grid;place-items:center;width:28px;height:28px;border-radius:50%;font-size:14px;line-height:1;font-variant-numeric:tabular-nums;background:var(--paper);color:var(--muted);border:1px solid var(--line);grid-row:1/3}
+.path-chapter strong{font-size:16px;font-weight:650;line-height:1.4;min-width:0}
+.path-chapter small{font-size:14px;line-height:1.45;color:var(--muted);grid-column:2}
+.path-chapter[aria-pressed=true]{background:var(--soft);border-color:var(--accent);color:var(--accent)}
+.path-chapter[aria-pressed=true]>span{background:var(--accent);color:var(--on-accent);border-color:var(--accent)}
+.path-chapter[aria-pressed=true] small{color:var(--accent)}
+.path-section-heading{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:12px 24px;align-items:start;margin-bottom:24px}
+.path-section-heading h3{font-size:23px;line-height:1.3}
+.path-section-heading p{font-size:16px;line-height:1.6;color:var(--muted);max-width:65ch;grid-column:1;margin:0}
+.path-section-heading>.route-switch{grid-column:2;grid-row:1/3;align-self:start}
+.path-section-heading .route-switch .btn{font-size:14px;min-height:48px;padding:10px 14px}
+.lesson-map{max-width:760px;list-style:none;padding:0 0 0 0;margin:0 auto;display:grid;gap:18px;position:relative;isolation:isolate}
+.path-stop{position:relative;min-width:0;--stop-shift:0px;margin-left:var(--stop-shift)}
+.path-stop:nth-child(4n+2),.path-stop:nth-child(4n+4){--stop-shift:42px}
+.path-stop:nth-child(4n+3){--stop-shift:72px}
+.path-stop:not(:last-child)::after{content:'';position:absolute;left:42px;top:calc(50% + 26px);width:2px;height:calc(50% + 36px);border-left:2px dashed var(--line);pointer-events:none;z-index:-1}
+.path-day{width:100%;display:grid;grid-template-columns:60px minmax(0,1fr) 22px;align-items:center;gap:20px;padding:18px 20px;min-height:98px;border:1px solid transparent;border-radius:22px;background:var(--bg);text-align:start;line-height:1.45;position:relative;transition:background 150ms,border-color 150ms,transform 120ms}
+.path-day>svg{width:20px;height:20px;color:var(--muted)}
+.day-badge{width:60px;height:60px;display:grid;place-items:center;background:var(--paper);border:1px solid var(--line);border-radius:22px;font-size:23px;line-height:1;font-weight:700;font-variant-numeric:tabular-nums;color:var(--muted);flex-shrink:0}
+.day-badge svg{width:26px;height:26px}
+.path-day-copy{display:block;min-width:0}
+.path-day-copy strong{display:block;font-size:18px;line-height:1.4;font-weight:650}
+.path-day-copy small{display:block;font-size:14px;line-height:1.5;color:var(--muted);margin-top:5px}
+.path-stop.done .day-badge{background:var(--good-soft);color:var(--good);border-color:var(--good)}
+.path-stop.done .path-day-copy small{color:var(--good)}
+.path-stop.current .path-day{background:var(--soft);border-color:var(--accent)}
+.path-stop.current .day-badge{background:var(--accent);border-color:var(--accent);color:var(--on-accent);box-shadow:0 5px 12px var(--shadow);animation:path-day-arrive 460ms cubic-bezier(.16,1,.3,1) both}
+.path-stop.current .path-day-copy strong,.path-stop.current .path-day-copy small,.path-stop.current .path-day>svg{color:var(--accent)}
+.path-stop.preview .day-badge{border-style:dashed;background:var(--bg)}
+.path-legend{font-size:14px;line-height:1.65;color:var(--muted);max-width:65ch;margin-top:28px}
+.path-home .page-fold{margin-top:44px;padding-block:18px;border-block:1px solid var(--line);background:transparent;border-radius:0}
+.path-home .page-fold>summary{font-size:16px;min-height:48px}
+.path-home .page-fold>div{max-width:none;padding-top:20px}
+.path-home .day-calendar{margin-block:28px;gap:12px}
+.path-home .calendar-day{min-height:80px;font-size:20px}
+.quick-hub{display:flex;flex-wrap:wrap;gap:12px 24px;margin-top:36px}
+.quick-hub .btn{font-size:14px;color:var(--accent);text-align:start;min-height:48px;white-space:normal}
+
+/* Find the practice by its purpose, then choose a specific exercise. */
+.practice-hub>.page-intro{margin-bottom:32px}
+.hub-primary{padding:28px 0 32px;border-block:1px solid var(--line);margin-bottom:32px}
+.hub-primary h2{font-size:25px;line-height:1.3;margin-bottom:12px}
+.hub-primary p{font-size:16px;line-height:1.6;max-width:65ch;color:var(--muted)}
+.hub-primary .btn.primary{margin-top:20px;min-height:52px;min-width:min(100%,220px);white-space:normal;line-height:1.5}
+.practice-hub>label{display:block;font-size:16px;font-weight:600;line-height:1.5;max-width:420px;margin-bottom:32px}
+.practice-hub #practice-day{display:block;margin-top:10px;width:100%;font-size:16px;min-height:52px}
+.hub-options{display:grid;gap:0;margin-top:16px}
+.hub-group{margin:0;border:0;border-top:1px solid var(--line);padding:0}
+.hub-group:last-child{border-bottom:1px solid var(--line)}
+.hub-group>summary{display:grid;grid-template-columns:32px minmax(0,1fr) 18px;gap:10px 18px;align-items:center;list-style:none;padding:24px 0;min-height:96px;position:relative}
+.hub-group>summary::-webkit-details-marker{display:none}
+.hub-group>summary::after{content:'';width:8px;height:8px;border-right:2px solid currentColor;border-bottom:2px solid currentColor;transform:rotate(45deg);grid-column:3;grid-row:1/3;justify-self:center;align-self:center;color:var(--accent);transition:transform 150ms}
+.hub-group[open]>summary::after{transform:rotate(225deg)}
+.hub-group>summary>svg{grid-row:1/3;grid-column:1;width:28px;height:28px;color:var(--accent)}
+.hub-group>summary>span{grid-column:2;min-width:0}
+.hub-group>summary strong{display:block;font-size:21px;line-height:1.35;font-weight:650}
+.hub-group>summary small{display:block;font-size:14px;line-height:1.55;font-weight:450;color:var(--muted);margin-top:6px}
+.hub-links{max-width:none!important;padding:0 0 24px 50px!important;display:grid;gap:0;color:var(--ink)!important}
+.hub-option{display:grid;grid-template-columns:24px minmax(0,1fr) 18px;gap:14px;align-items:center;background:transparent;border:0;border-top:1px solid var(--line);border-radius:0;padding:20px 8px;text-align:start;min-height:88px;line-height:1.5;color:var(--ink);width:100%;transition:background 140ms}
+.hub-option>svg{width:22px;height:22px;color:var(--accent)}
+.hub-option>svg:last-child{width:18px;height:18px;color:var(--muted)}
+.hub-option>span{min-width:0}
+.hub-option strong{display:block;font-size:17px;font-weight:650}
+.hub-option small{display:block;font-size:14px;font-weight:450;color:var(--muted);line-height:1.6;margin-top:5px}
+.practice-hub .note{font-size:14px;line-height:1.65;margin-top:28px}
+.help-index{margin-block:28px 36px;border-top:1px solid var(--line)}
+.help-row{display:flex;align-items:center;justify-content:space-between;gap:24px;text-align:start;width:100%;padding:24px 0;min-height:80px;border:0;border-bottom:1px solid var(--line);background:transparent;color:var(--ink);font-size:18px;line-height:1.5}
+.help-row>svg{width:22px;height:22px;flex-shrink:0;color:var(--accent)}
+
+/* Lessons keep the task first and the explanation within reach. */
+.exercise.focused-lesson{max-width:780px}
+.focused-lesson .exercise-header{margin-bottom:28px;gap:16px;flex-wrap:wrap}
+.focused-lesson .exercise-header .track{min-width:100px;height:8px}
+.focused-lesson .exercise-meta{font-size:14px;line-height:1.5;color:var(--muted);white-space:normal;font-variant-numeric:tabular-nums}
+.focused-lesson .exercise-heading{margin-bottom:20px}
+.focused-lesson .exercise-title h1{font-size:clamp(28px,3.3vw,38px);line-height:1.18;max-width:25ch}
+.focused-lesson .exercise-title p{font-size:16px;line-height:1.6;margin-top:12px;max-width:65ch}
+.focused-lesson .lumo-mentor{background:transparent;border:0;border-radius:0;padding:8px 0 16px;margin:0 0 24px;gap:16px;align-items:center}
+.focused-lesson .lumo-mentor>.mascot{width:64px;height:64px;min-width:64px;flex-basis:64px}
+.focused-lesson .lumo-mentor p{font-size:16px;line-height:1.6;max-width:65ch}
+.focused-lesson .mentor-actions{margin-top:10px;gap:8px 14px}
+.focused-lesson .mentor-actions .btn{font-size:14px;min-height:48px;padding-inline:0;color:var(--accent);text-align:start;justify-content:start}
+.focused-lesson .mentor-actions .play{min-height:48px;min-width:48px}
+.lesson-player{margin:0 0 28px;padding:0;border-block:1px solid var(--line)}
+.lesson-player>summary{font-size:14px;min-height:48px;line-height:1.5;color:var(--accent);font-weight:600;padding-block:4px}
+.lesson-player>div{max-width:none}
+.lesson-player .audio-preferences{margin:12px 0 16px;gap:16px}
+.lesson-player .audio-preferences label{font-size:14px;min-width:min(100%,140px)}
+.lesson-player .audio-preferences .select{font-size:16px;min-height:50px}
+.focused-lesson .phrase-list.active-phrases{grid-template-columns:1fr;gap:0;margin:0}
+.active-phrases .phrase{border:0;border-bottom:1px solid var(--line);border-radius:0;background:transparent;padding:22px 0;gap:20px;grid-template-columns:minmax(0,1fr) 48px}
+.active-phrases .phrase:first-child{border-top:1px solid var(--line)}
+.active-phrases .spanish{font-size:clamp(21px,2.2vw,25px);line-height:1.5}
+.active-phrases .phrase p{font-size:16px;line-height:1.6;margin-top:8px}
+.active-phrases .play{min-height:48px;min-width:48px;border-radius:16px;margin-top:2px}
+.lesson-extra{margin-block:20px 0;padding:8px 0}
+.lesson-extra>summary{font-size:14px;color:var(--accent);min-height:48px}
+.lesson-extra>div{max-width:none}
+.lesson-extra .phrase{background:transparent;border:0;border-radius:0;padding:16px 0}
+.lesson-extra .phrase p{font-size:16px}
+.focused-lesson .audio-credit{font-size:14px;line-height:1.65;max-width:65ch;margin-top:20px}
+.focused-lesson .audio-credit a{font-size:14px}
+.lesson-aids{margin-top:28px}
+.lesson-aids>details{margin:0;padding-block:12px}
+.lesson-aids>details>summary{font-size:16px;min-height:48px;line-height:1.5}
+.lesson-aids :is(.note,.small){font-size:14px;line-height:1.65}
+.focused-lesson .options{margin-block:28px}
+.focused-lesson .option{min-height:68px;padding:18px 20px;font-size:18px;line-height:1.5}
+.focused-lesson .token{font-size:18px;min-height:48px}
+.focused-lesson .feedback{margin-top:28px}
+.focused-lesson .feedback p{font-size:16px;line-height:1.6}
+.guided-finish{max-width:680px;margin-inline:auto;text-align:center}
+.guided-finish .finish{padding-top:12px}
+.guided-finish .finish .mascot,.studio-session.session-complete .finish .mascot{width:164px;height:164px;margin:0 auto 24px;animation:path-earned-proud 750ms cubic-bezier(.16,1,.3,1) both}
+.guided-finish h1{font-size:clamp(30px,3.5vw,42px);line-height:1.18;max-width:22ch;margin-inline:auto}
+.guided-finish p{font-size:16px;line-height:1.65;max-width:55ch;margin:18px auto 0}
+.guided-finish .finish>.btn{max-width:100%;width:auto;white-space:normal;line-height:1.5;margin-top:24px}
+.guided-finish .finish>.btn.primary{min-width:min(100%,240px);min-height:52px}
+.guided-finish>.btn.quiet,.guided-finish .finish>.btn.quiet{font-size:14px;color:var(--accent);min-height:48px}
+.guided-finish>details{margin-top:32px;text-align:start;border-block:1px solid var(--line);padding-block:12px}
+.guided-finish>details>summary{font-size:16px;min-height:48px}
+.guided-finish>details>div{max-width:none}
+.guided-finish>details .btn{white-space:normal;font-size:14px;line-height:1.5;min-height:48px;margin:8px 8px 8px 0}
+.session-band{padding:12px 0;margin-bottom:24px;gap:10px 18px;border-top:0}
+.session-band>strong{font-size:14px;line-height:1.5;font-weight:650;white-space:nowrap}
+.session-band .session-band-step{flex:1 1 180px;font-size:14px;line-height:1.5;color:var(--muted);min-width:0}
+.session-band .btn{font-size:14px;min-height:48px;line-height:1.5}
+.section-trail .btn.quiet{padding-inline:0;min-height:48px;font-size:14px;color:var(--accent);gap:8px;white-space:normal}
+.studio-session .session-track{margin-block:24px 32px}
+.studio-session.session-complete .finish{padding-block:8px 24px}
+.studio-session.session-complete .finish h1{max-width:24ch;margin-inline:auto;font-size:clamp(30px,3.6vw,42px);line-height:1.18}
+.studio-session.session-complete .finish .btn.primary{min-width:min(100%,240px);min-height:52px;white-space:normal;line-height:1.5}
+.topbar .shell-context{font-size:14px}
+
+/* Motion names a real event: greet, choose today's stop, finish the task. */
+@keyframes path-lumo-greet{0%{transform:rotate(-6deg) translateY(4px)}35%{transform:rotate(4deg) translateY(-3px)}70%{transform:rotate(-1deg)}100%{transform:none}}
+@keyframes path-day-arrive{from{transform:scale(.93);border-radius:28px}to{transform:none;border-radius:22px}}
+@keyframes path-earned-proud{0%{transform:translateY(8px) scale(.94)}30%{transform:translateY(-8px) scale(1.02)}64%{transform:translateY(2px) scale(.99)}100%{transform:none}}
+@media(hover:hover) and (pointer:fine){
+ .path-chapter:hover{border-color:var(--accent);background:var(--soft)}
+ .path-day:hover{background:var(--paper);border-color:var(--line)}
+ .path-stop.current .path-day:hover{background:var(--soft);border-color:var(--accent)}
+ .hub-option:hover,.hub-group>summary:hover{background:var(--soft)}
+ .today-actions .btn.primary:hover,.hub-primary .btn.primary:hover{transform:translateY(-1px);box-shadow:0 6px 18px var(--shadow)}
+ .help-row:hover{color:var(--accent)}
+}
+.path-day:active:not(:disabled),.path-chapter:active:not(:disabled),.hub-option:active:not(:disabled){transform:translateY(1px)}
+.today-actions .btn.primary:active:not(:disabled),.hub-primary .btn.primary:active:not(:disabled){transform:translateY(2px);box-shadow:0 2px 5px var(--shadow)}
+.path-home :is(button,summary):focus-visible,.practice-hub :is(button,summary):focus-visible,.focused-lesson summary:focus-visible{outline:3px solid var(--accent);outline-offset:4px}
+.paused :is(.today-buddy .mascot,.path-stop.current .day-badge,.guided-finish .finish .mascot,.studio-session.session-complete .finish .mascot){animation-play-state:paused}
+
+@media(max-width:899px){
+ .today-layout{grid-template-columns:minmax(0,1fr) 190px;gap:24px}
+ .today-panel{padding:28px}
+ .today-buddy>.mascot-btn,.today-buddy .mascot{width:128px;height:128px}
+ .course-chapters{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+}
+@media(max-width:599px){
+ .path-welcome{margin-bottom:24px}
+ .path-welcome h1,.practice-hub>h1{font-size:30px;line-height:1.18}
+ .path-welcome p{margin-top:12px}
+ .today-panel{padding:24px;border-radius:24px}
+ .today-layout{grid-template-columns:1fr;gap:24px}
+ .today-summary h2{font-size:28px;line-height:1.2}
+ .today-goal{font-size:16px}
+ .today-meta{margin-block:12px 16px}
+ .today-actions{display:grid;grid-template-columns:1fr;gap:4px;margin-top:22px}
+ .today-actions .btn.primary{width:100%;min-height:54px}
+ .today-actions .btn.quiet{justify-content:center}
+ .today-save{margin-top:12px}
+ .today-buddy{grid-template-columns:76px minmax(0,1fr);gap:10px 14px;align-items:center;justify-items:start}
+ .today-buddy>.mascot-btn{grid-column:1;grid-row:1/3;width:76px;height:76px;border-radius:18px}
+ .today-buddy .mascot{width:76px;height:76px}
+ .lumo-note{grid-column:2;grid-row:1;padding:14px 16px;border-radius:18px 18px 18px 4px;max-width:none}
+ .lumo-note p{font-size:14px;line-height:1.6}
+ .buddy-caption{grid-column:2;grid-row:2;font-size:14px;text-align:start;max-width:none}
+ .today-outline{margin-top:20px;padding-top:12px}
+ .today-outline .session-track{grid-template-columns:1fr}
+ .today-outline .session-track>li{display:grid;grid-template-columns:30px minmax(0,1fr) auto;gap:12px;align-items:center;padding:16px 0;border-inline:0;border-bottom:1px solid var(--line)}
+ .today-outline .session-track>li>span{margin:0;grid-column:1;grid-row:1/3}
+ .today-outline .session-track>li strong{grid-column:2;font-size:14px}
+ .today-outline .session-track>li small{grid-column:2;font-size:14px;margin-top:0}
+ .today-outline .session-track>li::after{inset:auto 0 -1px}
+ .path-course{margin-top:40px}
+ .path-course-head{align-items:flex-start;gap:10px;margin-bottom:20px}
+ .path-course-head h2{font-size:25px}
+ .course-chapters{gap:10px;margin-bottom:28px}
+ .path-chapter{grid-template-columns:24px minmax(0,1fr);gap:8px;padding:14px 12px;min-height:106px;border-radius:16px}
+ .path-chapter>span{width:24px;height:24px;font-size:14px}
+ .path-chapter strong{font-size:15px;line-height:1.45}
+ .path-chapter small{font-size:14px}
+ .path-section-heading{grid-template-columns:1fr;gap:12px;margin-bottom:24px}
+ .path-section-heading h3{font-size:22px}
+ .path-section-heading p{grid-column:auto}
+ .path-section-heading>.route-switch{grid-column:auto;grid-row:auto;justify-self:start;margin-top:4px}
+ .lesson-map{gap:14px}
+ .path-stop{margin-left:0!important}
+ .path-stop:not(:last-child)::after{left:30px;top:calc(50% + 23px);height:calc(50% + 30px)}
+ .path-day{grid-template-columns:48px minmax(0,1fr) 18px;padding:16px 6px;gap:14px;min-height:96px;border-radius:18px}
+ .path-stop.current .path-day{padding-inline:12px}
+ .day-badge{width:48px;height:48px;border-radius:18px;font-size:20px}
+ .path-day-copy strong{font-size:16px;line-height:1.45}
+ .path-day-copy small{font-size:14px}
+ .path-day>svg{width:18px;height:18px}
+ .path-legend{margin-top:24px}
+ .path-home .page-fold{margin-top:32px}
+ .path-home .day-calendar{gap:8px;grid-template-columns:repeat(5,minmax(0,1fr))}
+ .path-home .calendar-day{min-height:68px;font-size:18px}
+ .hub-primary{padding-block:24px 28px}
+ .hub-primary .btn.primary{width:100%}
+ .hub-group>summary{grid-template-columns:28px minmax(0,1fr) 16px;gap:8px 14px;padding-block:22px;min-height:104px}
+ .hub-group>summary>svg{width:25px;height:25px}
+ .hub-group>summary strong{font-size:20px}
+ .hub-links{padding-left:0!important}
+ .hub-option{padding:20px 8px;grid-template-columns:22px minmax(0,1fr) 16px;gap:12px;min-height:98px}
+ .hub-option strong{font-size:16px}
+ .focused-lesson .exercise-header{gap:12px;margin-bottom:24px}
+ .focused-lesson .exercise-meta{flex-basis:100%;order:3}
+ .focused-lesson .exercise-title h1{font-size:28px}
+ .focused-lesson .lumo-mentor{gap:12px;align-items:flex-start;margin-bottom:20px}
+ .focused-lesson .lumo-mentor>.mascot{width:48px;height:48px;min-width:48px;flex-basis:48px}
+ .focused-lesson .lumo-mentor p{font-size:16px}
+ .focused-lesson .mentor-actions .btn{font-size:14px}
+ .lesson-player{margin-bottom:24px}
+ .active-phrases .phrase{gap:14px;padding-block:20px}
+ .active-phrases .spanish{font-size:21px}
+ .focused-lesson .option{padding:16px;font-size:17px}
+ .guided-finish .finish>.btn{width:100%;margin-top:18px}
+ .guided-finish .finish .mascot,.studio-session.session-complete .finish .mascot{width:140px;height:140px}
+ .session-band{margin-bottom:20px;gap:4px 14px}
+ .session-band .session-band-step{flex-basis:180px}
+ .session-band .btn{padding-inline:0;justify-content:start}
+}
+@media(max-width:359px){
+ .today-panel{padding:20px}
+ .path-welcome h1,.practice-hub>h1{font-size:28px}
+ .today-summary h2{font-size:26px}
+ .today-buddy{grid-template-columns:60px minmax(0,1fr);gap:10px}
+ .today-buddy>.mascot-btn,.today-buddy .mascot{width:60px;height:60px}
+ .lumo-note{padding:12px}
+ .path-chapter{grid-template-columns:1fr;gap:8px;min-height:134px;padding:14px}
+ .path-chapter>span{grid-row:auto}
+ .path-chapter small{grid-column:auto}
+ .path-day{grid-template-columns:44px minmax(0,1fr) 16px;gap:12px}
+ .day-badge{width:44px;height:48px}
+ .path-stop:not(:last-child)::after{left:28px}
+ .path-stop.current .path-day{padding-inline:8px}
+ .focused-lesson .lumo-mentor{gap:10px}
+ .focused-lesson .lumo-mentor>.mascot{width:40px;height:40px;min-width:40px;flex-basis:40px}
+ .path-home .day-calendar{gap:6px}
+}
+.large-text :is(.path-home,.practice-hub,.focused-lesson) :is(p,button,label,input,select,textarea){font-size:18px}
+.large-text :is(.path-home,.practice-hub,.focused-lesson) :is(small,.note,.audio-credit,.today-meta,.today-save,.today-status,.path-count,.path-legend,.buddy-caption){font-size:16px}
+.large-text .path-chapter{grid-template-columns:1fr;min-height:134px}
+.large-text .path-chapter>span{grid-row:auto}
+.large-text .path-chapter small{grid-column:auto}
+.large-text .today-layout{grid-template-columns:minmax(0,1fr) 220px}
+.large-text .path-day{min-height:112px}
+.large-text .path-day-copy strong{font-size:18px}
+.large-text .path-day-copy small{font-size:16px}
+.large-text .hub-group>summary strong{font-size:22px}
+.large-text .hub-group>summary small,.large-text .hub-option small{font-size:16px}
+@media(max-width:899px){.large-text .today-layout{grid-template-columns:1fr}.large-text .today-buddy{grid-template-columns:88px minmax(0,1fr);align-items:center;justify-items:start}.large-text .today-buddy>.mascot-btn{grid-column:1;grid-row:1/3}.large-text .today-buddy>.mascot-btn,.large-text .today-buddy .mascot{width:88px;height:88px}.large-text .lumo-note{grid-column:2;grid-row:1;max-width:none}.large-text .buddy-caption{grid-column:2;grid-row:2;text-align:start}}
+@media(max-width:599px){.large-text .today-buddy{grid-template-columns:60px minmax(0,1fr);gap:10px}.large-text .today-buddy>.mascot-btn,.large-text .today-buddy .mascot{width:60px;height:60px}.large-text .path-day{grid-template-columns:44px minmax(0,1fr);gap:12px}.large-text .path-day>svg{display:none}.large-text .day-badge{width:44px;height:48px}}
+.motion-off :is(.today-buddy .mascot,.path-stop.current .day-badge,.guided-finish .finish .mascot,.studio-session.session-complete .finish .mascot){animation:none!important}
+@media(prefers-reduced-motion:reduce){
+ .today-buddy .mascot,.path-stop.current .day-badge,.guided-finish .finish .mascot,.studio-session.session-complete .finish .mascot{animation:none!important}
+ .path-day,.path-chapter,.hub-group>summary::after,.hub-option{transition:none}
+ .path-day:hover,.path-day:active,.path-chapter:active,.hub-option:active,.today-actions .btn.primary:hover,.today-actions .btn.primary:active,.hub-primary .btn.primary:hover,.hub-primary .btn.primary:active{transform:none}
+}
+@media(forced-colors:active){
+ .today-panel,.path-chapter,.path-day,.day-badge,.lumo-note{border:1px solid CanvasText;background:Canvas;color:CanvasText}
+ .path-chapter[aria-pressed=true],.path-stop.current .path-day,.path-stop.current .day-badge{border:2px solid Highlight;background:Canvas;color:CanvasText}
+ .path-stop.done .day-badge{border:2px solid CanvasText;background:Canvas;color:CanvasText}
+ .path-day-copy small,.today-meta,.today-status,.buddy-caption,.hub-option small,.hub-group>summary small{color:CanvasText}
+ .path-stop:not(:last-child)::after{border-color:CanvasText}
+ .path-chapter[aria-pressed=true]>span{background:Highlight;color:HighlightText;border-color:Highlight}
+ .path-home :is(button,summary):focus-visible,.practice-hub :is(button,summary):focus-visible,.focused-lesson summary:focus-visible{outline-color:Highlight}
+}
