@@ -1,0 +1,2758 @@
+{
+  "version": 1,
+  "days": [
+    {
+      "day": 1,
+      "title": "Имя — твой первый ход",
+      "hook": "На встрече важно не только ответить, но и вернуть вопрос.",
+      "tool": {
+        "model": "Me llamo Andrea.",
+        "meaning": "Меня зовут Андреа.",
+        "how": "Говоря о себе, соединяй me llamo с именем. Это готовый блок; yo не требуется.",
+        "parts": [
+          {
+            "es": "Me llamo",
+            "ru": "меня зовут"
+          },
+          {
+            "es": "Andrea",
+            "ru": "Андреа"
+          }
+        ],
+        "contrast": {
+          "a": {
+            "es": "Me llamo Andrea.",
+            "ru": "Меня зовут Андреа."
+          },
+          "b": {
+            "es": "¿Cómo te llamas?",
+            "ru": "Как тебя зовут?"
+          },
+          "explanation": "Первая реплика сообщает имя; вторая спрашивает имя собеседника."
+        },
+        "pitfall": {
+          "wrong": "Me llamo de Andrea.",
+          "right": "Me llamo Andrea.",
+          "explanation": "После me llamo имя ставится сразу: Andrea. Предлог de нужен в других моделях, например soy de, но не перед именем здесь."
+        }
+      },
+      "tasks": [
+        {
+          "id": "w1-intent",
+          "kind": "intent",
+          "prompt": "Что сказать, чтобы сначала представиться, а не спросить имя?",
+          "context": "Ты подходишь к новому человеку.",
+          "options": [
+            "Me llamo Andrea.",
+            "¿Cómo te llamas?",
+            "Mucho gusto."
+          ],
+          "answer": 0,
+          "explanation": "Me llamo называет тебя. ¿Cómo te llamas? возвращает вопрос; Mucho gusto выражает радость знакомства."
+        },
+        {
+          "id": "w1-repair",
+          "kind": "repair",
+          "prompt": "Исправь ошибку в «Me llamo de Andrea.». Сохрани смысл образца.",
+          "context": "Нужная модель: Me llamo Andrea.",
+          "options": [
+            "Me llamar Andrea.",
+            "Me llamo de Andrea.",
+            "Me llamo Andrea."
+          ],
+          "answer": 2,
+          "explanation": "После me llamo имя ставится сразу: Andrea. Предлог de нужен в других моделях, например soy de, но не перед именем здесь."
+        },
+        {
+          "id": "w1-build",
+          "kind": "build",
+          "prompt": "Собери именно показанную модель из всех карточек.",
+          "context": "Образец: Me llamo Andrea. После сборки спрячь текст и скажи фразу ещё раз.",
+          "tokens": [
+            "Me",
+            "llamo",
+            "Andrea."
+          ],
+          "accepted": [
+            "Me llamo Andrea."
+          ],
+          "explanation": "Говоря о себе, соединяй me llamo с именем. Это готовый блок; yo не требуется."
+        }
+      ],
+      "challenge": {
+        "prompt": "Представься настоящим именем и задай встречный вопрос.",
+        "example": "Hola. Me llamo Ana. ¿Cómo te llamas?",
+        "change": "Во второй попытке начни сразу с вопроса, а имя назови после ответа."
+      },
+      "takeaway": {
+        "es": "Me llamo Andrea.",
+        "ru": "Меня зовут Андреа.",
+        "useWhen": "Когда знакомишься и хочешь продолжить разговор."
+      }
+    },
+    {
+      "day": 2,
+      "title": "Ответ, который возвращает разговор",
+      "hook": "Одно bien закрывает вопрос. Короткое ¿Y tú? открывает следующий ход.",
+      "tool": {
+        "model": "Estoy bien. ¿Y tú?",
+        "meaning": "У меня всё хорошо. А ты?",
+        "how": "Estoy bien — о своём состоянии сейчас. ¿Y tú? приглашает человека ответить про себя.",
+        "parts": [
+          {
+            "es": "Estoy bien",
+            "ru": "у меня всё хорошо"
+          },
+          {
+            "es": "¿Y tú?",
+            "ru": "а ты?"
+          }
+        ],
+        "contrast": {
+          "a": {
+            "es": "Estoy bien.",
+            "ru": "У меня всё хорошо."
+          },
+          "b": {
+            "es": "¿Y tú?",
+            "ru": "А ты?"
+          },
+          "explanation": "Это разные роли: свой ответ и встречный вопрос."
+        },
+        "pitfall": {
+          "wrong": "Estar bien. ¿Y tú?",
+          "right": "Estoy bien. ¿Y tú?",
+          "explanation": "Ответ за себя строится с личной формой estoy, а не начальной estar. В коротком встречном вопросе достаточно ¿Y tú? — добавлять está к tú нельзя."
+        }
+      },
+      "tasks": [
+        {
+          "id": "w2-intent",
+          "kind": "intent",
+          "prompt": "Как ответить, если у тебя всё хорошо и ты хочешь узнать про собеседника?",
+          "context": "Человек спрашивает: ¿Cómo estás?",
+          "options": [
+            "¿Cómo te llamas?",
+            "Estoy bien. ¿Y tú?",
+            "Mucho gusto."
+          ],
+          "answer": 1,
+          "explanation": "Ответ сообщает состояние и оставляет место для собеседника. Вариант с именем меняет тему."
+        },
+        {
+          "id": "w2-repair",
+          "kind": "repair",
+          "prompt": "Исправь ошибку в «Estar bien. ¿Y tú?». Сохрани смысл образца.",
+          "context": "Нужная модель: Estoy bien. ¿Y tú?",
+          "options": [
+            "Estoy bien. ¿Y tú?",
+            "Estoy bien. ¿Y tú está?",
+            "Estar bien. ¿Y tú?"
+          ],
+          "answer": 0,
+          "explanation": "Ответ за себя строится с личной формой estoy, а не начальной estar. В коротком встречном вопросе достаточно ¿Y tú? — добавлять está к tú нельзя."
+        },
+        {
+          "id": "w2-build",
+          "kind": "build",
+          "prompt": "Собери именно показанную модель из всех карточек.",
+          "context": "Образец: Estoy bien. ¿Y tú? После сборки спрячь текст и скажи фразу ещё раз.",
+          "tokens": [
+            "Estoy",
+            "bien.",
+            "¿Y",
+            "tú?"
+          ],
+          "accepted": [
+            "Estoy bien. ¿Y tú?"
+          ],
+          "explanation": "Estoy bien — о своём состоянии сейчас. ¿Y tú? приглашает человека ответить про себя."
+        }
+      ],
+      "challenge": {
+        "prompt": "Ответь о своём сегодняшнем состоянии и верни вопрос.",
+        "example": "Estoy contenta. ¿Y tú?",
+        "change": "Выбери contento или contenta, если это точнее твоего состояния; не изображай обязательную радость."
+      },
+      "takeaway": {
+        "es": "Estoy bien. ¿Y tú?",
+        "ru": "У меня всё хорошо. А ты?",
+        "useWhen": "Когда тебя спрашивают, как ты."
+      }
+    },
+    {
+      "day": 3,
+      "title": "Не угадать, а уточнить",
+      "hook": "Переспрос — полноценный разговорный навык, а не провал.",
+      "tool": {
+        "model": "No entiendo eso.",
+        "meaning": "Я этого не понимаю.",
+        "how": "No ставится перед entiendo. Eso указывает на только что сказанное. Затем можно попросить повторить.",
+        "parts": [
+          {
+            "es": "No",
+            "ru": "не"
+          },
+          {
+            "es": "entiendo",
+            "ru": "понимаю"
+          },
+          {
+            "es": "eso",
+            "ru": "это"
+          }
+        ],
+        "contrast": {
+          "a": {
+            "es": "Más despacio.",
+            "ru": "Помедленнее."
+          },
+          "b": {
+            "es": "¿Podrías repetir eso?",
+            "ru": "Ты мог бы это повторить?"
+          },
+          "explanation": "В первом случае нужна меньшая скорость; во втором — повтор. Если звук потерялся, одна медленная речь его не вернёт."
+        },
+        "pitfall": {
+          "wrong": "No entender eso.",
+          "right": "No entiendo eso.",
+          "explanation": "Для «я понимаю» нужна личная форма entiendo. Entender — начальная форма; entiendes с явно названным yo не согласуется."
+        }
+      },
+      "tasks": [
+        {
+          "id": "w3-intent",
+          "kind": "intent",
+          "prompt": "Ты не расслышал последнюю реплику. Как попросить повтор?",
+          "context": "Связь на секунду пропала; теперь ты снова слышишь.",
+          "options": [
+            "Lo siento.",
+            "Más despacio.",
+            "¿Podrías repetir eso?"
+          ],
+          "answer": 2,
+          "explanation": "Повтор восстановит пропущенную реплику. Más despacio просит замедлиться, но не обязательно повторить."
+        },
+        {
+          "id": "w3-repair",
+          "kind": "repair",
+          "prompt": "Исправь ошибку в «No entender eso.». Сохрани смысл образца.",
+          "context": "Нужная модель: No entiendo eso.",
+          "options": [
+            "No entiendes yo eso.",
+            "No entiendo eso.",
+            "No entender eso."
+          ],
+          "answer": 1,
+          "explanation": "Для «я понимаю» нужна личная форма entiendo. Entender — начальная форма; entiendes с явно названным yo не согласуется."
+        },
+        {
+          "id": "w3-build",
+          "kind": "build",
+          "prompt": "Собери именно показанную модель из всех карточек.",
+          "context": "Образец: No entiendo eso. После сборки спрячь текст и скажи фразу ещё раз.",
+          "tokens": [
+            "No",
+            "entiendo",
+            "eso."
+          ],
+          "accepted": [
+            "No entiendo eso."
+          ],
+          "explanation": "No ставится перед entiendo. Eso указывает на только что сказанное. Затем можно попросить повторить."
+        }
+      ],
+      "challenge": {
+        "prompt": "Скажи, что не понял, затем попроси повтор.",
+        "example": "No entiendo eso. ¿Podrías repetir eso?",
+        "change": "Во второй попытке причина другая: всё слышно, но речь слишком быстрая. Попроси Más despacio."
+      },
+      "takeaway": {
+        "es": "No entiendo eso.",
+        "ru": "Я этого не понимаю.",
+        "useWhen": "Когда смысл сказанного пока не понятен."
+      }
+    },
+    {
+      "day": 4,
+      "title": "Откуда ты и где твой дом",
+      "hook": "Можно быть из одной страны и жить в другом городе: в речи это две разные истории.",
+      "tool": {
+        "model": "Vivo en Moscú.",
+        "meaning": "Я живу в Москве.",
+        "how": "Vivo en сообщает место проживания. Название города подставляется после en.",
+        "parts": [
+          {
+            "es": "Vivo",
+            "ru": "я живу"
+          },
+          {
+            "es": "en",
+            "ru": "в"
+          },
+          {
+            "es": "Moscú",
+            "ru": "Москве"
+          }
+        ],
+        "contrast": {
+          "a": {
+            "es": "Soy de Brasil.",
+            "ru": "Я из Бразилии."
+          },
+          "b": {
+            "es": "Vivo en Moscú.",
+            "ru": "Я живу в Москве."
+          },
+          "explanation": "Soy de — происхождение; vivo en — нынешнее место жизни. Не выбирай по русскому слову «из» без контекста."
+        },
+        "pitfall": {
+          "wrong": "Vivo de Moscú.",
+          "right": "Vivo en Moscú.",
+          "explanation": "Для места проживания в модели vivo en нужна en. De в soy de задаёт происхождение."
+        }
+      },
+      "tasks": [
+        {
+          "id": "w4-intent",
+          "kind": "intent",
+          "prompt": "Какая реплика сообщает, где ты сейчас живёшь?",
+          "context": "Ты родился в Бразилии, но сейчас живёшь в Москве.",
+          "options": [
+            "Vivo en Moscú.",
+            "Soy de Brasil.",
+            "Soy estudiante."
+          ],
+          "answer": 0,
+          "explanation": "Vivo en сообщает город проживания. Soy de Brasil отвечает на вопрос о происхождении."
+        },
+        {
+          "id": "w4-repair",
+          "kind": "repair",
+          "prompt": "Исправь ошибку в «Vivo de Moscú.». Сохрани смысл образца.",
+          "context": "Нужная модель: Vivo en Moscú.",
+          "options": [
+            "Vivir en Moscú.",
+            "Vivo de Moscú.",
+            "Vivo en Moscú."
+          ],
+          "answer": 2,
+          "explanation": "Для места проживания в модели vivo en нужна en. De в soy de задаёт происхождение."
+        },
+        {
+          "id": "w4-build",
+          "kind": "build",
+          "prompt": "Собери именно показанную модель из всех карточек.",
+          "context": "Образец: Vivo en Moscú. После сборки спрячь текст и скажи фразу ещё раз.",
+          "tokens": [
+            "Vivo",
+            "en",
+            "Moscú."
+          ],
+          "accepted": [
+            "Vivo en Moscú."
+          ],
+          "explanation": "Vivo en сообщает место проживания. Название города подставляется после en."
+        }
+      ],
+      "challenge": {
+        "prompt": "Назови свой настоящий город; отдельно назови страну происхождения.",
+        "example": "Vivo en Madrid. Soy de Brasil.",
+        "change": "Представь, что ты переехал: поменяй только город проживания, сохрани происхождение."
+      },
+      "takeaway": {
+        "es": "Vivo en Moscú.",
+        "ru": "Я живу в Москве.",
+        "useWhen": "Когда рассказываешь о месте жизни."
+      }
+    },
+    {
+      "day": 5,
+      "title": "Занятие — без лишнего «я»",
+      "hook": "Испанская форма глагола уже может показать, кто говорит.",
+      "tool": {
+        "model": "Trabajo aquí. Soy estudiante.",
+        "meaning": "Я работаю здесь. Я студент / студентка.",
+        "how": "Trabajo aquí сообщает работу в этом месте; soy estudiante — статус студента. Оба могут быть правдой. Не добавляй yo механически: обе формы уже подходят для «я».",
+        "parts": [
+          {
+            "es": "Trabajo aquí.",
+            "ru": "я работаю здесь"
+          },
+          {
+            "es": "Soy estudiante.",
+            "ru": "я студент / студентка"
+          }
+        ],
+        "contrast": {
+          "a": {
+            "es": "Trabajo aquí.",
+            "ru": "Я работаю здесь."
+          },
+          "b": {
+            "es": "Soy estudiante.",
+            "ru": "Я студент / студентка."
+          },
+          "explanation": "Работа в этом месте и статус студента — разные сведения. Человек может сообщить оба."
+        },
+        "pitfall": {
+          "wrong": "Trabajo aquí. Soy estudiantes.",
+          "right": "Trabajo aquí. Soy estudiante.",
+          "explanation": "Для одного говорящего: soy estudiante, без множественного s. В сообщении о своей работе нужна личная форма trabajo, не начальная trabajar."
+        }
+      },
+      "tasks": [
+        {
+          "id": "w5-intent",
+          "kind": "intent",
+          "prompt": "Как сообщить, что ты работаешь именно здесь?",
+          "context": "Знакомый спросил, чем ты занимаешься в этом месте.",
+          "options": [
+            "¿A qué te dedicas?",
+            "Trabajo aquí.",
+            "Soy estudiante."
+          ],
+          "answer": 1,
+          "explanation": "Trabajo aquí называет действие и место. Вопрос ¿A qué te dedicas? нужно адресовать другому человеку."
+        },
+        {
+          "id": "w5-repair",
+          "kind": "repair",
+          "prompt": "Исправь ошибку в «Trabajo aquí. Soy estudiantes.». Сохрани смысл образца.",
+          "context": "Нужная модель: Trabajo aquí. Soy estudiante.",
+          "options": [
+            "Trabajo aquí. Soy estudiante.",
+            "Trabajar aquí. Soy estudiante.",
+            "Trabajo aquí. Soy estudiantes."
+          ],
+          "answer": 0,
+          "explanation": "Для одного говорящего: soy estudiante, без множественного s. В сообщении о своей работе нужна личная форма trabajo, не начальная trabajar."
+        },
+        {
+          "id": "w5-build",
+          "kind": "build",
+          "prompt": "Собери именно показанную модель из всех карточек.",
+          "context": "Образец: Trabajo aquí. Soy estudiante. После сборки спрячь текст и скажи фразу ещё раз.",
+          "tokens": [
+            "Trabajo",
+            "aquí.",
+            "Soy",
+            "estudiante."
+          ],
+          "accepted": [
+            "Trabajo aquí. Soy estudiante."
+          ],
+          "explanation": "Trabajo aquí сообщает работу в этом месте; soy estudiante — статус студента. Оба могут быть правдой. Не добавляй yo механически: обе формы уже подходят для «я»."
+        }
+      ],
+      "challenge": {
+        "prompt": "Скажи, что ты делаешь: работаешь или учишься. Потом спроси собеседника.",
+        "example": "Trabajo aquí. ¿A qué te dedicas?",
+        "change": "Если ты учишься, замени ответ на Soy estudiante. Не придумывай работу ради образца."
+      },
+      "takeaway": {
+        "es": "Trabajo aquí. Soy estudiante.",
+        "ru": "Я работаю здесь. Я студент / студентка.",
+        "useWhen": "Когда рассказываешь о работе или учёбе."
+      }
+    },
+    {
+      "day": 6,
+      "title": "Немного — тоже уровень",
+      "hook": "Точная маленькая реплика лучше, чем обещание понимать всё.",
+      "tool": {
+        "model": "Hablo un poco de español.",
+        "meaning": "Я немного говорю по-испански.",
+        "how": "Un poco de — небольшой объём чего-то. С языком сохрани весь блок un poco de español.",
+        "parts": [
+          {
+            "es": "Hablo",
+            "ru": "я говорю"
+          },
+          {
+            "es": "un poco de",
+            "ru": "немного"
+          },
+          {
+            "es": "español",
+            "ru": "испанский"
+          }
+        ],
+        "contrast": {
+          "a": {
+            "es": "Hablo un poco de español.",
+            "ru": "Я немного говорю по-испански."
+          },
+          "b": {
+            "es": "No hablo español.",
+            "ru": "Я не говорю по-испански."
+          },
+          "explanation": "«Немного говорю» не означает «совсем не говорю». Выбирай честный уровень."
+        },
+        "pitfall": {
+          "wrong": "Hablo unos poco de español.",
+          "right": "Hablo un poco de español.",
+          "explanation": "Сохрани блок un poco de español. Un и poco стоят в единственном числе; unos poco и un pocos не согласованы."
+        }
+      },
+      "tasks": [
+        {
+          "id": "w6-intent",
+          "kind": "intent",
+          "prompt": "Как честно сообщить начальный уровень?",
+          "context": "Ты знаешь несколько фраз и можешь представиться.",
+          "options": [
+            "No hablo español.",
+            "¿Hablas español?",
+            "Hablo un poco de español."
+          ],
+          "answer": 2,
+          "explanation": "Un poco сообщает небольшой, но существующий навык. No hablo полностью отрицает его."
+        },
+        {
+          "id": "w6-repair",
+          "kind": "repair",
+          "prompt": "Исправь ошибку в «Hablo unos poco de español.». Сохрани смысл образца.",
+          "context": "Нужная модель: Hablo un poco de español.",
+          "options": [
+            "Hablo un pocos de español.",
+            "Hablo un poco de español.",
+            "Hablo unos poco de español."
+          ],
+          "answer": 1,
+          "explanation": "Сохрани блок un poco de español. Un и poco стоят в единственном числе; unos poco и un pocos не согласованы."
+        },
+        {
+          "id": "w6-build",
+          "kind": "build",
+          "prompt": "Собери именно показанную модель из всех карточек.",
+          "context": "Образец: Hablo un poco de español. После сборки спрячь текст и скажи фразу ещё раз.",
+          "tokens": [
+            "Hablo",
+            "un",
+            "poco",
+            "de",
+            "español."
+          ],
+          "accepted": [
+            "Hablo un poco de español."
+          ],
+          "explanation": "Un poco de — небольшой объём чего-то. С языком сохрани весь блок un poco de español."
+        }
+      ],
+      "challenge": {
+        "prompt": "Назови свой уровень и попроси говорить медленнее.",
+        "example": "Hablo un poco de español. Más despacio, por favor.",
+        "change": "Во второй попытке человек спрашивает ¿Hablas español? Начни с Sí, затем уточни un poco."
+      },
+      "takeaway": {
+        "es": "Hablo un poco de español.",
+        "ru": "Я немного говорю по-испански.",
+        "useWhen": "Когда договариваешься о комфортном темпе беседы."
+      }
+    },
+    {
+      "day": 7,
+      "title": "Портрет из трёх деталей",
+      "hook": "Имя, город и уровень языка должны рассказывать про одного человека — тебя.",
+      "tool": {
+        "model": "Me llamo Andrea. Vivo en Moscú.",
+        "meaning": "Меня зовут Андреа. Я живу в Москве.",
+        "how": "Соедини два самостоятельных предложения. Каждое уже имеет нужную форму для «я»; одно me не переносится на оба глагола.",
+        "parts": [
+          {
+            "es": "Me llamo Andrea.",
+            "ru": "меня зовут Андреа"
+          },
+          {
+            "es": "Vivo en Moscú.",
+            "ru": "я живу в Москве"
+          }
+        ],
+        "contrast": {
+          "a": {
+            "es": "Me llamo Andrea.",
+            "ru": "Меня зовут Андреа."
+          },
+          "b": {
+            "es": "Vivo en Moscú.",
+            "ru": "Я живу в Москве."
+          },
+          "explanation": "Имя отвечает на cómo te llamas; место — на dónde vives. Не подменяй одну деталь другой."
+        },
+        "pitfall": {
+          "wrong": "Me llamo de Andrea. Vivo en Moscú.",
+          "right": "Me llamo Andrea. Vivo en Moscú.",
+          "explanation": "После me llamo имя ставится без de. Место проживания вводится одним en: vivo en Moscú, без добавочного a."
+        }
+      },
+      "tasks": [
+        {
+          "id": "w7-intent",
+          "kind": "intent",
+          "prompt": "Какую деталь нужно сообщить после вопроса об имени?",
+          "context": "Знакомый говорит: ¿Cómo te llamas?",
+          "options": [
+            "Me llamo Andrea.",
+            "Vivo en Moscú.",
+            "Hablo un poco de español."
+          ],
+          "answer": 0,
+          "explanation": "Вопрос запрашивает имя, поэтому начни с имени. Город и уровень языка можно добавить следующим ходом."
+        },
+        {
+          "id": "w7-repair",
+          "kind": "repair",
+          "prompt": "Исправь ошибку в «Me llamo de Andrea. Vivo en Moscú.». Сохрани смысл образца.",
+          "context": "Нужная модель: Me llamo Andrea. Vivo en Moscú.",
+          "options": [
+            "Me llamo Andrea. Vivo en a Moscú.",
+            "Me llamo de Andrea. Vivo en Moscú.",
+            "Me llamo Andrea. Vivo en Moscú."
+          ],
+          "answer": 2,
+          "explanation": "После me llamo имя ставится без de. Место проживания вводится одним en: vivo en Moscú, без добавочного a."
+        },
+        {
+          "id": "w7-build",
+          "kind": "build",
+          "prompt": "Собери именно показанную модель из всех карточек.",
+          "context": "Образец: Me llamo Andrea. Vivo en Moscú. После сборки спрячь текст и скажи фразу ещё раз.",
+          "tokens": [
+            "Me",
+            "llamo",
+            "Andrea.",
+            "Vivo",
+            "en",
+            "Moscú."
+          ],
+          "accepted": [
+            "Me llamo Andrea. Vivo en Moscú."
+          ],
+          "explanation": "Соедини два самостоятельных предложения. Каждое уже имеет нужную форму для «я»; одно me не переносится на оба глагола."
+        }
+      ],
+      "challenge": {
+        "prompt": "Представься двумя правдивыми предложениями и добавь свой уровень языка.",
+        "example": "Me llamo Ana. Vivo en Roma. Hablo un poco de español.",
+        "change": "Поменяй порядок вопросов: сначала ответь про город, потом про имя."
+      },
+      "takeaway": {
+        "es": "Me llamo Andrea. Vivo en Moscú.",
+        "ru": "Меня зовут Андреа. Я живу в Москве.",
+        "useWhen": "Когда собираешь короткое знакомство без заученной анкеты."
+      }
+    },
+    {
+      "day": 8,
+      "title": "Нравится действие или вещь?",
+      "hook": "Путешествовать можно любить даже без билета на завтра.",
+      "tool": {
+        "model": "Me gusta viajar.",
+        "meaning": "Мне нравится путешествовать.",
+        "how": "После me gusta можно назвать действие начальной формой: viajar. Здесь не нужно me gusto.",
+        "parts": [
+          {
+            "es": "Me gusta",
+            "ru": "мне нравится"
+          },
+          {
+            "es": "viajar",
+            "ru": "путешествовать"
+          }
+        ],
+        "contrast": {
+          "a": {
+            "es": "Me gusta viajar.",
+            "ru": "Мне нравится путешествовать."
+          },
+          "b": {
+            "es": "No me gusta el café.",
+            "ru": "Мне не нравится кофе."
+          },
+          "explanation": "В первой реплике нравится действие. Во второй no отрицает вкус к напитку; el относится к café, а не к любому следующему слову."
+        },
+        "pitfall": {
+          "wrong": "Me gusta viajo.",
+          "right": "Me gusta viajar.",
+          "explanation": "Действие здесь называет начальная форма viajar. С таким действием используется gusta, а не gustan."
+        }
+      },
+      "tasks": [
+        {
+          "id": "w8-intent",
+          "kind": "intent",
+          "prompt": "Как сообщить, что тебе нравится путешествовать?",
+          "context": "Тебя спрашивают про любимое занятие, а не про завтрашний план.",
+          "options": [
+            "Me gusta viajar.",
+            "No me gusta el café.",
+            "¿Te gusta la música?"
+          ],
+          "answer": 0,
+          "explanation": "Me gusta viajar сообщает твой вкус. Вопрос с te спрашивает вкус другого человека."
+        },
+        {
+          "id": "w8-repair",
+          "kind": "repair",
+          "prompt": "Исправь ошибку в «Me gusta viajo.». Сохрани смысл образца.",
+          "context": "Нужная модель: Me gusta viajar.",
+          "options": [
+            "Me gusta viajar.",
+            "Me gustan viajar.",
+            "Me gusta viajo."
+          ],
+          "answer": 0,
+          "explanation": "Действие здесь называет начальная форма viajar. С таким действием используется gusta, а не gustan."
+        },
+        {
+          "id": "w8-build",
+          "kind": "build",
+          "prompt": "Собери именно показанную модель из всех карточек.",
+          "context": "Образец: Me gusta viajar. После сборки спрячь текст и скажи фразу ещё раз.",
+          "tokens": [
+            "Me",
+            "gusta",
+            "viajar."
+          ],
+          "accepted": [
+            "Me gusta viajar."
+          ],
+          "explanation": "После me gusta можно назвать действие начальной формой: viajar. Здесь не нужно me gusto."
+        }
+      ],
+      "challenge": {
+        "prompt": "Назови одно реальное любимое занятие и спроси про музыку.",
+        "example": "Me gusta viajar. ¿Te gusta la música?",
+        "change": "Во второй попытке ответь про кофе: нравится он тебе или нет."
+      },
+      "takeaway": {
+        "es": "Me gusta viajar.",
+        "ru": "Мне нравится путешествовать.",
+        "useWhen": "Когда делишься интересами, а не планами."
+      }
+    },
+    {
+      "day": 9,
+      "title": "Чей любимый фильм?",
+      "hook": "Маленькое mi меняет владельца истории.",
+      "tool": {
+        "model": "Es mi película favorita.",
+        "meaning": "Это мой любимый фильм.",
+        "how": "Mi — мой / моя перед названием вещи. Película — женского рода, поэтому favorita с окончанием a.",
+        "parts": [
+          {
+            "es": "Es",
+            "ru": "это"
+          },
+          {
+            "es": "mi película",
+            "ru": "мой фильм"
+          },
+          {
+            "es": "favorita",
+            "ru": "любимый"
+          }
+        ],
+        "contrast": {
+          "a": {
+            "es": "Es mi película favorita.",
+            "ru": "Это мой любимый фильм."
+          },
+          "b": {
+            "es": "Es su película favorita.",
+            "ru": "Это его / её / Ваш любимый фильм."
+          },
+          "explanation": "Mi связывает фильм с говорящим. Su без контекста не показывает пол и может также относиться к вежливому «Вы»."
+        },
+        "pitfall": {
+          "wrong": "Es mi película favorito.",
+          "right": "Es mi película favorita.",
+          "explanation": "Película — одна вещь женского рода: favorita. Favorito — мужской род, favoritas — множественное число."
+        }
+      },
+      "tasks": [
+        {
+          "id": "w9-intent",
+          "kind": "intent",
+          "prompt": "Ты говоришь о своём любимом фильме. Что выбрать?",
+          "context": "Собеседник показал постер, и ты узнал свой любимый фильм.",
+          "options": [
+            "Es su película favorita.",
+            "Es mi película favorita.",
+            "¿Te gusta la música?"
+          ],
+          "answer": 1,
+          "explanation": "Mi делает предпочтение твоим. Su относит его к другому человеку или вежливому адресату."
+        },
+        {
+          "id": "w9-repair",
+          "kind": "repair",
+          "prompt": "Исправь ошибку в «Es mi película favorito.». Сохрани смысл образца.",
+          "context": "Нужная модель: Es mi película favorita.",
+          "options": [
+            "Es mi película favoritas.",
+            "Es mi película favorita.",
+            "Es mi película favorito."
+          ],
+          "answer": 1,
+          "explanation": "Película — одна вещь женского рода: favorita. Favorito — мужской род, favoritas — множественное число."
+        },
+        {
+          "id": "w9-build",
+          "kind": "build",
+          "prompt": "Собери именно показанную модель из всех карточек.",
+          "context": "Образец: Es mi película favorita. После сборки спрячь текст и скажи фразу ещё раз.",
+          "tokens": [
+            "Es",
+            "mi",
+            "película",
+            "favorita."
+          ],
+          "accepted": [
+            "Es mi película favorita."
+          ],
+          "explanation": "Mi — мой / моя перед названием вещи. Película — женского рода, поэтому favorita с окончанием a."
+        }
+      ],
+      "challenge": {
+        "prompt": "Назови свой любимый фильм, затем скажи одну простую оценку.",
+        "example": "Es mi película favorita. Es interesante.",
+        "change": "Представь, что это любимый фильм друга. Поменяй mi на su и явно назови, о ком речь, по-русски."
+      },
+      "takeaway": {
+        "es": "Es mi película favorita.",
+        "ru": "Это мой любимый фильм.",
+        "useWhen": "Когда объясняешь личное предпочтение."
+      }
+    },
+    {
+      "day": 10,
+      "title": "Выбор с причиной",
+      "hook": "«Предпочитаю читать» становится понятнее, если человек слышит почему.",
+      "tool": {
+        "model": "Prefiero leer porque es interesante.",
+        "meaning": "Я предпочитаю читать, потому что это интересно.",
+        "how": "Prefiero называет выбор; porque присоединяет причину. В ответе «потому что» porque пишется одним словом.",
+        "parts": [
+          {
+            "es": "Prefiero leer",
+            "ru": "я предпочитаю читать"
+          },
+          {
+            "es": "porque",
+            "ru": "потому что"
+          },
+          {
+            "es": "es interesante",
+            "ru": "это интересно"
+          }
+        ],
+        "contrast": {
+          "a": {
+            "es": "¿Por qué?",
+            "ru": "Почему?"
+          },
+          "b": {
+            "es": "Porque es interesante.",
+            "ru": "Потому что это интересно."
+          },
+          "explanation": "Вопрос por qué — два слова с ударением. Причина porque — одно слово. Это различие роли, а не украшение письма."
+        },
+        "pitfall": {
+          "wrong": "Prefiero leer porque es interesantes.",
+          "right": "Prefiero leer porque es interesante.",
+          "explanation": "Здесь es interesante относится к занятию в целом: единственное число. Ser — начальная форма; после porque нужна законченная причина es interesante."
+        }
+      },
+      "tasks": [
+        {
+          "id": "w10-intent",
+          "kind": "intent",
+          "prompt": "Как не просто выбрать чтение, но и назвать причину?",
+          "context": "Тебе предлагают другое занятие, а чтение сейчас интереснее.",
+          "options": [
+            "Prefiero el café.",
+            "¿Te gusta la música?",
+            "Prefiero leer porque es interesante."
+          ],
+          "answer": 2,
+          "explanation": "Porque соединяет выбор и объяснение. Prefiero el café — другой выбор без причины."
+        },
+        {
+          "id": "w10-repair",
+          "kind": "repair",
+          "prompt": "Исправь ошибку в «Prefiero leer porque es interesantes.». Сохрани смысл образца.",
+          "context": "Нужная модель: Prefiero leer porque es interesante.",
+          "options": [
+            "Prefiero leer porque ser interesante.",
+            "Prefiero leer porque es interesantes.",
+            "Prefiero leer porque es interesante."
+          ],
+          "answer": 2,
+          "explanation": "Здесь es interesante относится к занятию в целом: единственное число. Ser — начальная форма; после porque нужна законченная причина es interesante."
+        },
+        {
+          "id": "w10-build",
+          "kind": "build",
+          "prompt": "Собери именно показанную модель из всех карточек.",
+          "context": "Образец: Prefiero leer porque es interesante. После сборки спрячь текст и скажи фразу ещё раз.",
+          "tokens": [
+            "Prefiero",
+            "leer",
+            "porque",
+            "es",
+            "interesante."
+          ],
+          "accepted": [
+            "Prefiero leer porque es interesante."
+          ],
+          "explanation": "Prefiero называет выбор; porque присоединяет причину. В ответе «потому что» porque пишется одним словом."
+        }
+      ],
+      "challenge": {
+        "prompt": "Выбери чтение или путешествия; добавь одну знакомую причину.",
+        "example": "Prefiero leer porque es interesante.",
+        "change": "Во второй попытке собеседник спрашивает ¿Por qué? Произнеси только причину: Porque es interesante."
+      },
+      "takeaway": {
+        "es": "Prefiero leer porque es interesante.",
+        "ru": "Я предпочитаю читать, потому что это интересно.",
+        "useWhen": "Когда хочешь объяснить выбор одним коротким аргументом."
+      }
+    },
+    {
+      "day": 11,
+      "title": "Сегодня — не всегда",
+      "hook": "Отказ на один день не обязан звучать как постоянное правило.",
+      "tool": {
+        "model": "Hoy no trabajo.",
+        "meaning": "Сегодня я не работаю.",
+        "how": "Hoy задаёт сегодняшний день. No перед trabajo отрицает работу в этом контексте, а не всю твою занятость навсегда.",
+        "parts": [
+          {
+            "es": "Hoy",
+            "ru": "сегодня"
+          },
+          {
+            "es": "no",
+            "ru": "не"
+          },
+          {
+            "es": "trabajo",
+            "ru": "я работаю"
+          }
+        ],
+        "contrast": {
+          "a": {
+            "es": "Hoy no trabajo.",
+            "ru": "Сегодня я не работаю."
+          },
+          "b": {
+            "es": "Normalmente desayuno aquí.",
+            "ru": "Обычно я завтракаю здесь."
+          },
+          "explanation": "Hoy — конкретный день; normalmente — привычка. Нельзя менять их, сохраняя прежний смысл."
+        },
+        "pitfall": {
+          "wrong": "Hoy no trabajar.",
+          "right": "Hoy no trabajo.",
+          "explanation": "О своём действии говори trabajo. Trabajar — начальная форма; trabajos — не личная форма этого глагола для «я»."
+        }
+      },
+      "tasks": [
+        {
+          "id": "w11-intent",
+          "kind": "intent",
+          "prompt": "Как сообщить именно про сегодняшний выходной?",
+          "context": "Обычно ты работаешь, но сегодня свободен.",
+          "options": [
+            "Hoy no trabajo.",
+            "Trabajo aquí.",
+            "Normalmente desayuno aquí."
+          ],
+          "answer": 0,
+          "explanation": "Hoy ограничивает сообщение сегодняшним днём. Остальные ответы говорят о месте работы и привычке."
+        },
+        {
+          "id": "w11-repair",
+          "kind": "repair",
+          "prompt": "Исправь ошибку в «Hoy no trabajar.». Сохрани смысл образца.",
+          "context": "Нужная модель: Hoy no trabajo.",
+          "options": [
+            "Hoy no trabajo.",
+            "Hoy no trabajos.",
+            "Hoy no trabajar."
+          ],
+          "answer": 0,
+          "explanation": "О своём действии говори trabajo. Trabajar — начальная форма; trabajos — не личная форма этого глагола для «я»."
+        },
+        {
+          "id": "w11-build",
+          "kind": "build",
+          "prompt": "Собери именно показанную модель из всех карточек.",
+          "context": "Образец: Hoy no trabajo. После сборки спрячь текст и скажи фразу ещё раз.",
+          "tokens": [
+            "Hoy",
+            "no",
+            "trabajo."
+          ],
+          "accepted": [
+            "Hoy no trabajo."
+          ],
+          "explanation": "Hoy задаёт сегодняшний день. No перед trabajo отрицает работу в этом контексте, а не всю твою занятость навсегда."
+        }
+      ],
+      "challenge": {
+        "prompt": "Скажи, работаешь ли ты сегодня; отдельно назови известную привычку.",
+        "example": "Hoy no trabajo. Normalmente voy a pie.",
+        "change": "Во второй попытке день изменился: убери no, если сегодня работаешь."
+      },
+      "takeaway": {
+        "es": "Hoy no trabajo.",
+        "ru": "Сегодня я не работаю.",
+        "useWhen": "Когда отличаешь сегодняшний план от обычного распорядка."
+      }
+    },
+    {
+      "day": 12,
+      "title": "Два часа или в два?",
+      "hook": "Для встречи важно различить время на часах и время действия.",
+      "tool": {
+        "model": "Ven a las dos.",
+        "meaning": "Приходи в два часа.",
+        "how": "A las dos указывает, во сколько нужно прийти. Son las dos только сообщает текущее время.",
+        "parts": [
+          {
+            "es": "Ven",
+            "ru": "приходи"
+          },
+          {
+            "es": "a las dos",
+            "ru": "в два часа"
+          }
+        ],
+        "contrast": {
+          "a": {
+            "es": "Son las dos.",
+            "ru": "Сейчас два часа."
+          },
+          "b": {
+            "es": "Ven a las dos.",
+            "ru": "Приходи в два часа."
+          },
+          "explanation": "Без a реплика о времени не превращается в договорённость. Ven — не «я приду», а приглашение адресату прийти."
+        },
+        "pitfall": {
+          "wrong": "Ven las dos.",
+          "right": "Ven a las dos.",
+          "explanation": "В этой модели времени нужно a las dos: a обозначает время действия, las согласовано с подразумеваемыми часами."
+        }
+      },
+      "tasks": [
+        {
+          "id": "w12-intent",
+          "kind": "intent",
+          "prompt": "Как пригласить человека прийти в два?",
+          "context": "Встреча ещё впереди; текущее время тебя не спрашивали.",
+          "options": [
+            "Son las dos.",
+            "Ven a las dos.",
+            "¿A qué hora?"
+          ],
+          "answer": 1,
+          "explanation": "Ven a las dos задаёт действие и время. Son las dos описывает часы; ¿A qué hora? запрашивает время."
+        },
+        {
+          "id": "w12-repair",
+          "kind": "repair",
+          "prompt": "Исправь ошибку в «Ven las dos.». Сохрани смысл образца.",
+          "context": "Нужная модель: Ven a las dos.",
+          "options": [
+            "Ven a la dos.",
+            "Ven a las dos.",
+            "Ven las dos."
+          ],
+          "answer": 1,
+          "explanation": "В этой модели времени нужно a las dos: a обозначает время действия, las согласовано с подразумеваемыми часами."
+        },
+        {
+          "id": "w12-build",
+          "kind": "build",
+          "prompt": "Собери именно показанную модель из всех карточек.",
+          "context": "Образец: Ven a las dos. После сборки спрячь текст и скажи фразу ещё раз.",
+          "tokens": [
+            "Ven",
+            "a",
+            "las",
+            "dos."
+          ],
+          "accepted": [
+            "Ven a las dos."
+          ],
+          "explanation": "A las dos указывает, во сколько нужно прийти. Son las dos только сообщает текущее время."
+        }
+      ],
+      "challenge": {
+        "prompt": "Сыграй два хода: сначала спроси время встречи, затем ответь приглашением.",
+        "example": "¿A qué hora? — Ven a las dos.",
+        "change": "Во второй попытке не приглашай: ответь человеку, который спросил текущее время."
+      },
+      "takeaway": {
+        "es": "Ven a las dos.",
+        "ru": "Приходи в два часа.",
+        "useWhen": "Когда назначаешь время встречи."
+      }
+    },
+    {
+      "day": 13,
+      "title": "Иногда — не каждый раз",
+      "hook": "Удобно согласиться и сразу уточнить частоту.",
+      "tool": {
+        "model": "Sí, a veces. Me gusta viajar.",
+        "meaning": "Да, иногда. Мне нравится путешествовать.",
+        "how": "A veces — иногда. Sí подтверждает ответ; сама частота не сообщает, нравится ли занятие.",
+        "parts": [
+          {
+            "es": "Sí, a veces.",
+            "ru": "да, иногда"
+          },
+          {
+            "es": "Me gusta viajar.",
+            "ru": "мне нравится путешествовать"
+          }
+        ],
+        "contrast": {
+          "a": {
+            "es": "Sí, a veces.",
+            "ru": "Да, иногда."
+          },
+          "b": {
+            "es": "Normalmente voy a pie.",
+            "ru": "Обычно я хожу пешком."
+          },
+          "explanation": "A veces обозначает эпизодичность. Normalmente описывает обычный порядок; это не синонимы."
+        },
+        "pitfall": {
+          "wrong": "Sí, a vez. Me gusta viajar.",
+          "right": "Sí, a veces. Me gusta viajar.",
+          "explanation": "В готовом сочетании «иногда» используется a veces. С действием viajar нужна gusta."
+        }
+      },
+      "tasks": [
+        {
+          "id": "w13-intent",
+          "kind": "intent",
+          "prompt": "Как ответить, что ты путешествуешь иногда?",
+          "context": "Собеседник спрашивает, путешествуешь ли ты. Ты бываешь в поездках, но не постоянно.",
+          "options": [
+            "Me gusta viajar.",
+            "Normalmente voy a pie.",
+            "Sí, a veces."
+          ],
+          "answer": 2,
+          "explanation": "A veces отвечает на частоту. Me gusta говорит о вкусе, а не о том, как часто ты едешь."
+        },
+        {
+          "id": "w13-repair",
+          "kind": "repair",
+          "prompt": "Исправь ошибку в «Sí, a vez. Me gusta viajar.». Сохрани смысл образца.",
+          "context": "Нужная модель: Sí, a veces. Me gusta viajar.",
+          "options": [
+            "Sí, a veces. Me gustan viajar.",
+            "Sí, a vez. Me gusta viajar.",
+            "Sí, a veces. Me gusta viajar."
+          ],
+          "answer": 2,
+          "explanation": "В готовом сочетании «иногда» используется a veces. С действием viajar нужна gusta."
+        },
+        {
+          "id": "w13-build",
+          "kind": "build",
+          "prompt": "Собери именно показанную модель из всех карточек.",
+          "context": "Образец: Sí, a veces. Me gusta viajar. После сборки спрячь текст и скажи фразу ещё раз.",
+          "tokens": [
+            "Sí,",
+            "a",
+            "veces.",
+            "Me",
+            "gusta",
+            "viajar."
+          ],
+          "accepted": [
+            "Sí, a veces. Me gusta viajar."
+          ],
+          "explanation": "A veces — иногда. Sí подтверждает ответ; сама частота не сообщает, нравится ли занятие."
+        }
+      ],
+      "challenge": {
+        "prompt": "Ответь о частоте и добавь отношение к путешествиям.",
+        "example": "Sí, a veces. Me gusta viajar.",
+        "change": "Во второй попытке ответь только о вкусе: человек спрашивает ¿Te gusta viajar?"
+      },
+      "takeaway": {
+        "es": "Sí, a veces. Me gusta viajar.",
+        "ru": "Да, иногда. Мне нравится путешествовать.",
+        "useWhen": "Когда короткий ответ нуждается в уточнении частоты."
+      }
+    },
+    {
+      "day": 14,
+      "title": "Выбор — это не просто вкус",
+      "hook": "Два занятия могут нравиться, но сегодня ты выбираешь одно.",
+      "tool": {
+        "model": "Prefiero leer porque es interesante.",
+        "meaning": "Я предпочитаю читать, потому что это интересно.",
+        "how": "Me gusta — нравится; prefiero — предпочитаю среди вариантов. Porque делает выбор понятным собеседнику.",
+        "parts": [
+          {
+            "es": "Prefiero leer",
+            "ru": "я предпочитаю читать"
+          },
+          {
+            "es": "porque",
+            "ru": "потому что"
+          },
+          {
+            "es": "es interesante",
+            "ru": "это интересно"
+          }
+        ],
+        "contrast": {
+          "a": {
+            "es": "Me gusta viajar.",
+            "ru": "Мне нравится путешествовать."
+          },
+          "b": {
+            "es": "Prefiero leer.",
+            "ru": "Я предпочитаю читать."
+          },
+          "explanation": "Первая реплика выражает вкус без сравнения. Вторая выбирает чтение; она не отрицает остальные интересы."
+        },
+        "pitfall": {
+          "wrong": "Prefiero leer porque es interesantes.",
+          "right": "Prefiero leer porque es interesante.",
+          "explanation": "Здесь занятие оценивается как одно целое: es interesante, без множественного s. После prefiero нужна начальная форма leer, не личная leo."
+        }
+      },
+      "tasks": [
+        {
+          "id": "w14-intent",
+          "kind": "intent",
+          "prompt": "Как выбрать чтение, если тебя просят определиться между занятиями?",
+          "context": "Тебе нравятся разные занятия, но сегодня хочется читать.",
+          "options": [
+            "Prefiero leer.",
+            "Me gusta viajar.",
+            "¿Te gusta la música?"
+          ],
+          "answer": 0,
+          "explanation": "Prefiero выражает выбор. Наличие других интересов не мешает этой реплике."
+        },
+        {
+          "id": "w14-repair",
+          "kind": "repair",
+          "prompt": "Исправь ошибку в «Prefiero leer porque es interesantes.». Сохрани смысл образца.",
+          "context": "Нужная модель: Prefiero leer porque es interesante.",
+          "options": [
+            "Prefiero leer porque es interesante.",
+            "Prefiero leo porque es interesante.",
+            "Prefiero leer porque es interesantes."
+          ],
+          "answer": 0,
+          "explanation": "Здесь занятие оценивается как одно целое: es interesante, без множественного s. После prefiero нужна начальная форма leer, не личная leo."
+        },
+        {
+          "id": "w14-build",
+          "kind": "build",
+          "prompt": "Собери именно показанную модель из всех карточек.",
+          "context": "Образец: Prefiero leer porque es interesante. После сборки спрячь текст и скажи фразу ещё раз.",
+          "tokens": [
+            "Prefiero",
+            "leer",
+            "porque",
+            "es",
+            "interesante."
+          ],
+          "accepted": [
+            "Prefiero leer porque es interesante."
+          ],
+          "explanation": "Me gusta — нравится; prefiero — предпочитаю среди вариантов. Porque делает выбор понятным собеседнику."
+        }
+      ],
+      "challenge": {
+        "prompt": "Скажи выбор с причиной; затем выслушай другой выбор собеседника.",
+        "example": "Prefiero leer porque es interesante. ¿Y tú?",
+        "change": "Во второй попытке убери причину, а после вопроса ¿Por qué? добавь её отдельным ходом."
+      },
+      "takeaway": {
+        "es": "Prefiero leer porque es interesante.",
+        "ru": "Я предпочитаю читать, потому что это интересно.",
+        "useWhen": "Когда поддерживаешь разговор о предпочтениях, а не перечисляешь вкусы."
+      }
+    },
+    {
+      "day": 15,
+      "title": "Состояние без русской кальки",
+      "hook": "По-русски «я устал» обходится без связки. В этой испанской модели она нужна.",
+      "tool": {
+        "model": "Estoy contenta. No estoy cansada.",
+        "meaning": "Я рада. Я не устала.",
+        "how": "Estoy связывает говорящего с состоянием. Для говорящей женщины contenta и cansada; для мужчины contento и cansado.",
+        "parts": [
+          {
+            "es": "Estoy contenta.",
+            "ru": "я рада"
+          },
+          {
+            "es": "No estoy cansada.",
+            "ru": "я не устала"
+          }
+        ],
+        "contrast": {
+          "a": {
+            "es": "Estoy contento.",
+            "ru": "Я рад."
+          },
+          "b": {
+            "es": "Estoy contenta.",
+            "ru": "Я рада."
+          },
+          "explanation": "Окончание прилагательного согласуется с тем, о ком говорят; настроение в обоих примерах одинаковое."
+        },
+        "pitfall": {
+          "wrong": "Estoy contenta. No estar cansada.",
+          "right": "Estoy contenta. No estoy cansada.",
+          "explanation": "Состояние в модели требует estoy, а cansada относится к одной женщине. Cansadas — множественное число."
+        }
+      },
+      "tasks": [
+        {
+          "id": "w15-intent",
+          "kind": "intent",
+          "prompt": "Какая реплика подходит женщине, которая хочет сказать «я рада»?",
+          "context": "Это её собственный ответ о состоянии сейчас.",
+          "options": [
+            "Estoy contento.",
+            "Estoy contenta.",
+            "No estoy cansada."
+          ],
+          "answer": 1,
+          "explanation": "Contenta согласуется с говорящей женщиной. No estoy cansada говорит об усталости, а не о радости."
+        },
+        {
+          "id": "w15-repair",
+          "kind": "repair",
+          "prompt": "Исправь ошибку в «Estoy contenta. No estar cansada.». Сохрани смысл образца.",
+          "context": "Нужная модель: Estoy contenta. No estoy cansada.",
+          "options": [
+            "Estoy contenta. No estoy cansadas.",
+            "Estoy contenta. No estoy cansada.",
+            "Estoy contenta. No estar cansada."
+          ],
+          "answer": 1,
+          "explanation": "Состояние в модели требует estoy, а cansada относится к одной женщине. Cansadas — множественное число."
+        },
+        {
+          "id": "w15-build",
+          "kind": "build",
+          "prompt": "Собери именно показанную модель из всех карточек.",
+          "context": "Образец: Estoy contenta. No estoy cansada. После сборки спрячь текст и скажи фразу ещё раз.",
+          "tokens": [
+            "Estoy",
+            "contenta.",
+            "No",
+            "estoy",
+            "cansada."
+          ],
+          "accepted": [
+            "Estoy contenta. No estoy cansada."
+          ],
+          "explanation": "Estoy связывает говорящего с состоянием. Для говорящей женщины contenta и cansada; для мужчины contento и cansado."
+        }
+      ],
+      "challenge": {
+        "prompt": "Выбери честное состояние и форму, подходящую тебе.",
+        "example": "Estoy contento. No estoy cansado.",
+        "change": "Во второй попытке убери no, если действительно устал; не сохраняй позитивный образец против правды."
+      },
+      "takeaway": {
+        "es": "Estoy contenta. No estoy cansada.",
+        "ru": "Я рада. Я не устала.",
+        "useWhen": "Когда называешь своё состояние сейчас."
+      }
+    },
+    {
+      "day": 16,
+      "title": "Реакция, которая попадает в смысл",
+      "hook": "Правильное предложение может быть неуместным ответом. Сначала услышь, что случилось.",
+      "tool": {
+        "model": "Es una buena idea.",
+        "meaning": "Это хорошая идея.",
+        "how": "Для идеи используй una buena idea: idea женского рода, поэтому una и buena. Эта реакция оценивает предложение собеседника.",
+        "parts": [
+          {
+            "es": "Es",
+            "ru": "это"
+          },
+          {
+            "es": "una buena idea",
+            "ru": "хорошая идея"
+          }
+        ],
+        "contrast": {
+          "a": {
+            "es": "Es una buena idea.",
+            "ru": "Это хорошая идея."
+          },
+          "b": {
+            "es": "Lo siento.",
+            "ru": "Мне жаль / извини."
+          },
+          "explanation": "Первое поддерживает предложенную идею. Второе подходит к неприятной новости или извинению; смысл выбирает реакцию."
+        },
+        "pitfall": {
+          "wrong": "Es un buena idea.",
+          "right": "Es una buena idea.",
+          "explanation": "Idea — женского рода. Перед ней нужны una и buena; un или bueno здесь не согласованы."
+        }
+      },
+      "tasks": [
+        {
+          "id": "w16-intent",
+          "kind": "intent",
+          "prompt": "Друг предлагает учить испанский вместе. Ты одобряешь идею. Что сказать?",
+          "context": "Неприятной новости не было; ты хочешь поддержать предложение.",
+          "options": [
+            "Es una buena idea.",
+            "Lo siento.",
+            "No entiendo eso."
+          ],
+          "answer": 0,
+          "explanation": "Оценка идеи поддерживает предложение. Lo siento выразило бы сожаление, а No entiendo — непонимание."
+        },
+        {
+          "id": "w16-repair",
+          "kind": "repair",
+          "prompt": "Исправь ошибку в «Es un buena idea.». Сохрани смысл образца.",
+          "context": "Нужная модель: Es una buena idea.",
+          "options": [
+            "Es una bueno idea.",
+            "Es un buena idea.",
+            "Es una buena idea."
+          ],
+          "answer": 2,
+          "explanation": "Idea — женского рода. Перед ней нужны una и buena; un или bueno здесь не согласованы."
+        },
+        {
+          "id": "w16-build",
+          "kind": "build",
+          "prompt": "Собери именно показанную модель из всех карточек.",
+          "context": "Образец: Es una buena idea. После сборки спрячь текст и скажи фразу ещё раз.",
+          "tokens": [
+            "Es",
+            "una",
+            "buena",
+            "idea."
+          ],
+          "accepted": [
+            "Es una buena idea."
+          ],
+          "explanation": "Для идеи используй una buena idea: idea женского рода, поэтому una и buena. Эта реакция оценивает предложение собеседника."
+        }
+      ],
+      "challenge": {
+        "prompt": "Скажи подходящую реакцию сначала на хорошую идею, потом на неприятную новость.",
+        "example": "Es una buena idea.",
+        "change": "Собеседник теперь рассказывает о проблеме. Выбери Lo siento, если хочешь выразить сочувствие."
+      },
+      "takeaway": {
+        "es": "Es una buena idea.",
+        "ru": "Это хорошая идея.",
+        "useWhen": "Когда одобряешь предложение, а не просто заполняешь паузу."
+      }
+    },
+    {
+      "day": 17,
+      "title": "«Я тоже» к действию и к вкусу",
+      "hook": "По-русски один ответ подходит обоим случаям. В испанском полезно слышать, к чему ты присоединяешься.",
+      "tool": {
+        "model": "Yo también voy.",
+        "meaning": "Я тоже иду.",
+        "how": "Если человек говорит Voy, ответ Yo también voy присоединяет тебя к действию. К Me gusta… готовый ответ — A mí también.",
+        "parts": [
+          {
+            "es": "Yo",
+            "ru": "я"
+          },
+          {
+            "es": "también",
+            "ru": "тоже"
+          },
+          {
+            "es": "voy",
+            "ru": "иду"
+          }
+        ],
+        "contrast": {
+          "a": {
+            "es": "Yo también voy.",
+            "ru": "Я тоже иду."
+          },
+          "b": {
+            "es": "A mí también.",
+            "ru": "Мне тоже."
+          },
+          "explanation": "К «я иду» подходит yo; к «мне нравится» — a mí. Эти модели помогают не переносить русское «я тоже» буквально."
+        },
+        "pitfall": {
+          "wrong": "Yo también va.",
+          "right": "Yo también voy.",
+          "explanation": "Для собственного действия нужна voy. Va относится к él, ella или usted; ir — начальная форма."
+        }
+      },
+      "tasks": [
+        {
+          "id": "w17-intent",
+          "kind": "intent",
+          "prompt": "Друг говорит, что идёт. Ты тоже идёшь. Как явно сообщить это действие?",
+          "context": "Ты присоединяешься к походу, а не обсуждаешь вкус.",
+          "options": [
+            "A mí también.",
+            "Yo también voy.",
+            "No puedo."
+          ],
+          "answer": 1,
+          "explanation": "Yo también voy называет твоё такое же действие. A mí también связывает сходство с «мне», например с вкусом."
+        },
+        {
+          "id": "w17-repair",
+          "kind": "repair",
+          "prompt": "Исправь ошибку в «Yo también va.». Сохрани смысл образца.",
+          "context": "Нужная модель: Yo también voy.",
+          "options": [
+            "Yo también voy.",
+            "Yo también ir.",
+            "Yo también va."
+          ],
+          "answer": 0,
+          "explanation": "Для собственного действия нужна voy. Va относится к él, ella или usted; ir — начальная форма."
+        },
+        {
+          "id": "w17-build",
+          "kind": "build",
+          "prompt": "Собери именно показанную модель из всех карточек.",
+          "context": "Образец: Yo también voy. После сборки спрячь текст и скажи фразу ещё раз.",
+          "tokens": [
+            "Yo",
+            "también",
+            "voy."
+          ],
+          "accepted": [
+            "Yo también voy."
+          ],
+          "explanation": "Если человек говорит Voy, ответ Yo también voy присоединяет тебя к действию. К Me gusta… готовый ответ — A mí también."
+        }
+      ],
+      "challenge": {
+        "prompt": "Ответь на две разные реплики: Voy и Me gusta viajar.",
+        "example": "Yo también voy. / A mí también.",
+        "change": "Во второй попытке ты не можешь идти. Скажи No puedo вместо автоматического согласия."
+      },
+      "takeaway": {
+        "es": "Yo también voy.",
+        "ru": "Я тоже иду.",
+        "useWhen": "Когда совпадает действие, а не обязательно предпочтение."
+      }
+    },
+    {
+      "day": 18,
+      "title": "Хочешь или хочу?",
+      "hook": "Предложение кофе и заказ кофе отличаются одним окончанием.",
+      "tool": {
+        "model": "¿Quieres un café?",
+        "meaning": "Хочешь кофе?",
+        "how": "Quieres обращено к tú. Quiero говорит о твоём желании. В вопросе голос и знаки показывают, что ожидается ответ.",
+        "parts": [
+          {
+            "es": "¿Quieres",
+            "ru": "хочешь ли ты"
+          },
+          {
+            "es": "un café?",
+            "ru": "кофе"
+          }
+        ],
+        "contrast": {
+          "a": {
+            "es": "¿Quieres un café?",
+            "ru": "Хочешь кофе?"
+          },
+          "b": {
+            "es": "Quiero un café.",
+            "ru": "Я хочу кофе."
+          },
+          "explanation": "В первом случае ты предлагаешь другому человеку. Во втором сообщаешь собственное желание."
+        },
+        "pitfall": {
+          "wrong": "¿Quieres una café?",
+          "right": "¿Quieres un café?",
+          "explanation": "Café здесь мужского рода и в единственном числе: un café. Una не согласована по роду, cafés — множественное число."
+        }
+      },
+      "tasks": [
+        {
+          "id": "w18-intent",
+          "kind": "intent",
+          "prompt": "Ты предлагаешь кофе знакомому. Какая реплика адресована ему?",
+          "context": "Ты пока не говоришь, что сам будешь пить.",
+          "options": [
+            "Quiero un café.",
+            "Tengo tiempo.",
+            "¿Quieres un café?"
+          ],
+          "answer": 2,
+          "explanation": "Quieres спрашивает о желании собеседника. Quiero сообщает желание говорящего."
+        },
+        {
+          "id": "w18-repair",
+          "kind": "repair",
+          "prompt": "Исправь ошибку в «¿Quieres una café?». Сохрани смысл образца.",
+          "context": "Нужная модель: ¿Quieres un café?",
+          "options": [
+            "¿Quieres un cafés?",
+            "¿Quieres un café?",
+            "¿Quieres una café?"
+          ],
+          "answer": 1,
+          "explanation": "Café здесь мужского рода и в единственном числе: un café. Una не согласована по роду, cafés — множественное число."
+        },
+        {
+          "id": "w18-build",
+          "kind": "build",
+          "prompt": "Собери именно показанную модель из всех карточек.",
+          "context": "Образец: ¿Quieres un café? После сборки спрячь текст и скажи фразу ещё раз.",
+          "tokens": [
+            "¿Quieres",
+            "un",
+            "café?"
+          ],
+          "accepted": [
+            "¿Quieres un café?"
+          ],
+          "explanation": "Quieres обращено к tú. Quiero говорит о твоём желании. В вопросе голос и знаки показывают, что ожидается ответ."
+        }
+      ],
+      "challenge": {
+        "prompt": "Предложи кофе, потом ответь за себя: хочешь ли ты кофе сейчас.",
+        "example": "¿Quieres un café? Sí, quiero un café.",
+        "change": "Во второй попытке ты предпочитаешь воду. Ответь Prefiero agua, por favor."
+      },
+      "takeaway": {
+        "es": "¿Quieres un café?",
+        "ru": "Хочешь кофе?",
+        "useWhen": "Когда делаешь конкретное предложение человеку."
+      }
+    },
+    {
+      "day": 19,
+      "title": "Закрепить договорённость",
+      "hook": "Встреча становится понятной, когда есть согласие и завершение разговора.",
+      "tool": {
+        "model": "De acuerdo. Nos vemos.",
+        "meaning": "Договорились. Увидимся.",
+        "how": "De acuerdo подтверждает договорённость. Nos vemos завершает разговор с перспективой встречи. Не обязательно произносить обе реплики в каждом случае.",
+        "parts": [
+          {
+            "es": "De acuerdo.",
+            "ru": "договорились"
+          },
+          {
+            "es": "Nos vemos.",
+            "ru": "увидимся"
+          }
+        ],
+        "contrast": {
+          "a": {
+            "es": "De acuerdo.",
+            "ru": "Договорились."
+          },
+          "b": {
+            "es": "Nos vemos.",
+            "ru": "Увидимся."
+          },
+          "explanation": "Согласие отвечает на предложение. Прощание само по себе не подтверждает, что время подходит."
+        },
+        "pitfall": {
+          "wrong": "De acuerdo. Nos ver.",
+          "right": "De acuerdo. Nos vemos.",
+          "explanation": "В готовом прощании глагол имеет форму vemos: nos vemos. Ver — начальная форма; не соединяй ver и vemos в одном таком блоке."
+        }
+      },
+      "tasks": [
+        {
+          "id": "w19-intent",
+          "kind": "intent",
+          "prompt": "Время встречи подходит. Как прямо подтвердить договорённость?",
+          "context": "Собеседник говорит: Ven a las dos.",
+          "options": [
+            "De acuerdo.",
+            "Nos vemos.",
+            "¿A qué hora?"
+          ],
+          "answer": 0,
+          "explanation": "De acuerdo подтверждает согласие. Вопрос о времени снова запросил бы уже названную деталь."
+        },
+        {
+          "id": "w19-repair",
+          "kind": "repair",
+          "prompt": "Исправь ошибку в «De acuerdo. Nos ver.». Сохрани смысл образца.",
+          "context": "Нужная модель: De acuerdo. Nos vemos.",
+          "options": [
+            "De acuerdo. Nos ver vemos.",
+            "De acuerdo. Nos ver.",
+            "De acuerdo. Nos vemos."
+          ],
+          "answer": 2,
+          "explanation": "В готовом прощании глагол имеет форму vemos: nos vemos. Ver — начальная форма; не соединяй ver и vemos в одном таком блоке."
+        },
+        {
+          "id": "w19-build",
+          "kind": "build",
+          "prompt": "Собери именно показанную модель из всех карточек.",
+          "context": "Образец: De acuerdo. Nos vemos. После сборки спрячь текст и скажи фразу ещё раз.",
+          "tokens": [
+            "De",
+            "acuerdo.",
+            "Nos",
+            "vemos."
+          ],
+          "accepted": [
+            "De acuerdo. Nos vemos."
+          ],
+          "explanation": "De acuerdo подтверждает договорённость. Nos vemos завершает разговор с перспективой встречи. Не обязательно произносить обе реплики в каждом случае."
+        }
+      ],
+      "challenge": {
+        "prompt": "Подтверди подходящее время и попрощайся.",
+        "example": "De acuerdo. Nos vemos.",
+        "change": "Во второй попытке время не подходит. Скажи No puedo и запроси новое время, вместо ложного согласия."
+      },
+      "takeaway": {
+        "es": "De acuerdo. Nos vemos.",
+        "ru": "Договорились. Увидимся.",
+        "useWhen": "Когда согласен с предложенной договорённостью."
+      }
+    },
+    {
+      "day": 20,
+      "title": "План держится на маленьком a",
+      "hook": "Voy estudiar звучит как пропущенная деталь конструкции. Собираем план целым блоком.",
+      "tool": {
+        "model": "Voy a estudiar español.",
+        "meaning": "Я собираюсь изучать испанский.",
+        "how": "Voy a + начальная форма называет план или намерение. A обязательно внутри этого блока; estudiar остаётся без личного окончания.",
+        "parts": [
+          {
+            "es": "Voy a",
+            "ru": "я собираюсь"
+          },
+          {
+            "es": "estudiar",
+            "ru": "изучать"
+          },
+          {
+            "es": "español",
+            "ru": "испанский"
+          }
+        ],
+        "contrast": {
+          "a": {
+            "es": "Voy a trabajar.",
+            "ru": "Я собираюсь работать."
+          },
+          "b": {
+            "es": "Hoy no trabajo.",
+            "ru": "Сегодня я не работаю."
+          },
+          "explanation": "Первое — предстоящее намерение, второе — сообщение о сегодняшнем дне. Они могут одновременно быть правдой."
+        },
+        "pitfall": {
+          "wrong": "Voy estudiar español.",
+          "right": "Voy a estudiar español.",
+          "explanation": "Сохрани voy a estudiar: после voy нужна a, после a — начальная форма estudiar. Estudio означает «я учусь / изучаю» вне этой конструкции."
+        }
+      },
+      "tasks": [
+        {
+          "id": "w20-intent",
+          "kind": "intent",
+          "prompt": "Как сообщить план изучать испанский?",
+          "context": "Речь о том, что ты собираешься делать, а не о вчерашнем событии.",
+          "options": [
+            "Hoy no trabajo.",
+            "Voy a estudiar español.",
+            "Soy estudiante."
+          ],
+          "answer": 1,
+          "explanation": "Voy a estudiar выражает намерение. Soy estudiante сообщает статус, но не конкретный план."
+        },
+        {
+          "id": "w20-repair",
+          "kind": "repair",
+          "prompt": "Исправь ошибку в «Voy estudiar español.». Сохрани смысл образца.",
+          "context": "Нужная модель: Voy a estudiar español.",
+          "options": [
+            "Voy a estudiar español.",
+            "Voy a estudio español.",
+            "Voy estudiar español."
+          ],
+          "answer": 0,
+          "explanation": "Сохрани voy a estudiar: после voy нужна a, после a — начальная форма estudiar. Estudio означает «я учусь / изучаю» вне этой конструкции."
+        },
+        {
+          "id": "w20-build",
+          "kind": "build",
+          "prompt": "Собери именно показанную модель из всех карточек.",
+          "context": "Образец: Voy a estudiar español. После сборки спрячь текст и скажи фразу ещё раз.",
+          "tokens": [
+            "Voy",
+            "a",
+            "estudiar",
+            "español."
+          ],
+          "accepted": [
+            "Voy a estudiar español."
+          ],
+          "explanation": "Voy a + начальная форма называет план или намерение. A обязательно внутри этого блока; estudiar остаётся без личного окончания."
+        }
+      ],
+      "challenge": {
+        "prompt": "Скажи один реальный план на завтра с voy a.",
+        "example": "Mañana voy a estudiar español.",
+        "change": "Во второй попытке замени занятие на trabajar, если это правдиво. Сохрани a."
+      },
+      "takeaway": {
+        "es": "Voy a estudiar español.",
+        "ru": "Я собираюсь изучать испанский.",
+        "useWhen": "Когда называешь предстоящее действие."
+      }
+    },
+    {
+      "day": 21,
+      "title": "Свободен — ещё не значит согласен",
+      "hook": "В разговоре можно отдельно сообщить возможность и желание.",
+      "tool": {
+        "model": "Tengo tiempo. Quiero un café.",
+        "meaning": "У меня есть время. Я хочу кофе.",
+        "how": "Tengo tiempo сообщает ресурс: время. Quiero un café сообщает желание. Если хочешь ясно принять предложение, начни с Sí.",
+        "parts": [
+          {
+            "es": "Tengo tiempo.",
+            "ru": "у меня есть время"
+          },
+          {
+            "es": "Quiero un café.",
+            "ru": "я хочу кофе"
+          }
+        ],
+        "contrast": {
+          "a": {
+            "es": "Tengo tiempo.",
+            "ru": "У меня есть время."
+          },
+          "b": {
+            "es": "No puedo.",
+            "ru": "Я не могу."
+          },
+          "explanation": "Первая реплика сообщает наличие времени. Вторая — невозможность, которая может иметь разные причины; не обязательно нехватку времени."
+        },
+        "pitfall": {
+          "wrong": "Tengo tiempo. Quiero una café.",
+          "right": "Tengo tiempo. Quiero un café.",
+          "explanation": "Сохрани un café: мужской род и единственное число. Наличие времени не меняет согласование слов про напиток."
+        }
+      },
+      "tasks": [
+        {
+          "id": "w21-intent",
+          "kind": "intent",
+          "prompt": "Тебя приглашают, и у тебя действительно есть время. Что сообщает именно это?",
+          "context": "Ты хочешь уточнить доступность до окончательного ответа.",
+          "options": [
+            "No puedo.",
+            "Quiero un café.",
+            "Tengo tiempo."
+          ],
+          "answer": 2,
+          "explanation": "Tengo tiempo сообщает свободное время. Quiero — желание; оно не гарантирует, что ты свободен."
+        },
+        {
+          "id": "w21-repair",
+          "kind": "repair",
+          "prompt": "Исправь ошибку в «Tengo tiempo. Quiero una café.». Сохрани смысл образца.",
+          "context": "Нужная модель: Tengo tiempo. Quiero un café.",
+          "options": [
+            "Tengo tiempo. Quiero un cafés.",
+            "Tengo tiempo. Quiero un café.",
+            "Tengo tiempo. Quiero una café."
+          ],
+          "answer": 1,
+          "explanation": "Сохрани un café: мужской род и единственное число. Наличие времени не меняет согласование слов про напиток."
+        },
+        {
+          "id": "w21-build",
+          "kind": "build",
+          "prompt": "Собери именно показанную модель из всех карточек.",
+          "context": "Образец: Tengo tiempo. Quiero un café. После сборки спрячь текст и скажи фразу ещё раз.",
+          "tokens": [
+            "Tengo",
+            "tiempo.",
+            "Quiero",
+            "un",
+            "café."
+          ],
+          "accepted": [
+            "Tengo tiempo. Quiero un café."
+          ],
+          "explanation": "Tengo tiempo сообщает ресурс: время. Quiero un café сообщает желание. Если хочешь ясно принять предложение, начни с Sí."
+        }
+      ],
+      "challenge": {
+        "prompt": "Ответь на приглашение, назови возможность и желание отдельно.",
+        "example": "Sí, tengo tiempo. Quiero un café.",
+        "change": "Во второй попытке времени нет. Не сохраняй положительный ответ: скажи No puedo."
+      },
+      "takeaway": {
+        "es": "Tengo tiempo. Quiero un café.",
+        "ru": "У меня есть время. Я хочу кофе.",
+        "useWhen": "Когда различаешь «могу» и «хочу»."
+      }
+    },
+    {
+      "day": 22,
+      "title": "Встреча без новой таблицы времён",
+      "hook": "Сегодня закрепляем полезную договорённость. Прошедшее время остаётся дополнительной веткой курса.",
+      "tool": {
+        "model": "Ven a las dos.",
+        "meaning": "Приходи в два часа.",
+        "how": "Возьми знакомый блок a las dos и соедини с ven. Это приглашение собеседнику, а не рассказ о том, когда пришёл ты.",
+        "parts": [
+          {
+            "es": "Ven",
+            "ru": "приходи"
+          },
+          {
+            "es": "a las dos",
+            "ru": "в два часа"
+          }
+        ],
+        "contrast": {
+          "a": {
+            "es": "Ven a las dos.",
+            "ru": "Приходи в два часа."
+          },
+          "b": {
+            "es": "Son las dos.",
+            "ru": "Сейчас два часа."
+          },
+          "explanation": "Время действия требует a las; текущее время сообщается son las. Нужная реплика зависит от задачи."
+        },
+        "pitfall": {
+          "wrong": "Ven a la dos.",
+          "right": "Ven a las dos.",
+          "explanation": "Для времени приглашения нужна модель a las dos. Не убирай a и не заменяй las на la с dos."
+        }
+      },
+      "tasks": [
+        {
+          "id": "w22-intent",
+          "kind": "intent",
+          "prompt": "Как сообщить человеку время, когда ему нужно прийти?",
+          "context": "Ты назначаешь встречу на два. Часы сейчас показывают другое время.",
+          "options": [
+            "Ven a las dos.",
+            "Son las dos.",
+            "¿A qué hora?"
+          ],
+          "answer": 0,
+          "explanation": "Только Ven a las dos содержит приглашение прийти. Son las dos сообщило бы время сейчас."
+        },
+        {
+          "id": "w22-repair",
+          "kind": "repair",
+          "prompt": "Исправь ошибку в «Ven a la dos.». Сохрани смысл образца.",
+          "context": "Нужная модель: Ven a las dos.",
+          "options": [
+            "Ven las dos.",
+            "Ven a la dos.",
+            "Ven a las dos."
+          ],
+          "answer": 2,
+          "explanation": "Для времени приглашения нужна модель a las dos. Не убирай a и не заменяй las на la с dos."
+        },
+        {
+          "id": "w22-build",
+          "kind": "build",
+          "prompt": "Собери именно показанную модель из всех карточек.",
+          "context": "Образец: Ven a las dos. После сборки спрячь текст и скажи фразу ещё раз.",
+          "tokens": [
+            "Ven",
+            "a",
+            "las",
+            "dos."
+          ],
+          "accepted": [
+            "Ven a las dos."
+          ],
+          "explanation": "Возьми знакомый блок a las dos и соедини с ven. Это приглашение собеседнику, а не рассказ о том, когда пришёл ты."
+        }
+      ],
+      "challenge": {
+        "prompt": "Назначь время, затем озвучь ответ, если время тебе подходит.",
+        "example": "Ven a las dos. — De acuerdo.",
+        "change": "Во второй попытке время не подходит. Скажи No puedo; дальше попроси собеседника назвать другое."
+      },
+      "takeaway": {
+        "es": "Ven a las dos.",
+        "ru": "Приходи в два часа.",
+        "useWhen": "Когда хочешь закрепить встречу без добавления новой грамматики."
+      }
+    },
+    {
+      "day": 23,
+      "title": "Сегодня и завтра в одном рассказе",
+      "hook": "Не нужно учить новое время, чтобы отличить сегодняшний факт от завтрашнего плана.",
+      "tool": {
+        "model": "Mañana voy a trabajar.",
+        "meaning": "Завтра я собираюсь работать.",
+        "how": "Mañana уточняет будущий день, а voy a trabajar показывает намерение. Вместе они дают понятный план.",
+        "parts": [
+          {
+            "es": "Mañana",
+            "ru": "завтра"
+          },
+          {
+            "es": "voy a",
+            "ru": "собираюсь"
+          },
+          {
+            "es": "trabajar",
+            "ru": "работать"
+          }
+        ],
+        "contrast": {
+          "a": {
+            "es": "Hoy no trabajo.",
+            "ru": "Сегодня я не работаю."
+          },
+          "b": {
+            "es": "Mañana voy a trabajar.",
+            "ru": "Завтра я собираюсь работать."
+          },
+          "explanation": "Два сообщения могут быть правдой одновременно: сегодня свободен, завтра намерен работать."
+        },
+        "pitfall": {
+          "wrong": "Mañana voy trabajar.",
+          "right": "Mañana voy a trabajar.",
+          "explanation": "Между voy и действием обязательно a: voy a trabajar. После a нужна начальная форма trabajar, не trabajo."
+        }
+      },
+      "tasks": [
+        {
+          "id": "w23-intent",
+          "kind": "intent",
+          "prompt": "Какая реплика говорит о завтрашнем плане работать?",
+          "context": "Сегодня ты отдыхаешь, а завтра собираешься работать.",
+          "options": [
+            "Hoy no trabajo.",
+            "Mañana voy a trabajar.",
+            "Trabajo aquí."
+          ],
+          "answer": 1,
+          "explanation": "Mañana и voy a связывают сообщение с завтрашним намерением. Hoy относится к сегодняшнему дню."
+        },
+        {
+          "id": "w23-repair",
+          "kind": "repair",
+          "prompt": "Исправь ошибку в «Mañana voy trabajar.». Сохрани смысл образца.",
+          "context": "Нужная модель: Mañana voy a trabajar.",
+          "options": [
+            "Mañana voy a trabajar.",
+            "Mañana voy a trabajo.",
+            "Mañana voy trabajar."
+          ],
+          "answer": 0,
+          "explanation": "Между voy и действием обязательно a: voy a trabajar. После a нужна начальная форма trabajar, не trabajo."
+        },
+        {
+          "id": "w23-build",
+          "kind": "build",
+          "prompt": "Собери именно показанную модель из всех карточек.",
+          "context": "Образец: Mañana voy a trabajar. После сборки спрячь текст и скажи фразу ещё раз.",
+          "tokens": [
+            "Mañana",
+            "voy",
+            "a",
+            "trabajar."
+          ],
+          "accepted": [
+            "Mañana voy a trabajar."
+          ],
+          "explanation": "Mañana уточняет будущий день, а voy a trabajar показывает намерение. Вместе они дают понятный план."
+        }
+      ],
+      "challenge": {
+        "prompt": "Скажи два правдивых предложения: про сегодняшний день и про завтрашний план.",
+        "example": "Hoy no trabajo. Mañana voy a trabajar.",
+        "change": "Во второй попытке поменяй только завтрашнее занятие; не меняй сегодняшний факт ради шаблона."
+      },
+      "takeaway": {
+        "es": "Mañana voy a trabajar.",
+        "ru": "Завтра я собираюсь работать.",
+        "useWhen": "Когда сравниваешь день сейчас и ближайший план."
+      }
+    },
+    {
+      "day": 24,
+      "title": "Вернуть разговор после сбоя",
+      "hook": "Ты не обязан знать ответ, чтобы удержать контакт. Сегодня тренируем понятный переспрос.",
+      "tool": {
+        "model": "No entiendo eso.",
+        "meaning": "Я этого не понимаю.",
+        "how": "Назови непонимание, затем выбери точную помощь: повтор или меньшую скорость. Не объединяй все просьбы автоматически.",
+        "parts": [
+          {
+            "es": "No",
+            "ru": "не"
+          },
+          {
+            "es": "entiendo",
+            "ru": "понимаю"
+          },
+          {
+            "es": "eso",
+            "ru": "это"
+          }
+        ],
+        "contrast": {
+          "a": {
+            "es": "No entiendo eso.",
+            "ru": "Я этого не понимаю."
+          },
+          "b": {
+            "es": "Más despacio.",
+            "ru": "Помедленнее."
+          },
+          "explanation": "Первая реплика сообщает затруднение. Вторая указывает конкретное действие, которое поможет, если скорость слишком высокая."
+        },
+        "pitfall": {
+          "wrong": "No entender eso.",
+          "right": "No entiendo eso.",
+          "explanation": "В самостоятельном ответе за себя нужна личная форма entiendo, не начальная entender. Eso само означает «это»; перед ним не ставится la."
+        }
+      },
+      "tasks": [
+        {
+          "id": "w24-intent",
+          "kind": "intent",
+          "prompt": "Ты слышишь каждое слово, но речь слишком быстрая. Как попросить нужную помощь?",
+          "context": "Повтор на той же скорости может снова оказаться трудным.",
+          "options": [
+            "¿Cómo te llamas?",
+            "Lo siento.",
+            "Más despacio."
+          ],
+          "answer": 2,
+          "explanation": "Más despacio прямо просит замедлить темп. Извинение само по себе не сообщает, как помочь."
+        },
+        {
+          "id": "w24-repair",
+          "kind": "repair",
+          "prompt": "Исправь ошибку в «No entender eso.». Сохрани смысл образца.",
+          "context": "Нужная модель: No entiendo eso.",
+          "options": [
+            "No entiendo la eso.",
+            "No entiendo eso.",
+            "No entender eso."
+          ],
+          "answer": 1,
+          "explanation": "В самостоятельном ответе за себя нужна личная форма entiendo, не начальная entender. Eso само означает «это»; перед ним не ставится la."
+        },
+        {
+          "id": "w24-build",
+          "kind": "build",
+          "prompt": "Собери именно показанную модель из всех карточек.",
+          "context": "Образец: No entiendo eso. После сборки спрячь текст и скажи фразу ещё раз.",
+          "tokens": [
+            "No",
+            "entiendo",
+            "eso."
+          ],
+          "accepted": [
+            "No entiendo eso."
+          ],
+          "explanation": "Назови непонимание, затем выбери точную помощь: повтор или меньшую скорость. Не объединяй все просьбы автоматически."
+        }
+      ],
+      "challenge": {
+        "prompt": "Попроси подходящую помощь и попробуй ответить после неё.",
+        "example": "No entiendo eso. Más despacio, por favor.",
+        "change": "Во второй попытке звук оборвался. Вместо замедления попроси ¿Podrías repetir eso?"
+      },
+      "takeaway": {
+        "es": "No entiendo eso.",
+        "ru": "Я этого не понимаю.",
+        "useWhen": "Когда нужна осмысленная помощь, чтобы продолжить беседу."
+      }
+    },
+    {
+      "day": 25,
+      "title": "Заказ без резкости",
+      "hook": "Можно заказать коротко и вежливо, без длинного предложения.",
+      "tool": {
+        "model": "Un café, por favor.",
+        "meaning": "Кофе, пожалуйста.",
+        "how": "Un café называет заказ. Por favor добавляет вежливую просьбу. Полный вариант Quiero un café тоже возможен; здесь тренируем короткий заказ.",
+        "parts": [
+          {
+            "es": "Un café,",
+            "ru": "кофе"
+          },
+          {
+            "es": "por favor.",
+            "ru": "пожалуйста"
+          }
+        ],
+        "contrast": {
+          "a": {
+            "es": "Un café, por favor.",
+            "ru": "Кофе, пожалуйста."
+          },
+          "b": {
+            "es": "Prefiero agua.",
+            "ru": "Я предпочитаю воду."
+          },
+          "explanation": "Первое — заказ напитка. Второе — выбор воды вместо предложенного варианта; это разные действия в разговоре."
+        },
+        "pitfall": {
+          "wrong": "Una café, por favor.",
+          "right": "Un café, por favor.",
+          "explanation": "Café здесь мужского рода и в единственном числе: un café. Por favor — самостоятельный вежливый блок."
+        }
+      },
+      "tasks": [
+        {
+          "id": "w25-intent",
+          "kind": "intent",
+          "prompt": "Как коротко и вежливо заказать кофе?",
+          "context": "Ты у стойки и уже решил, что будешь пить.",
+          "options": [
+            "Un café, por favor.",
+            "¿Quieres un café?",
+            "Gracias."
+          ],
+          "answer": 0,
+          "explanation": "Заказ называет напиток и содержит просьбу. ¿Quieres…? предлагает его другому; gracias благодарит."
+        },
+        {
+          "id": "w25-repair",
+          "kind": "repair",
+          "prompt": "Исправь ошибку в «Una café, por favor.». Сохрани смысл образца.",
+          "context": "Нужная модель: Un café, por favor.",
+          "options": [
+            "Un cafés, por favor.",
+            "Una café, por favor.",
+            "Un café, por favor."
+          ],
+          "answer": 2,
+          "explanation": "Café здесь мужского рода и в единственном числе: un café. Por favor — самостоятельный вежливый блок."
+        },
+        {
+          "id": "w25-build",
+          "kind": "build",
+          "prompt": "Собери именно показанную модель из всех карточек.",
+          "context": "Образец: Un café, por favor. После сборки спрячь текст и скажи фразу ещё раз.",
+          "tokens": [
+            "Un",
+            "café,",
+            "por",
+            "favor."
+          ],
+          "accepted": [
+            "Un café, por favor."
+          ],
+          "explanation": "Un café называет заказ. Por favor добавляет вежливую просьбу. Полный вариант Quiero un café тоже возможен; здесь тренируем короткий заказ."
+        }
+      ],
+      "challenge": {
+        "prompt": "В первой попытке закажи кофе и поблагодари после получения. В следующей выбери напиток, который хочется тебе.",
+        "example": "Un café, por favor. Gracias.",
+        "change": "Во второй попытке кофе нет. Выбери воду: Agua, por favor. Не сохраняй заказ без изменения."
+      },
+      "takeaway": {
+        "es": "Un café, por favor.",
+        "ru": "Кофе, пожалуйста.",
+        "useWhen": "Когда называешь заказ и хочешь звучать вежливо."
+      }
+    },
+    {
+      "day": 26,
+      "title": "Человек, а не список ответов",
+      "hook": "Информацию о собеседнике легче удержать, если не путать статус с городом.",
+      "tool": {
+        "model": "Soy estudiante. Vivo en Moscú.",
+        "meaning": "Я студент / студентка. Я живу в Москве.",
+        "how": "Soy estudiante сообщает статус; vivo en — место жизни. Estudiante подходит мужчине и женщине; город подставь свой.",
+        "parts": [
+          {
+            "es": "Soy estudiante.",
+            "ru": "я студент / студентка"
+          },
+          {
+            "es": "Vivo en Moscú.",
+            "ru": "я живу в Москве"
+          }
+        ],
+        "contrast": {
+          "a": {
+            "es": "Soy estudiante.",
+            "ru": "Я студент / студентка."
+          },
+          "b": {
+            "es": "Vivo en Moscú.",
+            "ru": "Я живу в Москве."
+          },
+          "explanation": "Первая деталь — занятие / статус, вторая — место жизни. Не отвечай городом на вопрос об учёбе."
+        },
+        "pitfall": {
+          "wrong": "Soy estudiante. Vivo a Moscú.",
+          "right": "Soy estudiante. Vivo en Moscú.",
+          "explanation": "Для места проживания нужен vivo en. A используется в других конструкциях, например направлении; здесь это не нужная модель."
+        }
+      },
+      "tasks": [
+        {
+          "id": "w26-intent",
+          "kind": "intent",
+          "prompt": "Человек спрашивает о твоей учёбе. Какая деталь отвечает на это?",
+          "context": "Имя и город он уже знает; теперь хочет узнать, студент ли ты.",
+          "options": [
+            "Vivo en Moscú.",
+            "Soy estudiante.",
+            "Me llamo Andrea."
+          ],
+          "answer": 1,
+          "explanation": "Soy estudiante сообщает статус. Город и имя не отвечают на вопрос об учёбе."
+        },
+        {
+          "id": "w26-repair",
+          "kind": "repair",
+          "prompt": "Исправь ошибку в «Soy estudiante. Vivo a Moscú.». Сохрани смысл образца.",
+          "context": "Нужная модель: Soy estudiante. Vivo en Moscú.",
+          "options": [
+            "Soy estudiante. Vivo en Moscú.",
+            "Soy estudiante. Vivir en Moscú.",
+            "Soy estudiante. Vivo a Moscú."
+          ],
+          "answer": 0,
+          "explanation": "Для места проживания нужен vivo en. A используется в других конструкциях, например направлении; здесь это не нужная модель."
+        },
+        {
+          "id": "w26-build",
+          "kind": "build",
+          "prompt": "Собери именно показанную модель из всех карточек.",
+          "context": "Образец: Soy estudiante. Vivo en Moscú. После сборки спрячь текст и скажи фразу ещё раз.",
+          "tokens": [
+            "Soy",
+            "estudiante.",
+            "Vivo",
+            "en",
+            "Moscú."
+          ],
+          "accepted": [
+            "Soy estudiante. Vivo en Moscú."
+          ],
+          "explanation": "Soy estudiante сообщает статус; vivo en — место жизни. Estudiante подходит мужчине и женщине; город подставь свой."
+        }
+      ],
+      "challenge": {
+        "prompt": "Сначала потренируй два сведения об образце, затем замени город и статус на правдивые сведения о себе.",
+        "example": "Soy estudiante. Vivo en Roma.",
+        "change": "Добавь ¿Y tú? и дай собеседнику слово. Если ты работаешь, замени свой статус на Trabajo aquí, когда это правда."
+      },
+      "takeaway": {
+        "es": "Soy estudiante. Vivo en Moscú.",
+        "ru": "Я студент / студентка. Я живу в Москве.",
+        "useWhen": "Когда собираешь короткий рассказ о человеке по разным деталям."
+      }
+    },
+    {
+      "day": 27,
+      "title": "Желание не равно действию",
+      "hook": "«Хочу поговорить» мягко называет намерение, а не приписывает собеседнику согласие.",
+      "tool": {
+        "model": "Quiero hablar contigo.",
+        "meaning": "Я хочу поговорить с тобой.",
+        "how": "Quiero + hablar соединяет желание и действие. Contigo означает «с тобой»; это готовая форма, а не con tú.",
+        "parts": [
+          {
+            "es": "Quiero",
+            "ru": "я хочу"
+          },
+          {
+            "es": "hablar",
+            "ru": "поговорить"
+          },
+          {
+            "es": "contigo",
+            "ru": "с тобой"
+          }
+        ],
+        "contrast": {
+          "a": {
+            "es": "Quiero hablar contigo.",
+            "ru": "Я хочу поговорить с тобой."
+          },
+          "b": {
+            "es": "¿Te gusta la música?",
+            "ru": "Тебе нравится музыка?"
+          },
+          "explanation": "Первая реплика сообщает намерение поговорить. Вторая уже предлагает конкретную тему и запрашивает мнение."
+        },
+        "pitfall": {
+          "wrong": "Quiero hablo contigo.",
+          "right": "Quiero hablar contigo.",
+          "explanation": "После quiero действие ставится в начальной форме hablar. Для «с тобой» используется contigo, не con tú."
+        }
+      },
+      "tasks": [
+        {
+          "id": "w27-intent",
+          "kind": "intent",
+          "prompt": "Как сначала выразить желание поговорить с человеком?",
+          "context": "Ты хочешь начать беседу, но ещё не задаёшь вопрос про вкусы.",
+          "options": [
+            "¿Te gusta la música?",
+            "Es una buena idea.",
+            "Quiero hablar contigo."
+          ],
+          "answer": 2,
+          "explanation": "Quiero hablar contigo сообщает твоё желание. Оно не означает, что человек уже согласился."
+        },
+        {
+          "id": "w27-repair",
+          "kind": "repair",
+          "prompt": "Исправь ошибку в «Quiero hablo contigo.». Сохрани смысл образца.",
+          "context": "Нужная модель: Quiero hablar contigo.",
+          "options": [
+            "Quiero hablar con tú.",
+            "Quiero hablar contigo.",
+            "Quiero hablo contigo."
+          ],
+          "answer": 1,
+          "explanation": "После quiero действие ставится в начальной форме hablar. Для «с тобой» используется contigo, не con tú."
+        },
+        {
+          "id": "w27-build",
+          "kind": "build",
+          "prompt": "Собери именно показанную модель из всех карточек.",
+          "context": "Образец: Quiero hablar contigo. После сборки спрячь текст и скажи фразу ещё раз.",
+          "tokens": [
+            "Quiero",
+            "hablar",
+            "contigo."
+          ],
+          "accepted": [
+            "Quiero hablar contigo."
+          ],
+          "explanation": "Quiero + hablar соединяет желание и действие. Contigo означает «с тобой»; это готовая форма, а не con tú."
+        }
+      ],
+      "challenge": {
+        "prompt": "Начни беседу и задай один вопрос по знакомой теме.",
+        "example": "Quiero hablar contigo. ¿Te gusta la música?",
+        "change": "Во второй попытке человек отвечает коротко. Не запускай монолог: дай свою короткую реплику и ¿Y tú?"
+      },
+      "takeaway": {
+        "es": "Quiero hablar contigo.",
+        "ru": "Я хочу поговорить с тобой.",
+        "useWhen": "Когда хочешь обозначить намерение поговорить."
+      }
+    },
+    {
+      "day": 28,
+      "title": "Не знать — не то же, что не понимать",
+      "hook": "Можно прекрасно понять вопрос и не знать факта. Не обвиняй свой испанский в чужом адресе.",
+      "tool": {
+        "model": "No lo sé.",
+        "meaning": "Я этого не знаю.",
+        "how": "No lo sé сообщает отсутствие знания ответа. No entiendo сообщает непонимание сказанного — это другой сбой.",
+        "parts": [
+          {
+            "es": "No",
+            "ru": "не"
+          },
+          {
+            "es": "lo",
+            "ru": "это"
+          },
+          {
+            "es": "sé",
+            "ru": "я знаю"
+          }
+        ],
+        "contrast": {
+          "a": {
+            "es": "No lo sé.",
+            "ru": "Я этого не знаю."
+          },
+          "b": {
+            "es": "No entiendo eso.",
+            "ru": "Я этого не понимаю."
+          },
+          "explanation": "Неизвестный факт и непонятная речь требуют разной помощи. Сначала выбери, что именно мешает."
+        },
+        "pitfall": {
+          "wrong": "No lo saber.",
+          "right": "No lo sé.",
+          "explanation": "В ответе за себя нужна форма sé: no lo sé. Saber — начальная форма; форма первого лица этого глагола sé, не sabo."
+        }
+      },
+      "tasks": [
+        {
+          "id": "w28-intent",
+          "kind": "intent",
+          "prompt": "Ты понял вопрос, но не знаешь ответа. Что сказать?",
+          "context": "Собеседник спрашивает о факте, которого у тебя нет.",
+          "options": [
+            "No lo sé.",
+            "No entiendo eso.",
+            "Más despacio."
+          ],
+          "answer": 0,
+          "explanation": "No lo sé честно сообщает отсутствие знания. Замедление речи не даст тебе отсутствующий факт."
+        },
+        {
+          "id": "w28-repair",
+          "kind": "repair",
+          "prompt": "Исправь ошибку в «No lo saber.». Сохрани смысл образца.",
+          "context": "Нужная модель: No lo sé.",
+          "options": [
+            "No lo sabo.",
+            "No lo saber.",
+            "No lo sé."
+          ],
+          "answer": 2,
+          "explanation": "В ответе за себя нужна форма sé: no lo sé. Saber — начальная форма; форма первого лица этого глагола sé, не sabo."
+        },
+        {
+          "id": "w28-build",
+          "kind": "build",
+          "prompt": "Собери именно показанную модель из всех карточек.",
+          "context": "Образец: No lo sé. После сборки спрячь текст и скажи фразу ещё раз.",
+          "tokens": [
+            "No",
+            "lo",
+            "sé."
+          ],
+          "accepted": [
+            "No lo sé."
+          ],
+          "explanation": "No lo sé сообщает отсутствие знания ответа. No entiendo сообщает непонимание сказанного — это другой сбой."
+        }
+      ],
+      "challenge": {
+        "prompt": "Различи два случая: неизвестный ответ и слишком быстрая речь.",
+        "example": "No lo sé. / Más despacio, por favor.",
+        "change": "Во второй попытке ты не понял сам вопрос. Скажи No entiendo eso и попроси повторить."
+      },
+      "takeaway": {
+        "es": "No lo sé.",
+        "ru": "Я этого не знаю.",
+        "useWhen": "Когда вопрос понятен, но ответа у тебя нет."
+      }
+    },
+    {
+      "day": 29,
+      "title": "Прощание с нужным смыслом",
+      "hook": "Знакомство, согласие и прощание могут быть короткими, но они не взаимозаменяемы.",
+      "tool": {
+        "model": "Hasta luego. Nos vemos.",
+        "meaning": "До встречи. Увидимся.",
+        "how": "Hasta luego и nos vemos — знакомые варианты завершения беседы. Обычно достаточно одного; здесь соединяем их для тренировки.",
+        "parts": [
+          {
+            "es": "Hasta luego.",
+            "ru": "до встречи"
+          },
+          {
+            "es": "Nos vemos.",
+            "ru": "увидимся"
+          }
+        ],
+        "contrast": {
+          "a": {
+            "es": "Mucho gusto.",
+            "ru": "Очень приятно."
+          },
+          "b": {
+            "es": "Hasta luego.",
+            "ru": "До встречи."
+          },
+          "explanation": "Mucho gusto обычно связано со знакомством. Hasta luego завершает беседу; не превращай любое вежливое выражение в прощание."
+        },
+        "pitfall": {
+          "wrong": "Hasta luego. Nos ver.",
+          "right": "Hasta luego. Nos vemos.",
+          "explanation": "В готовом прощании глагол имеет форму vemos: nos vemos. Ver — начальная форма; она не заменяет vemos и не добавляется перед ним."
+        }
+      },
+      "tasks": [
+        {
+          "id": "w29-intent",
+          "kind": "intent",
+          "prompt": "Беседа закончилась. Как попрощаться?",
+          "context": "Ты уже поздоровался, познакомился и договорился о следующей встрече.",
+          "options": [
+            "Mucho gusto.",
+            "Hasta luego.",
+            "De acuerdo."
+          ],
+          "answer": 1,
+          "explanation": "Hasta luego закрывает разговор. De acuerdo подтвердило бы согласие, а Mucho gusto — знакомство."
+        },
+        {
+          "id": "w29-repair",
+          "kind": "repair",
+          "prompt": "Исправь ошибку в «Hasta luego. Nos ver.». Сохрани смысл образца.",
+          "context": "Нужная модель: Hasta luego. Nos vemos.",
+          "options": [
+            "Hasta luego. Nos vemos.",
+            "Hasta luego. Nos ver vemos.",
+            "Hasta luego. Nos ver."
+          ],
+          "answer": 0,
+          "explanation": "В готовом прощании глагол имеет форму vemos: nos vemos. Ver — начальная форма; она не заменяет vemos и не добавляется перед ним."
+        },
+        {
+          "id": "w29-build",
+          "kind": "build",
+          "prompt": "Собери именно показанную модель из всех карточек.",
+          "context": "Образец: Hasta luego. Nos vemos. После сборки спрячь текст и скажи фразу ещё раз.",
+          "tokens": [
+            "Hasta",
+            "luego.",
+            "Nos",
+            "vemos."
+          ],
+          "accepted": [
+            "Hasta luego. Nos vemos."
+          ],
+          "explanation": "Hasta luego и nos vemos — знакомые варианты завершения беседы. Обычно достаточно одного; здесь соединяем их для тренировки."
+        }
+      ],
+      "challenge": {
+        "prompt": "Попрощайся одним коротким вариантом без двух лишних формул.",
+        "example": "Nos vemos.",
+        "change": "Во второй попытке сначала подтверди договорённость: De acuerdo. Затем выбери одно прощание."
+      },
+      "takeaway": {
+        "es": "Hasta luego. Nos vemos.",
+        "ru": "До встречи. Увидимся.",
+        "useWhen": "Когда завершение беседы должно звучать естественно."
+      }
+    },
+    {
+      "day": 30,
+      "title": "Открыть следующий ход",
+      "hook": "Хороший короткий ответ сообщает что-то про тебя и даёт слово другому.",
+      "tool": {
+        "model": "Me gusta viajar. ¿Y tú?",
+        "meaning": "Мне нравится путешествовать. А тебе?",
+        "how": "После собственного вкуса ¿Y tú? просит собеседника рассказать про себя. В этом контексте по-русски естественно «а тебе?».",
+        "parts": [
+          {
+            "es": "Me gusta viajar.",
+            "ru": "мне нравится путешествовать"
+          },
+          {
+            "es": "¿Y tú?",
+            "ru": "а тебе?"
+          }
+        ],
+        "contrast": {
+          "a": {
+            "es": "Me gusta viajar.",
+            "ru": "Мне нравится путешествовать."
+          },
+          "b": {
+            "es": "Voy a viajar.",
+            "ru": "Я собираюсь путешествовать."
+          },
+          "explanation": "Вкус — не обещание поездки. Voy a выражает план; выбор зависит от того, что ты действительно хочешь сообщить."
+        },
+        "pitfall": {
+          "wrong": "Me gusta viajo. ¿Y tú?",
+          "right": "Me gusta viajar. ¿Y tú?",
+          "explanation": "После me gusta здесь нужно действие viajar. Viajo — «я путешествую», а gustan не согласуется с одним действием-инфинитивом."
+        }
+      },
+      "tasks": [
+        {
+          "id": "w30-intent",
+          "kind": "intent",
+          "prompt": "Ты хочешь рассказать о любимом занятии, а не объявить поездку. Какой ответ выбрать?",
+          "context": "Собеседник спрашивает про интересы. Билетов или плана поездки у тебя пока нет.",
+          "options": [
+            "Voy a viajar.",
+            "¿Qué vas a hacer mañana?",
+            "Me gusta viajar."
+          ],
+          "answer": 2,
+          "explanation": "Me gusta выражает вкус. Voy a объявляет намерение, которого условия не дают."
+        },
+        {
+          "id": "w30-repair",
+          "kind": "repair",
+          "prompt": "Исправь ошибку в «Me gusta viajo. ¿Y tú?». Сохрани смысл образца.",
+          "context": "Нужная модель: Me gusta viajar. ¿Y tú?",
+          "options": [
+            "Me gustan viajar. ¿Y tú?",
+            "Me gusta viajar. ¿Y tú?",
+            "Me gusta viajo. ¿Y tú?"
+          ],
+          "answer": 1,
+          "explanation": "После me gusta здесь нужно действие viajar. Viajo — «я путешествую», а gustan не согласуется с одним действием-инфинитивом."
+        },
+        {
+          "id": "w30-build",
+          "kind": "build",
+          "prompt": "Собери именно показанную модель из всех карточек.",
+          "context": "Образец: Me gusta viajar. ¿Y tú? После сборки спрячь текст и скажи фразу ещё раз.",
+          "tokens": [
+            "Me",
+            "gusta",
+            "viajar.",
+            "¿Y",
+            "tú?"
+          ],
+          "accepted": [
+            "Me gusta viajar. ¿Y tú?"
+          ],
+          "explanation": "После собственного вкуса ¿Y tú? просит собеседника рассказать про себя. В этом контексте по-русски естественно «а тебе?»."
+        }
+      ],
+      "challenge": {
+        "prompt": "Без образца назови интерес, задай встречный вопрос и ответь на один неожиданный переспрос.",
+        "example": "Me gusta viajar. ¿Y tú?",
+        "change": "Во второй попытке собеседник спрашивает о завтра. Переключись на свой настоящий план с voy a, а не повторяй ответ о вкусах."
+      },
+      "takeaway": {
+        "es": "Me gusta viajar. ¿Y tú?",
+        "ru": "Мне нравится путешествовать. А тебе?",
+        "useWhen": "Когда хочешь вести обмен репликами вместо выученного монолога."
+      }
+    }
+  ]
+}

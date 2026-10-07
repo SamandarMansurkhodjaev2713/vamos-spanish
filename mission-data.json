@@ -2948,16 +2948,14 @@
               "rule": {
                 "kind": "forms",
                 "forms": [
-                  "Prefiero leer.",
-                  "Me gusta leer."
+                  "Prefiero leer."
                 ],
                 "patterns": [],
                 "required": []
               },
-              "explanation": "Выбирай смысл, затем восстанови короткую модель. Можно ответить своими словами: подготовленная проверка знает только перечисленные формы и модели.",
+              "explanation": "Prefiero leer — я предпочитаю читать. Me gusta leer означает, что чтение нравится; это правильная фраза, но здесь задача именно про предпочтение.",
               "examples": [
-                "Prefiero leer.",
-                "Me gusta leer."
+                "Prefiero leer."
               ]
             },
             {
@@ -2970,20 +2968,16 @@
               "rule": {
                 "kind": "reason",
                 "forms": [
-                  "Prefiero leer porque es interesante.",
-                  "Me gusta leer porque es interesante."
+                  "Prefiero leer porque es interesante."
                 ],
-                "patterns": [
-                  "(?:prefiero|me gusta) (?:leer|viajar|la música|el café|agua) porque (?:es interesante|es divertido|me gusta|tengo tiempo)"
-                ],
+                "patterns": [],
                 "required": [
                   "porque"
                 ]
               },
-              "explanation": "Porque («потому что») пишется одним словом. Соедини предпочтение и причину: prefiero leer porque es interesante. Одного prefiero leer для этого хода недостаточно.",
+              "explanation": "Prefiero выражает предпочтение; porque присоединяет причину. Me gusta — грамматически правильная фраза о том, что нравится, но эта задача просит назвать выбор. В этом ходе нужна причина, а не только prefiero leer.",
               "examples": [
-                "Prefiero leer porque es interesante.",
-                "Me gusta leer porque es interesante."
+                "Prefiero leer porque es interesante."
               ]
             },
             {
@@ -3027,16 +3021,14 @@
               "rule": {
                 "kind": "forms",
                 "forms": [
-                  "Prefiero leer.",
-                  "Me gusta leer."
+                  "Prefiero leer."
                 ],
                 "patterns": [],
                 "required": []
               },
-              "explanation": "Выбирай смысл, затем восстанови короткую модель. Можно ответить своими словами: подготовленная проверка знает только перечисленные формы и модели.",
+              "explanation": "Prefiero leer — я предпочитаю читать. Me gusta leer означает, что чтение нравится; это правильная фраза, но здесь задача именно про предпочтение.",
               "examples": [
-                "Prefiero leer.",
-                "Me gusta leer."
+                "Prefiero leer."
               ]
             },
             {
@@ -3049,20 +3041,16 @@
               "rule": {
                 "kind": "reason",
                 "forms": [
-                  "Prefiero leer porque es interesante.",
-                  "Me gusta leer porque es interesante."
+                  "Prefiero leer porque es interesante."
                 ],
-                "patterns": [
-                  "(?:prefiero|me gusta) (?:leer|viajar|la música|el café|agua) porque (?:es interesante|es divertido|me gusta|tengo tiempo)"
-                ],
+                "patterns": [],
                 "required": [
                   "porque"
                 ]
               },
-              "explanation": "Porque («потому что») пишется одним словом. Соедини предпочтение и причину: prefiero leer porque es interesante. Одного prefiero leer для этого хода недостаточно.",
+              "explanation": "Prefiero выражает предпочтение; porque присоединяет причину. Me gusta — грамматически правильная фраза о том, что нравится, но эта задача просит назвать выбор. В этом ходе нужна причина, а не только prefiero leer.",
               "examples": [
-                "Prefiero leer porque es interesante.",
-                "Me gusta leer porque es interesante."
+                "Prefiero leer porque es interesante."
               ]
             },
             {

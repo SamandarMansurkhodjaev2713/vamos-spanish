@@ -3,7 +3,7 @@ window.VamosNavigation={create(api){
  'use strict';
  const {esc,icon}=api;
  const sections=[['home','Маршрут','Следующий урок и все 30 дней','route'],['practice','Практика','Вспомнить, услышать и сказать','messages-square'],['words','Словарь','Слова, фразы и маленькие истории','book-open'],['materials','Материалы','Правила, методы, видео и записи','notebook-tabs'],['settings','Настройки','Звук, оформление, офлайн и прогресс','sliders-horizontal']];
- const labels={daily:'Занятие на сегодня',mission:'Разговорная миссия',personal:'Мой испанский',recordings:'Мои записи',mastery:'Контроль памяти',drill:'Тренировка фраз',pronunciation:'Сказать и сравнить',review:'Повторение',scene:'Разговор на двоих',sound:'Слух и речь',dialogue:'Своя реплика',extra:'Квизы',checkpoint:'Разговорная проверка'};
+ const labels={workbook:'Истории и мастерская',daily:'Занятие на сегодня',mission:'Разговорная миссия',personal:'Мой испанский',recordings:'Мои записи',mastery:'Контроль памяти',drill:'Тренировка фраз',pronunciation:'Сказать и сравнить',review:'Повторение',scene:'Разговор на двоих',sound:'Слух и речь',dialogue:'Своя реплика',extra:'Квизы',checkpoint:'Разговорная проверка'};
  const selected=()=>api.view()==='lesson'?'home':api.view();
  let dialog=null,continuation=null;
 
