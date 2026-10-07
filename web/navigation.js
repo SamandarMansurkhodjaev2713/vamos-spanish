@@ -1,50 +1,14 @@
-(function () {
+/* Compact navigation; native dialog contains keyboard focus during selection. */
+window.VamosNavigation={create(api){
  'use strict';
- window.VamosNavigation = {
-  create(api) {
-   const {esc, icon} = api;
-   const sections = [['home','Маршрут','route'],['practice','Практика','messages-square'],['words','Словарь','book-open'],['materials','Материалы','notebook-tabs']];
-   const practiceLabels = {mastery:'Без подсказок',drill:'Тренировка фраз',pronunciation:'Сказать и сравнить',review:'Повторение',scene:'Разговор на двоих',sound:'Слух и речь',dialogue:'Своя реплика',extra:'Упражнения',checkpoint:'Проверка навыков'};
-   function selected() { return api.view() === 'lesson' ? 'home' : api.view(); }
-   function footer() {
-    return `<footer class="footer course-footer" aria-label="О курсе и навигация">
-     <div class="course-footer-top">
-      <div class="course-footer-about"><button type="button" class="footer-wordmark" data-footer-nav="home" aria-label="¡Vamos! — к маршруту"><span>¡</span>vamos<span>!</span></button><p>От знакомой фразы — к своему разговору.</p><span class="footer-rhythm">30 дней · 30–40 минут в день</span></div>
-      <div class="course-footer-next"><strong>Есть ещё пять минут?</strong><p>Верни трудную фразу из памяти и произнеси её вслух.</p><button type="button" class="btn" data-footer-practice="review">${icon('rotate-ccw')}Повторить слова и фразы</button></div>
-      <nav class="course-footer-nav" aria-label="Разделы курса">${sections.map(([id,label,symbol])=>`<button type="button" data-footer-nav="${id}" aria-current="${selected()===id?'page':'false'}">${icon(symbol)}<span>${label}</span>${icon('arrow-up-right')}</button>`).join('')}</nav>
-     </div>
-     <div class="course-footer-bottom"><p>Прогресс и подбор практики сохраняются в этом браузере. Копию прогресса можно сохранить в настройках.</p><div class="footer-utility"><button type="button" data-footer-nav="settings">${icon('sliders-horizontal')}Настройки и прогресс</button><button type="button" data-footer-tab="sources">${icon('headphones')}Записи и лицензии</button></div></div>
-    </footer>`;
-   }
-   function sync() {
-    const current = selected();
-    document.querySelectorAll('[data-nav]').forEach(button=>button.setAttribute('aria-current', button.dataset.nav === current ? 'page' : 'false'));
-    document.querySelectorAll('[data-footer-nav]').forEach(button=>button.setAttribute('aria-current', button.dataset.footerNav === current ? 'page' : 'false'));
-    const topbar = document.querySelector('.topbar');
-    if (!topbar) return;
-    const settings = topbar.querySelector('[data-nav="settings"]');
-    if (settings) {
-     settings.classList.add('shell-settings');
-     if (!settings.querySelector('.shell-settings-label')) {
-      const label = document.createElement('span'); label.className = 'shell-settings-label'; label.textContent = 'Настройки'; settings.append(label);
-     }
-    }
-    let context = topbar.querySelector('.shell-context');
-    if (!context) { context = document.createElement('span'); context.className = 'shell-context'; topbar.querySelector('.logo')?.after(context); }
-    const view = api.view();
-    const section = sections.find(([id])=>id===view)?.[1];
-    context.textContent = view==='lesson' ? `День ${Math.min(30,Math.max(1,Number(api.day())||1))}` : view==='settings' ? 'Настройки' : section || 'Маршрут';
-    const main = document.getElementById('main');
-    if (main && view==='practice' && api.practice()!=='menu') {
-     let trail = main.querySelector('.section-trail');
-     if (!trail) {
-      trail = document.createElement('nav'); trail.className = 'section-trail'; trail.setAttribute('aria-label','Текущий раздел');
-      trail.innerHTML = `<span>Практика</span><span aria-hidden="true">/</span><span>${esc(practiceLabels[api.practice()]||'Практика')}</span>`;
-      main.prepend(trail);
-     }
-    }
-   }
-   return {footer, sync};
-  }
- };
-})();
+ const {esc,icon}=api,sections=[['home','Маршрут','Следующий урок и все 30 дней','route'],['practice','Практика','Вспомнить, услышать и сказать','messages-square'],['words','Словарь','Слова, фразы и маленькие истории','book-open'],['materials','Материалы','Правила, методы, видео и записи','notebook-tabs'],['settings','Настройки','Звук, оформление, офлайн и прогресс','sliders-horizontal']];
+ const labels={mastery:'Контроль памяти',drill:'Тренировка фраз',pronunciation:'Сказать и сравнить',review:'Повторение',scene:'Разговор на двоих',sound:'Слух и речь',dialogue:'Своя реплика',extra:'Квизы',checkpoint:'Разговорная проверка'},selected=()=>api.view()==='lesson'?'home':api.view();let dialog=null;
+ function footer(){return `<footer class="footer course-footer quiet-footer"><p><strong>¡Vamos!</strong><span>По чуть-чуть. Каждый день.</span></p><div class="footer-utility"><button type="button" data-menu-open>${icon('menu')}Разделы курса</button><button type="button" data-footer-tab="sources">${icon('headphones')}Записи и лицензии</button></div></footer>`}
+ function ensure(){if(dialog)return;dialog=document.createElement('dialog');dialog.id='course-menu';dialog.className='menu-drawer';dialog.setAttribute('aria-labelledby','menu-title');document.getElementById('app').append(dialog);dialog.addEventListener('keydown',e=>{if(e.key!=='Tab')return;const nodes=[...dialog.querySelectorAll('button,a[href],input,select,textarea,[tabindex]')].filter(x=>!x.disabled&&x.tabIndex>=0&&x.getClientRects().length);const first=nodes[0],last=nodes.at(-1);if(e.shiftKey&&document.activeElement===first){e.preventDefault();last?.focus()}else if(!e.shiftKey&&document.activeElement===last){e.preventDefault();first?.focus()}});dialog.addEventListener('close',()=>document.querySelectorAll('[data-menu-open]').forEach(b=>b.setAttribute('aria-expanded','false')));dialog.addEventListener('click',e=>{if(e.target===dialog){const r=dialog.getBoundingClientRect();if(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom)close()}})}
+ function contents(){return `<div class="menu-heading"><div><h2 id="menu-title">Куда пойдём?</h2><p>Один шаг за раз.</p></div><button type="button" class="btn quiet icon" data-menu-close aria-label="Закрыть меню">${icon('x')}</button></div><nav class="menu-sections" aria-label="Разделы курса">${sections.map(([id,label,desc,symbol])=>`<button type="button" data-nav="${id}" aria-current="${selected()===id?'page':'false'}">${icon(symbol)}<span><strong>${label}</strong><small>${desc}</small></span>${icon('arrow-right')}</button>`).join('')}</nav><div class="menu-next"><span>Продолжить обучение</span><button type="button" class="btn primary wide" data-menu-lesson>${icon('play')}Урок дня ${Math.min(30,Math.max(1,Number(api.next?.()||api.day())||1))}</button></div><p class="menu-note">Прогресс остаётся на устройстве. Для переноса сохрани копию в настройках.</p>`}
+ function open(){ensure();api.onOpen?.();dialog.innerHTML=contents();window.lucide?.createIcons({attrs:{width:22,height:22}});dialog.showModal();document.querySelectorAll('[data-menu-open]').forEach(b=>b.setAttribute('aria-expanded','true'))}
+ function close(){if(dialog?.open)dialog.close()}
+ function click(b){if(b.hasAttribute('data-menu-open')){open();return true}if(b.hasAttribute('data-menu-close')){close();return true}if(b.hasAttribute('data-menu-lesson')){const d=api.next?.()||api.day();close();api.openLesson(d);return true}if(b.dataset.nav||b.dataset.footerNav||b.dataset.footerTab)close();return false}
+ function sync(){const current=selected();document.querySelectorAll('[data-nav]').forEach(b=>b.setAttribute('aria-current',b.dataset.nav===current?'page':'false'));const topbar=document.querySelector('.topbar');if(topbar){let context=topbar.querySelector('.shell-context');if(!context){context=document.createElement('span');context.className='shell-context';topbar.querySelector('.logo').after(context)}context.textContent=api.view()==='lesson'?`День ${api.day()}`:sections.find(([id])=>id===api.view())?.[1]||'Маршрут'}const main=document.getElementById('main');if(api.view()==='practice'&&api.practice()!=='menu'&&main&&!main.querySelector('.section-trail')){const trail=document.createElement('div');trail.className='section-trail';trail.textContent='Практика / '+(labels[api.practice()]||'Практика');main.prepend(trail)}}
+ ensure();return {footer,sync,click,close};
+}};

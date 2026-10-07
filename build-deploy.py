@@ -2,7 +2,7 @@
 from pathlib import Path
 import json,shutil,hashlib
 root=Path(__file__).parent;web=root/'web';dest=root/'docs';dest.mkdir(exist_ok=True)
-runtime=['index.html','course.css','course-foundation.css','course-v3.css','course-v4.css','course-data.js','course.js','library.js','coach.js','progress.js','learning.js','speech.js','native.js','drills.js','course-v5.css','manifest.webmanifest','sw.js','mastery.js','adaptive.js','navigation.js','navigation.css']
+runtime=['index.html','course.css','course-foundation.css','course-v3.css','course-v4.css','course-data.js','course.js','library.js','coach.js','progress.js','learning.js','speech.js','native.js','drills.js','course-v5.css','manifest.webmanifest','sw.js','mastery.js','adaptive.js','navigation.js','navigation.css','course-v7.css']
 assets=['nunito-latin.woff2','nunito-cyrillic.woff2','Nunito-OFL.txt','onest-latin.woff2','onest-cyrillic.woff2','Onest-OFL.txt','onest-sources.json','lucide.min.js','lucide-LICENSE.txt','lumo-poses.webp','app-icon.svg','app-icon-192.png','app-icon-512.png']
 for name in runtime+['assets/'+x for x in assets]:
  p=web/name;assert p.exists(),name;out=dest/name;out.parent.mkdir(parents=True,exist_ok=True);shutil.copy2(p,out)
