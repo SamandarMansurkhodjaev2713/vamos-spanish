@@ -1,0 +1,44 @@
+/* A clear frame around the conversation studio; inherited Vamos tokens. */
+.topbar .shell-settings{gap:8px;flex-shrink:0;min-width:44px;min-height:44px}
+.shell-settings-label{display:none}
+.shell-context{min-width:0;font-size:13px;font-weight:550;color:var(--muted);overflow:hidden;text-overflow:ellipsis;white-space:nowrap;text-align:right;margin-left:auto}
+.desktop-nav button,.mobile-nav button{position:relative;transition:background-color 160ms,color 160ms,transform 160ms var(--ease)}
+.desktop-nav button[aria-current=page]::after{content:'';position:absolute;bottom:5px;left:calc(50% - 10px);width:20px;height:2px;border-radius:2px;background:var(--accent)}
+.mobile-nav button[aria-current=page] svg{transform:translateY(-1px)}
+.mobile-nav button svg{transition:transform 180ms var(--ease)}
+.section-trail{max-width:1140px;margin:0 auto 20px;display:flex;align-items:center;gap:10px;flex-wrap:wrap;color:var(--muted);font-size:13px;line-height:1.5}
+.section-trail button{display:inline-flex;gap:8px;align-items:center;min-height:44px;padding:7px 0;border:0;background:transparent;color:var(--accent);font-size:inherit;font-weight:600;text-align:left}
+.section-trail svg{width:17px;height:17px}
+.course-footer.footer{margin-top:48px;padding:30px 0 0;max-width:1140px;font-size:14px;line-height:1.6;color:var(--muted)}
+.course-footer-top{display:grid;gap:28px;min-width:0}
+.course-footer-about,.course-footer-next,.course-footer-nav{min-width:0}
+.footer-wordmark{border:0;background:none;padding:0;min-height:44px;color:var(--ink);font-size:30px;font-weight:760;letter-spacing:-.05em;line-height:1.2;text-align:left}
+.footer-wordmark span{color:var(--accent)}
+.course-footer-about p{margin:10px 0 8px;max-width:30ch;color:var(--ink)}
+.footer-rhythm{font-size:12px;font-variant-numeric:tabular-nums}
+.course-footer-next{padding:0}
+.course-footer-next>strong{color:var(--ink);font-size:15px;font-weight:650}
+.course-footer-next>p{max-width:36ch;margin:8px 0 14px}
+.course-footer-next .btn{font-size:13px;white-space:normal;justify-content:flex-start;text-align:left;box-shadow:none;padding:10px 12px;min-height:44px}
+.course-footer-nav{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:4px 14px;align-content:start}
+.course-footer-nav button{display:flex;gap:9px;align-items:center;min-width:0;min-height:48px;border:0;border-bottom:1px solid var(--line);padding:10px 0;background:transparent;color:var(--ink);font-size:14px;text-align:left}
+.course-footer-nav button>span{flex:1;min-width:0;overflow-wrap:anywhere}
+.course-footer-nav button>svg{width:17px;height:17px}
+.course-footer-nav button>svg:last-child{width:14px;height:14px;color:var(--muted);transition:transform 160ms var(--ease)}
+.course-footer-nav button[aria-current=page]{color:var(--accent);border-bottom-color:var(--accent);font-weight:650}
+.course-footer-bottom{display:grid;gap:16px;margin-top:28px;padding:20px 0 0;border-top:1px solid var(--line)}
+.course-footer-bottom>p{max-width:65ch;font-size:12px;line-height:1.65}
+.footer-utility{display:flex;align-items:start;flex-wrap:wrap;gap:6px 20px}
+.footer-utility button{display:inline-flex;align-items:center;gap:8px;min-height:44px;border:0;background:transparent;padding:8px 0;color:var(--accent);font-size:12px;line-height:1.5;text-align:left}
+.footer-utility svg{width:16px;height:16px}
+@media(min-width:600px){.course-footer-top{grid-template-columns:1fr 1fr;gap:28px}.course-footer-nav{grid-column:1/-1;grid-template-columns:repeat(4,minmax(0,1fr));gap:20px}.course-footer-bottom{grid-template-columns:minmax(0,1fr) minmax(200px,.7fr);gap:24px}.footer-utility{justify-content:flex-end}}
+@media(min-width:980px){.topbar .shell-context{display:none}.shell-settings-label{display:inline}.topbar .shell-settings{padding:10px 12px;border-radius:14px;font-size:14px}.topbar .shell-settings[aria-current=page]{background:var(--soft);color:var(--accent)}.course-footer-top{grid-template-columns:minmax(0,.8fr) minmax(0,1fr) minmax(0,1fr);gap:32px}.course-footer-nav{grid-column:auto;grid-template-columns:repeat(2,minmax(0,1fr));gap:4px 14px}.course-footer-bottom{grid-template-columns:minmax(0,1fr) auto}.course-footer{margin-bottom:0}}
+@container course (max-width:960px){.shell-context{display:block}.shell-settings-label{display:none}.topbar .shell-settings{padding:11px;min-width:44px}.course-footer-top{grid-template-columns:1fr 1fr}.course-footer-nav{grid-column:1/-1;grid-template-columns:repeat(4,minmax(0,1fr))}}
+@media(max-width:599px){.course-footer-top{grid-template-columns:1fr}.course-footer-nav{grid-column:auto;grid-template-columns:repeat(2,minmax(0,1fr));gap:4px 16px}.course-footer-bottom{grid-template-columns:1fr}.footer-utility{justify-content:flex-start}.course-footer.footer{margin-top:36px;padding-top:24px}.shell-context{font-size:12px}.topbar{gap:10px}.course-footer-next{padding:0}.course-footer-bottom>p{font-size:13px}.footer-utility button{font-size:13px}}
+@media(max-width:599px){.course-footer-top{gap:20px}.course-footer-next>p{display:none}.course-footer-next .btn{display:flex;margin-top:10px}.course-footer-about p{margin-top:4px}.course-footer-bottom{margin-top:20px;gap:8px}}
+.large-text .course-footer{font-size:16px}.large-text .course-footer-nav button{font-size:16px}.large-text .course-footer-next .btn{font-size:16px}.large-text .course-footer-bottom>p,.large-text .footer-utility button,.large-text .footer-rhythm{font-size:14px}
+@media(hover:hover){.course-footer-nav button:hover,.footer-utility button:hover{color:var(--accent)}.course-footer-nav button:hover>svg:last-child{transform:translate(2px,-2px)}.desktop-nav button:hover{transform:translateY(-1px)}.topbar .shell-settings:hover{background:var(--soft)}}
+.course-footer button:active,.section-trail button:active,.desktop-nav button:active,.mobile-nav button:active{transform:translateY(1px)}
+@media(prefers-reduced-motion:reduce){.desktop-nav button,.mobile-nav button,.mobile-nav button svg,.course-footer-nav button>svg:last-child{transition:none!important;transform:none!important}}
+.motion-off .desktop-nav button,.motion-off .mobile-nav button,.motion-off .mobile-nav button svg,.motion-off .course-footer-nav button>svg:last-child{transition:none!important;transform:none!important}
+@media(forced-colors:active){.desktop-nav button[aria-current=page],.mobile-nav button[aria-current=page],.course-footer-nav button[aria-current=page],.topbar .shell-settings[aria-current=page]{outline:1px solid Highlight;outline-offset:-2px}.desktop-nav button[aria-current=page]::after{background:Highlight}}
