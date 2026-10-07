@@ -1,0 +1,41 @@
+{
+  "source": "web/assets/lumo-poses.webp",
+  "sourceSHA256": "28cdeadec5d62e1c6e5b29979c347cce1fdb3e12e00eb88e0547ef74aba941f0",
+  "provenance": "Derived from existing project-owned Lumo artwork. No third-party asset added. Refer to original lumo-poses.webp.json for source metadata.",
+  "operation": "Exact single-quadrant crops; Lanczos resize; chalk background for application icons.",
+  "spriteSize": [
+    1254,
+    1254
+  ],
+  "crops": {
+    "wave": [
+      0,
+      0,
+      627,
+      627
+    ],
+    "joy": [
+      627,
+      0,
+      1254,
+      627
+    ],
+    "think": [
+      0,
+      627,
+      627,
+      1254
+    ],
+    "proud": [
+      627,
+      627,
+      1254,
+      1254
+    ]
+  },
+  "applicationSizes": [
+    192,
+    512
+  ],
+  "faviconSize": 64
+}

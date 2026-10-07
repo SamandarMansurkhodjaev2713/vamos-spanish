@@ -18,5 +18,6 @@ audio=json.loads((r/'web/assets/audio/ATTRIBUTION.json').read_text(encoding='utf
 for a in audio.values():assert hashlib.sha256((r/'docs'/a['file']).read_bytes()).hexdigest()==a['sha256']
 assert len(audio)==72
 assert (r/'web/course-shell.html').read_bytes()==(r/'web/index.html').read_bytes()
+(r/'.impeccable/review-v13').mkdir(parents=True,exist_ok=True)
 (r/'.impeccable/review-v13/release-files.json').write_text(json.dumps({'version':data['version'],'files':files},indent=2),encoding='utf8')
 print('PASS release v13:',len(files),'runtime/assets; 90 days + 10 readings; 72 original SHA; native scoped cache.')
