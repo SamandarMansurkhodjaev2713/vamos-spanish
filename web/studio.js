@@ -15,7 +15,7 @@ window.VamosStudio={create(api){
  state.studio=sanitize(state.studio);
  let profileDraft={...state.studio.profile},difficultyDraft=state.studio.active?.difficulty||'';
  const current=()=>state.studio.active;
- function track(){const s=current();return `<ol class="session-track" aria-label="Порядок занятия">${titles.map((t,i)=>`<li ${s?.step===i?'aria-current="step"':''} class="${s&&s.step>i?'done':''}"><span aria-hidden="true">${s&&s.step>i?'✓':i+1}</span><div><strong>${esc(t)}</strong><small>около ${minutes[i]} мин</small></div></li>`).join('')}</ol>`}
+ function track(){const s=current();return `<ol class="session-track" aria-label="Порядок занятия">${titles.map((t,i)=>({t,i})).filter(({i})=>!s?.reviewSkipped||i!==0).map(({t,i},j)=>`<li ${s?.step===i?'aria-current="step"':''} class="${s&&s.step>i?'done':''}"><span aria-hidden="true">${s&&s.step>i?'✓':j+1}</span><div><strong>${esc(t)}</strong><small>около ${minutes[i]} мин</small></div></li>`).join('')}</ol>`}
  function resume(){const s=current();if(!s||s.step===4){navigate('daily');return}if(s.step===0){if(!s.reviewKeys.length){s.reviewSkipped=true;s.step=1;save();openLesson(s.day,true)}else startSet(s.reviewKeys)}else if(s.step===1)openLesson(s.day,true);else if(s.step===2)navigate('mission',s.day);else navigate('daily')}
  function begin(){if(current()&&current().step<4){resume();return}const day=nextDay();state.studio.active={day,started:Date.now(),step:0,reviewKeys:dueKeys().slice(0,6),reviewSkipped:false,rating:null,difficulty:'',finished:null};difficultyDraft='';save();resume()}
  function mark(step,day){const s=current();if(s&&s.step===step&&(day===undefined||s.day===day)){s.step++;save()}}

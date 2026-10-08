@@ -2,12 +2,12 @@
 window.VamosNavigation={create(api){
  'use strict';
  const {esc,icon}=api;
- const sections=[['home','Учиться','Следующий шаг и маршрут курса','route'],['practice','Практика','Вспомнить, услышать и сказать','messages-square'],['words','Словарь','Слова, фразы и маленькие истории','book-open'],['materials','Материалы','Объяснения, истории, видео и записи','notebook-tabs'],['profile','Профиль','Достижения, настройки и сохранение прогресса','user-round']];
+ const sections=[['home','Уроки','Сегодня и все дни курса','route'],['practice','Практика','Вспомнить, услышать и сказать','messages-square'],['words','Словарь','Слова, фразы и маленькие истории','book-open'],['materials','Материалы','Объяснения, истории, видео и записи','notebook-tabs'],['profile','Профиль','Достижения, настройки и сохранение прогресса','user-round']];
  const labels={pathway:'Продолжение · дни 31–90',reading:'Чтение по уровням',workbook:'Истории и мастерская',daily:'Занятие на сегодня',mission:'Разговорная миссия',personal:'Мой испанский',recordings:'Мои записи',mastery:'Контроль памяти',drill:'Тренировка фраз',pronunciation:'Сказать и сравнить',review:'Повторение',scene:'Разговор на двоих',sound:'Слух и речь',dialogue:'Своя реплика',extra:'Квизы',checkpoint:'Разговорная проверка'};
  const selected=()=>['lesson','plan'].includes(api.view())?'home':api.view();
  let dialog=null,continuation=null;
 
- function footer(){return `<footer class="footer course-footer quiet-footer"><p><strong>¡Vamos!</strong><span>По чуть-чуть. Каждый день.</span></p><nav class="footer-shortcuts" aria-label="Разделы внизу страницы">${sections.filter(([id])=>['practice','words','materials'].includes(id)).map(([id,label])=>`<button type="button" data-footer-nav="${id}" aria-current="${selected()===id?'page':'false'}">${label}</button>`).join('')}</nav><div class="footer-utility"><button type="button" data-menu-open aria-label="Открыть меню курса" aria-expanded="false" aria-controls="course-menu">${icon('menu')}Разделы курса</button><button type="button" data-footer-tab="sources">${icon('headphones')}Записи и лицензии</button></div></footer>`}
+ function footer(){return `<footer class="footer course-footer quiet-footer"><p><strong>¡Vamos!</strong></p><button type="button" class="btn quiet" data-footer-tab="audio">Записи и лицензии ${icon('arrow-right')}</button></footer>`}
 
  function ensure(){
   if(dialog)return;
@@ -25,7 +25,7 @@ window.VamosNavigation={create(api){
   const proposed=api.nextSession?.();
   continuation=proposed&&typeof proposed.open==='function'&&typeof proposed.label==='string'?proposed:null;
   const nextLabel=continuation?continuation.label:`Начать занятие ${Math.min(30,Math.max(1,Number(api.next?.()||api.day())||1))}`;
-  return `<div class="menu-heading"><div><h2 id="menu-title">Куда пойдём?</h2><p>Один шаг за раз.</p></div><button type="button" class="btn quiet icon" data-menu-close aria-label="Закрыть меню">${icon('x')}</button></div><nav class="menu-sections" aria-label="Разделы курса">${sections.map(([id,label,desc,symbol])=>`<button type="button" data-nav="${id}" aria-current="${selected()===id?'page':'false'}">${icon(symbol)}<span><strong>${label}</strong><small>${desc}</small></span>${icon('arrow-right')}</button>`).join('')}</nav><div class="menu-next"><span>Продолжить обучение</span><button type="button" class="btn primary wide" data-menu-lesson>${icon('play')}${esc(nextLabel)}</button></div><p class="menu-note">Прогресс остаётся на устройстве. Для переноса сохрани копию в настройках.</p>`;
+  return `<div class="menu-heading"><div><h2 id="menu-title">Разделы</h2></div><button type="button" class="btn quiet icon" data-menu-close aria-label="Закрыть меню">${icon('x')}</button></div><nav class="menu-sections" aria-label="Разделы курса">${sections.map(([id,label,desc,symbol])=>`<button type="button" data-nav="${id}" aria-current="${selected()===id?'page':'false'}">${icon(symbol)}<span><strong>${label}</strong></span>${icon('arrow-right')}</button>`).join('')}</nav><div class="menu-next"><span>Продолжить обучение</span><button type="button" class="btn primary wide" data-menu-lesson>${icon('play')}${esc(nextLabel)}</button></div><nav class="menu-shortcuts" aria-label="Быстрые переходы"><button type="button" class="btn quiet" data-home-screen="course">Все уроки ${icon('arrow-right')}</button><button type="button" class="btn quiet" data-open-reading>Чтение ${icon('arrow-right')}</button><button type="button" class="btn quiet" data-material-target="video">Видео ${icon('arrow-right')}</button></nav>`;
  }
 
  function open(){ensure();if(dialog.open)return;api.onOpen?.();dialog.innerHTML=contents();window.lucide?.createIcons({attrs:{width:22,height:22}});dialog.showModal();document.querySelectorAll('[data-menu-open]').forEach(b=>b.setAttribute('aria-expanded','true'))}
@@ -45,7 +45,7 @@ window.VamosNavigation={create(api){
   if(topbar){
    let context=topbar.querySelector('.shell-context');
    if(!context){context=document.createElement('span');context.className='shell-context';topbar.querySelector('.logo').after(context)}
-   const section=sections.find(([id])=>id===view)?.[1]||'Маршрут';
+   const section=sections.find(([id])=>id===view)?.[1]||'Уроки';
    const text=view==='lesson'?`День ${api.day()}`:view==='practice'&&kind!=='menu'?labels[kind]||'Практика':section;
    context.textContent=text;context.title=text;context.setAttribute('aria-label',text);
   }
@@ -53,7 +53,7 @@ window.VamosNavigation={create(api){
   if(view==='practice'&&kind!=='menu'&&main&&!main.querySelector('[data-practice="menu"],[data-practice-open="menu"]')){
    let trail=main.querySelector('.section-trail');
    if(!trail){trail=document.createElement('div');trail.className='section-trail';main.prepend(trail)}
-   trail.innerHTML=`<button type="button" class="btn quiet" data-nav="practice">${icon('arrow-left')}Все тренировки</button>`;
+   trail.innerHTML=`<button type="button" class="btn quiet" data-nav="practice">${icon('arrow-left')}К практике</button>`;
   }
  }
  ensure();return {footer,sync,click,close};
