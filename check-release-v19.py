@@ -14,7 +14,7 @@ assert data['library']==json.loads((r/'course-library.json').read_text(encoding=
 assert len(data['library']['items'])==316 and len(data['library']['categories'])==16
 assert len(data['lessons'])==30 and len(data['pathway']['days'])==60 and len(data['pathway']['readings'])==10
 for key,path in [('repair','course-repair-v14.json'),('pathway','pathway-data.json'),('videoGuide','video-guide-v13.json'),('missions','mission-data.json'),('stories','course-stories.json'),('workshops','course-workshops.json')]:assert data[key]==json.loads((r/path).read_text(encoding='utf8')),path
-cache=(r/'web/sw.js').read_text(encoding='utf8');assert 'shell-v19-1' in cache and 'notificationclick' in cache
+cache=(r/'web/sw.js').read_text(encoding='utf8');assert 'shell-v19-2' in cache and 'notificationclick' in cache
 for name in ['meaning-choices.js','library-practice.js','library-v16.css','day-compass.js','day-compass.css','cafe.css','assets/lumo-cafe-v15.webp','assets/patio-tile-v15.svg','repair.js','repair.css','bridge-review.js','focus-home.js','focus-home.css','lesson-focus.css','profile.js','pathway.js','identity.js','welcome.js','videos.js','journey-ui.css','assets/lumo-welcome-v13.webp']:assert name in cache,name
 audio=json.loads((r/'web/assets/audio/ATTRIBUTION.json').read_text(encoding='utf8'))
 for a in audio.values():assert hashlib.sha256((r/'docs'/a['file']).read_bytes()).hexdigest()==a['sha256']
