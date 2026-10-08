@@ -1,0 +1,20 @@
+const fs=require('node:fs'),assert=require('node:assert/strict');
+const {chromium}=require('C:/Users/sam4k/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules/playwright');
+const base=process.env.VAMOS_BASE_URL||'http://127.0.0.1:8768/';const out='.impeccable/review-v20/browser';fs.mkdirSync(out,{recursive:true});
+(async()=>{const b=await chromium.launch();const report=[];try{
+for(const width of [320,390,1440])for(const day of [1,2,7]){
+ const c=await b.newContext({viewport:{width,height:844},serviceWorkers:'block',reducedMotion:'reduce'});await c.addInitScript(()=>localStorage.setItem('vamos-course-v2',JSON.stringify({welcomeSeen:true,motion:false,sounds:false,audioSpeed:.5})));const p=await c.newPage(),errors=[];p.on('pageerror',e=>errors.push(e.message));await p.goto(base+'?view=practice&mode=mission&day='+day);await p.evaluate(()=>document.fonts.ready);
+ for(let step=0;step<(day===7?4:3);step++){
+  const turn=await p.evaluate(()=>{const s=JSON.parse(localStorage.getItem('vamos-course-v2')).missions.sessions.at(-1);const v=VAMOS_DATA.missions.days.find(d=>d.day===s.day).variants.find(v=>v.id===s.variant);return {id:v.id,t:v.turns[s.step],s};});assert(turn.id.endsWith('-v20'));assert.equal(turn.s.step,step);
+  assert(await p.locator('.mission-turn').innerText().then(t=>t.includes(turn.t.prompt)));assert(await p.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1));
+  await p.locator('.topbar [data-lumo="open"]').click();assert.equal(await p.locator('.lumo-task-help>p').first().innerText(),turn.t.prompt+' Написанный ответ сверяется с подготовленными вариантами; звучание голоса ты оцениваешь сам.');await p.locator('[data-lumo="listen"]').click();assert.equal(await p.locator('.lumo-native h3').innerText(),'Реплика собеседника');assert.equal(await p.locator('.lumo-phrase [lang=es]').innerText(),turn.t.partner.es);assert.equal(await p.locator('.lumo-phrase [data-audio]').getAttribute('data-audio'),String(turn.t.partner.audio));assert.equal(await p.locator('.lumo-phrase-controls').count(),0);assert.equal(await p.locator('.lumo-speed select').inputValue(),'0.5');assert(await p.locator('.lumo-native').innerText().then(t=>t.includes('Послушай собеседника и ответь')));
+  if(width===390){await p.screenshot({path:out+'/day-'+day+'-step-'+step+'-help.png',fullPage:true});}
+  await p.keyboard.press('Escape');assert(await p.locator('.topbar [data-lumo="open"]').evaluate(e=>e===document.activeElement));
+  if(step===0&&day===2){await p.locator('#mission-answer').fill('Gracias.');await p.locator('[data-mission-oral="typed"]').check();await p.locator('[data-mission-check]').click();assert.equal(await p.locator('.mission-feedback').getAttribute('data-result'),'unknown');}
+  await p.locator('#mission-answer').fill(turn.t.rule.forms[0]);await p.locator('[data-mission-oral="typed"]').check();await p.locator('[data-mission-check]').click();assert.equal(await p.locator('.mission-feedback').getAttribute('data-result'),'supported');
+  if(step===0){await p.screenshot({path:out+'/day-'+day+'-'+width+'.png',fullPage:true});}await p.locator('[data-mission-next]').click();
+ }
+ const saved=await p.evaluate(()=>JSON.parse(localStorage.getItem('vamos-course-v2')));assert(saved.missions.history.length===1);assert(saved.missions.history[0].variant.endsWith('-v20'));assert.equal(saved.missions.history[0].responses.length,day===7?4:3);assert(saved.missions.history[0].responses.every(r=>r.first.aids.includes('explanation')));assert.deepEqual(errors,[]);report.push({width,day,turns:saved.missions.history[0].responses.length,lumoCurrent:true,initialMismatch:day===2?saved.missions.history[0].responses[0].first.status:null});await c.close();
+}
+fs.writeFileSync(out+'/result.json',JSON.stringify(report,null,2));console.log('PASS v20 current conversation UI: 9 day/width flows, 30 partner turns, real grading, exact Lumo audio labels, .5x, contextual help, focus return, persisted first attempt.');
+}finally{await b.close()}})().catch(e=>{console.error(e);process.exitCode=1});
