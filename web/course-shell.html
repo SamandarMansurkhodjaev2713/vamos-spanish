@@ -3,7 +3,7 @@
 <head>
  <meta charset="utf-8">
  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
- <meta name="theme-color" content="#f6f4ef">
+ <meta name="theme-color" content="#fff7eb">
  <meta name="description" content="Личный разговорный испанский: записи носителя, понятные модели, упражнения, повторение и собственная речь.">
  <title>¡Vamos! · Твой разговор по-испански</title>
  <link rel="manifest" href="manifest.webmanifest">
@@ -37,6 +37,7 @@
  <script src="welcome.js" defer></script>
  <script src="videos.js" defer></script>
  <script src="focus-home.js" defer></script>
+ <script src="day-compass.js" defer></script>
  <script src="course.js" defer></script>
 </head>
 <body>
@@ -44,7 +45,7 @@
  <div class="app" id="app">
   <header class="topbar"><a class="logo" href="./" aria-label="¡Vamos! — начало"><span>¡</span>vamos<span>!</span></a><nav class="desktop-nav" aria-label="Курс"><button type="button" data-nav="home"><i data-lucide="route" aria-hidden="true"></i>Учиться</button><button type="button" data-nav="practice"><i data-lucide="messages-square" aria-hidden="true"></i>Практика</button><button type="button" data-nav="words"><i data-lucide="book-open" aria-hidden="true"></i>Словарь</button><button type="button" data-nav="materials"><i data-lucide="notebook-tabs" aria-hidden="true"></i>Помощь</button></nav><button type="button" class="btn quiet icon" data-nav="profile" aria-label="Профиль и настройки"><i data-lucide="user-round" aria-hidden="true"></i></button><button type="button" class="menu-trigger" data-menu-open aria-label="Открыть меню курса" aria-expanded="false" aria-controls="course-menu"><span class="burger-lines" aria-hidden="true"><i></i><i></i></span><span>Меню</span></button></header>
   <div class="layout">
-   <main class="main" id="main"><noscript><h1>Для практики нужен JavaScript</h1><p>Включи JavaScript и обнови страницу. Учебные данные, записи и задания хранятся локально.</p></noscript></main>
+   <main class="main" id="main" tabindex="-1"><noscript><h1>Для практики нужен JavaScript</h1><p>Включи JavaScript и обнови страницу. Учебные данные, записи и задания хранятся локально.</p></noscript></main>
   </div>
   <nav class="mobile-nav" aria-label="Курс"><button type="button" data-nav="home"><i data-lucide="route" aria-hidden="true"></i>Учиться</button><button type="button" data-nav="practice"><i data-lucide="messages-square" aria-hidden="true"></i>Практика</button><button type="button" data-nav="words"><i data-lucide="book-open" aria-hidden="true"></i>Словарь</button><button type="button" data-nav="materials"><i data-lucide="notebook-tabs" aria-hidden="true"></i>Помощь</button><button type="button" data-nav="profile"><i data-lucide="user-round" aria-hidden="true"></i>Профиль</button></nav>
   <div class="lesson-actions" id="lesson-actions" hidden></div>

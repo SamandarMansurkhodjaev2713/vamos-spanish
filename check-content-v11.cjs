@@ -16,8 +16,8 @@ function witness(day,variant,step,text,expected){
 }
 for(const day of data.missions.days)for(const v of day.variants)for(let i=0;i<v.turns.length;i++){
  if(v.turns[i].rule.kind!=='reason'||!v.turns[i].rule.patterns.length)continue;
- witness(day.day,v.id,i,'Me gusta leer porque es interesante.','supported');
- witness(day.day,v.id,i,'Me gusta viajar porque es divertido.','supported');
+ witness(day.day,v.id,i,'Me gusta leer porque es interesante.',day.day===30?'unknown':'supported');
+ witness(day.day,v.id,i,'Me gusta viajar porque es divertido.',day.day===30?'unknown':'supported');
  witness(day.day,v.id,i,'Me gusta la música porque es divertido.','unknown');
  witness(day.day,v.id,i,'Me gusta agua porque es divertido.','unknown');
  witness(day.day,v.id,i,'Me gusta la música porque es divertida.',day.day===14?'unknown':'supported');

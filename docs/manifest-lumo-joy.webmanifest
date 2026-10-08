@@ -7,8 +7,8 @@
   "start_url": "./?view=home",
   "scope": "./",
   "display": "standalone",
-  "background_color": "#f6f4ef",
-  "theme_color": "#465c4c",
+  "background_color": "#fff7eb",
+  "theme_color": "#185a60",
   "icons": [
     {
       "src": "assets/app-icon-lumo-joy-192.png",

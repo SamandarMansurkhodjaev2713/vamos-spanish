@@ -3916,20 +3916,20 @@
                 "es": "¿Te gusta la música?",
                 "ru": "Тебе нравится музыка?"
               },
-              "prompt": "Ответь про музыку: да, иногда.",
+              "prompt": "Ответь, что тебе нравится музыка.",
               "rule": {
                 "kind": "forms",
                 "forms": [
-                  "Sí, a veces.",
-                  "A veces."
+                  "Sí, me gusta la música.",
+                  "Sí, me gusta."
                 ],
                 "patterns": [],
                 "required": []
               },
-              "explanation": "Выбирай смысл, затем восстанови короткую модель. Можно ответить своими словами: подготовленная проверка знает только перечисленные формы и модели.",
+              "explanation": "Me gusta отвечает на вопрос о предпочтении: мне нравится. A veces означает «иногда» и говорит о частоте действия; здесь ответь именно о том, нравится ли музыка.",
               "examples": [
-                "Sí, a veces.",
-                "A veces."
+                "Sí, me gusta la música.",
+                "Sí, me gusta."
               ]
             }
           ],
@@ -4044,20 +4044,20 @@
                 "es": "¿Te gusta la música?",
                 "ru": "Тебе нравится музыка?"
               },
-              "prompt": "Музыка тебе нравится лишь иногда. Ответь коротко.",
+              "prompt": "Ответь, что тебе нравится музыка.",
               "rule": {
                 "kind": "forms",
                 "forms": [
-                  "Sí, a veces.",
-                  "A veces."
+                  "Sí, me gusta la música.",
+                  "Sí, me gusta."
                 ],
                 "patterns": [],
                 "required": []
               },
-              "explanation": "Выбирай смысл, затем восстанови короткую модель. Можно ответить своими словами: подготовленная проверка знает только перечисленные формы и модели.",
+              "explanation": "Me gusta отвечает на вопрос о предпочтении: мне нравится. A veces означает «иногда» и говорит о частоте действия; здесь ответь именно о том, нравится ли музыка.",
               "examples": [
-                "Sí, a veces.",
-                "A veces."
+                "Sí, me gusta la música.",
+                "Sí, me gusta."
               ]
             },
             {
@@ -4119,20 +4119,20 @@
                 "es": "¿Te gusta la música?",
                 "ru": "Тебе нравится музыка?"
               },
-              "prompt": "Музыка тебе нравится лишь иногда. Ответь коротко.",
+              "prompt": "Ответь, что тебе нравится музыка.",
               "rule": {
                 "kind": "forms",
                 "forms": [
-                  "Sí, a veces.",
-                  "A veces."
+                  "Sí, me gusta la música.",
+                  "Sí, me gusta."
                 ],
                 "patterns": [],
                 "required": []
               },
-              "explanation": "Выбирай смысл, затем восстанови короткую модель. Можно ответить своими словами: подготовленная проверка знает только перечисленные формы и модели.",
+              "explanation": "Me gusta отвечает на вопрос о предпочтении: мне нравится. A veces означает «иногда» и говорит о частоте действия; здесь ответь именно о том, нравится ли музыка.",
               "examples": [
-                "Sí, a veces.",
-                "A veces."
+                "Sí, me gusta la música.",
+                "Sí, me gusta."
               ]
             },
             {
@@ -5468,7 +5468,7 @@
                 "patterns": [],
                 "required": []
               },
-              "explanation": "После no puedo предложи другой день: ¿Quieres un café mañana? / ¿Nos vemos mañana? Затем повторите новый итог.",
+              "explanation": "Предложи встретиться завтра: ¿Nos vemos mañana? или ¿Quieres un café mañana? Здесь меняем время встречи.",
               "examples": [
                 "¿Quieres un café mañana?",
                 "¿Nos vemos mañana?"
@@ -5545,7 +5545,7 @@
                 "patterns": [],
                 "required": []
               },
-              "explanation": "После no puedo предложи другой день: ¿Quieres un café mañana? / ¿Nos vemos mañana? Затем повторите новый итог.",
+              "explanation": "Предложи встретиться завтра: ¿Nos vemos mañana? или ¿Quieres un café mañana? Здесь меняем время встречи.",
               "examples": [
                 "¿Quieres un café mañana?",
                 "¿Nos vemos mañana?"
@@ -5652,7 +5652,7 @@
                       "patterns": [],
                       "required": []
                     },
-                    "explanation": "После no puedo не повторяй то же приглашение. Измени напиток или день: ¿Quieres agua? / ¿Nos vemos mañana?",
+                    "explanation": "Предложи встретиться завтра: ¿Nos vemos mañana? или ¿Quieres un café mañana? Здесь меняем время встречи.",
                     "examples": [
                       "¿Quieres un café mañana?",
                       "¿Nos vemos mañana?"
@@ -5788,7 +5788,7 @@
                       "patterns": [],
                       "required": []
                     },
-                    "explanation": "После no puedo не повторяй то же приглашение. Измени напиток или день: ¿Quieres agua? / ¿Nos vemos mañana?",
+                    "explanation": "Предложи встретиться завтра: ¿Nos vemos mañana? или ¿Quieres un café mañana? Здесь меняем время встречи.",
                     "examples": [
                       "¿Quieres un café mañana?",
                       "¿Nos vemos mañana?"
@@ -5896,7 +5896,7 @@
                 "patterns": [],
                 "required": []
               },
-              "explanation": "После no puedo не повторяй то же приглашение. Измени напиток или день: ¿Quieres agua? / ¿Nos vemos mañana?",
+              "explanation": "Предложи встретиться завтра: ¿Nos vemos mañana? или ¿Quieres un café mañana? Здесь меняем время встречи.",
               "examples": [
                 "¿Quieres un café mañana?",
                 "¿Nos vemos mañana?"
@@ -5997,7 +5997,7 @@
                 "patterns": [],
                 "required": []
               },
-              "explanation": "После no puedo не повторяй то же приглашение. Измени напиток или день: ¿Quieres agua? / ¿Nos vemos mañana?",
+              "explanation": "Предложи встретиться завтра: ¿Nos vemos mañana? или ¿Quieres un café mañana? Здесь меняем время встречи.",
               "examples": [
                 "¿Quieres un café mañana?",
                 "¿Nos vemos mañana?"
@@ -6128,7 +6128,7 @@
                       "patterns": [],
                       "required": []
                     },
-                    "explanation": "После no puedo не повторяй то же приглашение. Измени напиток или день: ¿Quieres agua? / ¿Nos vemos mañana?",
+                    "explanation": "Предложи встретиться завтра: ¿Nos vemos mañana? или ¿Quieres un café mañana? Здесь меняем время встречи.",
                     "examples": [
                       "¿Quieres un café mañana?",
                       "¿Nos vemos mañana?"
@@ -6264,7 +6264,7 @@
                       "patterns": [],
                       "required": []
                     },
-                    "explanation": "После no puedo не повторяй то же приглашение. Измени напиток или день: ¿Quieres agua? / ¿Nos vemos mañana?",
+                    "explanation": "Предложи встретиться завтра: ¿Nos vemos mañana? или ¿Quieres un café mañana? Здесь меняем время встречи.",
                     "examples": [
                       "¿Quieres un café mañana?",
                       "¿Nos vemos mañana?"
@@ -6688,7 +6688,7 @@
                 "patterns": [],
                 "required": []
               },
-              "explanation": "После no puedo не повторяй то же приглашение. Измени напиток или день: ¿Quieres agua? / ¿Nos vemos mañana?",
+              "explanation": "Предложи встретиться завтра: ¿Nos vemos mañana? или ¿Quieres un café mañana? Здесь меняем время встречи.",
               "examples": [
                 "¿Quieres un café mañana?",
                 "¿Nos vemos mañana?"
@@ -6789,7 +6789,7 @@
                 "patterns": [],
                 "required": []
               },
-              "explanation": "После no puedo не повторяй то же приглашение. Измени напиток или день: ¿Quieres agua? / ¿Nos vemos mañana?",
+              "explanation": "Предложи встретиться завтра: ¿Nos vemos mañana? или ¿Quieres un café mañana? Здесь меняем время встречи.",
               "examples": [
                 "¿Quieres un café mañana?",
                 "¿Nos vemos mañana?"
@@ -6920,7 +6920,7 @@
                       "patterns": [],
                       "required": []
                     },
-                    "explanation": "После no puedo не повторяй то же приглашение. Измени напиток или день: ¿Quieres agua? / ¿Nos vemos mañana?",
+                    "explanation": "Предложи встретиться завтра: ¿Nos vemos mañana? или ¿Quieres un café mañana? Здесь меняем время встречи.",
                     "examples": [
                       "¿Quieres un café mañana?",
                       "¿Nos vemos mañana?"
@@ -7056,7 +7056,7 @@
                       "patterns": [],
                       "required": []
                     },
-                    "explanation": "После no puedo не повторяй то же приглашение. Измени напиток или день: ¿Quieres agua? / ¿Nos vemos mañana?",
+                    "explanation": "Предложи встретиться завтра: ¿Nos vemos mañana? или ¿Quieres un café mañana? Здесь меняем время встречи.",
                     "examples": [
                       "¿Quieres un café mañana?",
                       "¿Nos vemos mañana?"
@@ -8745,7 +8745,7 @@
                 "patterns": [],
                 "required": []
               },
-              "explanation": "После no puedo не повторяй то же приглашение. Измени напиток или день: ¿Quieres agua? / ¿Nos vemos mañana?",
+              "explanation": "Предложи встретиться завтра: ¿Nos vemos mañana? или ¿Quieres un café mañana? Здесь меняем время встречи.",
               "examples": [
                 "¿Quieres un café mañana?",
                 "¿Nos vemos mañana?"
@@ -8844,7 +8844,7 @@
                 "patterns": [],
                 "required": []
               },
-              "explanation": "После no puedo не повторяй то же приглашение. Измени напиток или день: ¿Quieres agua? / ¿Nos vemos mañana?",
+              "explanation": "Предложи встретиться завтра: ¿Nos vemos mañana? или ¿Quieres un café mañana? Здесь меняем время встречи.",
               "examples": [
                 "¿Quieres un café mañana?",
                 "¿Nos vemos mañana?"
@@ -8973,7 +8973,7 @@
                       "patterns": [],
                       "required": []
                     },
-                    "explanation": "После no puedo не повторяй то же приглашение. Измени напиток или день: ¿Quieres agua? / ¿Nos vemos mañana?",
+                    "explanation": "Предложи встретиться завтра: ¿Nos vemos mañana? или ¿Quieres un café mañana? Здесь меняем время встречи.",
                     "examples": [
                       "¿Quieres un café mañana?",
                       "¿Nos vemos mañana?"
@@ -9131,7 +9131,7 @@
                       "patterns": [],
                       "required": []
                     },
-                    "explanation": "После no puedo не повторяй то же приглашение. Измени напиток или день: ¿Quieres agua? / ¿Nos vemos mañana?",
+                    "explanation": "Предложи встретиться завтра: ¿Nos vemos mañana? или ¿Quieres un café mañana? Здесь меняем время встречи.",
                     "examples": [
                       "¿Quieres un café mañana?",
                       "¿Nos vemos mañana?"
@@ -9855,15 +9855,14 @@
                 "es": "¿Te gusta la música?",
                 "ru": "Тебе нравится музыка?"
               },
-              "prompt": "Расскажи про интерес с причиной.",
+              "prompt": "Ответь про музыку и добавь причину с porque.",
               "rule": {
                 "kind": "reason",
                 "forms": [
-                  "Me gusta leer porque es interesante.",
-                  "Me gusta viajar porque es divertido."
+                  "Me gusta la música porque es interesante.",
+                  "Me gusta la música porque es divertida."
                 ],
                 "patterns": [
-                  "(?:prefiero|me gusta) (?:leer|viajar) porque (?:es interesante|es divertido)",
                   "(?:prefiero|me gusta) la música porque (?:es interesante|es divertida)"
                 ],
                 "required": [
@@ -9872,8 +9871,8 @@
               },
               "explanation": "Соедини интерес и причину через porque.",
               "examples": [
-                "Me gusta leer porque es interesante.",
-                "Me gusta viajar porque es divertido."
+                "Me gusta la música porque es interesante.",
+                "Me gusta la música porque es divertida."
               ]
             },
             {
@@ -9914,7 +9913,7 @@
                 "patterns": [],
                 "required": []
               },
-              "explanation": "После no puedo не повторяй то же приглашение. Измени напиток или день: ¿Quieres agua? / ¿Nos vemos mañana?",
+              "explanation": "Предложи встретиться завтра: ¿Nos vemos mañana? или ¿Quieres un café mañana? Здесь меняем время встречи.",
               "examples": [
                 "¿Quieres un café mañana?",
                 "¿Nos vemos mañana?"
@@ -9983,15 +9982,14 @@
                 "es": "¿Te gusta la música?",
                 "ru": "Тебе нравится музыка?"
               },
-              "prompt": "Расскажи про интерес с причиной.",
+              "prompt": "Ответь про музыку и добавь причину с porque.",
               "rule": {
                 "kind": "reason",
                 "forms": [
-                  "Me gusta leer porque es interesante.",
-                  "Me gusta viajar porque es divertido."
+                  "Me gusta la música porque es interesante.",
+                  "Me gusta la música porque es divertida."
                 ],
                 "patterns": [
-                  "(?:prefiero|me gusta) (?:leer|viajar) porque (?:es interesante|es divertido)",
                   "(?:prefiero|me gusta) la música porque (?:es interesante|es divertida)"
                 ],
                 "required": [
@@ -10000,8 +9998,8 @@
               },
               "explanation": "Соедини интерес и причину через porque.",
               "examples": [
-                "Me gusta leer porque es interesante.",
-                "Me gusta viajar porque es divertido."
+                "Me gusta la música porque es interesante.",
+                "Me gusta la música porque es divertida."
               ]
             },
             {
@@ -10042,7 +10040,7 @@
                 "patterns": [],
                 "required": []
               },
-              "explanation": "После no puedo не повторяй то же приглашение. Измени напиток или день: ¿Quieres agua? / ¿Nos vemos mañana?",
+              "explanation": "Предложи встретиться завтра: ¿Nos vemos mañana? или ¿Quieres un café mañana? Здесь меняем время встречи.",
               "examples": [
                 "¿Quieres un café mañana?",
                 "¿Nos vemos mañana?"
@@ -10174,7 +10172,7 @@
                       "patterns": [],
                       "required": []
                     },
-                    "explanation": "После no puedo не повторяй то же приглашение. Измени напиток или день: ¿Quieres agua? / ¿Nos vemos mañana?",
+                    "explanation": "Предложи встретиться завтра: ¿Nos vemos mañana? или ¿Quieres un café mañana? Здесь меняем время встречи.",
                     "examples": [
                       "¿Quieres un café mañana?",
                       "¿Nos vemos mañana?"
@@ -10335,7 +10333,7 @@
                       "patterns": [],
                       "required": []
                     },
-                    "explanation": "После no puedo не повторяй то же приглашение. Измени напиток или день: ¿Quieres agua? / ¿Nos vemos mañana?",
+                    "explanation": "Предложи встретиться завтра: ¿Nos vemos mañana? или ¿Quieres un café mañana? Здесь меняем время встречи.",
                     "examples": [
                       "¿Quieres un café mañana?",
                       "¿Nos vemos mañana?"
