@@ -1,4 +1,4 @@
-import json, shutil, urllib.request
+import json, shutil, urllib.request, re, hashlib
 from pathlib import Path
 base=Path(__file__).parent
 web=base/'web'
@@ -26,7 +26,14 @@ data['status']='Личный курс с оригинальными запися
 lucide=web/'assets/lucide.min.js'
 if not lucide.exists():
  with urllib.request.urlopen('https://unpkg.com/lucide@0.468.0/dist/umd/lucide.min.js',timeout=30) as r:lucide.write_bytes(r.read())
-(web/'index.html').write_text((web/'course-shell.html').read_text(encoding='utf8'),encoding='utf8')
 print('Built standalone course v5;',len(data['lessons']),'lessons;',len(data['expanded']['audio']),'human clips;',len(data.get('library',{}).get('items',[])),'library entries.')
 
 (web/'drills.js').write_text('window.VAMOS_DRILLS='+json.dumps(json.loads((base/'course-drills.json').read_text(encoding='utf8')),ensure_ascii=False)+';\n',encoding='utf8')
+
+# Content versions prevent a long-lived browser from mixing releases.
+def version_asset(match):
+ path=web/match.group(2)
+ digest=hashlib.sha256(path.read_bytes()).hexdigest()[:12]
+ return match.group(1)+match.group(2)+'?v='+digest+match.group(3)
+shell=(web/'course-shell.html').read_text(encoding='utf8')
+(web/'index.html').write_text(re.sub(r'((?:src|href)=")([^"?]+\.(?:js|css))(")',version_asset,shell),encoding='utf8')
