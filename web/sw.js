@@ -1,7 +1,9 @@
 /* Scoped caches never touch another GitHub Pages project. Native files stay unmodified. */
 'use strict';
-const BASE=new URL('./',self.location.href),PREFIX='vamos-'+encodeURIComponent(BASE.pathname)+'-',SHELL=PREFIX+'shell-v15-1',MEDIA=PREFIX+'audio';
+const BASE=new URL('./',self.location.href),PREFIX='vamos-'+encodeURIComponent(BASE.pathname)+'-',SHELL=PREFIX+'shell-v16-1',MEDIA=PREFIX+'audio';
 const FILES=['./','index.html','course.css','course-foundation.css','course-v3.css','course-v4.css','course-v5.css','course-data.js','course.js','library.js','coach.js','progress.js','learning.js','speech.js','native.js','drills.js','mastery.js','adaptive.js','navigation.js','navigation.css','course-v7.css','course-v8.css','goals.js','studio.js','missions.js','recordings.js','workbook.js','course-v9.css','course-v10.css','alegreya.css','course-v11.css','experience.js','experience.css','adult.css','manifest.webmanifest','assets/plaza.svg','assets/alegreya-latin.woff2','assets/alegreya-cyrillic.woff2','assets/onest-latin.woff2','assets/onest-cyrillic.woff2','assets/lucide.min.js','assets/lumo-poses.webp','assets/app-icon.svg','assets/app-icon-192.png','assets/app-icon-512.png','assets/audio/ATTRIBUTION.json','assets/audio/README.txt'];
+FILES.push('meaning-choices.js');
+FILES.push('library-practice.js','library-v16.css');
 FILES.push('repair.js','repair.css','bridge-review.js');
 FILES.push('day-compass.js','day-compass.css','cafe.css','assets/lumo-cafe-v15.webp','assets/patio-tile-v15.svg');
 FILES.push('videos.js','focus-home.js','focus-home.css','lesson-focus.css');

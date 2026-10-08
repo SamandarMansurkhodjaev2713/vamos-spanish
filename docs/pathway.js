@@ -60,7 +60,21 @@ window.VamosPathway={create(api){
  const completed=(r,ts,oral)=>!!r&&ts.every(t=>latest(r.answers?.[t.id])?.correct===true)&&(!oral||(r.oral?.attempted===true&&Number.isInteger(r.oral.rating)&&r.oral.rating>=0&&r.oral.rating<=2));
  function summary(){return {completedDays:content.days.filter(d=>completed(state.pathway.days[d.day],tasksFor(d),true)).map(d=>d.day),completedReadings:content.readings.filter(r=>completed(state.pathway.readings[r.id],r.tasks,false)).map(r=>r.id),selectedDay:state.pathway.selectedDay,savedWords:Object.keys(state.pathway.words),dueWords:Object.keys(state.pathway.words).filter(k=>!state.pathway.words[k].due||state.pathway.words[k].due<=Date.now())};}
  function aid(ids){for(const t of tasks())if(!ids||ids.includes(t.id))draft(t).aided=true;}
- function update(){save();render();}
+ function viewSnapshot(source){
+  if(typeof document==='undefined'||typeof window==='undefined'||typeof window.scrollTo!=='function')return null;
+  const el=source||document.activeElement;let selector=null;
+  if(el?.id)selector='#'+CSS.escape(el.id);else if(el?.attributes){const a=[...el.attributes].find(a=>a.name.startsWith('data-pw-'));if(a)selector='['+a.name+'="'+CSS.escape(a.value)+'"]';}
+  return {selector,x:window.scrollX,y:window.scrollY,top:el?.getBoundingClientRect?.().top,details:[...document.querySelectorAll('.pathway-page details')].map((d,i)=>d.open?i:-1).filter(i=>i>=0)};
+ }
+ function update(source,transition=false){
+  const snap=viewSnapshot(source);let scrollRoot,anchoring;if(snap){scrollRoot=document.documentElement;anchoring=scrollRoot.style.overflowAnchor;scrollRoot.style.overflowAnchor='none';requestAnimationFrame(()=>requestAnimationFrame(()=>{scrollRoot.style.overflowAnchor=anchoring;}));}save();render();if(!snap)return;
+  if(transition){const target=document.querySelector('.pathway-page .workbook-task h2')||document.querySelector('.pathway-page .workbook-own h2')||document.querySelector('.pathway-page .story-sheet h2,.pathway-page .feedback');if(target){target.tabIndex=-1;target.focus({preventScroll:true});window.scrollTo({left:snap.x,top:Math.max(0,window.scrollY+target.getBoundingClientRect().top-100),behavior:'instant'});}return;}
+  const details=[...document.querySelectorAll('.pathway-page details')];snap.details.forEach(i=>{if(details[i])details[i].open=true;});
+  const target=snap.selector?document.querySelector(snap.selector):null;
+  target?.focus({preventScroll:true});const anchored=target&&Number.isFinite(snap.top);const shift=anchored?target.getBoundingClientRect().top-snap.top:0;
+  window.scrollTo({left:snap.x,top:Math.max(0,(anchored?window.scrollY:snap.y)+shift),behavior:'instant'});
+ }
+
  function evidence(t,value){const r=row(),dr=draft(t),e={value,correct:isCorrect(t,value),aided:dr.aided||dr.help,time:Date.now()};const old=r.answers[t.id];if(!old)r.answers[t.id]={first:e,retries:[]};else old.retries.push(e),old.retries=old.retries.slice(-8);dr.dirty=false;if(!e.correct)dr.aided=true;return e;}
  function textHTML(r){
   const terms=[...r.glossary].sort((a,b)=>b.es.length-a.es.length);let source=r.text,html='',pos=0;
@@ -88,30 +102,30 @@ window.VamosPathway={create(api){
  }
  function click(b){
   const attrs=['choice','check','next','help','model','translation','text','gloss','following','revisit','save-word','word-help','word-check'];if(!attrs.some(x=>b.hasAttribute('data-pw-'+x)))return false;
-  if(b.hasAttribute('data-pw-save-word')){const key=b.getAttribute('data-pw-save-word');if(words.has(key)){state.pathway.words[key]??={...empty(),rating:null,due:0};state.pathway.selectedWord=key;update();}return true;}
-  if(b.hasAttribute('data-pw-word-help')||b.hasAttribute('data-pw-word-check')){const key=state.pathway.selectedWord,r=state.pathway.words[key];if(!r||!words.has(key))return true;const d=r.drafts.recall??=({value:'',aided:false,help:false,dirty:true});if(b.hasAttribute('data-pw-word-help')){d.help=!d.help;if(d.help)d.aided=true;}else if(d.value.trim()){const e={value:d.value,correct:isCorrect(wordTask(key),d.value),aided:d.aided||d.help,time:Date.now()};if(!r.answers.recall)r.answers.recall={first:e,retries:[]};else r.answers.recall.retries.push(e),r.answers.recall.retries=r.answers.recall.retries.slice(-8);d.dirty=false;if(!e.correct)d.aided=true;r.rating=null;r.due=0;}update();return true;}
+  if(b.hasAttribute('data-pw-save-word')){const key=b.getAttribute('data-pw-save-word');if(words.has(key)){state.pathway.words[key]??={...empty(),rating:null,due:0};state.pathway.selectedWord=key;update(b);}return true;}
+  if(b.hasAttribute('data-pw-word-help')||b.hasAttribute('data-pw-word-check')){const key=state.pathway.selectedWord,r=state.pathway.words[key];if(!r||!words.has(key))return true;const d=r.drafts.recall??=({value:'',aided:false,help:false,dirty:true});if(b.hasAttribute('data-pw-word-help')){d.help=!d.help;if(d.help)d.aided=true;}else if(d.value.trim()){const e={value:d.value,correct:isCorrect(wordTask(key),d.value),aided:d.aided||d.help,time:Date.now()};if(!r.answers.recall)r.answers.recall={first:e,retries:[]};else r.answers.recall.retries.push(e),r.answers.recall.retries=r.answers.recall.retries.slice(-8);d.dirty=false;if(!e.correct)d.aided=true;r.rating=null;r.due=0;}update(b);return true;}
   const r=row(),t=current();
-  if(b.hasAttribute('data-pw-model')){r.showModel=!r.showModel;if(r.showModel)aid(['meaning','produce','reply']);update();return true;}
-  if(b.hasAttribute('data-pw-translation')){r.translation=!r.translation;if(r.translation)aid(mode==='reading'?['meaning','recall']:['reading-meaning','reading-recall']);update();return true;}
-  if(b.hasAttribute('data-pw-text')){r.showText=!r.showText;if(r.showText&&t)draft(t).aided=true;update();return true;}
-  if(b.hasAttribute('data-pw-gloss')){const n=Number(b.getAttribute('data-pw-gloss')),br=mode==='reading'?book():books.get(day().readingId);if(Number.isInteger(n)&&n>=0&&n<br.glossary.length){r.gloss=n;if(t)draft(t).aided=true;update();}return true;}
-  if(b.hasAttribute('data-pw-following')){if(completed(r,tasksFor(day()),true)&&days.has(day().day+1)){state.pathway.selectedDay++;update();}return true;}
-  if(b.hasAttribute('data-pw-revisit')){r.position=0;r.showModel=false;r.translation=false;r.showText=false;for(const dr of Object.values(r.drafts)){dr.value=typeof dr.value==='number'?null:'';dr.help=false;dr.dirty=true;}update();return true;}
+  if(b.hasAttribute('data-pw-model')){r.showModel=!r.showModel;if(r.showModel)aid(['meaning','produce','reply']);update(b);return true;}
+  if(b.hasAttribute('data-pw-translation')){r.translation=!r.translation;if(r.translation)aid(mode==='reading'?['meaning','recall']:['reading-meaning','reading-recall']);update(b);return true;}
+  if(b.hasAttribute('data-pw-text')){r.showText=!r.showText;if(r.showText&&t)draft(t).aided=true;update(b);return true;}
+  if(b.hasAttribute('data-pw-gloss')){const n=Number(b.getAttribute('data-pw-gloss')),br=mode==='reading'?book():books.get(day().readingId);if(Number.isInteger(n)&&n>=0&&n<br.glossary.length){r.gloss=n;if(t)draft(t).aided=true;update(b);}return true;}
+  if(b.hasAttribute('data-pw-following')){if(completed(r,tasksFor(day()),true)&&days.has(day().day+1)){state.pathway.selectedDay++;update(b,true);}return true;}
+  if(b.hasAttribute('data-pw-revisit')){r.position=0;r.showModel=false;r.translation=false;r.showText=false;for(const dr of Object.values(r.drafts)){dr.value=typeof dr.value==='number'?null:'';dr.help=false;dr.dirty=true;}update(b,true);return true;}
   if(!t)return true;const dr=draft(t);
-  if(b.hasAttribute('data-pw-choice')){const n=Number(b.getAttribute('data-pw-choice'));if(t.kind==='choice'&&Number.isInteger(n)&&n>=0&&n<t.options.length){dr.value=n;dr.dirty=true;update();}return true;}
-  if(b.hasAttribute('data-pw-help')){dr.help=!dr.help;if(dr.help)dr.aided=true;update();return true;}
-  if(b.hasAttribute('data-pw-check')){if(t.kind==='choice'?dr.value===null:!String(dr.value).trim()){toast?.('Сначала дай ответ.');return true;}evidence(t,dr.value);update();return true;}
-  if(b.hasAttribute('data-pw-next')){if(!dr.dirty&&latest(r.answers[t.id])?.correct){r.position=Math.min(tasks().length,r.position+1);r.translation=false;r.showText=false;r.showModel=false;r.gloss=null;update();}return true;}
+  if(b.hasAttribute('data-pw-choice')){const n=Number(b.getAttribute('data-pw-choice'));if(t.kind==='choice'&&Number.isInteger(n)&&n>=0&&n<t.options.length){dr.value=n;dr.dirty=true;update(b);}return true;}
+  if(b.hasAttribute('data-pw-help')){dr.help=!dr.help;if(dr.help)dr.aided=true;update(b);return true;}
+  if(b.hasAttribute('data-pw-check')){if(t.kind==='choice'?dr.value===null:!String(dr.value).trim()){toast?.('Сначала дай ответ.');return true;}evidence(t,dr.value);update(b);return true;}
+  if(b.hasAttribute('data-pw-next')){if(!dr.dirty&&latest(r.answers[t.id])?.correct){r.position=Math.min(tasks().length,r.position+1);r.translation=false;r.showText=false;r.showModel=false;r.gloss=null;update(b,true);}return true;}
   return true;
  }
  function change(el){
-  if(el.id==='pathway-word-review'){if(words.has(el.value)&&state.pathway.words[el.value]){state.pathway.selectedWord=el.value;update();}return true;}
-  if(el.id==='pathway-word-rating'){const r=state.pathway.words[state.pathway.selectedWord],n=el.value===''?null:Number(el.value),last=latest(r?.answers.recall);if(r&&last&&!r.drafts.recall?.dirty){r.rating=Number.isInteger(n)&&n>=0&&n<=2?n:null;r.due=r.rating===null?0:Date.now()+((!last.correct||last.aided||n===0)?1:n===1?3:7)*86400000;update();}return true;}
-  if(el.id==='pathway-day'){const n=Number(el.value);if(days.has(n)){state.pathway.selectedDay=n;update();}return true;}
-  if(el.id==='pathway-reading'){if(books.has(el.value)){state.pathway.selectedReading=el.value;update();}return true;}
-  if(el.id==='pathway-level'){if(['Все','A1','A2','B1','B2','C1'].includes(el.value)){state.pathway.level=el.value;const matches=content.readings.filter(b=>el.value==='Все'||b.level===el.value);if(!matches.some(b=>b.id===book().id))state.pathway.selectedReading=matches[0].id;update();}return true;}
-  if(el.hasAttribute('data-pw-oral')){row().oral.attempted=el.checked===true;update();return true;}
-  if(el.id==='pathway-rating'){const n=el.value===''?null:Number(el.value);row().oral.rating=Number.isInteger(n)&&n>=0&&n<=2?n:null;update();return true;}
+  if(el.id==='pathway-word-review'){if(words.has(el.value)&&state.pathway.words[el.value]){state.pathway.selectedWord=el.value;update(el);}return true;}
+  if(el.id==='pathway-word-rating'){const r=state.pathway.words[state.pathway.selectedWord],n=el.value===''?null:Number(el.value),last=latest(r?.answers.recall);if(r&&last&&!r.drafts.recall?.dirty){r.rating=Number.isInteger(n)&&n>=0&&n<=2?n:null;r.due=r.rating===null?0:Date.now()+((!last.correct||last.aided||n===0)?1:n===1?3:7)*86400000;update(el);}return true;}
+  if(el.id==='pathway-day'){const n=Number(el.value);if(days.has(n)){state.pathway.selectedDay=n;update(el,true);}return true;}
+  if(el.id==='pathway-reading'){if(books.has(el.value)){state.pathway.selectedReading=el.value;update(el,true);}return true;}
+  if(el.id==='pathway-level'){if(['Все','A1','A2','B1','B2','C1'].includes(el.value)){state.pathway.level=el.value;const matches=content.readings.filter(b=>el.value==='Все'||b.level===el.value);if(!matches.some(b=>b.id===book().id))state.pathway.selectedReading=matches[0].id;update(el,true);}return true;}
+  if(el.hasAttribute('data-pw-oral')){row().oral.attempted=el.checked===true;update(el);return true;}
+  if(el.id==='pathway-rating'){const n=el.value===''?null:Number(el.value);row().oral.rating=Number.isInteger(n)&&n>=0&&n<=2?n:null;update(el);return true;}
   return false;
  }
  function input(el){if(el.id==='pathway-word-answer'){const r=state.pathway.words[state.pathway.selectedWord];if(r){const d=r.drafts.recall??=({value:'',aided:false,help:false,dirty:true});d.value=el.value.slice(0,1000);d.dirty=true;save();}return true;}if(el.id==='pathway-answer'&&current()?.kind==='text'){const d=draft(current());d.value=el.value.slice(0,1000);d.dirty=true;save();return true;}if(el.id==='pathway-note'){row().oral.note=el.value.slice(0,1000);save();return true;}return false;}

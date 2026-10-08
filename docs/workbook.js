@@ -41,7 +41,18 @@ window.VamosWorkbook={create(api){
  function draft(t){return row().drafts[taskKey(t)]??=({choice:null,tokens:[],help:false});}
  function own(){return row().own[row().section]??=({text:'',said:false,help:false});}
  function focus(selector='h1'){const el=document.querySelector('.workbook-page '+selector);if(el){if(!el.matches('button,input,select,textarea'))el.tabIndex=-1;el.focus({preventScroll:true});}}
- function redraw(selector){render();if(selector)focus(selector);}
+ function redraw(selector,source,transition=false){
+  if(typeof document==='undefined'||typeof window==='undefined'||typeof window.scrollTo!=='function'){render();return;}
+  const el=source||document.activeElement,x=window.scrollX,y=window.scrollY,top=el?.getBoundingClientRect?.().top;
+  let anchor=selector;if(!anchor&&el?.id)anchor='#'+CSS.escape(el.id);if(!anchor&&el?.attributes){const a=[...el.attributes].find(a=>a.name.startsWith('data-wb-')||a.name==='data-workbook-translation');if(a)anchor='['+a.name+'="'+CSS.escape(a.value)+'"]';}
+  const openDetails=[...document.querySelectorAll('.workbook-page details')].map((d,i)=>d.open?i:-1).filter(i=>i>=0);
+  const scrollRoot=document.documentElement,anchoring=scrollRoot.style.overflowAnchor;scrollRoot.style.overflowAnchor='none';requestAnimationFrame(()=>requestAnimationFrame(()=>{scrollRoot.style.overflowAnchor=anchoring;}));
+  render();
+  if(transition){const target=document.querySelector('.workbook-page '+(selector||'#workbook-task-title'))||document.querySelector('.workbook-page .workbook-own h2');if(target){target.tabIndex=-1;target.focus({preventScroll:true});window.scrollTo({left:x,top:Math.max(0,window.scrollY+target.getBoundingClientRect().top-100),behavior:'instant'});}return;}
+  const details=[...document.querySelectorAll('.workbook-page details')];openDetails.forEach(i=>{if(details[i])details[i].open=true;});
+  const target=(anchor?document.querySelector('.workbook-page '+anchor):null)||(source?.hasAttribute?.('data-wb-check')?document.querySelector('.workbook-page [data-wb-next]'):null);target?.focus({preventScroll:true});
+  const anchored=target&&Number.isFinite(top);const shift=anchored?target.getBoundingClientRect().top-top:0;window.scrollTo({left:x,top:Math.max(0,(anchored?window.scrollY:y)+shift),behavior:'instant'});
+ }
  function enter(day=state.day){if(byDay.has(day))state.day=day;reviewKey=null;reviewEvidence=null;row();save();}
  function due(){return Object.entries(state.workbook.days).flatMap(([,r])=>Object.entries(r.answers).filter(([,a])=>a.due>0&&a.due<=Date.now()).map(([key,a])=>({key,due:a.due}))).sort((a,b)=>a.due-b.due);}
  function merge(raw){
@@ -81,17 +92,17 @@ window.VamosWorkbook={create(api){
   if(b.hasAttribute('data-workbook-open')){api.open(Number(b.dataset.workbookOpen));return true;}
   if(!api.active())return false;
   const r=row(),t=task();
-  if(b.hasAttribute('data-wb-section')){if(!['story','workshop'].includes(b.dataset.wbSection))return true;r.section=b.dataset.wbSection;reviewKey=null;save();redraw('h2');return true;}
-  if(b.hasAttribute('data-workbook-translation')){r.translation=!r.translation;if(r.translation)for(const q of items().story.questions)draft(q).aided=true;save();redraw('[data-workbook-translation]');return true;}
-  if(b.hasAttribute('data-wb-save')){r.saved=!r.saved;save();redraw('[data-wb-save]');toast(r.saved?'Связка сохранена с контекстом.':'Связка убрана из списка.');return true;}
-  if(b.hasAttribute('data-wb-review')){const first=due()[0];if(first){const target=catalog.get(first.key);state.day=target.day;api.onDayChange?.(state.day);row().section=target.section;reviewKey=first.key;reviewEvidence=null;row().drafts[first.key]={choice:null,tokens:[],help:false};save();redraw('#workbook-task-title');}return true;}
-  if(b.hasAttribute('data-wb-own-help')){own().help=!own().help;save();redraw('[data-wb-own-help]');return true;}
+  if(b.hasAttribute('data-wb-section')){if(!['story','workshop'].includes(b.dataset.wbSection))return true;r.section=b.dataset.wbSection;reviewKey=null;save();redraw('#workbook-task-title',b,true);return true;}
+  if(b.hasAttribute('data-workbook-translation')){r.translation=!r.translation;if(r.translation)for(const q of items().story.questions)draft(q).aided=true;save();redraw('[data-workbook-translation]',b);return true;}
+  if(b.hasAttribute('data-wb-save')){r.saved=!r.saved;save();redraw('[data-wb-save]',b);toast(r.saved?'Связка сохранена с контекстом.':'Связка убрана из списка.');return true;}
+  if(b.hasAttribute('data-wb-review')){const first=due()[0];if(first){const target=catalog.get(first.key);state.day=target.day;api.onDayChange?.(state.day);row().section=target.section;reviewKey=first.key;reviewEvidence=null;row().drafts[first.key]={choice:null,tokens:[],help:false};save();redraw('#workbook-task-title',b,true);}return true;}
+  if(b.hasAttribute('data-wb-own-help')){own().help=!own().help;save();redraw('[data-wb-own-help]',b);return true;}
   if(!t)return false;
   const d=draft(t),key=taskKey(t);
-  if(b.hasAttribute('data-wb-choice')){const n=Number(b.dataset.wbChoice);if(Number.isInteger(n)&&n>=0&&n<t.options?.length){d.choice=n;d.dirty=true;save();redraw(`[data-wb-choice="${n}"]`);}return true;}
-  if(b.hasAttribute('data-wb-token')){const n=Number(b.dataset.wbToken);if(Number.isInteger(n)&&n>=0&&n<t.tokens?.length&&!d.tokens.includes(n)){d.tokens.push(n);d.dirty=true;save();redraw(`[data-wb-remove="${d.tokens.length-1}"]`);}return true;}
-  if(b.hasAttribute('data-wb-remove')){const n=Number(b.dataset.wbRemove);if(Number.isInteger(n)&&n>=0&&n<d.tokens.length){const token=d.tokens.splice(n,1)[0];d.dirty=true;save();redraw(`[data-wb-token="${token}"]`);}return true;}
-  if(b.hasAttribute('data-wb-help')){d.help=!d.help;if(d.help)d.aided=true;save();redraw('[data-wb-help]');return true;}
+  if(b.hasAttribute('data-wb-choice')){const n=Number(b.dataset.wbChoice);if(Number.isInteger(n)&&n>=0&&n<t.options?.length){d.choice=n;d.dirty=true;save();redraw(`[data-wb-choice="${n}"]`,b);}return true;}
+  if(b.hasAttribute('data-wb-token')){const n=Number(b.dataset.wbToken);if(Number.isInteger(n)&&n>=0&&n<t.tokens?.length&&!d.tokens.includes(n)){d.tokens.push(n);d.dirty=true;save();redraw(`[data-wb-remove="${d.tokens.length-1}"]`,b);}return true;}
+  if(b.hasAttribute('data-wb-remove')){const n=Number(b.dataset.wbRemove);if(Number.isInteger(n)&&n>=0&&n<d.tokens.length){const token=d.tokens.splice(n,1)[0];d.dirty=true;save();redraw(`[data-wb-token="${token}"]`,b);}return true;}
+  if(b.hasAttribute('data-wb-help')){d.help=!d.help;if(d.help)d.aided=true;save();redraw('[data-wb-help]',b);return true;}
   if(b.hasAttribute('data-wb-check')){
    if(t.kind==='build'?d.tokens.length!==t.tokens.length:d.choice===null)return true;
    const correct=t.kind==='build'?t.accepted.some(x=>normalize(x)===normalize(d.tokens.map(i=>t.tokens[i]).join(' '))):d.choice===t.answer;
@@ -100,9 +111,9 @@ window.VamosWorkbook={create(api){
    else{old.retries.push(evidence);old.retries=old.retries.slice(-5);if(reviewKey)old.due=correct&&!evidence.aided?0:Date.now()+600000;else if(!correct||evidence.aided)old.due=Date.now()+600000;}
    if(reviewKey)reviewEvidence=evidence;d.dirty=false;
    if(!correct)d.aided=true;
-   save();sound(correct?'correct':'wrong');redraw('.feedback');return true;
+   save();sound(correct?'correct':'wrong');redraw('[data-wb-check]',b);return true;
   }
-  if(b.hasAttribute('data-wb-next')){if(d.dirty||!(reviewKey?reviewEvidence:latest(r.answers[key]))?.correct)return true;if(reviewKey){reviewKey=null;reviewEvidence=null;}else r.positions[r.section]=Math.min(tasks().length,r.positions[r.section]+1);save();redraw('#workbook-task-title');if(!document.querySelector('#workbook-task-title'))focus('.workbook-own h2');return true;}
+  if(b.hasAttribute('data-wb-next')){if(d.dirty||!(reviewKey?reviewEvidence:latest(r.answers[key]))?.correct)return true;if(reviewKey){reviewKey=null;reviewEvidence=null;}else r.positions[r.section]=Math.min(tasks().length,r.positions[r.section]+1);save();redraw('#workbook-task-title',b,true);return true;}
   return false;
  }
  function change(el){if(el.id==='workbook-day'){const d=Number(el.value);if(byDay.has(d))api.open(d);return true;}if(el.hasAttribute('data-wb-said')&&api.active()){own().said=el.checked;save();return true;}return false;}
