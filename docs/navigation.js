@@ -2,7 +2,7 @@
 window.VamosNavigation={create(api){
  'use strict';
  const {esc,icon}=api;
- const sections=[['home','Учиться','Следующий шаг и маршрут курса','route'],['practice','Практика','Вспомнить, услышать и сказать','messages-square'],['words','Словарь','Слова, фразы и маленькие истории','book-open'],['materials','Помощь','Объяснения, истории, видео и записи','notebook-tabs'],['profile','Профиль','Достижения, настройки и сохранение прогресса','user-round']];
+ const sections=[['home','Учиться','Следующий шаг и маршрут курса','route'],['practice','Практика','Вспомнить, услышать и сказать','messages-square'],['words','Словарь','Слова, фразы и маленькие истории','book-open'],['materials','Материалы','Объяснения, истории, видео и записи','notebook-tabs'],['profile','Профиль','Достижения, настройки и сохранение прогресса','user-round']];
  const labels={pathway:'Продолжение · дни 31–90',reading:'Чтение по уровням',workbook:'Истории и мастерская',daily:'Занятие на сегодня',mission:'Разговорная миссия',personal:'Мой испанский',recordings:'Мои записи',mastery:'Контроль памяти',drill:'Тренировка фраз',pronunciation:'Сказать и сравнить',review:'Повторение',scene:'Разговор на двоих',sound:'Слух и речь',dialogue:'Своя реплика',extra:'Квизы',checkpoint:'Разговорная проверка'};
  const selected=()=>['lesson','plan'].includes(api.view())?'home':api.view();
  let dialog=null,continuation=null;
@@ -50,7 +50,7 @@ window.VamosNavigation={create(api){
    context.textContent=text;context.title=text;context.setAttribute('aria-label',text);
   }
   const main=document.getElementById('main');
-  if(view==='practice'&&kind!=='menu'&&main){
+  if(view==='practice'&&kind!=='menu'&&main&&!main.querySelector('[data-practice="menu"],[data-practice-open="menu"]')){
    let trail=main.querySelector('.section-trail');
    if(!trail){trail=document.createElement('div');trail.className='section-trail';main.prepend(trail)}
    trail.innerHTML=`<button type="button" class="btn quiet" data-nav="practice">${icon('arrow-left')}Все тренировки</button>`;
