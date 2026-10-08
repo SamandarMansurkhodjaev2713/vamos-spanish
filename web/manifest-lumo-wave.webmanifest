@@ -7,7 +7,7 @@
   "start_url": "./?view=home",
   "scope": "./",
   "display": "standalone",
-  "background_color": "#fff7eb",
+  "background_color": "#f8f2ec",
   "theme_color": "#185a60",
   "icons": [
     {
