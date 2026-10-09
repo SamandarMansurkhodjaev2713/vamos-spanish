@@ -48,6 +48,31 @@ test('Day26 presents all four exact listening clips before hidden transcripts, w
  const api=env(),row=plan.lessons[25],models=row.ownListening.models,html=api.phaseHTML(26,'own'),initial=html.split('<details class="daily-plan-listening-check">')[0];
  assert.deepEqual(models,expanded.lessons[25].examples);assert.equal(models.length,4);assert.equal((initial.match(/data-audio=/g)||[]).length,4);models.forEach((m,i)=>{assert.equal(m.es,expanded.audio[m.audio].text);assert.ok(initial.includes('Слушать реплику '+(i+1)));assert.ok(!initial.includes(esc(m.es)));assert.ok(!initial.includes(esc(m.ru)))});assert.match(initial,/Скорость четырёх реплик/);assert.match(initial,/value="0.5"/);assert.match(html,/После попытки: сверить услышанное/);assert.match(html,/точность устной речи здесь не оцениваются автоматически/);assert.equal(row.ownListening.verification,'self');assert.equal(row.ownListening.criteria.length,3);assert.equal(api.context(26).plannedListening,10);assert.equal(api.context(26).plannedOral,14);assert.doesNotMatch(api.phaseHTML(25,'own'),/daily-plan-listening-check/);
 });
+test('Day30 mission variation and delayed practice each use one bounded exchange; only own stage has the three final conversations',()=>{
+ const row=plan.lessons[29],t=row.tomorrow,api=env(),html=api.tomorrowHTML(30);
+ assert.equal(t.minutes,3);assert.equal(t.modelEs,'¿Qué vas a hacer mañana?');
+ assert.match(t.transferPrompt,/только один трудный обмен/);assert.match(t.transferPrompt,/изменив один вопрос/);
+ assert.match(t.transferPrompt,/сверяйся после попытки/);assert.match(t.transferPrompt,/Три разговора заново проходить не нужно/);
+ assert.doesNotMatch(t.transferPrompt,/По две минуты|во втором круге/);
+ assert.ok(html.includes(esc(t.transferPrompt)));assert.match(row.phases.find(p=>p.id==='own').instructions[0].instruction,/три разговора по две минуты/);
+ assert.match(row.phases.find(p=>p.id==='own').instructions[0].instruction,/только один трудный обмен/);
+ const baseline=JSON.parse(require('node:child_process').execFileSync('git',['show','d635122:course-daily-plan.json'],{encoding:'utf8'}));
+ const missionChange=row.phases.find(p=>p.id==='mission').instructions.find(i=>i.id==='change');
+ assert.match(missionChange.instruction,/только один трудный обмен/);assert.match(missionChange.instruction,/Измени один вопрос/);assert.match(missionChange.instruction,/ответь вслух один раз/);
+ assert.match(missionChange.instruction,/Повторять весь разговор или три ситуации не нужно/);assert.doesNotMatch(missionChange.instruction,/По две минуты|во втором круге/);assert.equal(missionChange.oralAttempts,1);
+ assert.ok(api.phaseHTML(30,'mission').includes(esc(missionChange.instruction)));
+ baseline.lessons[29].tomorrow.transferPrompt=t.transferPrompt;
+ baseline.lessons[29].phases.find(p=>p.id==='mission').instructions.find(i=>i.id==='change').instruction=missionChange.instruction;
+ assert.deepEqual(plan,baseline,'Only two authorized day30 instruction strings change; models, metadata and progress contract stay unchanged');
+});
+test('Day30 extra dialogue own task is explicitly a short rehearsal and does not replace the final three scenes',()=>{
+ const bank=read('exercise-bank.json'),row=bank.find(r=>r.day===30);
+ assert.match(row.own,/^Дополнительная короткая репетиция, не замена итоговым трём сценам:/);
+ assert.match(row.own,/около трёх минут/);assert.match(row.own,/познакомься, обсуди интерес, задай вопросы и назови план/);
+ assert.match(row.own,/Затем другая сцена — договорённость о встрече/);
+ const baseline=JSON.parse(require('node:child_process').execFileSync('git',['show','d635122:exercise-bank.json'],{encoding:'utf8'}));
+ baseline.find(r=>r.day===30).own=row.own;assert.deepEqual(bank,baseline,'Only day30 optional own text changes; quiz answers and Spanish models stay unchanged');
+});
 test('Invalid routes and cycle indexes fail closed; dynamic educational text is escaped',()=>{
  const api=env();for(const d of [0,31,'1',null,NaN,Infinity]){assert.equal(api.context(d),null);assert.equal(api.html(d),'');assert.equal(api.estimate(d),0)}assert.equal(api.phaseHTML(1,'fake'),'');assert.equal(api.cycleHTML(1,3,0),'');assert.equal(api.cycleHTML(1,0,3),'');assert.equal(api.context(1,null).minutes,30);const dirty=JSON.parse(JSON.stringify(plan));dirty.lessons[0].goal='<script>boom()</script>';dirty.lessons[0].models[0].es='<img src=x onerror=boom()>';assert.doesNotMatch(env({recovery:false},dirty).html(1),/<script>|<img/);assert.match(env({recovery:false},dirty).html(1),/&lt;script&gt;/);
 });

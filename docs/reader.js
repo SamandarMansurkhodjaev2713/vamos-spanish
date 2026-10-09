@@ -1278,6 +1278,16 @@ window.VamosReader={create(api){
   "íbamos": "мы собирались; íbamos a — план в прошлом"
 };
  const contextMeanings={
+  "reading:a1-shop:1:21": "в le queda pequeña: «ей мала»",
+  "reading:b1-move:1:18": "более; más pequeño — «поменьше»",
+  "reading:a2-routine:3:31": "утро; por la mañana — «утром»",
+  "reading:a2-weekend:1:7": "утро; por la mañana — «утром»",
+  "text:9:0:17": "завтра",
+  "reading:b1-move:0:17": "работа (существительное); cambiar de trabajo — «сменить работу»",
+  "text:8:2:7": "я работаю (форма trabajar)",
+  "reading:a2-return:1:14": "в: направление, здесь — в магазин",
+  "reading:b1-move:1:8": "в: направление, здесь — в квартиру",
+  "story:25:2:15": "часть por favor: «пожалуйста»",
   "reading:a1-home:3:10": "a перед человеком, которому звонят; отдельно не переводится",
   "reading:a1-trip:1:21": "в ocho y diez: «восемь десять»",
   "reading:a1-trip:3:27": "в así que: «поэтому»",

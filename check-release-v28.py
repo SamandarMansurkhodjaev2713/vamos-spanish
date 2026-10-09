@@ -1,6 +1,6 @@
 """Verify finite content migration, original media, asset versions and published bytes."""
 from pathlib import Path
-import ast, json, hashlib, re, subprocess, sys, urllib.request
+import ast, json, hashlib, re, subprocess, sys, urllib.request, urllib.error, time
 from concurrent.futures import ThreadPoolExecutor
 def verify_style_imports(css_bytes,read_child,known_files):
  imports=re.findall(r'@import\s+url\(\s*([\'\"])([^\'\"]+)\1\s*\)',css_bytes.decode('utf8'))
@@ -28,7 +28,11 @@ data=payload((r/'web/course-data.js').read_text(encoding='utf8'))
 assert data['version']=='6.15-guided-daily-practice'
 previous=payload(subprocess.check_output(['git','show','b0d0421:web/course-data.js'],cwd=r).decode('utf8'))
 for key,value in previous.items():
- if key not in ['library','version','guidance','goals','missions']:assert data[key]==value,'Unexpected core source change: '+key
+ if key=='lessons':
+  expected=json.loads(json.dumps(value))
+  expected[29]['practice']['own']='Дополнительная короткая репетиция, не замена итоговым трём сценам: новая беседа около трёх минут — познакомься, обсуди интерес, задай вопросы и назови план. Затем другая сцена — договорённость о встрече.'
+  assert data[key]==expected,'Only the witnessed day30 optional rehearsal wording may change'
+ elif key not in ['library','version','guidance','goals','missions']:assert data[key]==value,'Unexpected core source change: '+key
 for key,name in [('library','course-library.json'),('guidance','course-guidance.json'),('wordAudio','word-audio.json'),('goals','course-goals.json'),('missions','mission-data.json')]:assert data[key]==json.loads((r/name).read_text(encoding='utf8'))
 assert len(data['lessons'])==30 and len(data['library']['items'])==480
 for old,current in zip(previous['library']['items'],data['library']['items'][:316]):
@@ -72,10 +76,18 @@ if '--remote' in sys.argv:
   expected[url]=expected[name];names.append(url)
  def verify(name):
   request=urllib.request.Request(base+name,headers={'Cache-Control':'no-cache'})
-  with urllib.request.urlopen(request,timeout=35) as response:content=response.read()
+  for attempt in range(1,4):
+   try:
+    with urllib.request.urlopen(request,timeout=20) as response:content=response.read()
+    break
+   except urllib.error.HTTPError as error:
+    if error.code not in {429,500,502,503,504} or attempt==3:raise RuntimeError(f'{name}: HTTP {error.code} after {attempt} attempt(s)') from error
+   except (urllib.error.URLError,TimeoutError) as error:
+    if attempt==3:raise RuntimeError(f'{name}: transport failure after {attempt} attempts') from error
+   time.sleep(attempt)
   assert content==expected[name],name
-  return {'file':name,'sha256':hashlib.sha256(content).hexdigest()}
- with ThreadPoolExecutor(max_workers=6) as pool:verified=list(pool.map(verify,names))
+  return {'file':name,'sha256':hashlib.sha256(content).hexdigest(),'attempts':attempt}
+ with ThreadPoolExecutor(max_workers=4) as pool:verified=list(pool.map(verify,names))
  report.update({'commit':subprocess.check_output(['git','rev-parse','HEAD'],cwd=r).decode().strip(),'verifiedFiles':verified})
  (out/'published-bytes.json').write_text(json.dumps(report,indent=2),encoding='utf8')
  print(f'PASS published v28: {len(verified)} files equal committed Git bytes.')

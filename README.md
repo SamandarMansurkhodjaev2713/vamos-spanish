@@ -142,6 +142,7 @@ node check-daily-plan-v28.cjs
 node check-mission-path-v30.cjs
 node check-library-practice-v30.cjs
 node check-reader-v28.cjs
+node check-reader-context-v30.cjs
 node check-speech-v30.cjs
 node check-recording-v30.cjs
 node check-recordings-model-v30.cjs
@@ -165,6 +166,7 @@ node check-missions-v29.cjs
 node check-weak-focus-v30.cjs
 node check-profile-v28.cjs
 node check-backup-v29.cjs
+node check-progress-focus-v30.cjs
 node check-cross-tab-v29.cjs
 node check-reload-v30.cjs
 node check-motion-v30.cjs
