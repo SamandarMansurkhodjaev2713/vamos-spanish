@@ -5,11 +5,14 @@ window.VamosLibraryPractice={create(api){
  const normalize=v=>String(v??'').normalize('NFC').toLocaleLowerCase('es').replace(/\p{P}/gu,'').replace(/[\p{Z}\s]+/gu,' ').trim();
  const correct=(id,value)=>!!normalize(value)&&(items.get(id)?.accepted||[items.get(id)?.es]).some(x=>normalize(x)===normalize(value));
  const wordAudio=x=>x?.type==='word'?data.wordAudio?.words?.[x.es.normalize('NFC').toLocaleLowerCase('es').trim()]:null;
- const empty=()=>({active:false,label:'',ids:[],queue:[],records:[],draft:{value:'',help:false,aided:false,checked:false},serial:0});
+ let sessionSerial=0;
+ const validSessionId=v=>typeof v==='string'&&/^[A-Za-z0-9][A-Za-z0-9_-]{7,119}$/.test(v);
+ const newSessionId=()=>{const uuid=globalThis.crypto?.randomUUID?.();return 'lp-'+(uuid||Date.now().toString(36)+'-'+(++sessionSerial).toString(36)+'-'+Math.random().toString(36).slice(2)+'-'+Math.random().toString(36).slice(2))};
+ const empty=()=>({sessionId:null,active:false,label:'',ids:[],queue:[],records:[],draft:{value:'',help:false,aided:false,checked:false},serial:0});
  function sanitize(raw){
   const out=empty();if(!raw||typeof raw!=='object')return out;
   out.ids=[...new Set((Array.isArray(raw.ids)?raw.ids:[]).filter(id=>items.has(id)))].slice(0,8);if(!out.ids.length)return out;
-  out.label=String(raw.label||'Из словаря').slice(0,120);
+  out.sessionId=validSessionId(raw.sessionId)?raw.sessionId:null;out.label=String(raw.label||'Из словаря').slice(0,120);
   out.records=(Array.isArray(raw.records)?raw.records:[]).filter(r=>r&&out.ids.includes(r.id)&&Number.isInteger(r.seq)&&r.seq>=0&&r.seq<500&&Number.isFinite(r.time)&&r.time>=0&&r.time<=Date.now()).slice(0,18).map(r=>({id:r.id,seq:r.seq,value:String(r.value??'').slice(0,1000),aided:!!r.aided,time:r.time,correct:correct(r.id,r.value)})).filter((r,i,all)=>all.findIndex(x=>x.seq===r.seq)===i);
   const sequences=new Set();out.queue=(Array.isArray(raw.queue)?raw.queue:[]).filter(q=>q&&out.ids.includes(q.id)&&Number.isInteger(q.seq)&&q.seq>=0&&q.seq<500&&!sequences.has(q.seq)&&(sequences.add(q.seq),true)).slice(0,Math.max(0,19-out.records.length)).map(q=>({id:q.id,seq:q.seq}));
   out.queue=out.queue.filter(q=>!out.records.some(r=>r.seq===q.seq&&r.id!==q.id));
@@ -20,15 +23,15 @@ window.VamosLibraryPractice={create(api){
   out.serial=Math.max(0,...out.records.map(r=>r.seq+1),...out.queue.map(q=>q.seq+1));out.active=!!raw.active;return out;
  }
  function merge(a,b){const left=sanitize(a),right=sanitize(b);if(!left.ids.length)return right;if(!right.ids.length)return left;
-  // Keep an existing session and its first evidence; imports can contribute matching missing attempts only.
-  const same=left.ids.join('|')===right.ids.join('|');if(!same)return left;
+  // A set of words is not a session identity. Legacy backups cannot prove they are the same approach.
+  const same=left.sessionId&&left.sessionId===right.sessionId&&left.ids.join('|')===right.ids.join('|');if(!same)return left;
   const existing=new Set(left.records.map(r=>r.seq));left.records.push(...right.records.filter(r=>!existing.has(r.seq)));left.records=left.records.slice(0,18);return sanitize(left);
  }
  state.libraryPractice=sanitize(state.libraryPractice);
  const session=()=>state.libraryPractice,current=()=>items.get(session().queue[0]?.id);
  const persist=()=>save?.();
  function refresh(selector){const y=typeof window!=='undefined'?window.scrollY:0;api.render?.();if(typeof document!=='undefined'){document.querySelector(selector||'#lp-answer')?.focus({preventScroll:true});window.scrollTo({top:y,behavior:'instant'});}}
- function start(chosen,label='Из словаря'){const ids=[...new Set((chosen||[]).map(x=>typeof x==='string'?x:x.id).filter(id=>items.has(id)))].slice(0,8);if(!ids.length){toast?.('Выбери слова или фразы: тексты читаются отдельно.');return false;}state.libraryPractice={...empty(),active:true,label:String(label).slice(0,120),ids,queue:ids.map((id,seq)=>({id,seq})),serial:ids.length};persist();return true;}
+ function start(chosen,label='Из словаря'){const ids=[...new Set((chosen||[]).map(x=>typeof x==='string'?x:x.id).filter(id=>items.has(id)))].slice(0,8);if(!ids.length){toast?.('Выбери слова или фразы: тексты читаются отдельно.');return false;}state.libraryPractice={...empty(),sessionId:newSessionId(),active:true,label:String(label).slice(0,120),ids,queue:ids.map((id,seq)=>({id,seq})),serial:ids.length};persist();return true;}
  function stop(){session().active=false;persist();}
  function markHelp(){if(current()&&!session().draft.checked){session().draft.aided=true;persist();}return !!current();}
  function summary(){const s=session(),first=s.ids.map(id=>s.records.find(r=>r.id===id)).filter(Boolean);return {seen:first.length,independent:first.filter(r=>r.correct&&!r.aided).length,aided:first.filter(r=>r.aided).length,errors:first.filter(r=>!r.correct).length,corrected:s.ids.filter(id=>{const a=s.records.filter(r=>r.id===id);return a.length>1&&!a[0].correct&&a.at(-1).correct;}).length,attempts:s.records.length};}

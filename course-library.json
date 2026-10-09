@@ -4253,7 +4253,7 @@
       "accepted": [
         "por la mañana"
       ],
-      "usage": "Регулярное время суток. Mañana без por la означает завтра.",
+      "usage": "Por la mañana — утром. Самостоятельное mañana часто значит «завтра»; esta mañana — «сегодня утром». Значение зависит от сочетания и контекста.",
       "context": "Estudio por la mañana.",
       "contextRu": "Я занимаюсь утром.",
       "audio": null,
@@ -8227,8 +8227,8 @@
       "title": "cómo",
       "reviewKey": "v27:recorded-como-a429cf",
       "audio": null,
-      "context": "¿Cómo se dice pan en español?",
-      "contextRu": "Как сказать «хлеб» по-испански?",
+      "context": "¿Cómo se dice esto en español?",
+      "contextRu": "Как это сказать по-испански?",
       "usage": "В вопросе cómo с ударением. Como без ударения имеет другие значения, например «я ем».",
       "accepted": [
         "cómo"

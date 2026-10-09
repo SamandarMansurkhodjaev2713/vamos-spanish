@@ -19,6 +19,9 @@
  <script src="library.js" defer></script>
  <script src="reader.js" defer></script>
  <script src="daily-word.js" defer></script>
+ <script src="daily-plan.js" defer></script>
+ <script src="weak-focus.js" defer></script>
+ <script src="product-motion.js" defer></script>
  <script src="drills.js" defer></script>
  <script src="meaning-choices.js" defer></script>
  <script src="learning.js" defer></script>
@@ -42,18 +45,21 @@
  <script src="videos.js" defer></script>
  <script src="focus-home.js" defer></script>
  <script src="day-compass.js" defer></script>
+ <script src="cross-tab.js" defer></script>
  <script src="course.js" defer></script>
 </head>
 <body>
  <a class="skip-link" href="#main">К занятию</a>
  <div class="app" id="app">
   <header class="topbar"><a class="logo brand-logo" href="./" aria-label="¡Vamos! — начало"><img src="assets/brand-lockup-v27.svg" width="264" height="64" alt="" fetchpriority="high" decoding="async"></a><button type="button" class="menu-trigger" data-menu-open aria-label="Открыть меню курса" aria-expanded="false" aria-controls="course-menu"><span class="burger-lines" aria-hidden="true"><i></i><i></i></span><span>Меню</span></button></header>
+ <aside id="storage-notice" class="storage-notice" aria-label="Сохранение прогресса" hidden><div><strong data-storage-title role="status"></strong></div><div class="storage-notice-actions"><button type="button" class="btn" data-storage-reload>Обновить</button><button type="button" class="btn" data-storage-export hidden>Сохранить прогресс</button><button type="button" class="btn quiet" data-storage-dismiss aria-label="Скрыть сообщение о сохранении">Закрыть</button></div><details class="storage-notice-help"><summary>Что произошло и как продолжить</summary><p data-storage-message></p><details data-storage-recovery hidden><summary>Скачать сохранённые версии</summary><p class="small">В копии входят заметки и самооценки. Голосовые записи хранятся отдельно. Если нужно, импортируй выбранную копию через профиль.</p><div class="storage-notice-actions"><button type="button" class="btn" data-storage-copy="ours">Из этой вкладки</button><button type="button" class="btn" data-storage-copy="theirs">Из другой вкладки</button></div></details></details></aside>
   <div class="layout">
    <main class="main" id="main" tabindex="-1"><noscript><h1>Для практики нужен JavaScript</h1><p>Включи JavaScript и обнови страницу. Учебные данные, записи и задания хранятся локально.</p></noscript></main>
   </div>
-  <nav class="mobile-nav" aria-label="Курс"><button type="button" data-nav="home" aria-label="Уроки"><i data-lucide="route" aria-hidden="true"></i><span>Уроки</span></button><button type="button" data-nav="practice" aria-label="Разговор"><i data-lucide="messages-square" aria-hidden="true"></i><span>Разговор</span></button><button type="button" data-nav="words" aria-label="Словарь"><i data-lucide="book-open" aria-hidden="true"></i><span>Сло<wbr>варь</span></button><button type="button" data-nav="reading" aria-label="Чтение"><i data-lucide="book-text" aria-hidden="true"></i><span>Чтение</span></button><button type="button" data-nav="profile" aria-label="Профиль"><i data-lucide="user-round" aria-hidden="true"></i><span>Про<wbr>филь</span></button></nav>
+  <nav class="mobile-nav" aria-label="Курс"><button type="button" data-nav="home" aria-label="Уроки"><i data-lucide="route" aria-hidden="true"></i><span>Уроки</span></button><button type="button" data-nav="practice" aria-label="Разговор"><i data-lucide="messages-square" aria-hidden="true"></i><span>Разговор</span></button><button type="button" data-nav="words" aria-label="Словарь"><i data-lucide="book-open" aria-hidden="true"></i><span>Словарь</span></button><button type="button" data-nav="reading" aria-label="Чтение"><i data-lucide="book-text" aria-hidden="true"></i><span>Чтение</span></button><button type="button" data-nav="profile" aria-label="Профиль"><i data-lucide="user-round" aria-hidden="true"></i><span>Профиль</span></button></nav>
   <div class="lesson-actions" id="lesson-actions" hidden></div>
  </div>
+
  <div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
 </body>
 </html>
