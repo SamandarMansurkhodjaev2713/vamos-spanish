@@ -20,7 +20,7 @@ data['pathway']=json.loads((base/'pathway-data.json').read_text(encoding='utf8')
 data['videoGuide']=json.loads((base/'video-guide-v13.json').read_text(encoding='utf8'))
 data['repair']=json.loads((base/'course-repair-v14.json').read_text(encoding='utf8'))
 
-data['version']='6.10-focused-conversations'
+data['version']='6.11-repaired-conversations'
 data['status']='Личный курс с оригинальными записями, тренировкой фраз и локальной записью голоса. Учебный эффект и отсутствие акцента не гарантированы.'
 (web/'course-data.js').write_text('window.VAMOS_DATA='+json.dumps(data,ensure_ascii=False).replace('</',r'<\/')+';\n',encoding='utf8')
 lucide=web/'assets/lucide.min.js'

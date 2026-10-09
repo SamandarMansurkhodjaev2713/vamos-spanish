@@ -822,9 +822,10 @@
     "day": 26,
     "dialogue": [
       "A: Hola. Me llamo Ana. Soy de México. Estudio español.",
-      "B: ¿Cómo te llamas?",
-      "A: Me llamo Ana.",
-      "B: ¿De dónde eres?"
+      "B: ¿Te gusta la música?",
+      "A: Sí, me gusta la música.",
+      "B: Nos vemos.",
+      "A: Hasta luego."
     ],
     "quiz": [
       {
@@ -838,18 +839,18 @@
         "feedback": "Это текстовая репетиция задания на понимание. Настоящее слушание требует доступного звука."
       },
       {
-        "question": "Какой вопрос уточняет происхождение после рассказа?",
+        "question": "Ана уже назвала имя, происхождение и занятие. Как спросить о ещё неизвестном интересе?",
         "options": [
-          "¿A qué hora?",
-          "¿De dónde eres?",
-          "¿Qué tal?"
+          "¿Cómo te llamas?",
+          "¿Te gusta la música?",
+          "¿De dónde eres?"
         ],
         "answer": 1,
-        "feedback": "Встречный вопрос должен относиться к услышанному содержанию."
+        "feedback": "Имя Ана и происхождение из Мексики уже сообщены. Отношение к музыке пока неизвестно: ¿Te gusta la música? спрашивает новый факт."
       }
     ],
-    "own": "После нового короткого голоса назови два понятых факта и задай уместный вопрос. Сейчас можно отрепетировать по тексту.",
-    "model": "Soy de… / Me llamo… — вопросы: ¿De dónde eres? / ¿Cómo te llamas?"
+    "own": "После первой реплики Аны — «Me llamo Ana. Soy de México. Estudio español» — назови два сообщённых факта и спроси о ещё неизвестном интересе, например о музыке. Это текстовая репетиция; затем повтори вопрос вслух без подсказки.",
+    "model": "Me llamo Ana. Soy de México. Estudio español. — ¿Te gusta la música?"
   },
   {
     "day": 27,
