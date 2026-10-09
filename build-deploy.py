@@ -3,9 +3,10 @@ from pathlib import Path
 import json,shutil,hashlib
 root=Path(__file__).parent;web=root/'web';dest=root/'docs';dest.mkdir(exist_ok=True)
 runtime=['index.html','course.css','course-foundation.css','course-v3.css','course-v4.css','course-data.js','course.js','library.js','coach.js','progress.js','learning.js','speech.js','native.js','drills.js','course-v5.css','manifest.webmanifest','sw.js','mastery.js','adaptive.js','navigation.js','navigation.css','course-v7.css','course-v8.css','goals.js','studio.js','missions.js','recordings.js','workbook.js','course-v9.css','course-v10.css','alegreya.css','course-v11.css','experience.js','experience.css','adult.css']
-assets=['nunito-latin.woff2','nunito-cyrillic.woff2','Nunito-OFL.txt','onest-latin.woff2','onest-cyrillic.woff2','Onest-OFL.txt','onest-sources.json','lucide.min.js','lucide-LICENSE.txt','lumo-poses.webp','app-icon.svg','app-icon-192.png','app-icon-512.png','plaza.svg','alegreya-latin.woff2','alegreya-cyrillic.woff2','Alegreya-OFL.txt','alegreya-sources.json']
+assets=['lumo-poses-v27.png','nunito-latin.woff2','nunito-cyrillic.woff2','Nunito-OFL.txt','onest-latin.woff2','onest-cyrillic.woff2','Onest-OFL.txt','onest-sources.json','lucide.min.js','lucide-LICENSE.txt','lumo-poses.webp','app-icon.svg','app-icon-192.png','app-icon-512.png','plaza.svg','alegreya-latin.woff2','alegreya-cyrillic.woff2','Alegreya-OFL.txt','alegreya-sources.json']
 runtime+=['meaning-choices.js']
-runtime+=['library-practice.js','library-v16.css']
+runtime+=['library-practice.js','library-v16.css','reader.js','reader.css','daily-word.js','learning-ui.css','brand-v27.css']
+assets+=['brand-mark-v27.svg','brand-lockup-v27.svg']
 runtime+=['day-compass.js','day-compass.css','cafe.css']
 assets+=['lumo-cafe-v15.webp','patio-tile-v15.svg']
 runtime+=['repair.js','repair.css','bridge-review.js']
@@ -21,5 +22,9 @@ for item in items:
  name=item['file'];p=web/name;assert hashlib.sha256(p.read_bytes()).hexdigest()==item['sha256'],name;out=dest/name;out.parent.mkdir(parents=True,exist_ok=True);shutil.copy2(p,out)
 for name in ['ATTRIBUTION.json','README.txt']:
  shutil.copy2(web/'assets/audio'/name,dest/'assets/audio'/name)
+word_audio=json.loads((root/'word-audio.json').read_text(encoding='utf8'))
+for item in word_audio['clips'].values():
+ p=web/item['file'];assert hashlib.sha256(p.read_bytes()).hexdigest()==item['sha256'];out=dest/item['file'];out.parent.mkdir(parents=True,exist_ok=True);shutil.copy2(p,out)
+shutil.copy2(web/'assets/word-audio/ATTRIBUTION.json',dest/'assets/word-audio/ATTRIBUTION.json')
 (dest/'.nojekyll').write_text('',encoding='utf8')
-print('Publication build:',len(runtime),'runtime files;',len(items),'unchanged native clips.')
+print('Publication build:',len(runtime),'runtime files;',len(items),'sentence clips +',len(word_audio['clips']),'word clips; all verified originals.')

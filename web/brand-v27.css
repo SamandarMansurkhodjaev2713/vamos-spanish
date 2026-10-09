@@ -1,0 +1,12 @@
+/* Original vector signature: sun, conversation and the first letter of Vamos. */
+.topbar .logo.brand-logo{display:flex;align-items:center;justify-content:flex-start;flex:0 0 auto;width:176px;min-height:44px;max-width:100%;margin:0;padding:0;border-radius:7px;line-height:1;text-decoration:none}
+.brand-logo>img{display:block;width:100%;height:auto;max-height:46px;object-fit:contain;object-position:left center;transition:transform .2s cubic-bezier(.16,1,.3,1);transform-origin:18% 55%}
+.brand-logo:focus-visible{outline:2px solid var(--accent);outline-offset:5px}.brand-logo:active>img{transform:scale(.97)}
+@media(hover:hover){.brand-logo:hover>img{transform:translateY(-1px) rotate(-1deg)}}
+@media(max-width:600px){.topbar .logo.brand-logo{width:136px;min-height:44px}.brand-logo>img{max-height:36px}}
+@media(max-width:359px){.topbar .logo.brand-logo{width:116px}.brand-logo>img{max-height:32px}}
+:root[data-theme=dark] .brand-logo>img{filter:brightness(1.75) saturate(.55)}
+@media(prefers-color-scheme:dark){:root[data-theme=system] .brand-logo>img{filter:brightness(1.75) saturate(.55)}}
+@media(prefers-reduced-motion:reduce){.brand-logo>img{transition:none}.brand-logo:hover>img,.brand-logo:active>img{transform:none}}
+.motion-off .brand-logo>img{transition:none}.motion-off .brand-logo:hover>img,.motion-off .brand-logo:active>img{transform:none}
+@media(forced-colors:active){.brand-logo{background:Canvas}.brand-logo>img{filter:none!important}}

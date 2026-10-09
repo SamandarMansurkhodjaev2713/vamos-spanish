@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="264" height="64" viewBox="0 0 264 64" role="img" aria-labelledby="title desc">
+ <title id="title">¡Vamos!</title>
+ <desc id="desc">Оригинальный знак солнечного голоса и рисованное название Vamos. Винный и персиковый цвета.</desc>
+ <g>
+  <circle cx="32" cy="27" r="17" fill="#f1ddd4"/>
+  <path d="M12 18c-2-4 4-7 7-2l13 24 13-24c3-5 9-2 7 2L38 47c-3 6-9 6-12 0Z" fill="#963d4a"/>
+  <path d="m22 10-2-4m12 2V3m12 7 2-4" fill="none" stroke="#963d4a" stroke-width="3" stroke-linecap="round"/>
+  <path d="M28 27c2 3 6 3 8 0" fill="none" stroke="#963d4a" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="m31 49 7 8-1-12" fill="#963d4a"/>
+ </g>
+ <!-- Each letter is a local vector path; no font request or borrowed wordmark. -->
+ <g fill="none" stroke="#963d4a" stroke-width="4.8" stroke-linecap="round" stroke-linejoin="round">
+  <path d="m75 31-1 18"/>
+  <path d="m88 23 8 24 12-24"/>
+  <path d="M133 24v23m0-12c0-8-4-13-10-13-7 0-11 6-11 13s4 13 11 13c6 0 10-5 10-13"/>
+  <path d="M145 47V24m0 11c0-8 3-12 8-12 6 0 8 5 8 12v12m0-12c0-8 3-12 8-12 6 0 8 5 8 12v12"/>
+  <path d="M207 35c0 8-4 13-11 13s-11-5-11-13 4-13 11-13 11 5 11 13Z"/>
+  <path d="M233 25c-3-3-7-4-11-2-6 2-7 8-1 11l7 3c8 4 3 12-4 12-4 0-7-1-10-4"/>
+  <path d="m253 16-2 19"/>
+ </g>
+ <circle cx="76" cy="23" r="2.8" fill="#963d4a"/>
+ <circle cx="250" cy="46" r="3" fill="#963d4a"/>
+</svg>

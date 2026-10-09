@@ -8,7 +8,7 @@
   "scope": "./",
   "display": "standalone",
   "background_color": "#f8f2ec",
-  "theme_color": "#185a60",
+  "theme_color": "#963d4a",
   "icons": [
     {
       "src": "assets/app-icon-lumo-wave-192.png",
@@ -25,24 +25,24 @@
   ],
   "shortcuts": [
     {
-      "name": "Моё занятие",
-      "short_name": "Занятие",
-      "url": "./?view=practice&mode=daily"
+      "name": "Сегодня",
+      "short_name": "Сегодня",
+      "url": "./?view=home"
     },
     {
-      "name": "Сказать и сравнить",
-      "short_name": "Моя речь",
-      "url": "./?view=practice&mode=pronunciation"
+      "name": "Разговор",
+      "short_name": "Разговор",
+      "url": "./?view=practice&mode=mission"
     },
     {
-      "name": "Читать истории",
-      "short_name": "Истории",
-      "url": "./?view=practice&mode=reading"
+      "name": "Словарь",
+      "short_name": "Словарь",
+      "url": "./?view=words"
     },
     {
-      "name": "Мой профиль",
-      "short_name": "Профиль",
-      "url": "./?view=profile"
+      "name": "Чтение",
+      "short_name": "Чтение",
+      "url": "./?view=practice&mode=reader"
     }
   ]
 }

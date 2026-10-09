@@ -16,7 +16,7 @@ html.motion-off .lumo-launcher,html.motion-off .lumo-dialog button{transition:no
 
 /* The companion has one real sprite pose; later shell rules cannot collapse it into an icon. */
 .lumo-launcher[data-lumo="open"]{min-height:58px;padding:6px 14px 6px 6px;border-radius:18px;gap:8px;background:var(--paper,#fff8eb);color:var(--ink,#253e42)}
-.lumo-launcher[data-lumo="open"] .lumo-mini{display:block;width:44px;height:44px;flex:0 0 44px;background-image:url('assets/lumo-poses.webp');background-size:200% 200%;background-repeat:no-repeat;filter:none}
+.lumo-launcher[data-lumo="open"] .lumo-mini{display:block;width:44px;height:44px;flex:0 0 44px;background-image:url('assets/lumo-poses-v27.png');background-size:200% 200%;background-repeat:no-repeat;filter:none}
 .lumo-launcher[data-lumo="open"] .lumo-mini[data-pose=wave]{background-position:0 0}.lumo-launcher[data-lumo="open"] .lumo-mini[data-pose=joy]{background-position:100% 0}.lumo-launcher[data-lumo="open"] .lumo-mini[data-pose=think]{background-position:0 100%}.lumo-launcher[data-lumo="open"] .lumo-mini[data-pose=proud]{background-position:100% 100%}
 .lumo-launcher[data-lumo="open"] strong{font-size:14px}.lumo-launcher[data-lumo="open"] small{font-size:12px}
 @media(max-width:700px){.lumo-launcher[data-lumo="open"]{display:flex;width:58px;height:58px;min-height:58px;padding:6px;gap:0;right:12px;border-radius:18px}.lumo-launcher[data-lumo="open"]>span{display:none}.lumo-dialog h2{font-size:21px}}

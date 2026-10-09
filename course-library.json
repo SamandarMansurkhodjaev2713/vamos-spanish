@@ -1,5 +1,5 @@
 {
-  "version": 4,
+  "version": 5,
   "topics": [
     "Знакомство и контакты",
     "Язык и просьбы о помощи",
@@ -5687,6 +5687,3122 @@
       "audio": null,
       "authored": true,
       "provenance": "Авторский учебный пример без аудиозаписи."
+    },
+    {
+      "id": "word:v27:contacts-1",
+      "type": "word",
+      "kind": "word",
+      "es": "nombre de pila",
+      "ru": "имя (без фамилии)",
+      "day": 1,
+      "topic": "Знакомство и контакты",
+      "categoryId": "contacts",
+      "title": "nombre de pila",
+      "reviewKey": "v27:contacts-1",
+      "audio": null,
+      "context": "Mi nombre de pila es Ana.",
+      "contextRu": "Меня зовут Ана.",
+      "usage": "El nombre de pila — имя; фамилия — el apellido.",
+      "accepted": [
+        "nombre de pila"
+      ]
+    },
+    {
+      "id": "word:v27:contacts-2",
+      "type": "word",
+      "kind": "word",
+      "es": "nacionalidad",
+      "ru": "национальность / гражданство",
+      "day": 1,
+      "topic": "Знакомство и контакты",
+      "categoryId": "contacts",
+      "title": "nacionalidad",
+      "reviewKey": "v27:contacts-2",
+      "audio": null,
+      "context": "¿Cuál es tu nacionalidad?",
+      "contextRu": "Какое у тебя гражданство?",
+      "usage": "La nacionalidad, женский род. В анкетах часто означает гражданство.",
+      "accepted": [
+        "nacionalidad"
+      ]
+    },
+    {
+      "id": "word:v27:contacts-3",
+      "type": "word",
+      "kind": "word",
+      "es": "dirección",
+      "ru": "адрес",
+      "day": 1,
+      "topic": "Знакомство и контакты",
+      "categoryId": "contacts",
+      "title": "dirección",
+      "reviewKey": "v27:contacts-3",
+      "audio": null,
+      "context": "Esta es mi dirección.",
+      "contextRu": "Это мой адрес.",
+      "usage": "La dirección, женский род. Также «направление»; значение уточняет контекст.",
+      "accepted": [
+        "dirección"
+      ]
+    },
+    {
+      "id": "word:v27:contacts-4",
+      "type": "word",
+      "kind": "word",
+      "es": "encantado",
+      "ru": "рад знакомству (говорит мужчина)",
+      "day": 1,
+      "topic": "Знакомство и контакты",
+      "categoryId": "contacts",
+      "title": "encantado",
+      "reviewKey": "v27:contacts-4",
+      "audio": null,
+      "context": "Encantado de conocerte.",
+      "contextRu": "Рад познакомиться с тобой.",
+      "usage": "Encantado для мужчины, encantada для женщины. Формула знакомства, не описание собеседника.",
+      "accepted": [
+        "encantado"
+      ]
+    },
+    {
+      "id": "phrase:v27:contacts-5",
+      "type": "phrase",
+      "kind": "phrase",
+      "es": "encantada de conocerte",
+      "ru": "рада познакомиться с тобой",
+      "day": 1,
+      "topic": "Знакомство и контакты",
+      "categoryId": "contacts",
+      "title": "encantada de conocerte",
+      "reviewKey": "v27:contacts-5",
+      "audio": null,
+      "context": "Hola, soy Ana. Encantada de conocerte.",
+      "contextRu": "Привет, я Ана. Рада познакомиться с тобой.",
+      "usage": "Говорит женщина; мужчина: encantado de conocerte. Te — обращение на ты.",
+      "accepted": [
+        "encantada de conocerte"
+      ]
+    },
+    {
+      "id": "phrase:v27:contacts-6",
+      "type": "phrase",
+      "kind": "phrase",
+      "es": "hablar contigo",
+      "ru": "поговорить с тобой",
+      "day": 1,
+      "topic": "Знакомство и контакты",
+      "categoryId": "contacts",
+      "title": "hablar contigo",
+      "reviewKey": "v27:contacts-6",
+      "audio": "454079",
+      "context": "Quiero hablar contigo.",
+      "contextRu": "Я хочу поговорить с тобой.",
+      "usage": "Hablar con + человек. Contigo уже включает con; con contigo не говорят.",
+      "accepted": [
+        "hablar contigo"
+      ]
+    },
+    {
+      "id": "sentence:v27:contacts-7",
+      "type": "sentence",
+      "kind": "sentence",
+      "es": "¿De dónde eres?",
+      "ru": "Откуда ты?",
+      "day": 1,
+      "topic": "Знакомство и контакты",
+      "categoryId": "contacts",
+      "title": "¿De dónde eres?",
+      "reviewKey": "v27:contacts-7",
+      "audio": null,
+      "context": "¿De dónde eres?",
+      "contextRu": "Откуда ты?",
+      "usage": "Eres — форма ser для tú; de dónde спрашивает происхождение, не место проживания.",
+      "accepted": [
+        "¿De dónde eres?"
+      ]
+    },
+    {
+      "id": "sentence:v27:contacts-8",
+      "type": "sentence",
+      "kind": "sentence",
+      "es": "¿Cómo se escribe tu nombre?",
+      "ru": "Как пишется твоё имя?",
+      "day": 1,
+      "topic": "Знакомство и контакты",
+      "categoryId": "contacts",
+      "title": "¿Cómo se escribe tu nombre?",
+      "reviewKey": "v27:contacts-8",
+      "audio": null,
+      "context": "¿Cómo se escribe tu nombre?",
+      "contextRu": "Как пишется твоё имя?",
+      "usage": "Se escribe — «пишется»; tu без ударения означает «твой».",
+      "accepted": [
+        "¿Cómo se escribe tu nombre?"
+      ]
+    },
+    {
+      "id": "word:v27:language-1",
+      "type": "word",
+      "kind": "word",
+      "es": "palabra",
+      "ru": "слово",
+      "day": 3,
+      "topic": "Язык и просьбы о помощи",
+      "categoryId": "language",
+      "title": "palabra",
+      "reviewKey": "v27:language-1",
+      "audio": null,
+      "context": "No conozco esta palabra.",
+      "contextRu": "Я не знаю этого слова.",
+      "usage": "La palabra, женский род; una palabra nueva — новое слово.",
+      "accepted": [
+        "palabra"
+      ]
+    },
+    {
+      "id": "word:v27:language-2",
+      "type": "word",
+      "kind": "word",
+      "es": "pregunta",
+      "ru": "вопрос",
+      "day": 3,
+      "topic": "Язык и просьбы о помощи",
+      "categoryId": "language",
+      "title": "pregunta",
+      "reviewKey": "v27:language-2",
+      "audio": null,
+      "context": "Tengo una pregunta.",
+      "contextRu": "У меня есть вопрос.",
+      "usage": "La pregunta, женский род; hacer una pregunta — задать вопрос.",
+      "accepted": [
+        "pregunta"
+      ]
+    },
+    {
+      "id": "word:v27:language-3",
+      "type": "word",
+      "kind": "word",
+      "es": "respuesta",
+      "ru": "ответ",
+      "day": 3,
+      "topic": "Язык и просьбы о помощи",
+      "categoryId": "language",
+      "title": "respuesta",
+      "reviewKey": "v27:language-3",
+      "audio": null,
+      "context": "No sé la respuesta.",
+      "contextRu": "Я не знаю ответа.",
+      "usage": "La respuesta, женский род; responder — отвечать.",
+      "accepted": [
+        "respuesta"
+      ]
+    },
+    {
+      "id": "word:v27:language-4",
+      "type": "word",
+      "kind": "word",
+      "es": "ejemplo",
+      "ru": "пример",
+      "day": 3,
+      "topic": "Язык и просьбы о помощи",
+      "categoryId": "language",
+      "title": "ejemplo",
+      "reviewKey": "v27:language-4",
+      "audio": null,
+      "context": "¿Puedes darme un ejemplo?",
+      "contextRu": "Можешь привести мне пример?",
+      "usage": "El ejemplo, мужской род; por ejemplo — например.",
+      "accepted": [
+        "ejemplo"
+      ]
+    },
+    {
+      "id": "phrase:v27:language-5",
+      "type": "phrase",
+      "kind": "phrase",
+      "es": "un poco de español",
+      "ru": "немного испанского",
+      "day": 3,
+      "topic": "Язык и просьбы о помощи",
+      "categoryId": "language",
+      "title": "un poco de español",
+      "reviewKey": "v27:language-5",
+      "audio": "639147",
+      "context": "Hablo un poco de español.",
+      "contextRu": "Я немного говорю по-испански.",
+      "usage": "После un poco перед названием языка нужен de. Это сочетание, а не законченный ответ.",
+      "accepted": [
+        "un poco de español"
+      ]
+    },
+    {
+      "id": "phrase:v27:language-6",
+      "type": "phrase",
+      "kind": "phrase",
+      "es": "por ejemplo",
+      "ru": "например",
+      "day": 3,
+      "topic": "Язык и просьбы о помощи",
+      "categoryId": "language",
+      "title": "por ejemplo",
+      "reviewKey": "v27:language-6",
+      "audio": null,
+      "context": "Me gustan los deportes, por ejemplo, el tenis.",
+      "contextRu": "Мне нравятся виды спорта, например теннис.",
+      "usage": "Вводит пример; не путать с para — «для».",
+      "accepted": [
+        "por ejemplo"
+      ]
+    },
+    {
+      "id": "sentence:v27:language-7",
+      "type": "sentence",
+      "kind": "sentence",
+      "es": "¿Puedes repetir la última palabra?",
+      "ru": "Можешь повторить последнее слово?",
+      "day": 3,
+      "topic": "Язык и просьбы о помощи",
+      "categoryId": "language",
+      "title": "¿Puedes repetir la última palabra?",
+      "reviewKey": "v27:language-7",
+      "audio": null,
+      "context": "¿Puedes repetir la última palabra?",
+      "contextRu": "Можешь повторить последнее слово?",
+      "usage": "Tú: puedes. Última согласуется с женским palabra.",
+      "accepted": [
+        "¿Puedes repetir la última palabra?"
+      ]
+    },
+    {
+      "id": "sentence:v27:language-8",
+      "type": "sentence",
+      "kind": "sentence",
+      "es": "¿Está bien dicho?",
+      "ru": "Это правильно сказано?",
+      "day": 3,
+      "topic": "Язык и просьбы о помощи",
+      "categoryId": "language",
+      "title": "¿Está bien dicho?",
+      "reviewKey": "v27:language-8",
+      "audio": null,
+      "context": "¿Está bien dicho?",
+      "contextRu": "Это правильно сказано?",
+      "usage": "Короткая просьба проверить выражение. Está описывает результат.",
+      "accepted": [
+        "¿Está bien dicho?"
+      ]
+    },
+    {
+      "id": "word:v27:wellbeing-1",
+      "type": "word",
+      "kind": "word",
+      "es": "frío",
+      "ru": "холод",
+      "day": 2,
+      "topic": "Самочувствие",
+      "categoryId": "wellbeing",
+      "title": "frío",
+      "reviewKey": "v27:wellbeing-1",
+      "audio": null,
+      "context": "Tengo frío.",
+      "contextRu": "Мне холодно.",
+      "usage": "El frío, мужской род. Человеку холодно: tengo frío; о погоде: hace frío.",
+      "accepted": [
+        "frío"
+      ]
+    },
+    {
+      "id": "word:v27:wellbeing-2",
+      "type": "word",
+      "kind": "word",
+      "es": "calor",
+      "ru": "жара / ощущение тепла",
+      "day": 2,
+      "topic": "Самочувствие",
+      "categoryId": "wellbeing",
+      "title": "calor",
+      "reviewKey": "v27:wellbeing-2",
+      "audio": null,
+      "context": "Tengo calor.",
+      "contextRu": "Мне жарко.",
+      "usage": "El calor, мужской род. Tengo calor — мне жарко; hace calor — жарко (погода).",
+      "accepted": [
+        "calor"
+      ]
+    },
+    {
+      "id": "word:v27:wellbeing-3",
+      "type": "word",
+      "kind": "word",
+      "es": "descansar",
+      "ru": "отдыхать",
+      "day": 2,
+      "topic": "Самочувствие",
+      "categoryId": "wellbeing",
+      "title": "descansar",
+      "reviewKey": "v27:wellbeing-3",
+      "audio": null,
+      "context": "Necesito descansar.",
+      "contextRu": "Мне нужно отдохнуть.",
+      "usage": "Инфинитив; quiero descansar — хочу отдохнуть. Не заменяет оценку здоровья.",
+      "accepted": [
+        "descansar"
+      ]
+    },
+    {
+      "id": "word:v27:wellbeing-4",
+      "type": "word",
+      "kind": "word",
+      "es": "preocupado",
+      "ru": "обеспокоенный",
+      "day": 2,
+      "topic": "Самочувствие",
+      "categoryId": "wellbeing",
+      "title": "preocupado",
+      "reviewKey": "v27:wellbeing-4",
+      "audio": null,
+      "context": "Estoy preocupado.",
+      "contextRu": "Я обеспокоен.",
+      "usage": "Preocupado / preocupada по роду говорящего; обычно estoy, состояние.",
+      "accepted": [
+        "preocupado"
+      ]
+    },
+    {
+      "id": "phrase:v27:wellbeing-5",
+      "type": "phrase",
+      "kind": "phrase",
+      "es": "tener frío",
+      "ru": "мёрзнуть / испытывать холод",
+      "day": 2,
+      "topic": "Самочувствие",
+      "categoryId": "wellbeing",
+      "title": "tener frío",
+      "reviewKey": "v27:wellbeing-5",
+      "audio": null,
+      "context": "Después del paseo tengo frío.",
+      "contextRu": "После прогулки мне холодно.",
+      "usage": "Tener + frío. Для «мне холодно» спрягаем tener: tengo frío.",
+      "accepted": [
+        "tener frío"
+      ]
+    },
+    {
+      "id": "phrase:v27:wellbeing-6",
+      "type": "phrase",
+      "kind": "phrase",
+      "es": "tener calor",
+      "ru": "испытывать жару",
+      "day": 2,
+      "topic": "Самочувствие",
+      "categoryId": "wellbeing",
+      "title": "tener calor",
+      "reviewKey": "v27:wellbeing-6",
+      "audio": null,
+      "context": "En esta habitación tengo calor.",
+      "contextRu": "В этой комнате мне жарко.",
+      "usage": "Сочетание с tener, не estoy caliente, которое имеет другой смысл.",
+      "accepted": [
+        "tener calor"
+      ]
+    },
+    {
+      "id": "sentence:v27:wellbeing-7",
+      "type": "sentence",
+      "kind": "sentence",
+      "es": "Hoy me siento mejor.",
+      "ru": "Сегодня я чувствую себя лучше.",
+      "day": 2,
+      "topic": "Самочувствие",
+      "categoryId": "wellbeing",
+      "title": "Hoy me siento mejor.",
+      "reviewKey": "v27:wellbeing-7",
+      "audio": null,
+      "context": "Hoy me siento mejor.",
+      "contextRu": "Сегодня я чувствую себя лучше.",
+      "usage": "Me siento — чувствую себя; mejor — лучше, без согласования по роду.",
+      "accepted": [
+        "Hoy me siento mejor."
+      ]
+    },
+    {
+      "id": "sentence:v27:wellbeing-8",
+      "type": "sentence",
+      "kind": "sentence",
+      "es": "Necesito un vaso de agua.",
+      "ru": "Мне нужен стакан воды.",
+      "day": 2,
+      "topic": "Самочувствие",
+      "categoryId": "wellbeing",
+      "title": "Necesito un vaso de agua.",
+      "reviewKey": "v27:wellbeing-8",
+      "audio": null,
+      "context": "Necesito un vaso de agua.",
+      "contextRu": "Мне нужен стакан воды.",
+      "usage": "Un vaso de — ёмкость/количество. El vaso мужского рода; agua женского.",
+      "accepted": [
+        "Necesito un vaso de agua."
+      ]
+    },
+    {
+      "id": "word:v27:people-1",
+      "type": "word",
+      "kind": "word",
+      "es": "madre",
+      "ru": "мать",
+      "day": 10,
+      "topic": "Семья и люди",
+      "categoryId": "people",
+      "title": "madre",
+      "reviewKey": "v27:people-1",
+      "audio": null,
+      "context": "Mi madre vive en Madrid.",
+      "contextRu": "Моя мама живёт в Мадриде.",
+      "usage": "La madre, женский род; mi madre без артикля после mi.",
+      "accepted": [
+        "madre"
+      ]
+    },
+    {
+      "id": "word:v27:people-2",
+      "type": "word",
+      "kind": "word",
+      "es": "padre",
+      "ru": "отец",
+      "day": 10,
+      "topic": "Семья и люди",
+      "categoryId": "people",
+      "title": "padre",
+      "reviewKey": "v27:people-2",
+      "audio": null,
+      "context": "Mi padre trabaja aquí.",
+      "contextRu": "Мой отец работает здесь.",
+      "usage": "El padre, мужской род; mis padres во множественном числе может означать родителей.",
+      "accepted": [
+        "padre"
+      ]
+    },
+    {
+      "id": "word:v27:people-3",
+      "type": "word",
+      "kind": "word",
+      "es": "hijo",
+      "ru": "сын",
+      "day": 10,
+      "topic": "Семья и люди",
+      "categoryId": "people",
+      "title": "hijo",
+      "reviewKey": "v27:people-3",
+      "audio": null,
+      "context": "Tengo un hijo.",
+      "contextRu": "У меня есть сын.",
+      "usage": "El hijo; женская форма la hija — дочь.",
+      "accepted": [
+        "hijo"
+      ]
+    },
+    {
+      "id": "word:v27:people-4",
+      "type": "word",
+      "kind": "word",
+      "es": "pareja",
+      "ru": "партнёр / партнёрша",
+      "day": 10,
+      "topic": "Семья и люди",
+      "categoryId": "people",
+      "title": "pareja",
+      "reviewKey": "v27:people-4",
+      "audio": null,
+      "context": "Vivo con mi pareja.",
+      "contextRu": "Я живу со своим партнёром / своей партнёршей.",
+      "usage": "La pareja — грамматически женский род независимо от пола человека; также пара.",
+      "accepted": [
+        "pareja"
+      ]
+    },
+    {
+      "id": "phrase:v27:people-5",
+      "type": "phrase",
+      "kind": "phrase",
+      "es": "mi mejor amigo",
+      "ru": "мой лучший друг",
+      "day": 10,
+      "topic": "Семья и люди",
+      "categoryId": "people",
+      "title": "mi mejor amigo",
+      "reviewKey": "v27:people-5",
+      "audio": null,
+      "context": "Este es mi mejor amigo.",
+      "contextRu": "Это мой лучший друг.",
+      "usage": "Amigo мужского рода; женский вариант mi mejor amiga. После mi артикль не нужен.",
+      "accepted": [
+        "mi mejor amigo"
+      ]
+    },
+    {
+      "id": "phrase:v27:people-6",
+      "type": "phrase",
+      "kind": "phrase",
+      "es": "hijo único",
+      "ru": "единственный ребёнок (мужчина)",
+      "day": 10,
+      "topic": "Семья и люди",
+      "categoryId": "people",
+      "title": "hijo único",
+      "reviewKey": "v27:people-6",
+      "audio": null,
+      "context": "Soy hijo único.",
+      "contextRu": "Я единственный ребёнок в семье.",
+      "usage": "О себе: soy hijo único / soy hija única; согласуется с говорящим.",
+      "accepted": [
+        "hijo único"
+      ]
+    },
+    {
+      "id": "sentence:v27:people-7",
+      "type": "sentence",
+      "kind": "sentence",
+      "es": "Mi hermana es mayor que yo.",
+      "ru": "Моя сестра старше меня.",
+      "day": 10,
+      "topic": "Семья и люди",
+      "categoryId": "people",
+      "title": "Mi hermana es mayor que yo.",
+      "reviewKey": "v27:people-7",
+      "audio": null,
+      "context": "Mi hermana es mayor que yo.",
+      "contextRu": "Моя сестра старше меня.",
+      "usage": "Mayor que — старше, сравнение. Здесь mayor не означает взрослый возраст.",
+      "accepted": [
+        "Mi hermana es mayor que yo."
+      ]
+    },
+    {
+      "id": "sentence:v27:people-8",
+      "type": "sentence",
+      "kind": "sentence",
+      "es": "¿Con quién vives?",
+      "ru": "С кем ты живёшь?",
+      "day": 10,
+      "topic": "Семья и люди",
+      "categoryId": "people",
+      "title": "¿Con quién vives?",
+      "reviewKey": "v27:people-8",
+      "audio": null,
+      "context": "¿Con quién vives?",
+      "contextRu": "С кем ты живёшь?",
+      "usage": "Quién с ударением в вопросе; vives — форма vivir для tú.",
+      "accepted": [
+        "¿Con quién vives?"
+      ]
+    },
+    {
+      "id": "word:v27:home-1",
+      "type": "word",
+      "kind": "word",
+      "es": "cocina",
+      "ru": "кухня",
+      "day": 4,
+      "topic": "Дом и вещи",
+      "categoryId": "home",
+      "title": "cocina",
+      "reviewKey": "v27:home-1",
+      "audio": null,
+      "context": "La cocina está aquí.",
+      "contextRu": "Кухня здесь.",
+      "usage": "La cocina, женский род; также «кухня» как традиция приготовления пищи.",
+      "accepted": [
+        "cocina"
+      ]
+    },
+    {
+      "id": "word:v27:home-2",
+      "type": "word",
+      "kind": "word",
+      "es": "ventana",
+      "ru": "окно",
+      "day": 4,
+      "topic": "Дом и вещи",
+      "categoryId": "home",
+      "title": "ventana",
+      "reviewKey": "v27:home-2",
+      "audio": null,
+      "context": "¿Puedes abrir la ventana?",
+      "contextRu": "Можешь открыть окно?",
+      "usage": "La ventana, женский род; abrir la ventana — открыть окно.",
+      "accepted": [
+        "ventana"
+      ]
+    },
+    {
+      "id": "word:v27:home-3",
+      "type": "word",
+      "kind": "word",
+      "es": "cama",
+      "ru": "кровать",
+      "day": 4,
+      "topic": "Дом и вещи",
+      "categoryId": "home",
+      "title": "cama",
+      "reviewKey": "v27:home-3",
+      "audio": null,
+      "context": "La cama es cómoda.",
+      "contextRu": "Кровать удобная.",
+      "usage": "La cama, женский род; en la cama — в кровати.",
+      "accepted": [
+        "cama"
+      ]
+    },
+    {
+      "id": "word:v27:home-4",
+      "type": "word",
+      "kind": "word",
+      "es": "toalla",
+      "ru": "полотенце",
+      "day": 4,
+      "topic": "Дом и вещи",
+      "categoryId": "home",
+      "title": "toalla",
+      "reviewKey": "v27:home-4",
+      "audio": null,
+      "context": "Necesito una toalla.",
+      "contextRu": "Мне нужно полотенце.",
+      "usage": "La toalla, женский род; una toalla limpia — чистое полотенце.",
+      "accepted": [
+        "toalla"
+      ]
+    },
+    {
+      "id": "phrase:v27:home-5",
+      "type": "phrase",
+      "kind": "phrase",
+      "es": "encima de",
+      "ru": "на / поверх",
+      "day": 4,
+      "topic": "Дом и вещи",
+      "categoryId": "home",
+      "title": "encima de",
+      "reviewKey": "v27:home-5",
+      "audio": null,
+      "context": "El libro está encima de la mesa.",
+      "contextRu": "Книга на столе.",
+      "usage": "Для расположения: encima de la mesa. Предлог de сохраняется перед предметом.",
+      "accepted": [
+        "encima de"
+      ]
+    },
+    {
+      "id": "phrase:v27:home-6",
+      "type": "phrase",
+      "kind": "phrase",
+      "es": "debajo de",
+      "ru": "под",
+      "day": 4,
+      "topic": "Дом и вещи",
+      "categoryId": "home",
+      "title": "debajo de",
+      "reviewKey": "v27:home-6",
+      "audio": null,
+      "context": "La mochila está debajo de la cama.",
+      "contextRu": "Рюкзак под кроватью.",
+      "usage": "Для расположения ниже предмета: debajo de la cama.",
+      "accepted": [
+        "debajo de"
+      ]
+    },
+    {
+      "id": "sentence:v27:home-7",
+      "type": "sentence",
+      "kind": "sentence",
+      "es": "¿Dónde puedo dejar la mochila?",
+      "ru": "Где я могу оставить рюкзак?",
+      "day": 4,
+      "topic": "Дом и вещи",
+      "categoryId": "home",
+      "title": "¿Dónde puedo dejar la mochila?",
+      "reviewKey": "v27:home-7",
+      "audio": null,
+      "context": "¿Dónde puedo dejar la mochila?",
+      "contextRu": "Где я могу оставить рюкзак?",
+      "usage": "Puedo + инфинитив dejar; la mochila женского рода.",
+      "accepted": [
+        "¿Dónde puedo dejar la mochila?"
+      ]
+    },
+    {
+      "id": "sentence:v27:home-8",
+      "type": "sentence",
+      "kind": "sentence",
+      "es": "La ventana está abierta.",
+      "ru": "Окно открыто.",
+      "day": 4,
+      "topic": "Дом и вещи",
+      "categoryId": "home",
+      "title": "La ventana está abierta.",
+      "reviewKey": "v27:home-8",
+      "audio": null,
+      "context": "La ventana está abierta.",
+      "contextRu": "Окно открыто.",
+      "usage": "Abierta согласуется с ventana; estar описывает состояние.",
+      "accepted": [
+        "La ventana está abierta."
+      ]
+    },
+    {
+      "id": "word:v27:city-1",
+      "type": "word",
+      "kind": "word",
+      "es": "plaza",
+      "ru": "площадь",
+      "day": 7,
+      "topic": "Город и дорога",
+      "categoryId": "city",
+      "title": "plaza",
+      "reviewKey": "v27:city-1",
+      "audio": null,
+      "context": "Nos vemos en la plaza.",
+      "contextRu": "Увидимся на площади.",
+      "usage": "La plaza, женский род; также место в транспорте, но здесь городской ориентир.",
+      "accepted": [
+        "plaza"
+      ]
+    },
+    {
+      "id": "word:v27:city-2",
+      "type": "word",
+      "kind": "word",
+      "es": "puente",
+      "ru": "мост",
+      "day": 7,
+      "topic": "Город и дорога",
+      "categoryId": "city",
+      "title": "puente",
+      "reviewKey": "v27:city-2",
+      "audio": null,
+      "context": "Cruza el puente.",
+      "contextRu": "Перейди мост.",
+      "usage": "El puente, мужской род; cruzar el puente — перейти мост.",
+      "accepted": [
+        "puente"
+      ]
+    },
+    {
+      "id": "word:v27:city-3",
+      "type": "word",
+      "kind": "word",
+      "es": "esquina",
+      "ru": "угол улицы",
+      "day": 7,
+      "topic": "Город и дорога",
+      "categoryId": "city",
+      "title": "esquina",
+      "reviewKey": "v27:city-3",
+      "audio": null,
+      "context": "La tienda está en la esquina.",
+      "contextRu": "Магазин на углу.",
+      "usage": "La esquina, женский род; en la esquina — на углу.",
+      "accepted": [
+        "esquina"
+      ]
+    },
+    {
+      "id": "word:v27:city-4",
+      "type": "word",
+      "kind": "word",
+      "es": "centro",
+      "ru": "центр",
+      "day": 7,
+      "topic": "Город и дорога",
+      "categoryId": "city",
+      "title": "centro",
+      "reviewKey": "v27:city-4",
+      "audio": null,
+      "context": "Voy al centro.",
+      "contextRu": "Я иду / еду в центр.",
+      "usage": "El centro; en el centro — в центре, al centro — в центр (направление).",
+      "accepted": [
+        "centro"
+      ]
+    },
+    {
+      "id": "phrase:v27:city-5",
+      "type": "phrase",
+      "kind": "phrase",
+      "es": "al lado de",
+      "ru": "рядом с",
+      "day": 7,
+      "topic": "Город и дорога",
+      "categoryId": "city",
+      "title": "al lado de",
+      "reviewKey": "v27:city-5",
+      "audio": null,
+      "context": "El café está al lado de la plaza.",
+      "contextRu": "Кафе рядом с площадью.",
+      "usage": "Al = a + el — часть устойчивого сочетания. De перед ориентиром.",
+      "accepted": [
+        "al lado de"
+      ]
+    },
+    {
+      "id": "phrase:v27:city-6",
+      "type": "phrase",
+      "kind": "phrase",
+      "es": "enfrente de",
+      "ru": "напротив",
+      "day": 7,
+      "topic": "Город и дорога",
+      "categoryId": "city",
+      "title": "enfrente de",
+      "reviewKey": "v27:city-6",
+      "audio": null,
+      "context": "La farmacia está enfrente de la estación.",
+      "contextRu": "Аптека напротив вокзала.",
+      "usage": "Место напротив ориентира: enfrente de la estación.",
+      "accepted": [
+        "enfrente de"
+      ]
+    },
+    {
+      "id": "sentence:v27:city-7",
+      "type": "sentence",
+      "kind": "sentence",
+      "es": "¿Está lejos de aquí?",
+      "ru": "Это далеко отсюда?",
+      "day": 7,
+      "topic": "Город и дорога",
+      "categoryId": "city",
+      "title": "¿Está lejos de aquí?",
+      "reviewKey": "v27:city-7",
+      "audio": null,
+      "context": "¿Está lejos de aquí?",
+      "contextRu": "Это далеко отсюда?",
+      "usage": "De aquí — отсюда; está для расположения.",
+      "accepted": [
+        "¿Está lejos de aquí?"
+      ]
+    },
+    {
+      "id": "sentence:v27:city-8",
+      "type": "sentence",
+      "kind": "sentence",
+      "es": "¿Se puede ir andando?",
+      "ru": "Можно дойти пешком?",
+      "day": 7,
+      "topic": "Город и дорога",
+      "categoryId": "city",
+      "title": "¿Se puede ir andando?",
+      "reviewKey": "v27:city-8",
+      "audio": null,
+      "context": "¿Se puede ir andando?",
+      "contextRu": "Можно дойти пешком?",
+      "usage": "Se puede — можно; ir andando — идти пешком. Вопрос о доступном маршруте.",
+      "accepted": [
+        "¿Se puede ir andando?"
+      ]
+    },
+    {
+      "id": "word:v27:transport-1",
+      "type": "word",
+      "kind": "word",
+      "es": "andén",
+      "ru": "платформа (на вокзале)",
+      "day": 7,
+      "topic": "Транспорт и билеты",
+      "categoryId": "transport",
+      "title": "andén",
+      "reviewKey": "v27:transport-1",
+      "audio": null,
+      "context": "El tren sale del andén dos.",
+      "contextRu": "Поезд отправляется со второй платформы.",
+      "usage": "El andén, мужской род; множественное число los andenes, без письменного знака ударения.",
+      "accepted": [
+        "andén"
+      ]
+    },
+    {
+      "id": "word:v27:transport-2",
+      "type": "word",
+      "kind": "word",
+      "es": "metro",
+      "ru": "метро",
+      "day": 7,
+      "topic": "Транспорт и билеты",
+      "categoryId": "transport",
+      "title": "metro",
+      "reviewKey": "v27:transport-2",
+      "audio": null,
+      "context": "Voy en metro.",
+      "contextRu": "Я еду на метро.",
+      "usage": "El metro, мужской род; en metro — на метро.",
+      "accepted": [
+        "metro"
+      ]
+    },
+    {
+      "id": "word:v27:transport-3",
+      "type": "word",
+      "kind": "word",
+      "es": "ida",
+      "ru": "поездка в одну сторону",
+      "day": 7,
+      "topic": "Транспорт и билеты",
+      "categoryId": "transport",
+      "title": "ida",
+      "reviewKey": "v27:transport-3",
+      "audio": null,
+      "context": "Un billete de ida, por favor.",
+      "contextRu": "Билет в одну сторону, пожалуйста.",
+      "usage": "La ida; billete de ida — билет в одну сторону, ida y vuelta — туда и обратно.",
+      "accepted": [
+        "ida"
+      ]
+    },
+    {
+      "id": "word:v27:transport-4",
+      "type": "word",
+      "kind": "word",
+      "es": "retraso",
+      "ru": "задержка / опоздание",
+      "day": 7,
+      "topic": "Транспорт и билеты",
+      "categoryId": "transport",
+      "title": "retraso",
+      "reviewKey": "v27:transport-4",
+      "audio": null,
+      "context": "El tren llega con retraso.",
+      "contextRu": "Поезд прибывает с опозданием.",
+      "usage": "El retraso, мужской род; con retraso — с опозданием.",
+      "accepted": [
+        "retraso"
+      ]
+    },
+    {
+      "id": "phrase:v27:transport-5",
+      "type": "phrase",
+      "kind": "phrase",
+      "es": "de ida y vuelta",
+      "ru": "туда и обратно",
+      "day": 7,
+      "topic": "Транспорт и билеты",
+      "categoryId": "transport",
+      "title": "de ida y vuelta",
+      "reviewKey": "v27:transport-5",
+      "audio": null,
+      "context": "Necesito un billete de ida y vuelta.",
+      "contextRu": "Мне нужен билет туда и обратно.",
+      "usage": "С билетом: un billete de ida y vuelta; не обозначает время возврата.",
+      "accepted": [
+        "de ida y vuelta"
+      ]
+    },
+    {
+      "id": "phrase:v27:transport-6",
+      "type": "phrase",
+      "kind": "phrase",
+      "es": "en autobús",
+      "ru": "на автобусе",
+      "day": 7,
+      "topic": "Транспорт и билеты",
+      "categoryId": "transport",
+      "title": "en autobús",
+      "reviewKey": "v27:transport-6",
+      "audio": null,
+      "context": "Voy al trabajo en autobús.",
+      "contextRu": "Я еду на работу на автобусе.",
+      "usage": "Способ передвижения: en autobús, без артикля в этом сочетании.",
+      "accepted": [
+        "en autobús"
+      ]
+    },
+    {
+      "id": "sentence:v27:transport-7",
+      "type": "sentence",
+      "kind": "sentence",
+      "es": "¿De qué andén sale el tren?",
+      "ru": "С какой платформы отправляется поезд?",
+      "day": 7,
+      "topic": "Транспорт и билеты",
+      "categoryId": "transport",
+      "title": "¿De qué andén sale el tren?",
+      "reviewKey": "v27:transport-7",
+      "audio": null,
+      "context": "¿De qué andén sale el tren?",
+      "contextRu": "С какой платформы отправляется поезд?",
+      "usage": "De qué andén — с какой платформы; sale от salir.",
+      "accepted": [
+        "¿De qué andén sale el tren?"
+      ]
+    },
+    {
+      "id": "sentence:v27:transport-8",
+      "type": "sentence",
+      "kind": "sentence",
+      "es": "¿Tengo que cambiar de tren?",
+      "ru": "Мне нужно пересесть на другой поезд?",
+      "day": 7,
+      "topic": "Транспорт и билеты",
+      "categoryId": "transport",
+      "title": "¿Tengo que cambiar de tren?",
+      "reviewKey": "v27:transport-8",
+      "audio": null,
+      "context": "¿Tengo que cambiar de tren?",
+      "contextRu": "Мне нужно пересесть на другой поезд?",
+      "usage": "Tener que + инфинитив — необходимость; cambiar de tren — пересесть.",
+      "accepted": [
+        "¿Tengo que cambiar de tren?"
+      ]
+    },
+    {
+      "id": "word:v27:cafe-1",
+      "type": "word",
+      "kind": "word",
+      "es": "zumo",
+      "ru": "сок",
+      "day": 6,
+      "topic": "Кафе и напитки",
+      "categoryId": "cafe",
+      "title": "zumo",
+      "reviewKey": "v27:cafe-1",
+      "audio": null,
+      "context": "Un zumo de naranja, por favor.",
+      "contextRu": "Апельсиновый сок, пожалуйста.",
+      "usage": "El zumo, мужской род, обычное слово в Испании; в Латинской Америке часто jugo.",
+      "accepted": [
+        "zumo"
+      ]
+    },
+    {
+      "id": "word:v27:cafe-2",
+      "type": "word",
+      "kind": "word",
+      "es": "taza",
+      "ru": "чашка",
+      "day": 6,
+      "topic": "Кафе и напитки",
+      "categoryId": "cafe",
+      "title": "taza",
+      "reviewKey": "v27:cafe-2",
+      "audio": null,
+      "context": "Quiero una taza de té.",
+      "contextRu": "Я хочу чашку чая.",
+      "usage": "La taza, женский род; una taza de café — чашка кофе.",
+      "accepted": [
+        "taza"
+      ]
+    },
+    {
+      "id": "word:v27:cafe-3",
+      "type": "word",
+      "kind": "word",
+      "es": "vaso",
+      "ru": "стакан",
+      "day": 6,
+      "topic": "Кафе и напитки",
+      "categoryId": "cafe",
+      "title": "vaso",
+      "reviewKey": "v27:cafe-3",
+      "audio": null,
+      "context": "Un vaso de agua, por favor.",
+      "contextRu": "Стакан воды, пожалуйста.",
+      "usage": "El vaso, мужской род; не то же, что taza (чашка).",
+      "accepted": [
+        "vaso"
+      ]
+    },
+    {
+      "id": "word:v27:cafe-4",
+      "type": "word",
+      "kind": "word",
+      "es": "camarero",
+      "ru": "официант",
+      "day": 6,
+      "topic": "Кафе и напитки",
+      "categoryId": "cafe",
+      "title": "camarero",
+      "reviewKey": "v27:cafe-4",
+      "audio": null,
+      "context": "El camarero trae la cuenta.",
+      "contextRu": "Официант приносит счёт.",
+      "usage": "El camarero / la camarera. Вежливо привлекать внимание можно perdone.",
+      "accepted": [
+        "camarero"
+      ]
+    },
+    {
+      "id": "phrase:v27:cafe-5",
+      "type": "phrase",
+      "kind": "phrase",
+      "es": "un café",
+      "ru": "один кофе",
+      "day": 6,
+      "topic": "Кафе и напитки",
+      "categoryId": "cafe",
+      "title": "un café",
+      "reviewKey": "v27:cafe-5",
+      "audio": "517084",
+      "context": "Quiero un café.",
+      "contextRu": "Я хочу кофе.",
+      "usage": "Un перед мужским café. В записи звучит целая просьба, а не отдельное сочетание.",
+      "accepted": [
+        "un café"
+      ]
+    },
+    {
+      "id": "phrase:v27:cafe-6",
+      "type": "phrase",
+      "kind": "phrase",
+      "es": "para tomar aquí",
+      "ru": "чтобы выпить / поесть здесь",
+      "day": 6,
+      "topic": "Кафе и напитки",
+      "categoryId": "cafe",
+      "title": "para tomar aquí",
+      "reviewKey": "v27:cafe-6",
+      "audio": null,
+      "context": "Un café para tomar aquí, por favor.",
+      "contextRu": "Кофе здесь, пожалуйста.",
+      "usage": "В кафе противопоставляется para llevar. Tomar может обозначать еду или напиток.",
+      "accepted": [
+        "para tomar aquí"
+      ]
+    },
+    {
+      "id": "sentence:v27:cafe-7",
+      "type": "sentence",
+      "kind": "sentence",
+      "es": "¿Hay una mesa libre?",
+      "ru": "Есть свободный столик?",
+      "day": 6,
+      "topic": "Кафе и напитки",
+      "categoryId": "cafe",
+      "title": "¿Hay una mesa libre?",
+      "reviewKey": "v27:cafe-7",
+      "audio": null,
+      "context": "¿Hay una mesa libre?",
+      "contextRu": "Есть свободный столик?",
+      "usage": "Hay — наличие; una mesa libre, женский род.",
+      "accepted": [
+        "¿Hay una mesa libre?"
+      ]
+    },
+    {
+      "id": "sentence:v27:cafe-8",
+      "type": "sentence",
+      "kind": "sentence",
+      "es": "¿Qué me recomiendas?",
+      "ru": "Что ты мне рекомендуешь?",
+      "day": 6,
+      "topic": "Кафе и напитки",
+      "categoryId": "cafe",
+      "title": "¿Qué me recomiendas?",
+      "reviewKey": "v27:cafe-8",
+      "audio": null,
+      "context": "¿Qué me recomiendas?",
+      "contextRu": "Что ты мне рекомендуешь?",
+      "usage": "Обращение на tú; вежливый usted: ¿Qué me recomienda?",
+      "accepted": [
+        "¿Qué me recomiendas?"
+      ]
+    },
+    {
+      "id": "word:v27:food-1",
+      "type": "word",
+      "kind": "word",
+      "es": "fruta",
+      "ru": "фрукты / фрукт",
+      "day": 6,
+      "topic": "Еда и покупки",
+      "categoryId": "food",
+      "title": "fruta",
+      "reviewKey": "v27:food-1",
+      "audio": null,
+      "context": "Quiero comprar fruta.",
+      "contextRu": "Я хочу купить фрукты.",
+      "usage": "La fruta часто собирательно; una fruta — один вид или плод в контексте.",
+      "accepted": [
+        "fruta"
+      ]
+    },
+    {
+      "id": "word:v27:food-2",
+      "type": "word",
+      "kind": "word",
+      "es": "verdura",
+      "ru": "овощи / овощ",
+      "day": 6,
+      "topic": "Еда и покупки",
+      "categoryId": "food",
+      "title": "verdura",
+      "reviewKey": "v27:food-2",
+      "audio": null,
+      "context": "Como mucha verdura.",
+      "contextRu": "Я ем много овощей.",
+      "usage": "La verdura — часто собирательно; las verduras — разные овощи.",
+      "accepted": [
+        "verdura"
+      ]
+    },
+    {
+      "id": "word:v27:food-3",
+      "type": "word",
+      "kind": "word",
+      "es": "arroz",
+      "ru": "рис",
+      "day": 6,
+      "topic": "Еда и покупки",
+      "categoryId": "food",
+      "title": "arroz",
+      "reviewKey": "v27:food-3",
+      "audio": null,
+      "context": "Necesito arroz.",
+      "contextRu": "Мне нужен рис.",
+      "usage": "El arroz, мужской род; обычно неисчисляемый: un kilo de arroz.",
+      "accepted": [
+        "arroz"
+      ]
+    },
+    {
+      "id": "word:v27:food-4",
+      "type": "word",
+      "kind": "word",
+      "es": "huevo",
+      "ru": "яйцо",
+      "day": 6,
+      "topic": "Еда и покупки",
+      "categoryId": "food",
+      "title": "huevo",
+      "reviewKey": "v27:food-4",
+      "audio": null,
+      "context": "Quiero seis huevos.",
+      "contextRu": "Я хочу шесть яиц.",
+      "usage": "El huevo, мужской род; множественное число los huevos.",
+      "accepted": [
+        "huevo"
+      ]
+    },
+    {
+      "id": "phrase:v27:food-5",
+      "type": "phrase",
+      "kind": "phrase",
+      "es": "medio kilo de",
+      "ru": "полкилограмма (чего-либо)",
+      "day": 6,
+      "topic": "Еда и покупки",
+      "categoryId": "food",
+      "title": "medio kilo de",
+      "reviewKey": "v27:food-5",
+      "audio": null,
+      "context": "Medio kilo de queso, por favor.",
+      "contextRu": "Полкилограмма сыра, пожалуйста.",
+      "usage": "После de нужен продукт; не законченная фраза. Medio согласуется с kilo.",
+      "accepted": [
+        "medio kilo de"
+      ]
+    },
+    {
+      "id": "phrase:v27:food-6",
+      "type": "phrase",
+      "kind": "phrase",
+      "es": "sin gluten",
+      "ru": "без глютена",
+      "day": 6,
+      "topic": "Еда и покупки",
+      "categoryId": "food",
+      "title": "sin gluten",
+      "reviewKey": "v27:food-6",
+      "audio": null,
+      "context": "¿Hay pan sin gluten?",
+      "contextRu": "Есть хлеб без глютена?",
+      "usage": "Описание состава; для ограничений уточни у сотрудника конкретный продукт.",
+      "accepted": [
+        "sin gluten"
+      ]
+    },
+    {
+      "id": "sentence:v27:food-7",
+      "type": "sentence",
+      "kind": "sentence",
+      "es": "¿Cuánto cuesta el kilo de manzanas?",
+      "ru": "Сколько стоит килограмм яблок?",
+      "day": 6,
+      "topic": "Еда и покупки",
+      "categoryId": "food",
+      "title": "¿Cuánto cuesta el kilo de manzanas?",
+      "reviewKey": "v27:food-7",
+      "audio": null,
+      "context": "¿Cuánto cuesta el kilo de manzanas?",
+      "contextRu": "Сколько стоит килограмм яблок?",
+      "usage": "Cuesta согласуется с единственным kilo; manzanas — яблоки.",
+      "accepted": [
+        "¿Cuánto cuesta el kilo de manzanas?"
+      ]
+    },
+    {
+      "id": "sentence:v27:food-8",
+      "type": "sentence",
+      "kind": "sentence",
+      "es": "Soy alérgico a los frutos secos.",
+      "ru": "У меня аллергия на орехи.",
+      "day": 6,
+      "topic": "Еда и покупки",
+      "categoryId": "food",
+      "title": "Soy alérgico a los frutos secos.",
+      "reviewKey": "v27:food-8",
+      "audio": null,
+      "context": "Soy alérgico a los frutos secos.",
+      "contextRu": "У меня аллергия на орехи.",
+      "usage": "Alérgico / alérgica по роду говорящего; a + продукт. Это языковая модель.",
+      "accepted": [
+        "Soy alérgico a los frutos secos."
+      ]
+    },
+    {
+      "id": "word:v27:clothes-1",
+      "type": "word",
+      "kind": "word",
+      "es": "zapato",
+      "ru": "туфля / ботинок",
+      "day": 8,
+      "topic": "Магазин и одежда",
+      "categoryId": "clothes",
+      "title": "zapato",
+      "reviewKey": "v27:clothes-1",
+      "audio": null,
+      "context": "Estos zapatos son cómodos.",
+      "contextRu": "Эта обувь удобная.",
+      "usage": "El zapato, мужской род; los zapatos — обувь / пара туфель в контексте.",
+      "accepted": [
+        "zapato"
+      ]
+    },
+    {
+      "id": "word:v27:clothes-2",
+      "type": "word",
+      "kind": "word",
+      "es": "pantalón",
+      "ru": "брюки",
+      "day": 8,
+      "topic": "Магазин и одежда",
+      "categoryId": "clothes",
+      "title": "pantalón",
+      "reviewKey": "v27:clothes-2",
+      "audio": null,
+      "context": "Busco unos pantalones negros.",
+      "contextRu": "Я ищу чёрные брюки.",
+      "usage": "El pantalón или los pantalones; одна вещь может называться во множественном числе.",
+      "accepted": [
+        "pantalón"
+      ]
+    },
+    {
+      "id": "word:v27:clothes-3",
+      "type": "word",
+      "kind": "word",
+      "es": "vestido",
+      "ru": "платье",
+      "day": 8,
+      "topic": "Магазин и одежда",
+      "categoryId": "clothes",
+      "title": "vestido",
+      "reviewKey": "v27:clothes-3",
+      "audio": null,
+      "context": "Este vestido es azul.",
+      "contextRu": "Это платье синее.",
+      "usage": "El vestido, мужской род, несмотря на русское среднее.",
+      "accepted": [
+        "vestido"
+      ]
+    },
+    {
+      "id": "word:v27:clothes-4",
+      "type": "word",
+      "kind": "word",
+      "es": "probador",
+      "ru": "примерочная",
+      "day": 8,
+      "topic": "Магазин и одежда",
+      "categoryId": "clothes",
+      "title": "probador",
+      "reviewKey": "v27:clothes-4",
+      "audio": null,
+      "context": "¿Dónde están los probadores?",
+      "contextRu": "Где примерочные?",
+      "usage": "El probador, мужской род; los probadores — примерочные.",
+      "accepted": [
+        "probador"
+      ]
+    },
+    {
+      "id": "phrase:v27:clothes-5",
+      "type": "phrase",
+      "kind": "phrase",
+      "es": "una talla más",
+      "ru": "на один размер больше",
+      "day": 8,
+      "topic": "Магазин и одежда",
+      "categoryId": "clothes",
+      "title": "una talla más",
+      "reviewKey": "v27:clothes-5",
+      "audio": null,
+      "context": "Necesito una talla más grande.",
+      "contextRu": "Мне нужен размер побольше.",
+      "usage": "В магазине: una talla más grande. Без grande иногда подразумевают больший размер.",
+      "accepted": [
+        "una talla más"
+      ]
+    },
+    {
+      "id": "phrase:v27:clothes-6",
+      "type": "phrase",
+      "kind": "phrase",
+      "es": "de otro color",
+      "ru": "другого цвета",
+      "day": 8,
+      "topic": "Магазин и одежда",
+      "categoryId": "clothes",
+      "title": "de otro color",
+      "reviewKey": "v27:clothes-6",
+      "audio": null,
+      "context": "¿Lo tiene de otro color?",
+      "contextRu": "У вас есть это другого цвета?",
+      "usage": "Otro без un после de; el color мужского рода.",
+      "accepted": [
+        "de otro color"
+      ]
+    },
+    {
+      "id": "sentence:v27:clothes-7",
+      "type": "sentence",
+      "kind": "sentence",
+      "es": "Solo estoy mirando, gracias.",
+      "ru": "Я просто смотрю, спасибо.",
+      "day": 8,
+      "topic": "Магазин и одежда",
+      "categoryId": "clothes",
+      "title": "Solo estoy mirando, gracias.",
+      "reviewKey": "v27:clothes-7",
+      "audio": null,
+      "context": "Solo estoy mirando, gracias.",
+      "contextRu": "Я просто смотрю, спасибо.",
+      "usage": "Мягкий ответ сотруднику; solo без ударения здесь «только».",
+      "accepted": [
+        "Solo estoy mirando, gracias."
+      ]
+    },
+    {
+      "id": "sentence:v27:clothes-8",
+      "type": "sentence",
+      "kind": "sentence",
+      "es": "¿Puedo devolverlo si no me queda bien?",
+      "ru": "Можно вернуть это, если мне не подойдёт?",
+      "day": 8,
+      "topic": "Магазин и одежда",
+      "categoryId": "clothes",
+      "title": "¿Puedo devolverlo si no me queda bien?",
+      "reviewKey": "v27:clothes-8",
+      "audio": null,
+      "context": "¿Puedo devolverlo si no me queda bien?",
+      "contextRu": "Можно вернуть это, если мне не подойдёт?",
+      "usage": "Devolverlo — вернуть это; quedar bien — подходить (об одежде). Условия магазина нужно уточнить.",
+      "accepted": [
+        "¿Puedo devolverlo si no me queda bien?"
+      ]
+    },
+    {
+      "id": "word:v27:time-1",
+      "type": "word",
+      "kind": "word",
+      "es": "minuto",
+      "ru": "минута",
+      "day": 16,
+      "topic": "Время и встречи",
+      "categoryId": "time",
+      "title": "minuto",
+      "reviewKey": "v27:time-1",
+      "audio": null,
+      "context": "Llego en cinco minutos.",
+      "contextRu": "Я приеду / приду через пять минут.",
+      "usage": "El minuto, мужской род; cinco minutos — пять минут.",
+      "accepted": [
+        "minuto"
+      ]
+    },
+    {
+      "id": "word:v27:time-2",
+      "type": "word",
+      "kind": "word",
+      "es": "semana",
+      "ru": "неделя",
+      "day": 16,
+      "topic": "Время и встречи",
+      "categoryId": "time",
+      "title": "semana",
+      "reviewKey": "v27:time-2",
+      "audio": null,
+      "context": "Esta semana tengo tiempo.",
+      "contextRu": "На этой неделе у меня есть время.",
+      "usage": "La semana, женский род; esta semana — на этой неделе.",
+      "accepted": [
+        "semana"
+      ]
+    },
+    {
+      "id": "word:v27:time-3",
+      "type": "word",
+      "kind": "word",
+      "es": "fecha",
+      "ru": "дата",
+      "day": 16,
+      "topic": "Время и встречи",
+      "categoryId": "time",
+      "title": "fecha",
+      "reviewKey": "v27:time-3",
+      "audio": null,
+      "context": "¿Qué fecha te viene bien?",
+      "contextRu": "Какая дата тебе подходит?",
+      "usage": "La fecha, женский род; не перевод английского date в значении свидания.",
+      "accepted": [
+        "fecha"
+      ]
+    },
+    {
+      "id": "word:v27:time-4",
+      "type": "word",
+      "kind": "word",
+      "es": "puntual",
+      "ru": "пунктуальный / вовремя",
+      "day": 16,
+      "topic": "Время и встречи",
+      "categoryId": "time",
+      "title": "puntual",
+      "reviewKey": "v27:time-4",
+      "audio": null,
+      "context": "Intento llegar puntual.",
+      "contextRu": "Я стараюсь приходить вовремя.",
+      "usage": "Puntual одинаково для мужского и женского рода. Llegar puntual — прийти вовремя.",
+      "accepted": [
+        "puntual"
+      ]
+    },
+    {
+      "id": "phrase:v27:time-5",
+      "type": "phrase",
+      "kind": "phrase",
+      "es": "y media",
+      "ru": "и половина (о времени)",
+      "day": 16,
+      "topic": "Время и встречи",
+      "categoryId": "time",
+      "title": "y media",
+      "reviewKey": "v27:time-5",
+      "audio": null,
+      "context": "Son las dos y media.",
+      "contextRu": "Сейчас половина третьего.",
+      "usage": "Son las dos y media — половина третьего, 2:30, не 3:30.",
+      "accepted": [
+        "y media"
+      ]
+    },
+    {
+      "id": "phrase:v27:time-6",
+      "type": "phrase",
+      "kind": "phrase",
+      "es": "menos cuarto",
+      "ru": "без четверти (о времени)",
+      "day": 16,
+      "topic": "Время и встречи",
+      "categoryId": "time",
+      "title": "menos cuarto",
+      "reviewKey": "v27:time-6",
+      "audio": null,
+      "context": "Son las tres menos cuarto.",
+      "contextRu": "Сейчас без четверти три.",
+      "usage": "Son las tres menos cuarto — 2:45. Называется следующий час.",
+      "accepted": [
+        "menos cuarto"
+      ]
+    },
+    {
+      "id": "sentence:v27:time-7",
+      "type": "sentence",
+      "kind": "sentence",
+      "es": "¿Te viene bien a las cinco?",
+      "ru": "Тебе удобно в пять?",
+      "day": 16,
+      "topic": "Время и встречи",
+      "categoryId": "time",
+      "title": "¿Te viene bien a las cinco?",
+      "reviewKey": "v27:time-7",
+      "audio": null,
+      "context": "¿Te viene bien a las cinco?",
+      "contextRu": "Тебе удобно в пять?",
+      "usage": "Venir bien — подходить по времени. A las cinco — время встречи.",
+      "accepted": [
+        "¿Te viene bien a las cinco?"
+      ]
+    },
+    {
+      "id": "sentence:v27:time-8",
+      "type": "sentence",
+      "kind": "sentence",
+      "es": "Voy a llegar diez minutos tarde.",
+      "ru": "Я опоздаю на десять минут.",
+      "day": 16,
+      "topic": "Время и встречи",
+      "categoryId": "time",
+      "title": "Voy a llegar diez minutos tarde.",
+      "reviewKey": "v27:time-8",
+      "audio": null,
+      "context": "Voy a llegar diez minutos tarde.",
+      "contextRu": "Я опоздаю на десять минут.",
+      "usage": "Ir a + инфинитив — ожидаемое будущее; tarde здесь наречие.",
+      "accepted": [
+        "Voy a llegar diez minutos tarde."
+      ]
+    },
+    {
+      "id": "word:v27:work-1",
+      "type": "word",
+      "kind": "word",
+      "es": "compañero",
+      "ru": "коллега / товарищ",
+      "day": 5,
+      "topic": "Работа и учёба",
+      "categoryId": "work",
+      "title": "compañero",
+      "reviewKey": "v27:work-1",
+      "audio": null,
+      "context": "Mi compañero trabaja conmigo.",
+      "contextRu": "Мой коллега работает со мной.",
+      "usage": "El compañero / la compañera; de trabajo уточняет коллегу, de clase — одноклассника.",
+      "accepted": [
+        "compañero"
+      ]
+    },
+    {
+      "id": "word:v27:work-2",
+      "type": "word",
+      "kind": "word",
+      "es": "clase",
+      "ru": "занятие / урок",
+      "day": 5,
+      "topic": "Работа и учёба",
+      "categoryId": "work",
+      "title": "clase",
+      "reviewKey": "v27:work-2",
+      "audio": null,
+      "context": "Tengo clase de español.",
+      "contextRu": "У меня занятие по испанскому.",
+      "usage": "La clase, женский род; также группа или класс по контексту.",
+      "accepted": [
+        "clase"
+      ]
+    },
+    {
+      "id": "word:v27:work-3",
+      "type": "word",
+      "kind": "word",
+      "es": "tarea",
+      "ru": "задание",
+      "day": 5,
+      "topic": "Работа и учёба",
+      "categoryId": "work",
+      "title": "tarea",
+      "reviewKey": "v27:work-3",
+      "audio": null,
+      "context": "Tengo una tarea para mañana.",
+      "contextRu": "У меня задание на завтра.",
+      "usage": "La tarea, женский род; las tareas могут означать домашние задания.",
+      "accepted": [
+        "tarea"
+      ]
+    },
+    {
+      "id": "word:v27:work-4",
+      "type": "word",
+      "kind": "word",
+      "es": "horario",
+      "ru": "расписание / часы работы",
+      "day": 5,
+      "topic": "Работа и учёба",
+      "categoryId": "work",
+      "title": "horario",
+      "reviewKey": "v27:work-4",
+      "audio": null,
+      "context": "¿Cuál es tu horario?",
+      "contextRu": "Какое у тебя расписание?",
+      "usage": "El horario, мужской род. Не отдельный час: это hora.",
+      "accepted": [
+        "horario"
+      ]
+    },
+    {
+      "id": "phrase:v27:work-5",
+      "type": "phrase",
+      "kind": "phrase",
+      "es": "trabajar desde casa",
+      "ru": "работать из дома",
+      "day": 5,
+      "topic": "Работа и учёба",
+      "categoryId": "work",
+      "title": "trabajar desde casa",
+      "reviewKey": "v27:work-5",
+      "audio": null,
+      "context": "Puedo trabajar desde casa.",
+      "contextRu": "Я могу работать из дома.",
+      "usage": "Desde подчёркивает место, откуда работаешь; инфинитив после puedo/quiero.",
+      "accepted": [
+        "trabajar desde casa"
+      ]
+    },
+    {
+      "id": "phrase:v27:work-6",
+      "type": "phrase",
+      "kind": "phrase",
+      "es": "estudiar francés",
+      "ru": "учить французский",
+      "day": 5,
+      "topic": "Работа и учёба",
+      "categoryId": "work",
+      "title": "estudiar francés",
+      "reviewKey": "v27:work-6",
+      "audio": "515968",
+      "context": "Voy a estudiar francés.",
+      "contextRu": "Я собираюсь изучать французский.",
+      "usage": "Инфинитив estudiar + язык без артикля. Заменяй francés на español.",
+      "accepted": [
+        "estudiar francés"
+      ]
+    },
+    {
+      "id": "sentence:v27:work-7",
+      "type": "sentence",
+      "kind": "sentence",
+      "es": "Tengo clase los martes.",
+      "ru": "У меня занятия по вторникам.",
+      "day": 5,
+      "topic": "Работа и учёба",
+      "categoryId": "work",
+      "title": "Tengo clase los martes.",
+      "reviewKey": "v27:work-7",
+      "audio": null,
+      "context": "Tengo clase los martes.",
+      "contextRu": "У меня занятия по вторникам.",
+      "usage": "Los martes — повторяющиеся вторники; el martes — один вторник по контексту.",
+      "accepted": [
+        "Tengo clase los martes."
+      ]
+    },
+    {
+      "id": "sentence:v27:work-8",
+      "type": "sentence",
+      "kind": "sentence",
+      "es": "¿A qué hora terminas de trabajar?",
+      "ru": "Во сколько ты заканчиваешь работать?",
+      "day": 5,
+      "topic": "Работа и учёба",
+      "categoryId": "work",
+      "title": "¿A qué hora terminas de trabajar?",
+      "reviewKey": "v27:work-8",
+      "audio": null,
+      "context": "¿A qué hora terminas de trabajar?",
+      "contextRu": "Во сколько ты заканчиваешь работать?",
+      "usage": "Terminar de + инфинитив. Terminas — обращение на tú.",
+      "accepted": [
+        "¿A qué hora terminas de trabajar?"
+      ]
+    },
+    {
+      "id": "word:v27:routine-1",
+      "type": "word",
+      "kind": "word",
+      "es": "ducharse",
+      "ru": "принимать душ",
+      "day": 20,
+      "topic": "Привычки и распорядок",
+      "categoryId": "routine",
+      "title": "ducharse",
+      "reviewKey": "v27:routine-1",
+      "audio": null,
+      "context": "Me ducho por la mañana.",
+      "contextRu": "Я принимаю душ утром.",
+      "usage": "Возвратный инфинитив; я: me ducho, ты: te duchas.",
+      "accepted": [
+        "ducharse"
+      ]
+    },
+    {
+      "id": "word:v27:routine-2",
+      "type": "word",
+      "kind": "word",
+      "es": "acostarse",
+      "ru": "ложиться спать",
+      "day": 20,
+      "topic": "Привычки и распорядок",
+      "categoryId": "routine",
+      "title": "acostarse",
+      "reviewKey": "v27:routine-2",
+      "audio": null,
+      "context": "Me acuesto a las once.",
+      "contextRu": "Я ложусь спать в одиннадцать.",
+      "usage": "Возвратный глагол с изменением o → ue: me acuesto.",
+      "accepted": [
+        "acostarse"
+      ]
+    },
+    {
+      "id": "word:v27:routine-3",
+      "type": "word",
+      "kind": "word",
+      "es": "cenar",
+      "ru": "ужинать",
+      "day": 20,
+      "topic": "Привычки и распорядок",
+      "categoryId": "routine",
+      "title": "cenar",
+      "reviewKey": "v27:routine-3",
+      "audio": null,
+      "context": "Ceno en casa.",
+      "contextRu": "Я ужинаю дома.",
+      "usage": "Инфинитив; ceno — я ужинаю. Ужин — la cena.",
+      "accepted": [
+        "cenar"
+      ]
+    },
+    {
+      "id": "word:v27:routine-4",
+      "type": "word",
+      "kind": "word",
+      "es": "siempre",
+      "ru": "всегда",
+      "day": 20,
+      "topic": "Привычки и распорядок",
+      "categoryId": "routine",
+      "title": "siempre",
+      "reviewKey": "v27:routine-4",
+      "audio": null,
+      "context": "Siempre desayuno en casa.",
+      "contextRu": "Я всегда завтракаю дома.",
+      "usage": "Наречие не изменяется по роду; не означает «обычно», это normalmente.",
+      "accepted": [
+        "siempre"
+      ]
+    },
+    {
+      "id": "phrase:v27:routine-5",
+      "type": "phrase",
+      "kind": "phrase",
+      "es": "todos los días",
+      "ru": "каждый день",
+      "day": 20,
+      "topic": "Привычки и распорядок",
+      "categoryId": "routine",
+      "title": "todos los días",
+      "reviewKey": "v27:routine-5",
+      "audio": null,
+      "context": "Camino todos los días.",
+      "contextRu": "Я хожу пешком каждый день.",
+      "usage": "Día мужского рода: el día, поэтому todos, не todas.",
+      "accepted": [
+        "todos los días"
+      ]
+    },
+    {
+      "id": "phrase:v27:routine-6",
+      "type": "phrase",
+      "kind": "phrase",
+      "es": "antes de dormir",
+      "ru": "перед сном",
+      "day": 20,
+      "topic": "Привычки и распорядок",
+      "categoryId": "routine",
+      "title": "antes de dormir",
+      "reviewKey": "v27:routine-6",
+      "audio": null,
+      "context": "Leo antes de dormir.",
+      "contextRu": "Я читаю перед сном.",
+      "usage": "Antes de + инфинитив; здесь dormir, а не спрягаемая форма.",
+      "accepted": [
+        "antes de dormir"
+      ]
+    },
+    {
+      "id": "sentence:v27:routine-7",
+      "type": "sentence",
+      "kind": "sentence",
+      "es": "Después de trabajar, doy un paseo.",
+      "ru": "После работы я гуляю.",
+      "day": 20,
+      "topic": "Привычки и распорядок",
+      "categoryId": "routine",
+      "title": "Después de trabajar, doy un paseo.",
+      "reviewKey": "v27:routine-7",
+      "audio": null,
+      "context": "Después de trabajar, doy un paseo.",
+      "contextRu": "После работы я гуляю.",
+      "usage": "Después de + инфинитив; doy от dar, dar un paseo — прогуляться.",
+      "accepted": [
+        "Después de trabajar, doy un paseo."
+      ]
+    },
+    {
+      "id": "sentence:v27:routine-8",
+      "type": "sentence",
+      "kind": "sentence",
+      "es": "¿Qué haces normalmente los domingos?",
+      "ru": "Что ты обычно делаешь по воскресеньям?",
+      "day": 20,
+      "topic": "Привычки и распорядок",
+      "categoryId": "routine",
+      "title": "¿Qué haces normalmente los domingos?",
+      "reviewKey": "v27:routine-8",
+      "audio": null,
+      "context": "¿Qué haces normalmente los domingos?",
+      "contextRu": "Что ты обычно делаешь по воскресеньям?",
+      "usage": "Haces от hacer; los domingos обозначает привычку по воскресеньям.",
+      "accepted": [
+        "¿Qué haces normalmente los domingos?"
+      ]
+    },
+    {
+      "id": "word:v27:interests-1",
+      "type": "word",
+      "kind": "word",
+      "es": "libro",
+      "ru": "книга",
+      "day": 13,
+      "topic": "Интересы и досуг",
+      "categoryId": "interests",
+      "title": "libro",
+      "reviewKey": "v27:interests-1",
+      "audio": null,
+      "context": "Este libro es interesante.",
+      "contextRu": "Эта книга интересная.",
+      "usage": "El libro, мужской род; leer un libro — читать книгу.",
+      "accepted": [
+        "libro"
+      ]
+    },
+    {
+      "id": "word:v27:interests-2",
+      "type": "word",
+      "kind": "word",
+      "es": "deporte",
+      "ru": "спорт / вид спорта",
+      "day": 13,
+      "topic": "Интересы и досуг",
+      "categoryId": "interests",
+      "title": "deporte",
+      "reviewKey": "v27:interests-2",
+      "audio": null,
+      "context": "Me gusta el deporte.",
+      "contextRu": "Мне нравится спорт.",
+      "usage": "El deporte, мужской род; hacer deporte — заниматься спортом.",
+      "accepted": [
+        "deporte"
+      ]
+    },
+    {
+      "id": "word:v27:interests-3",
+      "type": "word",
+      "kind": "word",
+      "es": "dibujar",
+      "ru": "рисовать",
+      "day": 13,
+      "topic": "Интересы и досуг",
+      "categoryId": "interests",
+      "title": "dibujar",
+      "reviewKey": "v27:interests-3",
+      "audio": null,
+      "context": "Me gusta dibujar.",
+      "contextRu": "Мне нравится рисовать.",
+      "usage": "Инфинитив; me gusta dibujar — мне нравится рисовать.",
+      "accepted": [
+        "dibujar"
+      ]
+    },
+    {
+      "id": "word:v27:interests-4",
+      "type": "word",
+      "kind": "word",
+      "es": "bailar",
+      "ru": "танцевать",
+      "day": 13,
+      "topic": "Интересы и досуг",
+      "categoryId": "interests",
+      "title": "bailar",
+      "reviewKey": "v27:interests-4",
+      "audio": null,
+      "context": "¿Te gusta bailar?",
+      "contextRu": "Тебе нравится танцевать?",
+      "usage": "Инфинитив; bailar salsa — танцевать сальсу.",
+      "accepted": [
+        "bailar"
+      ]
+    },
+    {
+      "id": "phrase:v27:interests-5",
+      "type": "phrase",
+      "kind": "phrase",
+      "es": "música clásica",
+      "ru": "классическая музыка",
+      "day": 13,
+      "topic": "Интересы и досуг",
+      "categoryId": "interests",
+      "title": "música clásica",
+      "reviewKey": "v27:interests-5",
+      "audio": "460472",
+      "context": "Me gusta la música clásica.",
+      "contextRu": "Мне нравится классическая музыка.",
+      "usage": "La música женского рода; clásica согласуется с ней. В gustar: me gusta la música clásica.",
+      "accepted": [
+        "música clásica"
+      ]
+    },
+    {
+      "id": "phrase:v27:interests-6",
+      "type": "phrase",
+      "kind": "phrase",
+      "es": "no me gusta",
+      "ru": "мне не нравится",
+      "day": 13,
+      "topic": "Интересы и досуг",
+      "categoryId": "interests",
+      "title": "no me gusta",
+      "reviewKey": "v27:interests-6",
+      "audio": "449861",
+      "context": "No me gusta el café.",
+      "contextRu": "Мне не нравится кофе.",
+      "usage": "После сочетания нужен предмет или действие; множественное: no me gustan los libros.",
+      "accepted": [
+        "no me gusta"
+      ]
+    },
+    {
+      "id": "sentence:v27:interests-7",
+      "type": "sentence",
+      "kind": "sentence",
+      "es": "¿Qué tipo de música escuchas?",
+      "ru": "Какую музыку ты слушаешь?",
+      "day": 13,
+      "topic": "Интересы и досуг",
+      "categoryId": "interests",
+      "title": "¿Qué tipo de música escuchas?",
+      "reviewKey": "v27:interests-7",
+      "audio": null,
+      "context": "¿Qué tipo de música escuchas?",
+      "contextRu": "Какую музыку ты слушаешь?",
+      "usage": "Qué tipo de — какой вид; escuchas от escuchar, обращение на tú.",
+      "accepted": [
+        "¿Qué tipo de música escuchas?"
+      ]
+    },
+    {
+      "id": "sentence:v27:interests-8",
+      "type": "sentence",
+      "kind": "sentence",
+      "es": "Me gustan las películas de aventuras.",
+      "ru": "Мне нравятся приключенческие фильмы.",
+      "day": 13,
+      "topic": "Интересы и досуг",
+      "categoryId": "interests",
+      "title": "Me gustan las películas de aventuras.",
+      "reviewKey": "v27:interests-8",
+      "audio": null,
+      "context": "Me gustan las películas de aventuras.",
+      "contextRu": "Мне нравятся приключенческие фильмы.",
+      "usage": "Gustan во множественном числе из-за las películas; не gusta.",
+      "accepted": [
+        "Me gustan las películas de aventuras."
+      ]
+    },
+    {
+      "id": "word:v27:plans-1",
+      "type": "word",
+      "kind": "word",
+      "es": "quedar",
+      "ru": "договориться встретиться",
+      "day": 23,
+      "topic": "Планы и приглашения",
+      "categoryId": "plans",
+      "title": "quedar",
+      "reviewKey": "v27:plans-1",
+      "audio": null,
+      "context": "¿Quieres quedar mañana?",
+      "contextRu": "Хочешь встретиться завтра?",
+      "usage": "Quedar con alguien — встретиться по договорённости; глагол имеет и другие значения.",
+      "accepted": [
+        "quedar"
+      ]
+    },
+    {
+      "id": "word:v27:plans-2",
+      "type": "word",
+      "kind": "word",
+      "es": "visitar",
+      "ru": "посетить",
+      "day": 23,
+      "topic": "Планы и приглашения",
+      "categoryId": "plans",
+      "title": "visitar",
+      "reviewKey": "v27:plans-2",
+      "audio": null,
+      "context": "Quiero visitar Toledo.",
+      "contextRu": "Я хочу посетить Толедо.",
+      "usage": "Visitar un lugar — посетить место; человека: visitar a alguien.",
+      "accepted": [
+        "visitar"
+      ]
+    },
+    {
+      "id": "word:v27:plans-3",
+      "type": "word",
+      "kind": "word",
+      "es": "viaje",
+      "ru": "поездка / путешествие",
+      "day": 23,
+      "topic": "Планы и приглашения",
+      "categoryId": "plans",
+      "title": "viaje",
+      "reviewKey": "v27:plans-3",
+      "audio": null,
+      "context": "Estoy preparando un viaje.",
+      "contextRu": "Я готовлю поездку.",
+      "usage": "El viaje, мужской род; el próximo viaje — следующая поездка.",
+      "accepted": [
+        "viaje"
+      ]
+    },
+    {
+      "id": "word:v27:plans-4",
+      "type": "word",
+      "kind": "word",
+      "es": "invitación",
+      "ru": "приглашение",
+      "day": 23,
+      "topic": "Планы и приглашения",
+      "categoryId": "plans",
+      "title": "invitación",
+      "reviewKey": "v27:plans-4",
+      "audio": null,
+      "context": "Gracias por la invitación.",
+      "contextRu": "Спасибо за приглашение.",
+      "usage": "La invitación, женский род; gracias por la invitación.",
+      "accepted": [
+        "invitación"
+      ]
+    },
+    {
+      "id": "phrase:v27:plans-5",
+      "type": "phrase",
+      "kind": "phrase",
+      "es": "una buena idea",
+      "ru": "хорошая идея",
+      "day": 23,
+      "topic": "Планы и приглашения",
+      "categoryId": "plans",
+      "title": "una buena idea",
+      "reviewKey": "v27:plans-5",
+      "audio": "442647",
+      "context": "Es una buena idea.",
+      "contextRu": "Это хорошая идея.",
+      "usage": "Idea женского рода. Buena перед существительным; es una buena idea — реакция на предложение.",
+      "accepted": [
+        "una buena idea"
+      ]
+    },
+    {
+      "id": "phrase:v27:plans-6",
+      "type": "phrase",
+      "kind": "phrase",
+      "es": "si te apetece",
+      "ru": "если тебе хочется",
+      "day": 23,
+      "topic": "Планы и приглашения",
+      "categoryId": "plans",
+      "title": "si te apetece",
+      "reviewKey": "v27:plans-6",
+      "audio": null,
+      "context": "Podemos dar un paseo, si te apetece.",
+      "contextRu": "Можем прогуляться, если тебе хочется.",
+      "usage": "Apetece для предложения занятия; tú: te, usted: le. Мягкое приглашение.",
+      "accepted": [
+        "si te apetece"
+      ]
+    },
+    {
+      "id": "sentence:v27:plans-7",
+      "type": "sentence",
+      "kind": "sentence",
+      "es": "¿Quedamos mañana a las seis?",
+      "ru": "Встретимся завтра в шесть?",
+      "day": 23,
+      "topic": "Планы и приглашения",
+      "categoryId": "plans",
+      "title": "¿Quedamos mañana a las seis?",
+      "reviewKey": "v27:plans-7",
+      "audio": null,
+      "context": "¿Quedamos mañana a las seis?",
+      "contextRu": "Встретимся завтра в шесть?",
+      "usage": "Quedamos в вопросе предлагает договорённость; a las seis уточняет время.",
+      "accepted": [
+        "¿Quedamos mañana a las seis?"
+      ]
+    },
+    {
+      "id": "sentence:v27:plans-8",
+      "type": "sentence",
+      "kind": "sentence",
+      "es": "Me encantaría, pero mañana no puedo.",
+      "ru": "С удовольствием, но завтра я не могу.",
+      "day": 23,
+      "topic": "Планы и приглашения",
+      "categoryId": "plans",
+      "title": "Me encantaría, pero mañana no puedo.",
+      "reviewKey": "v27:plans-8",
+      "audio": null,
+      "context": "Me encantaría, pero mañana no puedo.",
+      "contextRu": "С удовольствием, но завтра я не могу.",
+      "usage": "Me encantaría — вежливое желание; pero смягчает отказ. Не значит, что встреча уже принята.",
+      "accepted": [
+        "Me encantaría, pero mañana no puedo."
+      ]
+    },
+    {
+      "id": "word:v27:past-1",
+      "type": "word",
+      "kind": "word",
+      "es": "estuve",
+      "ru": "я был / была (estar в прошлом)",
+      "day": 22,
+      "topic": "Вчера и впечатления",
+      "categoryId": "past",
+      "title": "estuve",
+      "reviewKey": "v27:past-1",
+      "audio": null,
+      "context": "Ayer estuve en casa.",
+      "contextRu": "Вчера я был / была дома.",
+      "usage": "Завершённое пребывание или состояние: estuve en casa. Не подменяет fui для движения.",
+      "accepted": [
+        "estuve"
+      ]
+    },
+    {
+      "id": "word:v27:past-2",
+      "type": "word",
+      "kind": "word",
+      "es": "compré",
+      "ru": "я купил / купила",
+      "day": 22,
+      "topic": "Вчера и впечатления",
+      "categoryId": "past",
+      "title": "compré",
+      "reviewKey": "v27:past-2",
+      "audio": null,
+      "context": "Compré un libro.",
+      "contextRu": "Я купил / купила книгу.",
+      "usage": "Прошедшая форма comprar; ударение на последнем слоге отличает от compre.",
+      "accepted": [
+        "compré"
+      ]
+    },
+    {
+      "id": "word:v27:past-3",
+      "type": "word",
+      "kind": "word",
+      "es": "comí",
+      "ru": "я ел / ела",
+      "day": 22,
+      "topic": "Вчера и впечатления",
+      "categoryId": "past",
+      "title": "comí",
+      "reviewKey": "v27:past-3",
+      "audio": null,
+      "context": "Ayer comí en casa.",
+      "contextRu": "Вчера я ел / ела дома.",
+      "usage": "Прошедшая форма comer; ударение í. Для завершённого эпизода.",
+      "accepted": [
+        "comí"
+      ]
+    },
+    {
+      "id": "word:v27:past-4",
+      "type": "word",
+      "kind": "word",
+      "es": "pasado",
+      "ru": "прошлый",
+      "day": 22,
+      "topic": "Вчера и впечатления",
+      "categoryId": "past",
+      "title": "pasado",
+      "reviewKey": "v27:past-4",
+      "audio": null,
+      "context": "La semana pasada fui a Madrid.",
+      "contextRu": "На прошлой неделе я ездил / ездила в Мадрид.",
+      "usage": "Прилагательное: el lunes pasado, la semana pasada — согласование рода.",
+      "accepted": [
+        "pasado"
+      ]
+    },
+    {
+      "id": "phrase:v27:past-5",
+      "type": "phrase",
+      "kind": "phrase",
+      "es": "la semana pasada",
+      "ru": "на прошлой неделе",
+      "day": 22,
+      "topic": "Вчера и впечатления",
+      "categoryId": "past",
+      "title": "la semana pasada",
+      "reviewKey": "v27:past-5",
+      "audio": null,
+      "context": "La semana pasada trabajé mucho.",
+      "contextRu": "На прошлой неделе я много работал / работала.",
+      "usage": "Женский род semana → pasada; не означает предыдущие семь дней в любом контексте.",
+      "accepted": [
+        "la semana pasada"
+      ]
+    },
+    {
+      "id": "phrase:v27:past-6",
+      "type": "phrase",
+      "kind": "phrase",
+      "es": "hace dos días",
+      "ru": "два дня назад",
+      "day": 22,
+      "topic": "Вчера и впечатления",
+      "categoryId": "past",
+      "title": "hace dos días",
+      "reviewKey": "v27:past-6",
+      "audio": null,
+      "context": "Llegué hace dos días.",
+      "contextRu": "Я приехал / приехала два дня назад.",
+      "usage": "Hace + длительность для прошлого; не путать с dentro de — через.",
+      "accepted": [
+        "hace dos días"
+      ]
+    },
+    {
+      "id": "sentence:v27:past-7",
+      "type": "sentence",
+      "kind": "sentence",
+      "es": "¿Qué hiciste ayer?",
+      "ru": "Что ты делал / делала вчера?",
+      "day": 22,
+      "topic": "Вчера и впечатления",
+      "categoryId": "past",
+      "title": "¿Qué hiciste ayer?",
+      "reviewKey": "v27:past-7",
+      "audio": null,
+      "context": "¿Qué hiciste ayer?",
+      "contextRu": "Что ты делал / делала вчера?",
+      "usage": "Hiciste — прошедшее hacer для tú; вопрос о завершённом вчерашнем дне.",
+      "accepted": [
+        "¿Qué hiciste ayer?"
+      ]
+    },
+    {
+      "id": "sentence:v27:past-8",
+      "type": "sentence",
+      "kind": "sentence",
+      "es": "El paseo me gustó mucho.",
+      "ru": "Мне очень понравилась прогулка.",
+      "day": 22,
+      "topic": "Вчера и впечатления",
+      "categoryId": "past",
+      "title": "El paseo me gustó mucho.",
+      "reviewKey": "v27:past-8",
+      "audio": null,
+      "context": "El paseo me gustó mucho.",
+      "contextRu": "Мне очень понравилась прогулка.",
+      "usage": "Gustó — завершённое впечатление; el paseo единственного числа.",
+      "accepted": [
+        "El paseo me gustó mucho."
+      ]
+    },
+    {
+      "id": "word:v27:recorded-ahi-d7a38d",
+      "type": "word",
+      "kind": "word",
+      "es": "ahí",
+      "ru": "там (недалеко)",
+      "day": 7,
+      "topic": "Город и дорога",
+      "categoryId": "city",
+      "title": "ahí",
+      "reviewKey": "v27:recorded-ahi-d7a38d",
+      "audio": null,
+      "context": "La parada está ahí.",
+      "contextRu": "Остановка там.",
+      "usage": "Наречие места: ahí — там, около собеседника или указанного места; aquí — здесь.",
+      "accepted": [
+        "ahí"
+      ]
+    },
+    {
+      "id": "word:v27:recorded-bueno",
+      "type": "word",
+      "kind": "word",
+      "es": "bueno",
+      "ru": "хороший",
+      "day": 2,
+      "topic": "Самочувствие",
+      "categoryId": "wellbeing",
+      "title": "bueno",
+      "reviewKey": "v27:recorded-bueno",
+      "audio": null,
+      "context": "El café es bueno.",
+      "contextRu": "Кофе хороший.",
+      "usage": "Bueno / buena по роду; перед мужским существительным обычно buen: un buen día. Bien — наречие «хорошо».",
+      "accepted": [
+        "bueno"
+      ]
+    },
+    {
+      "id": "word:v27:recorded-comer",
+      "type": "word",
+      "kind": "word",
+      "es": "comer",
+      "ru": "есть (принимать пищу)",
+      "day": 6,
+      "topic": "Еда и покупки",
+      "categoryId": "food",
+      "title": "comer",
+      "reviewKey": "v27:recorded-comer",
+      "audio": null,
+      "context": "Quiero comer algo.",
+      "contextRu": "Я хочу что-нибудь поесть.",
+      "usage": "Инфинитив; como — я ем. После quiero / puedo сохраняется comer.",
+      "accepted": [
+        "comer"
+      ]
+    },
+    {
+      "id": "word:v27:recorded-con",
+      "type": "word",
+      "kind": "word",
+      "es": "con",
+      "ru": "с",
+      "day": 3,
+      "topic": "Язык и просьбы о помощи",
+      "categoryId": "language",
+      "title": "con",
+      "reviewKey": "v27:recorded-con",
+      "audio": null,
+      "context": "Vivo con mi familia.",
+      "contextRu": "Я живу со своей семьёй.",
+      "usage": "Предлог совместности: con mi familia. Перед yo/tú особые формы conmigo/contigo.",
+      "accepted": [
+        "con"
+      ]
+    },
+    {
+      "id": "word:v27:recorded-cuando-e311c5",
+      "type": "word",
+      "kind": "word",
+      "es": "cuándo",
+      "ru": "когда (в вопросе)",
+      "day": 16,
+      "topic": "Время и встречи",
+      "categoryId": "time",
+      "title": "cuándo",
+      "reviewKey": "v27:recorded-cuando-e311c5",
+      "audio": null,
+      "context": "¿Cuándo vienes?",
+      "contextRu": "Когда ты приедешь / придёшь?",
+      "usage": "В вопросе cuándo с ударением; когда как союз — cuando без письменного ударения.",
+      "accepted": [
+        "cuándo"
+      ]
+    },
+    {
+      "id": "word:v27:recorded-como-a429cf",
+      "type": "word",
+      "kind": "word",
+      "es": "cómo",
+      "ru": "как (в вопросе)",
+      "day": 3,
+      "topic": "Язык и просьбы о помощи",
+      "categoryId": "language",
+      "title": "cómo",
+      "reviewKey": "v27:recorded-como-a429cf",
+      "audio": null,
+      "context": "¿Cómo se dice pan en español?",
+      "contextRu": "Как сказать «хлеб» по-испански?",
+      "usage": "В вопросе cómo с ударением. Como без ударения имеет другие значения, например «я ем».",
+      "accepted": [
+        "cómo"
+      ]
+    },
+    {
+      "id": "word:v27:recorded-decir",
+      "type": "word",
+      "kind": "word",
+      "es": "decir",
+      "ru": "сказать / говорить",
+      "day": 3,
+      "topic": "Язык и просьбы о помощи",
+      "categoryId": "language",
+      "title": "decir",
+      "reviewKey": "v27:recorded-decir",
+      "audio": null,
+      "context": "Quiero decir una cosa.",
+      "contextRu": "Я хочу кое-что сказать.",
+      "usage": "Инфинитив; digo — я говорю. Decir обычно сообщает слова, hablar — процесс разговора.",
+      "accepted": [
+        "decir"
+      ]
+    },
+    {
+      "id": "word:v27:recorded-dormir",
+      "type": "word",
+      "kind": "word",
+      "es": "dormir",
+      "ru": "спать",
+      "day": 20,
+      "topic": "Привычки и распорядок",
+      "categoryId": "routine",
+      "title": "dormir",
+      "reviewKey": "v27:recorded-dormir",
+      "audio": null,
+      "context": "Necesito dormir.",
+      "contextRu": "Мне нужно поспать.",
+      "usage": "Инфинитив; duermo — я сплю, изменение o → ue. Dormir — спать; acostarse — ложиться спать.",
+      "accepted": [
+        "dormir"
+      ]
+    },
+    {
+      "id": "word:v27:recorded-dia-bfbf44",
+      "type": "word",
+      "kind": "word",
+      "es": "día",
+      "ru": "день",
+      "day": 16,
+      "topic": "Время и встречи",
+      "categoryId": "time",
+      "title": "día",
+      "reviewKey": "v27:recorded-dia-bfbf44",
+      "audio": null,
+      "context": "Hoy es un buen día.",
+      "contextRu": "Сегодня хороший день.",
+      "usage": "El día — мужской род несмотря на -a. Buenos días — доброе утро.",
+      "accepted": [
+        "día"
+      ]
+    },
+    {
+      "id": "word:v27:recorded-donde-cd8781",
+      "type": "word",
+      "kind": "word",
+      "es": "dónde",
+      "ru": "где / куда (в вопросе)",
+      "day": 7,
+      "topic": "Город и дорога",
+      "categoryId": "city",
+      "title": "dónde",
+      "reviewKey": "v27:recorded-donde-cd8781",
+      "audio": null,
+      "context": "¿Dónde está mi libro?",
+      "contextRu": "Где моя книга?",
+      "usage": "Dónde с ударением в вопросе; ¿a dónde? / ¿adónde? спрашивает направление.",
+      "accepted": [
+        "dónde"
+      ]
+    },
+    {
+      "id": "word:v27:recorded-esto",
+      "type": "word",
+      "kind": "word",
+      "es": "esto",
+      "ru": "это (без названного предмета)",
+      "day": 4,
+      "topic": "Дом и вещи",
+      "categoryId": "home",
+      "title": "esto",
+      "reviewKey": "v27:recorded-esto",
+      "audio": null,
+      "context": "¿Qué es esto?",
+      "contextRu": "Что это?",
+      "usage": "Нейтральное местоимение: esto. Перед существительным нужны este/esta, не esto libro.",
+      "accepted": [
+        "esto"
+      ]
+    },
+    {
+      "id": "word:v27:recorded-grande",
+      "type": "word",
+      "kind": "word",
+      "es": "grande",
+      "ru": "большой",
+      "day": 8,
+      "topic": "Магазин и одежда",
+      "categoryId": "clothes",
+      "title": "grande",
+      "reviewKey": "v27:recorded-grande",
+      "audio": null,
+      "context": "Este vestido es grande.",
+      "contextRu": "Это платье большое.",
+      "usage": "Grande одинаково по роду; во множественном grandes. Перед одним существительным часто gran, с изменением смысла.",
+      "accepted": [
+        "grande"
+      ]
+    },
+    {
+      "id": "word:v27:recorded-mujer",
+      "type": "word",
+      "kind": "word",
+      "es": "mujer",
+      "ru": "женщина",
+      "day": 10,
+      "topic": "Семья и люди",
+      "categoryId": "people",
+      "title": "mujer",
+      "reviewKey": "v27:recorded-mujer",
+      "audio": null,
+      "context": "Esa mujer vive aquí.",
+      "contextRu": "Та женщина живёт здесь.",
+      "usage": "La mujer, женский род. Mi mujer в некоторых контекстах означает «моя жена».",
+      "accepted": [
+        "mujer"
+      ]
+    },
+    {
+      "id": "word:v27:recorded-noche",
+      "type": "word",
+      "kind": "word",
+      "es": "noche",
+      "ru": "ночь / вечер",
+      "day": 20,
+      "topic": "Привычки и распорядок",
+      "categoryId": "routine",
+      "title": "noche",
+      "reviewKey": "v27:recorded-noche",
+      "audio": null,
+      "context": "Trabajo por la noche.",
+      "contextRu": "Я работаю вечером / ночью.",
+      "usage": "La noche, женский род; por la noche — вечером / ночью в зависимости от времени.",
+      "accepted": [
+        "noche"
+      ]
+    },
+    {
+      "id": "word:v27:recorded-nosotros",
+      "type": "word",
+      "kind": "word",
+      "es": "nosotros",
+      "ru": "мы (мужская или смешанная группа)",
+      "day": 1,
+      "topic": "Знакомство и контакты",
+      "categoryId": "contacts",
+      "title": "nosotros",
+      "reviewKey": "v27:recorded-nosotros",
+      "audio": null,
+      "context": "Nosotros estudiamos español.",
+      "contextRu": "Мы учим испанский.",
+      "usage": "Nosotros для мужской/смешанной группы; nosotras для группы женщин. С глаголом местоимение часто опускается.",
+      "accepted": [
+        "nosotros"
+      ]
+    },
+    {
+      "id": "word:v27:recorded-nuevo",
+      "type": "word",
+      "kind": "word",
+      "es": "nuevo",
+      "ru": "новый",
+      "day": 8,
+      "topic": "Магазин и одежда",
+      "categoryId": "clothes",
+      "title": "nuevo",
+      "reviewKey": "v27:recorded-nuevo",
+      "audio": null,
+      "context": "Este libro es nuevo.",
+      "contextRu": "Эта книга новая.",
+      "usage": "Nuevo / nueva, во множественном nuevos / nuevas, по роду и числу существительного.",
+      "accepted": [
+        "nuevo"
+      ]
+    },
+    {
+      "id": "word:v27:recorded-pequeno-8d34b7",
+      "type": "word",
+      "kind": "word",
+      "es": "pequeño",
+      "ru": "маленький",
+      "day": 8,
+      "topic": "Магазин и одежда",
+      "categoryId": "clothes",
+      "title": "pequeño",
+      "reviewKey": "v27:recorded-pequeno-8d34b7",
+      "audio": null,
+      "context": "El vaso es pequeño.",
+      "contextRu": "Стакан маленький.",
+      "usage": "Pequeño / pequeña по роду; ñ произносится как отдельный испанский звук, не n.",
+      "accepted": [
+        "pequeño"
+      ]
+    },
+    {
+      "id": "word:v27:recorded-rojo",
+      "type": "word",
+      "kind": "word",
+      "es": "rojo",
+      "ru": "красный",
+      "day": 8,
+      "topic": "Магазин и одежда",
+      "categoryId": "clothes",
+      "title": "rojo",
+      "reviewKey": "v27:recorded-rojo",
+      "audio": null,
+      "context": "El vestido es rojo.",
+      "contextRu": "Платье красное.",
+      "usage": "Rojo / roja; los zapatos rojos — согласование множественного числа.",
+      "accepted": [
+        "rojo"
+      ]
+    },
+    {
+      "id": "word:v27:recorded-sal",
+      "type": "word",
+      "kind": "word",
+      "es": "sal",
+      "ru": "соль",
+      "day": 6,
+      "topic": "Еда и покупки",
+      "categoryId": "food",
+      "title": "sal",
+      "reviewKey": "v27:recorded-sal",
+      "audio": null,
+      "context": "Sin sal, por favor.",
+      "contextRu": "Без соли, пожалуйста.",
+      "usage": "La sal, женский род; sin sal — без соли. Обычно неисчисляемое существительное.",
+      "accepted": [
+        "sal"
+      ]
+    },
+    {
+      "id": "word:v27:recorded-sol",
+      "type": "word",
+      "kind": "word",
+      "es": "sol",
+      "ru": "солнце",
+      "day": 13,
+      "topic": "Интересы и досуг",
+      "categoryId": "interests",
+      "title": "sol",
+      "reviewKey": "v27:recorded-sol",
+      "audio": null,
+      "context": "Hoy hace sol.",
+      "contextRu": "Сегодня солнечно.",
+      "usage": "El sol, мужской род; hace sol — солнечно, а не hace el sol.",
+      "accepted": [
+        "sol"
+      ]
+    },
+    {
+      "id": "word:v27:recorded-tres",
+      "type": "word",
+      "kind": "word",
+      "es": "tres",
+      "ru": "три",
+      "day": 16,
+      "topic": "Время и встречи",
+      "categoryId": "time",
+      "title": "tres",
+      "reviewKey": "v27:recorded-tres",
+      "audio": null,
+      "context": "Son las tres.",
+      "contextRu": "Сейчас три часа.",
+      "usage": "Числительное не меняется по роду. Son las tres — три часа, a las tres — в три.",
+      "accepted": [
+        "tres"
+      ]
+    },
+    {
+      "id": "word:v27:recorded-uno",
+      "type": "word",
+      "kind": "word",
+      "es": "uno",
+      "ru": "один (самостоятельно)",
+      "day": 6,
+      "topic": "Еда и покупки",
+      "categoryId": "food",
+      "title": "uno",
+      "reviewKey": "v27:recorded-uno",
+      "audio": null,
+      "context": "Solo necesito uno.",
+      "contextRu": "Мне нужен только один (предмет мужского рода).",
+      "usage": "Uno отдельно; перед мужским существительным un, женским una. Число само по себе — uno.",
+      "accepted": [
+        "uno"
+      ]
+    },
+    {
+      "id": "word:v27:recorded-venir",
+      "type": "word",
+      "kind": "word",
+      "es": "venir",
+      "ru": "приходить / приезжать сюда",
+      "day": 23,
+      "topic": "Планы и приглашения",
+      "categoryId": "plans",
+      "title": "venir",
+      "reviewKey": "v27:recorded-venir",
+      "audio": null,
+      "context": "¿Puedes venir mañana?",
+      "contextRu": "Можешь прийти / приехать завтра?",
+      "usage": "Инфинитив; vengo — я прихожу. Venir — к месту говорящего; ir — идти/ехать в другое место.",
+      "accepted": [
+        "venir"
+      ]
+    },
+    {
+      "id": "word:v27:recorded-ver",
+      "type": "word",
+      "kind": "word",
+      "es": "ver",
+      "ru": "видеть / смотреть",
+      "day": 13,
+      "topic": "Интересы и досуг",
+      "categoryId": "interests",
+      "title": "ver",
+      "reviewKey": "v27:recorded-ver",
+      "audio": null,
+      "context": "Quiero ver una película.",
+      "contextRu": "Я хочу посмотреть фильм.",
+      "usage": "Инфинитив; veo — я вижу. Ver una película — посмотреть фильм.",
+      "accepted": [
+        "ver"
+      ]
+    },
+    {
+      "id": "word:v27:recorded-verde",
+      "type": "word",
+      "kind": "word",
+      "es": "verde",
+      "ru": "зелёный",
+      "day": 8,
+      "topic": "Магазин и одежда",
+      "categoryId": "clothes",
+      "title": "verde",
+      "reviewKey": "v27:recorded-verde",
+      "audio": null,
+      "context": "La camisa es verde.",
+      "contextRu": "Рубашка зелёная.",
+      "usage": "Verde одинаково для мужского и женского рода; verdes во множественном числе.",
+      "accepted": [
+        "verde"
+      ]
+    },
+    {
+      "id": "word:v27:recorded-yo",
+      "type": "word",
+      "kind": "word",
+      "es": "yo",
+      "ru": "я",
+      "day": 1,
+      "topic": "Знакомство и контакты",
+      "categoryId": "contacts",
+      "title": "yo",
+      "reviewKey": "v27:recorded-yo",
+      "audio": null,
+      "context": "Yo estudio español.",
+      "contextRu": "Я учу испанский.",
+      "usage": "Личное местоимение часто можно опустить: estudio español. Yo добавляет акцент или противопоставление.",
+      "accepted": [
+        "yo"
+      ]
+    },
+    {
+      "id": "word:v27:recorded-blanco",
+      "type": "word",
+      "kind": "word",
+      "es": "blanco",
+      "ru": "белый",
+      "day": 8,
+      "topic": "Магазин и одежда",
+      "categoryId": "clothes",
+      "title": "blanco",
+      "reviewKey": "v27:recorded-blanco",
+      "audio": null,
+      "context": "El vestido es blanco.",
+      "contextRu": "Платье белое.",
+      "usage": "Blanco / blanca; согласуется с родом и числом названного предмета.",
+      "accepted": [
+        "blanco"
+      ]
+    },
+    {
+      "id": "word:v27:recorded-caliente",
+      "type": "word",
+      "kind": "word",
+      "es": "caliente",
+      "ru": "горячий / тёплый",
+      "day": 6,
+      "topic": "Кафе и напитки",
+      "categoryId": "cafe",
+      "title": "caliente",
+      "reviewKey": "v27:recorded-caliente",
+      "audio": null,
+      "context": "El café está caliente.",
+      "contextRu": "Кофе горячий.",
+      "usage": "Caliente одинаково по роду. О горячем напитке: está caliente; о себе «мне жарко»: tengo calor.",
+      "accepted": [
+        "caliente"
+      ]
+    },
+    {
+      "id": "word:v27:recorded-caminar",
+      "type": "word",
+      "kind": "word",
+      "es": "caminar",
+      "ru": "идти пешком / ходить",
+      "day": 20,
+      "topic": "Привычки и распорядок",
+      "categoryId": "routine",
+      "title": "caminar",
+      "reviewKey": "v27:recorded-caminar",
+      "audio": null,
+      "context": "Me gusta caminar.",
+      "contextRu": "Мне нравится ходить пешком.",
+      "usage": "Инфинитив; camino — я иду пешком. Не обозначает поездку на транспорте.",
+      "accepted": [
+        "caminar"
+      ]
+    },
+    {
+      "id": "word:v27:recorded-cerca",
+      "type": "word",
+      "kind": "word",
+      "es": "cerca",
+      "ru": "близко / рядом",
+      "day": 7,
+      "topic": "Город и дорога",
+      "categoryId": "city",
+      "title": "cerca",
+      "reviewKey": "v27:recorded-cerca",
+      "audio": null,
+      "context": "La estación está cerca.",
+      "contextRu": "Вокзал рядом.",
+      "usage": "Наречие; cerca de + ориентир. Если ориентир не назван, de не нужно.",
+      "accepted": [
+        "cerca"
+      ]
+    },
+    {
+      "id": "word:v27:recorded-cinco",
+      "type": "word",
+      "kind": "word",
+      "es": "cinco",
+      "ru": "пять",
+      "day": 16,
+      "topic": "Время и встречи",
+      "categoryId": "time",
+      "title": "cinco",
+      "reviewKey": "v27:recorded-cinco",
+      "audio": null,
+      "context": "Tengo cinco minutos.",
+      "contextRu": "У меня есть пять минут.",
+      "usage": "Числительное не меняется по роду; cinco minutos — пять минут.",
+      "accepted": [
+        "cinco"
+      ]
+    },
+    {
+      "id": "word:v27:recorded-correcto",
+      "type": "word",
+      "kind": "word",
+      "es": "correcto",
+      "ru": "правильный",
+      "day": 3,
+      "topic": "Язык и просьбы о помощи",
+      "categoryId": "language",
+      "title": "correcto",
+      "reviewKey": "v27:recorded-correcto",
+      "audio": null,
+      "context": "Mi número es correcto.",
+      "contextRu": "Мой номер правильный.",
+      "usage": "Correcto / correcta по роду. Está correcto — оценка ответа; наречие correctamente — правильно.",
+      "accepted": [
+        "correcto"
+      ]
+    },
+    {
+      "id": "word:v27:recorded-cuatro",
+      "type": "word",
+      "kind": "word",
+      "es": "cuatro",
+      "ru": "четыре",
+      "day": 16,
+      "topic": "Время и встречи",
+      "categoryId": "time",
+      "title": "cuatro",
+      "reviewKey": "v27:recorded-cuatro",
+      "audio": null,
+      "context": "Son las cuatro.",
+      "contextRu": "Сейчас четыре часа.",
+      "usage": "Числительное не меняется по роду. Son las cuatro — четыре часа.",
+      "accepted": [
+        "cuatro"
+      ]
+    },
+    {
+      "id": "word:v27:recorded-negro",
+      "type": "word",
+      "kind": "word",
+      "es": "negro",
+      "ru": "чёрный",
+      "day": 8,
+      "topic": "Магазин и одежда",
+      "categoryId": "clothes",
+      "title": "negro",
+      "reviewKey": "v27:recorded-negro",
+      "audio": null,
+      "context": "El pantalón es negro.",
+      "contextRu": "Брюки чёрные.",
+      "usage": "Negro / negra по роду; здесь только цвет предмета.",
+      "accepted": [
+        "negro"
+      ]
+    },
+    {
+      "id": "word:v27:recorded-nino-d6108f",
+      "type": "word",
+      "kind": "word",
+      "es": "niño",
+      "ru": "ребёнок / мальчик",
+      "day": 10,
+      "topic": "Семья и люди",
+      "categoryId": "people",
+      "title": "niño",
+      "reviewKey": "v27:recorded-nino-d6108f",
+      "audio": null,
+      "context": "El niño tiene seis años.",
+      "contextRu": "Мальчику шесть лет.",
+      "usage": "El niño, мужской род; la niña — девочка. Niño может обозначать ребёнка, контекст уточняет пол.",
+      "accepted": [
+        "niño"
+      ]
+    },
+    {
+      "id": "word:v27:recorded-quien-fbc794",
+      "type": "word",
+      "kind": "word",
+      "es": "quién",
+      "ru": "кто (в вопросе)",
+      "day": 1,
+      "topic": "Знакомство и контакты",
+      "categoryId": "contacts",
+      "title": "quién",
+      "reviewKey": "v27:recorded-quien-fbc794",
+      "audio": null,
+      "context": "¿Quién viene?",
+      "contextRu": "Кто придёт?",
+      "usage": "Quién с письменным ударением в вопросе; quiénes — о нескольких людях.",
+      "accepted": [
+        "quién"
+      ]
     }
   ],
   "audioPolicy": "Строки мини-текстов воспроизводятся последовательностью отдельных оригинальных записей; единой студийной записи текста нет.",
@@ -6096,20 +9212,197 @@
     "sentence:v16:wake-seven": "routine",
     "sentence:v16:walk-tomorrow": "plans",
     "sentence:v16:market-yesterday": "past",
-    "sentence:v16:film-liked": "interests"
+    "sentence:v16:film-liked": "interests",
+    "word:v27:contacts-1": "contacts",
+    "word:v27:contacts-2": "contacts",
+    "word:v27:contacts-3": "contacts",
+    "word:v27:contacts-4": "contacts",
+    "phrase:v27:contacts-5": "contacts",
+    "phrase:v27:contacts-6": "contacts",
+    "sentence:v27:contacts-7": "contacts",
+    "sentence:v27:contacts-8": "contacts",
+    "word:v27:language-1": "language",
+    "word:v27:language-2": "language",
+    "word:v27:language-3": "language",
+    "word:v27:language-4": "language",
+    "phrase:v27:language-5": "language",
+    "phrase:v27:language-6": "language",
+    "sentence:v27:language-7": "language",
+    "sentence:v27:language-8": "language",
+    "word:v27:wellbeing-1": "wellbeing",
+    "word:v27:wellbeing-2": "wellbeing",
+    "word:v27:wellbeing-3": "wellbeing",
+    "word:v27:wellbeing-4": "wellbeing",
+    "phrase:v27:wellbeing-5": "wellbeing",
+    "phrase:v27:wellbeing-6": "wellbeing",
+    "sentence:v27:wellbeing-7": "wellbeing",
+    "sentence:v27:wellbeing-8": "wellbeing",
+    "word:v27:people-1": "people",
+    "word:v27:people-2": "people",
+    "word:v27:people-3": "people",
+    "word:v27:people-4": "people",
+    "phrase:v27:people-5": "people",
+    "phrase:v27:people-6": "people",
+    "sentence:v27:people-7": "people",
+    "sentence:v27:people-8": "people",
+    "word:v27:home-1": "home",
+    "word:v27:home-2": "home",
+    "word:v27:home-3": "home",
+    "word:v27:home-4": "home",
+    "phrase:v27:home-5": "home",
+    "phrase:v27:home-6": "home",
+    "sentence:v27:home-7": "home",
+    "sentence:v27:home-8": "home",
+    "word:v27:city-1": "city",
+    "word:v27:city-2": "city",
+    "word:v27:city-3": "city",
+    "word:v27:city-4": "city",
+    "phrase:v27:city-5": "city",
+    "phrase:v27:city-6": "city",
+    "sentence:v27:city-7": "city",
+    "sentence:v27:city-8": "city",
+    "word:v27:transport-1": "transport",
+    "word:v27:transport-2": "transport",
+    "word:v27:transport-3": "transport",
+    "word:v27:transport-4": "transport",
+    "phrase:v27:transport-5": "transport",
+    "phrase:v27:transport-6": "transport",
+    "sentence:v27:transport-7": "transport",
+    "sentence:v27:transport-8": "transport",
+    "word:v27:cafe-1": "cafe",
+    "word:v27:cafe-2": "cafe",
+    "word:v27:cafe-3": "cafe",
+    "word:v27:cafe-4": "cafe",
+    "phrase:v27:cafe-5": "cafe",
+    "phrase:v27:cafe-6": "cafe",
+    "sentence:v27:cafe-7": "cafe",
+    "sentence:v27:cafe-8": "cafe",
+    "word:v27:food-1": "food",
+    "word:v27:food-2": "food",
+    "word:v27:food-3": "food",
+    "word:v27:food-4": "food",
+    "phrase:v27:food-5": "food",
+    "phrase:v27:food-6": "food",
+    "sentence:v27:food-7": "food",
+    "sentence:v27:food-8": "food",
+    "word:v27:clothes-1": "clothes",
+    "word:v27:clothes-2": "clothes",
+    "word:v27:clothes-3": "clothes",
+    "word:v27:clothes-4": "clothes",
+    "phrase:v27:clothes-5": "clothes",
+    "phrase:v27:clothes-6": "clothes",
+    "sentence:v27:clothes-7": "clothes",
+    "sentence:v27:clothes-8": "clothes",
+    "word:v27:time-1": "time",
+    "word:v27:time-2": "time",
+    "word:v27:time-3": "time",
+    "word:v27:time-4": "time",
+    "phrase:v27:time-5": "time",
+    "phrase:v27:time-6": "time",
+    "sentence:v27:time-7": "time",
+    "sentence:v27:time-8": "time",
+    "word:v27:work-1": "work",
+    "word:v27:work-2": "work",
+    "word:v27:work-3": "work",
+    "word:v27:work-4": "work",
+    "phrase:v27:work-5": "work",
+    "phrase:v27:work-6": "work",
+    "sentence:v27:work-7": "work",
+    "sentence:v27:work-8": "work",
+    "word:v27:routine-1": "routine",
+    "word:v27:routine-2": "routine",
+    "word:v27:routine-3": "routine",
+    "word:v27:routine-4": "routine",
+    "phrase:v27:routine-5": "routine",
+    "phrase:v27:routine-6": "routine",
+    "sentence:v27:routine-7": "routine",
+    "sentence:v27:routine-8": "routine",
+    "word:v27:interests-1": "interests",
+    "word:v27:interests-2": "interests",
+    "word:v27:interests-3": "interests",
+    "word:v27:interests-4": "interests",
+    "phrase:v27:interests-5": "interests",
+    "phrase:v27:interests-6": "interests",
+    "sentence:v27:interests-7": "interests",
+    "sentence:v27:interests-8": "interests",
+    "word:v27:plans-1": "plans",
+    "word:v27:plans-2": "plans",
+    "word:v27:plans-3": "plans",
+    "word:v27:plans-4": "plans",
+    "phrase:v27:plans-5": "plans",
+    "phrase:v27:plans-6": "plans",
+    "sentence:v27:plans-7": "plans",
+    "sentence:v27:plans-8": "plans",
+    "word:v27:past-1": "past",
+    "word:v27:past-2": "past",
+    "word:v27:past-3": "past",
+    "word:v27:past-4": "past",
+    "phrase:v27:past-5": "past",
+    "phrase:v27:past-6": "past",
+    "sentence:v27:past-7": "past",
+    "sentence:v27:past-8": "past",
+    "word:v27:recorded-ahi-d7a38d": "city",
+    "word:v27:recorded-bueno": "wellbeing",
+    "word:v27:recorded-comer": "food",
+    "word:v27:recorded-con": "language",
+    "word:v27:recorded-cuando-e311c5": "time",
+    "word:v27:recorded-como-a429cf": "language",
+    "word:v27:recorded-decir": "language",
+    "word:v27:recorded-dormir": "routine",
+    "word:v27:recorded-dia-bfbf44": "time",
+    "word:v27:recorded-donde-cd8781": "city",
+    "word:v27:recorded-esto": "home",
+    "word:v27:recorded-grande": "clothes",
+    "word:v27:recorded-mujer": "people",
+    "word:v27:recorded-noche": "routine",
+    "word:v27:recorded-nosotros": "contacts",
+    "word:v27:recorded-nuevo": "clothes",
+    "word:v27:recorded-pequeno-8d34b7": "clothes",
+    "word:v27:recorded-rojo": "clothes",
+    "word:v27:recorded-sal": "food",
+    "word:v27:recorded-sol": "interests",
+    "word:v27:recorded-tres": "time",
+    "word:v27:recorded-uno": "food",
+    "word:v27:recorded-venir": "plans",
+    "word:v27:recorded-ver": "interests",
+    "word:v27:recorded-verde": "clothes",
+    "word:v27:recorded-yo": "contacts",
+    "word:v27:recorded-blanco": "clothes",
+    "word:v27:recorded-caliente": "cafe",
+    "word:v27:recorded-caminar": "routine",
+    "word:v27:recorded-cerca": "city",
+    "word:v27:recorded-cinco": "time",
+    "word:v27:recorded-correcto": "language",
+    "word:v27:recorded-cuatro": "time",
+    "word:v27:recorded-negro": "clothes",
+    "word:v27:recorded-nino-d6108f": "people",
+    "word:v27:recorded-quien-fbc794": "contacts"
   },
   "contentExpansion": {
-    "version": 16,
+    "version": 27,
     "originalItemCount": 196,
-    "addedItemCount": 120,
+    "addedItemCount": 284,
     "authoredAudioPolicy": "Новые авторские примеры имеют audio:null. Аудио у семи новых сочетаний — полный неизменённый исходный контекст; отдельная запись сочетания не заявляется.",
     "practicePolicy": "accepted содержит только подготовленные точные формы. usage объясняет регистр и смысл; самостоятельные варианты не объявляются грамматически неверными. Темы помогают выбрать практику и не расширяют автоматически программу урока.",
     "categoryResolution": "itemThemes[item.id] -> categories[].id. Старые item.topic и все старые item objects сохранены без изменения.",
     "counts": {
-      "word": 121,
-      "phrase": 71,
-      "sentence": 112,
+      "word": 221,
+      "phrase": 103,
+      "sentence": 144,
       "text": 12
+    },
+    "v27": {
+      "added": 164,
+      "counts": {
+        "word": 100,
+        "phrase": 32,
+        "sentence": 32
+      },
+      "themes": 16,
+      "originalContextAudio": 7,
+      "policy": "Дополнительные модели по темам; не расширяют автоматически обязательные уроки. Аудио — только полная неизменённая подписанная запись; новые авторские примеры без записи явно помечены.",
+      "standaloneAudioLemmasAdded": 36,
+      "standaloneWordCoverage": 51
     }
   }
 }
