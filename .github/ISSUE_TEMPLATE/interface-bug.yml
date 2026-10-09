@@ -1,0 +1,36 @@
+name: Ошибка интерфейса
+description: Навигация, сохранение, звук, мобильная версия или другой сбой приложения.
+title: "[Интерфейс] "
+body:
+  - type: input
+    id: location
+    attributes:
+      label: Где возникла проблема?
+      placeholder: "Например: день 2 → урок → выбор ответа"
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Как воспроизвести?
+      description: Перечисли действия, после которых возникает ошибка.
+    validations:
+      required: true
+  - type: textarea
+    id: result
+    attributes:
+      label: Что произошло и что ожидалось?
+    validations:
+      required: true
+  - type: input
+    id: device
+    attributes:
+      label: Устройство и браузер
+      placeholder: "Например: iPhone, Safari; Windows, Chrome"
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Снимок экрана или дополнительные детали
+      description: Если знаешь версию курса, укажи её. Не добавляй личный экспорт прогресса или запись голоса.

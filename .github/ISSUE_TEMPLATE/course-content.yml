@@ -1,0 +1,36 @@
+name: Ошибка в учебном материале
+description: Неверный ключ, неясное условие, перевод, объяснение или несовпадение озвучки.
+title: "[Материал] "
+body:
+  - type: input
+    id: location
+    attributes:
+      label: День и вид задания
+      placeholder: "Например: день 2, квиз; словарь → Самочувствие"
+    validations:
+      required: true
+  - type: textarea
+    id: prompt
+    attributes:
+      label: Условие или фраза
+      description: Скопируй текст, который вызвал вопрос. Для озвучки укажи написанную фразу и что слышно.
+    validations:
+      required: true
+  - type: textarea
+    id: answer
+    attributes:
+      label: Какой ответ был выбран и как его проверил курс?
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Как должно быть?
+      description: Предложи исправление или объясни, что непонятно. Ссылка на языковой источник приветствуется.
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Дополнительные детали
+      description: Можно приложить снимок задания. Не добавляй личные данные или запись голоса.

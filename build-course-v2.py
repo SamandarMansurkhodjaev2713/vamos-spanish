@@ -20,7 +20,7 @@ data['pathway']=json.loads((base/'pathway-data.json').read_text(encoding='utf8')
 data['videoGuide']=json.loads((base/'video-guide-v13.json').read_text(encoding='utf8'))
 data['repair']=json.loads((base/'course-repair-v14.json').read_text(encoding='utf8'))
 
-data['version']='6.12-ready-to-study'
+data['version']='6.13-guided-conversations'
 data['status']='Личный курс с оригинальными записями, тренировкой фраз и локальной записью голоса. Учебный эффект и отсутствие акцента не гарантированы.'
 (web/'course-data.js').write_text('window.VAMOS_DATA='+json.dumps(data,ensure_ascii=False).replace('</',r'<\/')+';\n',encoding='utf8')
 lucide=web/'assets/lucide.min.js'
@@ -33,7 +33,8 @@ print('Built standalone course v5;',len(data['lessons']),'lessons;',len(data['ex
 # Content versions prevent a long-lived browser from mixing releases.
 def version_asset(match):
  path=web/match.group(2)
- digest=hashlib.sha256(path.read_bytes()).hexdigest()[:12]
+ # GitHub serves Git's LF-normalized text, even when this Windows checkout uses CRLF.
+ digest=hashlib.sha256(path.read_bytes().replace(b'\r\n',b'\n')).hexdigest()[:12]
  return match.group(1)+match.group(2)+'?v='+digest+match.group(3)
 shell=(web/'course-shell.html').read_text(encoding='utf8')
 (web/'index.html').write_text(re.sub(r'((?:src|href)=")([^"?]+\.(?:js|css))(")',version_asset,shell),encoding='utf8')
