@@ -50,7 +50,7 @@ window.VamosNavigation={create(api){
    context.textContent=text;context.title=text;context.setAttribute('aria-label',text);
   }
   const main=document.getElementById('main');
-  if(view==='practice'&&kind!=='menu'&&main&&!main.querySelector('[data-practice="menu"],[data-practice-open="menu"]')){
+  if(view==='practice'&&kind!=='menu'&&main&&!main.querySelector('[data-practice="menu"],[data-practice-open="menu"],[data-mission-close]')){
    let trail=main.querySelector('.section-trail');
    if(!trail){trail=document.createElement('div');trail.className='section-trail';main.prepend(trail)}
    trail.innerHTML=`<button type="button" class="btn quiet" data-nav="practice">${icon('arrow-left')}К практике</button>`;

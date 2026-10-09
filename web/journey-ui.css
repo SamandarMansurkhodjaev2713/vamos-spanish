@@ -24,3 +24,49 @@
 
 .profile-daily-list{grid-template-columns:repeat(2,minmax(0,1fr))}.profile-daily-action:nth-child(3){border-left:0;border-top:1px solid var(--line);padding-left:0}.profile-daily-action:nth-child(4){border-top:1px solid var(--line)}
 @media(max-width:700px){.profile-daily-list{grid-template-columns:1fr}.profile-daily-action:nth-child(n){border-left:0;padding-left:0}}
+
+/* One partner turn, then one learner response; the club identity stays quiet. */
+.mission-focused{max-width:720px}
+.mission-focused>.section-head{margin-bottom:16px;gap:12px}
+.mission-focused>.section-head>span{font-size:14px;white-space:nowrap;font-variant-numeric:tabular-nums}
+.mission-focused .mission-heading h1{font-size:clamp(26px,4vw,34px);max-width:none;margin-bottom:8px}
+.mission-focused .mission-progress{margin:0 0 16px;font-size:14px}
+.mission-focused .mission-scene-copy{max-width:65ch;margin-block:16px 20px}
+.mission-focused .mission-scene-copy h2{font-size:17px;line-height:1.45;margin-bottom:10px}
+.mission-focused .mission-scene-copy p{font-size:15px;line-height:1.6;color:var(--muted)}
+.mission-focused .mission-scene-copy .small{margin-top:10px;font-size:13px}
+.mission-focused :is(.mission-context-info,.mission-tempo){margin-block:8px 12px;border:0;border-bottom:1px solid var(--line);padding:0 0 8px}
+.mission-focused :is(.mission-context-info,.mission-tempo)>summary{min-height:44px;display:flex;align-items:center;cursor:pointer;color:var(--accent);font-size:15px;gap:8px}
+.mission-focused :is(.mission-context-info,.mission-tempo)>summary>svg{width:18px;height:18px;flex:0 0 18px;margin-left:auto}
+.mission-focused :is(.mission-context-info,.mission-tempo)[open]>summary>svg{transform:rotate(180deg)}
+.mission-focused .mission-tempo .audio-preferences{margin-block:12px 4px}
+.mission-focused .mission-turn{margin-block:16px 36px}
+.mission-focused .mission-partner{width:100%;max-width:none;grid-template-columns:48px minmax(0,1fr);padding:20px;gap:16px;border-radius:13px}
+.mission-focused .mission-partner [data-mission-audio]{margin-block:12px}
+.mission-focused .mission-partner>.mascot{width:48px;height:48px;min-width:48px;grid-row:1}
+.mission-focused .mission-partner h2{margin-bottom:8px}
+.mission-focused .mission-partner .mission-support{display:flex;flex-wrap:wrap;gap:8px 20px;margin-top:8px}
+.mission-focused .mission-partner .mission-support .btn.quiet{border:0;padding:8px 0;margin:0;min-height:44px;white-space:normal;min-width:0;font-size:15px}
+.mission-focused .mission-partner .mission-support p{flex-basis:100%;margin:8px 0;overflow-wrap:anywhere}
+.mission-focused .mission-prompt{margin:0 0 16px}
+.mission-focused .mission-prompt p{font-size:18px;line-height:1.55}
+.mission-focused .btn.mission-listen-return{padding-inline:0;min-height:44px;margin:0 0 8px;font-size:15px}
+.mission-focused .mission-response{margin:0;padding:0;border:0;border-radius:0;background:transparent}
+.mission-focused .mission-response>label{margin:0;font-size:16px}
+.mission-focused .mission-response .field{min-height:96px;resize:vertical}
+.mission-focused .mission-oral{border:0;margin:16px 0 0;padding:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:4px 16px}
+.mission-focused .mission-oral legend{padding-bottom:8px;font-size:15px;line-height:1.45}
+.mission-focused .mission-oral label{min-height:48px;padding:8px 0;gap:10px;font-size:15px;line-height:1.5}
+.mission-focused .mission-oral input{margin-top:2px}
+.mission-focused .mission-actions{margin-block:16px;gap:12px}
+.mission-focused .mission-actions>.btn{margin:0}
+.mission-focused .mission-actions>.btn.primary{flex:1;min-width:0}
+.mission-focused .mission-tools{border-top:1px solid var(--line);padding-top:8px;margin-top:28px}
+.mission-focused .mission-tools>.small{margin-top:20px;font-size:13px;line-height:1.6;color:var(--muted)}
+.mission-focused .mission-record{margin-block:12px 20px}
+.mission-focused .mission-feedback{margin-block:24px;padding-block:16px}
+.mission-focused .mission-feedback h3{font-size:19px;line-height:1.4}
+.mission-focused .mission-feedback p{font-size:15px;line-height:1.6}
+.large-text .mission-focused .mission-oral{grid-template-columns:1fr}
+@media(min-width:960px){.main:has(.mission-focused){padding-top:24px}}
+@media(max-width:600px){.mission-focused>.section-head{margin-bottom:20px}.mission-focused .mission-heading h1{font-size:27px}.mission-focused .mission-partner{padding:20px;grid-template-columns:36px minmax(0,1fr);gap:12px}.mission-focused .mission-partner>.mascot{width:36px;height:36px;min-width:36px}.mission-focused .mission-partner h2{font-size:16px}.mission-focused .mission-actions>.btn{min-height:48px}.mission-focused .mission-actions:has([data-mission-next]){flex-direction:column-reverse;align-items:stretch}}
