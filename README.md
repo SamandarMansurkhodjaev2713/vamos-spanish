@@ -143,6 +143,7 @@ node check-mission-path-v30.cjs
 node check-library-practice-v30.cjs
 node check-reader-v28.cjs
 node check-reader-context-v30.cjs
+node check-reader-search-v30.cjs
 node check-speech-v30.cjs
 node check-recording-v30.cjs
 node check-recordings-model-v30.cjs
