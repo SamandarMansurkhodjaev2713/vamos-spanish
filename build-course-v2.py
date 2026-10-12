@@ -23,7 +23,8 @@ data['repair']=json.loads((base/'course-repair-v14.json').read_text(encoding='ut
 data['guidance']=json.loads((base/'course-guidance.json').read_text(encoding='utf8')) if (base/'course-guidance.json').exists() else {'lessons':[]}
 data['wordAudio']=json.loads((base/'word-audio.json').read_text(encoding='utf8')) if (base/'word-audio.json').exists() else {'clips':{},'words':{}}
 data['dailyPlan']=json.loads((base/'course-daily-plan.json').read_text(encoding='utf8'))
-data['version']='6.15-guided-daily-practice'
+data['phraseCoaching']=json.loads((base/'course-phrase-coaching.json').read_text(encoding='utf8'))
+data['version']='6.16-phrase-coaching'
 data['status']='Личный курс с оригинальными записями, тренировкой фраз и локальной записью голоса. Учебный эффект и отсутствие акцента не гарантированы.'
 (web/'course-data.js').write_text('window.VAMOS_DATA='+json.dumps(data,ensure_ascii=False).replace('</',r'<\/')+';\n',encoding='utf8')
 lucide=web/'assets/lucide.min.js'

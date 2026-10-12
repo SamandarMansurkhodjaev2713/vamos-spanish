@@ -36,5 +36,8 @@ async function test(name,fn){await fn();results.push({name,pass:true})}
  await test('Oversize and wrong-format files fail without reading excess data or modifying learner evidence',async()=>{
   const e=environment(),before=copy(e.state);let reads=0;await e.api.change({id:'backup-file',files:[{size:8388609,text:async()=>{reads++;return payload([1])}}]});assert.equal(reads,0);assert.match(e.api.html(),/Файл слишком большой/);await e.api.change({id:'backup-file',files:[{size:100,text:async()=>JSON.stringify({format:'other',state:{completed:[1]}})}]});assert.match(e.api.html(),/Выбери файл, сохранённый/);assert.deepEqual(e.state,before);
  });
+ await test('Introductory completion reports survive import; an unfinished cycle cannot claim done',async()=>{
+  const e=environment(),d=deferred(),pending=e.read(d);d.resolve(payload([],{learning:{sessions:{1:{stage:0,introIndex:1,introCycles:[2,1,2],introDone:[true,true,false],time:Date.now(),signature:'v14:1:a'}}}}));await pending;assert.equal(e.apply(),true);assert.deepEqual(Array.from(e.state.learning.sessions[1].introDone),[true,false,false]);assert.deepEqual(Array.from(e.state.learning.sessions[1].introCycles),[2,1,2]);assert.deepEqual(Array.from(e.state.completed),[3]);
+ });
  const dir=path.join(__dirname,'.impeccable/review-v29');fs.mkdirSync(dir,{recursive:true});fs.writeFileSync(path.join(dir,'backup-check.json'),JSON.stringify({pass:true,groups:results,limits:'Production async importer in VM. Merge models are stubbed to preserve existing state; earliest-answer merge and browser focus are separately tested by other suites. No user files or storage modified.'},null,2));console.log(`PASS ${results.length} backup async/import groups`);
 })().catch(e=>{console.error(e);process.exitCode=1});
