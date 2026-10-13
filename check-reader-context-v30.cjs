@@ -3,7 +3,7 @@ const fs=require('node:fs'),path=require('node:path'),vm=require('node:vm'),asse
 const root=__dirname,read=f=>fs.readFileSync(path.join(root,f),'utf8'),json=f=>JSON.parse(read(f));
 const baseline='f18373bdcfd4c71017b106f9f46f40e7d2eff6e0';
 const data={library:json('course-library.json'),expanded:json('course-expanded.json'),pathway:json('pathway-data.json'),stories:json('course-stories.json'),wordAudio:json('word-audio.json')};
-function moduleFrom(source,state={day:1,audioSpeed:.5}){const patched=source.replace('return {html,render:html,','return {auditTokens:()=>[...tokenMap.values()],html,render:html,');assert.notEqual(patched,source);const c={window:{},Date,Map,Set,document:{querySelector:()=>null}};vm.createContext(c);vm.runInContext(patched,c);return c.window.VamosReader.create({data,state,esc:String,save:()=>{},render:()=>{}});}
+function moduleFrom(source,state={day:1,audioSpeed:.5}){const patched=source.replace(/return \{(?:toggle,)?html,render:html,/, 'return {auditTokens:()=>[...tokenMap.values()],html,render:html,');assert.notEqual(patched,source);const c={window:{},Date,Map,Set,document:{querySelector:()=>null}};vm.createContext(c);vm.runInContext(patched,c);return c.window.VamosReader.create({data,state,esc:String,save:()=>{},render:()=>{}});}
 const current=moduleFrom(read('web/reader.js')),old=moduleFrom(cp.execFileSync('git',['show',baseline+':web/reader.js'],{cwd:root,encoding:'utf8'})),tokens=new Map(current.auditTokens().map(t=>[t.key,t]));
 const cases=[
  ['reading:a1-shop:1:21','queda','La primera camisa le queda pequeña.','в le queda pequeña: «ей мала»','в le queda: «ей подходит по размеру / сидит на ней»'],
