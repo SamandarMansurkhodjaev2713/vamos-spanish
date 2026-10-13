@@ -20,3 +20,19 @@
 .studio-session .own-task{margin:24px 0}.studio-session .own-task .intro-guide{margin-top:0}.own-support,.own-recording{border-top:1px solid var(--line);margin:20px 0;padding-top:14px}.own-support>summary,.own-recording>summary{min-height:44px;color:var(--accent);cursor:pointer;font-size:14px}.own-support>div,.own-recording>div{padding-top:12px}.studio-session .own-task .note{max-width:48ch}
 
 .paused :is(.intro-guide-live>.mascot,.feedback-guide>.mascot){animation-play-state:paused}
+.focused-lesson .exercise-heading p{max-width:58ch;margin-top:12px;color:var(--muted);line-height:1.55}
+.focused-lesson .lesson-guidance{padding-block:20px}
+.focused-lesson .lesson-guidance>p+p{margin-top:16px}
+.focused-lesson .lesson-help-model{margin-top:20px}
+.focused-lesson .oral-models{margin-block:24px}
+.own-listening{max-width:680px;margin-inline:auto}
+.own-listening .session-step>p{max-width:54ch}
+.own-listening-player{display:flex;align-items:center;flex-wrap:wrap;gap:20px;margin-block:32px}
+.own-listening-player .audio-status{flex-basis:100%;margin:0}
+.own-listening .prep-model{margin-block:24px}
+.own-listening>.btn.primary{min-height:48px;margin-top:24px}
+.focused-lesson .lesson-help-model .guidance-example{border:0;padding:0;margin-block:20px}
+.own-listening .session-step h1{font-size:2rem;line-height:1.2}
+.own-listening-note{margin-top:16px;max-width:54ch}
+.own-listening-player select{min-height:44px;padding:8px 12px;border:1px solid var(--line);border-radius:12px;background:var(--paper);color:var(--ink);font:inherit}
+@media(max-width:600px){.focused-lesson .exercise-header{gap:12px;margin-bottom:20px}.focused-lesson .exercise-title h1{font-size:1.625rem}.focused-lesson .option{min-height:56px}.focused-lesson .lesson-help>summary{min-height:48px}.own-listening-player{gap:16px;margin-block:24px}.own-listening .btn.primary{width:100%}.focused-lesson .lesson-guidance{padding-block:16px}}

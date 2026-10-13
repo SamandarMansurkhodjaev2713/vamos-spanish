@@ -25,7 +25,7 @@ files=lists['runtime']+['assets/'+x for x in lists['assets']]
 for name in files:assert (r/'web'/name).read_bytes()==(r/'docs'/name).read_bytes(),name
 def payload(s):return json.loads(s.removeprefix('window.VAMOS_DATA=').rstrip(';\n'))
 data=payload((r/'web/course-data.js').read_text(encoding='utf8'))
-assert data['version']=='6.17-reading-practice'
+assert data['version']=='6.18-guided-days'
 assert data['phraseCoaching']==json.loads((r/'course-phrase-coaching.json').read_text(encoding='utf8'))
 assert len(data['phraseCoaching']['lessons'])==7 and sum(len(l['models']) for l in data['phraseCoaching']['lessons'])==21
 previous=payload(subprocess.check_output(['git','show','b0d0421:web/course-data.js'],cwd=r).decode('utf8'))

@@ -130,7 +130,7 @@ check("¿Puedes repetir?" in lessons[2]["introTips"][2]["tipRu"], "day 3: shorte
 check("Estoy aprendiendo español" in lessons[5]["miniRule"]["explanation"], "day 6: learning text model prepared")
 check("mi película favorita" in lessons[8]["miniRule"]["explanation"], "day 9: own vs su model")
 check("a mí también" in lessons[16]["miniRule"]["explanation"], "day 17: a mí vs yo")
-check([g["day"] for g in lessons if "quizPrep" in g] == [3, 6, 8, 9, 11, 16, 19, 22, 23, 27], "10 explicit prior-to-quiz text primers")
+check([g["day"] for g in lessons if "quizPrep" in g] == [3, 6, 8, 9, 11, 16, 17, 19, 22, 23, 27], "11 explicit prior-to-quiz text primers")
 
 for aid in audio_ids:
     entry = expanded["audio"][aid]

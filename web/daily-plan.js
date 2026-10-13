@@ -70,5 +70,5 @@ window.VamosDailyPlan={create(api){
   const c=context(day,options);if(!c)return '';
   return `<section class="daily-plan" aria-label="Методичка дня ${day}">${brief(day,options)}<details class="daily-plan-model-section"><summary>Три фразы дня</summary>${modelsHTML(c)}</details>${c.phases.map(p=>`<details class="daily-plan-phase"><summary>${esc(phaseNames[p.id])} · ≈ ${p.minutes} мин</summary>${phaseHTML(day,p.id,options)}</details>`).join('')}${tomorrowHTML(day,options)}<p class="small">${esc(c.row.evidenceNotice)}</p></section>`;
  }
-  return {context,brief,cycleHTML,phaseHTML,tomorrowHTML,html,phases:(day,options)=>context(day,options)?.phases||[],estimate:(day,options)=>context(day,options)?.minutes||0};
+  return {context,brief,cycleHTML,phaseHTML,tomorrowHTML,html,ownSupportHTML:(day,options)=>{const c=context(day,options);return c?transferHTML(c):''},phases:(day,options)=>context(day,options)?.phases||[],estimate:(day,options)=>context(day,options)?.minutes||0};
 }};

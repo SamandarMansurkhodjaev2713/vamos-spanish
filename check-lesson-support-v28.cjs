@@ -27,14 +27,14 @@ function harness(day=1){
  return {c,state,observed,events};
 }
 function check(name,fn){try{fn();checks.push({name,passed:true})}catch(e){issues.push({name,error:e.message})}}
-check('Eight primers require an explicit action and award no answer/completion',()=>{
- for(const day of [3,6,8,11,16,19,22,27]){const h=harness(day),{c}=h;let html=c.exercise();assert.match(html,/quiz-preparation/);assert.doesNotMatch(html,/data-option=/);c.advance();assert.equal(c.quizPrepSeen,true);assert.equal(c.stage,2);assert.equal(c.result,null);assert.equal(c.selected,null);assert.equal(h.observed.length,0);assert.equal(h.state.completed.length,0);assert(!h.events.some(e=>Array.isArray(e)&&e[0]==='log'));assert.match(c.exercise(),/data-option=/);}
+check('Eleven primers require an explicit action and award no answer/completion',()=>{
+ for(const day of [3,6,8,9,11,16,17,19,22,23,27]){const h=harness(day),{c}=h;let html=c.exercise();assert.match(html,/quiz-preparation/);assert.doesNotMatch(html,/data-option=/);c.advance();assert.equal(c.quizPrepSeen,true);assert.equal(c.stage,2);assert.equal(c.result,null);assert.equal(c.selected,null);assert.equal(h.observed.length,0);assert.equal(h.state.completed.length,0);assert(!h.events.some(e=>Array.isArray(e)&&e[0]==='log'));assert.match(c.exercise(),/data-option=/);}
 });
-check('All 22 previously taught quiz models show their task directly',()=>{
+check('All 19 previously taught quiz models show their task directly',()=>{
  for(let day=1;day<=30;day++)if(!data.guidance.lessons[day-1].quizPrep){const {c}=harness(day);assert.doesNotMatch(c.exercise(),/quiz-preparation/);assert.match(c.exercise(),/data-option=/);}
 });
 check('Primer flag survives actual persisted lesson reload; an old selected quiz remains answerable',()=>{
- for(const day of [3,6,8,11,16,19,22,27]){const {c,state}=harness(day);c.advance();assert.equal(state.learning.sessions[day].quizPrepSeen,true);c.openLesson(day,true);assert.equal(c.stage,2);assert.equal(c.quizPrepSeen,true);assert.equal(c.selected,null);assert.doesNotMatch(c.exercise(),/quiz-preparation/);state.learning.sessions[day].quizPrepSeen=false;state.learning.sessions[day].selected=0;c.view='home';c.openLesson(day,true);assert.equal(c.quizPrepSeen,true);assert.equal(c.selected,0);assert.doesNotMatch(c.exercise(),/quiz-preparation/);}
+ for(const day of [3,6,8,9,11,16,17,19,22,23,27]){const {c,state}=harness(day);c.advance();assert.equal(state.learning.sessions[day].quizPrepSeen,true);c.openLesson(day,true);assert.equal(c.stage,2);assert.equal(c.quizPrepSeen,true);assert.equal(c.selected,null);assert.doesNotMatch(c.exercise(),/quiz-preparation/);state.learning.sessions[day].quizPrepSeen=false;state.learning.sessions[day].selected=0;c.view='home';c.openLesson(day,true);assert.equal(c.quizPrepSeen,true);assert.equal(c.selected,0);assert.doesNotMatch(c.exercise(),/quiz-preparation/);}
 });
 check('Five task modes mark opened help as aided in actual grading',()=>{
  for(let stage=1;stage<=5;stage++){const {c,state,observed}=harness(1);c.stage=stage;c.quizPrepSeen=true;c.onToggle({target:{dataset:{},open:true,hasAttribute:x=>x==='data-learning-support'}});assert.equal(c.hadHelp,true);assert.equal(state.learning.sessions[1].hadHelp,true);if([1,2,4].includes(stage))c.selected=c.currentTask().answer;else if(stage===3)c.tokens=c.target().es.split(/\s+/).map((_,i)=>i);else c.draft=c.target().es;c.checkTask();assert.equal(observed.length,1);assert.equal(observed[0].correct,true);assert.equal(observed[0].aided,true);assert.equal(state.completed.length,0);}
