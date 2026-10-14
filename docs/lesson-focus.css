@@ -36,3 +36,7 @@
 .own-listening-note{margin-top:16px;max-width:54ch}
 .own-listening-player select{min-height:44px;padding:8px 12px;border:1px solid var(--line);border-radius:12px;background:var(--paper);color:var(--ink);font:inherit}
 @media(max-width:600px){.focused-lesson .exercise-header{gap:12px;margin-bottom:20px}.focused-lesson .exercise-title h1{font-size:1.625rem}.focused-lesson .option{min-height:56px}.focused-lesson .lesson-help>summary{min-height:48px}.own-listening-player{gap:16px;margin-block:24px}.own-listening .btn.primary{width:100%}.focused-lesson .lesson-guidance{padding-block:16px}}
+
+.lesson-mode .lesson-actions-inner{display:flex;flex-direction:column;gap:8px}.lesson-mode .action-hint:not(:empty){display:block;max-width:58ch;text-align:center;font-size:13px;line-height:1.45;color:var(--ink)}.lesson-mode .action-hint:empty{display:none}.lesson-mode .lesson-rating-link{min-height:44px;margin:0;font-size:13px}.lesson-mode .main{padding-bottom:calc(172px + env(safe-area-inset-bottom))}.lesson-mode .exercise-meta small{line-height:1.45}
+
+.lesson-mode .exercise-header .exercise-meta{white-space:normal;max-width:108px;min-width:0;text-align:right}.lesson-mode .exercise-header .exercise-meta small{white-space:normal;display:block;overflow-wrap:normal}@media(max-width:360px){.lesson-mode .exercise-header .exercise-meta{max-width:94px;font-size:11px}}

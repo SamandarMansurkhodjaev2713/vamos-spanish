@@ -86,7 +86,7 @@ for i, (g, e, b, goal) in enumerate(zip(lessons, expanded["lessons"], bank, goal
     for kind in ("gap", "recall"):
         check(hints[kind]["audio"] == recalls[i], f"day {d}: {kind} independent native witness")
     check(hints["gap"]["missingWord"] == missing[i], f"day {d}: exact missing word")
-    check(re.search(r"(?<![A-Za-zÁ-ú])" + re.escape(missing[i]) + r"(?![A-Za-zÁ-ú])", hints["gap"]["hintRu"], re.I), f"day {d}: gap prose names actual missing model token")
+    check(not re.search(r"(?<![A-Za-zÁ-ú])" + re.escape(missing[i]) + r"(?![A-Za-zÁ-ú])", hints["gap"]["hintRu"], re.I), f"day {d}: first gap hint must not reveal missing model token")
     for kind in ("listening", "builder", "gap", "recall", "oral"):
         h = hints[kind]
         matches = [p for p in e["examples"] if p["audio"] == h["audio"]]

@@ -63,7 +63,10 @@ test('Day30 mission variation and delayed practice each use one bounded exchange
  assert.ok(api.phaseHTML(30,'mission').includes(esc(missionChange.instruction)));
  baseline.lessons[29].tomorrow.transferPrompt=t.transferPrompt;
  baseline.lessons[29].phases.find(p=>p.id==='mission').instructions.find(i=>i.id==='change').instruction=missionChange.instruction;
- assert.deepEqual(plan,baseline,'Only two authorized day30 instruction strings change; models, metadata and progress contract stay unchanged');
+ assert.equal(plan.version,'1.1-staged-support-daily-plan');baseline.version=plan.version;
+ for(const current of plan.lessons){const prior=baseline.lessons[current.day-1];for(const [phase,id]of [['lesson','solve'],['own','second']]){prior.phases.find(p=>p.id===phase).instructions.find(i=>i.id===id).instruction=current.phases.find(p=>p.id===phase).instructions.find(i=>i.id===id).instruction;}if([1,25].includes(current.day))prior.phases.find(p=>p.id==='own').instructions.find(i=>i.id==='first').instruction=current.phases.find(p=>p.id==='own').instructions.find(i=>i.id==='first').instruction;}
+ assert.match(plan.lessons[10].transfer.criteria[0],/два/);baseline.lessons[10].transfer.criteria[0]=plan.lessons[10].transfer.criteria[0];
+ assert.deepEqual(plan,baseline,'Only reviewed directions, one criterion and metadata version change; source models, timings and progress contract preserved');
 });
 test('Day30 extra dialogue own task is explicitly a short rehearsal and does not replace the final three scenes',()=>{
  const bank=read('exercise-bank.json'),row=bank.find(r=>r.day===30);

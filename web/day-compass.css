@@ -3,3 +3,5 @@
 @media(max-width:600px){.day-compass{padding:20px 16px;margin:20px auto}.day-compass h1{font-size:28px}.day-compass h3{font-size:19px}.compass-header{gap:14px}.compass-header .mascot{width:42px;height:42px}.compass-steps>li{grid-template-columns:24px minmax(0,1fr);gap:12px;padding:21px 0}.compass-step-title{gap:12px}.compass-record dl{grid-template-columns:80px minmax(0,1fr);gap:12px}.compass-can{padding:17px}.compass-start .btn{width:100%}.compass-material-links .btn{flex:1 1 180px}.compass-day-nav .btn{flex:1}}
 
 .compass-home{margin-bottom:20px}.day-compass h1{font-weight:550;letter-spacing:-.02em}
+
+.compass-overview>h2{font-size:22px;margin:28px 0 14px}.compass-teacher,.compass-progress{border-bottom:1px solid var(--line);padding-block:16px}.compass-teacher>summary,.compass-progress>summary,.compass-materials>summary{min-height:44px;display:flex;align-items:center;cursor:pointer;color:var(--accent);font-size:15px;line-height:1.5}.compass-teacher>.daily-plan{margin-top:20px}.compass-overview .compass-steps{margin-top:16px}

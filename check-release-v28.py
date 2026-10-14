@@ -37,7 +37,7 @@ for a in beginner['clips'].values():
 for name in files:assert (r/'web'/name).read_bytes()==(r/'docs'/name).read_bytes(),name
 def payload(s):return json.loads(s.removeprefix('window.VAMOS_DATA=').rstrip(';\n'))
 data=payload((r/'web/course-data.js').read_text(encoding='utf8'))
-assert data['version']=='6.21-reading-path'
+assert data['version']=='6.22-guided-lessons'
 assert data['beginnerReading']==json.loads((r/'course-reader-beginner.json').read_text(encoding='utf8'))
 assert data['literature']==json.loads((r/'course-literature.json').read_text(encoding='utf8'))
 assert data['phraseCoaching']==json.loads((r/'course-phrase-coaching.json').read_text(encoding='utf8'))
@@ -48,7 +48,7 @@ for key,value in previous.items():
   expected=json.loads(json.dumps(value))
   expected[29]['practice']['own']='Дополнительная короткая репетиция, не замена итоговым трём сценам: новая беседа около трёх минут — познакомься, обсуди интерес, задай вопросы и назови план. Затем другая сцена — договорённость о встрече.'
   assert data[key]==expected,'Only the witnessed day30 optional rehearsal wording may change'
- elif key not in ['library','version','guidance','goals','missions']:assert data[key]==value,'Unexpected core source change: '+key
+ elif key not in ['library','version','guidance','goals','missions','dailyPlan']:assert data[key]==value,'Unexpected core source change: '+key
 for key,name in [('library','course-library.json'),('guidance','course-guidance.json'),('wordAudio','word-audio.json'),('goals','course-goals.json'),('missions','mission-data.json')]:assert data[key]==json.loads((r/name).read_text(encoding='utf8'))
 assert len(data['lessons'])==30 and len(data['library']['items'])==480
 for old,current in zip(previous['library']['items'],data['library']['items'][:316]):
