@@ -99,3 +99,7 @@
 .reader-text-source summary{min-height:44px;cursor:pointer;color:var(--accent)}
 .reader-literature-detail .reader-heading h1{max-width:24ch}
 @media(max-width:600px){.reader-human-player{margin-block:24px;padding-block:20px}.reader-literature-detail .reader-spanish{font-size:1.1875rem}.reader-quick-filters{flex-wrap:wrap;gap:8px}.reader-human-player .reader-source-note{max-width:100%}}
+
+.reader-mini-practice{margin-block:32px}.reader-mini-practice>h2{font-size:24px;margin:0 0 12px}.reader-mini-practice article{padding-block:22px;border-bottom:1px solid var(--line)}.reader-mini-practice h3{font-size:18px;line-height:1.5;margin:0 0 14px}.reader-mini-practice li,.reader-mini-practice details p{line-height:1.7}.reader-mini-practice summary{min-height:44px;cursor:pointer;color:var(--accent)}
+
+.reader-word-unit{white-space:nowrap}

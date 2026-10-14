@@ -4,7 +4,7 @@ window.VamosNative={create(api){
  const {state,data,esc,icon,save,toast,activeLesson}=api;
  state.native={awake:state.native?.awake===true};
  const scope=new URL('./',location.href),prefix='vamos-'+encodeURIComponent(scope.pathname)+'-',mediaCache=prefix+'audio';
- const clips=[...Object.values(data.expanded.audio),...Object.values(data.wordAudio?.clips||{}),...(data.literature?.books||[]).map(b=>b.wholeAudio).filter(Boolean)],display=matchMedia('(display-mode: standalone)');
+ const clips=[...Object.values(data.expanded.audio),...Object.values(data.wordAudio?.clips||{}),...Object.values(data.beginnerReading?.clips||{}),...(data.literature?.books||[]).map(b=>b.wholeAudio).filter(Boolean)],display=matchMedia('(display-mode: standalone)');
  const supported='serviceWorker'in navigator&&'caches'in window,canVerify=!!window.crypto?.subtle;
  const canRecord=!!navigator.mediaDevices?.getUserMedia&&'MediaRecorder'in window;
  const canRecognize=!!(window.SpeechRecognition||window.webkitSpeechRecognition);
@@ -51,7 +51,7 @@ window.VamosNative={create(api){
   if(manifest)return manifest;
   const response=await fetch(new URL('assets/audio/ATTRIBUTION.json',scope));if(!response.ok)throw Error('manifest');
   const raw=await response.json(),byFile=new Map(Object.values(raw).map(p=>[p.file,p]));
-  for(const clip of [...Object.values(data.wordAudio?.clips||{}),...(data.literature?.books||[]).map(b=>b.wholeAudio).filter(Boolean)]){
+  for(const clip of [...Object.values(data.wordAudio?.clips||{}),...Object.values(data.beginnerReading?.clips||{}),...(data.literature?.books||[]).map(b=>b.wholeAudio).filter(Boolean)]){
    if(typeof clip.file!=='string'||!clip.file.startsWith('assets/')||clip.file.split('/').includes('..'))throw Error('manifest');
    byFile.set(clip.file,clip);
   }

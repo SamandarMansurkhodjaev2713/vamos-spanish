@@ -36,3 +36,9 @@ for item in reading.values():
  p=web/item['file'];assert len(p.read_bytes())==item['bytes'];assert hashlib.sha256(p.read_bytes()).hexdigest()==item['sha256'];out=dest/item['file'];out.parent.mkdir(parents=True,exist_ok=True);shutil.copy2(p,out)
 shutil.copy2(web/'assets/reading-audio/ATTRIBUTION.json',dest/'assets/reading-audio/ATTRIBUTION.json')
 print('Complete human literary recordings:',len(reading),'original MP3s verified.')
+
+beginner=json.loads((root/'course-reader-beginner.json').read_text(encoding='utf8'))
+for item in beginner['clips'].values():
+ p=web/item['file'];assert len(p.read_bytes())==item['bytes'];assert hashlib.sha256(p.read_bytes()).hexdigest()==item['sha256'];out=dest/item['file'];out.parent.mkdir(parents=True,exist_ok=True);shutil.copy2(p,out)
+shutil.copy2(web/'assets/beginner-audio/ATTRIBUTION.json',dest/'assets/beginner-audio/ATTRIBUTION.json')
+print('Beginner reading:',len(beginner['books']),'complete texts;',len(beginner['clips']),'original human clips.')

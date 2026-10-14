@@ -65,7 +65,7 @@
  function pauseLocalAudio(except=null){main.querySelectorAll('audio').forEach(media=>{if(media!==except)media.pause()})}
  function guardRecordingSurface(){if((recording||recordPending)&&!main.querySelector('.recorder')){stopRecording(false);return true}return false}
  main.addEventListener('play',event=>{if(event.target?.tagName==='AUDIO'){stopAudio();pauseLocalAudio(event.target)}},true);
- const audioItem=id=>data.expanded.audio[id]||data.wordAudio?.clips?.[id];
+ const audioItem=id=>data.expanded.audio[id]||data.wordAudio?.clips?.[id]||data.beginnerReading?.clips?.[id];
  function play(id,button){return playSequence(Array(state.audioRepeat).fill(id),button)}
  async function playSequence(ids,button){
   reader?.pauseAudio?.();

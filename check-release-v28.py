@@ -28,10 +28,17 @@ for a in reading.values():
  assert a['unaltered'] and a['sourceUrl'].startswith('https://archive.org/download/')
  assert hashlib.sha256((r/'web'/a['file']).read_bytes()).hexdigest()==a['sha256']
  assert len((r/'web'/a['file']).read_bytes())==a['bytes']
+beginner=json.loads((r/'course-reader-beginner.json').read_text(encoding='utf8'))
+files+=['assets/beginner-audio/ATTRIBUTION.json']+[a['file'] for a in beginner['clips'].values()]
+for a in beginner['clips'].values():
+ assert a['unaltered'] and a['license']=='CC BY-NC-ND 3.0'
+ assert hashlib.sha256((r/'web'/a['file']).read_bytes()).hexdigest()==a['sha256']
+ assert len((r/'web'/a['file']).read_bytes())==a['bytes']
 for name in files:assert (r/'web'/name).read_bytes()==(r/'docs'/name).read_bytes(),name
 def payload(s):return json.loads(s.removeprefix('window.VAMOS_DATA=').rstrip(';\n'))
 data=payload((r/'web/course-data.js').read_text(encoding='utf8'))
-assert data['version']=='6.19-reading-library'
+assert data['version']=='6.20-beginner-reading'
+assert data['beginnerReading']==json.loads((r/'course-reader-beginner.json').read_text(encoding='utf8'))
 assert data['literature']==json.loads((r/'course-literature.json').read_text(encoding='utf8'))
 assert data['phraseCoaching']==json.loads((r/'course-phrase-coaching.json').read_text(encoding='utf8'))
 assert len(data['phraseCoaching']['lessons'])==7 and sum(len(l['models']) for l in data['phraseCoaching']['lessons'])==21
