@@ -22,10 +22,17 @@ for n in ast.parse((r/'build-deploy.py').read_text(encoding='utf8')).body:
    if isinstance(t,ast.Name) and t.id in ['runtime','assets']:lists[t.id]=ast.literal_eval(n.value)
  if isinstance(n,ast.AugAssign) and isinstance(n.target,ast.Name) and n.target.id in lists:lists[n.target.id]+=ast.literal_eval(n.value)
 files=lists['runtime']+['assets/'+x for x in lists['assets']]
+reading=json.loads((r/'web/assets/reading-audio/ATTRIBUTION.json').read_text(encoding='utf8'))
+files+=['assets/reading-audio/ATTRIBUTION.json']+[a['file'] for a in reading.values()]
+for a in reading.values():
+ assert a['unaltered'] and a['sourceUrl'].startswith('https://archive.org/download/')
+ assert hashlib.sha256((r/'web'/a['file']).read_bytes()).hexdigest()==a['sha256']
+ assert len((r/'web'/a['file']).read_bytes())==a['bytes']
 for name in files:assert (r/'web'/name).read_bytes()==(r/'docs'/name).read_bytes(),name
 def payload(s):return json.loads(s.removeprefix('window.VAMOS_DATA=').rstrip(';\n'))
 data=payload((r/'web/course-data.js').read_text(encoding='utf8'))
-assert data['version']=='6.18-guided-days'
+assert data['version']=='6.19-reading-library'
+assert data['literature']==json.loads((r/'course-literature.json').read_text(encoding='utf8'))
 assert data['phraseCoaching']==json.loads((r/'course-phrase-coaching.json').read_text(encoding='utf8'))
 assert len(data['phraseCoaching']['lessons'])==7 and sum(len(l['models']) for l in data['phraseCoaching']['lessons'])==21
 previous=payload(subprocess.check_output(['git','show','b0d0421:web/course-data.js'],cwd=r).decode('utf8'))

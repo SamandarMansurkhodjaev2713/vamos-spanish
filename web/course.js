@@ -68,6 +68,7 @@
  const audioItem=id=>data.expanded.audio[id]||data.wordAudio?.clips?.[id];
  function play(id,button){return playSequence(Array(state.audioRepeat).fill(id),button)}
  async function playSequence(ids,button){
+  reader?.pauseAudio?.();
   pauseLocalAudio();
   if(audioButton===button){stopAudio();setStatus('Воспроизведение остановлено.');return}
   stopAudio();const queue=ids.filter(id=>audioItem(id));if(!queue.length){setStatus('Для этой модели нет записи.',true);return}
@@ -122,6 +123,7 @@
  function retainPlayback(){if(!audioButton)return null;const key=audioButton.hasAttribute('data-lib-play-text')?'data-lib-play-text':audioButton.hasAttribute('data-reader-play')?'data-reader-play':audioButton.hasAttribute('data-reader-excerpt')?'data-reader-excerpt':audioButton.hasAttribute('data-reader-word')?'data-reader-word':'data-audio',status=document.getElementById('audio-status');return {button:audioButton,key,value:audioButton.getAttribute(key),card:audioButton.closest('[data-lib-item]')?.dataset.libItem,playing:audioButton.classList.contains('playing'),busy:audioButton.getAttribute('aria-busy'),status:status?.textContent,error:status?.classList.contains('audio-error')};}
  function rebindPlayback(saved){if(!saved||!audioButton)return;const scope=saved.card?main.querySelector('[data-lib-item="'+CSS.escape(saved.card)+'"]'):main;const button=saved.button.isConnected?saved.button:scope?.querySelector('['+saved.key+'="'+CSS.escape(saved.value||'')+'"]');if(!button){stopAudio();return;}audioButton=button;button.classList.toggle('playing',saved.playing);button.setAttribute('aria-pressed',String(saved.playing));if(saved.busy)button.setAttribute('aria-busy',saved.busy);else button.removeAttribute('aria-busy');if(saved.playing)button.closest('.hero-play,.library-card,.recorded-context,.listening-stage')?.classList.add('is-playing');if(audioPresentation){const line=audioPresentation.text?main.querySelectorAll('.text-line')[audioPresentation.position]:button.closest('[data-line-audio]')||scope?.querySelector('[data-line-audio="'+CSS.escape(audioPresentation.id)+'"]');line?.classList.add('is-speaking');}if(saved.status)setStatus(saved.status,saved.error);}
  function render(focus=false){
+  reader?.prepareAudio?.(view==='practice'&&practiceKind==='reader');
   const viewport={x:scrollX,y:scrollY},sameSurface=lastScene===view+':'+(view==='practice'?practiceKind:view==='plan'?planDay:view==='home'?homeScreen:view==='materials'?tab:'');
   const nextAudioKey=playbackContext(),savedAudio=nextAudioKey===audioRenderKey?retainPlayback():null;audioRenderKey=nextAudioKey;
   const active=document.activeElement;const retained=active&&app.contains(active)?['data-option','data-rating','data-setting','data-extra-option','data-record','data-discard-record','data-tab','data-extra-check','data-drill-option','data-drill-check','data-speech-start','data-speech-text','data-studio-rating','data-studio-own-ready','data-profile-save','data-studio-reset','data-studio-finish','data-record-save','data-voice-compare','data-identity-pose'].map(k=>active.hasAttribute(k)?{key:k,value:active.getAttribute(k)}:null).find(Boolean):null;
@@ -130,7 +132,7 @@
   if(view==='lesson'&&stage<7)persistLesson();
   if(!(view==='practice'&&practiceKind==='pronunciation'))speech?.stop();if(!savedAudio)stopAudio();recordings?.stop();syncChrome();native?.sync();
   if(view==='home')main.innerHTML=home();else if(view==='plan')main.innerHTML=dayCompass.html(planDay)+footer();else if(view==='lesson')main.innerHTML=exercise();else if(view==='words')main.innerHTML=words();else if(view==='practice')main.innerHTML=practice();else if(view==='profile'||view==='settings')main.innerHTML=profile.html();else main.innerHTML=materials();
-  rebindPlayback(savedAudio);
+  rebindPlayback(savedAudio);if(view==='practice'&&practiceKind==='reader')reader?.syncAudio?.(main);
   if(view==='home'&&homeScreen==='today'){const target=main.querySelector('.study-today');if(target)target.insertAdjacentHTML('afterend',dailyWord.html());}
  guardRecordingSurface();main.insertAdjacentHTML('afterbegin',pendingVoiceHTML());if(studio)main.insertAdjacentHTML('afterbegin',studio.band(view,practiceKind,state.day));quietSections();navigation?.sync();syncRoute();
   if(enterStep&&state.motion&&!productMotion)main.querySelector('.exercise')?.classList.add('step-enter');enterStep=false;
@@ -356,7 +358,7 @@
   if(b.dataset.rating){rating=b.dataset.rating;renderLessonInteraction(`[data-rating="${b.dataset.rating}"]`);return}
   if(b.dataset.missionControlDay){openPractice('mission',Number(b.dataset.missionControlDay),{control:true});return}
   if(b.hasAttribute('data-record-save')){if(recordBlob&&!recording&&!recordEnding)recordings.save(recordBlob,recordMeta||{day:state.day,label:'День '+state.day+' · '+lesson().title,context:view==='lesson'?'lesson':practiceKind});return}
-  if(b.hasAttribute('data-record')){speech.stop();startRecording();return}
+  if(b.hasAttribute('data-record')){reader?.pauseAudio?.();speech.stop();startRecording();return}
   if(b.hasAttribute('data-discard-record')){stopRecording(!recordPending);render();return}
   if(b.hasAttribute('data-hint')){hadHelp=true;persistLesson();document.getElementById('hint').hidden=false;b.setAttribute('aria-expanded','true');return}
   if(b.hasAttribute('data-next-day')){if(state.day===30){view='home';render()}else openLesson(learning.first(),true);return}
@@ -377,7 +379,7 @@
  app.addEventListener('keydown',event=>{if(view==='words'&&event.target.id==='lp-answer'&&event.key==='Enter'&&!event.isComposing){event.preventDefault();main.querySelector('[data-lp-check],[data-lp-next]')?.click()}});
  app.addEventListener('input',event=>{const el=event.target;if(view==='practice'&&practiceKind==='reader'&&reader.input?.(el,event))return;if(el.id==='origin-question'&&preparingOrigin()){originPrep.draft=el.value.slice(0,160);originPrep.checked=false;persistLesson();const button=document.querySelector('[data-advance]');button.disabled=!originPrep.draft.trim();button.textContent='Проверить';document.querySelector('.origin-preparation .feedback')?.remove();return}if(profile.input(el)||(view==='practice'&&practiceKind==='repair'&&repair.input(el))||(view==='practice'&&practiceKind==='pathway'&&bridgeReview.input(el))||pathway.input(el)||workbook.input(el)||studio.input(el)||missions.input(el)||mastery.input(el)||learning.input(el))return;if(view==='words'&&library.handleInput(el))return;if(el.id==='audio-volume'){state.volume=Number(el.value);if(player)player.volume=state.volume;document.getElementById('volume-output').textContent=Math.round(state.volume*100)+'%';save();return}if(el.id==='recall'){if(result&&!result.correct){hadHelp=true;learning.markHelp()}draft=el.value;result=null;document.querySelector('.focused-lesson .feedback')?.remove();persistLesson();const button=document.querySelector('[data-advance]');button.disabled=!draft.trim();button.textContent='Проверить'}if(el.id==='word-search'){search=el.value;wordPage=0;const position=el.selectionStart;render();const input=document.getElementById('word-search');input.focus({preventScroll:true});if(position!==null)input.setSelectionRange?.(position,position)}});
  document.addEventListener('visibilitychange',()=>{document.documentElement.classList.toggle('paused',document.hidden);if(document.hidden){speech.stop();stopAudio();if(recording||recordPending){stopRecording();render();}}});
- window.addEventListener('pagehide',()=>{if(view==='lesson'&&stage<7)persistLesson();speech.stop();stopAudio();stopRecording(true)});
+ window.addEventListener('pagehide',()=>{reader?.pauseAudio?.();if(view==='lesson'&&stage<7)persistLesson();speech.stop();stopAudio();stopRecording(true)});
  window.addEventListener('popstate',()=>{navigation?.close();readRoute();focusPractice()});
  readRoute();if(view==='home')welcome.first();
 })();

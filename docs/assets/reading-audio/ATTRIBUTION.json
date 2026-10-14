@@ -1,0 +1,74 @@
+{
+  "iriarte-08": {
+    "file": "assets/reading-audio/iriarte-08.mp3",
+    "durationSeconds": 58,
+    "speaker": "jrodzg",
+    "sourceUrl": "https://archive.org/download/fabulasliterarias_1702_librivox/fabulasliterarias_08_iriarte_64kb.mp3",
+    "catalogUrl": "https://librivox.org/fabulas-literarias-by-tomas-de-iriarte/",
+    "license": "Public Domain Mark 1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+    "sha256": "f60acf71a9ea9f8d0c00353b24e700a93426eea70f6082f83873e436b5b2dd36",
+    "bytes": 465920,
+    "unaltered": true
+  },
+  "iriarte-11": {
+    "file": "assets/reading-audio/iriarte-11.mp3",
+    "durationSeconds": 79,
+    "speaker": "mariemdover",
+    "sourceUrl": "https://archive.org/download/fabulasliterarias_1702_librivox/fabulasliterarias_11_iriarte_64kb.mp3",
+    "catalogUrl": "https://librivox.org/fabulas-literarias-by-tomas-de-iriarte/",
+    "license": "Public Domain Mark 1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+    "sha256": "a69931413e573782691de69c5ab8e406208430714857695a1313df7338a768a0",
+    "bytes": 635904,
+    "unaltered": true
+  },
+  "iriarte-13": {
+    "file": "assets/reading-audio/iriarte-13.mp3",
+    "durationSeconds": 58,
+    "speaker": "jrodzg",
+    "sourceUrl": "https://archive.org/download/fabulasliterarias_1702_librivox/fabulasliterarias_13_iriarte_64kb.mp3",
+    "catalogUrl": "https://librivox.org/fabulas-literarias-by-tomas-de-iriarte/",
+    "license": "Public Domain Mark 1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+    "sha256": "2eed35ef54ffed7cefcaa41e7a28abdd23ddcc83adb9cded2a7532ee7df91ee3",
+    "bytes": 465920,
+    "unaltered": true
+  },
+  "iriarte-17": {
+    "file": "assets/reading-audio/iriarte-17.mp3",
+    "durationSeconds": 76,
+    "speaker": "mariemdover",
+    "sourceUrl": "https://archive.org/download/fabulasliterarias_1702_librivox/fabulasliterarias_17_iriarte_64kb.mp3",
+    "catalogUrl": "https://librivox.org/fabulas-literarias-by-tomas-de-iriarte/",
+    "license": "Public Domain Mark 1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+    "sha256": "e7338971b6acdd6fbb17cbe170d7c1bcc54b9cb7c06c8b611306034d91cc07de",
+    "bytes": 616960,
+    "unaltered": true
+  },
+  "iriarte-21": {
+    "file": "assets/reading-audio/iriarte-21.mp3",
+    "durationSeconds": 99,
+    "speaker": "mariemdover",
+    "sourceUrl": "https://archive.org/download/fabulasliterarias_1702_librivox/fabulasliterarias_21_iriarte_64kb.mp3",
+    "catalogUrl": "https://librivox.org/fabulas-literarias-by-tomas-de-iriarte/",
+    "license": "Public Domain Mark 1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+    "sha256": "9c832633940f65e83d7bf689ba58580710ea5ef623d66b247c2afbdb0e0fd1cf",
+    "bytes": 797184,
+    "unaltered": true
+  },
+  "iriarte-63": {
+    "file": "assets/reading-audio/iriarte-63.mp3",
+    "durationSeconds": 64,
+    "speaker": "mariemdover",
+    "sourceUrl": "https://archive.org/download/fabulasliterarias_1702_librivox/fabulasliterarias_63_iriarte_64kb.mp3",
+    "catalogUrl": "https://librivox.org/fabulas-literarias-by-tomas-de-iriarte/",
+    "license": "Public Domain Mark 1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+    "sha256": "0dc6d4e66b20f721b52a0eff5c3a9f642c7e72061fbe0ec81cb4f78ddea64cdb",
+    "bytes": 515584,
+    "unaltered": true
+  }
+}

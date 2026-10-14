@@ -6,7 +6,7 @@ runtime=['index.html','course.css','course-foundation.css','course-v3.css','cour
 assets=['lumo-poses-v27.png','nunito-latin.woff2','nunito-cyrillic.woff2','Nunito-OFL.txt','onest-latin.woff2','onest-cyrillic.woff2','Onest-OFL.txt','onest-sources.json','lucide.min.js','lucide-LICENSE.txt','lumo-poses.webp','app-icon.svg','app-icon-192.png','app-icon-512.png','plaza.svg','alegreya-latin.woff2','alegreya-cyrillic.woff2','Alegreya-OFL.txt','alegreya-sources.json']
 runtime+=['meaning-choices.js','weak-focus.js']
 runtime+=['phrase-coach.js','phrase-coach.css']
-runtime+=['reader-recall.js','lesson-help.js']
+runtime+=['reader-recall.js','lesson-help.js','reader-audio.js']
 runtime+=['library-practice.js','library-v16.css','reader.js','reader.css','daily-word.js','learning-ui.css','brand-v27.css','daily-plan.js','product-motion.js','product-v28.css','cross-tab.js']
 assets+=['brand-mark-v27.svg','brand-lockup-v27.svg']
 runtime+=['day-compass.js','day-compass.css','cafe.css']
@@ -30,3 +30,9 @@ for item in word_audio['clips'].values():
 shutil.copy2(web/'assets/word-audio/ATTRIBUTION.json',dest/'assets/word-audio/ATTRIBUTION.json')
 (dest/'.nojekyll').write_text('',encoding='utf8')
 print('Publication build:',len(runtime),'runtime files;',len(items),'sentence clips +',len(word_audio['clips']),'word clips; all verified originals.')
+
+reading=json.loads((web/'assets/reading-audio/ATTRIBUTION.json').read_text(encoding='utf8'))
+for item in reading.values():
+ p=web/item['file'];assert len(p.read_bytes())==item['bytes'];assert hashlib.sha256(p.read_bytes()).hexdigest()==item['sha256'];out=dest/item['file'];out.parent.mkdir(parents=True,exist_ok=True);shutil.copy2(p,out)
+shutil.copy2(web/'assets/reading-audio/ATTRIBUTION.json',dest/'assets/reading-audio/ATTRIBUTION.json')
+print('Complete human literary recordings:',len(reading),'original MP3s verified.')

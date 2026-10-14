@@ -1,0 +1,2420 @@
+{
+  "books": [
+    {
+      "id": "literature:iriarte-08",
+      "kind": "literature",
+      "title": "El Burro flautista",
+      "author": "Tomás de Iriarte (1750–1791)",
+      "level": "B2",
+      "format": "Басня в стихах",
+      "formatId": "literature",
+      "theme": "Литература и идеи",
+      "minutes": 8,
+      "wholeAudio": {
+        "file": "assets/reading-audio/iriarte-08.mp3",
+        "durationSeconds": 58,
+        "speaker": "jrodzg",
+        "sourceUrl": "https://archive.org/download/fabulasliterarias_1702_librivox/fabulasliterarias_08_iriarte_64kb.mp3",
+        "catalogUrl": "https://librivox.org/fabulas-literarias-by-tomas-de-iriarte/",
+        "license": "Public Domain Mark 1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+        "sha256": "f60acf71a9ea9f8d0c00353b24e700a93426eea70f6082f83873e436b5b2dd36",
+        "bytes": 465920,
+        "unaltered": true
+      },
+      "textSource": "https://www.gutenberg.org/ebooks/29497",
+      "sourceEdition": "Project Gutenberg 29497; оригинальная орфография сохранена",
+      "lines": [
+        {
+          "es": "Esta fabulilla,\nSalga bien o mal,\nMe ha ocurrido ahora\nPor casualidad.",
+          "audio": null,
+          "speaker": null,
+          "ru": "Эта маленькая басня — удачной она окажется или нет — пришла мне в голову сейчас случайно."
+        },
+        {
+          "es": "Cerca de unos prados\nQue hay en mi lugar,\nPasaba un Borrico\nPor casualidad.",
+          "audio": null,
+          "speaker": null,
+          "ru": "Возле лугов у нас в селении случайно проходил ослик."
+        },
+        {
+          "es": "Una flauta en ellos\nHalló, que un zagal\nSe dejó olvidada\nPor casualidad.",
+          "audio": null,
+          "speaker": null,
+          "ru": "Там он нашёл флейту, которую случайно забыл пастушок."
+        },
+        {
+          "es": "Acercóse a olerla\nEl dicho animal,\nY dió un resoplido\nPor casualidad.",
+          "audio": null,
+          "speaker": null,
+          "ru": "Осёл подошёл понюхать её и случайно фыркнул."
+        },
+        {
+          "es": "En la flauta el aire\nSe hubo de colar,\nY sonó la flauta\nPor casualidad.",
+          "audio": null,
+          "speaker": null,
+          "ru": "Воздух попал во флейту, и она случайно зазвучала."
+        },
+        {
+          "es": "¡Oh! dijo el Borrico:\n¡Qué bien sé tocar!\n¡Y dirán que es mala\nLa música asnal!",
+          "audio": null,
+          "speaker": null,
+          "ru": "«О! — сказал ослик. — Как хорошо я умею играть! А ещё говорят, что ослиная музыка плоха!»"
+        },
+        {
+          "es": "Sin reglas del arte,\nBorriquitos hay\nQue una vez aciertan\nPor casualidad.",
+          "audio": null,
+          "speaker": null,
+          "ru": "Есть ослики, которые, не зная правил искусства, однажды добиваются успеха — случайно."
+        }
+      ],
+      "es": "Esta fabulilla,\nSalga bien o mal,\nMe ha ocurrido ahora\nPor casualidad.\n\nCerca de unos prados\nQue hay en mi lugar,\nPasaba un Borrico\nPor casualidad.\n\nUna flauta en ellos\nHalló, que un zagal\nSe dejó olvidada\nPor casualidad.\n\nAcercóse a olerla\nEl dicho animal,\nY dió un resoplido\nPor casualidad.\n\nEn la flauta el aire\nSe hubo de colar,\nY sonó la flauta\nPor casualidad.\n\n¡Oh! dijo el Borrico:\n¡Qué bien sé tocar!\n¡Y dirán que es mala\nLa música asnal!\n\nSin reglas del arte,\nBorriquitos hay\nQue una vez aciertan\nPor casualidad.",
+      "ru": "Эта маленькая басня — удачной она окажется или нет — пришла мне в голову сейчас случайно.\n\nВозле лугов у нас в селении случайно проходил ослик.\n\nТам он нашёл флейту, которую случайно забыл пастушок.\n\nОсёл подошёл понюхать её и случайно фыркнул.\n\nВоздух попал во флейту, и она случайно зазвучала.\n\n«О! — сказал ослик. — Как хорошо я умею играть! А ещё говорят, что ослиная музыка плоха!»\n\nЕсть ослики, которые, не зная правил искусства, однажды добиваются успеха — случайно.",
+      "subtitleRu": "Случайный звук ещё не делает музыкантом.",
+      "learningNoteRu": "Оригинальные стихи XVIII века, а не упрощённый рассказ. B2 — редакционная оценка сложности чтения, не подтверждение уровня. Сохранена орфография из электронной версии: отдельные формы отличаются от современного испанского. Русский перевод передаёт смысл прозой.",
+      "task": {
+        "prompt": "Почему флейта зазвучала?",
+        "options": [
+          "Осёл случайно фыркнул в неё.",
+          "Осёл долго учился играть.",
+          "Пастушок сам сыграл мелодию."
+        ],
+        "answer": 0,
+        "feedback": "Звук возник от случайного фырканья. Автор противопоставляет случайный успех настоящему умению."
+      },
+      "mission": "За 2–3 предложения объясни по-испански, что осёл сделал случайно и почему его вывод ошибочен.",
+      "glossary": [
+        {
+          "es": "esta",
+          "ru": "эта"
+        },
+        {
+          "es": "fabulilla",
+          "ru": "маленькая басня (уменьшительное от fábula)"
+        },
+        {
+          "es": "salga",
+          "ru": "получится, выйдет (salir, сослагательное наклонение)"
+        },
+        {
+          "es": "bien",
+          "ru": "хорошо"
+        },
+        {
+          "es": "o",
+          "ru": "или"
+        },
+        {
+          "es": "mal",
+          "ru": "плохо"
+        },
+        {
+          "es": "me",
+          "ru": "мне; me ha ocurrido — пришло мне в голову"
+        },
+        {
+          "es": "ha",
+          "ru": "вспомогательная форма haber в прошедшем времени; самостоятельно не переводится"
+        },
+        {
+          "es": "ocurrido",
+          "ru": "пришло в голову, случилось (ocurrir)"
+        },
+        {
+          "es": "ahora",
+          "ru": "сейчас"
+        },
+        {
+          "es": "por",
+          "ru": "предлог; значение задаёт выражение: por casualidad — случайно"
+        },
+        {
+          "es": "casualidad",
+          "ru": "случайность; por casualidad — случайно"
+        },
+        {
+          "es": "cerca",
+          "ru": "близко; cerca de — возле"
+        },
+        {
+          "es": "de",
+          "ru": "в cerca de — возле; в se hubo de colar — часть конструкции: воздух проник во флейту, без значения обязанности"
+        },
+        {
+          "es": "unos",
+          "ru": "несколько; неопределённый артикль множественного числа"
+        },
+        {
+          "es": "prados",
+          "ru": "луга"
+        },
+        {
+          "es": "que",
+          "ru": "что / который; соединяет части предложения"
+        },
+        {
+          "es": "hay",
+          "ru": "есть, имеется (безличное haber)"
+        },
+        {
+          "es": "en",
+          "ru": "в / на: en ellos — на этих лугах; en la flauta — во флейте"
+        },
+        {
+          "es": "mi",
+          "ru": "мой, моя"
+        },
+        {
+          "es": "lugar",
+          "ru": "селение, местность (здесь)"
+        },
+        {
+          "es": "pasaba",
+          "ru": "проходил (pasar, длительное прошлое)"
+        },
+        {
+          "es": "un",
+          "ru": "неопределённый артикль мужского рода; обычно без отдельного перевода"
+        },
+        {
+          "es": "borrico",
+          "ru": "ослик"
+        },
+        {
+          "es": "una",
+          "ru": "неопределённый артикль женского рода; обычно без отдельного перевода"
+        },
+        {
+          "es": "flauta",
+          "ru": "флейта"
+        },
+        {
+          "es": "ellos",
+          "ru": "они; en ellos — на этих лугах"
+        },
+        {
+          "es": "halló",
+          "ru": "нашёл (hallar)"
+        },
+        {
+          "es": "zagal",
+          "ru": "пастушок, молодой деревенский парень"
+        },
+        {
+          "es": "se",
+          "ru": "возвратная частица: se dejó — оставил; se hubo de colar — проник"
+        },
+        {
+          "es": "dejó",
+          "ru": "оставил (dejar)"
+        },
+        {
+          "es": "olvidada",
+          "ru": "забытая"
+        },
+        {
+          "es": "acercóse",
+          "ru": "подошёл; старый порядок se acercó"
+        },
+        {
+          "es": "a",
+          "ru": "к / для; перед инфинитивом или одушевлённым дополнением часто отдельно не переводится"
+        },
+        {
+          "es": "olerla",
+          "ru": "понюхать её (oler + la; речь о флейте)"
+        },
+        {
+          "es": "el",
+          "ru": "определённый артикль мужского рода"
+        },
+        {
+          "es": "dicho",
+          "ru": "упомянутый, этот самый"
+        },
+        {
+          "es": "animal",
+          "ru": "животное"
+        },
+        {
+          "es": "y",
+          "ru": "и"
+        },
+        {
+          "es": "dió",
+          "ru": "дал, издал; старая орфография современного dio"
+        },
+        {
+          "es": "resoplido",
+          "ru": "фырканье, шумный выдох"
+        },
+        {
+          "es": "la",
+          "ru": "артикль женского рода; в música asnal обозначает музыку"
+        },
+        {
+          "es": "aire",
+          "ru": "воздух"
+        },
+        {
+          "es": "hubo",
+          "ru": "форма haber; se hubo de — пришлось / должно было случиться"
+        },
+        {
+          "es": "colar",
+          "ru": "проникнуть, просочиться"
+        },
+        {
+          "es": "sonó",
+          "ru": "зазвучала (sonar)"
+        },
+        {
+          "es": "oh",
+          "ru": "о! (возглас)"
+        },
+        {
+          "es": "dijo",
+          "ru": "сказал (decir)"
+        },
+        {
+          "es": "qué",
+          "ru": "что / какой; вопрос или восклицание"
+        },
+        {
+          "es": "sé",
+          "ru": "я умею, знаю (saber)"
+        },
+        {
+          "es": "tocar",
+          "ru": "играть на музыкальном инструменте"
+        },
+        {
+          "es": "dirán",
+          "ru": "скажут, будут говорить"
+        },
+        {
+          "es": "es",
+          "ru": "есть, является (ser)"
+        },
+        {
+          "es": "mala",
+          "ru": "плохая"
+        },
+        {
+          "es": "música",
+          "ru": "музыка"
+        },
+        {
+          "es": "asnal",
+          "ru": "ослиная"
+        },
+        {
+          "es": "sin",
+          "ru": "без"
+        },
+        {
+          "es": "reglas",
+          "ru": "правила"
+        },
+        {
+          "es": "del",
+          "ru": "de + el: предлог и артикль вместе"
+        },
+        {
+          "es": "arte",
+          "ru": "искусство, мастерство"
+        },
+        {
+          "es": "borriquitos",
+          "ru": "ослики; здесь иносказательно о неумелых людях"
+        },
+        {
+          "es": "vez",
+          "ru": "раз; una vez — однажды"
+        },
+        {
+          "es": "aciertan",
+          "ru": "попадают в цель, делают правильно, достигают успеха"
+        },
+        {
+          "es": "por casualidad",
+          "ru": "случайно"
+        },
+        {
+          "es": "sin reglas del arte",
+          "ru": "без знания правил искусства"
+        },
+        {
+          "es": "sé tocar",
+          "ru": "я умею играть"
+        },
+        {
+          "es": "una vez",
+          "ru": "однажды"
+        }
+      ]
+    },
+    {
+      "id": "literature:iriarte-11",
+      "kind": "literature",
+      "title": "Los dos Conejos",
+      "author": "Tomás de Iriarte (1750–1791)",
+      "level": "B2",
+      "format": "Басня в стихах",
+      "formatId": "literature",
+      "theme": "Литература и идеи",
+      "minutes": 8,
+      "wholeAudio": {
+        "file": "assets/reading-audio/iriarte-11.mp3",
+        "durationSeconds": 79,
+        "speaker": "mariemdover",
+        "sourceUrl": "https://archive.org/download/fabulasliterarias_1702_librivox/fabulasliterarias_11_iriarte_64kb.mp3",
+        "catalogUrl": "https://librivox.org/fabulas-literarias-by-tomas-de-iriarte/",
+        "license": "Public Domain Mark 1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+        "sha256": "a69931413e573782691de69c5ab8e406208430714857695a1313df7338a768a0",
+        "bytes": 635904,
+        "unaltered": true
+      },
+      "textSource": "https://www.gutenberg.org/ebooks/29497",
+      "sourceEdition": "Project Gutenberg 29497; оригинальная орфография сохранена",
+      "lines": [
+        {
+          "es": "Por entre unas matas,\nSeguido de perros\n(No diré corría),\nVolaba un Conejo.",
+          "audio": null,
+          "speaker": null,
+          "ru": "Сквозь кусты мчался кролик, за которым гнались собаки. Не скажу, что он бежал: он прямо летел."
+        },
+        {
+          "es": "De su madriguera\nSalió un compañero,\nY le dijo: \"Tente,\nAmigo; ¿qué es esto?\"",
+          "audio": null,
+          "speaker": null,
+          "ru": "Из своей норы вышел другой кролик и сказал ему: «Стой, друг! Что происходит?»"
+        },
+        {
+          "es": "--\"¿Qué ha de ser? responde:\nSin aliento llego...\nDos pícaros galgos\nMe vienen siguiendo.\"",
+          "audio": null,
+          "speaker": null,
+          "ru": "«Что же ещё? — отвечает беглец. — Я прибежал, задыхаясь… Две проклятые борзые гонятся за мной»."
+        },
+        {
+          "es": "--\"Sí (replica el otro),\nPor allí los veo...\nPero no son galgos.\"\n--\"¿Pues qué son?\"--\"Podencos.\"",
+          "audio": null,
+          "speaker": null,
+          "ru": "«Да, — возражает другой, — я вижу их там… Но это не борзые». — «А кто же?» — «Поденко»."
+        },
+        {
+          "es": "--\"¿Qué? ¿Podencos dices?\nSí, como mi abuelo.\nGalgos y muy galgos,\nBien vistos los tengo.\"",
+          "audio": null,
+          "speaker": null,
+          "ru": "«Что? Ты говоришь, поденко? Как же, поденко — как мой дедушка! Борзые, настоящие борзые: я хорошо их разглядел»."
+        },
+        {
+          "es": "--\"Son podencos: vaya,\nQue no entiendes de eso.\"\n--\"Son galgos te digo.\"\n--\"Digo que podencos.\"",
+          "audio": null,
+          "speaker": null,
+          "ru": "«Это поденко, ну же! Ты в этом не разбираешься». — «Я тебе говорю: борзые!» — «А я говорю: поденко!»"
+        },
+        {
+          "es": "En esta disputa,\nLlegando los perros,\nPillan descuidados\nA mis dos Conejos.",
+          "audio": null,
+          "speaker": null,
+          "ru": "Пока длился спор, собаки подбежали и поймали обоих кроликов, забывших об опасности."
+        },
+        {
+          "es": "Los que por cuestiones\nDe poco momento\nDejan lo que importa,\nLlévense este ejemplo.",
+          "audio": null,
+          "speaker": null,
+          "ru": "Пусть этот пример запомнят те, кто ради незначительных споров забывает о важном."
+        }
+      ],
+      "es": "Por entre unas matas,\nSeguido de perros\n(No diré corría),\nVolaba un Conejo.\n\nDe su madriguera\nSalió un compañero,\nY le dijo: \"Tente,\nAmigo; ¿qué es esto?\"\n\n--\"¿Qué ha de ser? responde:\nSin aliento llego...\nDos pícaros galgos\nMe vienen siguiendo.\"\n\n--\"Sí (replica el otro),\nPor allí los veo...\nPero no son galgos.\"\n--\"¿Pues qué son?\"--\"Podencos.\"\n\n--\"¿Qué? ¿Podencos dices?\nSí, como mi abuelo.\nGalgos y muy galgos,\nBien vistos los tengo.\"\n\n--\"Son podencos: vaya,\nQue no entiendes de eso.\"\n--\"Son galgos te digo.\"\n--\"Digo que podencos.\"\n\nEn esta disputa,\nLlegando los perros,\nPillan descuidados\nA mis dos Conejos.\n\nLos que por cuestiones\nDe poco momento\nDejan lo que importa,\nLlévense este ejemplo.",
+      "ru": "Сквозь кусты мчался кролик, за которым гнались собаки. Не скажу, что он бежал: он прямо летел.\n\nИз своей норы вышел другой кролик и сказал ему: «Стой, друг! Что происходит?»\n\n«Что же ещё? — отвечает беглец. — Я прибежал, задыхаясь… Две проклятые борзые гонятся за мной».\n\n«Да, — возражает другой, — я вижу их там… Но это не борзые». — «А кто же?» — «Поденко».\n\n«Что? Ты говоришь, поденко? Как же, поденко — как мой дедушка! Борзые, настоящие борзые: я хорошо их разглядел».\n\n«Это поденко, ну же! Ты в этом не разбираешься». — «Я тебе говорю: борзые!» — «А я говорю: поденко!»\n\nПока длился спор, собаки подбежали и поймали обоих кроликов, забывших об опасности.\n\nПусть этот пример запомнят те, кто ради незначительных споров забывает о важном.",
+      "subtitleRu": "Спор о породе собак отвлекает от опасности.",
+      "learningNoteRu": "Оригинальные стихи XVIII века, а не упрощённый рассказ. B2 — редакционная оценка сложности чтения, не подтверждение уровня. Сохранена орфография из электронной версии: отдельные формы отличаются от современного испанского. Русский перевод передаёт смысл прозой.",
+      "task": {
+        "prompt": "Почему собаки поймали кроликов?",
+        "options": [
+          "Кролики решили напасть на собак.",
+          "Один кролик оставил другого в норе.",
+          "Кролики отвлеклись на спор о породе собак."
+        ],
+        "answer": 2,
+        "feedback": "Вместо спасения кролики спорят, борзые их преследуют или поденко. В это время собаки приближаются."
+      },
+      "mission": "Перескажи по-испански, о чём спорили кролики и что им стоило сделать вместо спора.",
+      "glossary": [
+        {
+          "es": "por",
+          "ru": "сквозь в por entre unas matas; из-за / ради в por cuestiones; por allí — там"
+        },
+        {
+          "es": "entre",
+          "ru": "между, среди"
+        },
+        {
+          "es": "unas",
+          "ru": "несколько; неопределённый артикль женского рода во множественном числе"
+        },
+        {
+          "es": "matas",
+          "ru": "кусты, заросли"
+        },
+        {
+          "es": "seguido",
+          "ru": "преследуемый (здесь seguido de perros)"
+        },
+        {
+          "es": "de",
+          "ru": "предлог: seguido de perros — преследуемый собаками; de su madriguera — из своей норы; entiendes de eso — разбираешься в этом"
+        },
+        {
+          "es": "perros",
+          "ru": "собаки"
+        },
+        {
+          "es": "no",
+          "ru": "не / нет"
+        },
+        {
+          "es": "diré",
+          "ru": "я скажу (decir)"
+        },
+        {
+          "es": "corría",
+          "ru": "бежал (correr)"
+        },
+        {
+          "es": "volaba",
+          "ru": "летел; здесь образно: мчался"
+        },
+        {
+          "es": "un",
+          "ru": "неопределённый артикль мужского рода; обычно без отдельного перевода"
+        },
+        {
+          "es": "conejo",
+          "ru": "кролик"
+        },
+        {
+          "es": "su",
+          "ru": "его / её / свой"
+        },
+        {
+          "es": "madriguera",
+          "ru": "нора"
+        },
+        {
+          "es": "salió",
+          "ru": "вышел (salir)"
+        },
+        {
+          "es": "compañero",
+          "ru": "товарищ; здесь другой кролик"
+        },
+        {
+          "es": "y",
+          "ru": "и"
+        },
+        {
+          "es": "le",
+          "ru": "ему / ей; местоимение дополнения"
+        },
+        {
+          "es": "dijo",
+          "ru": "сказал (decir)"
+        },
+        {
+          "es": "tente",
+          "ru": "стой, остановись; повелительная форма tenerse"
+        },
+        {
+          "es": "amigo",
+          "ru": "друг"
+        },
+        {
+          "es": "qué",
+          "ru": "что / какой; вопрос или восклицание"
+        },
+        {
+          "es": "es",
+          "ru": "есть, является (ser)"
+        },
+        {
+          "es": "esto",
+          "ru": "это"
+        },
+        {
+          "es": "ha",
+          "ru": "форма haber в ¿qué ha de ser? — что же ещё может быть?"
+        },
+        {
+          "es": "ser",
+          "ru": "быть"
+        },
+        {
+          "es": "responde",
+          "ru": "отвечает"
+        },
+        {
+          "es": "sin",
+          "ru": "без"
+        },
+        {
+          "es": "aliento",
+          "ru": "дыхание; sin aliento — задыхаясь"
+        },
+        {
+          "es": "llego",
+          "ru": "я прихожу, добегаю (llegar)"
+        },
+        {
+          "es": "dos",
+          "ru": "два"
+        },
+        {
+          "es": "pícaros",
+          "ru": "проклятые, негодные (здесь раздражённое описание собак)"
+        },
+        {
+          "es": "galgos",
+          "ru": "борзые (порода собак)"
+        },
+        {
+          "es": "me",
+          "ru": "меня; me vienen siguiendo — преследуют меня"
+        },
+        {
+          "es": "vienen",
+          "ru": "приходят; vienen siguiendo — идут следом, преследуют"
+        },
+        {
+          "es": "siguiendo",
+          "ru": "следуя, преследуя (seguir)"
+        },
+        {
+          "es": "sí",
+          "ru": "да"
+        },
+        {
+          "es": "replica",
+          "ru": "возражает, отвечает"
+        },
+        {
+          "es": "el",
+          "ru": "определённый артикль мужского рода"
+        },
+        {
+          "es": "otro",
+          "ru": "другой"
+        },
+        {
+          "es": "allí",
+          "ru": "там"
+        },
+        {
+          "es": "los",
+          "ru": "их в los veo и los tengo; артикль в los perros и los que"
+        },
+        {
+          "es": "veo",
+          "ru": "я вижу"
+        },
+        {
+          "es": "pero",
+          "ru": "но"
+        },
+        {
+          "es": "son",
+          "ru": "они являются (ser)"
+        },
+        {
+          "es": "pues",
+          "ru": "же / ведь / итак; оттенок зависит от реплики"
+        },
+        {
+          "es": "podencos",
+          "ru": "поденко (тип охотничьих собак)"
+        },
+        {
+          "es": "dices",
+          "ru": "ты говоришь (decir)"
+        },
+        {
+          "es": "como",
+          "ru": "как; sí, como mi abuelo — ироническое «как же, как мой дедушка»"
+        },
+        {
+          "es": "mi",
+          "ru": "мой, моя"
+        },
+        {
+          "es": "abuelo",
+          "ru": "дедушка"
+        },
+        {
+          "es": "muy",
+          "ru": "очень; усиливает определение"
+        },
+        {
+          "es": "bien",
+          "ru": "хорошо"
+        },
+        {
+          "es": "vistos",
+          "ru": "увиденные; bien vistos los tengo — я хорошо их разглядел"
+        },
+        {
+          "es": "tengo",
+          "ru": "я имею; в сочетании с причастием подчёркивает результат"
+        },
+        {
+          "es": "vaya",
+          "ru": "ну же! (восклицание в споре)"
+        },
+        {
+          "es": "que",
+          "ru": "что / который; соединяет части предложения"
+        },
+        {
+          "es": "entiendes",
+          "ru": "ты понимаешь, разбираешься"
+        },
+        {
+          "es": "eso",
+          "ru": "это"
+        },
+        {
+          "es": "te",
+          "ru": "тебе / тебя"
+        },
+        {
+          "es": "digo",
+          "ru": "я говорю"
+        },
+        {
+          "es": "en",
+          "ru": "в / на"
+        },
+        {
+          "es": "esta",
+          "ru": "эта"
+        },
+        {
+          "es": "disputa",
+          "ru": "спор"
+        },
+        {
+          "es": "llegando",
+          "ru": "приближаясь, прибывая"
+        },
+        {
+          "es": "pillan",
+          "ru": "ловят, хватают"
+        },
+        {
+          "es": "descuidados",
+          "ru": "забывшие об осторожности, беспечные"
+        },
+        {
+          "es": "a",
+          "ru": "к / для; перед инфинитивом или одушевлённым дополнением часто отдельно не переводится"
+        },
+        {
+          "es": "mis",
+          "ru": "мои"
+        },
+        {
+          "es": "conejos",
+          "ru": "кролики"
+        },
+        {
+          "es": "cuestiones",
+          "ru": "вопросы, предметы спора"
+        },
+        {
+          "es": "poco",
+          "ru": "мало; de poco momento — незначительные"
+        },
+        {
+          "es": "momento",
+          "ru": "важность, значение (старое значение в de poco momento)"
+        },
+        {
+          "es": "dejan",
+          "ru": "оставляют, бросают"
+        },
+        {
+          "es": "lo",
+          "ru": "то, что: lo que importa — то, что важно"
+        },
+        {
+          "es": "importa",
+          "ru": "важно, имеет значение"
+        },
+        {
+          "es": "llévense",
+          "ru": "пусть возьмут себе, запомнят (llevarse)"
+        },
+        {
+          "es": "este",
+          "ru": "этот"
+        },
+        {
+          "es": "ejemplo",
+          "ru": "пример"
+        },
+        {
+          "es": "sin aliento",
+          "ru": "задыхаясь, без дыхания"
+        },
+        {
+          "es": "qué ha de ser",
+          "ru": "что же ещё может быть?"
+        },
+        {
+          "es": "entiendes de eso",
+          "ru": "ты в этом разбираешься"
+        },
+        {
+          "es": "de poco momento",
+          "ru": "незначительные (старое выражение)"
+        }
+      ]
+    },
+    {
+      "id": "literature:iriarte-13",
+      "kind": "literature",
+      "title": "El Pato y la Serpiente",
+      "author": "Tomás de Iriarte (1750–1791)",
+      "level": "B2",
+      "format": "Басня в стихах",
+      "formatId": "literature",
+      "theme": "Литература и идеи",
+      "minutes": 8,
+      "wholeAudio": {
+        "file": "assets/reading-audio/iriarte-13.mp3",
+        "durationSeconds": 58,
+        "speaker": "jrodzg",
+        "sourceUrl": "https://archive.org/download/fabulasliterarias_1702_librivox/fabulasliterarias_13_iriarte_64kb.mp3",
+        "catalogUrl": "https://librivox.org/fabulas-literarias-by-tomas-de-iriarte/",
+        "license": "Public Domain Mark 1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+        "sha256": "2eed35ef54ffed7cefcaa41e7a28abdd23ddcc83adb9cded2a7532ee7df91ee3",
+        "bytes": 465920,
+        "unaltered": true
+      },
+      "textSource": "https://www.gutenberg.org/ebooks/29497",
+      "sourceEdition": "Project Gutenberg 29497; оригинальная орфография сохранена",
+      "lines": [
+        {
+          "es": "A orillas de un estanque,\nDiciendo estaba un Pato:\n\"¿A qué animal dió el cielo\nLos dones que me ha dado?",
+          "audio": null,
+          "speaker": null,
+          "ru": "У берега пруда утка говорила: «Какому ещё животному небо дало такие способности, какие дало мне?»"
+        },
+        {
+          "es": "\"Soy de agua, tierra y aire:\nCuando de andar me canso,\nSi se me antoja, vuelo;\nSi se me antoja, nado.\"",
+          "audio": null,
+          "speaker": null,
+          "ru": "«Я принадлежу воде, земле и воздуху: когда устаю ходить, захочу — полечу, захочу — поплыву»."
+        },
+        {
+          "es": "Una Serpiente astuta,\nQue le estaba escuchando,\nLe llamó con un silbo,\nY le dijo: \"¡Seo guapo!",
+          "audio": null,
+          "speaker": null,
+          "ru": "Хитрая змея, слушавшая утку, свистом окликнула её и сказала: «Эй, господин красавец!»"
+        },
+        {
+          "es": "\"No hay que echar tantas plantas;\nPues ni anda como el gamo,\nNi vuela como el sacre,\nNi nada como el barbo;",
+          "audio": null,
+          "speaker": null,
+          "ru": "«Не надо так зазнаваться: вы ведь ни ходить как лань не умеете, ни летать как сокол-балобан, ни плавать как усач»."
+        },
+        {
+          "es": "\"Y así tenga sabido\nQue lo importante y raro\nNo es entender de todo,\nSino ser diestro en algo.\"",
+          "audio": null,
+          "speaker": null,
+          "ru": "«Так что знайте: важно и редко встречается не понемногу разбираться во всём, а быть мастером в чём-то одном»."
+        }
+      ],
+      "es": "A orillas de un estanque,\nDiciendo estaba un Pato:\n\"¿A qué animal dió el cielo\nLos dones que me ha dado?\n\n\"Soy de agua, tierra y aire:\nCuando de andar me canso,\nSi se me antoja, vuelo;\nSi se me antoja, nado.\"\n\nUna Serpiente astuta,\nQue le estaba escuchando,\nLe llamó con un silbo,\nY le dijo: \"¡Seo guapo!\n\n\"No hay que echar tantas plantas;\nPues ni anda como el gamo,\nNi vuela como el sacre,\nNi nada como el barbo;\n\n\"Y así tenga sabido\nQue lo importante y raro\nNo es entender de todo,\nSino ser diestro en algo.\"",
+      "ru": "У берега пруда утка говорила: «Какому ещё животному небо дало такие способности, какие дало мне?»\n\n«Я принадлежу воде, земле и воздуху: когда устаю ходить, захочу — полечу, захочу — поплыву».\n\nХитрая змея, слушавшая утку, свистом окликнула её и сказала: «Эй, господин красавец!»\n\n«Не надо так зазнаваться: вы ведь ни ходить как лань не умеете, ни летать как сокол-балобан, ни плавать как усач».\n\n«Так что знайте: важно и редко встречается не понемногу разбираться во всём, а быть мастером в чём-то одном».",
+      "subtitleRu": "Утка хвастается умениями, а змея требует мастерства.",
+      "learningNoteRu": "Оригинальные стихи XVIII века, а не упрощённый рассказ. B2 — редакционная оценка сложности чтения, не подтверждение уровня. Сохранена орфография из электронной версии: отдельные формы отличаются от современного испанского. Русский перевод передаёт смысл прозой.",
+      "task": {
+        "prompt": "Какую мысль высказывает змея?",
+        "options": [
+          "Любые способности нужно скрывать от других.",
+          "Лучше хорошо владеть одним делом, чем поверхностно многими.",
+          "Утка лучше всех ходит, летает и плавает."
+        ],
+        "answer": 1,
+        "feedback": "Змея признаёт разные действия утки, но замечает: в каждом есть животное, которое справляется лучше."
+      },
+      "mission": "Скажи по-испански, чем хвастается утка и какой совет даёт змея. Добавь своё мнение.",
+      "glossary": [
+        {
+          "es": "a",
+          "ru": "к / для; перед инфинитивом или одушевлённым дополнением часто отдельно не переводится"
+        },
+        {
+          "es": "orillas",
+          "ru": "берега; a orillas de — на берегу"
+        },
+        {
+          "es": "de",
+          "ru": "предлог связи: a orillas de — на берегу; de agua — принадлежу воде; de andar — от ходьбы; entender de todo — разбираться во всём"
+        },
+        {
+          "es": "un",
+          "ru": "неопределённый артикль мужского рода; обычно без отдельного перевода"
+        },
+        {
+          "es": "estanque",
+          "ru": "пруд"
+        },
+        {
+          "es": "diciendo",
+          "ru": "говоря (decir)"
+        },
+        {
+          "es": "estaba",
+          "ru": "был; вместе с герундием обозначает действие в прошлом"
+        },
+        {
+          "es": "pato",
+          "ru": "утка"
+        },
+        {
+          "es": "qué",
+          "ru": "что / какой; вопрос или восклицание"
+        },
+        {
+          "es": "animal",
+          "ru": "животное"
+        },
+        {
+          "es": "dió",
+          "ru": "дал, издал; старая орфография современного dio"
+        },
+        {
+          "es": "el",
+          "ru": "определённый артикль мужского рода"
+        },
+        {
+          "es": "cielo",
+          "ru": "небо; здесь источник даров, Провидение"
+        },
+        {
+          "es": "los",
+          "ru": "определённый артикль множественного числа либо «их»"
+        },
+        {
+          "es": "dones",
+          "ru": "дары, способности"
+        },
+        {
+          "es": "que",
+          "ru": "что / который; соединяет части предложения"
+        },
+        {
+          "es": "me",
+          "ru": "мне в me ha dado и se me antoja; возвратная частица в me canso — устаю"
+        },
+        {
+          "es": "ha",
+          "ru": "вспомогательная форма haber в прошедшем времени; самостоятельно не переводится"
+        },
+        {
+          "es": "dado",
+          "ru": "данный; ha dado — дало"
+        },
+        {
+          "es": "soy",
+          "ru": "я являюсь (ser)"
+        },
+        {
+          "es": "agua",
+          "ru": "вода"
+        },
+        {
+          "es": "tierra",
+          "ru": "земля, суша"
+        },
+        {
+          "es": "y",
+          "ru": "и"
+        },
+        {
+          "es": "aire",
+          "ru": "воздух"
+        },
+        {
+          "es": "cuando",
+          "ru": "когда"
+        },
+        {
+          "es": "andar",
+          "ru": "ходить"
+        },
+        {
+          "es": "canso",
+          "ru": "устаю (в me canso)"
+        },
+        {
+          "es": "si",
+          "ru": "если"
+        },
+        {
+          "es": "se",
+          "ru": "частица в se me antoja — мне хочется"
+        },
+        {
+          "es": "antoja",
+          "ru": "хочется, приходит желание (в se me antoja)"
+        },
+        {
+          "es": "vuelo",
+          "ru": "я лечу (volar)"
+        },
+        {
+          "es": "nado",
+          "ru": "я плаваю (nadar)"
+        },
+        {
+          "es": "una",
+          "ru": "неопределённый артикль женского рода; обычно без отдельного перевода"
+        },
+        {
+          "es": "serpiente",
+          "ru": "змея"
+        },
+        {
+          "es": "astuta",
+          "ru": "хитрая"
+        },
+        {
+          "es": "le",
+          "ru": "её / ей: le estaba escuchando — слушала её; le llamó — окликнула её; le dijo — сказала ей"
+        },
+        {
+          "es": "escuchando",
+          "ru": "слушая (escuchar)"
+        },
+        {
+          "es": "llamó",
+          "ru": "позвал, окликнул"
+        },
+        {
+          "es": "con",
+          "ru": "с / посредством"
+        },
+        {
+          "es": "silbo",
+          "ru": "свист"
+        },
+        {
+          "es": "dijo",
+          "ru": "сказал (decir)"
+        },
+        {
+          "es": "seo",
+          "ru": "старое разговорное обращение señor: господин"
+        },
+        {
+          "es": "guapo",
+          "ru": "красавец; здесь ироническое обращение"
+        },
+        {
+          "es": "no",
+          "ru": "не / нет"
+        },
+        {
+          "es": "hay",
+          "ru": "есть, имеется (безличное haber)"
+        },
+        {
+          "es": "echar",
+          "ru": "здесь часть echar plantas: хвастаться, задаваться"
+        },
+        {
+          "es": "tantas",
+          "ru": "столько, так много"
+        },
+        {
+          "es": "plantas",
+          "ru": "в echar plantas — заносчивость, хвастовство; не растения"
+        },
+        {
+          "es": "pues",
+          "ru": "ведь; вводит объяснение змеи"
+        },
+        {
+          "es": "ni",
+          "ru": "ни; соединяет отрицания"
+        },
+        {
+          "es": "anda",
+          "ru": "ходит"
+        },
+        {
+          "es": "como",
+          "ru": "как"
+        },
+        {
+          "es": "gamo",
+          "ru": "лань"
+        },
+        {
+          "es": "vuela",
+          "ru": "летает"
+        },
+        {
+          "es": "sacre",
+          "ru": "сокол-балобан"
+        },
+        {
+          "es": "nada",
+          "ru": "плавает (nadar); здесь не «ничего»"
+        },
+        {
+          "es": "barbo",
+          "ru": "усач (рыба)"
+        },
+        {
+          "es": "así",
+          "ru": "так, таким образом"
+        },
+        {
+          "es": "tenga",
+          "ru": "имейте; tenga sabido — знайте (вежливое обращение)"
+        },
+        {
+          "es": "sabido",
+          "ru": "известное; tenga sabido — знайте"
+        },
+        {
+          "es": "lo",
+          "ru": "создаёт понятие: lo importante y raro — то, что важно и редко"
+        },
+        {
+          "es": "importante",
+          "ru": "важное"
+        },
+        {
+          "es": "raro",
+          "ru": "редкое, необычное"
+        },
+        {
+          "es": "es",
+          "ru": "есть, является (ser)"
+        },
+        {
+          "es": "entender",
+          "ru": "понимать, разбираться"
+        },
+        {
+          "es": "todo",
+          "ru": "всё"
+        },
+        {
+          "es": "sino",
+          "ru": "а, а не; противопоставление после отрицания"
+        },
+        {
+          "es": "ser",
+          "ru": "быть"
+        },
+        {
+          "es": "diestro",
+          "ru": "умелый, искусный"
+        },
+        {
+          "es": "en",
+          "ru": "в / на"
+        },
+        {
+          "es": "algo",
+          "ru": "что-нибудь, что-то"
+        },
+        {
+          "es": "a orillas de",
+          "ru": "на берегу"
+        },
+        {
+          "es": "se me antoja",
+          "ru": "мне хочется"
+        },
+        {
+          "es": "echar tantas plantas",
+          "ru": "так сильно задаваться (старое выражение)"
+        },
+        {
+          "es": "ser diestro en algo",
+          "ru": "быть мастером в чём-то"
+        }
+      ]
+    },
+    {
+      "id": "literature:iriarte-63",
+      "kind": "literature",
+      "title": "La Rana y la Gallina",
+      "author": "Tomás de Iriarte (1750–1791)",
+      "level": "B2",
+      "format": "Басня в стихах",
+      "formatId": "literature",
+      "theme": "Литература и идеи",
+      "minutes": 8,
+      "wholeAudio": {
+        "file": "assets/reading-audio/iriarte-63.mp3",
+        "durationSeconds": 64,
+        "speaker": "mariemdover",
+        "sourceUrl": "https://archive.org/download/fabulasliterarias_1702_librivox/fabulasliterarias_63_iriarte_64kb.mp3",
+        "catalogUrl": "https://librivox.org/fabulas-literarias-by-tomas-de-iriarte/",
+        "license": "Public Domain Mark 1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+        "sha256": "0dc6d4e66b20f721b52a0eff5c3a9f642c7e72061fbe0ec81cb4f78ddea64cdb",
+        "bytes": 515584,
+        "unaltered": true
+      },
+      "textSource": "https://www.gutenberg.org/ebooks/29497",
+      "sourceEdition": "Project Gutenberg 29497; оригинальная орфография сохранена",
+      "lines": [
+        {
+          "es": "Desde su charco una parlera Rana\nOyó cacarear a una Gallina.\n\"Vaya (le dijo), no creyera, hermana,\nQue fueras tan incómoda vecina.\nY con toda esa bulla, ¿qué hay de nuevo?\"\n--\"Nada, sino anunciar que pongo un huevo.\"",
+          "audio": null,
+          "speaker": null,
+          "ru": "Из своей лужи болтливая лягушка услышала кудахтанье курицы. «Ну и ну, — сказала она, — не думала я, сестрица, что ты такая беспокойная соседка. Что же нового, раз столько шума?» — «Ничего, только сообщаю, что снесла яйцо»."
+        },
+        {
+          "es": "--\"¿Un huevo solo? ¡Y alborotas tanto!\"\n--\"Un huevo solo; sí, señora mía.\n¿Te espantas de eso, cuando no me espanto\nDe oírte cómo graznas noche y día?",
+          "audio": null,
+          "speaker": null,
+          "ru": "«Всего одно яйцо? И столько шумишь!» — «Одно яйцо, да, сударыня. Ты этому удивляешься, а я ведь не удивляюсь, слушая, как ты кричишь днём и ночью»."
+        },
+        {
+          "es": "Yo, porque sirvo de algo, lo publico;\nTú, que de nada sirves, calla el pico.\"",
+          "audio": null,
+          "speaker": null,
+          "ru": "«Я, поскольку приношу хоть какую-то пользу, сообщаю об этом; а ты, от которой никакой пользы, закрой рот!»"
+        }
+      ],
+      "es": "Desde su charco una parlera Rana\nOyó cacarear a una Gallina.\n\"Vaya (le dijo), no creyera, hermana,\nQue fueras tan incómoda vecina.\nY con toda esa bulla, ¿qué hay de nuevo?\"\n--\"Nada, sino anunciar que pongo un huevo.\"\n\n--\"¿Un huevo solo? ¡Y alborotas tanto!\"\n--\"Un huevo solo; sí, señora mía.\n¿Te espantas de eso, cuando no me espanto\nDe oírte cómo graznas noche y día?\n\nYo, porque sirvo de algo, lo publico;\nTú, que de nada sirves, calla el pico.\"",
+      "ru": "Из своей лужи болтливая лягушка услышала кудахтанье курицы. «Ну и ну, — сказала она, — не думала я, сестрица, что ты такая беспокойная соседка. Что же нового, раз столько шума?» — «Ничего, только сообщаю, что снесла яйцо».\n\n«Всего одно яйцо? И столько шумишь!» — «Одно яйцо, да, сударыня. Ты этому удивляешься, а я ведь не удивляюсь, слушая, как ты кричишь днём и ночью».\n\n«Я, поскольку приношу хоть какую-то пользу, сообщаю об этом; а ты, от которой никакой пользы, закрой рот!»",
+      "subtitleRu": "Лягушка критикует курицу за шум, забыв о себе.",
+      "learningNoteRu": "Оригинальные стихи XVIII века, а не упрощённый рассказ. B2 — редакционная оценка сложности чтения, не подтверждение уровня. Сохранена орфография из электронной версии: отдельные формы отличаются от современного испанского. Русский перевод передаёт смысл прозой.",
+      "task": {
+        "prompt": "Чем курица оправдывает своё кудахтанье?",
+        "options": [
+          "Она сообщает о результате: снесённом яйце.",
+          "Она пытается заглушить пение другой курицы.",
+          "Она просит лягушку помочь найти яйцо."
+        ],
+        "answer": 0,
+        "feedback": "Курица сообщает о полезном результате, а лягушка, по её словам, кричит постоянно без пользы. Это ответ на упрёк в шуме."
+      },
+      "mission": "За 2–3 предложения перескажи по-испански упрёк лягушки и ответ курицы. Скажи, убедил ли тебя этот ответ.",
+      "glossary": [
+        {
+          "es": "desde",
+          "ru": "из, от; desde su charco — из своей лужи"
+        },
+        {
+          "es": "su",
+          "ru": "его / её / свой"
+        },
+        {
+          "es": "charco",
+          "ru": "лужа"
+        },
+        {
+          "es": "una",
+          "ru": "неопределённый артикль женского рода; обычно без отдельного перевода"
+        },
+        {
+          "es": "parlera",
+          "ru": "болтливая"
+        },
+        {
+          "es": "rana",
+          "ru": "лягушка"
+        },
+        {
+          "es": "oyó",
+          "ru": "услышала (oír)"
+        },
+        {
+          "es": "cacarear",
+          "ru": "кудахтать"
+        },
+        {
+          "es": "a",
+          "ru": "к / для; перед инфинитивом или одушевлённым дополнением часто отдельно не переводится"
+        },
+        {
+          "es": "gallina",
+          "ru": "курица"
+        },
+        {
+          "es": "vaya",
+          "ru": "ну и ну! (возглас удивления)"
+        },
+        {
+          "es": "le",
+          "ru": "ему / ей; местоимение дополнения"
+        },
+        {
+          "es": "dijo",
+          "ru": "сказал (decir)"
+        },
+        {
+          "es": "no",
+          "ru": "не / нет"
+        },
+        {
+          "es": "creyera",
+          "ru": "я бы подумала, поверила (creer, книжная форма)"
+        },
+        {
+          "es": "hermana",
+          "ru": "сестра, сестрица (обращение)"
+        },
+        {
+          "es": "que",
+          "ru": "что после no creyera; потому что в tú, que de nada sirves"
+        },
+        {
+          "es": "fueras",
+          "ru": "ты была бы; здесь после «не думала, что ты…» (ser)"
+        },
+        {
+          "es": "tan",
+          "ru": "такой, столь"
+        },
+        {
+          "es": "incómoda",
+          "ru": "беспокойная, доставляющая неудобства"
+        },
+        {
+          "es": "vecina",
+          "ru": "соседка"
+        },
+        {
+          "es": "y",
+          "ru": "и"
+        },
+        {
+          "es": "con",
+          "ru": "с / посредством"
+        },
+        {
+          "es": "toda",
+          "ru": "вся"
+        },
+        {
+          "es": "esa",
+          "ru": "та, эта (уже названная)"
+        },
+        {
+          "es": "bulla",
+          "ru": "шум, гам"
+        },
+        {
+          "es": "qué",
+          "ru": "что / какой; вопрос или восклицание"
+        },
+        {
+          "es": "hay",
+          "ru": "есть, имеется (безличное haber)"
+        },
+        {
+          "es": "de",
+          "ru": "в qué hay de nuevo — что нового; de eso — этому; sirvo de algo — приношу пользу"
+        },
+        {
+          "es": "nuevo",
+          "ru": "новое; ¿qué hay de nuevo? — что нового?"
+        },
+        {
+          "es": "nada",
+          "ru": "ничего; de nada — ни для чего (здесь не «плавает»)"
+        },
+        {
+          "es": "sino",
+          "ru": "кроме как, только; nada sino anunciar — ничего, только сообщаю"
+        },
+        {
+          "es": "anunciar",
+          "ru": "сообщать, объявлять"
+        },
+        {
+          "es": "pongo",
+          "ru": "я кладу; pongo un huevo — несу яйцо"
+        },
+        {
+          "es": "un",
+          "ru": "неопределённый артикль мужского рода; обычно без отдельного перевода"
+        },
+        {
+          "es": "huevo",
+          "ru": "яйцо"
+        },
+        {
+          "es": "solo",
+          "ru": "один, единственный; un huevo solo — всего одно яйцо"
+        },
+        {
+          "es": "alborotas",
+          "ru": "ты шумишь, поднимаешь шум"
+        },
+        {
+          "es": "tanto",
+          "ru": "так много, настолько"
+        },
+        {
+          "es": "sí",
+          "ru": "да"
+        },
+        {
+          "es": "señora",
+          "ru": "сударыня, госпожа"
+        },
+        {
+          "es": "mía",
+          "ru": "моя"
+        },
+        {
+          "es": "te",
+          "ru": "тебе / тебя"
+        },
+        {
+          "es": "espantas",
+          "ru": "ты удивляешься, пугаешься (в te espantas)"
+        },
+        {
+          "es": "eso",
+          "ru": "это"
+        },
+        {
+          "es": "cuando",
+          "ru": "когда"
+        },
+        {
+          "es": "me",
+          "ru": "возвратная частица в no me espanto — я не удивляюсь"
+        },
+        {
+          "es": "espanto",
+          "ru": "я удивляюсь, пугаюсь (в me espanto)"
+        },
+        {
+          "es": "oírte",
+          "ru": "слышать тебя (oír + te)"
+        },
+        {
+          "es": "cómo",
+          "ru": "как (вопрос или восклицание)"
+        },
+        {
+          "es": "graznas",
+          "ru": "ты кричишь хрипло, каркаешь; о лягушке иронически"
+        },
+        {
+          "es": "noche",
+          "ru": "ночь"
+        },
+        {
+          "es": "día",
+          "ru": "день"
+        },
+        {
+          "es": "yo",
+          "ru": "я"
+        },
+        {
+          "es": "porque",
+          "ru": "потому что, за то что"
+        },
+        {
+          "es": "sirvo",
+          "ru": "я полезна; sirvo de algo — я приношу пользу"
+        },
+        {
+          "es": "algo",
+          "ru": "что-нибудь, что-то"
+        },
+        {
+          "es": "lo",
+          "ru": "это; lo publico — сообщаю об этом"
+        },
+        {
+          "es": "publico",
+          "ru": "я сообщаю, объявляю (publicar; без ударения)"
+        },
+        {
+          "es": "tú",
+          "ru": "ты"
+        },
+        {
+          "es": "sirves",
+          "ru": "ты полезна; de nada sirves — от тебя нет пользы"
+        },
+        {
+          "es": "calla",
+          "ru": "замолчи (повелительное callar)"
+        },
+        {
+          "es": "el",
+          "ru": "определённый артикль мужского рода"
+        },
+        {
+          "es": "pico",
+          "ru": "клюв; calla el pico — закрой рот (грубое выражение)"
+        },
+        {
+          "es": "qué hay de nuevo",
+          "ru": "что нового?"
+        },
+        {
+          "es": "pongo un huevo",
+          "ru": "я несу яйцо"
+        },
+        {
+          "es": "noche y día",
+          "ru": "днём и ночью"
+        },
+        {
+          "es": "calla el pico",
+          "ru": "закрой рот (грубое выражение)"
+        }
+      ]
+    },
+    {
+      "id": "literature:iriarte-17",
+      "kind": "literature",
+      "title": "El Jilguero y el Cisne",
+      "author": "Tomás de Iriarte (1750–1791)",
+      "level": "B2",
+      "format": "Басня в стихах",
+      "formatId": "literature",
+      "theme": "Литература и идеи",
+      "minutes": 8,
+      "wholeAudio": {
+        "file": "assets/reading-audio/iriarte-17.mp3",
+        "durationSeconds": 76,
+        "speaker": "mariemdover",
+        "sourceUrl": "https://archive.org/download/fabulasliterarias_1702_librivox/fabulasliterarias_17_iriarte_64kb.mp3",
+        "catalogUrl": "https://librivox.org/fabulas-literarias-by-tomas-de-iriarte/",
+        "license": "Public Domain Mark 1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+        "sha256": "e7338971b6acdd6fbb17cbe170d7c1bcc54b9cb7c06c8b611306034d91cc07de",
+        "bytes": 616960,
+        "unaltered": true
+      },
+      "textSource": "https://www.gutenberg.org/ebooks/29497",
+      "sourceEdition": "Project Gutenberg 29497; оригинальная орфография сохранена",
+      "lines": [
+        {
+          "es": "\"Calla, tú, pajarillo vocinglero\n(Dijo el Cisne al Jilguero):\n¿A cantar me provocas, cuando sabes\nQue de mi voz la dulce melodía\nNunca ha tenido igual entre las aves?\"",
+          "audio": null,
+          "speaker": null,
+          "ru": "«Замолчи, крикливая птичка, — сказал лебедь щеглу. — Ты вызываешь меня на состязание в пении, хотя знаешь, что сладкая мелодия моего голоса никогда не имела равных среди птиц?»"
+        },
+        {
+          "es": "El Jilguero sus trinos repetía,\nY el Cisne continuaba: \"¡Qué insolencia!\n¡Miren cómo me insulta el musiquillo!\nSi con soltar mi canto no le humillo,\nDé muchas gracias a mi gran prudencia.\"",
+          "audio": null,
+          "speaker": null,
+          "ru": "Щегол повторял свои трели, а лебедь продолжал: «Какая наглость! Посмотрите, как этот музыкантишка меня оскорбляет! Если я не унижаю его своим пением, пусть благодарит мою великую сдержанность»."
+        },
+        {
+          "es": "--\"¡Ojalá que cantaras!\n(Le respondió por fin el pajarillo);\n¡Cuánto no admirarías\nCon las cadencias raras\nQue ninguno asegura haberte oído,\nAunque logran más fama que las mías!...\"\nQuiso el Cisne cantar, y dió un graznido.",
+          "audio": null,
+          "speaker": null,
+          "ru": "«Вот бы ты спел! — наконец ответила птичка. — Как бы все восхитились твоими необычными переливами, которых, по правде, никто не слышал, хотя славятся они больше моих!..» Лебедь захотел запеть, но издал хриплый крик."
+        },
+        {
+          "es": "¡Gran cosa! ganar crédito sin ciencia,\nY perderle en llegando a la experiencia.",
+          "audio": null,
+          "speaker": null,
+          "ru": "Вот так штука: приобрести славу без умения и лишиться её, как только дело доходит до проверки на практике."
+        }
+      ],
+      "es": "\"Calla, tú, pajarillo vocinglero\n(Dijo el Cisne al Jilguero):\n¿A cantar me provocas, cuando sabes\nQue de mi voz la dulce melodía\nNunca ha tenido igual entre las aves?\"\n\nEl Jilguero sus trinos repetía,\nY el Cisne continuaba: \"¡Qué insolencia!\n¡Miren cómo me insulta el musiquillo!\nSi con soltar mi canto no le humillo,\nDé muchas gracias a mi gran prudencia.\"\n\n--\"¡Ojalá que cantaras!\n(Le respondió por fin el pajarillo);\n¡Cuánto no admirarías\nCon las cadencias raras\nQue ninguno asegura haberte oído,\nAunque logran más fama que las mías!...\"\nQuiso el Cisne cantar, y dió un graznido.\n\n¡Gran cosa! ganar crédito sin ciencia,\nY perderle en llegando a la experiencia.",
+      "ru": "«Замолчи, крикливая птичка, — сказал лебедь щеглу. — Ты вызываешь меня на состязание в пении, хотя знаешь, что сладкая мелодия моего голоса никогда не имела равных среди птиц?»\n\nЩегол повторял свои трели, а лебедь продолжал: «Какая наглость! Посмотрите, как этот музыкантишка меня оскорбляет! Если я не унижаю его своим пением, пусть благодарит мою великую сдержанность».\n\n«Вот бы ты спел! — наконец ответила птичка. — Как бы все восхитились твоими необычными переливами, которых, по правде, никто не слышал, хотя славятся они больше моих!..» Лебедь захотел запеть, но издал хриплый крик.\n\nВот так штука: приобрести славу без умения и лишиться её, как только дело доходит до проверки на практике.",
+      "subtitleRu": "Лебедь хвалится голосом, пока его не просят спеть.",
+      "learningNoteRu": "Оригинальные стихи XVIII века, а не упрощённый рассказ. B2 — редакционная оценка сложности чтения, не подтверждение уровня. Сохранена орфография из электронной версии: отдельные формы отличаются от современного испанского. Русский перевод передаёт смысл прозой.",
+      "task": {
+        "prompt": "Что происходит, когда лебедь пытается запеть?",
+        "options": [
+          "Щегол замолкает, восхищённый мелодией.",
+          "Оба начинают петь одинаково.",
+          "Он издаёт хриплый крик."
+        ],
+        "answer": 2,
+        "feedback": "Лебедь только хвалился. Попытка пения разоблачает репутацию, которую не подтверждает умение."
+      },
+      "mission": "За 2–3 предложения перескажи, чем лебедь хвалился и что показала попытка запеть.",
+      "glossary": [
+        {
+          "es": "calla",
+          "ru": "замолчи (повелительное callar)"
+        },
+        {
+          "es": "tú",
+          "ru": "ты"
+        },
+        {
+          "es": "pajarillo",
+          "ru": "птичка"
+        },
+        {
+          "es": "vocinglero",
+          "ru": "крикливый, шумный"
+        },
+        {
+          "es": "dijo",
+          "ru": "сказал (decir)"
+        },
+        {
+          "es": "el",
+          "ru": "определённый артикль мужского рода"
+        },
+        {
+          "es": "cisne",
+          "ru": "лебедь"
+        },
+        {
+          "es": "al",
+          "ru": "a + el: к / на / в с артиклем"
+        },
+        {
+          "es": "jilguero",
+          "ru": "щегол"
+        },
+        {
+          "es": "a",
+          "ru": "к / для; перед инфинитивом или одушевлённым дополнением часто отдельно не переводится"
+        },
+        {
+          "es": "cantar",
+          "ru": "петь"
+        },
+        {
+          "es": "me",
+          "ru": "меня: me provocas — вызываешь меня; me insulta — оскорбляет меня"
+        },
+        {
+          "es": "provocas",
+          "ru": "ты вызываешь, провоцируешь"
+        },
+        {
+          "es": "cuando",
+          "ru": "когда"
+        },
+        {
+          "es": "sabes",
+          "ru": "ты знаешь"
+        },
+        {
+          "es": "que",
+          "ru": "что / которую: cuando sabes que — когда знаешь, что; cadencias que — переливы, которые"
+        },
+        {
+          "es": "de",
+          "ru": "предлог связи: de mi voz — моего голоса; de mi — мой/моего в составе выражения"
+        },
+        {
+          "es": "mi",
+          "ru": "мой, моя"
+        },
+        {
+          "es": "voz",
+          "ru": "голос"
+        },
+        {
+          "es": "la",
+          "ru": "артикль женского рода либо «её»; смотри конструкцию в строфе"
+        },
+        {
+          "es": "dulce",
+          "ru": "сладкая, нежная"
+        },
+        {
+          "es": "melodía",
+          "ru": "мелодия"
+        },
+        {
+          "es": "nunca",
+          "ru": "никогда"
+        },
+        {
+          "es": "ha",
+          "ru": "вспомогательная форма haber в прошедшем времени; самостоятельно не переводится"
+        },
+        {
+          "es": "tenido",
+          "ru": "имел; ha tenido — имела"
+        },
+        {
+          "es": "igual",
+          "ru": "равный; tener igual — иметь равного"
+        },
+        {
+          "es": "entre",
+          "ru": "между, среди"
+        },
+        {
+          "es": "las",
+          "ru": "артикль женского рода: las aves — птицы; las cadencias — переливы; las mías — мои"
+        },
+        {
+          "es": "aves",
+          "ru": "птицы"
+        },
+        {
+          "es": "sus",
+          "ru": "его / её / их / свои"
+        },
+        {
+          "es": "trinos",
+          "ru": "трели"
+        },
+        {
+          "es": "repetía",
+          "ru": "повторял (repetir)"
+        },
+        {
+          "es": "y",
+          "ru": "и"
+        },
+        {
+          "es": "continuaba",
+          "ru": "продолжал"
+        },
+        {
+          "es": "qué",
+          "ru": "что / какой; вопрос или восклицание"
+        },
+        {
+          "es": "insolencia",
+          "ru": "наглость, дерзость"
+        },
+        {
+          "es": "miren",
+          "ru": "посмотрите (обращение к нескольким слушателям)"
+        },
+        {
+          "es": "cómo",
+          "ru": "как (вопрос или восклицание)"
+        },
+        {
+          "es": "insulta",
+          "ru": "оскорбляет"
+        },
+        {
+          "es": "musiquillo",
+          "ru": "музыкантишка (пренебрежительное)"
+        },
+        {
+          "es": "si",
+          "ru": "если"
+        },
+        {
+          "es": "con",
+          "ru": "с / посредством: con soltar mi canto — своим пением; con las cadencias — переливами"
+        },
+        {
+          "es": "soltar",
+          "ru": "выпустить, дать волю; soltar mi canto — запеть"
+        },
+        {
+          "es": "canto",
+          "ru": "пение"
+        },
+        {
+          "es": "no",
+          "ru": "не / нет"
+        },
+        {
+          "es": "le",
+          "ru": "его в no le humillo; ему в le respondió; его в perderle (о репутации)"
+        },
+        {
+          "es": "humillo",
+          "ru": "я унижаю (humillar)"
+        },
+        {
+          "es": "dé",
+          "ru": "пусть даст; dé gracias — пусть поблагодарит"
+        },
+        {
+          "es": "muchas",
+          "ru": "много; muchas gracias — большое спасибо"
+        },
+        {
+          "es": "gracias",
+          "ru": "благодарности; dar gracias — благодарить"
+        },
+        {
+          "es": "gran",
+          "ru": "большой; сокращённое grande перед существительным"
+        },
+        {
+          "es": "prudencia",
+          "ru": "благоразумие, сдержанность"
+        },
+        {
+          "es": "ojalá",
+          "ru": "вот бы, пусть бы; выражает желание"
+        },
+        {
+          "es": "cantaras",
+          "ru": "ты спел бы (cantar, сослагательное наклонение)"
+        },
+        {
+          "es": "respondió",
+          "ru": "ответил"
+        },
+        {
+          "es": "por",
+          "ru": "предлог; значение задаёт выражение: por casualidad — случайно"
+        },
+        {
+          "es": "fin",
+          "ru": "конец; por fin — наконец"
+        },
+        {
+          "es": "cuánto",
+          "ru": "как сильно, насколько"
+        },
+        {
+          "es": "admirarías",
+          "ru": "ты вызвал бы восхищение; в этой реплике ирония"
+        },
+        {
+          "es": "cadencias",
+          "ru": "мелодические переливы, обороты"
+        },
+        {
+          "es": "raras",
+          "ru": "необычные, редкие"
+        },
+        {
+          "es": "ninguno",
+          "ru": "никто (здесь)"
+        },
+        {
+          "es": "asegura",
+          "ru": "уверяет, утверждает"
+        },
+        {
+          "es": "haberte",
+          "ru": "вспомогательное haber + te; haberte oído — слышать тебя"
+        },
+        {
+          "es": "oído",
+          "ru": "слышал; причастие oír"
+        },
+        {
+          "es": "aunque",
+          "ru": "хотя"
+        },
+        {
+          "es": "logran",
+          "ru": "добиваются, получают"
+        },
+        {
+          "es": "más",
+          "ru": "больше, более"
+        },
+        {
+          "es": "fama",
+          "ru": "слава, известность"
+        },
+        {
+          "es": "mías",
+          "ru": "мои (женский род, множественное число)"
+        },
+        {
+          "es": "quiso",
+          "ru": "захотел (querer)"
+        },
+        {
+          "es": "dió",
+          "ru": "дал, издал; старая орфография современного dio"
+        },
+        {
+          "es": "un",
+          "ru": "неопределённый артикль мужского рода; обычно без отдельного перевода"
+        },
+        {
+          "es": "graznido",
+          "ru": "хриплый птичий крик"
+        },
+        {
+          "es": "cosa",
+          "ru": "вещь, дело; ¡Gran cosa! — вот так штука! (ирония)"
+        },
+        {
+          "es": "ganar",
+          "ru": "получить, приобрести"
+        },
+        {
+          "es": "crédito",
+          "ru": "добрая репутация, доверие (здесь не банковский кредит)"
+        },
+        {
+          "es": "sin",
+          "ru": "без"
+        },
+        {
+          "es": "ciencia",
+          "ru": "знание, умение (здесь)"
+        },
+        {
+          "es": "perderle",
+          "ru": "лишиться его; старое le относится к crédito"
+        },
+        {
+          "es": "en",
+          "ru": "в / на"
+        },
+        {
+          "es": "llegando",
+          "ru": "приближаясь, прибывая"
+        },
+        {
+          "es": "experiencia",
+          "ru": "проверка на практике, опыт"
+        },
+        {
+          "es": "por fin",
+          "ru": "наконец"
+        },
+        {
+          "es": "ganar crédito",
+          "ru": "приобрести репутацию"
+        },
+        {
+          "es": "sin ciencia",
+          "ru": "без знаний или умения"
+        }
+      ]
+    },
+    {
+      "id": "literature:iriarte-21",
+      "kind": "literature",
+      "title": "El Ratón y el Gato",
+      "author": "Tomás de Iriarte (1750–1791)",
+      "level": "B2",
+      "format": "Басня в стихах",
+      "formatId": "literature",
+      "theme": "Литература и идеи",
+      "minutes": 8,
+      "wholeAudio": {
+        "file": "assets/reading-audio/iriarte-21.mp3",
+        "durationSeconds": 99,
+        "speaker": "mariemdover",
+        "sourceUrl": "https://archive.org/download/fabulasliterarias_1702_librivox/fabulasliterarias_21_iriarte_64kb.mp3",
+        "catalogUrl": "https://librivox.org/fabulas-literarias-by-tomas-de-iriarte/",
+        "license": "Public Domain Mark 1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+        "sha256": "9c832633940f65e83d7bf689ba58580710ea5ef623d66b247c2afbdb0e0fd1cf",
+        "bytes": 797184,
+        "unaltered": true
+      },
+      "textSource": "https://www.gutenberg.org/ebooks/29497",
+      "sourceEdition": "Project Gutenberg 29497; оригинальная орфография сохранена",
+      "lines": [
+        {
+          "es": "Tuvo Esopo famosas ocurrencias,\n¡Qué invención tan sencilla! ¡qué sentencias!...\nHe de poner, pues que la tengo a mano,\nUna fábula suya en castellano.",
+          "audio": null,
+          "speaker": null,
+          "ru": "У Эзопа были знаменитые находки: какая простая выдумка, какие поучительные мысли! Раз уж у меня под рукой есть одна его басня, я изложу её по-испански."
+        },
+        {
+          "es": "\"Cierto (dijo un Ratón en su agujero),\nNo hay prenda más amable y estupenda\nQue la fidelidad; por eso quiero\nTan de veras al perro perdiguero.\"\nUn Gato replicó: \"Pues esa prenda\nYo la tengo también...\" Aquí se asusta\nMi buen Ratón, se esconde,\nY, torciendo el hocico, le responde:\n\"¡Cómo! ¿la tienes tú?... Ya no me gusta.\"",
+          "audio": null,
+          "speaker": null,
+          "ru": "«Верно, — сказал мышонок в своей норке, — нет качества приятнее и замечательнее верности; поэтому я так искренне люблю охотничью собаку». Кот возразил: «Но ведь и у меня есть это качество…» Тут наш добрый мышонок пугается, прячется и, скривив мордочку, отвечает: «Как? У тебя оно есть?.. Тогда мне оно больше не нравится»."
+        },
+        {
+          "es": "La alabanza que muchos creen justa,\nInjusta les parece\nSi ven que su contrario la merece.",
+          "audio": null,
+          "speaker": null,
+          "ru": "Похвала, которую многие считают справедливой, кажется им несправедливой, если выясняется, что её заслуживает их противник."
+        },
+        {
+          "es": "¿Qué tal, señor lector? La fabulilla\nPuede ser que le agrade, y que le instruya.\n--\"Es una maravilla;\nDijo Esopo una cosa como suya.\"\n--\"Pues mire usted: Esopo no la ha escrito;\nSalió de mi cabeza.\"--\"¿Conque es tuya?\"",
+          "audio": null,
+          "speaker": null,
+          "ru": "Ну как, господин читатель? Может быть, басня вам понравится и чему-то научит. — «Это чудо! Эзоп сказал нечто достойное себя». — «Так вот, послушайте: Эзоп этого не писал; это придумал я». — «Так она твоя?»"
+        },
+        {
+          "es": "--\"Sí, señor erudito:\nYa que antes tan feliz le parecía,\nCritíquemela ahora porque es mía.\"",
+          "audio": null,
+          "speaker": null,
+          "ru": "«Да, господин знаток. Раз раньше она казалась вам столь удачной, теперь раскритикуйте её за то, что она моя»."
+        }
+      ],
+      "es": "Tuvo Esopo famosas ocurrencias,\n¡Qué invención tan sencilla! ¡qué sentencias!...\nHe de poner, pues que la tengo a mano,\nUna fábula suya en castellano.\n\n\"Cierto (dijo un Ratón en su agujero),\nNo hay prenda más amable y estupenda\nQue la fidelidad; por eso quiero\nTan de veras al perro perdiguero.\"\nUn Gato replicó: \"Pues esa prenda\nYo la tengo también...\" Aquí se asusta\nMi buen Ratón, se esconde,\nY, torciendo el hocico, le responde:\n\"¡Cómo! ¿la tienes tú?... Ya no me gusta.\"\n\nLa alabanza que muchos creen justa,\nInjusta les parece\nSi ven que su contrario la merece.\n\n¿Qué tal, señor lector? La fabulilla\nPuede ser que le agrade, y que le instruya.\n--\"Es una maravilla;\nDijo Esopo una cosa como suya.\"\n--\"Pues mire usted: Esopo no la ha escrito;\nSalió de mi cabeza.\"--\"¿Conque es tuya?\"\n\n--\"Sí, señor erudito:\nYa que antes tan feliz le parecía,\nCritíquemela ahora porque es mía.\"",
+      "ru": "У Эзопа были знаменитые находки: какая простая выдумка, какие поучительные мысли! Раз уж у меня под рукой есть одна его басня, я изложу её по-испански.\n\n«Верно, — сказал мышонок в своей норке, — нет качества приятнее и замечательнее верности; поэтому я так искренне люблю охотничью собаку». Кот возразил: «Но ведь и у меня есть это качество…» Тут наш добрый мышонок пугается, прячется и, скривив мордочку, отвечает: «Как? У тебя оно есть?.. Тогда мне оно больше не нравится».\n\nПохвала, которую многие считают справедливой, кажется им несправедливой, если выясняется, что её заслуживает их противник.\n\nНу как, господин читатель? Может быть, басня вам понравится и чему-то научит. — «Это чудо! Эзоп сказал нечто достойное себя». — «Так вот, послушайте: Эзоп этого не писал; это придумал я». — «Так она твоя?»\n\n«Да, господин знаток. Раз раньше она казалась вам столь удачной, теперь раскритикуйте её за то, что она моя».",
+      "subtitleRu": "Мнение о басне меняется, когда становится известно имя автора.",
+      "learningNoteRu": "Оригинальные стихи XVIII века, а не упрощённый рассказ. B2 — редакционная оценка сложности чтения, не подтверждение уровня. Сохранена орфография из электронной версии: отдельные формы отличаются от современного испанского. Русский перевод передаёт смысл прозой.",
+      "task": {
+        "prompt": "Зачем автор раскрывает, что басня написана им, а не Эзопом?",
+        "options": [
+          "Чтобы отказаться от всех похвал Эзопу.",
+          "Чтобы показать предвзятость оценки по имени автора.",
+          "Чтобы доказать, что мышь написала басню."
+        ],
+        "answer": 1,
+        "feedback": "Читатель уже похвалил текст. Автор предлагает не менять оценку лишь потому, что выяснилось другое имя."
+      },
+      "mission": "Объясни по-испански, почему мышь меняет мнение о верности, и свяжи это с оценкой автора басни.",
+      "glossary": [
+        {
+          "es": "tuvo",
+          "ru": "имел (tener)"
+        },
+        {
+          "es": "esopo",
+          "ru": "Эзоп (древнегреческий баснописец)"
+        },
+        {
+          "es": "famosas",
+          "ru": "знаменитые"
+        },
+        {
+          "es": "ocurrencias",
+          "ru": "находки, придуманные истории"
+        },
+        {
+          "es": "qué",
+          "ru": "что / какой; вопрос или восклицание"
+        },
+        {
+          "es": "invención",
+          "ru": "выдумка, замысел"
+        },
+        {
+          "es": "tan",
+          "ru": "такой, столь"
+        },
+        {
+          "es": "sencilla",
+          "ru": "простая"
+        },
+        {
+          "es": "sentencias",
+          "ru": "поучительные мысли, изречения (здесь не судебные приговоры)"
+        },
+        {
+          "es": "he",
+          "ru": "форма haber; he de — я должен / намерен"
+        },
+        {
+          "es": "de",
+          "ru": "в he de poner — я намерен изложить; de veras — искренне; de mi cabeza — из моей головы"
+        },
+        {
+          "es": "poner",
+          "ru": "изложить (здесь)"
+        },
+        {
+          "es": "pues",
+          "ru": "раз, поскольку в pues que; так вот в pues mire usted"
+        },
+        {
+          "es": "que",
+          "ru": "что / который; соединяет части предложения"
+        },
+        {
+          "es": "la",
+          "ru": "артикль или «её»: la tengo и la ha escrito относятся к басне; la merece — заслуживает похвалы"
+        },
+        {
+          "es": "tengo",
+          "ru": "я имею; в сочетании с причастием подчёркивает результат"
+        },
+        {
+          "es": "a",
+          "ru": "к / для; перед инфинитивом или одушевлённым дополнением часто отдельно не переводится"
+        },
+        {
+          "es": "mano",
+          "ru": "рука; a mano — под рукой"
+        },
+        {
+          "es": "una",
+          "ru": "неопределённый артикль женского рода; обычно без отдельного перевода"
+        },
+        {
+          "es": "fábula",
+          "ru": "басня"
+        },
+        {
+          "es": "suya",
+          "ru": "его / её; здесь басня Эзопа"
+        },
+        {
+          "es": "en",
+          "ru": "в / на"
+        },
+        {
+          "es": "castellano",
+          "ru": "испанский язык"
+        },
+        {
+          "es": "cierto",
+          "ru": "верно, действительно (здесь вводное слово)"
+        },
+        {
+          "es": "dijo",
+          "ru": "сказал (decir)"
+        },
+        {
+          "es": "un",
+          "ru": "неопределённый артикль мужского рода; обычно без отдельного перевода"
+        },
+        {
+          "es": "ratón",
+          "ru": "мышь, мышонок"
+        },
+        {
+          "es": "su",
+          "ru": "его / её / свой"
+        },
+        {
+          "es": "agujero",
+          "ru": "отверстие; здесь норка"
+        },
+        {
+          "es": "no",
+          "ru": "не / нет"
+        },
+        {
+          "es": "hay",
+          "ru": "есть, имеется (безличное haber)"
+        },
+        {
+          "es": "prenda",
+          "ru": "достоинство, ценное качество (здесь не одежда)"
+        },
+        {
+          "es": "más",
+          "ru": "больше, более"
+        },
+        {
+          "es": "amable",
+          "ru": "приятное, достойное любви"
+        },
+        {
+          "es": "y",
+          "ru": "и"
+        },
+        {
+          "es": "estupenda",
+          "ru": "замечательная"
+        },
+        {
+          "es": "fidelidad",
+          "ru": "верность, преданность"
+        },
+        {
+          "es": "por",
+          "ru": "в por eso — поэтому"
+        },
+        {
+          "es": "eso",
+          "ru": "это"
+        },
+        {
+          "es": "quiero",
+          "ru": "я люблю (querer, здесь)"
+        },
+        {
+          "es": "veras",
+          "ru": "искренность; de veras — по-настоящему"
+        },
+        {
+          "es": "al",
+          "ru": "a + el: к / на / в с артиклем"
+        },
+        {
+          "es": "perro",
+          "ru": "собака"
+        },
+        {
+          "es": "perdiguero",
+          "ru": "охотничий; perro perdiguero — собака для охоты на птицу"
+        },
+        {
+          "es": "gato",
+          "ru": "кот"
+        },
+        {
+          "es": "replicó",
+          "ru": "возразил"
+        },
+        {
+          "es": "esa",
+          "ru": "та, эта (уже названная)"
+        },
+        {
+          "es": "yo",
+          "ru": "я"
+        },
+        {
+          "es": "también",
+          "ru": "тоже, также"
+        },
+        {
+          "es": "aquí",
+          "ru": "здесь, тут"
+        },
+        {
+          "es": "se",
+          "ru": "возвратная частица: se asusta — пугается; se esconde — прячется"
+        },
+        {
+          "es": "asusta",
+          "ru": "пугается (в se asusta)"
+        },
+        {
+          "es": "mi",
+          "ru": "мой, моя"
+        },
+        {
+          "es": "buen",
+          "ru": "добрый, хороший; сокращённое bueno"
+        },
+        {
+          "es": "esconde",
+          "ru": "прячется (в se esconde)"
+        },
+        {
+          "es": "torciendo",
+          "ru": "кривя, искривляя"
+        },
+        {
+          "es": "el",
+          "ru": "определённый артикль мужского рода"
+        },
+        {
+          "es": "hocico",
+          "ru": "мордочка, морда"
+        },
+        {
+          "es": "le",
+          "ru": "ему в le responde; вам в le agrade, le instruya и le parecía"
+        },
+        {
+          "es": "responde",
+          "ru": "отвечает"
+        },
+        {
+          "es": "cómo",
+          "ru": "как (вопрос или восклицание)"
+        },
+        {
+          "es": "tienes",
+          "ru": "ты имеешь"
+        },
+        {
+          "es": "tú",
+          "ru": "ты"
+        },
+        {
+          "es": "ya",
+          "ru": "уже, теперь"
+        },
+        {
+          "es": "me",
+          "ru": "мне; ya no me gusta — мне больше не нравится"
+        },
+        {
+          "es": "gusta",
+          "ru": "нравится (в me gusta)"
+        },
+        {
+          "es": "alabanza",
+          "ru": "похвала"
+        },
+        {
+          "es": "muchos",
+          "ru": "многие"
+        },
+        {
+          "es": "creen",
+          "ru": "считают, полагают"
+        },
+        {
+          "es": "justa",
+          "ru": "справедливая"
+        },
+        {
+          "es": "injusta",
+          "ru": "несправедливая"
+        },
+        {
+          "es": "les",
+          "ru": "им"
+        },
+        {
+          "es": "parece",
+          "ru": "кажется"
+        },
+        {
+          "es": "si",
+          "ru": "если"
+        },
+        {
+          "es": "ven",
+          "ru": "видят (ver; здесь не повелительное venir)"
+        },
+        {
+          "es": "contrario",
+          "ru": "противник, оппонент (здесь)"
+        },
+        {
+          "es": "merece",
+          "ru": "заслуживает"
+        },
+        {
+          "es": "tal",
+          "ru": "такой; ¿qué tal? — ну как?"
+        },
+        {
+          "es": "señor",
+          "ru": "господин"
+        },
+        {
+          "es": "lector",
+          "ru": "читатель"
+        },
+        {
+          "es": "fabulilla",
+          "ru": "маленькая басня (уменьшительное от fábula)"
+        },
+        {
+          "es": "puede",
+          "ru": "может"
+        },
+        {
+          "es": "ser",
+          "ru": "быть"
+        },
+        {
+          "es": "agrade",
+          "ru": "понравится (agradar, сослагательное наклонение)"
+        },
+        {
+          "es": "instruya",
+          "ru": "научит, наставит (instruir, сослагательное наклонение)"
+        },
+        {
+          "es": "es",
+          "ru": "есть, является (ser)"
+        },
+        {
+          "es": "maravilla",
+          "ru": "чудо, нечто замечательное"
+        },
+        {
+          "es": "cosa",
+          "ru": "вещь, дело; ¡Gran cosa! — вот так штука! (ирония)"
+        },
+        {
+          "es": "como",
+          "ru": "как; como suya — достойное его авторства"
+        },
+        {
+          "es": "mire",
+          "ru": "послушайте, обратите внимание (вежливое повелительное mirar)"
+        },
+        {
+          "es": "usted",
+          "ru": "вы (вежливое обращение к одному человеку)"
+        },
+        {
+          "es": "ha",
+          "ru": "вспомогательная форма haber в прошедшем времени; самостоятельно не переводится"
+        },
+        {
+          "es": "escrito",
+          "ru": "написал; причастие escribir"
+        },
+        {
+          "es": "salió",
+          "ru": "вышел (salir)"
+        },
+        {
+          "es": "cabeza",
+          "ru": "голова; salió de mi cabeza — я это придумал"
+        },
+        {
+          "es": "conque",
+          "ru": "так значит, стало быть"
+        },
+        {
+          "es": "tuya",
+          "ru": "твоя"
+        },
+        {
+          "es": "sí",
+          "ru": "да"
+        },
+        {
+          "es": "erudito",
+          "ru": "учёный человек, знаток; здесь ироническое обращение"
+        },
+        {
+          "es": "antes",
+          "ru": "раньше, прежде"
+        },
+        {
+          "es": "feliz",
+          "ru": "удачная (о басне, здесь не «счастливая»)"
+        },
+        {
+          "es": "parecía",
+          "ru": "казалась"
+        },
+        {
+          "es": "critíquemela",
+          "ru": "раскритикуйте её мне; criticar + me + la (вежливая форма)"
+        },
+        {
+          "es": "ahora",
+          "ru": "сейчас"
+        },
+        {
+          "es": "porque",
+          "ru": "потому что, за то что"
+        },
+        {
+          "es": "mía",
+          "ru": "моя"
+        },
+        {
+          "es": "a mano",
+          "ru": "под рукой"
+        },
+        {
+          "es": "de veras",
+          "ru": "по-настоящему, искренне"
+        },
+        {
+          "es": "ya no me gusta",
+          "ru": "мне это больше не нравится"
+        },
+        {
+          "es": "qué tal",
+          "ru": "ну как?"
+        }
+      ]
+    }
+  ]
+}
