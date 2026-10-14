@@ -7,7 +7,11 @@ const state={day:1,audioSpeed:.5,completed:[1],reader:{},library:{favorites:[]}}
 vm.createContext(c);vm.runInContext(read('web/reader.js').replace('return {toggle,html,render:html,','return {auditTokens:()=>[...tokenMap.values()],toggle,html,render:html,'),c);
 const api=c.window.VamosReader.create({data,state,esc:String,icon:()=>'',playButton:(id,label)=>`<button data-audio="${id}">${label}</button>`,audioStatus:()=>'',audioControls:()=>'',audioCredit:()=>'',save(){},render(){},footer:()=>'',mascot:()=>''});
 function click(attribute,value=''){const key=attribute.slice(5).replace(/-([a-z])/g,(_,c)=>c.toUpperCase());assert.equal(api.click({dataset:{[key]:String(value)},hasAttribute:a=>a===attribute}),true);}
-assert.equal(beginner.books.length,6);assert.equal(beginner.books.filter(b=>b.level==='A1').length,3);assert.equal(beginner.books.filter(b=>b.level==='A2').length,3);
+assert.equal(beginner.books.length,18);assert.equal(beginner.books.filter(b=>b.level==='A1').length,9);assert.equal(beginner.books.filter(b=>b.level==='A2').length,9);
+const bands=['A1-start','A1-grow','A2-start','A2-grow'];assert(beginner.books.every((b,i)=>b.level===b.progressionBand.slice(0,2)&&(!i||bands.indexOf(b.progressionBand)>=bands.indexOf(beginner.books[i-1].progressionBand))));
+const previous=JSON.parse(require('node:child_process').execFileSync('git',['show','4d46784:course-reader-beginner.json'],{encoding:'utf8'}));
+for(const old of previous.books){const now=beginner.books.find(b=>b.id===old.id);assert(now);for(const key of Object.keys(old))assert.deepEqual(now[key],old[key],'Preserve original '+old.id+' '+key);}
+for(const [key,clip]of Object.entries(previous.clips))assert.deepEqual(beginner.clips[key],clip,'Preserve original media metadata '+key);
 for(const b of beginner.books){
  assert(['story','article'].includes(b.formatId));assert(b.lines.length>=5);assert.equal(b.es,b.lines.map(l=>l.es).join(' '));
  for(const l of b.lines){const a=beginner.clips[l.audio],original=corpus.get(String(a.audioId));assert(a&&original);assert.equal(l.es,original.text);assert.equal(a.text,l.es);assert.equal(original.speaker,'arh');assert.equal(original.license,a.license);assert(l.ru.trim());const bytes=fs.readFileSync('web/'+a.file);assert.equal(bytes.length,a.bytes);assert.equal(crypto.createHash('sha256').update(bytes).digest('hex'),a.sha256);assert(a.unaltered);}
@@ -16,6 +20,7 @@ for(const b of beginner.books){
  api.enter(b.id);assert.match(api.html(),/data-reader-play/);assert.match(api.html(),/Перевод предложения/);
  click('data-reader-answer',(b.task.answer+1)%b.task.options.length);click('data-reader-check');assert.equal(state.reader.rows[b.id].attempts[0].correct,false);
  click('data-reader-translation',0);click('data-reader-answer',b.task.answer);click('data-reader-check');assert.equal(state.reader.rows[b.id].attempts.at(-1).correct,true);assert.equal(state.reader.rows[b.id].attempts.at(-1).aided,true);assert.match(api.html(),/Ещё две маленькие практики/);assert.equal(state.reader.rows[b.id].attempts[0].correct,false);
+ const next=beginner.books[beginner.books.indexOf(b)+1];assert(api.html().includes('Следующий текст · шаг '+(beginner.books.indexOf(b)+2))===!!next);
 }
-click('data-reader-back');click('data-reader-beginner');assert.equal((api.html().match(/class="reader-book"/g)||[]).length,6);assert.match(api.html(),/Начни здесь/);assert.deepEqual(state.completed,[1]);
-console.log('PASS six A1–A2 texts, source-exact human media, full glossary, all quiz retries and beginner filter.');
+click('data-reader-back');click('data-reader-beginner');let shown=0;for(let page=0;page<3;page++){shown+=(api.html().match(/class="reader-book"/g)||[]).length;if(page<2)click('data-reader-page',1);}assert.equal(shown,18);assert.match(api.html(),/Начни здесь/);assert.deepEqual(state.completed,[1]);
+console.log('PASS eighteen progressively ordered A1–A2 texts, source-exact human media, full glossary, all quiz retries and beginner filter.');

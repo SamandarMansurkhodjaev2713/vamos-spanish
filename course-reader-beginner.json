@@ -1,6 +1,6 @@
 {
-  "version": 1,
-  "descriptionRu": "Короткое чтение A1–A2 с точным совпадением текста и человеческих записей предложений. Записи проигрываются по порядку, а не выдаются за единый студийный рассказ.",
+  "version": 2,
+  "descriptionRu": "18 коротких чтений A1–A2: от простых описаний к бытовым ситуациям, событиям, планам, связкам и мнениям. Каждая строка точно совпадает с оригинальной человеческой записью. Уровни и ступени — редакционная оценка, а не сертификация.",
   "books": [
     {
       "id": "beginner:cat-in-kitchen",
@@ -176,6 +176,659 @@
         {
           "es": "leche",
           "ru": "молоко"
+        }
+      ],
+      "progressionBand": "A1-start",
+      "learningFocusRu": "Описывай цвет, размер и место."
+    },
+    {
+      "id": "beginner:breakfast-is-ready",
+      "kind": "beginner",
+      "author": "Учебная подборка Vamos; оригинальные записи предложений — arh / Tatoeba",
+      "level": "A1",
+      "format": "Мини-история",
+      "formatId": "story",
+      "theme": "Еда и утро",
+      "title": "El desayuno está listo",
+      "subtitleRu": "Утро дома: завтрак готов, осталось попросить напиток.",
+      "minutes": 6,
+      "progressionBand": "A1-start",
+      "learningFocusRu": "Настоящее время: назвать время завтрака и попросить напиток.",
+      "mission": "Скажи, во сколько ты завтракаешь. Затем попроси чай или молоко: Una taza de té, por favor / Un vaso de leche, por favor.",
+      "learningNoteRu": "Уровень — редакционная оценка сложности. Сначала прочитай или послушай текст целиком. Нажми на незнакомое слово или перевод фразы; затем ответь на вопросы и произнеси свой ответ. Озвучка — последовательность отдельных человеческих записей: предложения не сокращены и не изменены.",
+      "supportNotes": [
+        "Desayuno в первой фразе — «я завтракаю», el desayuno во второй — «завтрак»."
+      ],
+      "lines": [
+        {
+          "es": "Desayuno a las siete todas las mañanas.",
+          "ru": "Я завтракаю в семь каждое утро.",
+          "audio": "beginner:610933",
+          "speaker": "arh"
+        },
+        {
+          "es": "El desayuno está listo.",
+          "ru": "Завтрак готов.",
+          "audio": "beginner:450353",
+          "speaker": "arh"
+        },
+        {
+          "es": "Comemos pan con mantequilla.",
+          "ru": "Мы едим хлеб с маслом.",
+          "audio": "beginner:934000",
+          "speaker": "arh"
+        },
+        {
+          "es": "Me gusta el té.",
+          "ru": "Мне нравится чай.",
+          "audio": "beginner:438255",
+          "speaker": "arh"
+        },
+        {
+          "es": "Una taza de té, por favor.",
+          "ru": "Чашку чая, пожалуйста.",
+          "audio": "beginner:43950",
+          "speaker": "arh"
+        },
+        {
+          "es": "Hay leche en el frigorífico.",
+          "ru": "В холодильнике есть молоко.",
+          "audio": "beginner:551756",
+          "speaker": "arh"
+        },
+        {
+          "es": "Un vaso de leche, por favor.",
+          "ru": "Стакан молока, пожалуйста.",
+          "audio": "beginner:526564",
+          "speaker": "arh"
+        }
+      ],
+      "es": "Desayuno a las siete todas las mañanas. El desayuno está listo. Comemos pan con mantequilla. Me gusta el té. Una taza de té, por favor. Hay leche en el frigorífico. Un vaso de leche, por favor.",
+      "ru": "Я завтракаю в семь каждое утро. Завтрак готов. Мы едим хлеб с маслом. Мне нравится чай. Чашку чая, пожалуйста. В холодильнике есть молоко. Стакан молока, пожалуйста.",
+      "task": {
+        "prompt": "Что едят за завтраком?",
+        "options": [
+          "Хлеб с маслом.",
+          "Рис с сыром.",
+          "Рыбу с картошкой."
+        ],
+        "answer": 0,
+        "feedback": "Comemos pan con mantequilla: pan — хлеб, mantequilla — сливочное масло.",
+        "id": "q1"
+      },
+      "tasks": [
+        {
+          "prompt": "Что едят за завтраком?",
+          "options": [
+            "Хлеб с маслом.",
+            "Рис с сыром.",
+            "Рыбу с картошкой."
+          ],
+          "answer": 0,
+          "feedback": "Comemos pan con mantequilla: pan — хлеб, mantequilla — сливочное масло.",
+          "id": "q1"
+        },
+        {
+          "prompt": "Во сколько рассказчик завтракает?",
+          "options": [
+            "В девять.",
+            "В семь.",
+            "В шесть."
+          ],
+          "answer": 1,
+          "feedback": "A las siete — в семь. Todas las mañanas — каждое утро.",
+          "id": "q2"
+        },
+        {
+          "prompt": "Как попросить стакан молока?",
+          "options": [
+            "El desayuno está listo.",
+            "Una taza de té, por favor.",
+            "Un vaso de leche, por favor."
+          ],
+          "answer": 2,
+          "feedback": "Un vaso de leche, por favor — стакан молока, пожалуйста. Taza — чашка, té — чай.",
+          "id": "q3"
+        }
+      ],
+      "glossary": [
+        {
+          "es": "desayuno",
+          "ru": "завтрак; я завтракаю (зависит от предложения)"
+        },
+        {
+          "es": "a",
+          "ru": "в; a las siete — в семь часов"
+        },
+        {
+          "es": "las",
+          "ru": "артикль женского рода во множественном числе; a las siete — в семь часов"
+        },
+        {
+          "es": "siete",
+          "ru": "семь"
+        },
+        {
+          "es": "todas",
+          "ru": "все; todas las mañanas — каждое утро"
+        },
+        {
+          "es": "mañanas",
+          "ru": "утра; todas las mañanas — каждое утро"
+        },
+        {
+          "es": "el",
+          "ru": "определённый артикль мужского рода; отдельно обычно не переводится"
+        },
+        {
+          "es": "está",
+          "ru": "находится / является сейчас (estar)"
+        },
+        {
+          "es": "listo",
+          "ru": "готовый"
+        },
+        {
+          "es": "comemos",
+          "ru": "мы едим"
+        },
+        {
+          "es": "pan",
+          "ru": "хлеб"
+        },
+        {
+          "es": "con",
+          "ru": "с"
+        },
+        {
+          "es": "mantequilla",
+          "ru": "сливочное масло"
+        },
+        {
+          "es": "me",
+          "ru": "мне; me gusta — мне нравится"
+        },
+        {
+          "es": "gusta",
+          "ru": "нравится; me gusta — мне нравится"
+        },
+        {
+          "es": "té",
+          "ru": "чай"
+        },
+        {
+          "es": "una",
+          "ru": "неопределённый артикль женского рода; una hora — один час"
+        },
+        {
+          "es": "taza",
+          "ru": "чашка"
+        },
+        {
+          "es": "de",
+          "ru": "в taza de té — чашка чая; vaso de leche — стакан молока"
+        },
+        {
+          "es": "por",
+          "ru": "по / за; por favor — пожалуйста; por semana — в неделю"
+        },
+        {
+          "es": "favor",
+          "ru": "услуга; por favor — пожалуйста"
+        },
+        {
+          "es": "hay",
+          "ru": "есть, имеется"
+        },
+        {
+          "es": "leche",
+          "ru": "молоко"
+        },
+        {
+          "es": "en",
+          "ru": "в / на"
+        },
+        {
+          "es": "frigorífico",
+          "ru": "холодильник"
+        },
+        {
+          "es": "un",
+          "ru": "неопределённый артикль мужского рода; часто без отдельного перевода"
+        },
+        {
+          "es": "vaso",
+          "ru": "стакан"
+        }
+      ]
+    },
+    {
+      "id": "beginner:shopping-for-food",
+      "kind": "beginner",
+      "author": "Учебная подборка Vamos; оригинальные записи предложений — arh / Tatoeba",
+      "level": "A1",
+      "format": "Мини-история",
+      "formatId": "story",
+      "theme": "Покупки и цены",
+      "title": "Pan y leche",
+      "subtitleRu": "Нужны продукты: идём в магазин, узнаём цены и покупаем хлеб.",
+      "minutes": 6,
+      "progressionBand": "A1-start",
+      "learningFocusRu": "Потребность, tengo que и вопрос о цене.",
+      "mission": "Скажи Necesito pan y leche. Затем спроси цену сыра: ¿Cuánto cuesta ese queso? Повтори без перевода.",
+      "learningNoteRu": "Уровень — редакционная оценка сложности. Сначала прочитай или послушай текст целиком. Нажми на незнакомое слово или перевод фразы; затем ответь на вопросы и произнеси свой ответ. Озвучка — последовательность отдельных человеческих записей: предложения не сокращены и не изменены.",
+      "supportNotes": [
+        "Tengo que + действие: tengo que ir — мне нужно пойти.",
+        "No es caro — это недорого, а не бесплатно."
+      ],
+      "lines": [
+        {
+          "es": "Necesito pan y leche.",
+          "ru": "Мне нужны хлеб и молоко.",
+          "audio": "beginner:525392",
+          "speaker": "arh"
+        },
+        {
+          "es": "Tengo que ir a comprar.",
+          "ru": "Мне нужно сходить за покупками.",
+          "audio": "beginner:38872",
+          "speaker": "arh"
+        },
+        {
+          "es": "En esa tienda venden verduras.",
+          "ru": "В том магазине продают овощи.",
+          "audio": "beginner:527287",
+          "speaker": "arh"
+        },
+        {
+          "es": "¿Cuánto cuesta un kilo de plátanos?",
+          "ru": "Сколько стоит килограмм бананов?",
+          "audio": "beginner:730165",
+          "speaker": "arh"
+        },
+        {
+          "es": "¿Cuánto cuesta ese queso?",
+          "ru": "Сколько стоит тот сыр?",
+          "audio": "beginner:707539",
+          "speaker": "arh"
+        },
+        {
+          "es": "No es caro.",
+          "ru": "Это недорого.",
+          "audio": "beginner:449833",
+          "speaker": "arh"
+        },
+        {
+          "es": "Compramos pan.",
+          "ru": "Мы покупаем хлеб.",
+          "audio": "beginner:937857",
+          "speaker": "arh"
+        }
+      ],
+      "es": "Necesito pan y leche. Tengo que ir a comprar. En esa tienda venden verduras. ¿Cuánto cuesta un kilo de plátanos? ¿Cuánto cuesta ese queso? No es caro. Compramos pan.",
+      "ru": "Мне нужны хлеб и молоко. Мне нужно сходить за покупками. В том магазине продают овощи. Сколько стоит килограмм бананов? Сколько стоит тот сыр? Это недорого. Мы покупаем хлеб.",
+      "task": {
+        "prompt": "Какая цель в начале истории?",
+        "options": [
+          "Найти гостиницу.",
+          "Купить хлеб и молоко.",
+          "Пойти на концерт."
+        ],
+        "answer": 1,
+        "feedback": "Necesito pan y leche — нужны хлеб и молоко. В конце покупают хлеб; о покупке молока текст не говорит.",
+        "id": "q1"
+      },
+      "tasks": [
+        {
+          "prompt": "Какая цель в начале истории?",
+          "options": [
+            "Найти гостиницу.",
+            "Купить хлеб и молоко.",
+            "Пойти на концерт."
+          ],
+          "answer": 1,
+          "feedback": "Necesito pan y leche — нужны хлеб и молоко. В конце покупают хлеб; о покупке молока текст не говорит.",
+          "id": "q1"
+        },
+        {
+          "prompt": "Что продают в упомянутом магазине?",
+          "options": [
+            "Книги.",
+            "Только чай.",
+            "Овощи."
+          ],
+          "answer": 2,
+          "feedback": "En esa tienda venden verduras — в том магазине продают овощи.",
+          "id": "q2"
+        },
+        {
+          "prompt": "Как спросить цену килограмма бананов?",
+          "options": [
+            "¿Cuánto cuesta un kilo de plátanos?",
+            "Tengo que ir a comprar.",
+            "No es caro."
+          ],
+          "answer": 0,
+          "feedback": "Cuánto cuesta спрашивает о цене. Un kilo de plátanos — килограмм бананов.",
+          "id": "q3"
+        }
+      ],
+      "glossary": [
+        {
+          "es": "necesito",
+          "ru": "мне нужно"
+        },
+        {
+          "es": "pan",
+          "ru": "хлеб"
+        },
+        {
+          "es": "y",
+          "ru": "и"
+        },
+        {
+          "es": "leche",
+          "ru": "молоко"
+        },
+        {
+          "es": "tengo",
+          "ru": "у меня есть (tener)"
+        },
+        {
+          "es": "que",
+          "ru": "в tengo que — нужно, надо"
+        },
+        {
+          "es": "ir",
+          "ru": "идти / ехать; ir a dormir — идти спать"
+        },
+        {
+          "es": "a",
+          "ru": "в ir a comprar связывает пойти и купить; отдельно не переводится"
+        },
+        {
+          "es": "comprar",
+          "ru": "покупать"
+        },
+        {
+          "es": "en",
+          "ru": "в / на"
+        },
+        {
+          "es": "esa",
+          "ru": "та"
+        },
+        {
+          "es": "tienda",
+          "ru": "магазин"
+        },
+        {
+          "es": "venden",
+          "ru": "продают"
+        },
+        {
+          "es": "verduras",
+          "ru": "овощи"
+        },
+        {
+          "es": "cuánto",
+          "ru": "сколько"
+        },
+        {
+          "es": "cuesta",
+          "ru": "стоит (о цене)"
+        },
+        {
+          "es": "un",
+          "ru": "неопределённый артикль мужского рода; часто без отдельного перевода"
+        },
+        {
+          "es": "kilo",
+          "ru": "килограмм"
+        },
+        {
+          "es": "de",
+          "ru": "в kilo de plátanos — килограмм бананов"
+        },
+        {
+          "es": "plátanos",
+          "ru": "бананы"
+        },
+        {
+          "es": "ese",
+          "ru": "тот, этот (здесь ese queso — тот сыр)"
+        },
+        {
+          "es": "queso",
+          "ru": "сыр"
+        },
+        {
+          "es": "no",
+          "ru": "не"
+        },
+        {
+          "es": "es",
+          "ru": "является; форма ser, в переводе часто пропускается"
+        },
+        {
+          "es": "caro",
+          "ru": "дорогой"
+        },
+        {
+          "es": "compramos",
+          "ru": "мы покупаем"
+        }
+      ]
+    },
+    {
+      "id": "beginner:fruit-on-the-table",
+      "kind": "beginner",
+      "author": "Учебная подборка Vamos; оригинальные записи предложений — arh / Tatoeba",
+      "level": "A1",
+      "format": "Мини-статья",
+      "formatId": "article",
+      "theme": "Природа и еда",
+      "title": "Fruta en la mesa",
+      "subtitleRu": "От яблока на столе — к деревьям, тёплым странам и вкусу лимона.",
+      "minutes": 6,
+      "progressionBand": "A1-start",
+      "learningFocusRu": "Описать фрукт, место и вкус с hay, está и es.",
+      "mission": "Назови три фрукта из текста. Скажи El limón es una fruta ácida. Спроси ¿Qué prefieres, las manzanas o los plátanos?",
+      "learningNoteRu": "Уровень — редакционная оценка сложности. Сначала прочитай или послушай текст целиком. Нажми на незнакомое слово или перевод фразы; затем ответь на вопросы и произнеси свой ответ. Озвучка — последовательность отдельных человеческих записей: предложения не сокращены и не изменены.",
+      "supportNotes": [
+        "Hay una manzana — яблоко есть; la manzana está madura — это яблоко спелое.",
+        "Ácida согласуется с fruta: оба слова женского рода."
+      ],
+      "lines": [
+        {
+          "es": "Hay una manzana sobre la mesa.",
+          "ru": "На столе есть яблоко.",
+          "audio": "beginner:354938",
+          "speaker": "arh"
+        },
+        {
+          "es": "La manzana está madura.",
+          "ru": "Яблоко спелое.",
+          "audio": "beginner:527242",
+          "speaker": "arh"
+        },
+        {
+          "es": "Las manzanas crecen en los árboles.",
+          "ru": "Яблоки растут на деревьях.",
+          "audio": "beginner:40043",
+          "speaker": "arh"
+        },
+        {
+          "es": "Las naranjas crecen en países cálidos.",
+          "ru": "Апельсины растут в тёплых странах.",
+          "audio": "beginner:1197671",
+          "speaker": "arh"
+        },
+        {
+          "es": "El limón es una fruta ácida.",
+          "ru": "Лимон — кислый фрукт.",
+          "audio": "beginner:706669",
+          "speaker": "arh"
+        },
+        {
+          "es": "¿Qué prefieres, las manzanas o los plátanos?",
+          "ru": "Что ты предпочитаешь: яблоки или бананы?",
+          "audio": "beginner:585704",
+          "speaker": "arh"
+        }
+      ],
+      "es": "Hay una manzana sobre la mesa. La manzana está madura. Las manzanas crecen en los árboles. Las naranjas crecen en países cálidos. El limón es una fruta ácida. ¿Qué prefieres, las manzanas o los plátanos?",
+      "ru": "На столе есть яблоко. Яблоко спелое. Яблоки растут на деревьях. Апельсины растут в тёплых странах. Лимон — кислый фрукт. Что ты предпочитаешь: яблоки или бананы?",
+      "task": {
+        "prompt": "О чём этот короткий текст?",
+        "options": [
+          "О разных фруктах: где они растут и какие они.",
+          "О расписании поездов.",
+          "О музыкальных инструментах."
+        ],
+        "answer": 0,
+        "feedback": "Описаны спелость яблока, место роста фруктов и кислый вкус лимона.",
+        "id": "q1"
+      },
+      "tasks": [
+        {
+          "prompt": "О чём этот короткий текст?",
+          "options": [
+            "О разных фруктах: где они растут и какие они.",
+            "О расписании поездов.",
+            "О музыкальных инструментах."
+          ],
+          "answer": 0,
+          "feedback": "Описаны спелость яблока, место роста фруктов и кислый вкус лимона.",
+          "id": "q1"
+        },
+        {
+          "prompt": "Какой фрукт назван кислым?",
+          "options": [
+            "Апельсин.",
+            "Лимон.",
+            "Банан."
+          ],
+          "answer": 1,
+          "feedback": "El limón es una fruta ácida — лимон — кислый фрукт.",
+          "id": "q2"
+        },
+        {
+          "prompt": "Как сказать, что яблоко спелое?",
+          "options": [
+            "Hay una manzana sobre la mesa.",
+            "Las manzanas crecen en los árboles.",
+            "La manzana está madura."
+          ],
+          "answer": 2,
+          "feedback": "Está madura описывает состояние яблока сейчас. Hay сообщает, что яблоко есть.",
+          "id": "q3"
+        }
+      ],
+      "glossary": [
+        {
+          "es": "hay",
+          "ru": "есть, имеется"
+        },
+        {
+          "es": "una",
+          "ru": "неопределённый артикль женского рода; una hora — один час"
+        },
+        {
+          "es": "manzana",
+          "ru": "яблоко"
+        },
+        {
+          "es": "sobre",
+          "ru": "на, над; здесь — на поверхности"
+        },
+        {
+          "es": "la",
+          "ru": "определённый артикль женского рода; обычно без отдельного перевода"
+        },
+        {
+          "es": "mesa",
+          "ru": "стол"
+        },
+        {
+          "es": "está",
+          "ru": "находится / является сейчас (estar)"
+        },
+        {
+          "es": "madura",
+          "ru": "спелая"
+        },
+        {
+          "es": "las",
+          "ru": "определённый артикль женского рода во множественном числе; отдельно обычно не переводится"
+        },
+        {
+          "es": "manzanas",
+          "ru": "яблоки"
+        },
+        {
+          "es": "crecen",
+          "ru": "растут"
+        },
+        {
+          "es": "en",
+          "ru": "в / на"
+        },
+        {
+          "es": "los",
+          "ru": "артикль мужского рода во множественном числе"
+        },
+        {
+          "es": "árboles",
+          "ru": "деревья"
+        },
+        {
+          "es": "naranjas",
+          "ru": "апельсины"
+        },
+        {
+          "es": "países",
+          "ru": "страны"
+        },
+        {
+          "es": "cálidos",
+          "ru": "тёплые"
+        },
+        {
+          "es": "el",
+          "ru": "определённый артикль мужского рода; отдельно обычно не переводится"
+        },
+        {
+          "es": "limón",
+          "ru": "лимон"
+        },
+        {
+          "es": "es",
+          "ru": "является; форма ser, в переводе часто пропускается"
+        },
+        {
+          "es": "fruta",
+          "ru": "фрукт; фрукты как категория"
+        },
+        {
+          "es": "ácida",
+          "ru": "кислая"
+        },
+        {
+          "es": "qué",
+          "ru": "что, какой; por qué — почему"
+        },
+        {
+          "es": "prefieres",
+          "ru": "ты предпочитаешь"
+        },
+        {
+          "es": "o",
+          "ru": "или"
+        },
+        {
+          "es": "plátanos",
+          "ru": "бананы"
         }
       ]
     },
@@ -360,7 +1013,9 @@
           "es": "caliente",
           "ru": "горячий, горячая"
         }
-      ]
+      ],
+      "progressionBand": "A1-grow",
+      "learningFocusRu": "Используй готовую вежливую просьбу и отрицание."
     },
     {
       "id": "beginner:summer-by-the-sea",
@@ -557,6 +1212,658 @@
           "es": "aquí",
           "ru": "здесь"
         }
+      ],
+      "progressionBand": "A1-grow",
+      "learningFocusRu": "Читай более длинные фразы о месте и занятиях."
+    },
+    {
+      "id": "beginner:walk-with-my-dog",
+      "kind": "beginner",
+      "author": "Учебная подборка Vamos; оригинальные записи предложений — arh / Tatoeba",
+      "level": "A1",
+      "format": "Мини-история",
+      "formatId": "story",
+      "theme": "Животные и распорядок",
+      "title": "Un paseo con mi perro",
+      "subtitleRu": "Кормим пса, выходим под вечер и возвращаемся домой отдыхать.",
+      "minutes": 7,
+      "progressionBand": "A1-grow",
+      "learningFocusRu": "Повседневные действия и частота: dos veces al día; действие сейчас está ladrando.",
+      "mission": "Перескажи день пса тремя фразами: кормление, прогулка, сон. Затем скажи, есть ли у тебя собака: Tengo un perro / No tengo un perro.",
+      "learningNoteRu": "Уровень — редакционная оценка сложности. Сначала прочитай или послушай текст целиком. Нажми на незнакомое слово или перевод фразы; затем ответь на вопросы и произнеси свой ответ. Озвучка — последовательность отдельных человеческих записей: предложения не сокращены и не изменены.",
+      "supportNotes": [
+        "Paseo здесь — «я гуляю».",
+        "Está ladrando выделяет действие сейчас: собака лает."
+      ],
+      "lines": [
+        {
+          "es": "Tengo un perro.",
+          "ru": "У меня есть собака.",
+          "audio": "beginner:438052",
+          "speaker": "arh"
+        },
+        {
+          "es": "Mi perro es blanco.",
+          "ru": "Моя собака белая.",
+          "audio": "beginner:39115",
+          "speaker": "arh"
+        },
+        {
+          "es": "Alimento a mi perro dos veces al día.",
+          "ru": "Я кормлю свою собаку два раза в день.",
+          "audio": "beginner:48391",
+          "speaker": "arh"
+        },
+        {
+          "es": "Al atardecer paseo con el perro.",
+          "ru": "Под вечер я гуляю с собакой.",
+          "audio": "beginner:527170",
+          "speaker": "arh"
+        },
+        {
+          "es": "Un perro está ladrando.",
+          "ru": "Собака лает.",
+          "audio": "beginner:40037",
+          "speaker": "arh"
+        },
+        {
+          "es": "¡Qué perro tan inteligente!",
+          "ru": "Какая умная собака!",
+          "audio": "beginner:707495",
+          "speaker": "arh"
+        },
+        {
+          "es": "El perro está en casa.",
+          "ru": "Собака дома.",
+          "audio": "beginner:552854",
+          "speaker": "arh"
+        },
+        {
+          "es": "El perro duerme.",
+          "ru": "Собака спит.",
+          "audio": "beginner:513242",
+          "speaker": "arh"
+        }
+      ],
+      "es": "Tengo un perro. Mi perro es blanco. Alimento a mi perro dos veces al día. Al atardecer paseo con el perro. Un perro está ladrando. ¡Qué perro tan inteligente! El perro está en casa. El perro duerme.",
+      "ru": "У меня есть собака. Моя собака белая. Я кормлю свою собаку два раза в день. Под вечер я гуляю с собакой. Собака лает. Какая умная собака! Собака дома. Собака спит.",
+      "task": {
+        "prompt": "Что происходит в этой истории?",
+        "options": [
+          "Собака едет в поезде.",
+          "Хозяин покупает кошку.",
+          "Хозяин заботится о собаке, гуляет с ней, затем собака отдыхает дома."
+        ],
+        "answer": 2,
+        "feedback": "Сначала кормление и прогулка, в конце El perro está en casa и El perro duerme.",
+        "id": "q1"
+      },
+      "tasks": [
+        {
+          "prompt": "Что происходит в этой истории?",
+          "options": [
+            "Собака едет в поезде.",
+            "Хозяин покупает кошку.",
+            "Хозяин заботится о собаке, гуляет с ней, затем собака отдыхает дома."
+          ],
+          "answer": 2,
+          "feedback": "Сначала кормление и прогулка, в конце El perro está en casa и El perro duerme.",
+          "id": "q1"
+        },
+        {
+          "prompt": "Как часто хозяин кормит собаку?",
+          "options": [
+            "Два раза в день.",
+            "Один раз в неделю.",
+            "Только вечером."
+          ],
+          "answer": 0,
+          "feedback": "Dos veces al día — два раза в день. Время кормления не уточняется.",
+          "id": "q2"
+        },
+        {
+          "prompt": "Как сказать «Под вечер я гуляю с собакой»?",
+          "options": [
+            "El perro duerme.",
+            "Al atardecer paseo con el perro.",
+            "Mi perro es blanco."
+          ],
+          "answer": 1,
+          "feedback": "Al atardecer — под вечер, paseo — я гуляю, con el perro — с собакой.",
+          "id": "q3"
+        }
+      ],
+      "glossary": [
+        {
+          "es": "tengo",
+          "ru": "у меня есть (tener)"
+        },
+        {
+          "es": "un",
+          "ru": "неопределённый артикль мужского рода; часто без отдельного перевода"
+        },
+        {
+          "es": "perro",
+          "ru": "собака, пёс"
+        },
+        {
+          "es": "mi",
+          "ru": "мой, моя"
+        },
+        {
+          "es": "es",
+          "ru": "является; форма ser, в переводе часто пропускается"
+        },
+        {
+          "es": "blanco",
+          "ru": "белый"
+        },
+        {
+          "es": "alimento",
+          "ru": "я кормлю (alimentar)"
+        },
+        {
+          "es": "a",
+          "ru": "в Alimento a mi perro отмечает живое дополнение; отдельно не переводится"
+        },
+        {
+          "es": "dos",
+          "ru": "два"
+        },
+        {
+          "es": "veces",
+          "ru": "раз; dos o tres veces — два или три раза"
+        },
+        {
+          "es": "al",
+          "ru": "a + el; al día — в день, al atardecer — под вечер"
+        },
+        {
+          "es": "día",
+          "ru": "день; al día — в день"
+        },
+        {
+          "es": "atardecer",
+          "ru": "вечер, закат; al atardecer — под вечер"
+        },
+        {
+          "es": "paseo",
+          "ru": "я гуляю (здесь форма pasear)"
+        },
+        {
+          "es": "con",
+          "ru": "с"
+        },
+        {
+          "es": "el",
+          "ru": "определённый артикль мужского рода; отдельно обычно не переводится"
+        },
+        {
+          "es": "está",
+          "ru": "находится / является сейчас (estar)"
+        },
+        {
+          "es": "ladrando",
+          "ru": "лая; está ladrando — лает сейчас"
+        },
+        {
+          "es": "qué",
+          "ru": "что, какой; por qué — почему"
+        },
+        {
+          "es": "tan",
+          "ru": "такой, настолько"
+        },
+        {
+          "es": "inteligente",
+          "ru": "умный"
+        },
+        {
+          "es": "en",
+          "ru": "в / на"
+        },
+        {
+          "es": "casa",
+          "ru": "дом; a casa — домой"
+        },
+        {
+          "es": "duerme",
+          "ru": "спит"
+        }
+      ]
+    },
+    {
+      "id": "beginner:music-in-my-day",
+      "kind": "beginner",
+      "author": "Учебная подборка Vamos; оригинальные записи предложений — arh / Tatoeba",
+      "level": "A1",
+      "format": "Мини-статья",
+      "formatId": "article",
+      "theme": "Музыка и увлечения",
+      "title": "La música es importante para mí",
+      "subtitleRu": "Музыка в обычном дне: любимый жанр, пение, гитара и наушники.",
+      "minutes": 7,
+      "progressionBand": "A1-grow",
+      "learningFocusRu": "Связать предпочтения и привычки: me gusta, toco, cuando estudio.",
+      "mission": "Расскажи о себе: Me gusta el rock / Me gusta cantar. Спроси ¿Qué clase de música te gusta? Если не играешь на гитаре, скажи No toco la guitarra.",
+      "learningNoteRu": "Уровень — редакционная оценка сложности. Сначала прочитай или послушай текст целиком. Нажми на незнакомое слово или перевод фразы; затем ответь на вопросы и произнеси свой ответ. Озвучка — последовательность отдельных человеческих записей: предложения не сокращены и не изменены.",
+      "supportNotes": [
+        "Me gusta + действие: me gusta cantar — мне нравится петь.",
+        "Toco — я играю, escucho — я слушаю."
+      ],
+      "lines": [
+        {
+          "es": "La música es importante para mí.",
+          "ru": "Музыка важна для меня.",
+          "audio": "beginner:275207",
+          "speaker": "arh"
+        },
+        {
+          "es": "Me gusta el rock.",
+          "ru": "Мне нравится рок.",
+          "audio": "beginner:438238",
+          "speaker": "arh"
+        },
+        {
+          "es": "Me gusta cantar.",
+          "ru": "Мне нравится петь.",
+          "audio": "beginner:440738",
+          "speaker": "arh"
+        },
+        {
+          "es": "Toco la guitarra.",
+          "ru": "Я играю на гитаре.",
+          "audio": "beginner:443838",
+          "speaker": "arh"
+        },
+        {
+          "es": "Cuando estudio, escucho música con auriculares.",
+          "ru": "Когда я занимаюсь, я слушаю музыку в наушниках.",
+          "audio": "beginner:788306",
+          "speaker": "arh"
+        },
+        {
+          "es": "La música une.",
+          "ru": "Музыка объединяет.",
+          "audio": "beginner:831313",
+          "speaker": "arh"
+        },
+        {
+          "es": "¿Te gusta la música?",
+          "ru": "Тебе нравится музыка?",
+          "audio": "beginner:444089",
+          "speaker": "arh"
+        },
+        {
+          "es": "¿Qué clase de música te gusta?",
+          "ru": "Какая музыка тебе нравится?",
+          "audio": "beginner:354643",
+          "speaker": "arh"
+        }
+      ],
+      "es": "La música es importante para mí. Me gusta el rock. Me gusta cantar. Toco la guitarra. Cuando estudio, escucho música con auriculares. La música une. ¿Te gusta la música? ¿Qué clase de música te gusta?",
+      "ru": "Музыка важна для меня. Мне нравится рок. Мне нравится петь. Я играю на гитаре. Когда я занимаюсь, я слушаю музыку в наушниках. Музыка объединяет. Тебе нравится музыка? Какая музыка тебе нравится?",
+      "task": {
+        "prompt": "Какое место занимает музыка в жизни рассказчика?",
+        "options": [
+          "Она важна: он любит рок и пение, играет и слушает.",
+          "Он не любит музыку и не слушает её.",
+          "Он говорит только о ремонте гитары."
+        ],
+        "answer": 0,
+        "feedback": "La música es importante para mí задаёт тему. Дальше следуют любимый жанр и занятия с музыкой.",
+        "id": "q1"
+      },
+      "tasks": [
+        {
+          "prompt": "Какое место занимает музыка в жизни рассказчика?",
+          "options": [
+            "Она важна: он любит рок и пение, играет и слушает.",
+            "Он не любит музыку и не слушает её.",
+            "Он говорит только о ремонте гитары."
+          ],
+          "answer": 0,
+          "feedback": "La música es importante para mí задаёт тему. Дальше следуют любимый жанр и занятия с музыкой.",
+          "id": "q1"
+        },
+        {
+          "prompt": "Как рассказчик слушает музыку, когда занимается?",
+          "options": [
+            "Только на концертах.",
+            "Через громкие колонки.",
+            "В наушниках."
+          ],
+          "answer": 2,
+          "feedback": "Cuando estudio, escucho música con auriculares — слушаю музыку в наушниках, когда занимаюсь.",
+          "id": "q2"
+        },
+        {
+          "prompt": "Как спросить, какая музыка нравится собеседнику?",
+          "options": [
+            "Toco la guitarra.",
+            "¿Qué clase de música te gusta?",
+            "La música une."
+          ],
+          "answer": 1,
+          "feedback": "Qué clase de música спрашивает о виде или жанре музыки. Te gusta — тебе нравится.",
+          "id": "q3"
+        }
+      ],
+      "glossary": [
+        {
+          "es": "la",
+          "ru": "определённый артикль женского рода; обычно без отдельного перевода"
+        },
+        {
+          "es": "música",
+          "ru": "музыка"
+        },
+        {
+          "es": "es",
+          "ru": "является; форма ser, в переводе часто пропускается"
+        },
+        {
+          "es": "importante",
+          "ru": "важный; es importante — имеет значение"
+        },
+        {
+          "es": "para",
+          "ru": "для"
+        },
+        {
+          "es": "mí",
+          "ru": "меня; para mí — для меня"
+        },
+        {
+          "es": "me",
+          "ru": "мне; me gusta — мне нравится"
+        },
+        {
+          "es": "gusta",
+          "ru": "нравится; me gusta — мне нравится"
+        },
+        {
+          "es": "el",
+          "ru": "определённый артикль мужского рода; отдельно обычно не переводится"
+        },
+        {
+          "es": "rock",
+          "ru": "рок, рок-музыка"
+        },
+        {
+          "es": "cantar",
+          "ru": "петь"
+        },
+        {
+          "es": "toco",
+          "ru": "я играю (на инструменте)"
+        },
+        {
+          "es": "guitarra",
+          "ru": "гитара"
+        },
+        {
+          "es": "cuando",
+          "ru": "когда"
+        },
+        {
+          "es": "estudio",
+          "ru": "я учусь, занимаюсь"
+        },
+        {
+          "es": "escucho",
+          "ru": "я слушаю"
+        },
+        {
+          "es": "con",
+          "ru": "с"
+        },
+        {
+          "es": "auriculares",
+          "ru": "наушники"
+        },
+        {
+          "es": "une",
+          "ru": "объединяет"
+        },
+        {
+          "es": "te",
+          "ru": "тебе, тебя; te gusta — тебе нравится"
+        },
+        {
+          "es": "qué",
+          "ru": "что, какой; por qué — почему"
+        },
+        {
+          "es": "clase",
+          "ru": "вид, разновидность"
+        },
+        {
+          "es": "de",
+          "ru": "в qué clase de música — какой вид музыки, какая музыка"
+        }
+      ]
+    },
+    {
+      "id": "beginner:birthday-invitation",
+      "kind": "beginner",
+      "author": "Учебная подборка Vamos; оригинальные записи предложений — arh / Tatoeba",
+      "level": "A1",
+      "format": "Мини-история",
+      "formatId": "story",
+      "theme": "Семья и праздники",
+      "title": "Un regalo para mi hermana",
+      "subtitleRu": "У сестры день рождения. Короткий диалог: приглашение, танцы и подарок.",
+      "minutes": 7,
+      "progressionBand": "A1-grow",
+      "learningFocusRu": "Короткий обмен репликами: приглашение, ответ, подарок и благодарность.",
+      "mission": "Разыграй диалог: ¿Por qué no vienes a mi fiesta? — Quiero ir a la fiesta. — Tengo un regalo para ti. — Gracias por el regalo.",
+      "learningNoteRu": "Уровень — редакционная оценка сложности. Сначала прочитай или послушай текст целиком. Нажми на незнакомое слово или перевод фразы; затем ответь на вопросы и произнеси свой ответ. Озвучка — последовательность отдельных человеческих записей: предложения не сокращены и не изменены. Это обмен репликами нескольких людей, а не единый монолог: сестра приглашает на свой праздник, гость отвечает и вручает подарок. Все реплики записаны одним человеком.",
+      "supportNotes": [
+        "После первой фразы идёт обмен репликами: приглашение и ответ, затем подарок и благодарность. Голос всех реплик один.",
+        "¿Por qué no vienes…? здесь дружеское приглашение: «Почему бы тебе не прийти…?»"
+      ],
+      "lines": [
+        {
+          "es": "Hoy es el cumpleaños de mi hermana.",
+          "ru": "Сегодня день рождения моей сестры.",
+          "audio": "beginner:645218",
+          "speaker": "arh"
+        },
+        {
+          "es": "Tengo algunos regalos.",
+          "ru": "У меня есть несколько подарков.",
+          "audio": "beginner:444101",
+          "speaker": "arh"
+        },
+        {
+          "es": "¿Por qué no vienes a mi fiesta?",
+          "ru": "Почему бы тебе не прийти на мой праздник?",
+          "audio": "beginner:526682",
+          "speaker": "arh"
+        },
+        {
+          "es": "Quiero ir a la fiesta.",
+          "ru": "Я хочу пойти на праздник.",
+          "audio": "beginner:707386",
+          "speaker": "arh"
+        },
+        {
+          "es": "Me gusta bailar.",
+          "ru": "Мне нравится танцевать.",
+          "audio": "beginner:262788",
+          "speaker": "arh"
+        },
+        {
+          "es": "Tengo un regalo para ti.",
+          "ru": "У меня есть подарок для тебя.",
+          "audio": "beginner:197085",
+          "speaker": "arh"
+        },
+        {
+          "es": "Gracias por el regalo.",
+          "ru": "Спасибо за подарок.",
+          "audio": "beginner:933920",
+          "speaker": "arh"
+        }
+      ],
+      "es": "Hoy es el cumpleaños de mi hermana. Tengo algunos regalos. ¿Por qué no vienes a mi fiesta? Quiero ir a la fiesta. Me gusta bailar. Tengo un regalo para ti. Gracias por el regalo.",
+      "ru": "Сегодня день рождения моей сестры. У меня есть несколько подарков. Почему бы тебе не прийти на мой праздник? Я хочу пойти на праздник. Мне нравится танцевать. У меня есть подарок для тебя. Спасибо за подарок.",
+      "task": {
+        "prompt": "По какому поводу праздник?",
+        "options": [
+          "Новый год.",
+          "День рождения сестры.",
+          "Открытие магазина."
+        ],
+        "answer": 1,
+        "feedback": "Hoy es el cumpleaños de mi hermana — сегодня день рождения моей сестры.",
+        "id": "q1"
+      },
+      "tasks": [
+        {
+          "prompt": "По какому поводу праздник?",
+          "options": [
+            "Новый год.",
+            "День рождения сестры.",
+            "Открытие магазина."
+          ],
+          "answer": 1,
+          "feedback": "Hoy es el cumpleaños de mi hermana — сегодня день рождения моей сестры.",
+          "id": "q1"
+        },
+        {
+          "prompt": "Что происходит в конце диалога?",
+          "options": [
+            "Дарят подарок и благодарят за него.",
+            "Спрашивают цену хлеба.",
+            "Ищут собаку."
+          ],
+          "answer": 0,
+          "feedback": "Tengo un regalo para ti — у меня есть подарок для тебя. Gracias por el regalo — спасибо за подарок.",
+          "id": "q2"
+        },
+        {
+          "prompt": "Как сказать, что хочешь пойти на праздник?",
+          "options": [
+            "Gracias por el regalo.",
+            "Hoy es el cumpleaños de mi hermana.",
+            "Quiero ir a la fiesta."
+          ],
+          "answer": 2,
+          "feedback": "Quiero ir a la fiesta — я хочу пойти на праздник. Gracias por el regalo благодарит за подарок.",
+          "id": "q3"
+        }
+      ],
+      "glossary": [
+        {
+          "es": "hoy",
+          "ru": "сегодня"
+        },
+        {
+          "es": "es",
+          "ru": "является; форма ser, в переводе часто пропускается"
+        },
+        {
+          "es": "el",
+          "ru": "определённый артикль мужского рода; отдельно обычно не переводится"
+        },
+        {
+          "es": "cumpleaños",
+          "ru": "день рождения"
+        },
+        {
+          "es": "de",
+          "ru": "в cumpleaños de mi hermana — день рождения моей сестры"
+        },
+        {
+          "es": "mi",
+          "ru": "мой, моя"
+        },
+        {
+          "es": "hermana",
+          "ru": "сестра"
+        },
+        {
+          "es": "tengo",
+          "ru": "у меня есть (tener)"
+        },
+        {
+          "es": "algunos",
+          "ru": "несколько"
+        },
+        {
+          "es": "regalos",
+          "ru": "подарки"
+        },
+        {
+          "es": "por",
+          "ru": "по / за; por favor — пожалуйста; por semana — в неделю"
+        },
+        {
+          "es": "qué",
+          "ru": "что, какой; por qué — почему"
+        },
+        {
+          "es": "no",
+          "ru": "не"
+        },
+        {
+          "es": "vienes",
+          "ru": "ты приходишь"
+        },
+        {
+          "es": "a",
+          "ru": "в vienes a mi fiesta / ir a la fiesta — на праздник"
+        },
+        {
+          "es": "fiesta",
+          "ru": "праздник, вечеринка"
+        },
+        {
+          "es": "quiero",
+          "ru": "я хочу (querer)"
+        },
+        {
+          "es": "ir",
+          "ru": "идти / ехать; ir a dormir — идти спать"
+        },
+        {
+          "es": "la",
+          "ru": "определённый артикль женского рода; обычно без отдельного перевода"
+        },
+        {
+          "es": "me",
+          "ru": "мне; me gusta — мне нравится"
+        },
+        {
+          "es": "gusta",
+          "ru": "нравится; me gusta — мне нравится"
+        },
+        {
+          "es": "bailar",
+          "ru": "танцевать"
+        },
+        {
+          "es": "un",
+          "ru": "неопределённый артикль мужского рода; часто без отдельного перевода"
+        },
+        {
+          "es": "regalo",
+          "ru": "подарок"
+        },
+        {
+          "es": "para",
+          "ru": "для"
+        },
+        {
+          "es": "ti",
+          "ru": "тебя, тебе (после предлога)"
+        },
+        {
+          "es": "gracias",
+          "ru": "спасибо"
+        }
       ]
     },
     {
@@ -742,7 +2049,9 @@
           "es": "casa",
           "ru": "дом; a casa — домой"
         }
-      ]
+      ],
+      "progressionBand": "A2-start",
+      "learningFocusRu": "Следи за событиями в прошедшем времени."
     },
     {
       "id": "beginner:books-before-bed",
@@ -963,7 +2272,9 @@
           "es": "fácil",
           "ru": "лёгкий; fácil de leer — легко читать"
         }
-      ]
+      ],
+      "progressionBand": "A2-start",
+      "learningFocusRu": "Рассказывай о привычках и о том, что делаешь сейчас."
     },
     {
       "id": "beginner:old-bike-new-ride",
@@ -1121,6 +2432,1310 @@
         {
           "es": "trabajo",
           "ru": "работа; al trabajo — на работу"
+        }
+      ],
+      "progressionBand": "A2-start",
+      "learningFocusRu": "Соедини рассказ о вчерашнем событии со своими предпочтениями."
+    },
+    {
+      "id": "beginner:missing-key",
+      "kind": "beginner",
+      "author": "Учебная подборка Vamos; оригинальные записи предложений — arh / Tatoeba",
+      "level": "A2",
+      "format": "Мини-история",
+      "formatId": "story",
+      "theme": "Помощь и находки",
+      "title": "La llave perdida",
+      "subtitleRu": "Потерянный ключ, просьба о помощи и находка.",
+      "minutes": 7,
+      "mission": "Разыграй диалог: скажи, что потерял ключ, попроси о помощи и поблагодари. Используй He perdido la llave и ¿Podrías ayudarme?.",
+      "learningNoteRu": "Уровень — редакционная оценка сложности. Послушай целиком, прочитай и нажми на незнакомое слово. Ответь на три вопроса и произнеси свой ответ. Озвучка — последовательность отдельных человеческих записей: предложения не сокращены и не изменены.",
+      "learningFocusRu": "He perdido — «я потерял», encontré — «я нашёл». ¿Podrías ayudarme? — вежливая просьба на ты.",
+      "progressionBand": "A2-start",
+      "lines": [
+        {
+          "es": "He perdido la llave.",
+          "ru": "Я потерял ключ.",
+          "audio": "beginner:440211",
+          "speaker": "arh"
+        },
+        {
+          "es": "Necesito tu ayuda.",
+          "ru": "Мне нужна твоя помощь.",
+          "audio": "beginner:442544",
+          "speaker": "arh"
+        },
+        {
+          "es": "¿Podrías ayudarme?",
+          "ru": "Ты мог бы мне помочь?",
+          "audio": "beginner:444096",
+          "speaker": "arh"
+        },
+        {
+          "es": "Hay una llave sobre el escritorio.",
+          "ru": "На письменном столе есть ключ.",
+          "audio": "beginner:639177",
+          "speaker": "arh"
+        },
+        {
+          "es": "Encontré la llave que estaba buscando.",
+          "ru": "Я нашёл ключ, который искал.",
+          "audio": "beginner:526743",
+          "speaker": "arh"
+        },
+        {
+          "es": "\"Gracias por ayudarme.\" \"No hay de qué.\"",
+          "ru": "«Спасибо за помощь». «Не за что».",
+          "audio": "beginner:733076",
+          "speaker": "arh"
+        }
+      ],
+      "es": "He perdido la llave. Necesito tu ayuda. ¿Podrías ayudarme? Hay una llave sobre el escritorio. Encontré la llave que estaba buscando. \"Gracias por ayudarme.\" \"No hay de qué.\"",
+      "ru": "Я потерял ключ. Мне нужна твоя помощь. Ты мог бы мне помочь? На письменном столе есть ключ. Я нашёл ключ, который искал. «Спасибо за помощь». «Не за что».",
+      "task": {
+        "id": "q1",
+        "prompt": "Где появляется ключ?",
+        "options": [
+          "На письменном столе.",
+          "В холодильнике.",
+          "На автобусной остановке."
+        ],
+        "answer": 0,
+        "feedback": "Hay una llave sobre el escritorio: escritorio — письменный стол."
+      },
+      "tasks": [
+        {
+          "id": "q1",
+          "prompt": "Где появляется ключ?",
+          "options": [
+            "На письменном столе.",
+            "В холодильнике.",
+            "На автобусной остановке."
+          ],
+          "answer": 0,
+          "feedback": "Hay una llave sobre el escritorio: escritorio — письменный стол."
+        },
+        {
+          "id": "q2",
+          "prompt": "Какая фраза показывает, что поиск закончился?",
+          "options": [
+            "Necesito tu ayuda.",
+            "Encontré la llave que estaba buscando.",
+            "He perdido la llave."
+          ],
+          "answer": 1,
+          "feedback": "Encontré — я нашёл; estaba buscando — искал."
+        },
+        {
+          "id": "q3",
+          "prompt": "Как вежливо попросить знакомого помочь?",
+          "options": [
+            "Hay una llave.",
+            "No hay de qué.",
+            "¿Podrías ayudarme?"
+          ],
+          "answer": 2,
+          "feedback": "Podrías — ты мог бы. Ayudarme — помочь мне."
+        }
+      ],
+      "glossary": [
+        {
+          "es": "he",
+          "ru": "вспомогательный haber: he perdido — я потерял"
+        },
+        {
+          "es": "perdido",
+          "ru": "потерял; he perdido — я потерял"
+        },
+        {
+          "es": "la",
+          "ru": "определённый артикль женского рода; обычно без отдельного перевода"
+        },
+        {
+          "es": "llave",
+          "ru": "ключ"
+        },
+        {
+          "es": "necesito",
+          "ru": "мне нужно"
+        },
+        {
+          "es": "tu",
+          "ru": "твой, твоя"
+        },
+        {
+          "es": "ayuda",
+          "ru": "помощь"
+        },
+        {
+          "es": "podrías",
+          "ru": "ты мог бы (вежливая просьба)"
+        },
+        {
+          "es": "ayudarme",
+          "ru": "помочь мне"
+        },
+        {
+          "es": "hay",
+          "ru": "есть, имеется"
+        },
+        {
+          "es": "una",
+          "ru": "неопределённый артикль женского рода; una hora — один час"
+        },
+        {
+          "es": "sobre",
+          "ru": "на; sobre el escritorio — на письменном столе"
+        },
+        {
+          "es": "el",
+          "ru": "определённый артикль мужского рода; отдельно обычно не переводится"
+        },
+        {
+          "es": "escritorio",
+          "ru": "письменный стол"
+        },
+        {
+          "es": "encontré",
+          "ru": "я нашёл (encontrar)"
+        },
+        {
+          "es": "que",
+          "ru": "который; также что"
+        },
+        {
+          "es": "estaba",
+          "ru": "был; estaba buscando — искал"
+        },
+        {
+          "es": "buscando",
+          "ru": "искал; estaba buscando — искал в тот момент"
+        },
+        {
+          "es": "gracias",
+          "ru": "спасибо"
+        },
+        {
+          "es": "por",
+          "ru": "за; также por favor — пожалуйста"
+        },
+        {
+          "es": "no",
+          "ru": "не; no hay de qué — не за что"
+        },
+        {
+          "es": "de",
+          "ru": "часть no hay de qué — не за что"
+        },
+        {
+          "es": "qué",
+          "ru": "что; no hay de qué — не за что"
+        }
+      ]
+    },
+    {
+      "id": "beginner:small-birthday",
+      "kind": "beginner",
+      "author": "Учебная подборка Vamos; оригинальные записи предложений — arh / Tatoeba",
+      "level": "A2",
+      "format": "Мини-история",
+      "formatId": "story",
+      "theme": "Друзья и праздники",
+      "title": "Una fiesta pequeña",
+      "subtitleRu": "Сцена дня рождения: приглашение, торт и благодарность.",
+      "minutes": 7,
+      "mission": "Пригласи друга: Por favor, ven a mi fiesta de cumpleaños. В роли гостя поблагодари хозяина и похвали торт.",
+      "learningNoteRu": "Уровень — редакционная оценка сложности. Послушай целиком, прочитай и нажми на незнакомое слово. Ответь на три вопроса и произнеси свой ответ. Озвучка — последовательность отдельных человеческих записей: предложения не сокращены и не изменены.",
+      "learningFocusRu": "Сначала приглашение, затем воспоминание о вечеринке. Había — было, se acabó — закончилась. Реплики гостей узнавай по tu и gracias.",
+      "progressionBand": "A2-start",
+      "lines": [
+        {
+          "es": "Por favor, ven a mi fiesta de cumpleaños.",
+          "ru": "Пожалуйста, приходи на мой день рождения.",
+          "audio": "beginner:1197709",
+          "speaker": "arh"
+        },
+        {
+          "es": "Mi madre está haciendo una tarta.",
+          "ru": "Моя мама готовит торт.",
+          "audio": "beginner:568125",
+          "speaker": "arh"
+        },
+        {
+          "es": "Sólo había seis personas en la fiesta.",
+          "ru": "На вечеринке было только шесть человек.",
+          "audio": "beginner:688880",
+          "speaker": "arh"
+        },
+        {
+          "es": "Tu tarta está deliciosa.",
+          "ru": "Твой торт очень вкусный.",
+          "audio": "beginner:38579",
+          "speaker": "arh"
+        },
+        {
+          "es": "Gracias por invitarme a tu fiesta de cumpleaños.",
+          "ru": "Спасибо за приглашение на твой день рождения.",
+          "audio": "beginner:610923",
+          "speaker": "arh"
+        },
+        {
+          "es": "Se acabó la fiesta.",
+          "ru": "Вечеринка закончилась.",
+          "audio": "beginner:444132",
+          "speaker": "arh"
+        }
+      ],
+      "es": "Por favor, ven a mi fiesta de cumpleaños. Mi madre está haciendo una tarta. Sólo había seis personas en la fiesta. Tu tarta está deliciosa. Gracias por invitarme a tu fiesta de cumpleaños. Se acabó la fiesta.",
+      "ru": "Пожалуйста, приходи на мой день рождения. Моя мама готовит торт. На вечеринке было только шесть человек. Твой торт очень вкусный. Спасибо за приглашение на твой день рождения. Вечеринка закончилась.",
+      "task": {
+        "id": "q1",
+        "prompt": "По какому поводу приглашают гостей?",
+        "options": [
+          "День рождения.",
+          "Первый день в школе.",
+          "Покупка нового дома."
+        ],
+        "answer": 0,
+        "feedback": "Por favor, ven a mi fiesta de cumpleaños — приходи на мой день рождения."
+      },
+      "tasks": [
+        {
+          "id": "q1",
+          "prompt": "По какому поводу приглашают гостей?",
+          "options": [
+            "День рождения.",
+            "Первый день в школе.",
+            "Покупка нового дома."
+          ],
+          "answer": 0,
+          "feedback": "Por favor, ven a mi fiesta de cumpleaños — приходи на мой день рождения."
+        },
+        {
+          "id": "q2",
+          "prompt": "Сколько человек было на вечеринке?",
+          "options": [
+            "Двенадцать.",
+            "Два.",
+            "Шесть."
+          ],
+          "answer": 2,
+          "feedback": "Sólo había seis personas — было только шесть человек."
+        },
+        {
+          "id": "q3",
+          "prompt": "Как гость хвалит торт?",
+          "options": [
+            "Se acabó la fiesta.",
+            "Tu tarta está deliciosa.",
+            "Por favor, ven."
+          ],
+          "answer": 1,
+          "feedback": "Deliciosa — очень вкусная. Tarta — торт."
+        }
+      ],
+      "glossary": [
+        {
+          "es": "cumpleaños",
+          "ru": "день рождения"
+        },
+        {
+          "es": "de",
+          "ru": "fiesta de cumpleaños — вечеринка в честь дня рождения; de связывает существительные"
+        },
+        {
+          "es": "mi",
+          "ru": "мой, моя"
+        },
+        {
+          "es": "por",
+          "ru": "за; также por favor — пожалуйста"
+        },
+        {
+          "es": "favor",
+          "ru": "por favor — пожалуйста"
+        },
+        {
+          "es": "ven",
+          "ru": "приходи (venir)"
+        },
+        {
+          "es": "a",
+          "ru": "к / в; перед инфинитивом отдельно не переводится"
+        },
+        {
+          "es": "fiesta",
+          "ru": "вечеринка, праздник"
+        },
+        {
+          "es": "madre",
+          "ru": "мама, мать"
+        },
+        {
+          "es": "está",
+          "ru": "форма estar: está haciendo — готовит сейчас; está deliciosa — очень вкусная"
+        },
+        {
+          "es": "haciendo",
+          "ru": "делая; está haciendo — готовит сейчас"
+        },
+        {
+          "es": "una",
+          "ru": "неопределённый артикль женского рода; una hora — один час"
+        },
+        {
+          "es": "tarta",
+          "ru": "торт"
+        },
+        {
+          "es": "sólo",
+          "ru": "только; написание с ударением в записи"
+        },
+        {
+          "es": "había",
+          "ru": "было, имелось"
+        },
+        {
+          "es": "seis",
+          "ru": "шесть"
+        },
+        {
+          "es": "personas",
+          "ru": "люди; seis personas — шесть человек"
+        },
+        {
+          "es": "en",
+          "ru": "в / на"
+        },
+        {
+          "es": "la",
+          "ru": "определённый артикль женского рода; обычно без отдельного перевода"
+        },
+        {
+          "es": "tu",
+          "ru": "твой, твоя"
+        },
+        {
+          "es": "deliciosa",
+          "ru": "очень вкусная"
+        },
+        {
+          "es": "gracias",
+          "ru": "спасибо"
+        },
+        {
+          "es": "invitarme",
+          "ru": "пригласить меня"
+        },
+        {
+          "es": "se",
+          "ru": "часть se acabó — закончилась"
+        },
+        {
+          "es": "acabó",
+          "ru": "закончилась; se acabó la fiesta — вечеринка закончилась"
+        }
+      ]
+    },
+    {
+      "id": "beginner:cake-at-home",
+      "kind": "beginner",
+      "author": "Учебная подборка Vamos; оригинальные записи предложений — arh / Tatoeba",
+      "level": "A2",
+      "format": "Мини-статья",
+      "formatId": "article",
+      "theme": "Еда и кухня",
+      "title": "Una tarta en casa",
+      "subtitleRu": "Из чего делают торт и как предложить ещё кусочек.",
+      "minutes": 7,
+      "mission": "Назови три ингредиента. Предложи гостю ещё торт: ¿Alguien quiere más tarta? Ответь: Quiero un poco de tarta.",
+      "learningNoteRu": "Уровень — редакционная оценка сложности. Послушай целиком, прочитай и нажми на незнакомое слово. Ответь на три вопроса и произнеси свой ответ. Озвучка — последовательность отдельных человеческих записей: предложения не сокращены и не изменены.",
+      "learningFocusRu": "Necesitas + продукты; corta — разрежь; ¿Alguien quiere…? — кто-нибудь хочет? Здесь sabe означает «имеет вкус», а не «знает».",
+      "progressionBand": "A2-start",
+      "lines": [
+        {
+          "es": "Para hacer una tarta, necesitas huevos, mantequilla y azúcar.",
+          "ru": "Чтобы сделать торт, тебе нужны яйца, сливочное масло и сахар.",
+          "audio": "beginner:933519",
+          "speaker": "arh"
+        },
+        {
+          "es": "Mi madre está haciendo una tarta.",
+          "ru": "Моя мама готовит торт.",
+          "audio": "beginner:568125",
+          "speaker": "arh"
+        },
+        {
+          "es": "La tarta sabe dulce.",
+          "ru": "У торта сладкий вкус.",
+          "audio": "beginner:733552",
+          "speaker": "arh"
+        },
+        {
+          "es": "Corta la tarta con un cuchillo.",
+          "ru": "Разрежь торт ножом.",
+          "audio": "beginner:46253",
+          "speaker": "arh"
+        },
+        {
+          "es": "Es un trozo de tarta.",
+          "ru": "Это кусочек торта.",
+          "audio": "beginner:40096",
+          "speaker": "arh"
+        },
+        {
+          "es": "¿Alguien quiere más tarta?",
+          "ru": "Кто-нибудь хочет ещё торта?",
+          "audio": "beginner:354826",
+          "speaker": "arh"
+        },
+        {
+          "es": "Quiero un poco de tarta.",
+          "ru": "Я хочу немного торта.",
+          "audio": "beginner:933973",
+          "speaker": "arh"
+        }
+      ],
+      "es": "Para hacer una tarta, necesitas huevos, mantequilla y azúcar. Mi madre está haciendo una tarta. La tarta sabe dulce. Corta la tarta con un cuchillo. Es un trozo de tarta. ¿Alguien quiere más tarta? Quiero un poco de tarta.",
+      "ru": "Чтобы сделать торт, тебе нужны яйца, сливочное масло и сахар. Моя мама готовит торт. У торта сладкий вкус. Разрежь торт ножом. Это кусочек торта. Кто-нибудь хочет ещё торта? Я хочу немного торта.",
+      "task": {
+        "id": "q1",
+        "prompt": "Какие ингредиенты названы?",
+        "options": [
+          "Яйца, сливочное масло и сахар.",
+          "Рыба, рис и соль.",
+          "Картофель, сыр и перец."
+        ],
+        "answer": 0,
+        "feedback": "Huevos — яйца, mantequilla — сливочное масло, azúcar — сахар. Это названные ингредиенты, а не полный рецепт."
+      },
+      "tasks": [
+        {
+          "id": "q1",
+          "prompt": "Какие ингредиенты названы?",
+          "options": [
+            "Яйца, сливочное масло и сахар.",
+            "Рыба, рис и соль.",
+            "Картофель, сыр и перец."
+          ],
+          "answer": 0,
+          "feedback": "Huevos — яйца, mantequilla — сливочное масло, azúcar — сахар. Это названные ингредиенты, а не полный рецепт."
+        },
+        {
+          "id": "q2",
+          "prompt": "Что означает La tarta sabe dulce?",
+          "options": [
+            "Торт знает ответ.",
+            "Торт сладкий на вкус.",
+            "Торт очень горячий."
+          ],
+          "answer": 1,
+          "feedback": "Saber может означать иметь вкус. Dulce — сладкий."
+        },
+        {
+          "id": "q3",
+          "prompt": "Как предложить гостям ещё торта?",
+          "options": [
+            "Corta la tarta.",
+            "Es un trozo de tarta.",
+            "¿Alguien quiere más tarta?"
+          ],
+          "answer": 2,
+          "feedback": "Alguien — кто-нибудь; quiere — хочет; más — ещё."
+        }
+      ],
+      "glossary": [
+        {
+          "es": "para",
+          "ru": "чтобы; para hacer — чтобы сделать"
+        },
+        {
+          "es": "hacer",
+          "ru": "делать; hacer una tarta — приготовить торт"
+        },
+        {
+          "es": "una",
+          "ru": "неопределённый артикль женского рода; una hora — один час"
+        },
+        {
+          "es": "tarta",
+          "ru": "торт"
+        },
+        {
+          "es": "necesitas",
+          "ru": "тебе нужны, тебе нужно"
+        },
+        {
+          "es": "huevos",
+          "ru": "яйца"
+        },
+        {
+          "es": "mantequilla",
+          "ru": "сливочное масло"
+        },
+        {
+          "es": "y",
+          "ru": "и"
+        },
+        {
+          "es": "azúcar",
+          "ru": "сахар"
+        },
+        {
+          "es": "mi",
+          "ru": "мой, моя"
+        },
+        {
+          "es": "madre",
+          "ru": "мама, мать"
+        },
+        {
+          "es": "está",
+          "ru": "форма estar; está haciendo — готовит, делает сейчас"
+        },
+        {
+          "es": "haciendo",
+          "ru": "делая; está haciendo — готовит сейчас"
+        },
+        {
+          "es": "la",
+          "ru": "определённый артикль женского рода; обычно без отдельного перевода"
+        },
+        {
+          "es": "sabe",
+          "ru": "имеет вкус; sabe dulce — сладкий на вкус"
+        },
+        {
+          "es": "dulce",
+          "ru": "сладкий"
+        },
+        {
+          "es": "corta",
+          "ru": "режь, разрежь"
+        },
+        {
+          "es": "con",
+          "ru": "с помощью; con un cuchillo — ножом"
+        },
+        {
+          "es": "un",
+          "ru": "неопределённый артикль мужского рода; часто без отдельного перевода"
+        },
+        {
+          "es": "cuchillo",
+          "ru": "нож"
+        },
+        {
+          "es": "es",
+          "ru": "является; форма ser, в переводе часто пропускается"
+        },
+        {
+          "es": "trozo",
+          "ru": "кусочек"
+        },
+        {
+          "es": "de",
+          "ru": "trozo de tarta — кусочек торта; un poco de tarta — немного торта"
+        },
+        {
+          "es": "alguien",
+          "ru": "кто-нибудь"
+        },
+        {
+          "es": "quiere",
+          "ru": "хочет"
+        },
+        {
+          "es": "más",
+          "ru": "ещё, больше; más despacio — медленнее"
+        },
+        {
+          "es": "quiero",
+          "ru": "я хочу"
+        },
+        {
+          "es": "poco",
+          "ru": "немного; un poco — немного"
+        }
+      ]
+    },
+    {
+      "id": "beginner:rain-changes-plans",
+      "kind": "beginner",
+      "author": "Учебная подборка Vamos; оригинальные записи предложений — arh / Tatoeba",
+      "level": "A2",
+      "format": "Мини-история",
+      "formatId": "story",
+      "theme": "Погода и планы",
+      "title": "¿Salimos o esperamos?",
+      "subtitleRu": "Тучи меняют планы: дождь, зонтик и радуга.",
+      "minutes": 8,
+      "mission": "Объясни, почему герои ждут: Si no para de llover, no podemos ir. Затем скажи, что дождь закончился: Ha parado de llover.",
+      "learningNoteRu": "Уровень — редакционная оценка сложности. Послушай целиком, прочитай и нажми на незнакомое слово. Ответь на три вопроса и произнеси свой ответ. Озвучка — последовательность отдельных человеческих записей: предложения не сокращены и не изменены.",
+      "learningFocusRu": "Va a llover — дождь собирается начаться; está lloviendo — идёт сейчас; ha parado — уже прекратился. Si — если.",
+      "progressionBand": "A2-grow",
+      "lines": [
+        {
+          "es": "Por el aspecto del cielo, parece que va a llover.",
+          "ru": "По виду неба кажется, что пойдёт дождь.",
+          "audio": "beginner:635168",
+          "speaker": "arh"
+        },
+        {
+          "es": "Va a llover.",
+          "ru": "Собирается дождь.",
+          "audio": "beginner:449928",
+          "speaker": "arh"
+        },
+        {
+          "es": "Está lloviendo hoy, ¿dónde está mi paraguas?",
+          "ru": "Сегодня идёт дождь. Где мой зонтик?",
+          "audio": "beginner:594238",
+          "speaker": "arh"
+        },
+        {
+          "es": "Si no para de llover, no podemos ir.",
+          "ru": "Если дождь не прекратится, мы не можем пойти.",
+          "audio": "beginner:933471",
+          "speaker": "arh"
+        },
+        {
+          "es": "Ha parado de llover.",
+          "ru": "Дождь прекратился.",
+          "audio": "beginner:460737",
+          "speaker": "arh"
+        },
+        {
+          "es": "En cuanto dejó de llover, apareció un bonito arco iris.",
+          "ru": "Как только дождь прекратился, появилась красивая радуга.",
+          "audio": "beginner:610733",
+          "speaker": "arh"
+        },
+        {
+          "es": "El cielo es azul.",
+          "ru": "Небо голубое.",
+          "audio": "beginner:39214",
+          "speaker": "arh"
+        }
+      ],
+      "es": "Por el aspecto del cielo, parece que va a llover. Va a llover. Está lloviendo hoy, ¿dónde está mi paraguas? Si no para de llover, no podemos ir. Ha parado de llover. En cuanto dejó de llover, apareció un bonito arco iris. El cielo es azul.",
+      "ru": "По виду неба кажется, что пойдёт дождь. Собирается дождь. Сегодня идёт дождь. Где мой зонтик? Если дождь не прекратится, мы не можем пойти. Дождь прекратился. Как только дождь прекратился, появилась красивая радуга. Небо голубое.",
+      "task": {
+        "id": "q1",
+        "prompt": "Почему герои не могут пойти сразу?",
+        "options": [
+          "Потому что потеряли билет.",
+          "Потому что дождь ещё не прекращается.",
+          "Потому что уже ночь."
+        ],
+        "answer": 1,
+        "feedback": "Si no para de llover, no podemos ir — если дождь не прекратится, мы не можем пойти."
+      },
+      "tasks": [
+        {
+          "id": "q1",
+          "prompt": "Почему герои не могут пойти сразу?",
+          "options": [
+            "Потому что потеряли билет.",
+            "Потому что дождь ещё не прекращается.",
+            "Потому что уже ночь."
+          ],
+          "answer": 1,
+          "feedback": "Si no para de llover, no podemos ir — если дождь не прекратится, мы не можем пойти."
+        },
+        {
+          "id": "q2",
+          "prompt": "Что появилось после дождя?",
+          "options": [
+            "Радуга.",
+            "Снег.",
+            "Поезд."
+          ],
+          "answer": 0,
+          "feedback": "Apareció un bonito arco iris — появилась красивая радуга. Arco iris — одно понятие из двух слов."
+        },
+        {
+          "id": "q3",
+          "prompt": "Какая фраза означает, что дождь уже закончился?",
+          "options": [
+            "Está lloviendo hoy.",
+            "Va a llover.",
+            "Ha parado de llover."
+          ],
+          "answer": 2,
+          "feedback": "Ha parado — прекратился. Va a llover — ближайшее будущее; está lloviendo — сейчас."
+        }
+      ],
+      "glossary": [
+        {
+          "es": "por",
+          "ru": "по; por el aspecto — по виду"
+        },
+        {
+          "es": "el",
+          "ru": "определённый артикль мужского рода; отдельно обычно не переводится"
+        },
+        {
+          "es": "aspecto",
+          "ru": "вид, внешний облик"
+        },
+        {
+          "es": "del",
+          "ru": "de + el; del cielo — неба"
+        },
+        {
+          "es": "cielo",
+          "ru": "небо"
+        },
+        {
+          "es": "parece",
+          "ru": "кажется"
+        },
+        {
+          "es": "que",
+          "ru": "что; parece que — кажется, что"
+        },
+        {
+          "es": "va",
+          "ru": "va a llover — собирается пойти дождь"
+        },
+        {
+          "es": "a",
+          "ru": "к / в; перед инфинитивом отдельно не переводится"
+        },
+        {
+          "es": "llover",
+          "ru": "идти (о дожде)"
+        },
+        {
+          "es": "está",
+          "ru": "форма estar: está lloviendo — идёт дождь сейчас; dónde está — где находится"
+        },
+        {
+          "es": "lloviendo",
+          "ru": "está lloviendo — идёт дождь"
+        },
+        {
+          "es": "hoy",
+          "ru": "сегодня"
+        },
+        {
+          "es": "dónde",
+          "ru": "где"
+        },
+        {
+          "es": "mi",
+          "ru": "мой, моя"
+        },
+        {
+          "es": "paraguas",
+          "ru": "зонтик"
+        },
+        {
+          "es": "si",
+          "ru": "если"
+        },
+        {
+          "es": "no",
+          "ru": "не"
+        },
+        {
+          "es": "para",
+          "ru": "прекращается; no para de llover — дождь не прекращается"
+        },
+        {
+          "es": "de",
+          "ru": "в конструкции parar/dejar de llover — прекратиться (о дожде); отдельно не переводится"
+        },
+        {
+          "es": "podemos",
+          "ru": "мы можем"
+        },
+        {
+          "es": "ir",
+          "ru": "идти"
+        },
+        {
+          "es": "ha",
+          "ru": "вспомогательный haber: ha parado — прекратился"
+        },
+        {
+          "es": "parado",
+          "ru": "ha parado de llover — дождь прекратился"
+        },
+        {
+          "es": "en",
+          "ru": "в / на"
+        },
+        {
+          "es": "cuanto",
+          "ru": "en cuanto — как только"
+        },
+        {
+          "es": "dejó",
+          "ru": "перестал; dejó de llover — дождь прекратился"
+        },
+        {
+          "es": "apareció",
+          "ru": "появилась"
+        },
+        {
+          "es": "un",
+          "ru": "неопределённый артикль мужского рода; часто без отдельного перевода"
+        },
+        {
+          "es": "bonito",
+          "ru": "красивый"
+        },
+        {
+          "es": "arco",
+          "ru": "дуга; arco iris — радуга"
+        },
+        {
+          "es": "iris",
+          "ru": "часть arco iris — радуга"
+        },
+        {
+          "es": "es",
+          "ru": "является; форма ser, в переводе часто пропускается"
+        },
+        {
+          "es": "azul",
+          "ru": "голубой, синий"
+        }
+      ]
+    },
+    {
+      "id": "beginner:language-small-steps",
+      "kind": "beginner",
+      "author": "Учебная подборка Vamos; оригинальные записи предложений — arh / Tatoeba",
+      "level": "A2",
+      "format": "Мини-статья",
+      "formatId": "article",
+      "theme": "Обучение и общение",
+      "title": "Aprender y pedir ayuda",
+      "subtitleRu": "Учим язык и спокойно просим говорить медленнее.",
+      "minutes": 8,
+      "mission": "Скажи Hablo un poco de español. Попроси говорить медленнее: ¿Podría hablarme un poco más despacio? Произнеси с записью и без неё.",
+      "learningNoteRu": "Уровень — редакционная оценка сложности. Послушай целиком, прочитай и нажми на незнакомое слово. Ответь на три вопроса и произнеси свой ответ. Озвучка — последовательность отдельных человеческих записей: предложения не сокращены и не изменены.",
+      "learningFocusRu": "Aprender — учить; practicar — практиковаться; hablar — говорить. Podría hablarme — вежливая просьба на вы. Не нужно понимать каждое слово без подсказки.",
+      "progressionBand": "A2-grow",
+      "lines": [
+        {
+          "es": "Es difícil aprender un idioma extranjero.",
+          "ru": "Учить иностранный язык трудно.",
+          "audio": "beginner:538151",
+          "speaker": "arh"
+        },
+        {
+          "es": "Aprender un idioma extranjero es divertido.",
+          "ru": "Учить иностранный язык интересно и увлекательно.",
+          "audio": "beginner:538152",
+          "speaker": "arh"
+        },
+        {
+          "es": "Hablo un poco de español.",
+          "ru": "Я немного говорю по-испански.",
+          "audio": "beginner:639147",
+          "speaker": "arh"
+        },
+        {
+          "es": "¿Podría hablarme un poco más despacio?",
+          "ru": "Вы могли бы говорить со мной немного медленнее?",
+          "audio": "beginner:527044",
+          "speaker": "arh"
+        },
+        {
+          "es": "Necesito practicar todo lo que pueda.",
+          "ru": "Мне нужно практиковаться столько, сколько я смогу.",
+          "audio": "beginner:611851",
+          "speaker": "arh"
+        },
+        {
+          "es": "Sigue practicando.",
+          "ru": "Продолжай практиковаться.",
+          "audio": "beginner:441972",
+          "speaker": "arh"
+        }
+      ],
+      "es": "Es difícil aprender un idioma extranjero. Aprender un idioma extranjero es divertido. Hablo un poco de español. ¿Podría hablarme un poco más despacio? Necesito practicar todo lo que pueda. Sigue practicando.",
+      "ru": "Учить иностранный язык трудно. Учить иностранный язык интересно и увлекательно. Я немного говорю по-испански. Вы могли бы говорить со мной немного медленнее? Мне нужно практиковаться столько, сколько я смогу. Продолжай практиковаться.",
+      "task": {
+        "id": "q1",
+        "prompt": "О чём говорят первые два предложения?",
+        "options": [
+          "Язык бывает и трудным, и увлекательным.",
+          "Язык можно выучить без практики.",
+          "Учить язык скучно и бесполезно."
+        ],
+        "answer": 0,
+        "feedback": "Difícil — трудный, divertido — увлекательный. Две оценки могут быть верны одновременно."
+      },
+      "tasks": [
+        {
+          "id": "q1",
+          "prompt": "О чём говорят первые два предложения?",
+          "options": [
+            "Язык бывает и трудным, и увлекательным.",
+            "Язык можно выучить без практики.",
+            "Учить язык скучно и бесполезно."
+          ],
+          "answer": 0,
+          "feedback": "Difícil — трудный, divertido — увлекательный. Две оценки могут быть верны одновременно."
+        },
+        {
+          "id": "q2",
+          "prompt": "Как попросить говорить медленнее?",
+          "options": [
+            "Sigue practicando.",
+            "¿Podría hablarme un poco más despacio?",
+            "Hablo un poco de español."
+          ],
+          "answer": 1,
+          "feedback": "Más despacio — медленнее; podría hablarme — Вы могли бы говорить со мной."
+        },
+        {
+          "id": "q3",
+          "prompt": "Что означает Sigue practicando?",
+          "options": [
+            "Перестань разговаривать.",
+            "Выбери другой язык.",
+            "Продолжай практиковаться."
+          ],
+          "answer": 2,
+          "feedback": "Sigue + форма на -ando означает продолжай делать; practicando — практиковаться."
+        }
+      ],
+      "glossary": [
+        {
+          "es": "es",
+          "ru": "является; форма ser, в переводе часто пропускается"
+        },
+        {
+          "es": "difícil",
+          "ru": "трудный"
+        },
+        {
+          "es": "aprender",
+          "ru": "учить, изучать"
+        },
+        {
+          "es": "un",
+          "ru": "неопределённый артикль мужского рода; часто без отдельного перевода"
+        },
+        {
+          "es": "idioma",
+          "ru": "язык"
+        },
+        {
+          "es": "extranjero",
+          "ru": "иностранный"
+        },
+        {
+          "es": "divertido",
+          "ru": "увлекательный, интересный"
+        },
+        {
+          "es": "hablo",
+          "ru": "я говорю"
+        },
+        {
+          "es": "poco",
+          "ru": "немного; un poco — немного"
+        },
+        {
+          "es": "de",
+          "ru": "un poco de español — немного по-испански; отдельно не переводится"
+        },
+        {
+          "es": "español",
+          "ru": "испанский язык"
+        },
+        {
+          "es": "podría",
+          "ru": "Вы могли бы (вежливая просьба)"
+        },
+        {
+          "es": "hablarme",
+          "ru": "говорить со мной"
+        },
+        {
+          "es": "más",
+          "ru": "ещё, больше; más despacio — медленнее"
+        },
+        {
+          "es": "despacio",
+          "ru": "медленно; más despacio — медленнее"
+        },
+        {
+          "es": "necesito",
+          "ru": "мне нужно"
+        },
+        {
+          "es": "practicar",
+          "ru": "практиковаться"
+        },
+        {
+          "es": "todo",
+          "ru": "всё; todo lo que pueda — столько, сколько смогу"
+        },
+        {
+          "es": "lo",
+          "ru": "часть todo lo que pueda — столько, сколько я смогу"
+        },
+        {
+          "es": "que",
+          "ru": "часть todo lo que pueda — столько, сколько я смогу"
+        },
+        {
+          "es": "pueda",
+          "ru": "могу, смогу; форма poder после todo lo que"
+        },
+        {
+          "es": "sigue",
+          "ru": "продолжай"
+        },
+        {
+          "es": "practicando",
+          "ru": "sigue practicando — продолжай практиковаться"
+        }
+      ]
+    },
+    {
+      "id": "beginner:move-and-rest",
+      "kind": "beginner",
+      "author": "Учебная подборка Vamos; оригинальные записи предложений — arh / Tatoeba",
+      "level": "A2",
+      "format": "Мини-статья",
+      "formatId": "article",
+      "theme": "Привычки и отдых",
+      "title": "Moverse y descansar",
+      "subtitleRu": "Семь фраз о движении, прогулках, еде и отдыхе.",
+      "minutes": 8,
+      "mission": "Расскажи о себе по модели Doy un paseo todos los días. Добавь вид движения из текста и объясни, когда отдыхаешь, используя después de.",
+      "learningNoteRu": "Уровень — редакционная оценка сложности. Послушай целиком, прочитай и нажми на незнакомое слово. Ответь на три вопроса и произнеси свой ответ. Озвучка — последовательность отдельных человеческих записей: предложения не сокращены и не изменены.",
+      "learningFocusRu": "Correr — бегать; nadar — плавать; dar un paseo — гулять. Después de — после; excepto cuando — кроме тех случаев, когда.",
+      "progressionBand": "A2-grow",
+      "lines": [
+        {
+          "es": "El deporte es bueno para la salud.",
+          "ru": "Спорт полезен для здоровья.",
+          "audio": "beginner:921149",
+          "speaker": "arh"
+        },
+        {
+          "es": "Correr es bueno para la salud.",
+          "ru": "Бег полезен для здоровья.",
+          "audio": "beginner:645202",
+          "speaker": "arh"
+        },
+        {
+          "es": "Nadar es buen ejercicio.",
+          "ru": "Плавание — хорошая физическая нагрузка.",
+          "audio": "beginner:522144",
+          "speaker": "arh"
+        },
+        {
+          "es": "Doy un paseo todos los días, excepto cuando llueve.",
+          "ru": "Я гуляю каждый день, кроме тех случаев, когда идёт дождь.",
+          "audio": "beginner:610915",
+          "speaker": "arh"
+        },
+        {
+          "es": "Debes descansar después de hacer ejercicio.",
+          "ru": "После физической нагрузки тебе следует отдохнуть.",
+          "audio": "beginner:926210",
+          "speaker": "arh"
+        },
+        {
+          "es": "La fruta fresca es buena para la salud.",
+          "ru": "Свежие фрукты полезны для здоровья.",
+          "audio": "beginner:687220",
+          "speaker": "arh"
+        },
+        {
+          "es": "Es muy importante descansar lo suficiente.",
+          "ru": "Очень важно достаточно отдыхать.",
+          "audio": "beginner:585767",
+          "speaker": "arh"
+        }
+      ],
+      "es": "El deporte es bueno para la salud. Correr es bueno para la salud. Nadar es buen ejercicio. Doy un paseo todos los días, excepto cuando llueve. Debes descansar después de hacer ejercicio. La fruta fresca es buena para la salud. Es muy importante descansar lo suficiente.",
+      "ru": "Спорт полезен для здоровья. Бег полезен для здоровья. Плавание — хорошая физическая нагрузка. Я гуляю каждый день, кроме тех случаев, когда идёт дождь. После физической нагрузки тебе следует отдохнуть. Свежие фрукты полезны для здоровья. Очень важно достаточно отдыхать.",
+      "task": {
+        "id": "q1",
+        "prompt": "Когда человек из текста не гуляет?",
+        "options": [
+          "Когда идёт дождь.",
+          "Каждое воскресенье.",
+          "Когда светит солнце."
+        ],
+        "answer": 0,
+        "feedback": "Excepto cuando llueve — кроме тех случаев, когда идёт дождь."
+      },
+      "tasks": [
+        {
+          "id": "q1",
+          "prompt": "Когда человек из текста не гуляет?",
+          "options": [
+            "Когда идёт дождь.",
+            "Каждое воскресенье.",
+            "Когда светит солнце."
+          ],
+          "answer": 0,
+          "feedback": "Excepto cuando llueve — кроме тех случаев, когда идёт дождь."
+        },
+        {
+          "id": "q2",
+          "prompt": "Что предлагается делать после нагрузки?",
+          "options": [
+            "Сразу снова бегать.",
+            "Отдохнуть.",
+            "Пропустить все прогулки."
+          ],
+          "answer": 1,
+          "feedback": "Debes descansar después de hacer ejercicio. Descansar — отдыхать."
+        },
+        {
+          "id": "q3",
+          "prompt": "Как сказать «Я гуляю каждый день»?",
+          "options": [
+            "La fruta fresca es buena.",
+            "Nadar es buen ejercicio.",
+            "Doy un paseo todos los días."
+          ],
+          "answer": 2,
+          "feedback": "Dar un paseo — гулять. Doy — я совершаю; todos los días — каждый день."
+        }
+      ],
+      "glossary": [
+        {
+          "es": "el",
+          "ru": "определённый артикль мужского рода; отдельно обычно не переводится"
+        },
+        {
+          "es": "deporte",
+          "ru": "спорт"
+        },
+        {
+          "es": "es",
+          "ru": "является; форма ser, в переводе часто пропускается"
+        },
+        {
+          "es": "bueno",
+          "ru": "полезный, хороший"
+        },
+        {
+          "es": "para",
+          "ru": "для; para la salud — для здоровья"
+        },
+        {
+          "es": "la",
+          "ru": "определённый артикль женского рода; обычно без отдельного перевода"
+        },
+        {
+          "es": "salud",
+          "ru": "здоровье"
+        },
+        {
+          "es": "correr",
+          "ru": "бегать; здесь бег"
+        },
+        {
+          "es": "nadar",
+          "ru": "плавать; здесь плавание"
+        },
+        {
+          "es": "buen",
+          "ru": "хороший; форма bueno перед существительным"
+        },
+        {
+          "es": "ejercicio",
+          "ru": "физическая нагрузка, упражнение"
+        },
+        {
+          "es": "doy",
+          "ru": "я совершаю; doy un paseo — я гуляю"
+        },
+        {
+          "es": "un",
+          "ru": "неопределённый артикль мужского рода; часто без отдельного перевода"
+        },
+        {
+          "es": "paseo",
+          "ru": "прогулка"
+        },
+        {
+          "es": "todos",
+          "ru": "все; todos los días — каждый день"
+        },
+        {
+          "es": "los",
+          "ru": "определённый артикль множественного числа мужского рода"
+        },
+        {
+          "es": "días",
+          "ru": "дни"
+        },
+        {
+          "es": "excepto",
+          "ru": "кроме"
+        },
+        {
+          "es": "cuando",
+          "ru": "когда"
+        },
+        {
+          "es": "llueve",
+          "ru": "идёт дождь"
+        },
+        {
+          "es": "debes",
+          "ru": "тебе следует, ты должен"
+        },
+        {
+          "es": "descansar",
+          "ru": "отдыхать"
+        },
+        {
+          "es": "después",
+          "ru": "после; después de — после"
+        },
+        {
+          "es": "de",
+          "ru": "часть después de — после"
+        },
+        {
+          "es": "hacer",
+          "ru": "делать; hacer ejercicio — заниматься физическими упражнениями"
+        },
+        {
+          "es": "fruta",
+          "ru": "фрукты (собирательное существительное)"
+        },
+        {
+          "es": "fresca",
+          "ru": "свежая"
+        },
+        {
+          "es": "buena",
+          "ru": "полезная, хорошая"
+        },
+        {
+          "es": "muy",
+          "ru": "очень"
+        },
+        {
+          "es": "importante",
+          "ru": "важный; es importante — важно"
+        },
+        {
+          "es": "lo",
+          "ru": "часть lo suficiente — достаточно"
+        },
+        {
+          "es": "suficiente",
+          "ru": "достаточный; lo suficiente — достаточно"
         }
       ]
     }
@@ -1737,6 +4352,1383 @@
       "speakerUrl": "https://tatoeba.org/en/user/profile/arh",
       "bytes": 15466,
       "sha256": "6309df3a9c251f891be628cdc52bb6c4a971aed09c5fdcccd3bbb47effdb2b18"
+    },
+    "beginner:610933": {
+      "sentenceId": "774056",
+      "audioId": "610933",
+      "speaker": "arh",
+      "license": "CC BY-NC-ND 3.0",
+      "attribution": "",
+      "text": "Desayuno a las siete todas las mañanas.",
+      "file": "assets/beginner-audio/610933.mp3",
+      "sentenceUrl": "https://tatoeba.org/en/sentences/show/774056",
+      "sourceUrl": "https://tatoeba.org/audio/download/610933",
+      "url": "https://tatoeba.org/audio/download/610933",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc-nd/3.0/",
+      "speakerUrl": "https://tatoeba.org/en/user/profile/arh",
+      "unaltered": true,
+      "bytes": 16117,
+      "sha256": "a93f3120702d9f48ca94328f0f380ee05cbe9cc86358d7f89d6b17a45852cfb2"
+    },
+    "beginner:450353": {
+      "sentenceId": "1306254",
+      "audioId": "450353",
+      "speaker": "arh",
+      "license": "CC BY-NC-ND 3.0",
+      "attribution": "",
+      "text": "El desayuno está listo.",
+      "file": "assets/beginner-audio/450353.mp3",
+      "sentenceUrl": "https://tatoeba.org/en/sentences/show/1306254",
+      "sourceUrl": "https://tatoeba.org/audio/download/450353",
+      "url": "https://tatoeba.org/audio/download/450353",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc-nd/3.0/",
+      "speakerUrl": "https://tatoeba.org/en/user/profile/arh",
+      "unaltered": true,
+      "bytes": 12214,
+      "sha256": "1650e65c6c522f62c73c1a400851cce570fc88ef0ff314f3aabc921d37c02206"
+    },
+    "beginner:934000": {
+      "sentenceId": "785234",
+      "audioId": "934000",
+      "speaker": "arh",
+      "license": "CC BY-NC-ND 3.0",
+      "attribution": "",
+      "text": "Comemos pan con mantequilla.",
+      "file": "assets/beginner-audio/934000.mp3",
+      "sentenceUrl": "https://tatoeba.org/en/sentences/show/785234",
+      "sourceUrl": "https://tatoeba.org/audio/download/934000",
+      "url": "https://tatoeba.org/audio/download/934000",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc-nd/3.0/",
+      "speakerUrl": "https://tatoeba.org/en/user/profile/arh",
+      "unaltered": true,
+      "bytes": 48291,
+      "sha256": "7fdd2362ad5b01261078dd7cd6210a971285532fa89d67350ed30ab78f87e907"
+    },
+    "beginner:438255": {
+      "sentenceId": "613092",
+      "audioId": "438255",
+      "speaker": "arh",
+      "license": "CC BY-NC-ND 3.0",
+      "attribution": "",
+      "text": "Me gusta el té.",
+      "file": "assets/beginner-audio/438255.mp3",
+      "sentenceUrl": "https://tatoeba.org/en/sentences/show/613092",
+      "sourceUrl": "https://tatoeba.org/audio/download/438255",
+      "url": "https://tatoeba.org/audio/download/438255",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc-nd/3.0/",
+      "speakerUrl": "https://tatoeba.org/en/user/profile/arh",
+      "unaltered": true,
+      "bytes": 9181,
+      "sha256": "ce5aee9cef0a038a3d79fcb8b421b6e477c58e3434ed4187588d946d7bf71980"
+    },
+    "beginner:43950": {
+      "sentenceId": "710244",
+      "audioId": "43950",
+      "speaker": "arh",
+      "license": "CC BY-NC-ND 3.0",
+      "attribution": "",
+      "text": "Una taza de té, por favor.",
+      "file": "assets/beginner-audio/43950.mp3",
+      "sentenceUrl": "https://tatoeba.org/en/sentences/show/710244",
+      "sourceUrl": "https://tatoeba.org/audio/download/43950",
+      "url": "https://tatoeba.org/audio/download/43950",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc-nd/3.0/",
+      "speakerUrl": "https://tatoeba.org/en/user/profile/arh",
+      "unaltered": true,
+      "bytes": 15024,
+      "sha256": "2007f4aef4493495572f3dc22632266ac6435092dc1bf2e3446c5d67e7ebee36"
+    },
+    "beginner:551756": {
+      "sentenceId": "885628",
+      "audioId": "551756",
+      "speaker": "arh",
+      "license": "CC BY-NC-ND 3.0",
+      "attribution": "",
+      "text": "Hay leche en el frigorífico.",
+      "file": "assets/beginner-audio/551756.mp3",
+      "sentenceUrl": "https://tatoeba.org/en/sentences/show/885628",
+      "sourceUrl": "https://tatoeba.org/audio/download/551756",
+      "url": "https://tatoeba.org/audio/download/551756",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc-nd/3.0/",
+      "speakerUrl": "https://tatoeba.org/en/user/profile/arh",
+      "unaltered": true,
+      "bytes": 13082,
+      "sha256": "d146a9bc12091c8b523fb765114bed8242773e121b2d58c6b14bd7917da80f2b"
+    },
+    "beginner:526564": {
+      "sentenceId": "347002",
+      "audioId": "526564",
+      "speaker": "arh",
+      "license": "CC BY-NC-ND 3.0",
+      "attribution": "",
+      "text": "Un vaso de leche, por favor.",
+      "file": "assets/beginner-audio/526564.mp3",
+      "sentenceUrl": "https://tatoeba.org/en/sentences/show/347002",
+      "sourceUrl": "https://tatoeba.org/audio/download/526564",
+      "url": "https://tatoeba.org/audio/download/526564",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc-nd/3.0/",
+      "speakerUrl": "https://tatoeba.org/en/user/profile/arh",
+      "unaltered": true,
+      "bytes": 13513,
+      "sha256": "eaf825bfb10603a5e56a9c4bcd343102ef434582c41008c7c54cc03cb657830d"
+    },
+    "beginner:525392": {
+      "sentenceId": "1389568",
+      "audioId": "525392",
+      "speaker": "arh",
+      "license": "CC BY-NC-ND 3.0",
+      "attribution": "",
+      "text": "Necesito pan y leche.",
+      "file": "assets/beginner-audio/525392.mp3",
+      "sentenceUrl": "https://tatoeba.org/en/sentences/show/1389568",
+      "sourceUrl": "https://tatoeba.org/audio/download/525392",
+      "url": "https://tatoeba.org/audio/download/525392",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc-nd/3.0/",
+      "speakerUrl": "https://tatoeba.org/en/user/profile/arh",
+      "unaltered": true,
+      "bytes": 11347,
+      "sha256": "e96427628e649a73c35267aa9f823b4e494f64720c1f7fb9c6ce2e8d344f3f60"
+    },
+    "beginner:38872": {
+      "sentenceId": "523567",
+      "audioId": "38872",
+      "speaker": "arh",
+      "license": "CC BY-NC-ND 3.0",
+      "attribution": "",
+      "text": "Tengo que ir a comprar.",
+      "file": "assets/beginner-audio/38872.mp3",
+      "sentenceUrl": "https://tatoeba.org/en/sentences/show/523567",
+      "sourceUrl": "https://tatoeba.org/audio/download/38872",
+      "url": "https://tatoeba.org/audio/download/38872",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc-nd/3.0/",
+      "speakerUrl": "https://tatoeba.org/en/user/profile/arh",
+      "unaltered": true,
+      "bytes": 11132,
+      "sha256": "8160a9045d6680ea81338baa121827885783f2560238676d0322e3cd131121e9"
+    },
+    "beginner:527287": {
+      "sentenceId": "343686",
+      "audioId": "527287",
+      "speaker": "arh",
+      "license": "CC BY-NC-ND 3.0",
+      "attribution": "",
+      "text": "En esa tienda venden verduras.",
+      "file": "assets/beginner-audio/527287.mp3",
+      "sentenceUrl": "https://tatoeba.org/en/sentences/show/343686",
+      "sourceUrl": "https://tatoeba.org/audio/download/527287",
+      "url": "https://tatoeba.org/audio/download/527287",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc-nd/3.0/",
+      "speakerUrl": "https://tatoeba.org/en/user/profile/arh",
+      "unaltered": true,
+      "bytes": 13731,
+      "sha256": "43c00b5b2cce6c84f4e9b92127dfa145972721a0f6cc71b058d6e5783d852c0c"
+    },
+    "beginner:730165": {
+      "sentenceId": "527314",
+      "audioId": "730165",
+      "speaker": "arh",
+      "license": "CC BY-NC-ND 3.0",
+      "attribution": "",
+      "text": "¿Cuánto cuesta un kilo de plátanos?",
+      "file": "assets/beginner-audio/730165.mp3",
+      "sentenceUrl": "https://tatoeba.org/en/sentences/show/527314",
+      "sourceUrl": "https://tatoeba.org/audio/download/730165",
+      "url": "https://tatoeba.org/audio/download/730165",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc-nd/3.0/",
+      "speakerUrl": "https://tatoeba.org/en/user/profile/arh",
+      "unaltered": true,
+      "bytes": 12659,
+      "sha256": "53ca7d1378605922175a15d7d41920d12de3f2fb0f88b0e4c7491d117e819b9e"
+    },
+    "beginner:707539": {
+      "sentenceId": "597700",
+      "audioId": "707539",
+      "speaker": "arh",
+      "license": "CC BY-NC-ND 3.0",
+      "attribution": "",
+      "text": "¿Cuánto cuesta ese queso?",
+      "file": "assets/beginner-audio/707539.mp3",
+      "sentenceUrl": "https://tatoeba.org/en/sentences/show/597700",
+      "sourceUrl": "https://tatoeba.org/audio/download/707539",
+      "url": "https://tatoeba.org/audio/download/707539",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc-nd/3.0/",
+      "speakerUrl": "https://tatoeba.org/en/user/profile/arh",
+      "unaltered": true,
+      "bytes": 11136,
+      "sha256": "146fc69fd9aa06bc6b117635b82f5f4604d78cde6ea405848c3170b464ffbd7c"
+    },
+    "beginner:449833": {
+      "sentenceId": "345740",
+      "audioId": "449833",
+      "speaker": "arh",
+      "license": "CC BY-NC-ND 3.0",
+      "attribution": "",
+      "text": "No es caro.",
+      "file": "assets/beginner-audio/449833.mp3",
+      "sentenceUrl": "https://tatoeba.org/en/sentences/show/345740",
+      "sourceUrl": "https://tatoeba.org/audio/download/449833",
+      "url": "https://tatoeba.org/audio/download/449833",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc-nd/3.0/",
+      "speakerUrl": "https://tatoeba.org/en/user/profile/arh",
+      "unaltered": true,
+      "bytes": 8096,
+      "sha256": "906b1bea7252b2c559c2deaf9eb1df606d161bea7c7e575e7e26bebc70fb78cb"
+    },
+    "beginner:937857": {
+      "sentenceId": "2502714",
+      "audioId": "937857",
+      "speaker": "arh",
+      "license": "CC BY-NC-ND 3.0",
+      "attribution": "",
+      "text": "Compramos pan.",
+      "file": "assets/beginner-audio/937857.mp3",
+      "sentenceUrl": "https://tatoeba.org/en/sentences/show/2502714",
+      "sourceUrl": "https://tatoeba.org/audio/download/937857",
+      "url": "https://tatoeba.org/audio/download/937857",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc-nd/3.0/",
+      "speakerUrl": "https://tatoeba.org/en/user/profile/arh",
+      "unaltered": true,
+      "bytes": 36902,
+      "sha256": "d2b8b2b4af9e648481710cd6b92b1cc3afe7042d75152ee28f558b3cd7711d83"
+    },
+    "beginner:354938": {
+      "sentenceId": "523579",
+      "audioId": "354938",
+      "speaker": "arh",
+      "license": "CC BY-NC-ND 3.0",
+      "attribution": "",
+      "text": "Hay una manzana sobre la mesa.",
+      "file": "assets/beginner-audio/354938.mp3",
+      "sentenceUrl": "https://tatoeba.org/en/sentences/show/523579",
+      "sourceUrl": "https://tatoeba.org/audio/download/354938",
+      "url": "https://tatoeba.org/audio/download/354938",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc-nd/3.0/",
+      "speakerUrl": "https://tatoeba.org/en/user/profile/arh",
+      "unaltered": true,
+      "bytes": 14595,
+      "sha256": "0d0b8a38bec0b4ae3012aebe31f3c51b8aedd6961a8afad0daff7034fd20df02"
+    },
+    "beginner:527242": {
+      "sentenceId": "343177",
+      "audioId": "527242",
+      "speaker": "arh",
+      "license": "CC BY-NC-ND 3.0",
+      "attribution": "",
+      "text": "La manzana está madura.",
+      "file": "assets/beginner-audio/527242.mp3",
+      "sentenceUrl": "https://tatoeba.org/en/sentences/show/343177",
+      "sourceUrl": "https://tatoeba.org/audio/download/527242",
+      "url": "https://tatoeba.org/audio/download/527242",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc-nd/3.0/",
+      "speakerUrl": "https://tatoeba.org/en/user/profile/arh",
+      "unaltered": true,
+      "bytes": 13077,
+      "sha256": "85f317b33697620febf473874cc99cdf25399fac29b204c0b72c8e967bb2f479"
+    },
+    "beginner:40043": {
+      "sentenceId": "576674",
+      "audioId": "40043",
+      "speaker": "arh",
+      "license": "CC BY-NC-ND 3.0",
+      "attribution": "",
+      "text": "Las manzanas crecen en los árboles.",
+      "file": "assets/beginner-audio/40043.mp3",
+      "sentenceUrl": "https://tatoeba.org/en/sentences/show/576674",
+      "sourceUrl": "https://tatoeba.org/audio/download/40043",
+      "url": "https://tatoeba.org/audio/download/40043",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc-nd/3.0/",
+      "speakerUrl": "https://tatoeba.org/en/user/profile/arh",
+      "unaltered": true,
+      "bytes": 23673,
+      "sha256": "72e18e5f36d759d92c9c8b98b51105c16674387e2bd1aba7680ca286a6c56d9a"
+    },
+    "beginner:1197671": {
+      "sentenceId": "604365",
+      "audioId": "1197671",
+      "speaker": "arh",
+      "license": "CC BY-NC-ND 3.0",
+      "attribution": "",
+      "text": "Las naranjas crecen en países cálidos.",
+      "file": "assets/beginner-audio/1197671.mp3",
+      "sentenceUrl": "https://tatoeba.org/en/sentences/show/604365",
+      "sourceUrl": "https://tatoeba.org/audio/download/1197671",
+      "url": "https://tatoeba.org/audio/download/1197671",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc-nd/3.0/",
+      "speakerUrl": "https://tatoeba.org/en/user/profile/arh",
+      "unaltered": true,
+      "bytes": 35074,
+      "sha256": "4d9396efb69be2470d92198482c96de52bf794ca2dd2c5ab3d5195e53b517ec4"
+    },
+    "beginner:706669": {
+      "sentenceId": "339024",
+      "audioId": "706669",
+      "speaker": "arh",
+      "license": "CC BY-NC-ND 3.0",
+      "attribution": "",
+      "text": "El limón es una fruta ácida.",
+      "file": "assets/beginner-audio/706669.mp3",
+      "sentenceUrl": "https://tatoeba.org/en/sentences/show/339024",
+      "sourceUrl": "https://tatoeba.org/audio/download/706669",
+      "url": "https://tatoeba.org/audio/download/706669",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc-nd/3.0/",
+      "speakerUrl": "https://tatoeba.org/en/user/profile/arh",
+      "unaltered": true,
+      "bytes": 12219,
+      "sha256": "fe43ea22b286df74db35e0090a94927a7ce410aef580008c020d21f876aef2c5"
+    },
+    "beginner:585704": {
+      "sentenceId": "572463",
+      "audioId": "585704",
+      "speaker": "arh",
+      "license": "CC BY-NC-ND 3.0",
+      "attribution": "",
+      "text": "¿Qué prefieres, las manzanas o los plátanos?",
+      "file": "assets/beginner-audio/585704.mp3",
+      "sentenceUrl": "https://tatoeba.org/en/sentences/show/572463",
+      "sourceUrl": "https://tatoeba.org/audio/download/585704",
+      "url": "https://tatoeba.org/audio/download/585704",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc-nd/3.0/",
+      "speakerUrl": "https://tatoeba.org/en/user/profile/arh",
+      "unaltered": true,
+      "bytes": 21956,
+      "sha256": "47cc83bb3c1812c07f8e9043d67d4f90cc0ed77b932c527d126c26f3b8dbbdd5"
+    },
+    "beginner:438052": {
+      "sentenceId": "755342",
+      "audioId": "438052",
+      "speaker": "arh",
+      "license": "CC BY-NC-ND 3.0",
+      "attribution": "",
+      "text": "Tengo un perro.",
+      "file": "assets/beginner-audio/438052.mp3",
+      "sentenceUrl": "https://tatoeba.org/en/sentences/show/755342",
+      "sourceUrl": "https://tatoeba.org/audio/download/438052",
+      "url": "https://tatoeba.org/audio/download/438052",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc-nd/3.0/",
+      "speakerUrl": "https://tatoeba.org/en/user/profile/arh",
+      "unaltered": true,
+      "bytes": 9828,
+      "sha256": "ab0d744335d8f864b1e50d4810d85497b8fc09aa5b2585f2f099d162dc50c117"
+    },
+    "beginner:39115": {
+      "sentenceId": "534272",
+      "audioId": "39115",
+      "speaker": "arh",
+      "license": "CC BY-NC-ND 3.0",
+      "attribution": "",
+      "text": "Mi perro es blanco.",
+      "file": "assets/beginner-audio/39115.mp3",
+      "sentenceUrl": "https://tatoeba.org/en/sentences/show/534272",
+      "sourceUrl": "https://tatoeba.org/audio/download/39115",
+      "url": "https://tatoeba.org/audio/download/39115",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc-nd/3.0/",
+      "speakerUrl": "https://tatoeba.org/en/user/profile/arh",
+      "unaltered": true,
+      "bytes": 10048,
+      "sha256": "830ec0b26488428dc86006fac01d8694dd656e46cffb0cf08086914fa4be0686"
+    },
+    "beginner:48391": {
+      "sentenceId": "919430",
+      "audioId": "48391",
+      "speaker": "arh",
+      "license": "CC BY-NC-ND 3.0",
+      "attribution": "",
+      "text": "Alimento a mi perro dos veces al día.",
+      "file": "assets/beginner-audio/48391.mp3",
+      "sentenceUrl": "https://tatoeba.org/en/sentences/show/919430",
+      "sourceUrl": "https://tatoeba.org/audio/download/48391",
+      "url": "https://tatoeba.org/audio/download/48391",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc-nd/3.0/",
+      "speakerUrl": "https://tatoeba.org/en/user/profile/arh",
+      "unaltered": true,
+      "bytes": 17411,
+      "sha256": "f1994f59d2a67cf67a853bf970d9e4cf0d4ca5e8a658813db1eb10ac6d2ca0b9"
+    },
+    "beginner:527170": {
+      "sentenceId": "341772",
+      "audioId": "527170",
+      "speaker": "arh",
+      "license": "CC BY-NC-ND 3.0",
+      "attribution": "",
+      "text": "Al atardecer paseo con el perro.",
+      "file": "assets/beginner-audio/527170.mp3",
+      "sentenceUrl": "https://tatoeba.org/en/sentences/show/341772",
+      "sourceUrl": "https://tatoeba.org/audio/download/527170",
+      "url": "https://tatoeba.org/audio/download/527170",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc-nd/3.0/",
+      "speakerUrl": "https://tatoeba.org/en/user/profile/arh",
+      "unaltered": true,
+      "bytes": 14381,
+      "sha256": "d6ea858370a0fdbc12736f73101d72ff52271f00649361fbb7e37742a9d74429"
+    },
+    "beginner:40037": {
+      "sentenceId": "576654",
+      "audioId": "40037",
+      "speaker": "arh",
+      "license": "CC BY-NC-ND 3.0",
+      "attribution": "",
+      "text": "Un perro está ladrando.",
+      "file": "assets/beginner-audio/40037.mp3",
+      "sentenceUrl": "https://tatoeba.org/en/sentences/show/576654",
+      "sourceUrl": "https://tatoeba.org/audio/download/40037",
+      "url": "https://tatoeba.org/audio/download/40037",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc-nd/3.0/",
+      "speakerUrl": "https://tatoeba.org/en/user/profile/arh",
+      "unaltered": true,
+      "bytes": 10485,
+      "sha256": "fa4702e689fa22a935b176b755491756ad08334117797d73fbc021a961d727da"
+    },
+    "beginner:707495": {
+      "sentenceId": "563715",
+      "audioId": "707495",
+      "speaker": "arh",
+      "license": "CC BY-NC-ND 3.0",
+      "attribution": "",
+      "text": "¡Qué perro tan inteligente!",
+      "file": "assets/beginner-audio/707495.mp3",
+      "sentenceUrl": "https://tatoeba.org/en/sentences/show/563715",
+      "sourceUrl": "https://tatoeba.org/audio/download/707495",
+      "url": "https://tatoeba.org/audio/download/707495",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc-nd/3.0/",
+      "speakerUrl": "https://tatoeba.org/en/user/profile/arh",
+      "unaltered": true,
+      "bytes": 12866,
+      "sha256": "5348a3e7c8533d0e4c40af6fb6935c9ed396e530c7e658ac1abafec3c38eb8c9"
+    },
+    "beginner:552854": {
+      "sentenceId": "1410058",
+      "audioId": "552854",
+      "speaker": "arh",
+      "license": "CC BY-NC-ND 3.0",
+      "attribution": "",
+      "text": "El perro está en casa.",
+      "file": "assets/beginner-audio/552854.mp3",
+      "sentenceUrl": "https://tatoeba.org/en/sentences/show/1410058",
+      "sourceUrl": "https://tatoeba.org/audio/download/552854",
+      "url": "https://tatoeba.org/audio/download/552854",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc-nd/3.0/",
+      "speakerUrl": "https://tatoeba.org/en/user/profile/arh",
+      "unaltered": true,
+      "bytes": 11349,
+      "sha256": "3bc924bae602a832e3d06a454e0ba2e57718a998d1a6901001d26898f4449a84"
+    },
+    "beginner:513242": {
+      "sentenceId": "4484167",
+      "audioId": "513242",
+      "speaker": "arh",
+      "license": "CC BY-NC-ND 3.0",
+      "attribution": "",
+      "text": "El perro duerme.",
+      "file": "assets/beginner-audio/513242.mp3",
+      "sentenceUrl": "https://tatoeba.org/en/sentences/show/4484167",
+      "sourceUrl": "https://tatoeba.org/audio/download/513242",
+      "url": "https://tatoeba.org/audio/download/513242",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc-nd/3.0/",
+      "speakerUrl": "https://tatoeba.org/en/user/profile/arh",
+      "unaltered": true,
+      "bytes": 11126,
+      "sha256": "6dd0b9e2cf90acb952904bc19ebc33feee5bacb6eba1aa3c16cbf93c6cdb7333"
+    },
+    "beginner:275207": {
+      "sentenceId": "4989269",
+      "audioId": "275207",
+      "speaker": "arh",
+      "license": "CC BY-NC-ND 3.0",
+      "attribution": "",
+      "text": "La música es importante para mí.",
+      "file": "assets/beginner-audio/275207.mp3",
+      "sentenceUrl": "https://tatoeba.org/en/sentences/show/4989269",
+      "sourceUrl": "https://tatoeba.org/audio/download/275207",
+      "url": "https://tatoeba.org/audio/download/275207",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc-nd/3.0/",
+      "speakerUrl": "https://tatoeba.org/en/user/profile/arh",
+      "unaltered": true,
+      "bytes": 15032,
+      "sha256": "81f38ba8db20d2d0ab88c57ed941fac1a27b3872c3bfe07de998a2165b7b0cfc"
+    },
+    "beginner:438238": {
+      "sentenceId": "380209",
+      "audioId": "438238",
+      "speaker": "arh",
+      "license": "CC BY-NC-ND 3.0",
+      "attribution": "",
+      "text": "Me gusta el rock.",
+      "file": "assets/beginner-audio/438238.mp3",
+      "sentenceUrl": "https://tatoeba.org/en/sentences/show/380209",
+      "sourceUrl": "https://tatoeba.org/audio/download/438238",
+      "url": "https://tatoeba.org/audio/download/438238",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc-nd/3.0/",
+      "speakerUrl": "https://tatoeba.org/en/user/profile/arh",
+      "unaltered": true,
+      "bytes": 9830,
+      "sha256": "196d4a1424d2864788acc618687b9acf51ea57fe0972a30c2c589e3c5adb161f"
+    },
+    "beginner:440738": {
+      "sentenceId": "532517",
+      "audioId": "440738",
+      "speaker": "arh",
+      "license": "CC BY-NC-ND 3.0",
+      "attribution": "",
+      "text": "Me gusta cantar.",
+      "file": "assets/beginner-audio/440738.mp3",
+      "sentenceUrl": "https://tatoeba.org/en/sentences/show/532517",
+      "sourceUrl": "https://tatoeba.org/audio/download/440738",
+      "url": "https://tatoeba.org/audio/download/440738",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc-nd/3.0/",
+      "speakerUrl": "https://tatoeba.org/en/user/profile/arh",
+      "unaltered": true,
+      "bytes": 9829,
+      "sha256": "bf3b4a9bbed8ea70e29f158b63951e21f104094f7783eb38799139964e1306da"
+    },
+    "beginner:443838": {
+      "sentenceId": "2154801",
+      "audioId": "443838",
+      "speaker": "arh",
+      "license": "CC BY-NC-ND 3.0",
+      "attribution": "",
+      "text": "Toco la guitarra.",
+      "file": "assets/beginner-audio/443838.mp3",
+      "sentenceUrl": "https://tatoeba.org/en/sentences/show/2154801",
+      "sourceUrl": "https://tatoeba.org/audio/download/443838",
+      "url": "https://tatoeba.org/audio/download/443838",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc-nd/3.0/",
+      "speakerUrl": "https://tatoeba.org/en/user/profile/arh",
+      "unaltered": true,
+      "bytes": 9831,
+      "sha256": "a6fc18ade29d5a637d93bcbecb6498808b89830cf20429ef9eaf1a01c9b05c05"
+    },
+    "beginner:788306": {
+      "sentenceId": "397879",
+      "audioId": "788306",
+      "speaker": "arh",
+      "license": "CC BY-NC-ND 3.0",
+      "attribution": "",
+      "text": "Cuando estudio, escucho música con auriculares.",
+      "file": "assets/beginner-audio/788306.mp3",
+      "sentenceUrl": "https://tatoeba.org/en/sentences/show/397879",
+      "sourceUrl": "https://tatoeba.org/audio/download/788306",
+      "url": "https://tatoeba.org/audio/download/788306",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc-nd/3.0/",
+      "speakerUrl": "https://tatoeba.org/en/user/profile/arh",
+      "unaltered": true,
+      "bytes": 71937,
+      "sha256": "6d3b8fa4f3c2bcd9ec2c26a67eae5a00dfb973bd0a7abc4925292f55bb09567c"
+    },
+    "beginner:831313": {
+      "sentenceId": "9769901",
+      "audioId": "831313",
+      "speaker": "arh",
+      "license": "CC BY-NC-ND 3.0",
+      "attribution": "",
+      "text": "La música une.",
+      "file": "assets/beginner-audio/831313.mp3",
+      "sentenceUrl": "https://tatoeba.org/en/sentences/show/9769901",
+      "sourceUrl": "https://tatoeba.org/audio/download/831313",
+      "url": "https://tatoeba.org/audio/download/831313",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc-nd/3.0/",
+      "speakerUrl": "https://tatoeba.org/en/user/profile/arh",
+      "unaltered": true,
+      "bytes": 32852,
+      "sha256": "d697f27e77c1502100893a3e2c20456ad00b5d8532a37b501e8af064e7eb599c"
+    },
+    "beginner:444089": {
+      "sentenceId": "343584",
+      "audioId": "444089",
+      "speaker": "arh",
+      "license": "CC BY-NC-ND 3.0",
+      "attribution": "",
+      "text": "¿Te gusta la música?",
+      "file": "assets/beginner-audio/444089.mp3",
+      "sentenceUrl": "https://tatoeba.org/en/sentences/show/343584",
+      "sourceUrl": "https://tatoeba.org/audio/download/444089",
+      "url": "https://tatoeba.org/audio/download/444089",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc-nd/3.0/",
+      "speakerUrl": "https://tatoeba.org/en/user/profile/arh",
+      "unaltered": true,
+      "bytes": 9835,
+      "sha256": "62d0b55388a5684c8ee6f41db28f0ecdf710d6a60bbc7028b9db51fb5443d305"
+    },
+    "beginner:354643": {
+      "sentenceId": "576069",
+      "audioId": "354643",
+      "speaker": "arh",
+      "license": "CC BY-NC-ND 3.0",
+      "attribution": "",
+      "text": "¿Qué clase de música te gusta?",
+      "file": "assets/beginner-audio/354643.mp3",
+      "sentenceUrl": "https://tatoeba.org/en/sentences/show/576069",
+      "sourceUrl": "https://tatoeba.org/audio/download/354643",
+      "url": "https://tatoeba.org/audio/download/354643",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc-nd/3.0/",
+      "speakerUrl": "https://tatoeba.org/en/user/profile/arh",
+      "unaltered": true,
+      "bytes": 13086,
+      "sha256": "066269616f5dec6b79dfac31c29b430f2edda22793af38ec6fae0adf3377b630"
+    },
+    "beginner:645218": {
+      "sentenceId": "537814",
+      "audioId": "645218",
+      "speaker": "arh",
+      "license": "CC BY-NC-ND 3.0",
+      "attribution": "",
+      "text": "Hoy es el cumpleaños de mi hermana.",
+      "file": "assets/beginner-audio/645218.mp3",
+      "sentenceUrl": "https://tatoeba.org/en/sentences/show/537814",
+      "sourceUrl": "https://tatoeba.org/audio/download/645218",
+      "url": "https://tatoeba.org/audio/download/645218",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc-nd/3.0/",
+      "speakerUrl": "https://tatoeba.org/en/user/profile/arh",
+      "unaltered": true,
+      "bytes": 14601,
+      "sha256": "5caf0fa6b757c4f5a8c9b9420a03e19bbd833c2502616ddcf19cd9dbd25bc984"
+    },
+    "beginner:444101": {
+      "sentenceId": "347347",
+      "audioId": "444101",
+      "speaker": "arh",
+      "license": "CC BY-NC-ND 3.0",
+      "attribution": "",
+      "text": "Tengo algunos regalos.",
+      "file": "assets/beginner-audio/444101.mp3",
+      "sentenceUrl": "https://tatoeba.org/en/sentences/show/347347",
+      "sourceUrl": "https://tatoeba.org/audio/download/444101",
+      "url": "https://tatoeba.org/audio/download/444101",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc-nd/3.0/",
+      "speakerUrl": "https://tatoeba.org/en/user/profile/arh",
+      "unaltered": true,
+      "bytes": 11563,
+      "sha256": "72db3e345fb904d4a2df998d50b1c00415cae559d06b578ee4cd7b4d347b2a4c"
+    },
+    "beginner:526682": {
+      "sentenceId": "356802",
+      "audioId": "526682",
+      "speaker": "arh",
+      "license": "CC BY-NC-ND 3.0",
+      "attribution": "",
+      "text": "¿Por qué no vienes a mi fiesta?",
+      "file": "assets/beginner-audio/526682.mp3",
+      "sentenceUrl": "https://tatoeba.org/en/sentences/show/356802",
+      "sourceUrl": "https://tatoeba.org/audio/download/526682",
+      "url": "https://tatoeba.org/audio/download/526682",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc-nd/3.0/",
+      "speakerUrl": "https://tatoeba.org/en/user/profile/arh",
+      "unaltered": true,
+      "bytes": 11574,
+      "sha256": "79403c8205dd5a95e0b0f8c5198046822af96705bf88e53bf61aedab52f17c95"
+    },
+    "beginner:707386": {
+      "sentenceId": "356694",
+      "audioId": "707386",
+      "speaker": "arh",
+      "license": "CC BY-NC-ND 3.0",
+      "attribution": "",
+      "text": "Quiero ir a la fiesta.",
+      "file": "assets/beginner-audio/707386.mp3",
+      "sentenceUrl": "https://tatoeba.org/en/sentences/show/356694",
+      "sourceUrl": "https://tatoeba.org/audio/download/707386",
+      "url": "https://tatoeba.org/audio/download/707386",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc-nd/3.0/",
+      "speakerUrl": "https://tatoeba.org/en/user/profile/arh",
+      "unaltered": true,
+      "bytes": 10483,
+      "sha256": "2df9cc9789c251cdeec93357306aa78a8ed2c8e0f3f4b1ab13fe3130aaa370f6"
+    },
+    "beginner:262788": {
+      "sentenceId": "4570678",
+      "audioId": "262788",
+      "speaker": "arh",
+      "license": "CC BY-NC-ND 3.0",
+      "attribution": "",
+      "text": "Me gusta bailar.",
+      "file": "assets/beginner-audio/262788.mp3",
+      "sentenceUrl": "https://tatoeba.org/en/sentences/show/4570678",
+      "sourceUrl": "https://tatoeba.org/audio/download/262788",
+      "url": "https://tatoeba.org/audio/download/262788",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc-nd/3.0/",
+      "speakerUrl": "https://tatoeba.org/en/user/profile/arh",
+      "unaltered": true,
+      "bytes": 10478,
+      "sha256": "6613cc0ccc019ffbcc868fd8888666dcae2f2a7b9afb9708a943fcc4a3ffe8e2"
+    },
+    "beginner:197085": {
+      "sentenceId": "3300714",
+      "audioId": "197085",
+      "speaker": "arh",
+      "license": "CC BY-NC-ND 3.0",
+      "attribution": "",
+      "text": "Tengo un regalo para ti.",
+      "file": "assets/beginner-audio/197085.mp3",
+      "sentenceUrl": "https://tatoeba.org/en/sentences/show/3300714",
+      "sourceUrl": "https://tatoeba.org/audio/download/197085",
+      "url": "https://tatoeba.org/audio/download/197085",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc-nd/3.0/",
+      "speakerUrl": "https://tatoeba.org/en/user/profile/arh",
+      "unaltered": true,
+      "bytes": 12862,
+      "sha256": "f755b8c649c0e8118382c8bcc428f1002a9104e09b487c5914959d09ad731b38"
+    },
+    "beginner:933920": {
+      "sentenceId": "752243",
+      "audioId": "933920",
+      "speaker": "arh",
+      "license": "CC BY-NC-ND 3.0",
+      "attribution": "",
+      "text": "Gracias por el regalo.",
+      "file": "assets/beginner-audio/933920.mp3",
+      "sentenceUrl": "https://tatoeba.org/en/sentences/show/752243",
+      "sourceUrl": "https://tatoeba.org/audio/download/933920",
+      "url": "https://tatoeba.org/audio/download/933920",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc-nd/3.0/",
+      "speakerUrl": "https://tatoeba.org/en/user/profile/arh",
+      "unaltered": true,
+      "bytes": 43381,
+      "sha256": "e33a23ec63d7634789c135fdd3236b90097eca97830d9934cd34ad479416c3ab"
+    },
+    "beginner:440211": {
+      "sentenceId": "330654",
+      "audioId": "440211",
+      "speaker": "arh",
+      "license": "CC BY-NC-ND 3.0",
+      "attribution": "",
+      "text": "He perdido la llave.",
+      "file": "assets/beginner-audio/440211.mp3",
+      "sentenceUrl": "https://tatoeba.org/en/sentences/show/330654",
+      "sourceUrl": "https://tatoeba.org/audio/download/440211",
+      "url": "https://tatoeba.org/audio/download/440211",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc-nd/3.0/",
+      "speakerUrl": "https://tatoeba.org/en/user/profile/arh",
+      "unaltered": true,
+      "bytes": 10697,
+      "sha256": "5054c11b5f1cb847118cf05b53818b014a90021345475d64b2e4c065ae2fc05e"
+    },
+    "beginner:442544": {
+      "sentenceId": "2939",
+      "audioId": "442544",
+      "speaker": "arh",
+      "license": "CC BY-NC-ND 3.0",
+      "attribution": "",
+      "text": "Necesito tu ayuda.",
+      "file": "assets/beginner-audio/442544.mp3",
+      "sentenceUrl": "https://tatoeba.org/en/sentences/show/2939",
+      "sourceUrl": "https://tatoeba.org/audio/download/442544",
+      "url": "https://tatoeba.org/audio/download/442544",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc-nd/3.0/",
+      "speakerUrl": "https://tatoeba.org/en/user/profile/arh",
+      "unaltered": true,
+      "bytes": 10693,
+      "sha256": "c7e86b1eb87e386384b2b4ef2b54ac406e9b93d7b0c074335d052f7a522f68bc"
+    },
+    "beginner:444096": {
+      "sentenceId": "346057",
+      "audioId": "444096",
+      "speaker": "arh",
+      "license": "CC BY-NC-ND 3.0",
+      "attribution": "",
+      "text": "¿Podrías ayudarme?",
+      "file": "assets/beginner-audio/444096.mp3",
+      "sentenceUrl": "https://tatoeba.org/en/sentences/show/346057",
+      "sourceUrl": "https://tatoeba.org/audio/download/444096",
+      "url": "https://tatoeba.org/audio/download/444096",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc-nd/3.0/",
+      "speakerUrl": "https://tatoeba.org/en/user/profile/arh",
+      "unaltered": true,
+      "bytes": 11129,
+      "sha256": "39c27f51b0c4b587eb35bc699755f7a075295d3876a538e0f617d6913c7fc097"
+    },
+    "beginner:639177": {
+      "sentenceId": "571803",
+      "audioId": "639177",
+      "speaker": "arh",
+      "license": "CC BY-NC-ND 3.0",
+      "attribution": "",
+      "text": "Hay una llave sobre el escritorio.",
+      "file": "assets/beginner-audio/639177.mp3",
+      "sentenceUrl": "https://tatoeba.org/en/sentences/show/571803",
+      "sourceUrl": "https://tatoeba.org/audio/download/639177",
+      "url": "https://tatoeba.org/audio/download/639177",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc-nd/3.0/",
+      "speakerUrl": "https://tatoeba.org/en/user/profile/arh",
+      "unaltered": true,
+      "bytes": 14167,
+      "sha256": "955239e396be91c2274b3c9e90655c2265e04c8a360cd1a9ae5026f74b97046a"
+    },
+    "beginner:526743": {
+      "sentenceId": "358524",
+      "audioId": "526743",
+      "speaker": "arh",
+      "license": "CC BY-NC-ND 3.0",
+      "attribution": "",
+      "text": "Encontré la llave que estaba buscando.",
+      "file": "assets/beginner-audio/526743.mp3",
+      "sentenceUrl": "https://tatoeba.org/en/sentences/show/358524",
+      "sourceUrl": "https://tatoeba.org/audio/download/526743",
+      "url": "https://tatoeba.org/audio/download/526743",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc-nd/3.0/",
+      "speakerUrl": "https://tatoeba.org/en/user/profile/arh",
+      "unaltered": true,
+      "bytes": 16116,
+      "sha256": "07da8bf7d694d4a4a7fb2c851caee9665190418426b4279e69aca46eb7d7a983"
+    },
+    "beginner:733076": {
+      "sentenceId": "2716",
+      "audioId": "733076",
+      "speaker": "arh",
+      "license": "CC BY-NC-ND 3.0",
+      "attribution": "",
+      "text": "\"Gracias por ayudarme.\" \"No hay de qué.\"",
+      "file": "assets/beginner-audio/733076.mp3",
+      "sentenceUrl": "https://tatoeba.org/en/sentences/show/2716",
+      "sourceUrl": "https://tatoeba.org/audio/download/733076",
+      "url": "https://tatoeba.org/audio/download/733076",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc-nd/3.0/",
+      "speakerUrl": "https://tatoeba.org/en/user/profile/arh",
+      "unaltered": true,
+      "bytes": 15900,
+      "sha256": "e9b34161d3d512031c651a392888ec3f9c799e33f853add1e3209c5b427f47d4"
+    },
+    "beginner:1197709": {
+      "sentenceId": "631161",
+      "audioId": "1197709",
+      "speaker": "arh",
+      "license": "CC BY-NC-ND 3.0",
+      "attribution": "",
+      "text": "Por favor, ven a mi fiesta de cumpleaños.",
+      "file": "assets/beginner-audio/1197709.mp3",
+      "sentenceUrl": "https://tatoeba.org/en/sentences/show/631161",
+      "sourceUrl": "https://tatoeba.org/audio/download/1197709",
+      "url": "https://tatoeba.org/audio/download/1197709",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc-nd/3.0/",
+      "speakerUrl": "https://tatoeba.org/en/user/profile/arh",
+      "unaltered": true,
+      "bytes": 32421,
+      "sha256": "8dd0945076b2e2ecd8d39af3357f6e8f7e8e6fb47be4f3ef0f7cf0bf980e68e0"
+    },
+    "beginner:568125": {
+      "sentenceId": "491192",
+      "audioId": "568125",
+      "speaker": "arh",
+      "license": "CC BY-NC-ND 3.0",
+      "attribution": "",
+      "text": "Mi madre está haciendo una tarta.",
+      "file": "assets/beginner-audio/568125.mp3",
+      "sentenceUrl": "https://tatoeba.org/en/sentences/show/491192",
+      "sourceUrl": "https://tatoeba.org/audio/download/568125",
+      "url": "https://tatoeba.org/audio/download/568125",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc-nd/3.0/",
+      "speakerUrl": "https://tatoeba.org/en/user/profile/arh",
+      "unaltered": true,
+      "bytes": 13519,
+      "sha256": "37e0bd9b11013df5085c6a22de66aee042a2e3a4074074b0d1fac5e4f519aa75"
+    },
+    "beginner:688880": {
+      "sentenceId": "541303",
+      "audioId": "688880",
+      "speaker": "arh",
+      "license": "CC BY-NC-ND 3.0",
+      "attribution": "",
+      "text": "Sólo había seis personas en la fiesta.",
+      "file": "assets/beginner-audio/688880.mp3",
+      "sentenceUrl": "https://tatoeba.org/en/sentences/show/541303",
+      "sourceUrl": "https://tatoeba.org/audio/download/688880",
+      "url": "https://tatoeba.org/audio/download/688880",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc-nd/3.0/",
+      "speakerUrl": "https://tatoeba.org/en/user/profile/arh",
+      "unaltered": true,
+      "bytes": 15901,
+      "sha256": "bf9878f1b9b20a102c830e2a1a1941ee86d31276422a060152ae580ebdfcd86a"
+    },
+    "beginner:38579": {
+      "sentenceId": "512406",
+      "audioId": "38579",
+      "speaker": "arh",
+      "license": "CC BY-NC-ND 3.0",
+      "attribution": "",
+      "text": "Tu tarta está deliciosa.",
+      "file": "assets/beginner-audio/38579.mp3",
+      "sentenceUrl": "https://tatoeba.org/en/sentences/show/512406",
+      "sourceUrl": "https://tatoeba.org/audio/download/38579",
+      "url": "https://tatoeba.org/audio/download/38579",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc-nd/3.0/",
+      "speakerUrl": "https://tatoeba.org/en/user/profile/arh",
+      "unaltered": true,
+      "bytes": 14374,
+      "sha256": "5dba16428ad5cd42f54181fab33ce246b30edc7d072cc380f81d41fda0d1710d"
+    },
+    "beginner:610923": {
+      "sentenceId": "767045",
+      "audioId": "610923",
+      "speaker": "arh",
+      "license": "CC BY-NC-ND 3.0",
+      "attribution": "",
+      "text": "Gracias por invitarme a tu fiesta de cumpleaños.",
+      "file": "assets/beginner-audio/610923.mp3",
+      "sentenceUrl": "https://tatoeba.org/en/sentences/show/767045",
+      "sourceUrl": "https://tatoeba.org/audio/download/610923",
+      "url": "https://tatoeba.org/audio/download/610923",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc-nd/3.0/",
+      "speakerUrl": "https://tatoeba.org/en/user/profile/arh",
+      "unaltered": true,
+      "bytes": 16774,
+      "sha256": "b021c83bb874f8c696f07db4e77025189e7be6ca593282dea7df1876def7e2b8"
+    },
+    "beginner:444132": {
+      "sentenceId": "559914",
+      "audioId": "444132",
+      "speaker": "arh",
+      "license": "CC BY-NC-ND 3.0",
+      "attribution": "",
+      "text": "Se acabó la fiesta.",
+      "file": "assets/beginner-audio/444132.mp3",
+      "sentenceUrl": "https://tatoeba.org/en/sentences/show/559914",
+      "sourceUrl": "https://tatoeba.org/audio/download/444132",
+      "url": "https://tatoeba.org/audio/download/444132",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc-nd/3.0/",
+      "speakerUrl": "https://tatoeba.org/en/user/profile/arh",
+      "unaltered": true,
+      "bytes": 11345,
+      "sha256": "e4c32378117de00e44a63d6fc05d4dd7ab73a32ebda4a71de374b9243f104961"
+    },
+    "beginner:933519": {
+      "sentenceId": "790930",
+      "audioId": "933519",
+      "speaker": "arh",
+      "license": "CC BY-NC-ND 3.0",
+      "attribution": "",
+      "text": "Para hacer una tarta, necesitas huevos, mantequilla y azúcar.",
+      "file": "assets/beginner-audio/933519.mp3",
+      "sentenceUrl": "https://tatoeba.org/en/sentences/show/790930",
+      "sourceUrl": "https://tatoeba.org/audio/download/933519",
+      "url": "https://tatoeba.org/audio/download/933519",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc-nd/3.0/",
+      "speakerUrl": "https://tatoeba.org/en/user/profile/arh",
+      "unaltered": true,
+      "bytes": 91889,
+      "sha256": "d4532b1ae0fe0627a202eaeb0b1766abb5e5c7b88c774fd59e87ed0f217b38f6"
+    },
+    "beginner:733552": {
+      "sentenceId": "856121",
+      "audioId": "733552",
+      "speaker": "arh",
+      "license": "CC BY-NC-ND 3.0",
+      "attribution": "",
+      "text": "La tarta sabe dulce.",
+      "file": "assets/beginner-audio/733552.mp3",
+      "sentenceUrl": "https://tatoeba.org/en/sentences/show/856121",
+      "sourceUrl": "https://tatoeba.org/audio/download/733552",
+      "url": "https://tatoeba.org/audio/download/733552",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc-nd/3.0/",
+      "speakerUrl": "https://tatoeba.org/en/user/profile/arh",
+      "unaltered": true,
+      "bytes": 11561,
+      "sha256": "5e713c6137b63a9c82362fcdd15f7dc26094c7429c699e7673c0f2cf4baf7f24"
+    },
+    "beginner:46253": {
+      "sentenceId": "870984",
+      "audioId": "46253",
+      "speaker": "arh",
+      "license": "CC BY-NC-ND 3.0",
+      "attribution": "",
+      "text": "Corta la tarta con un cuchillo.",
+      "file": "assets/beginner-audio/46253.mp3",
+      "sentenceUrl": "https://tatoeba.org/en/sentences/show/870984",
+      "sourceUrl": "https://tatoeba.org/audio/download/46253",
+      "url": "https://tatoeba.org/audio/download/46253",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc-nd/3.0/",
+      "speakerUrl": "https://tatoeba.org/en/user/profile/arh",
+      "unaltered": true,
+      "bytes": 13516,
+      "sha256": "e6be64f3b6d155b51a6c506d168f306c1299bd264fd1256c8aeb5c49e21138de"
+    },
+    "beginner:40096": {
+      "sentenceId": "578810",
+      "audioId": "40096",
+      "speaker": "arh",
+      "license": "CC BY-NC-ND 3.0",
+      "attribution": "",
+      "text": "Es un trozo de tarta.",
+      "file": "assets/beginner-audio/40096.mp3",
+      "sentenceUrl": "https://tatoeba.org/en/sentences/show/578810",
+      "sourceUrl": "https://tatoeba.org/audio/download/40096",
+      "url": "https://tatoeba.org/audio/download/40096",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc-nd/3.0/",
+      "speakerUrl": "https://tatoeba.org/en/user/profile/arh",
+      "unaltered": true,
+      "bytes": 14154,
+      "sha256": "29a7594691f51d6d0085f01e4962022fc56b11662eb6cf34ae0bcde284cbceab"
+    },
+    "beginner:354826": {
+      "sentenceId": "481961",
+      "audioId": "354826",
+      "speaker": "arh",
+      "license": "CC BY-NC-ND 3.0",
+      "attribution": "",
+      "text": "¿Alguien quiere más tarta?",
+      "file": "assets/beginner-audio/354826.mp3",
+      "sentenceUrl": "https://tatoeba.org/en/sentences/show/481961",
+      "sourceUrl": "https://tatoeba.org/audio/download/354826",
+      "url": "https://tatoeba.org/audio/download/354826",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc-nd/3.0/",
+      "speakerUrl": "https://tatoeba.org/en/user/profile/arh",
+      "unaltered": true,
+      "bytes": 11353,
+      "sha256": "f70191658f316348ad4226c867eedb714d9e4682da4bbb651980ed0e4474be0e"
+    },
+    "beginner:933973": {
+      "sentenceId": "776578",
+      "audioId": "933973",
+      "speaker": "arh",
+      "license": "CC BY-NC-ND 3.0",
+      "attribution": "",
+      "text": "Quiero un poco de tarta.",
+      "file": "assets/beginner-audio/933973.mp3",
+      "sentenceUrl": "https://tatoeba.org/en/sentences/show/776578",
+      "sourceUrl": "https://tatoeba.org/audio/download/933973",
+      "url": "https://tatoeba.org/audio/download/933973",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc-nd/3.0/",
+      "speakerUrl": "https://tatoeba.org/en/user/profile/arh",
+      "unaltered": true,
+      "bytes": 41606,
+      "sha256": "92ad94dd8f682146b270f079ad5eeca73a44d99041cd44c759e75a43f4c64546"
+    },
+    "beginner:635168": {
+      "sentenceId": "360009",
+      "audioId": "635168",
+      "speaker": "arh",
+      "license": "CC BY-NC-ND 3.0",
+      "attribution": "",
+      "text": "Por el aspecto del cielo, parece que va a llover.",
+      "file": "assets/beginner-audio/635168.mp3",
+      "sentenceUrl": "https://tatoeba.org/en/sentences/show/360009",
+      "sourceUrl": "https://tatoeba.org/audio/download/635168",
+      "url": "https://tatoeba.org/audio/download/635168",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc-nd/3.0/",
+      "speakerUrl": "https://tatoeba.org/en/user/profile/arh",
+      "unaltered": true,
+      "bytes": 47168,
+      "sha256": "2b7f425063ef45772bd5e7247dca242dc5c113cd2cd1cf49bf76f7b3fd0d5e89"
+    },
+    "beginner:449928": {
+      "sentenceId": "637023",
+      "audioId": "449928",
+      "speaker": "arh",
+      "license": "CC BY-NC-ND 3.0",
+      "attribution": "",
+      "text": "Va a llover.",
+      "file": "assets/beginner-audio/449928.mp3",
+      "sentenceUrl": "https://tatoeba.org/en/sentences/show/637023",
+      "sourceUrl": "https://tatoeba.org/audio/download/449928",
+      "url": "https://tatoeba.org/audio/download/449928",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc-nd/3.0/",
+      "speakerUrl": "https://tatoeba.org/en/user/profile/arh",
+      "unaltered": true,
+      "bytes": 9177,
+      "sha256": "f5f0729f0f3c402ad21aaa6115a03dc49e807a9e1cc74c77730045025b6aaf4d"
+    },
+    "beginner:594238": {
+      "sentenceId": "950363",
+      "audioId": "594238",
+      "speaker": "arh",
+      "license": "CC BY-NC-ND 3.0",
+      "attribution": "",
+      "text": "Está lloviendo hoy, ¿dónde está mi paraguas?",
+      "file": "assets/beginner-audio/594238.mp3",
+      "sentenceUrl": "https://tatoeba.org/en/sentences/show/950363",
+      "sourceUrl": "https://tatoeba.org/audio/download/594238",
+      "url": "https://tatoeba.org/audio/download/594238",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc-nd/3.0/",
+      "speakerUrl": "https://tatoeba.org/en/user/profile/arh",
+      "unaltered": true,
+      "bytes": 18933,
+      "sha256": "afe3a5372ce94ad9324003466b7b1b1cf735e293f43badbd1f382e8cbd467485"
+    },
+    "beginner:933471": {
+      "sentenceId": "789621",
+      "audioId": "933471",
+      "speaker": "arh",
+      "license": "CC BY-NC-ND 3.0",
+      "attribution": "",
+      "text": "Si no para de llover, no podemos ir.",
+      "file": "assets/beginner-audio/933471.mp3",
+      "sentenceUrl": "https://tatoeba.org/en/sentences/show/789621",
+      "sourceUrl": "https://tatoeba.org/audio/download/933471",
+      "url": "https://tatoeba.org/audio/download/933471",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc-nd/3.0/",
+      "speakerUrl": "https://tatoeba.org/en/user/profile/arh",
+      "unaltered": true,
+      "bytes": 57168,
+      "sha256": "0001ce9775a44751ede23fe66cddc927011fd186bba1c289e064a7b254efa5b4"
+    },
+    "beginner:460737": {
+      "sentenceId": "339127",
+      "audioId": "460737",
+      "speaker": "arh",
+      "license": "CC BY-NC-ND 3.0",
+      "attribution": "",
+      "text": "Ha parado de llover.",
+      "file": "assets/beginner-audio/460737.mp3",
+      "sentenceUrl": "https://tatoeba.org/en/sentences/show/339127",
+      "sourceUrl": "https://tatoeba.org/audio/download/460737",
+      "url": "https://tatoeba.org/audio/download/460737",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc-nd/3.0/",
+      "speakerUrl": "https://tatoeba.org/en/user/profile/arh",
+      "unaltered": true,
+      "bytes": 9833,
+      "sha256": "8e1b5dc1a72308e4693e57deabb2f47d26ebbcdb6c9437040eb5760acf4fbe50"
+    },
+    "beginner:610733": {
+      "sentenceId": "554955",
+      "audioId": "610733",
+      "speaker": "arh",
+      "license": "CC BY-NC-ND 3.0",
+      "attribution": "",
+      "text": "En cuanto dejó de llover, apareció un bonito arco iris.",
+      "file": "assets/beginner-audio/610733.mp3",
+      "sentenceUrl": "https://tatoeba.org/en/sentences/show/554955",
+      "sourceUrl": "https://tatoeba.org/audio/download/610733",
+      "url": "https://tatoeba.org/audio/download/610733",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc-nd/3.0/",
+      "speakerUrl": "https://tatoeba.org/en/user/profile/arh",
+      "unaltered": true,
+      "bytes": 21534,
+      "sha256": "7adf87e0e3b8effd2e0882b09ac2292461bf11910240f8f72c507de41f2bfd33"
+    },
+    "beginner:39214": {
+      "sentenceId": "539388",
+      "audioId": "39214",
+      "speaker": "arh",
+      "license": "CC BY-NC-ND 3.0",
+      "attribution": "",
+      "text": "El cielo es azul.",
+      "file": "assets/beginner-audio/39214.mp3",
+      "sentenceUrl": "https://tatoeba.org/en/sentences/show/539388",
+      "sourceUrl": "https://tatoeba.org/audio/download/39214",
+      "url": "https://tatoeba.org/audio/download/39214",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc-nd/3.0/",
+      "speakerUrl": "https://tatoeba.org/en/user/profile/arh",
+      "unaltered": true,
+      "bytes": 11342,
+      "sha256": "ff177c7e3beb59840044a4f564a696c8e3e06a3b29923ffca03a6c180657f4e5"
+    },
+    "beginner:538151": {
+      "sentenceId": "637372",
+      "audioId": "538151",
+      "speaker": "arh",
+      "license": "CC BY-NC-ND 3.0",
+      "attribution": "",
+      "text": "Es difícil aprender un idioma extranjero.",
+      "file": "assets/beginner-audio/538151.mp3",
+      "sentenceUrl": "https://tatoeba.org/en/sentences/show/637372",
+      "sourceUrl": "https://tatoeba.org/audio/download/538151",
+      "url": "https://tatoeba.org/audio/download/538151",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc-nd/3.0/",
+      "speakerUrl": "https://tatoeba.org/en/user/profile/arh",
+      "unaltered": true,
+      "bytes": 15903,
+      "sha256": "b0f237d317e9e643a17710bae59b5742ebc4fc60450a59f93c36405d8412edcd"
+    },
+    "beginner:538152": {
+      "sentenceId": "637374",
+      "audioId": "538152",
+      "speaker": "arh",
+      "license": "CC BY-NC-ND 3.0",
+      "attribution": "",
+      "text": "Aprender un idioma extranjero es divertido.",
+      "file": "assets/beginner-audio/538152.mp3",
+      "sentenceUrl": "https://tatoeba.org/en/sentences/show/637374",
+      "sourceUrl": "https://tatoeba.org/audio/download/538152",
+      "url": "https://tatoeba.org/audio/download/538152",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc-nd/3.0/",
+      "speakerUrl": "https://tatoeba.org/en/user/profile/arh",
+      "unaltered": true,
+      "bytes": 16552,
+      "sha256": "c47d1b69b4c8f3cb47bc08f30e53a15aac5e0b96f96d4cb45d46d76efbf71d46"
+    },
+    "beginner:639147": {
+      "sentenceId": "541290",
+      "audioId": "639147",
+      "speaker": "arh",
+      "license": "CC BY-NC-ND 3.0",
+      "attribution": "",
+      "text": "Hablo un poco de español.",
+      "file": "assets/beginner-audio/639147.mp3",
+      "sentenceUrl": "https://tatoeba.org/en/sentences/show/541290",
+      "sourceUrl": "https://tatoeba.org/audio/download/639147",
+      "url": "https://tatoeba.org/audio/download/639147",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc-nd/3.0/",
+      "speakerUrl": "https://tatoeba.org/en/user/profile/arh",
+      "unaltered": true,
+      "bytes": 13079,
+      "sha256": "2c7b690cf4c2d088811845f8bac7d1897f4c31273e6868af86e53b33d3da5be5"
+    },
+    "beginner:527044": {
+      "sentenceId": "339343",
+      "audioId": "527044",
+      "speaker": "arh",
+      "license": "CC BY-NC-ND 3.0",
+      "attribution": "",
+      "text": "¿Podría hablarme un poco más despacio?",
+      "file": "assets/beginner-audio/527044.mp3",
+      "sentenceUrl": "https://tatoeba.org/en/sentences/show/339343",
+      "sourceUrl": "https://tatoeba.org/audio/download/527044",
+      "url": "https://tatoeba.org/audio/download/527044",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc-nd/3.0/",
+      "speakerUrl": "https://tatoeba.org/en/user/profile/arh",
+      "unaltered": true,
+      "bytes": 15902,
+      "sha256": "3af3e0244a2e2bec6bb595c8ea0e1bca1ebf147cea0622cf7469357198e319c2"
+    },
+    "beginner:611851": {
+      "sentenceId": "5567692",
+      "audioId": "611851",
+      "speaker": "arh",
+      "license": "CC BY-NC-ND 3.0",
+      "attribution": "",
+      "text": "Necesito practicar todo lo que pueda.",
+      "file": "assets/beginner-audio/611851.mp3",
+      "sentenceUrl": "https://tatoeba.org/en/sentences/show/5567692",
+      "sourceUrl": "https://tatoeba.org/audio/download/611851",
+      "url": "https://tatoeba.org/audio/download/611851",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc-nd/3.0/",
+      "speakerUrl": "https://tatoeba.org/en/user/profile/arh",
+      "unaltered": true,
+      "bytes": 15467,
+      "sha256": "49a2d7ad92e34cb0bffef280c235f0368b7540393bff25f99f48b00c5caafe17"
+    },
+    "beginner:441972": {
+      "sentenceId": "5048239",
+      "audioId": "441972",
+      "speaker": "arh",
+      "license": "CC BY-NC-ND 3.0",
+      "attribution": "",
+      "text": "Sigue practicando.",
+      "file": "assets/beginner-audio/441972.mp3",
+      "sentenceUrl": "https://tatoeba.org/en/sentences/show/5048239",
+      "sourceUrl": "https://tatoeba.org/audio/download/441972",
+      "url": "https://tatoeba.org/audio/download/441972",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc-nd/3.0/",
+      "speakerUrl": "https://tatoeba.org/en/user/profile/arh",
+      "unaltered": true,
+      "bytes": 11128,
+      "sha256": "4784fca2909f8c19249d6a87e8c03f91084c1cdd86d8f734f57e1c48e7f0004a"
+    },
+    "beginner:921149": {
+      "sentenceId": "329764",
+      "audioId": "921149",
+      "speaker": "arh",
+      "license": "CC BY-NC-ND 3.0",
+      "attribution": "",
+      "text": "El deporte es bueno para la salud.",
+      "file": "assets/beginner-audio/921149.mp3",
+      "sentenceUrl": "https://tatoeba.org/en/sentences/show/329764",
+      "sourceUrl": "https://tatoeba.org/audio/download/921149",
+      "url": "https://tatoeba.org/audio/download/921149",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc-nd/3.0/",
+      "speakerUrl": "https://tatoeba.org/en/user/profile/arh",
+      "unaltered": true,
+      "bytes": 45271,
+      "sha256": "05ea23822c52b9b1465aa6a8e9f5019542bf0c84d393329189ccff0159ffddd2"
+    },
+    "beginner:645202": {
+      "sentenceId": "509937",
+      "audioId": "645202",
+      "speaker": "arh",
+      "license": "CC BY-NC-ND 3.0",
+      "attribution": "",
+      "text": "Correr es bueno para la salud.",
+      "file": "assets/beginner-audio/645202.mp3",
+      "sentenceUrl": "https://tatoeba.org/en/sentences/show/509937",
+      "sourceUrl": "https://tatoeba.org/audio/download/645202",
+      "url": "https://tatoeba.org/audio/download/645202",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc-nd/3.0/",
+      "speakerUrl": "https://tatoeba.org/en/user/profile/arh",
+      "unaltered": true,
+      "bytes": 12867,
+      "sha256": "fb0bba9eea3735fa64dd0f17745586118a297ebe8a8e8e601dd1507358ccb833"
+    },
+    "beginner:522144": {
+      "sentenceId": "3152768",
+      "audioId": "522144",
+      "speaker": "arh",
+      "license": "CC BY-NC-ND 3.0",
+      "attribution": "",
+      "text": "Nadar es buen ejercicio.",
+      "file": "assets/beginner-audio/522144.mp3",
+      "sentenceUrl": "https://tatoeba.org/en/sentences/show/3152768",
+      "sourceUrl": "https://tatoeba.org/audio/download/522144",
+      "url": "https://tatoeba.org/audio/download/522144",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc-nd/3.0/",
+      "speakerUrl": "https://tatoeba.org/en/user/profile/arh",
+      "unaltered": true,
+      "bytes": 13078,
+      "sha256": "1c42146681ea51e4dc7c35649da6b4d532efffc18119a30e1e2ea2267cc955be"
+    },
+    "beginner:610915": {
+      "sentenceId": "756332",
+      "audioId": "610915",
+      "speaker": "arh",
+      "license": "CC BY-NC-ND 3.0",
+      "attribution": "",
+      "text": "Doy un paseo todos los días, excepto cuando llueve.",
+      "file": "assets/beginner-audio/610915.mp3",
+      "sentenceUrl": "https://tatoeba.org/en/sentences/show/756332",
+      "sourceUrl": "https://tatoeba.org/audio/download/610915",
+      "url": "https://tatoeba.org/audio/download/610915",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc-nd/3.0/",
+      "speakerUrl": "https://tatoeba.org/en/user/profile/arh",
+      "unaltered": true,
+      "bytes": 19585,
+      "sha256": "c7d3181d55a720c679399ce62df935c82d17536102af31e8d2267ba3e4a8b8fc"
+    },
+    "beginner:926210": {
+      "sentenceId": "856482",
+      "audioId": "926210",
+      "speaker": "arh",
+      "license": "CC BY-NC-ND 3.0",
+      "attribution": "",
+      "text": "Debes descansar después de hacer ejercicio.",
+      "file": "assets/beginner-audio/926210.mp3",
+      "sentenceUrl": "https://tatoeba.org/en/sentences/show/856482",
+      "sourceUrl": "https://tatoeba.org/audio/download/926210",
+      "url": "https://tatoeba.org/audio/download/926210",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc-nd/3.0/",
+      "speakerUrl": "https://tatoeba.org/en/user/profile/arh",
+      "unaltered": true,
+      "bytes": 52525,
+      "sha256": "be64d0937260e22a4224f98c3e4ca8280ebe7643e4f2d4e5b9095d4809d6cc22"
+    },
+    "beginner:687220": {
+      "sentenceId": "507160",
+      "audioId": "687220",
+      "speaker": "arh",
+      "license": "CC BY-NC-ND 3.0",
+      "attribution": "",
+      "text": "La fruta fresca es buena para la salud.",
+      "file": "assets/beginner-audio/687220.mp3",
+      "sentenceUrl": "https://tatoeba.org/en/sentences/show/507160",
+      "sourceUrl": "https://tatoeba.org/audio/download/687220",
+      "url": "https://tatoeba.org/audio/download/687220",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc-nd/3.0/",
+      "speakerUrl": "https://tatoeba.org/en/user/profile/arh",
+      "unaltered": true,
+      "bytes": 16116,
+      "sha256": "fd4d4aee0b0b598d2f49397adde1384a8e2917135823df54c1731cf3044abd74"
+    },
+    "beginner:585767": {
+      "sentenceId": "727646",
+      "audioId": "585767",
+      "speaker": "arh",
+      "license": "CC BY-NC-ND 3.0",
+      "attribution": "",
+      "text": "Es muy importante descansar lo suficiente.",
+      "file": "assets/beginner-audio/585767.mp3",
+      "sentenceUrl": "https://tatoeba.org/en/sentences/show/727646",
+      "sourceUrl": "https://tatoeba.org/audio/download/585767",
+      "url": "https://tatoeba.org/audio/download/585767",
+      "licenseUrl": "https://creativecommons.org/licenses/by-nc-nd/3.0/",
+      "speakerUrl": "https://tatoeba.org/en/user/profile/arh",
+      "unaltered": true,
+      "bytes": 17415,
+      "sha256": "bb0f90c9e5848580b94962d535a1f14ae922ba88cfa44d0da006be0231d505d0"
     }
   }
 }
