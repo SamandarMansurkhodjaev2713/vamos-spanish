@@ -3,8 +3,8 @@ window.VamosNavigation={create(api){
  'use strict';
  const {esc,icon}=api;
  const sections=[['home','Уроки','Сегодня и все дни курса','route'],['practice','Разговор','Слушать, отвечать и сравнивать свою речь','messages-square'],['words','Словарь','Слова, фразы и маленькие истории','book-open'],['reading','Чтение','Истории с переводом по нажатию','book-text'],['profile','Профиль','Достижения, настройки и сохранение прогресса','user-round']];
- const labels={reader:'Чтение',pathway:'Продолжение · дни 31–90',reading:'Чтение по уровням',workbook:'Истории и мастерская',daily:'Занятие на сегодня',mission:'Разговорная миссия',personal:'Мой испанский',recordings:'Мои записи',mastery:'Контроль памяти',drill:'Тренировка фраз',pronunciation:'Сказать и сравнить',review:'Повторение',scene:'Разговор на двоих',sound:'Слух и речь',dialogue:'Своя реплика',extra:'Квизы',checkpoint:'Разговорная проверка'};
- const selected=()=>api.view()==='practice'&&api.practice()==='reader'?'reading':['lesson','plan'].includes(api.view())?'home':api.view();
+ const labels={media:'Чтение и видео урока',reader:'Чтение',pathway:'Продолжение · дни 31–90',reading:'Чтение по уровням',workbook:'Истории и мастерская',daily:'Занятие на сегодня',mission:'Разговорная миссия',personal:'Мой испанский',recordings:'Мои записи',mastery:'Контроль памяти',drill:'Тренировка фраз',pronunciation:'Сказать и сравнить',review:'Повторение',scene:'Разговор на двоих',sound:'Слух и речь',dialogue:'Своя реплика',extra:'Квизы',checkpoint:'Разговорная проверка'};
+ const selected=()=>api.view()==='practice'&&api.practice()==='reader'?'reading':api.view()==='practice'&&api.practice()==='media'?'home':['lesson','plan'].includes(api.view())?'home':api.view();
  let dialog=null,continuation=null;
 
  function footer(){return `<footer class="footer course-footer quiet-footer"><p><strong>¡Vamos!</strong></p><nav class="footer-links" aria-label="Материалы курса"><button type="button" class="btn quiet" data-nav="materials">Материалы</button><button type="button" class="btn quiet" data-footer-tab="audio">Записи и лицензии ${icon('arrow-right')}</button></nav></footer>`}
@@ -50,7 +50,7 @@ window.VamosNavigation={create(api){
    context.textContent=text;context.title=text;context.setAttribute('aria-label',text);
   }
   const main=document.getElementById('main');
-  if(view==='practice'&&kind!=='menu'&&kind!=='reader'&&main&&!main.querySelector('[data-practice="menu"],[data-practice-open="menu"],[data-mission-close]')){
+  if(view==='practice'&&kind!=='menu'&&kind!=='reader'&&kind!=='media'&&main&&!main.querySelector('[data-practice="menu"],[data-practice-open="menu"],[data-mission-close]')){
    let trail=main.querySelector('.section-trail');
    if(!trail){trail=document.createElement('div');trail.className='section-trail';main.prepend(trail)}
    trail.innerHTML=`<button type="button" class="btn quiet" data-nav="practice">${icon('arrow-left')}К практике</button>`;

@@ -45,3 +45,9 @@
 .library-detail .explain-panel{margin:16px 0;padding:0}
 @media(max-width:599px){.library-detail .recorded-context .phrase{padding:16px}.library-detail .entry-titlebar{gap:12px}.library-detail .detail-controls .btn{font-size:12px;padding:10px 12px}.library-detail .detail-controls .btn:first-child{flex-basis:100%;justify-content:center}.library-detail .detail-controls .btn:not(:first-child){flex:1}.library-detail-speed .library-speed select{min-width:72px}}
 .large-text .library-detail .entry-titlebar{grid-template-columns:1fr}.large-text .library-detail .library-detail-speed{justify-content:flex-start}
+
+/* Word listening stays on the current surface; sentence playback remains separate. */
+.library-word-guide{max-width:56ch;color:var(--muted);font-size:13px;line-height:1.65;margin:12px 0 0}
+.library-word-sound{display:inline-flex;align-items:center;justify-content:center;min-height:44px;min-width:44px;max-width:100%;margin:0;padding:2px 3px;border:0;border-radius:5px;background:transparent;color:inherit;font:inherit;letter-spacing:inherit;line-height:inherit;text-align:inherit;vertical-align:baseline;cursor:pointer;text-decoration-line:underline;text-decoration-style:dotted;text-decoration-color:var(--accent);text-underline-offset:5px;overflow-wrap:anywhere}
+.library-word-sound:hover{background:var(--soft);color:var(--accent)}.library-word-sound:focus-visible{outline:2px solid var(--accent);outline-offset:3px}.library-word-sound.unrecorded{text-decoration-color:var(--muted);text-decoration-style:dashed}.entry-audible-title{margin:0;font-size:inherit}.library .entry-audible-title{font-size:20px;line-height:1.5}.library-audible-line{overflow-wrap:anywhere}.library-detail .recording-source p{overflow-wrap:anywhere}
+@media(max-width:599px){.library .entry-audible-title{font-size:19px}.library-word-guide{font-size:12px}}

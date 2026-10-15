@@ -38,7 +38,8 @@ window.VamosCrossTab={create(api){
  function mergeBasic(b,o,t,path,paths){if(same(o,t))return clone(o);if(same(o,b))return clone(t);if(same(t,b))return clone(o);note(paths,path);return clone(o)}
  function merge(b,o,t,path='',paths=[]){
   if(path==='libraryPractice'){const chosen=libraryBoundary(b,o,t,path,paths);if(chosen!==missing)return chosen}
-  if(path.endsWith('.first')){const chosen=firstEvidence([b,o,t]);if(chosen){if(object(o)&&object(t)&&!same(o,t))note(paths,path);return clone(chosen)}}
+  if(path.endsWith('.first')||/^lessonMedia\.rows\.\d+\.answers\.[^.]+$/.test(path)||/^lessonMedia\.reviews\.[^.]+$/.test(path)){const chosen=firstEvidence([b,o,t]);if(chosen){if(object(o)&&object(t)&&!same(o,t))note(paths,path);return clone(chosen)}}
+  if(/^lessonMedia\.(?:rows\.\d+\.retries|reviewRetries)\.[^.]+$/.test(path)&&object(o)&&object(t)){if(!same(o,t))note(paths,path);return clone(stamp(o)>=stamp(t)?o:t);}
   if(/^reader\.reviews\.[^.]+$/.test(path)&&object(o)&&object(t)){if(same(o,b))return clone(t);if(same(t,b))return clone(o);if(!same(o,t))note(paths,path);return clone((Number(o.last)||0)>=(Number(t.last)||0)?o:t);}
   if(/^learning\.sessions\.\d+$/.test(path))return session(b,o,t,path,paths);
   if(Array.isArray(o)&&Array.isArray(t)&&setPath(path))return setMerge(b,o,t,path);

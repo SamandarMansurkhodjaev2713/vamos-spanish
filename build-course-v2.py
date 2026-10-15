@@ -26,7 +26,9 @@ data['dailyPlan']=json.loads((base/'course-daily-plan.json').read_text(encoding=
 data['phraseCoaching']=json.loads((base/'course-phrase-coaching.json').read_text(encoding='utf8'))
 data['literature']=json.loads((base/'course-literature.json').read_text(encoding='utf8'))
 data['beginnerReading']=json.loads((base/'course-reader-beginner.json').read_text(encoding='utf8'))
-data['version']='6.22-guided-lessons'
+data['lessonMedia']=json.loads((base/'lesson-media-v38.json').read_text(encoding='utf8'))
+data['wordAudioExtra']=json.loads((base/'word-audio-extra-v38.json').read_text(encoding='utf8'))
+data['version']='6.23-context-and-word-audio'
 data['status']='Личный курс с оригинальными записями, тренировкой фраз и локальной записью голоса. Учебный эффект и отсутствие акцента не гарантированы.'
 (web/'course-data.js').write_text('window.VAMOS_DATA='+json.dumps(data,ensure_ascii=False).replace('</',r'<\/')+';\n',encoding='utf8')
 lucide=web/'assets/lucide.min.js'

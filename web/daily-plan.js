@@ -5,7 +5,7 @@ window.VamosDailyPlan={create(api){
  const rows=new Map((Array.isArray(data.dailyPlan?.lessons)?data.dailyPlan.lessons:[]).filter(x=>Number.isInteger(x.day)&&x.day>=1&&x.day<=30).map(x=>[x.day,x]));
  const valid=n=>Number.isInteger(n)&&n>=1&&n<=30;
  const phaseIds=['review','lesson','mission','own'];
- const phaseNames={review:'Повторение',lesson:'Урок',mission:'Разговор',own:'Свой ответ'};
+ const phaseNames={review:'Повторение',lesson:'Урок, чтение и видео',mission:'Разговор',own:'Свой ответ'};
  function context(day,options={}){
   if(!valid(day)||!rows.has(day))return null;
   let contentDay=day;

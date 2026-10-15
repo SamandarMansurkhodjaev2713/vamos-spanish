@@ -10,5 +10,7 @@
 *.webmanifest text eol=lf
 *.png binary
 *.mp3 binary
+*.wav binary
+*.ogg binary
 *.webp binary
 *.woff2 binary

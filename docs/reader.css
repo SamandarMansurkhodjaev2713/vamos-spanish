@@ -103,3 +103,5 @@
 .reader-mini-practice{margin-block:32px}.reader-mini-practice>h2{font-size:24px;margin:0 0 12px}.reader-mini-practice article{padding-block:22px;border-bottom:1px solid var(--line)}.reader-mini-practice h3{font-size:18px;line-height:1.5;margin:0 0 14px}.reader-mini-practice li,.reader-mini-practice details p{line-height:1.7}.reader-mini-practice summary{min-height:44px;cursor:pointer;color:var(--accent)}
 
 .reader-word-unit{white-space:nowrap}
+
+.reader-individual-words{margin-block:20px;padding-top:16px;border-top:1px solid var(--line)}.reader-individual-words h3{font:600 15px/1.5 Onest,sans-serif;margin:0 0 8px}.reader-word-sounds{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}.reader-word-sounds .reader-word-sound{min-width:44px;min-height:44px;max-width:100%;gap:7px;padding:8px 12px;white-space:normal;overflow-wrap:anywhere}.reader-word-sound:disabled{opacity:.55;cursor:default}.reader-word-sounds .reader-word-sound svg{width:16px;height:16px;flex-shrink:0}

@@ -34,10 +34,22 @@ for a in beginner['clips'].values():
  assert a['unaltered'] and a['license']=='CC BY-NC-ND 3.0'
  assert hashlib.sha256((r/'web'/a['file']).read_bytes()).hexdigest()==a['sha256']
  assert len((r/'web'/a['file']).read_bytes())==a['bytes']
+extra=json.loads((r/'word-audio-extra-v38.json').read_text(encoding='utf8'))
+assert extra==json.loads((r/'web/assets/word-audio-extra/ATTRIBUTION.json').read_text(encoding='utf8'))
+files+=['assets/word-audio-extra/ATTRIBUTION.json']+[a['file'] for a in extra['clips'].values()]
+for a in extra['clips'].values():
+ assert a['unaltered'] is True and a['language']=='es'
+ assert re.fullmatch(r'assets/word-audio-extra/[a-z0-9-]+\.(wav|mp3|ogg)',a['file'])
+ content=(r/'web'/a['file']).read_bytes()
+ assert len(content)==a['bytes'] and hashlib.sha256(content).hexdigest()==a['sha256']
+ assert hashlib.sha1(content).hexdigest()==a['sha1']
+ assert a['sentenceUrl'].startswith(('https://commons.wikimedia.org/','https://tatoeba.org/'))
+ assert isinstance(a['nativeVerified'],bool) and a['licenseUrl'].startswith(('https://','http://creativecommons.org/'))
+for word,key in extra['words'].items():assert extra['clips'][key]['text']==word
 for name in files:assert (r/'web'/name).read_bytes()==(r/'docs'/name).read_bytes(),name
 def payload(s):return json.loads(s.removeprefix('window.VAMOS_DATA=').rstrip(';\n'))
 data=payload((r/'web/course-data.js').read_text(encoding='utf8'))
-assert data['version']=='6.22-guided-lessons'
+assert data['version']=='6.23-context-and-word-audio'
 assert data['beginnerReading']==json.loads((r/'course-reader-beginner.json').read_text(encoding='utf8'))
 assert data['literature']==json.loads((r/'course-literature.json').read_text(encoding='utf8'))
 assert data['phraseCoaching']==json.loads((r/'course-phrase-coaching.json').read_text(encoding='utf8'))
@@ -57,6 +69,8 @@ for old,current in zip(previous['library']['items'],data['library']['items'][:31
   assert current['usage']=='Por la mañana — утром. Самостоятельное mañana часто значит «завтра»; esta mañana — «сегодня утром». Значение зависит от сочетания и контекста.'
  else: assert current==old,old['id']
 assert len(data['guidance']['lessons'])==30
+assert data['lessonMedia']==json.loads((r/'lesson-media-v38.json').read_text(encoding='utf8'))
+assert data['wordAudioExtra']==json.loads((r/'word-audio-extra-v38.json').read_text(encoding='utf8'))
 assert data['dailyPlan']==json.loads((r/'course-daily-plan.json').read_text(encoding='utf8')) and len(data['dailyPlan']['lessons'])==30
 audio=json.loads((r/'web/assets/audio/ATTRIBUTION.json').read_text(encoding='utf8'));words=json.loads((r/'word-audio.json').read_text(encoding='utf8'))
 assert len(audio)==72 and len(words['clips'])==51
@@ -80,7 +94,7 @@ style_imports=verify_style_imports((r/'web/course.css').read_bytes(),lambda name
 assert verify_style_imports((r/'docs/course.css').read_bytes(),lambda name:(r/'docs'/name).read_bytes(),files)==style_imports
 sw=(r/'web/sw.js').read_text(encoding='utf8');assert 'shell-v28-' in sw and 'word-audio' in sw and "canonical.searchParams.delete('v')" in sw
 out=r/'.impeccable/review-v28';out.mkdir(parents=True,exist_ok=True)
-report={'pass':True,'version':data['version'],'runtimeAndAssets':len(files),'originalClips':72,'wordClips':51,'entries':480,'files':files,'versionedStyleImports':len(style_imports),'limits':['Finite content/byte checks do not establish acoustic quality or learning efficacy.']}
+report={'pass':True,'version':data['version'],'runtimeAndAssets':len(files),'originalClips':72,'wordClips':51,'extraWordClips':len(extra['clips']),'entries':480,'files':files,'versionedStyleImports':len(style_imports),'limits':['Finite content/byte checks do not establish acoustic quality or learning efficacy.']}
 (out/'release-files.json').write_text(json.dumps(report,indent=2),encoding='utf8')
 print(f'PASS local v28: {len(files)} runtime/assets; 123 original media hashes; 316 legacy identities preserved,315 unchanged and1 witnessed usage correction; 164 new entries; versioned shell.')
 if '--remote' in sys.argv:

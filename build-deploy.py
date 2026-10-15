@@ -3,6 +3,7 @@ from pathlib import Path
 import json,shutil,hashlib
 root=Path(__file__).parent;web=root/'web';dest=root/'docs';dest.mkdir(exist_ok=True)
 runtime=['index.html','course.css','course-foundation.css','course-v3.css','course-v4.css','course-data.js','course.js','library.js','coach.js','progress.js','learning.js','speech.js','native.js','drills.js','course-v5.css','manifest.webmanifest','sw.js','mastery.js','adaptive.js','navigation.js','navigation.css','course-v7.css','course-v8.css','goals.js','studio.js','missions.js','recordings.js','workbook.js','course-v9.css','course-v10.css','alegreya.css','course-v11.css','experience.js','experience.css','adult.css']
+runtime+=['lesson-media.js','lesson-media.css']
 assets=['lumo-poses-v27.png','nunito-latin.woff2','nunito-cyrillic.woff2','Nunito-OFL.txt','onest-latin.woff2','onest-cyrillic.woff2','Onest-OFL.txt','onest-sources.json','lucide.min.js','lucide-LICENSE.txt','lumo-poses.webp','app-icon.svg','app-icon-192.png','app-icon-512.png','plaza.svg','alegreya-latin.woff2','alegreya-cyrillic.woff2','Alegreya-OFL.txt','alegreya-sources.json']
 runtime+=['meaning-choices.js','weak-focus.js']
 runtime+=['phrase-coach.js','phrase-coach.css']
@@ -42,3 +43,9 @@ for item in beginner['clips'].values():
  p=web/item['file'];assert len(p.read_bytes())==item['bytes'];assert hashlib.sha256(p.read_bytes()).hexdigest()==item['sha256'];out=dest/item['file'];out.parent.mkdir(parents=True,exist_ok=True);shutil.copy2(p,out)
 shutil.copy2(web/'assets/beginner-audio/ATTRIBUTION.json',dest/'assets/beginner-audio/ATTRIBUTION.json')
 print('Beginner reading:',len(beginner['books']),'complete texts;',len(beginner['clips']),'original human clips.')
+
+extra=json.loads((root/'word-audio-extra-v38.json').read_text(encoding='utf8'))
+for item in extra['clips'].values():
+ p=web/item['file'];assert len(p.read_bytes())==item['bytes'];assert hashlib.sha256(p.read_bytes()).hexdigest()==item['sha256'];out=dest/item['file'];out.parent.mkdir(parents=True,exist_ok=True);shutil.copy2(p,out)
+shutil.copy2(web/'assets/word-audio-extra/ATTRIBUTION.json',dest/'assets/word-audio-extra/ATTRIBUTION.json')
+print('Extra isolated human word clips:',len(extra['clips']))
