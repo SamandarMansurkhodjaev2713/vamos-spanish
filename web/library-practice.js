@@ -4,7 +4,7 @@ window.VamosLibraryPractice={create(api){
  const {state,data,esc,icon,save,toast}=api,items=new Map(data.library.items.filter(x=>x.type!=='text').map(x=>[x.id,x]));
  const normalize=v=>String(v??'').normalize('NFC').toLocaleLowerCase('es').replace(/\p{P}/gu,'').replace(/[\p{Z}\s]+/gu,' ').trim();
  const correct=(id,value)=>!!normalize(value)&&(items.get(id)?.accepted||[items.get(id)?.es]).some(x=>normalize(x)===normalize(value));
- const wordAudio=x=>x?.type==='word'?data.wordAudio?.words?.[x.es.normalize('NFC').toLocaleLowerCase('es').trim()]:null;
+ const wordAudio=x=>x?.type==='word'?(data.wordAudioHuman?.words?.[x.es.normalize('NFC').toLocaleLowerCase('es').trim()]||data.wordAudioExtra?.words?.[x.es.normalize('NFC').toLocaleLowerCase('es').trim()]||data.wordAudio?.words?.[x.es.normalize('NFC').toLocaleLowerCase('es').trim()]):null;
  let sessionSerial=0;
  const validSessionId=v=>typeof v==='string'&&/^[A-Za-z0-9][A-Za-z0-9_-]{7,119}$/.test(v);
  const newSessionId=()=>{const uuid=globalThis.crypto?.randomUUID?.();return 'lp-'+(uuid||Date.now().toString(36)+'-'+(++sessionSerial).toString(36)+'-'+Math.random().toString(36).slice(2)+'-'+Math.random().toString(36).slice(2))};

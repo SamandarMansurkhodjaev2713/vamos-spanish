@@ -49,3 +49,9 @@ for item in extra['clips'].values():
  p=web/item['file'];assert len(p.read_bytes())==item['bytes'];assert hashlib.sha256(p.read_bytes()).hexdigest()==item['sha256'];out=dest/item['file'];out.parent.mkdir(parents=True,exist_ok=True);shutil.copy2(p,out)
 shutil.copy2(web/'assets/word-audio-extra/ATTRIBUTION.json',dest/'assets/word-audio-extra/ATTRIBUTION.json')
 print('Extra isolated human word clips:',len(extra['clips']))
+
+human=json.loads((root/'word-audio-human-v39.json').read_text(encoding='utf8'))
+for item in human['clips'].values():
+ p=web/item['file'];assert len(p.read_bytes())==item['bytes'];assert hashlib.sha256(p.read_bytes()).hexdigest()==item['sha256'];out=dest/item['file'];out.parent.mkdir(parents=True,exist_ok=True);shutil.copy2(p,out)
+shutil.copy2(web/'assets/word-audio-human/ATTRIBUTION.json',dest/'assets/word-audio-human/ATTRIBUTION.json')
+print('Licensed human word excerpts:',len(human['clips']))

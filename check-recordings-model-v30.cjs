@@ -2,7 +2,7 @@
 'use strict';
 const fs=require('node:fs'),vm=require('node:vm'),assert=require('node:assert/strict'),path=require('node:path');
 const source=fs.readFileSync(path.join(__dirname,'web/recordings.js'),'utf8');
-const data={expanded:JSON.parse(fs.readFileSync('course-expanded.json','utf8')),wordAudio:JSON.parse(fs.readFileSync('word-audio.json','utf8'))};
+const data={expanded:JSON.parse(fs.readFileSync('course-expanded.json','utf8')),wordAudio:JSON.parse(fs.readFileSync('word-audio.json','utf8')),wordAudioExtra:JSON.parse(fs.readFileSync('word-audio-extra-v38.json','utf8')),wordAudioHuman:JSON.parse(fs.readFileSync('word-audio-human-v39.json','utf8'))};
 const esc=x=>String(x??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const tick=()=>new Promise(resolve=>setImmediate(resolve));
 async function settle(){for(let i=0;i<6;i++)await tick();}
@@ -33,17 +33,23 @@ const reports=[];async function test(name,fn){await fn();reports.push({name,pass
   assert(await h.app.save(blob,{day:4,contentDay:4,label:'Отдельное слово',audio:word,es:'Hola.'}));assert.equal(h.calls.writes[1].es,wordText);assert.equal(h.calls.writes[1].audio,word);
   const html=h.app.html();assert(html.includes('data-audio="437710"'));assert(html.includes('data-audio="'+word+'"'));assert(html.includes('Hola.'));assert(html.includes(esc(wordText)));assert(!html.includes('UNTRUSTED TEXT'));assert(html.includes('Моя версия &lt;script&gt;'));assert(!html.includes('autoplay'));assert.equal((html.match(/<audio controls/g)||[]).length,2);assert(html.includes('День 22 · тема 19'));
  });
+ await test('Extra isolated words and licensed human excerpts retain exact catalogue captions after capture and reload',async()=>{
+  const examples=[...['wordAudioExtra','wordAudioHuman'].map(key=>{const [id,clip]=Object.entries(data[key].clips)[0]||[];assert(id,key+' fixture must exist');return {id,clip};}),...Object.entries(data.wordAudioExtra.clips).filter(([,clip])=>clip.nativeVerified===false).slice(0,1).map(([id,clip])=>({id,clip}))];
+  const h=environment();await settle();for(const [i,{id,clip:sample}]of examples.entries()){assert(await h.app.save(blob,{day:3,label:'Human sample '+i,audio:id,es:'FAKE USER CAPTION'}));const saved=h.calls.writes.at(-1);assert.equal(saved.audio,id);assert.equal(saved.es,sample.text);}
+  const html=h.app.html();assert.equal((html.match(/<h3>Образец произношения<\/h3>/g)||[]).length,examples.length);assert(!html.includes('Образец носителя'));assert(!html.includes('FAKE USER CAPTION'));for(const {id,clip:sample}of examples){assert(html.includes('data-audio="'+id+'"'));assert(html.includes(esc(sample.text)));assert(h.calls.credits.some(m=>m.audio===id&&m.es===sample.text));}
+  const reloaded=environment([...h.records.values()].map(r=>({...r,es:'TAMPERED PERSISTED CAPTION'})));await settle();const before=[...reloaded.records.values()].map(r=>({...r})),restored=reloaded.app.html();assert(!restored.includes('TAMPERED PERSISTED CAPTION'));for(const {id,clip:sample}of examples){assert(restored.includes('data-audio="'+id+'"'));assert(restored.includes(esc(sample.text)));}assert.deepEqual([...reloaded.records.values()],before);assert.equal(reloaded.calls.writes.length,0);
+ });
  await test('Unknown audio, user text and invalid optional days cannot fabricate a source model',async()=>{
   const h=environment();await settle();for(const audio of ['unknown','__proto__','<script>',437710])assert(await h.app.save(blob,{day:2,contentDay:45,label:'Свой текст',audio,es:'Hola.'}));
   for(const r of h.calls.writes){assert(!Object.hasOwn(r,'audio'));assert(!Object.hasOwn(r,'es'));assert(!Object.hasOwn(r,'contentDay'));}
-  const html=h.app.html();assert(!html.includes('data-audio='));assert(!html.includes('Образец носителя'));assert.equal((html.match(/Моя попытка<\/h3>/g)||[]).length,4);
+  const html=h.app.html();assert(!html.includes('data-audio='));assert(!html.includes('Образец произношения'));assert.equal((html.match(/Моя попытка<\/h3>/g)||[]).length,4);
  });
  await test('Metadata is captured before asynchronous count; later mutation cannot retarget saved voice',async()=>{
   const h=environment([],{deferCount:true});await settle();const meta={day:9,contentDay:9,label:'Исходная фраза',context:'words',audio:'437710'},pending=h.app.save(blob,meta);meta.audio=word;meta.day=20;meta.contentDay=20;meta.label='Changed';await tick();h.releaseCount();assert(await pending);
   const r=h.calls.writes[0];assert.equal(r.audio,'437710');assert.equal(r.es,'Hola.');assert.equal(r.label,'Исходная фраза');assert.equal(r.day,9);assert.equal(r.contentDay,9);assert.equal(r.context,'words');
  });
  await test('Legacy clips remain self-only; malformed optional source does not corrupt other saved records',async()=>{
-  const old=clip('old'),bad=clip('bad',{audio:'missing',es:'Fake recorded phrase',contentDay:99}),valid=clip('valid',{audio:'437710',es:'Untrusted persisted caption'}),h=environment([old,bad,valid]);await settle();const before=[...h.records.values()].map(r=>({...r})),html=h.app.html();assert.equal((html.match(/Образец носителя/g)||[]).length,1);assert(!html.includes('Untrusted persisted caption'));assert(!html.includes('Fake recorded phrase'));assert(!html.includes('тема 99'));assert(html.includes('Hola.'));assert.equal(h.calls.writes.length,0);assert.deepEqual([...h.records.values()],before);
+  const old=clip('old'),bad=clip('bad',{audio:'missing',es:'Fake recorded phrase',contentDay:99}),valid=clip('valid',{audio:'437710',es:'Untrusted persisted caption'}),h=environment([old,bad,valid]);await settle();const before=[...h.records.values()].map(r=>({...r})),html=h.app.html();assert.equal((html.match(/Образец произношения/g)||[]).length,1);assert(!html.includes('Untrusted persisted caption'));assert(!html.includes('Fake recorded phrase'));assert(!html.includes('тема 99'));assert(html.includes('Hola.'));assert.equal(h.calls.writes.length,0);assert.deepEqual([...h.records.values()],before);
  });
  await test('Original attribution and 0.5 tempo stay closed; viewing and comparing never write grades',async()=>{
   const h=environment([clip('a',{audio:'437710'}),clip('b',{audio:word}),clip('c')]);await settle();const writes=h.calls.writes.length;h.app.html();assert.deepEqual(new Set(h.calls.credits.map(m=>m.audio)),new Set(['437710',word]));assert(h.calls.credits.every(m=>m.es===data.expanded.audio[m.audio]?.text||m.es===data.wordAudio.clips[m.audio]?.text));

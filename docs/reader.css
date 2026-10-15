@@ -105,3 +105,6 @@
 .reader-word-unit{white-space:nowrap}
 
 .reader-individual-words{margin-block:20px;padding-top:16px;border-top:1px solid var(--line)}.reader-individual-words h3{font:600 15px/1.5 Onest,sans-serif;margin:0 0 8px}.reader-word-sounds{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}.reader-word-sounds .reader-word-sound{min-width:44px;min-height:44px;max-width:100%;gap:7px;padding:8px 12px;white-space:normal;overflow-wrap:anywhere}.reader-word-sound:disabled{opacity:.55;cursor:default}.reader-word-sounds .reader-word-sound svg{width:16px;height:16px;flex-shrink:0}
+
+/* Each displayed word remains an independent, comfortable touch target. */
+.reader-word{display:inline-flex;align-items:center;justify-content:center;min-height:44px;min-width:44px;max-width:100%;vertical-align:baseline;overflow-wrap:anywhere}.reader-word.unrecorded{border-bottom-style:dashed}.reader-word-unit{white-space:normal}.reader-gloss-heading>h2{min-width:0;overflow-wrap:anywhere}.reader-gloss-heading>[data-reader-gloss-close]{flex-shrink:0;min-width:44px;min-height:44px}

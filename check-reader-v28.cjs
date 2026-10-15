@@ -20,11 +20,11 @@ test('Catalog exposes 12 original recorded scenes and 10 original authored readi
 });
 test('Every token of each original native short text has a curated or existing definition',()=>{
  const e=environment();let count=0;
- for(const b of e.api.catalog().filter(b=>b.kind==='native')){e.api.enter(b.id);const keys=[...e.api.html().matchAll(/data-reader-word="([^"]+)"/g)].map(m=>m[1]);assert.ok(keys.length);for(const key of keys){click(e,'data-reader-word',key);const html=e.api.html();assert.doesNotMatch(html,/Отдельный перевод этого слова пока не добавлен/);count++;}}
+ for(const b of e.api.catalog().filter(b=>b.kind==='native')){e.api.enter(b.id);const keys=[...new Set([...e.api.html().matchAll(/data-reader-word="([^"]+)"/g)].map(m=>m[1]))];assert.ok(keys.length);for(const key of keys){click(e,'data-reader-word',key);const html=e.api.html();assert.doesNotMatch(html,/Отдельный перевод этого слова пока не добавлен/);count++;}}
  assert.ok(count>100);
 });
 test('Known isolated word plays exact word recording; unsupported name clearly offers full sentence',()=>{
- const e=environment();e.api.enter('text:1');const keys=[...e.api.html().matchAll(/data-reader-word="([^"]+)"/g)].map(m=>m[1]);click(e,'data-reader-word',keys[0]);assert.deepEqual(e.played.at(-1),['word-hola']);assert.match(e.api.html(),/Слушать слово: Hola/);assert.doesNotMatch(e.api.html(),/В записи целиком:/);
+ const e=environment();e.api.enter('text:1');const keys=[...new Set([...e.api.html().matchAll(/data-reader-word="([^"]+)"/g)].map(m=>m[1]))];click(e,'data-reader-word',keys[0]);assert.deepEqual(e.played.at(-1),['word-hola']);assert.match(e.api.html(),/Слушать слово: Hola/);assert.doesNotMatch(e.api.html(),/В записи целиком:/);
  const andrea=keys.find(k=>k.endsWith(':2:9'));assert.ok(andrea);const n=e.played.length;click(e,'data-reader-word',andrea);assert.equal(e.played.length,n);assert.match(e.api.html(),/В записи целиком:/);assert.match(e.api.html(),/Слушать всё предложение: Me llamo Andrea/);
 });
 test('Reviewed authored word has a useful meaning and context without invented audio',()=>{
@@ -65,7 +65,7 @@ test('Thirty course-day stories preserve original roles/sentences and manually r
 });
 test('Partial recordings are explicitly labeled and sequence only exact recorded lines; annotated questions are clickable chunks',()=>{
  const e=environment();e.api.enter('story:1');assert.match(e.api.html(),/Озвучено 2 из 4 реплик/);assert.match(e.api.html(),/Слушать озвученные реплики · 2/);assert.doesNotMatch(e.api.html(),/>Слушать текст</);click(e,'data-reader-play');assert.deepEqual(e.played.at(-1),['788477','40637']);
- const questionKey='story:1:0:7';click(e,'data-reader-word',questionKey);assert.match(e.api.html(),/Значение: Cómo te llamas/);assert.match(e.api.html(),/Слушать сочетание: Cómo te llamas/);assert.match(e.api.html(),/reader-word-source/);assert.match(e.api.html(),/Лицензия 444117/);
+ const questionKey='story:1:0:7';click(e,'data-reader-word',questionKey);assert.match(e.api.html(),/data-reader-pronounce="Cómo"/);assert.match(e.api.html(),/data-reader-pronounce="te"/);assert.match(e.api.html(),/data-reader-pronounce="llamas"/);assert.match(e.api.html(),/<h2 lang="es">Cómo te llamas<\/h2>/);assert.match(e.api.html(),/Слушать сочетание: Cómo te llamas/);assert.match(e.api.html(),/reader-word-source/);assert.match(e.api.html(),/Лицензия 444117/);
  const restored=environment(JSON.parse(JSON.stringify(e.state.reader)));assert.equal(restored.state.reader.selected,'story:1');assert.equal(restored.state.reader.rows['story:1'].selectedGloss,questionKey);
  e.api.enter('text:1');assert.match(e.api.html(),/>Слушать текст</);assert.match(e.api.html(),/value="0\.75"/);assert.match(e.api.html(),/value="0\.85"/);assert.match(e.api.html(),/value="1\.25"/);assert.doesNotMatch(e.api.html(),/value="0\.65"|value="0\.8"/);
 });
@@ -128,7 +128,7 @@ test('Existing native dialogue formats, café establishment senses and buscan tr
 });
 test('Every word in the original ten readings now has a reviewed meaning; all 60 meaning checks remain unchanged',()=>{
  const e=environment(),original=e.api.catalog().filter(b=>b.kind==='authored');let words=0;assert.equal(original.length,10);
- for(const b of original){e.api.enter(b.id);const keys=[...e.api.html().matchAll(/data-reader-word="([^"]+)"/g)].map(m=>m[1]);for(const key of keys){click(e,'data-reader-word',key);assert.doesNotMatch(e.api.html(),/Отдельный перевод этого слова пока не добавлен/,key);assert.match(e.api.html(),/Смысл предложения/);words++;}assert.ok(b.lines.every(l=>l.audio===null));}
+ for(const b of original){e.api.enter(b.id);const keys=[...new Set([...e.api.html().matchAll(/data-reader-word="([^"]+)"/g)].map(m=>m[1]))];for(const key of keys){click(e,'data-reader-word',key);assert.doesNotMatch(e.api.html(),/Отдельный перевод этого слова пока не добавлен/,key);assert.match(e.api.html(),/Смысл предложения/);words++;}assert.ok(b.lines.every(l=>l.audio===null));}
  assert.equal(words,395);assert.equal(e.state.day,8);assert.equal(Object.values(e.state.reader.rows).reduce((n,r)=>n+r.attempts.length,0),0);
  const keys={'reading:a1-home':0,'reading:a1-trip':1,'reading:a1-shop':0,'reading:a2-routine':1,'reading:a2-weekend':0,'reading:a2-return':1,'reading:b1-move':0,'reading:b1-study':1,'reading:b2-library':0,'reading:c1-memory':1};for(const b of original)assert.equal(b.task.answer,keys[b.id]);
 });
@@ -138,7 +138,7 @@ test('Contextual grammar separates late/afternoon, breakfast noun/verb and futur
  e.api.enter('text:8');click(e,'data-reader-word','text:8:0:12');assert.match(e.api.html(),/<p>я завтракаю<\/p>/);e.api.enter('story:12');click(e,'data-reader-word','story:12:1:0');assert.match(e.api.html(),/к \/ в \(время\)/);
 });
 test('All old 52 catalog and word-token identities retain a fixed independently captured v27 fingerprint',()=>{
- const e=environment(),ids=[];for(const b of e.api.catalog().slice(0,52)){e.api.enter(b.id);ids.push([b.id,[...e.api.html().matchAll(/data-reader-word="([^"]+)"/g)].map(m=>m[1])]);}assert.equal(require('node:crypto').createHash('sha256').update(JSON.stringify(ids)).digest('hex'),'f5ce22f16e3da3a758dd053002fe929c72dd01b561b44fc48f4d92ef1b875344');
+ const e=environment(),ids=[];for(const b of e.api.catalog().slice(0,52)){e.api.enter(b.id);ids.push([b.id,[...new Set([...e.api.html().matchAll(/data-reader-word="([^"]+)"/g)].map(m=>m[1]))]]);}assert.equal(require('node:crypto').createHash('sha256').update(JSON.stringify(ids)).digest('hex'),'f5ce22f16e3da3a758dd053002fe929c72dd01b561b44fc48f4d92ef1b875344');
 });
 test('Sanitizer safely adds format/voice/range fields to old progress without rewriting old attempts',()=>{
  const e=environment(),time=Date.now()-1000,old={selected:'text:1',rows:{'text:1':{attempts:[{value:1,correct:false,aided:false,time}],answer:1,checked:true,translations:[2]}}},s=e.api.sanitize(old);assert.equal(s.format,'all');assert.equal(s.recorded,false);assert.equal(s.rows['text:1'].rangeStart,0);assert.equal(s.rows['text:1'].rangeEnd,3);assert.equal(s.rows['text:1'].attempts[0].correct,false);assert.equal(s.rows['text:1'].attempts[0].time,time);

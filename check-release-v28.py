@@ -46,10 +46,26 @@ for a in extra['clips'].values():
  assert a['sentenceUrl'].startswith(('https://commons.wikimedia.org/','https://tatoeba.org/'))
  assert isinstance(a['nativeVerified'],bool) and a['licenseUrl'].startswith(('https://','http://creativecommons.org/'))
 for word,key in extra['words'].items():assert extra['clips'][key]['text']==word
+human=json.loads((r/'word-audio-human-v39.json').read_text(encoding='utf8'))
+assert human==json.loads((r/'web/assets/word-audio-human/ATTRIBUTION.json').read_text(encoding='utf8'))
+files+=['assets/word-audio-human/ATTRIBUTION.json']+[a['file'] for a in human['clips'].values()]
+for a in human['clips'].values():
+ assert a['unaltered'] is False and a['kind']=='human-excerpt' and a['language']=='es'
+ assert a['license'] in ['CC BY-NC 4.0','Public Domain Mark 1.0'] and 'ND' not in a['license']
+ assert re.fullmatch(r'assets/word-audio-human/[a-z0-9-]+\.wav',a['file'])
+ content=(r/'web'/a['file']).read_bytes()
+ assert len(content)==a['bytes'] and hashlib.sha256(content).hexdigest()==a['sha256']
+ assert a['sourceUrl'].startswith('https://') and a['endSeconds']>a['startSeconds']
+ assert a['verification']['isolatedExactForm'] and a['verification']['manuallyAuditioned'] is False
+ if a['nativeVerified']:assert a['nativeEvidence'] and 'marcelostockle' in a['speakerUrl']
+for word,key in human['words'].items():assert human['clips'][key]['text']==word
+queue=json.loads((r/'word-audio-recording-queue-v39.json').read_text(encoding='utf8'))
+assert queue['count']==len(queue['items'])==len(human['audit']['missingWords'])
+assert {x['word'] for x in queue['items']}==set(extra['audit']['missingWords'])-set(human['words'])
 for name in files:assert (r/'web'/name).read_bytes()==(r/'docs'/name).read_bytes(),name
 def payload(s):return json.loads(s.removeprefix('window.VAMOS_DATA=').rstrip(';\n'))
 data=payload((r/'web/course-data.js').read_text(encoding='utf8'))
-assert data['version']=='6.23-context-and-word-audio'
+assert data['version']=='6.24-human-word-access'
 assert data['beginnerReading']==json.loads((r/'course-reader-beginner.json').read_text(encoding='utf8'))
 assert data['literature']==json.loads((r/'course-literature.json').read_text(encoding='utf8'))
 assert data['phraseCoaching']==json.loads((r/'course-phrase-coaching.json').read_text(encoding='utf8'))
@@ -71,6 +87,7 @@ for old,current in zip(previous['library']['items'],data['library']['items'][:31
 assert len(data['guidance']['lessons'])==30
 assert data['lessonMedia']==json.loads((r/'lesson-media-v38.json').read_text(encoding='utf8'))
 assert data['wordAudioExtra']==json.loads((r/'word-audio-extra-v38.json').read_text(encoding='utf8'))
+assert data['wordAudioHuman']==human
 assert data['dailyPlan']==json.loads((r/'course-daily-plan.json').read_text(encoding='utf8')) and len(data['dailyPlan']['lessons'])==30
 audio=json.loads((r/'web/assets/audio/ATTRIBUTION.json').read_text(encoding='utf8'));words=json.loads((r/'word-audio.json').read_text(encoding='utf8'))
 assert len(audio)==72 and len(words['clips'])==51
@@ -94,7 +111,7 @@ style_imports=verify_style_imports((r/'web/course.css').read_bytes(),lambda name
 assert verify_style_imports((r/'docs/course.css').read_bytes(),lambda name:(r/'docs'/name).read_bytes(),files)==style_imports
 sw=(r/'web/sw.js').read_text(encoding='utf8');assert 'shell-v28-' in sw and 'word-audio' in sw and "canonical.searchParams.delete('v')" in sw
 out=r/'.impeccable/review-v28';out.mkdir(parents=True,exist_ok=True)
-report={'pass':True,'version':data['version'],'runtimeAndAssets':len(files),'originalClips':72,'wordClips':51,'extraWordClips':len(extra['clips']),'entries':480,'files':files,'versionedStyleImports':len(style_imports),'limits':['Finite content/byte checks do not establish acoustic quality or learning efficacy.']}
+report={'pass':True,'version':data['version'],'runtimeAndAssets':len(files),'originalClips':72,'wordClips':51,'extraWordClips':len(extra['clips']),'humanExcerpts':len(human['clips']),'entries':480,'files':files,'versionedStyleImports':len(style_imports),'limits':['Finite content/byte checks do not establish acoustic quality or learning efficacy.']}
 (out/'release-files.json').write_text(json.dumps(report,indent=2),encoding='utf8')
 print(f'PASS local v28: {len(files)} runtime/assets; 123 original media hashes; 316 legacy identities preserved,315 unchanged and1 witnessed usage correction; 164 new entries; versioned shell.')
 if '--remote' in sys.argv:

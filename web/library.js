@@ -10,7 +10,7 @@ window.VamosLibrary={create(api){
  let optionsOpen=false,selectionMode=false,audioFilter='all';const detailFolds={};
  let selectedDay=null;let type='all',search='',topic='all',status='all',sort='day',page=0,detail=null,trail=[],originY=0,revealed=new Set(),chosen=new Set(),textAnswer=null,textChecked=false,textAided=false;
  const prefs=state.library;
- const exactWordAudio=text=>{const key=text.normalize('NFC').toLocaleLowerCase('es').trim();if(!/^[a-záéíóúüñ]+$/.test(key))return null;const id=data.wordAudioExtra?.words?.[key]||data.wordAudio?.words?.[key];if(id)return id;return Object.entries(data.expanded.audio).find(([,clip])=>String(clip.text||'').normalize('NFC').toLocaleLowerCase('es').replace(/\p{P}/gu,'').trim()===key)?.[0]||null;};
+ const exactWordAudio=text=>{const key=text.normalize('NFC').toLocaleLowerCase('es').trim();if(!/^[a-záéíóúüñ]+$/.test(key))return null;const id=data.wordAudioHuman?.words?.[key]||data.wordAudioExtra?.words?.[key]||data.wordAudio?.words?.[key];if(id)return id;return Object.entries(data.expanded.audio).find(([,clip])=>String(clip.text||'').normalize('NFC').toLocaleLowerCase('es').replace(/\p{P}/gu,'').trim()===key)?.[0]||null;};
  const wordAudio=x=>x.type==='word'?exactWordAudio(x.es):null;
  function audibleWords(text){return text.split(/([A-Za-zÁÉÍÓÚÜÑáéíóúüñ]+)/).map(part=>{if(!/^[A-Za-zÁÉÍÓÚÜÑáéíóúüñ]+$/.test(part))return esc(part);const audio=exactWordAudio(part);return `<button type="button" class="library-word-sound ${audio?'':'unrecorded'}" data-lib-word-sound="${esc(part)}" aria-label="${audio?'Слушать слово: ':'Отдельной записи пока нет: '}${esc(part)}" lang="es">${esc(part)}</button>`;}).join('');}
  function wordSources(text){const words=[...new Set(text.match(/[A-Za-zÁÉÍÓÚÜÑáéíóúüñ]+/g)||[])].filter(word=>exactWordAudio(word));return words.length?`<details class="recording-source"><summary>Авторы записей отдельных слов</summary><div>${words.map(word=>`<p lang="es">${esc(word)}</p>${audioCredit({audio:exactWordAudio(word)})}`).join('')}</div></details>`:'';}
@@ -59,7 +59,7 @@ window.VamosLibrary={create(api){
  }
  function refresh(focus){const y=scrollY;render();scrollTo({top:y,behavior:'instant'});if(focus){const e=document.querySelector(focus);e?.focus({preventScroll:true})}}
  function handleClick(b){if(api.practice?.handleClick(b))return true;
-  if(b.hasAttribute('data-lib-word-sound')){const audio=exactWordAudio(b.dataset.libWordSound||'');if(audio)playSequence([audio],b);else toast('Для этого слова отдельная человеческая запись пока не добавлена. Можно послушать фразу целиком.');return true;}
+  if(b.hasAttribute('data-lib-word-sound')){const audio=exactWordAudio(b.dataset.libWordSound||'');if(audio)playSequence([audio],b,{restart:true});else toast('Для этого слова отдельная человеческая запись пока не добавлена. Можно послушать фразу целиком.');return true;}
   if(b.hasAttribute('data-lib-tools')){optionsOpen=!optionsOpen;refresh('[data-lib-tools]');return true}
   if(b.hasAttribute('data-lib-audio')){audioFilter=audioFilter==='native'?'all':'native';page=0;refresh('[data-lib-audio]');return true}
   if(b.hasAttribute('data-lib-status')){status=b.dataset.libStatus;page=0;refresh(`[data-lib-status="${status}"]`);return true}
