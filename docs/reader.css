@@ -108,3 +108,8 @@
 
 /* Each displayed word remains an independent, comfortable touch target. */
 .reader-word{display:inline-flex;align-items:center;justify-content:center;min-height:44px;min-width:44px;max-width:100%;vertical-align:baseline;overflow-wrap:anywhere}.reader-word.unrecorded{border-bottom-style:dashed}.reader-word-unit{white-space:normal}.reader-gloss-heading>h2{min-width:0;overflow-wrap:anywhere}.reader-gloss-heading>[data-reader-gloss-close]{flex-shrink:0;min-width:44px;min-height:44px}
+
+/* Reading starts with a story; the complete catalogue remains one disclosure away. */
+.reader-catalog>.reader-search{display:flex;flex-direction:column;gap:8px;font-size:14px;margin:24px 0 12px}.reader-browse-options{margin:0 0 24px;border-bottom:1px solid var(--line)}.reader-browse-options>summary{display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:48px;padding-block:10px;color:var(--accent);font-size:14px;cursor:pointer}.reader-browse-options>summary svg{width:18px;flex:none}.reader-browse-options>.reader-filters{margin-block:18px}.reader-browse-options>.reader-quick-filters{padding-bottom:16px}.reader-browse-options[open]>summary{font-weight:600}.reader-catalog .reader-shelf>h2{margin-top:28px}.reader-catalog .reader-book-meta{font-variant-numeric:tabular-nums}
+
+.reader-extra-filters>div{display:grid;gap:14px}

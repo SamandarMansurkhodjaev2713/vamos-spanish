@@ -29,7 +29,7 @@ data['beginnerReading']=json.loads((base/'course-reader-beginner.json').read_tex
 data['lessonMedia']=json.loads((base/'lesson-media-v38.json').read_text(encoding='utf8'))
 data['wordAudioExtra']=json.loads((base/'word-audio-extra-v38.json').read_text(encoding='utf8'))
 data['wordAudioHuman']=json.loads((base/'word-audio-human-v39.json').read_text(encoding='utf8'))
-data['version']='6.24-human-word-access'
+data['version']='6.25-clear-daily-practice'
 data['status']='Личный курс с оригинальными записями, тренировкой фраз и локальной записью голоса. Учебный эффект и отсутствие акцента не гарантированы.'
 (web/'course-data.js').write_text('window.VAMOS_DATA='+json.dumps(data,ensure_ascii=False).replace('</',r'<\/')+';\n',encoding='utf8')
 lucide=web/'assets/lucide.min.js'

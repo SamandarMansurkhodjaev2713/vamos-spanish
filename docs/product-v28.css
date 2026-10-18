@@ -26,3 +26,9 @@
 .mobile-nav button>span{font-size:clamp(11px,3.25vw,14px);white-space:nowrap;overflow-wrap:normal;line-height:1.25}
 .large-text .mobile-nav button>span{font-size:clamp(12px,3.4vw,15px);white-space:nowrap;overflow-wrap:normal}
 html{scroll-padding-top:96px;scroll-padding-bottom:calc(112px + env(safe-area-inset-bottom))}.mission-actions>.btn,.session-actions>.btn,.reader-check>.btn{scroll-margin-top:96px;scroll-margin-bottom:calc(112px + env(safe-area-inset-bottom))}
+
+/* One hierarchy across the five task surfaces; Spanish keeps its reading face. */
+.library .library-heading h1,.reader-heading h1,.profile-page .profile-heading h1,.practice-hub>h1{font:650 2rem/1.2 Onest,sans-serif;letter-spacing:-.025em;margin-block:0 12px;text-wrap:balance}.library-heading,.reader-heading,.profile-heading{margin-bottom:24px}.conversation-ready{margin-top:18px;max-width:60ch}.conversation-ready>summary{min-height:44px;display:flex;align-items:center;color:var(--accent);font-size:14px;cursor:pointer}.conversation-ready>p,.conversation-ready li{font-size:14px;line-height:1.65}.conversation-ready ul{padding-left:20px;margin-block:12px}.conversation-ready li+li{margin-top:8px}
+@media(min-width:900px){.library .library-heading h1,.reader-heading h1,.profile-page .profile-heading h1,.practice-hub>h1{font-size:2.375rem}}@media(max-width:599px){.profile-facts>div{align-items:flex-start}.profile-facts dd{max-width:42%;text-align:right;overflow-wrap:anywhere}.practice-hub .conversation-feature{padding:24px 20px}.conversation-ready{margin-top:12px}}
+
+@media(max-width:480px){.library .library-types{flex-wrap:nowrap;overflow-x:auto;gap:4px}}

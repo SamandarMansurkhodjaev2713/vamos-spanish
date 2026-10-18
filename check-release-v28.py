@@ -65,7 +65,7 @@ assert {x['word'] for x in queue['items']}==set(extra['audit']['missingWords'])-
 for name in files:assert (r/'web'/name).read_bytes()==(r/'docs'/name).read_bytes(),name
 def payload(s):return json.loads(s.removeprefix('window.VAMOS_DATA=').rstrip(';\n'))
 data=payload((r/'web/course-data.js').read_text(encoding='utf8'))
-assert data['version']=='6.24-human-word-access'
+assert data['version']=='6.25-clear-daily-practice'
 assert data['beginnerReading']==json.loads((r/'course-reader-beginner.json').read_text(encoding='utf8'))
 assert data['literature']==json.loads((r/'course-literature.json').read_text(encoding='utf8'))
 assert data['phraseCoaching']==json.loads((r/'course-phrase-coaching.json').read_text(encoding='utf8'))

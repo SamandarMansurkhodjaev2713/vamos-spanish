@@ -67,7 +67,13 @@ test('Day30 mission variation and delayed practice each use one bounded exchange
  for(const current of plan.lessons){const prior=baseline.lessons[current.day-1];for(const [phase,id]of [['lesson','solve'],['own','second']]){prior.phases.find(p=>p.id===phase).instructions.find(i=>i.id===id).instruction=current.phases.find(p=>p.id===phase).instructions.find(i=>i.id===id).instruction;}if([1,25].includes(current.day))prior.phases.find(p=>p.id==='own').instructions.find(i=>i.id==='first').instruction=current.phases.find(p=>p.id==='own').instructions.find(i=>i.id==='first').instruction;}
  assert.match(plan.lessons[10].transfer.criteria[0],/два/);baseline.lessons[10].transfer.criteria[0]=plan.lessons[10].transfer.criteria[0];
  for(const row of plan.lessons){const prior=baseline.lessons[row.day-1];assert.deepEqual(row.phases.map(p=>p.minutes),[5,16,8,6]);for(const phase of row.phases){const old=prior.phases.find(p=>p.id===phase.id);old.minutes=phase.minutes;if(phase.id==='lesson'){assert.equal(phase.title,'Фразы, чтение и видео');old.title=phase.title;const extra=phase.instructions.find(i=>i.id==='context-media');assert.ok(extra);assert.equal(extra.oralAttempts,1);assert.match(extra.instruction,/10 минут/);assert.match(extra.instruction,/6 минут/);assert.match(extra.instruction,/не засчитывается/);old.instructions.push(extra);}}}
- assert.deepEqual(plan,baseline,'Only reviewed directions and explicit 35-minute context allocation change; original models and progress identifiers preserved');
+ for(const current of plan.lessons){
+  assert.equal(current.reading.role,'Короткая сцена внутри основного урока: прочитай и ответь на два вопроса. Чтение и видео входят в 16 минут этапа «Фразы, чтение и видео» и общий ориентир 35 минут с повторением.');
+  assert.equal(current.video.role,'Видео внутри основного урока: найди два факта и проверь понимание. Чтение и видео вместе занимают около 6 из 16 минут этапа; это часть общего ориентира 35 минут, а не дополнительный просмотр.');
+  baseline.lessons[current.day-1].reading.role=current.reading.role;
+  baseline.lessons[current.day-1].video.role=current.video.role;
+ }
+ assert.deepEqual(plan,baseline,'Only reviewed directions, integrated media roles and explicit 35-minute context allocation change; original models and progress identifiers preserved');
 });
 test('Day30 extra dialogue own task is explicitly a short rehearsal and does not replace the final three scenes',()=>{
  const bank=read('exercise-bank.json'),row=bank.find(r=>r.day===30);

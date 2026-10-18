@@ -7,6 +7,7 @@ window.VamosProductMotion={create(api){
  function play(el,frames,options){if(!el?.animate||!allowed())return;const a=el.animate(frames,{fill:'none',easing:'cubic-bezier(.16,1,.3,1)',...options});active.add(a);a.finished?.then(()=>active.delete(a),()=>active.delete(a));return a}
  /* Screen identity only: typing, filters, translations and answer selection stay still. */
  function surfaceKey(){
+  const media=main?.querySelector('[data-media-screen]');if(media)return 'media:'+media.dataset.mediaScreen;
   const profile=main?.querySelector('[data-profile-panel]');if(profile)return 'profile:'+profile.dataset.profilePanel;
   const book=main?.querySelector('[data-reader-book]');if(book)return 'reader:book:'+book.dataset.readerBook;
   if(main?.querySelector('.reader-collection'))return 'reader:collection';
