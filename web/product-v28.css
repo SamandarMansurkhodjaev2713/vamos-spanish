@@ -32,3 +32,7 @@ html{scroll-padding-top:96px;scroll-padding-bottom:calc(112px + env(safe-area-in
 @media(min-width:900px){.library .library-heading h1,.reader-heading h1,.profile-page .profile-heading h1,.practice-hub>h1{font-size:2.375rem}}@media(max-width:599px){.profile-facts>div{align-items:flex-start}.profile-facts dd{max-width:42%;text-align:right;overflow-wrap:anywhere}.practice-hub .conversation-feature{padding:24px 20px}.conversation-ready{margin-top:12px}}
 
 @media(max-width:480px){.library .library-types{flex-wrap:nowrap;overflow-x:auto;gap:4px}}
+/* Keep the lesson action bar from clamping scroll anchoring on short phone viewports. */
+.lesson-mode .main{padding-bottom:calc(182px + env(safe-area-inset-bottom))}
+.lesson-mode .focused-lesson.has-response{margin-bottom:32px}
+.lesson-mode .listening-stage .play{width:auto;height:auto;min-width:144px;min-height:52px;padding:10px 16px;border-radius:12px;gap:9px;white-space:nowrap}
